@@ -1,5 +1,7 @@
 # RX 9070 XT 台式机迁移
 
+希望由台式机Codex自动完成下载和合并时，使用[自动拉取与接续指令](BOOTSTRAP_CODEX_ZH.md)。固定安装位置为 `D:\User\AI\reasoning-rl-lab`；Codex会克隆main、下载Release材料、核验哈希并恢复LoRA，然后按既有提示词检查AMD环境。源码ZIP作为历史归档保留，不覆盖当前Git工作树。
+
 本机已完成短SFT/GRPO和采样预实验，较长生成在不同后端反复CUDA非法内存访问，当前建议迁移剩余扩大训练、三种子同预算对照与独立测试。它不是完全不能训练，也没有证据保证换卡自动解决所有问题。已推送到[GitHub私有仓库](https://github.com/INeedSomeSugar/reasoning-rl-lab)，[预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105)提供下述两个包与SHA256，远端摘要已核对。推荐克隆main获取最新交接文档，离线包保留本机首次发布前的快照。
 
 复制并解压 `dist/reasoning-rl-lab-desktop-transfer-20261105.zip` 到台式机独立目录，打开该目录，将[CODEX_PROMPT_ZH.md](CODEX_PROMPT_ZH.md)整段交给Codex。源码包包含固定数据、依赖约束、配置、原始文本预测/日志、报告和学习材料。先运行 `python scripts/verify_transfer.py` 核对SHA256，再允许改变目标机配置。

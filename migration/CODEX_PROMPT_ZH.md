@@ -1,5 +1,7 @@
 # 给台式机 Codex 的提示词（整段复制即可）
 
+尚未下载项目时，先执行[自动拉取与核验指令](BOOTSTRAP_CODEX_ZH.md)，目标目录为 `D:\User\AI\reasoning-rl-lab`；完成项目与附件准备后再继续本文。
+
 请接手当前目录中的 ReasoningRL Lab 项目。我的目标是大模型算法相关实习，研究小模型数学推理的 SFT → GRPO，以及相同计算预算下均匀采样与动态难度采样的差异。这个项目由我的 RTX 3060 Laptop 6GB 笔记本迁移而来；这台台式机配有 RX 9070 XT，但请先实查，不要假定环境已经可用。
 
 先阅读当前目录的 AGENTS.md、README.md、PROJECT_CONTEXT.md、HANDOFF.md、docs/HARDWARE_AND_BUDGET.md、docs/PROTOCOL.md。若通过GitHub克隆，记录git commit并检查工作树；若通过离线包迁移且存在migration/TRANSFER_MANIFEST.json，先运行 `python scripts/verify_transfer.py`。只在本项目目录内操作，不修改其他项目；使用项目自己的虚拟环境、缓存、数据和检查点。

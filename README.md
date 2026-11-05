@@ -14,6 +14,8 @@ RTX 3060 Laptop 6GB已实际完成Qwen3-1.7B的前后向、LoRA更新、保存�
 
 已推送到[GitHub私有仓库](https://github.com/INeedSomeSugar/reasoning-rl-lab)；[预实验Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105)提供源码迁移包、16份本机LoRA备份及SHA256，远端摘要已核对。台式机可克隆main获取最新交接说明，按[migration/README_ZH.md](migration/README_ZH.md)重建AMD环境。Release源码包保留首次推送前的本机快照，发布状态以main为准。
 
+希望台式机Codex自动下载时，使用[从空目录拉取与核验的指令](migration/BOOTSTRAP_CODEX_ZH.md)：固定放入 `D:\User\AI\reasoning-rl-lab`，下载并核验Release附件、恢复LoRA，再检查AMD环境。此入口已写好，尚未在台式机执行验证。
+
 ## 实验链路
 
 | 组别 | 起点与训练 | 主要用途 |
