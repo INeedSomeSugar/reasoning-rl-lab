@@ -1,0 +1,221 @@
+{
+  "scope": "Development validation only; repeated questions across seeds; no independent test claim",
+  "formal_comparison_completed": false,
+  "baselines": {
+    "A": {
+      "n": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "format_error_rate": 0.375,
+      "parse_error_rate": 0.0,
+      "truncation_rate": 0.0,
+      "mean_generated_tokens": 106.0,
+      "p50_generated_tokens": 108,
+      "generated_tokens": 848,
+      "prompt_tokens": 739,
+      "automatic_error_tags": {
+        "format_error": 3
+      },
+      "phase": "validation",
+      "optimizer_step": null,
+      "decoding": "greedy",
+      "thinking": false,
+      "scorer_version": "numeric_final_v2",
+      "run": "desktoprocm10bf16_20261105-A-val"
+    },
+    "B": {
+      "n": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "accuracy_wilson95": [
+        0.5291118177871464,
+        0.9775825085499433
+      ],
+      "format_error_rate": 0.375,
+      "parse_error_rate": 0.125,
+      "truncation_rate": 0.0,
+      "mean_generated_tokens": 128.75,
+      "p50_generated_tokens": 134,
+      "generated_tokens": 1030,
+      "prompt_tokens": 739,
+      "automatic_error_tags": {
+        "answer_extraction_failure": 1,
+        "format_error": 3
+      },
+      "phase": "validation",
+      "optimizer_step": null,
+      "decoding": "greedy",
+      "thinking": false,
+      "scorer_version": "numeric_final_v2",
+      "run": "desktoprocm10bf16_20261105-B-val"
+    }
+  },
+  "endpoints": [
+    {
+      "run": "desktoprocm10bf16_20261105-C-s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "n": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "wilson95_low": 0.5291118177871464,
+      "wilson95_high": 0.9775825085499433,
+      "mean_generated_tokens": 128.75,
+      "truncation_rate": 0.0,
+      "format_error_rate": 0.375,
+      "parse_error_rate": 0.125,
+      "steps": 4,
+      "grpo_wall_seconds": 36.58581240000058,
+      "actual_optimizer_steps_per_grpo_second": 0.10933199887068619,
+      "actual_policy_generated_tokens_per_grpo_second": 73.77176623799551,
+      "declared_grpo_wall_cap": 1200,
+      "cap_minus_actual_seconds": 1163.4141875999994,
+      "probe_wall_seconds": 0,
+      "reload_eval_wall_seconds": 26.539436099999875,
+      "in_training_validation_seconds": 16.617439400000876,
+      "elapsed_before_final_validation_seconds": 19.824378200002684,
+      "training_model_load_seconds": 2.912596599999233,
+      "grpo_plus_reload_eval_seconds": 63.12524850000045,
+      "load_grpo_reload_total_seconds": 66.03784509999969,
+      "grpo_device_elapsed_seconds": 36.43478125,
+      "generated_tokens": 2699,
+      "processed_tokens": 4527,
+      "probe_generated_tokens": 0,
+      "probe_prompt_tokens": 0,
+      "probe_calls": 0,
+      "weight_change_events": 0,
+      "mean_reward": 0.25,
+      "zero_variance_fraction": 1.0,
+      "adapter_delta_l2": 0.0,
+      "adapter_updated": false,
+      "peak_allocated_gib": 4.000418663024902,
+      "peak_reserved_gib": 4.587890625
+    },
+    {
+      "run": "desktoprocm10bf16_20261105-D-s13",
+      "strategy": "dynamic",
+      "seed": 13,
+      "n": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "wilson95_low": 0.5291118177871464,
+      "wilson95_high": 0.9775825085499433,
+      "mean_generated_tokens": 117.625,
+      "truncation_rate": 0.0,
+      "format_error_rate": 0.25,
+      "parse_error_rate": 0.125,
+      "steps": 4,
+      "grpo_wall_seconds": 67.59835150000072,
+      "actual_optimizer_steps_per_grpo_second": 0.059173040632506516,
+      "actual_policy_generated_tokens_per_grpo_second": 35.415064818555145,
+      "declared_grpo_wall_cap": 1200,
+      "cap_minus_actual_seconds": 1132.4016484999993,
+      "probe_wall_seconds": 36.9281366000032,
+      "reload_eval_wall_seconds": 24.54236089999904,
+      "in_training_validation_seconds": 15.178758100002597,
+      "elapsed_before_final_validation_seconds": 52.28478499999983,
+      "training_model_load_seconds": 2.925943099999131,
+      "grpo_plus_reload_eval_seconds": 92.14071239999976,
+      "load_grpo_reload_total_seconds": 95.06665549999889,
+      "grpo_device_elapsed_seconds": 67.4474375,
+      "generated_tokens": 2394,
+      "processed_tokens": 3994,
+      "probe_generated_tokens": 3330,
+      "probe_prompt_tokens": 2796,
+      "probe_calls": 2,
+      "weight_change_events": 0,
+      "mean_reward": 0.625,
+      "zero_variance_fraction": 0.0,
+      "adapter_delta_l2": 0.014659374020688848,
+      "adapter_updated": true,
+      "peak_allocated_gib": 3.960895538330078,
+      "peak_reserved_gib": 4.994140625
+    },
+    {
+      "run": "desktoprocm10bf16_20261105-E-s13",
+      "strategy": "static",
+      "seed": 13,
+      "n": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "wilson95_low": 0.5291118177871464,
+      "wilson95_high": 0.9775825085499433,
+      "mean_generated_tokens": 117.625,
+      "truncation_rate": 0.0,
+      "format_error_rate": 0.25,
+      "parse_error_rate": 0.125,
+      "steps": 4,
+      "grpo_wall_seconds": 51.84814460000052,
+      "actual_optimizer_steps_per_grpo_second": 0.07714837302008218,
+      "actual_policy_generated_tokens_per_grpo_second": 46.17330125251919,
+      "declared_grpo_wall_cap": 1200,
+      "cap_minus_actual_seconds": 1148.1518553999995,
+      "probe_wall_seconds": 19.889357399999426,
+      "reload_eval_wall_seconds": 32.9480384999988,
+      "in_training_validation_seconds": 16.127660400001332,
+      "elapsed_before_final_validation_seconds": 35.57677279999916,
+      "training_model_load_seconds": 2.9090495000018564,
+      "grpo_plus_reload_eval_seconds": 84.79618309999933,
+      "load_grpo_reload_total_seconds": 87.70523260000118,
+      "grpo_device_elapsed_seconds": 51.697015625,
+      "generated_tokens": 2394,
+      "processed_tokens": 3994,
+      "probe_generated_tokens": 1623,
+      "probe_prompt_tokens": 1398,
+      "probe_calls": 1,
+      "weight_change_events": 0,
+      "mean_reward": 0.625,
+      "zero_variance_fraction": 0.0,
+      "adapter_delta_l2": 0.014659374020688848,
+      "adapter_updated": true,
+      "peak_allocated_gib": 3.960895538330078,
+      "peak_reserved_gib": 4.994140625
+    }
+  ],
+  "aggregates": [
+    {
+      "strategy": "uniform",
+      "seeds": [
+        13
+      ],
+      "repeats": 1,
+      "accuracy_mean": 0.875,
+      "accuracy_sample_std": null,
+      "grpo_seconds_mean": 36.58581240000058
+    },
+    {
+      "strategy": "dynamic",
+      "seeds": [
+        13
+      ],
+      "repeats": 1,
+      "accuracy_mean": 0.875,
+      "accuracy_sample_std": null,
+      "grpo_seconds_mean": 67.59835150000072
+    },
+    {
+      "strategy": "static",
+      "seeds": [
+        13
+      ],
+      "repeats": 1,
+      "accuracy_mean": 0.875,
+      "accuracy_sample_std": null,
+      "grpo_seconds_mean": 51.84814460000052
+    }
+  ],
+  "paired_seed_differences": [
+    {
+      "seed": 13,
+      "dynamic_minus_uniform_pp": 0.0,
+      "dynamic_minus_uniform_grpo_seconds": 31.01253910000014
+    }
+  ],
+  "cost_note": "Common GRPO-stage time cap with declared final-validation reserve; includes probes and in-training validation. Model loading and standalone reload evaluation are recorded separately. Listed phase sums exclude unmetered process startup and checkpoint serialization. A shared cap is not exact matched compute.",
+  "throughput_note": "Use completed optimizer steps or real tokens divided by measured elapsed time. Raw Transformers speed fields can use planned max_steps after early stopping and are not adopted as observed throughput.",
+  "source_snapshot_sha256": "a35c65a53f24922bdb244957c9cb247b2f3dc9e6787e513022b358737bebf904"
+}

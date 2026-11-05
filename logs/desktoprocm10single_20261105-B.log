@@ -1,0 +1,36 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.15s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.31s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.43s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\__main__.py", line 3, in <module>
+    main()
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\cli.py", line 76, in main
+    result = training.run_sft(config, args.name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 193, in run_sft
+    output = trainer.train()
+             ^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer.py", line 2731, in _inner_training_loop
+    self.control = self.callback_handler.on_pre_optimizer_step(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer_callback.py", line 525, in on_pre_optimizer_step
+    return self.call_event("on_pre_optimizer_step", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer_callback.py", line 556, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 173, in on_pre_optimizer_step
+    ledger.emit(phase="gradient_diagnostic", optimizer_step=state.global_step+1, **_gradient_evidence(model))
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 44, in _gradient_evidence
+    raise FloatingPointError("Non-finite LoRA gradients or gradients on frozen backbone")
+FloatingPointError: Non-finite LoRA gradients or gradients on frozen backbone

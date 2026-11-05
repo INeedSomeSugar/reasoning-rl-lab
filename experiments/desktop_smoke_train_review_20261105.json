@@ -1,0 +1,18 @@
+{
+  "scope": "Agent review of eight fixed training candidates before desktop smoke, without model outcomes",
+  "reviewer": "Codex",
+  "human_reviewed": false,
+  "data_seed": 20261105,
+  "sft_pool_size": 32,
+  "grpo_pool_offset": 32,
+  "candidate_ids": ["gsm8k-train-00172", "gsm8k-train-07010", "gsm8k-train-01705", "gsm8k-train-01226", "gsm8k-train-00500", "gsm8k-train-03274", "gsm8k-train-00161", "gsm8k-train-03398"],
+  "common_exclusions": {
+    "gsm8k-train-01226": "Question prices a pair of earrings but reports selling 20 earrings; reference counts 20 pairs. Exclude unit ambiguity from all three arms before any model outcome."
+  },
+  "other_candidates": "Arithmetic and reference numerical answers checked; no additional exclusions in this small pool",
+  "previous_known_label_issue": "gsm8k-train-05134 remains excluded in future pools that contain it; absent from this smoke candidate pool",
+  "original_data_modified": false,
+  "holdout_content_read": false,
+  "formal_protocol_frozen": false,
+  "limitation": "Small engineering pool; no claim that the complete GSM8K training set has been reviewed"
+}

@@ -1,0 +1,4 @@
+﻿strategy,seeds,repeats,accuracy_mean,accuracy_sample_std,grpo_seconds_mean
+uniform,[13],1,0.875,,36.58581240000058
+dynamic,[13],1,0.875,,67.59835150000072
+static,[13],1,0.875,,51.84814460000052

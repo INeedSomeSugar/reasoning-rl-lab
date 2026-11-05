@@ -1,0 +1,66 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.7656828761100769, 'learning_rate': 5e-06, 'num_tokens': 634.0, 'completions/mean_length': 77.5, 'completions/min_length': 58.0, 'completions/max_length': 105.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 77.5, 'completions/min_terminated_length': 58.0, 'completions/max_terminated_length': 105.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.10864177532494068, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.14285714285714285}
+{'loss': 0.0, 'grad_norm': 0.37413689494132996, 'learning_rate': 5e-06, 'num_tokens': 1786.0, 'completions/mean_length': 170.0, 'completions/min_length': 152.0, 'completions/max_length': 188.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 170.0, 'completions/min_terminated_length': 152.0, 'completions/max_terminated_length': 188.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.10745593346655369, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.2857142857142857}
+{'loss': 0.0, 'grad_norm': 0.32400575280189514, 'learning_rate': 5e-06, 'num_tokens': 3111.0, 'completions/mean_length': 213.25, 'completions/min_length': 159.0, 'completions/max_length': 239.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 213.25, 'completions/min_terminated_length': 159.0, 'completions/max_terminated_length': 239.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.11215641163289547, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.42857142857142855}
+validation 1/8 gsm8k-train-06134 correct=False tokens=114
+validation 2/8 gsm8k-train-00560 correct=True tokens=129
+validation 3/8 gsm8k-train-00848 correct=True tokens=163
+validation 4/8 gsm8k-train-05654 correct=True tokens=134
+validation 5/8 gsm8k-train-06336 correct=True tokens=85
+validation 6/8 gsm8k-train-03502 correct=True tokens=65
+validation 7/8 gsm8k-train-01891 correct=True tokens=117
+validation 8/8 gsm8k-train-00065 correct=True tokens=134
+{'loss': -0.0, 'grad_norm': 0.6143829226493835, 'learning_rate': 5e-06, 'num_tokens': 3994.0, 'completions/mean_length': 137.75, 'completions/min_length': 81.0, 'completions/max_length': 159.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 137.75, 'completions/min_terminated_length': 81.0, 'completions/max_terminated_length': 159.0, 'rewards/reward/mean': 0.25, 'rewards/reward/std': 0.5, 'reward': 0.25, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.05465674493461847, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.5714285714285714}
+{'train_runtime': 67.4315, 'train_samples_per_second': 0.237, 'train_steps_per_second': 0.059, 'train_loss': 3.725290298461914e-09, 'epoch': 0.5714285714285714}
+{
+  "train_runtime": 67.4315,
+  "train_samples_per_second": 0.237,
+  "train_steps_per_second": 0.059,
+  "total_flos": 0.0,
+  "train_loss": 3.725290298461914e-09,
+  "generation_batches": 4,
+  "processed_tokens": 3994,
+  "padded_processed_tokens": 4364,
+  "generation_prompt_tokens": 1600,
+  "logprob_forward_input_tokens": 3994,
+  "logprob_forward_padded_tokens": 4364,
+  "generated_tokens": 2394,
+  "probe_generated_tokens": 3330,
+  "probe_prompt_tokens": 2796,
+  "probe_calls": 2,
+  "zero_variance_groups": 0,
+  "groups": 4,
+  "reward_sum": 10.0,
+  "reward_count": 16,
+  "nonzero_advantage_completions": 16,
+  "last_refresh_step": 2,
+  "sampler_weight_change_events": 0,
+  "format_errors": 4,
+  "parse_errors": 0,
+  "truncated_completions": 0,
+  "adapter_delta_l2": 0.014659374020688848,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "mean_reward": 0.625,
+  "zero_variance_group_fraction": 0.0,
+  "training_format_error_rate": 0.25,
+  "training_parse_error_rate": 0.0,
+  "training_truncation_rate": 0.0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10bf16_20261105-D-s13",
+  "checkpoint_sha256": "71939502b9a593072ce4b10dff774c96caf1b86fc9a2b94faa6e22b1e7b46913",
+  "sft_checkpoint_sha256": "f7317e55e35ea1de826863d0b9e318304b9a0a07db9e0a166efd580f9376dd85",
+  "completed_optimizer_steps": 4,
+  "observed_optimizer_steps_per_grpo_second": 0.059173040632506516,
+  "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
+  "wall_budget_overshoot_seconds": 0
+}

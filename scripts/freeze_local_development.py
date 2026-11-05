@@ -90,7 +90,7 @@ def main():
               "code_sha256": code_hash(), "data_manifest_sha256": sha256_file(ROOT / "data/manifest.json"),
               "sft_checkpoint_sha256": checkpoint_sha, "sft_checkpoint": args.sft_checkpoint,
               "grpo_candidate_pool_ids": candidate_ids, "grpo_pool_ids": actual_pool,
-              "audited_train_exclusions": excluded, "training_label_audit": "reports/training_label_audit.json",
+              "audited_train_exclusions": excluded, "training_label_audit": plan.get("training_label_audit", "reports/training_label_audit.json"),
               "sft_grpo_disjoint": True, "seeds": [13, 29, 47],
               "first_run_order": [[13, strategy] for strategy in plan["seed13_order"]],
               "replication_order": plan["replication_order"],

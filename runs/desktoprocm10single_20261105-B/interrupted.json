@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-11-05T14:47:27.623527+00:00",
+  "reason": "Non-finite LoRA gradients at pre-optimizer callback in single-GPU FP16",
+  "exit_code": 1,
+  "completed_training": false,
+  "completed_checkpoint": false,
+  "failure_log": "logs/desktoprocm10single_20261105-B.log",
+  "exact_failure_cost_available": true,
+  "system_driver_changed": false
+}

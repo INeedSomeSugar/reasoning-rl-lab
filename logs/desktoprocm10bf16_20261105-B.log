@@ -1,0 +1,31 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.90s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+{'loss': 3.5312, 'grad_norm': 7.809953212738037, 'learning_rate': 0.0001, 'epoch': 0.03125}
+{'loss': 3.2641, 'grad_norm': 5.950808048248291, 'learning_rate': 0.0001, 'epoch': 0.0625}
+{'loss': 2.7438, 'grad_norm': 5.892464637756348, 'learning_rate': 0.0001, 'epoch': 0.09375}
+{'loss': 4.1209, 'grad_norm': 9.564613342285156, 'learning_rate': 0.0001, 'epoch': 0.125}
+{'train_runtime': 2.9632, 'train_samples_per_second': 1.35, 'train_steps_per_second': 1.35, 'train_loss': 3.4150049090385437, 'epoch': 0.125}
+{
+  "train_runtime": 2.9632,
+  "train_samples_per_second": 1.35,
+  "train_steps_per_second": 1.35,
+  "train_loss": 3.4150049090385437,
+  "epoch": 0.125,
+  "adapter_delta_l2": 0.30745065132099225,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "processed_tokens": 754,
+  "supervised_tokens": 380,
+  "retained_examples": 32,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10bf16_20261105-B",
+  "checkpoint_sha256": "f7317e55e35ea1de826863d0b9e318304b9a0a07db9e0a166efd580f9376dd85"
+}

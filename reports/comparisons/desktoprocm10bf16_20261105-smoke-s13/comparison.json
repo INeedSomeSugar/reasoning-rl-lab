@@ -1,0 +1,113 @@
+{
+  "summary": [
+    {
+      "run": "desktoprocm10bf16_20261105-C-s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "steps": 4,
+      "wall_seconds": 36.58581240000058,
+      "device_elapsed_seconds": 36.43478125,
+      "peak_allocated_gib": 4.000418663024902,
+      "policy_loss_input_tokens": 4527,
+      "policy_generated_tokens": 2699,
+      "probe_generated_tokens": 0,
+      "probe_prompt_tokens": 0,
+      "probe_calls": 0,
+      "mean_reward": 0.25,
+      "zero_variance_fraction": 1.0,
+      "adapter_delta_l2": 0.0,
+      "validation_accuracy": 0.875,
+      "validation_n": 8
+    },
+    {
+      "run": "desktoprocm10bf16_20261105-D-s13",
+      "strategy": "dynamic",
+      "seed": 13,
+      "steps": 4,
+      "wall_seconds": 67.59835150000072,
+      "device_elapsed_seconds": 67.4474375,
+      "peak_allocated_gib": 3.960895538330078,
+      "policy_loss_input_tokens": 3994,
+      "policy_generated_tokens": 2394,
+      "probe_generated_tokens": 3330,
+      "probe_prompt_tokens": 2796,
+      "probe_calls": 2,
+      "mean_reward": 0.625,
+      "zero_variance_fraction": 0.0,
+      "adapter_delta_l2": 0.014659374020688848,
+      "validation_accuracy": 0.875,
+      "validation_n": 8
+    },
+    {
+      "run": "desktoprocm10bf16_20261105-E-s13",
+      "strategy": "static",
+      "seed": 13,
+      "steps": 4,
+      "wall_seconds": 51.84814460000052,
+      "device_elapsed_seconds": 51.697015625,
+      "peak_allocated_gib": 3.960895538330078,
+      "policy_loss_input_tokens": 3994,
+      "policy_generated_tokens": 2394,
+      "probe_generated_tokens": 1623,
+      "probe_prompt_tokens": 1398,
+      "probe_calls": 1,
+      "mean_reward": 0.625,
+      "zero_variance_fraction": 0.0,
+      "adapter_delta_l2": 0.014659374020688848,
+      "validation_accuracy": 0.875,
+      "validation_n": 8
+    }
+  ],
+  "points": [
+    {
+      "run": "desktoprocm10bf16_20261105-C-s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "optimizer_step": 4,
+      "evaluation_context": "in_training_diagnostic",
+      "cumulative_wall_seconds": 36.44181760000356,
+      "accuracy": 0.875,
+      "n": 8,
+      "wilson95_low": 0.5291118177871464,
+      "wilson95_high": 0.9775825085499433
+    },
+    {
+      "run": "desktoprocm10bf16_20261105-D-s13",
+      "strategy": "dynamic",
+      "seed": 13,
+      "optimizer_step": 4,
+      "evaluation_context": "in_training_diagnostic",
+      "cumulative_wall_seconds": 67.46354310000243,
+      "accuracy": 0.875,
+      "n": 8,
+      "wilson95_low": 0.5291118177871464,
+      "wilson95_high": 0.9775825085499433
+    },
+    {
+      "run": "desktoprocm10bf16_20261105-E-s13",
+      "strategy": "static",
+      "seed": 13,
+      "optimizer_step": 4,
+      "evaluation_context": "in_training_diagnostic",
+      "cumulative_wall_seconds": 51.704433200000494,
+      "accuracy": 0.875,
+      "n": 8,
+      "wilson95_low": 0.5291118177871464,
+      "wilson95_high": 0.9775825085499433
+    }
+  ],
+  "paired_seeds": [
+    13
+  ],
+  "formal_comparison_completed": false,
+  "three_seed_validation_comparison": false,
+  "scope": "In-training diagnostic validation only; compare endpoints using common standalone reloads. Formal claim requires frozen holdout evaluation.",
+  "sft_checkpoint_sha256": "f7317e55e35ea1de826863d0b9e318304b9a0a07db9e0a166efd580f9376dd85",
+  "hardware": [
+    "AMD Radeon RX 9070 XT",
+    null,
+    "7.15.26333",
+    "2.13.0+rocm10.0.0"
+  ],
+  "cost_fairness": "Smoke endpoints need not use equal compute; plots expose actual probe/time overhead."
+}

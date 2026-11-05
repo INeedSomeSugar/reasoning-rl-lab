@@ -1,0 +1,17 @@
+{
+  "loss": 4.56075382232666,
+  "finite_gradients": true,
+  "nonzero_gradient_elements": 688113,
+  "frozen_parameter_gradients": 0,
+  "example_id": "gsm8k-train-05110",
+  "adapter_delta_l2": 0.8294789126631147,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10_20261105-capability",
+  "checkpoint_sha256": "81456927988228ca7040d14cc826cfc407ef07348a03aa0996e2dac20664b144",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}

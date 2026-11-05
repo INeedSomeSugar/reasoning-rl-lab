@@ -1,0 +1,36 @@
+Found pinned wheel torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Found pinned wheel amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Found pinned wheel amd_torch_device_gfx1201-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Found pinned wheel rocm_sdk_core-10.0.0-py3-none-win_amd64.whl
+Found pinned wheel rocm_sdk_libraries-10.0.0-py3-none-win_amd64.whl
+Found pinned wheel rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl
+Already downloaded: torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Already downloaded: amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Already downloaded: amd_torch_device_gfx1201-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 8/12 retry 1: IncompleteRead
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 8/12
+Verified rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: 758050981 bytes sha256=066195cb0f7df02e6009facb17652dd992d13fae44d87652e5ab928d5b4f0851
+rocm_sdk_libraries-10.0.0-py3-none-win_amd64.whl: part 2/2
+rocm_sdk_libraries-10.0.0-py3-none-win_amd64.whl: part 1/2
+Verified rocm_sdk_libraries-10.0.0-py3-none-win_amd64.whl: 116831755 bytes sha256=bfc7a1bd3b6050fb4d36d8ac2eea80d3afd70c5604a29142463d6cb890fc73bf
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 2/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 3/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 1/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 2/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 1/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 1/5 retry 2: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 2/5
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 3/5
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 1/5
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 5/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 5/5
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 1: RemoteDisconnected
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 2: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 3: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 1: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5 retry 2: IncompleteRead
+rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: part 4/5
+Verified rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl: 312303802 bytes sha256=c6e4c5a0da941230bed975765e644597570081c9a41654d5a052c277167f4576

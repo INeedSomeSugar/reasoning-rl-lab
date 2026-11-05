@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/desktoprocm10pilot_20261105-B",
+  "adapter_sha256": "b187c090389df7d4fbd23c4e2e6e29301ea511da2455b1f9601c2e2a696872e2",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

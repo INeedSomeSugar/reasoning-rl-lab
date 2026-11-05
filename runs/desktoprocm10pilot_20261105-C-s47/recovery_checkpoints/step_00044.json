@@ -1,0 +1,8 @@
+{
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10pilot_20261105-C-s47-recovery\\step_00044",
+  "checkpoint_sha256": "1ae049732aeefa59b811dba221acf45071c45f970f0d3f22ddb262e43a47141d",
+  "completed_optimizer_steps": 44,
+  "evaluation_completed": true,
+  "exact_optimizer_resume_supported": false,
+  "not_a_completed_run": true
+}

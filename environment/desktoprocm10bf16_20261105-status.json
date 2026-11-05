@@ -1,0 +1,28 @@
+{
+  "status": "completed_smoke_only",
+  "started_utc": "2026-11-05T14:27:11.8341264Z",
+  "prefix": "desktoprocm10bf16_20261105",
+  "config": "configs/desktop_rocm10_bf16_smoke.yaml",
+  "completed": [
+    "gpu-preflight",
+    "hardware",
+    "data-integrity",
+    "checkpoint-integrity",
+    "tests",
+    "capability",
+    "A-val",
+    "B",
+    "B-val",
+    "C-s13",
+    "C-reloadval",
+    "D-s13",
+    "D-reloadval",
+    "E-s13",
+    "E-reloadval",
+    "compare",
+    "evidence-audit"
+  ],
+  "holdout_evaluated": false,
+  "phase": "evidence-audit",
+  "finished_utc": "2026-11-05T14:33:18.3261459Z"
+}

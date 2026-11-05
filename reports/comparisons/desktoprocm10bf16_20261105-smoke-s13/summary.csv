@@ -1,0 +1,4 @@
+﻿run,strategy,seed,steps,wall_seconds,device_elapsed_seconds,peak_allocated_gib,policy_loss_input_tokens,policy_generated_tokens,probe_generated_tokens,probe_prompt_tokens,probe_calls,mean_reward,zero_variance_fraction,adapter_delta_l2,validation_accuracy,validation_n
+desktoprocm10bf16_20261105-C-s13,uniform,13,4,36.58581240000058,36.43478125,4.000418663024902,4527,2699,0,0,0,0.25,1.0,0.0,0.875,8
+desktoprocm10bf16_20261105-D-s13,dynamic,13,4,67.59835150000072,67.4474375,3.960895538330078,3994,2394,3330,2796,2,0.625,0.0,0.014659374020688848,0.875,8
+desktoprocm10bf16_20261105-E-s13,static,13,4,51.84814460000052,51.697015625,3.960895538330078,3994,2394,1623,1398,1,0.625,0.0,0.014659374020688848,0.875,8

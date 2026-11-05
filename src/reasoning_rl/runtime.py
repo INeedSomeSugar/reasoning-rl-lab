@@ -20,6 +20,8 @@ def bootstrap():
         "TORCH_HOME": ".cache/torch", "TRITON_CACHE_DIR": ".cache/triton",
         "TORCHINDUCTOR_CACHE_DIR": ".cache/inductor", "XDG_CACHE_HOME": ".cache/xdg",
         "MPLCONFIGDIR": ".cache/matplotlib", "UV_CACHE_DIR": ".cache/uv",
+        "MIOPEN_CUSTOM_CACHE_DIR": ".cache/miopen", "MIOPEN_USER_DB_PATH": ".cache/miopen-db",
+        "AMD_COMGR_CACHE_DIR": ".cache/comgr",
     }.items():
         os.environ[key] = str(ROOT / directory)
     os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
@@ -110,14 +112,17 @@ def hardware_info():
         "ram_available_bytes": psutil.virtual_memory().available,
         "versions": versions, "torch_cuda": torch.version.cuda, "torch_hip": torch.version.hip,
         "cuda_available": torch.cuda.is_available(), "gpus": [],
-        "diagnostic_flags": {k: os.environ.get(k) for k in ("CUDA_LAUNCH_BLOCKING", "PYTORCH_NO_CUDA_MEMORY_CACHING")},
-        "rx9070xt_access": "not established; no remote host or credentials supplied",
+        "diagnostic_flags": {k: os.environ.get(k) for k in ("CUDA_LAUNCH_BLOCKING", "PYTORCH_NO_CUDA_MEMORY_CACHING", "HIP_VISIBLE_DEVICES", "CUDA_VISIBLE_DEVICES")},
+        "gpu_backend": "ROCm" if torch.version.hip else "NVIDIA CUDA" if torch.version.cuda else "CPU",
+        "rx9070xt_access": "not detected in this process",
     }
     for i in range(torch.cuda.device_count()):
         props = torch.cuda.get_device_properties(i)
         free, total = torch.cuda.mem_get_info(i)
         result["gpus"].append({"index": i, "name": props.name, "total_bytes": total,
                                "free_bytes": free, "compute_capability": list(torch.cuda.get_device_capability(i))})
+    if any("9070 XT" in gpu["name"] for gpu in result["gpus"]):
+        result["rx9070xt_access"] = "local device detected by PyTorch; training capability requires separate validation"
     try:
         result["nvidia_smi"] = subprocess.check_output(
             ["nvidia-smi", "--query-gpu=name,memory.total,memory.free,driver_version", "--format=csv"],

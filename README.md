@@ -2,9 +2,17 @@
 
 **小模型推理后训练与难度感知数据选择。** 面向大模型算法实习的独立研究工程项目。
 
-研究问题：在**同一硬件、相同端到端计算预算**下，用模型当前解题成功率指导训练题采样，能否比均匀随机采样更有效地改善数学推理？主要交付是训练代码、检查点、原始运行证据和受控实验，先看[本机结果与证据边界](reports/LOCAL_RESULTS.md)，逐运行指标见[自动报告](reports/experiment_report.md)。
+研究问题：在**同一硬件、相同端到端计算预算**下，用模型当前解题成功率指导训练题采样，能否比均匀随机采样更有效地改善数学推理？主要交付是训练代码、检查点、原始运行证据和受控实验，先看[当前交接与证据边界](HANDOFF.md)、[RX 9070 XT 开发结果](reports/comparisons/desktoprocm10pilot_20261105/findings.md)；[笔记本历史结果](reports/LOCAL_RESULTS.md)和[历史自动报告](reports/experiment_report.md)单列保留。
 
 ## 已有真实结果与当前实验
+
+RX 9070 XT 台式机已自动完成 main 克隆、Release SHA256 核验、16 份历史 LoRA 恢复、项目独立 ROCm 环境与公开模型下载。非量化 BF16/SDPA 的前后向、LoRA、保存重载和短链路实测通过，40 项工程测试通过。
+
+按实测成本扩大的开发轮次也已完成：128 题/32 步 SFT，独立 28 题 GRPO 池；C/D 各 seed 13/29/47，E 仅 seed 13，全部终点独立重载。在共同 32 道开发验证题上，A=28/32、B=16/32，C 均值58.33%、D均值56.25%、E=17/32。D−C 配对差均值 −2.08 个百分点，没有动态优势证据，所有训练终点仍低于原公开模型。SFT 退化与输出重复/截断证据保留，根因未确认。D seed29 实际全池刷新并改变采样权重；其他两个种子的后续探测不完整，耗时计入但未更新分布。66 份运行证据审计通过。
+
+这是三配对种子开发预实验，正式 main 与最终独立测试尚未完成；test/SVAMP 继续封存。训练池仅28题、验证仅32题、静态仅一次，不能写成泛化提升。见[当前交接](HANDOFF.md)、[台式机记录](docs/DESKTOP_SETUP_20261105.md)、[扩大轮次报告](reports/comparisons/desktoprocm10pilot_20261105/findings.md)、[短链路报告](reports/comparisons/desktoprocm10bf16_20261105/findings.md)。本轮已结束，无活动训练；改动尚未推送。
+
+下面的 NVIDIA 结果与命令为笔记本历史，台式机结果按硬件和精度独立记录。
 
 RTX 3060 Laptop 6GB已实际完成Qwen3-1.7B的前后向、LoRA更新、保存重载、128题/32步SFT，以及均匀/动态/静态各8步的seed13预实验；适配器权重保存在本项目`checkpoints/`。工程测试36项通过，源码快照、原始预测、梯度、token和成本账本保留在`runs/`。
 
@@ -14,7 +22,7 @@ RTX 3060 Laptop 6GB已实际完成Qwen3-1.7B的前后向、LoRA更新、保存�
 
 已推送到[GitHub私有仓库](https://github.com/INeedSomeSugar/reasoning-rl-lab)；[预实验Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105)提供源码迁移包、16份本机LoRA备份及SHA256，远端摘要已核对。台式机可克隆main获取最新交接说明，按[migration/README_ZH.md](migration/README_ZH.md)重建AMD环境。Release源码包保留首次推送前的本机快照，发布状态以main为准。
 
-希望台式机Codex自动下载时，使用[从空目录拉取与核验的指令](migration/BOOTSTRAP_CODEX_ZH.md)：固定放入 `D:\User\AI\reasoning-rl-lab`，下载并核验Release附件、恢复LoRA，再检查AMD环境。此入口已写好，尚未在台式机执行验证。
+自动迁移入口为[从空目录拉取与核验的指令](migration/BOOTSTRAP_CODEX_ZH.md)，本轮已在 `D:\User\AI\reasoning-rl-lab` 执行并核验完成；历史源码包保留归档，没有覆盖 main。
 
 ## 实验链路
 
@@ -31,6 +39,8 @@ C/D/E 共享训练池、SFT 权重哈希、损失、奖励、生成和优化配�
 ## 当前使用方式
 
 在本项目目录运行。所有依赖、缓存和运行数据留在本目录，其他现有项目保持原状。
+
+台式机环境已装好，运行时先 dot-source `scripts/desktop_env.ps1`，仅向项目进程暴露 RX 9070 XT，避免 Trainer 自动使用集显。使用 `.venv\Scripts\python.exe` 与 `configs/desktop_rocm10_bf16_smoke.yaml`/`configs/desktop_rocm10_bf16_pilot.yaml`、`--hardware rocm`。下述 CUDA/NF4 安装命令仅适用于历史笔记本；不用于本机。已完成家族不可直接覆盖重跑；新尝试使用唯一的新运行名和独立配置，运行中的冻结预实验不要修改 src/configs。
 
 ```powershell
 $env:UV_CACHE_DIR="$PWD\.cache\uv"

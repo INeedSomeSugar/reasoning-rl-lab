@@ -4,12 +4,18 @@
 
 问题：同一计算预算下，按当前模型训练题成功率进行动态采样是否优于均匀采样？不声称算法新颖性。第一版仅做 GSM8K 数学推理后训练，外部迁移集为 SVAMP。
 
-本机：Windows NT build 26300，RTX 3060 Laptop 6GB，初查空闲约 3.6GB；GPU 还有其他使用者，不结束用户进程。独立 Python 3.12 环境。RX 9070 XT 在另一台台式机，当前不可访问。用户最新指示：**先按本机推进，仅本机无法继续的实验再打包迁移**。台式机交接提示词已准备，但当前优先本机实际验证，不建立远程连接。
+历史笔记本：Windows NT build 26300、RTX 3060 Laptop 6GB、独立 Python 3.12；其运行与失败证据原样保留，不结束其他用户进程。用户现已授权在 RX 9070 XT 台式机自动下载、配置并接续，仍只操作本项目。
 
-优先候选 Qwen3-1.7B（公开已后训练版本，非 Base），已锁定官方完整 revision；备选 Qwen3-0.6B。训练优先用 NVIDIA NF4 + BF16 + rank-8 LoRA，不假定 AMD 量化兼容。AMD 首轮候选是官方 ROCm PyTorch + FP16 + 非量化，需在台式机另验前后向、LoRA、重载。
+当前台式机：Windows 11 build 26300.9818/26H2、Ryzen 7 9700X、24 GiB 物理 RAM、RX 9070 XT 15.92 GiB，设备状态正常，驱动 32.0.32015.12012。main `c011b71` 已克隆，Release 三件通过 SHA256、16 份 LoRA/48 文件已恢复并核验。项目内 Python 3.12.14/.venv、AMD 官方 torch 2.13.0+rocm10.0.0/gfx1201 与锁定上层依赖已安装，锁定公共模型已核验。本机 ROCm 初始化、40 项工程测试与模型前后向/LoRA/重载通过。FP16 的多设备原生异常和单卡非有限梯度均保留；当前使用进程级单独暴露 9070 XT 的 BF16/非量化/SDPA。官方矩阵与实际 OS/驱动并非逐项相同，不能称为完整官方认证；详见 [台式机记录](docs/DESKTOP_SETUP_20261105.md)。
+
+本机短链路已完成；随后 `desktoprocm10pilot_20261105` 已完成 128 题/32 步 SFT、28 题训练池的 C/D 各 seed 13/29/47、E 仅 seed 13，以及全部独立重载终点评测。共同 32 道开发题、512-token 上限：A 28/32、B 16/32；C 19/19/18、D 19/16/19、E 17（均以32为分母）。C/D 均值 58.33%/56.25%，D−C 配对差均值 −2.08 个百分点，无动态优势证据，全部仍低于 A。D seed 29 完成真实全池刷新且 28 个采样权重变化；另两个 D 种子的后续探测不完整，未用于更新。194 次 GRPO 梯度检查均有限、冻结骨干无梯度，七个终点有 LoRA 更新；66 个历史及新增运行证据审计通过。
+
+本轮已经结束，没有活动训练；当前为已完成三配对种子开发预实验，非正式 main/独立测试。SFT 退化与输出重复/截断需要在新家族排查；具体根因未确认。当前训练池和验证题都很小，K=2 含噪声，静态仅一次，不能声称泛化提升。测试与 SVAMP 继续封存；最终方案、检查点与评测预算尚未冻结。本轮 wall time 74分42秒，训练峰值 allocated/reserved 4.62/7.07 GiB。完整结果、成本、失败和下一步见 [HANDOFF.md](HANDOFF.md) 与 [台式机开发报告](reports/comparisons/desktoprocm10pilot_20261105/findings.md)。台式机改动及工件仅在本地，未推送。
+
+采用 Qwen3-1.7B（公开已后训练版本，非 Base），锁定官方完整 revision；备选 Qwen3-0.6B。笔记本历史使用 NVIDIA NF4 + BF16 + rank-8 LoRA。台式机首轮 FP16 失败后，独立使用官方 ROCm PyTorch + BF16 + 非量化 + SDPA，LoRA rank 8；两种硬件/精度的结果分开记录。
 
 数据：GSM8K 官方 train→6961/512，seed=20261105，question-only TF-IDF 近重复阈值0.90、组件整体划分；正式 test=1319 与 SVAMP=1000 保留。两个基准的预训练污染未知。当前审计发现208个近重复对、0个完全重复、0个跨开发划分残留。数据及模型的源 revision、内容哈希随项目保留。
 
 状态边界请以 [HANDOFF.md](HANDOFF.md) 和实际 `runs/` 为准：实现不等于冒烟；真实少步训练不等于正式对照；验证集表现不等于独立测试结果。云 GPU 未租用，300元为待确认首轮上限。预算方案、源码和学习说明已经纳入本项目；不生成应用界面，不修改简历。
 
-当前已实跑首轮A→4步B→8步C/D/E及共同重载验证，36项工程测试通过，未见同预算收益证据。扩大128题/32步SFT已完成，同32题验证为A22/32、B19/32。原NF4/SDPA时间预算轮次的C完成21步，D完成8步后再次CUDA非法内存访问，中断证据保留，E及29/47未启动。已增加验证前保存恢复权重；完整BF16/eager通过能力检查和4步SFT，但GRPO只记录3步，后续长生成停滞并中断。NF4/eager完成能力检查、4步SFT及4步G4 GRPO；新开发轮次localnf4eagerpilot_20261105的A为11/16，B完成128题/32步，但B独立验证8/16后再次CUDA非法内存访问，C/D/E未启动、预算未校准冻结。单题同步诊断成功不等于长链路稳定。当前无活动训练进程，建议剩余扩大训练、三种子同预算对照及最终独立测试转台式机重新验证后执行；目标机尚无实际运行证据。训练题疑义审阅、原始预测、曝光和探测成本均保存，详见reports/LOCAL_RESULTS.md与HANDOFF.md。已按授权推送到私有仓库https://github.com/INeedSomeSugar/reasoning-rl-lab，源码与16份LoRA备份已上传预发布Release：https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105，远端SHA256已核对。环境与公开基础模型不上传；台式机克隆main后按migration说明接续。
+笔记本历史：已实跑首轮A→4步B→8步C/D/E及共同重载验证，36项工程测试通过，未见同预算收益证据。扩大128题/32步SFT已完成，同32题验证为A22/32、B19/32。原NF4/SDPA时间预算轮次的C完成21步，D完成8步后再次CUDA非法内存访问，中断证据保留，E及29/47未启动。已增加验证前保存恢复权重；完整BF16/eager通过能力检查和4步SFT，但GRPO只记录3步，后续长生成停滞并中断。NF4/eager完成能力检查、4步SFT及4步G4 GRPO；新开发轮次localnf4eagerpilot_20261105的A为11/16，B完成128题/32步，但B独立验证8/16后再次CUDA非法内存访问，C/D/E未启动、预算未校准冻结。单题同步诊断成功不等于长链路稳定。当前无活动训练进程，建议剩余扩大训练、三种子同预算对照及最终独立测试转台式机重新验证后执行；该段保留笔记本迁移前状态，台式机当前证据见上文与 HANDOFF。训练题疑义审阅、原始预测、曝光和探测成本均保存，详见reports/LOCAL_RESULTS.md与HANDOFF.md。已按授权推送到私有仓库https://github.com/INeedSomeSugar/reasoning-rl-lab，源码与16份LoRA备份已上传预发布Release：https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105，远端SHA256已核对。环境与公开基础模型不上传；台式机克隆main后按migration说明接续。

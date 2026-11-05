@@ -6,6 +6,7 @@ import os
 import sys
 import time
 import urllib.request
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,6 +29,7 @@ def download(url, destination, expected_sha256=None, workers=4):
     # Resolve redirects first, then validate the server's byte-range support.
     request = urllib.request.Request(url, headers={"Range": "bytes=0-0"})
     with urllib.request.urlopen(request, timeout=90) as r:
+        resolved_url = r.geturl()
         range_header = r.headers.get("Content-Range")
         if r.status != 206 or range_header is None:
             temp = destination.with_suffix(destination.suffix+".partial")
@@ -51,28 +53,43 @@ def download(url, destination, expected_sha256=None, workers=4):
             return
         if offset > stop-start+1:
             raise ValueError(f"Oversized part: {p}")
-        for attempt in range(6):
-            try:
-                offset = p.stat().st_size if p.exists() else 0
-                req = urllib.request.Request(url, headers={"Range": f"bytes={start+offset}-{stop}"})
-                with urllib.request.urlopen(req, timeout=90) as r:
-                    actual = r.headers.get("Content-Range", "")
-                    if r.status != 206 or not actual.startswith(f"bytes {start+offset}-"):
-                        raise RuntimeError(f"Server did not honor requested range: {actual}")
+        part_url = resolved_url
+        while offset < stop-start+1:
+            for attempt in range(6):
+                try:
+                    # Short ranges survive this host's repeatedly interrupted large streams.
+                    # Preserve the established 64-MiB part layout for exact resume compatibility.
+                    offset = p.stat().st_size if p.exists() else 0
+                    request_stop = min(start+offset+2*1024*1024-1, stop)
+                    req = urllib.request.Request(part_url, headers={"Range": f"bytes={start+offset}-{request_stop}"})
+                    with urllib.request.urlopen(req, timeout=30) as r:
+                        actual = r.headers.get("Content-Range", "")
+                        expected_range = f"bytes {start+offset}-{request_stop}/{total}"
+                        if r.status != 206 or actual != expected_range:
+                            raise RuntimeError(f"Server did not honor requested range: {actual}")
+                        block = r.read()
+                    if len(block) != request_stop-(start+offset)+1:
+                        raise OSError("Download stream ended early")
                     with p.open("ab") as f:
-                        remaining = stop-start+1-offset
-                        while remaining:
-                            block = r.read(min(4*1024*1024, remaining))
-                            if not block:
-                                raise OSError("Download stream ended early")
-                            f.write(block)
-                            remaining -= len(block)
-                print(f"{destination.name}: part {i+1}/{count}", flush=True)
-                return
-            except Exception:
-                if attempt == 5:
-                    raise
-                time.sleep(min(2**attempt, 10))
+                        f.write(block)
+                    offset += len(block)
+                    break
+                except Exception as error:
+                    print(f"{destination.name}: part {i+1}/{count} retry {attempt+1}: {type(error).__name__}", flush=True)
+                    if attempt == 5:
+                        raise
+                    time.sleep(min(2**attempt, 10))
+                    # Refresh a signed redirect or a stalled CDN route without logging its URL.
+                    try:
+                        separator = "&" if "?" in url else "?"
+                        fresh = urllib.request.Request(url + separator + "rrl_resume=" + str(time.time_ns()),
+                                                       headers={"Range": "bytes=0-0"})
+                        with urllib.request.urlopen(fresh, timeout=30) as response:
+                            if response.status == 206 and int(response.headers["Content-Range"].rsplit("/", 1)[1]) == total:
+                                part_url = response.geturl()
+                    except OSError:
+                        pass
+        print(f"{destination.name}: part {i+1}/{count}", flush=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         list(executor.map(part, range(count)))
     temp = destination.with_suffix(destination.suffix+".partial")

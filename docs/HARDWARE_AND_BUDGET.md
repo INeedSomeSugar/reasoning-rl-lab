@@ -2,6 +2,8 @@
 
 核查日期：2026-11-05。当前未租卡、未付费、未调用付费模型 API。
 
+本文件下方“本机”与 NVIDIA 运行数字指迁移前笔记本。RX 9070 XT 台式机已完成迁移、BF16 短链路及三配对种子开发预实验；最新实查与官方组合边界单列在 [DESKTOP_SETUP_20261105.md](DESKTOP_SETUP_20261105.md)，不与历史成本混算。本轮 300 秒训练+探测及180秒验证预留在 C/D/E 前冻结，实际成本见 [开发报告](../reports/comparisons/desktoprocm10pilot_20261105/findings.md)。七组 GRPO 合计3108.52秒，独立重载评测另计1045.00秒；整轮含A/B共74分42秒。峰值 PyTorch allocated/reserved 为4.62/7.07 GiB，未发生本轮OOM；不代表官方认证或长期稳定性保证。
+
 ## 本机实查
 
 - 当前运行主机是 Windows NT 10.0 build 26300；注册表产品名保留 Windows 10 Home China，DisplayVersion=26H2，因此保留原始字段，不凭旧产品名推断当前 Windows 品牌版本。

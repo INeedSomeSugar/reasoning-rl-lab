@@ -1,0 +1,18 @@
+WARN Retry attempt #0. Sleeping 1.2955184s before the next attempt
+WARN Retry attempt #0. Sleeping 1.476878s before the next attempt
+Resolved 17 packages in 5.61s
+   Building rocm==10.0.0
+Downloading rocm-sdk-device-gfx1201 (297.8MiB)
+Downloading rocm-sdk-libraries (111.4MiB)
+Downloading sympy (6.0MiB)
+Downloading setuptools (1.0MiB)
+Downloading networkx (2.0MiB)
+Downloading amd-torch-device-gfx1201 (48.8MiB)
+Downloading torch (108.2MiB)
+Downloading rocm-sdk-core (722.9MiB)
+Downloading amd-torch-device-gfx12-0 (150.6MiB)
+ Downloaded setuptools
+      Built rocm==10.0.0
+ Downloaded networkx
+ Downloaded sympy
+Downloading amd-torch-device-gfx12-0 (150.6MiB)

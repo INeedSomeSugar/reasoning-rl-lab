@@ -1,0 +1,33 @@
+{
+  "status": "completed_development_pilot",
+  "prefix": "desktoprocm10pilot_20261105",
+  "config": "configs/desktop_rocm10_bf16_pilot.yaml",
+  "started_utc": "2026-11-05T14:35:31.2019495Z",
+  "completed": [
+    "preflight",
+    "A-val",
+    "B",
+    "B-val",
+    "freeze-development",
+    "C-s13",
+    "C-s13-reloadval",
+    "D-s13",
+    "D-s13-reloadval",
+    "E-s13",
+    "E-s13-reloadval",
+    "D-s29",
+    "D-s29-reloadval",
+    "C-s29",
+    "C-s29-reloadval",
+    "C-s47",
+    "C-s47-reloadval",
+    "D-s47",
+    "D-s47-reloadval",
+    "compare",
+    "summarize",
+    "evidence-audit"
+  ],
+  "holdout_evaluated": false,
+  "phase": "evidence-audit",
+  "finished_utc": "2026-11-05T15:50:13.0658678Z"
+}

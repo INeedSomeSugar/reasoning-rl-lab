@@ -20,3 +20,4 @@ dist/
 !logs/local*.log
 !logs/cuda_*.log
 !logs/trl_precision_audit.log
+!logs/desktop*.log

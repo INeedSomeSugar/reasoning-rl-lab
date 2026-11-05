@@ -1,0 +1,10 @@
+﻿run,strategy,seed,feature,pool_count,pool_n,pool_share,selected_count,draws,exposure_share,relative_exposure,interpretation
+desktoprocm10bf16_20261105-C-s13,uniform,13,solution_contains_division,5,7,0.7142857142857143,4,4,1.0,1.4,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-C-s13,uniform,13,solution_contains_multiplication,6,7,0.8571428571428571,3,4,0.75,0.875,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-C-s13,uniform,13,question_above_pool_median_length,3,7,0.42857142857142855,3,4,0.75,1.75,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-D-s13,dynamic,13,solution_contains_division,5,7,0.7142857142857143,3,4,0.75,1.05,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-D-s13,dynamic,13,solution_contains_multiplication,6,7,0.8571428571428571,3,4,0.75,0.875,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-D-s13,dynamic,13,question_above_pool_median_length,3,7,0.42857142857142855,2,4,0.5,1.1666666666666667,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-E-s13,static,13,solution_contains_division,5,7,0.7142857142857143,3,4,0.75,1.05,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-E-s13,static,13,solution_contains_multiplication,6,7,0.8571428571428571,3,4,0.75,0.875,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+desktoprocm10bf16_20261105-E-s13,static,13,question_above_pool_median_length,3,7,0.42857142857142855,2,4,0.5,1.1666666666666667,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"

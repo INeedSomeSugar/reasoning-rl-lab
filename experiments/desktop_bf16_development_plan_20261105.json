@@ -1,0 +1,90 @@
+{
+  "prefix": "desktoprocm10pilot_20261105",
+  "type": "bounded development pilot; not final holdout authorization",
+  "allows_holdout": false,
+  "new_AB_validation_size": 32,
+  "grpo_candidate_pool_size": 32,
+  "expected_retained_pool_size": 28,
+  "audited_train_exclusions": [
+    "gsm8k-train-05134",
+    "gsm8k-train-01188",
+    "gsm8k-train-07439",
+    "gsm8k-train-02307"
+  ],
+  "training_label_audit": "experiments/desktop_expanded_train_review_20261105.json",
+  "training_label_audit_sha256": "c1ba6a3e6568ea5610c476194140851209ef52bd4cfc9f8d3edb495496b50a59",
+  "shared_policy_and_probe_budget_seconds": 300,
+  "reserve_rule": "30*ceil(B_validation_seconds/30)+30, added to the common 300-second policy/probe allowance before any arm starts",
+  "seed13_order": [
+    "uniform",
+    "dynamic",
+    "static"
+  ],
+  "replication_order": [
+    [
+      29,
+      "dynamic"
+    ],
+    [
+      29,
+      "uniform"
+    ],
+    [
+      47,
+      "uniform"
+    ],
+    [
+      47,
+      "dynamic"
+    ]
+  ],
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "static_seeds": [
+    13
+  ],
+  "checkpoint_rule": "Keep each budget endpoint without selecting the best development accuracy; every C/D/E starts from the same actual desktop 128-item SFT checkpoint.",
+  "stop_rules": [
+    "Stop on native/precision/runtime failure; preserve all partial evidence",
+    "Stop replications if all three seed-13 arms have zero adapter update",
+    "Report incomplete probes, natural-boundary over/undershoot and actual costs; do not tune from heldout outcomes"
+  ],
+  "scale_rationale": "Smoke peak allocation below 5 GiB leaves room on 15.92 GiB RX 9070 XT. Increase output cap 256 to 512 to inspect truncation, rebuild A/B at that cap, enlarge disjoint training pool after training-only review. Initial/refreshed probes are charged. Do not claim this 28-item pilot is a full GSM8K study.",
+  "smoke_measurements": {
+    "C": {
+      "wall_seconds": 36.58581240000058,
+      "peak_allocated_bytes": 4295416832,
+      "peak_reserved_bytes": 4926210048,
+      "probe_wall_seconds": 0,
+      "adapter_updated": false,
+      "zero_variance_fraction": 1.0,
+      "weight_change_events": 0,
+      "training_truncation_rate": 0.1875
+    },
+    "D": {
+      "wall_seconds": 67.59835150000072,
+      "peak_allocated_bytes": 4252979200,
+      "peak_reserved_bytes": 5362417664,
+      "probe_wall_seconds": 36.9281366000032,
+      "adapter_updated": true,
+      "zero_variance_fraction": 0.0,
+      "weight_change_events": 0,
+      "training_truncation_rate": 0.0
+    },
+    "E": {
+      "wall_seconds": 51.84814460000052,
+      "peak_allocated_bytes": 4252979200,
+      "peak_reserved_bytes": 5362417664,
+      "probe_wall_seconds": 19.889357399999426,
+      "adapter_updated": true,
+      "zero_variance_fraction": 0.0,
+      "weight_change_events": 0,
+      "training_truncation_rate": 0.0
+    }
+  },
+  "formal_comparison_completed": false,
+  "no_main_capacity_or_quality_claim": true
+}

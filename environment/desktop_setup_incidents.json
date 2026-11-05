@@ -1,0 +1,47 @@
+{
+  "scope": "Desktop setup, separate from historical NVIDIA runtime incidents",
+  "incidents": [
+    {
+      "phase": "desktoprocm10single_20261105-B",
+      "error": "Single-GPU FP16 Trainer reached pre-optimizer callback, which rejected non-finite LoRA gradients; no completed SFT checkpoint",
+      "resolution": "Retain failed costs and stack. New explicit non-quantized BF16 family, supported by AMD RDNA4 precision documentation and local torch.cuda.is_bf16_supported(). No claim that FP16 failure proves a driver fault or model-quality issue."
+    },
+    {
+      "phase": "desktoprocm10_20261105-B",
+      "error": "Native access violation 0xC0000005 after Trainer automatically enabled DataParallel across RX 9070 XT and integrated GPU; no completed SFT checkpoint",
+      "resolution": "First capability and A-val succeeded. Preserve failed run and stack. Set process-only HIP_VISIBLE_DEVICES=0 and require exactly one visible 9070 XT in a new family; not yet claiming a confirmed driver root cause."
+    },
+    {
+      "phase": "clone",
+      "error": "schannel missing close_notify / early EOF",
+      "resolution": "HTTP/1.1 shallow main clone succeeded; no reset or deletion"
+    },
+    {
+      "phase": "release",
+      "error": "gh release download unexpected EOF, incomplete files",
+      "resolution": "Preserved incomplete attempts, resumed short byte ranges, all three assets and 48 checkpoint files verified"
+    },
+    {
+      "phase": "amd_install_initial",
+      "error": "Large streaming wheel installation did not complete",
+      "resolution": "Stopped only project uv process before installation completed; official wheel ranges downloaded separately. No GPU execution/root-cause claim."
+    },
+    {
+      "phase": "common_dependencies_streaming",
+      "error": "uv large-wheel downloads repeatedly interrupted; stopped only verified project uv process after preserving logs and cache",
+      "resolution": "Pinned offline resolution retained in logs/desktop-common-resolved-plan.log; all 52 exact PyPI wheels downloaded in short ranges, checked against publisher SHA256/size/ZIP CRC, and installed offline. Editable project and pip check completed; final lock and package inventory retained."
+    },
+    {
+      "phase": "public_model_initial",
+      "error": "Download stream ended early with 64-MiB requests",
+      "resolution": "Preserved model parts; resumed in 2-MiB requests; all 11 pinned files verified, including both weight shards against official LFS SHA256"
+    },
+    {
+      "phase": "sandbox_host_queries",
+      "error": "CIM inaccessible and gh keyring reported invalid login within sandbox",
+      "resolution": "System credential/read-only host context succeeded; no user re-login or token disclosure"
+    }
+  ],
+  "system_driver_changed": false,
+  "paid_services_used": false
+}

@@ -1,0 +1,234 @@
+{
+  "type": "frozen development protocol, not final holdout authorization",
+  "created_unix": 1793889567.4101858,
+  "prefix": "desktoprocm10pilot_20261105",
+  "config": {
+    "stage": "desktop_rocm10_bf16_budget_pilot",
+    "model": "qwen3_17b",
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "attention_implementation": "sdpa",
+    "seed": 13,
+    "data_seed": 20261105,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "max_prompt_length": 512,
+      "max_new_tokens": 512,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "sft": {
+      "pool_size": 128,
+      "steps": 32,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "max_length": 768
+    },
+    "grpo": {
+      "pool_size": 32,
+      "pool_offset": 128,
+      "require_disjoint_from_sft": true,
+      "excluded_train_ids": [
+        "gsm8k-train-05134",
+        "gsm8k-train-01188",
+        "gsm8k-train-07439",
+        "gsm8k-train-02307"
+      ],
+      "steps": 100000,
+      "gradient_accumulation_steps": 4,
+      "num_generations": 4,
+      "learning_rate": 5e-06,
+      "loss_type": "grpo",
+      "scale_rewards": "group",
+      "beta": 0.0,
+      "epsilon": 0.2,
+      "uniform_mix": 0.25,
+      "prior": 0.5,
+      "probe_samples": 2,
+      "refresh_interval": 8,
+      "validation_interval": 100000,
+      "max_wall_seconds": 480,
+      "max_accounted_tokens": 1000000,
+      "final_validation_reserve_seconds": 180
+    },
+    "evaluation": {
+      "validation_size": 32,
+      "test_size": null,
+      "external_size": null
+    },
+    "hardware_profile": "rocm_unverified"
+  },
+  "code_sha256": "b11b646a22ec91b54b261527078bc2cfb1a2f431b303cfde27a9211b52ad8810",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "sft_checkpoint_sha256": "b187c090389df7d4fbd23c4e2e6e29301ea511da2455b1f9601c2e2a696872e2",
+  "sft_checkpoint": "checkpoints/desktoprocm10pilot_20261105-B",
+  "grpo_candidate_pool_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-05134",
+    "gsm8k-train-00638",
+    "gsm8k-train-03208",
+    "gsm8k-train-03888",
+    "gsm8k-train-06843",
+    "gsm8k-train-06341",
+    "gsm8k-train-03914",
+    "gsm8k-train-05111",
+    "gsm8k-train-06535",
+    "gsm8k-train-04918",
+    "gsm8k-train-04443",
+    "gsm8k-train-01188",
+    "gsm8k-train-02543",
+    "gsm8k-train-06478",
+    "gsm8k-train-03295",
+    "gsm8k-train-07439",
+    "gsm8k-train-06200",
+    "gsm8k-train-07107",
+    "gsm8k-train-03223",
+    "gsm8k-train-07247",
+    "gsm8k-train-05497",
+    "gsm8k-train-00753",
+    "gsm8k-train-07359",
+    "gsm8k-train-04025",
+    "gsm8k-train-02307",
+    "gsm8k-train-06441"
+  ],
+  "grpo_pool_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-00638",
+    "gsm8k-train-03208",
+    "gsm8k-train-03888",
+    "gsm8k-train-06843",
+    "gsm8k-train-06341",
+    "gsm8k-train-03914",
+    "gsm8k-train-05111",
+    "gsm8k-train-06535",
+    "gsm8k-train-04918",
+    "gsm8k-train-04443",
+    "gsm8k-train-02543",
+    "gsm8k-train-06478",
+    "gsm8k-train-03295",
+    "gsm8k-train-06200",
+    "gsm8k-train-07107",
+    "gsm8k-train-03223",
+    "gsm8k-train-07247",
+    "gsm8k-train-05497",
+    "gsm8k-train-00753",
+    "gsm8k-train-07359",
+    "gsm8k-train-04025",
+    "gsm8k-train-06441"
+  ],
+  "audited_train_exclusions": [
+    "gsm8k-train-05134",
+    "gsm8k-train-01188",
+    "gsm8k-train-07439",
+    "gsm8k-train-02307"
+  ],
+  "training_label_audit": "experiments/desktop_expanded_train_review_20261105.json",
+  "sft_grpo_disjoint": true,
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "first_run_order": [
+    [
+      13,
+      "uniform"
+    ],
+    [
+      13,
+      "dynamic"
+    ],
+    [
+      13,
+      "static"
+    ]
+  ],
+  "replication_order": [
+    [
+      29,
+      "dynamic"
+    ],
+    [
+      29,
+      "uniform"
+    ],
+    [
+      47,
+      "uniform"
+    ],
+    [
+      47,
+      "dynamic"
+    ]
+  ],
+  "stop_if_first_seed_all_three_have_no_parameter_update": true,
+  "stop_rules": [
+    "Stop on native/precision/runtime failure; preserve all partial evidence",
+    "Stop replications if all three seed-13 arms have zero adapter update",
+    "Report incomplete probes, natural-boundary over/undershoot and actual costs; do not tune from heldout outcomes"
+  ],
+  "baseline_A_validation": "desktoprocm10pilot_20261105-A-val",
+  "sft_B_validation": "desktoprocm10pilot_20261105-B-val",
+  "validation_ids": [
+    "gsm8k-train-06134",
+    "gsm8k-train-00560",
+    "gsm8k-train-00848",
+    "gsm8k-train-05654",
+    "gsm8k-train-06336",
+    "gsm8k-train-03502",
+    "gsm8k-train-01891",
+    "gsm8k-train-00065",
+    "gsm8k-train-01286",
+    "gsm8k-train-01567",
+    "gsm8k-train-05147",
+    "gsm8k-train-01527",
+    "gsm8k-train-04876",
+    "gsm8k-train-02106",
+    "gsm8k-train-01767",
+    "gsm8k-train-06195",
+    "gsm8k-train-06069",
+    "gsm8k-train-04249",
+    "gsm8k-train-03931",
+    "gsm8k-train-04647",
+    "gsm8k-train-04689",
+    "gsm8k-train-04580",
+    "gsm8k-train-03885",
+    "gsm8k-train-01534",
+    "gsm8k-train-03587",
+    "gsm8k-train-00055",
+    "gsm8k-train-06355",
+    "gsm8k-train-04953",
+    "gsm8k-train-04895",
+    "gsm8k-train-03032",
+    "gsm8k-train-06836",
+    "gsm8k-train-04009"
+  ],
+  "calibration": {
+    "B_validation_wall_seconds": 124.6424225999981,
+    "reserve_rule": "30*ceil(B_validation_seconds/30)+30",
+    "final_validation_reserve_seconds": 180,
+    "policy_plus_probe_budget_seconds": 300,
+    "grpo_wall_cap_seconds": 480
+  },
+  "selection_rule": "Keep each budget endpoint without selecting the best development accuracy; every C/D/E starts from the same actual desktop 128-item SFT checkpoint.",
+  "allows_holdout": false,
+  "final_comparison_completed": false
+}

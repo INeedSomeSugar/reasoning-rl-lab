@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "started_utc": "2026-11-05T14:21:43.2837009Z",
+  "prefix": "desktoprocm10_20261105",
+  "config": "configs/desktop_rocm10_smoke.yaml",
+  "completed": [
+    "gpu-preflight",
+    "hardware",
+    "data-integrity",
+    "checkpoint-integrity",
+    "tests",
+    "capability",
+    "A-val"
+  ],
+  "holdout_evaluated": false,
+  "phase": "B",
+  "exit_code": -1073741819
+}

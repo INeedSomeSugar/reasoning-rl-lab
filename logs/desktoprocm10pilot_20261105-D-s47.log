@@ -1,0 +1,89 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.06s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 760.0, 'completions/mean_length': 197.0, 'completions/min_length': 67.0, 'completions/max_length': 512.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 92.0, 'completions/min_terminated_length': 67.0, 'completions/max_terminated_length': 137.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.48044082522392273, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.03571428571428571}
+{'loss': -0.125, 'grad_norm': 0.49495619535446167, 'learning_rate': 5e-06, 'num_tokens': 1380.0, 'completions/mean_length': 194.0, 'completions/min_length': 27.0, 'completions/max_length': 512.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 88.0, 'completions/min_terminated_length': 27.0, 'completions/max_terminated_length': 135.0, 'rewards/reward/mean': 0.25, 'rewards/reward/std': 0.5, 'reward': 0.25, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.37439632415771484, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.07142857142857142}
+{'loss': -0.125, 'grad_norm': 0.4557943046092987, 'learning_rate': 5e-06, 'num_tokens': 2118.0, 'completions/mean_length': 223.5, 'completions/min_length': 86.0, 'completions/max_length': 512.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 127.33333587646484, 'completions/min_terminated_length': 86.0, 'completions/max_terminated_length': 176.0, 'rewards/reward/mean': 0.25, 'rewards/reward/std': 0.5, 'reward': 0.25, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.33706972748041153, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.10714285714285714}
+{'loss': 0.2165, 'grad_norm': 0.4781825542449951, 'learning_rate': 5e-06, 'num_tokens': 2980.0, 'completions/mean_length': 222.5, 'completions/min_length': 68.0, 'completions/max_length': 512.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 126.0, 'completions/min_terminated_length': 68.0, 'completions/max_terminated_length': 178.0, 'rewards/reward/mean': 0.5, 'rewards/reward/std': 0.5773502588272095, 'reward': 0.5, 'reward_std': 0.5773502588272095, 'frac_reward_zero_std': 0.0, 'entropy': 0.4937117025256157, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.14285714285714285}
+{'loss': 0.0, 'grad_norm': 0.6417790651321411, 'learning_rate': 5e-06, 'num_tokens': 4100.0, 'completions/mean_length': 157.0, 'completions/min_length': 78.0, 'completions/max_length': 262.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 157.0, 'completions/min_terminated_length': 78.0, 'completions/max_terminated_length': 262.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.2595037817955017, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.17857142857142858}
+{'loss': -0.0, 'grad_norm': 0.3403882384300232, 'learning_rate': 5e-06, 'num_tokens': 4929.0, 'completions/mean_length': 121.25, 'completions/min_length': 84.0, 'completions/max_length': 163.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 121.25, 'completions/min_terminated_length': 84.0, 'completions/max_terminated_length': 163.0, 'rewards/reward/mean': 0.25, 'rewards/reward/std': 0.5, 'reward': 0.25, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.2878105752170086, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.21428571428571427}
+{'loss': -0.0, 'grad_norm': 0.38633546233177185, 'learning_rate': 5e-06, 'num_tokens': 5832.0, 'completions/mean_length': 119.75, 'completions/min_length': 90.0, 'completions/max_length': 149.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 119.75, 'completions/min_terminated_length': 90.0, 'completions/max_terminated_length': 149.0, 'rewards/reward/mean': 0.25, 'rewards/reward/std': 0.5, 'reward': 0.25, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.26612455397844315, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.25}
+{'loss': -0.0, 'grad_norm': 0.4882620573043823, 'learning_rate': 5e-06, 'num_tokens': 6680.0, 'completions/mean_length': 126.0, 'completions/min_length': 76.0, 'completions/max_length': 210.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 126.0, 'completions/min_terminated_length': 76.0, 'completions/max_terminated_length': 210.0, 'rewards/reward/mean': 0.5, 'rewards/reward/std': 0.5773502588272095, 'reward': 0.5, 'reward_std': 0.5773502588272095, 'frac_reward_zero_std': 0.0, 'entropy': 0.32450247183442116, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.2857142857142857}
+validation 1/32 gsm8k-train-06134 correct=True tokens=53
+validation 2/32 gsm8k-train-00560 correct=False tokens=30
+validation 3/32 gsm8k-train-00848 correct=False tokens=512
+validation 4/32 gsm8k-train-05654 correct=False tokens=512
+validation 5/32 gsm8k-train-06336 correct=True tokens=90
+validation 6/32 gsm8k-train-03502 correct=True tokens=71
+validation 7/32 gsm8k-train-01891 correct=True tokens=116
+validation 8/32 gsm8k-train-00065 correct=True tokens=74
+validation 9/32 gsm8k-train-01286 correct=True tokens=57
+validation 10/32 gsm8k-train-01567 correct=True tokens=269
+validation 11/32 gsm8k-train-05147 correct=True tokens=115
+validation 12/32 gsm8k-train-01527 correct=True tokens=73
+validation 13/32 gsm8k-train-04876 correct=False tokens=172
+validation 14/32 gsm8k-train-02106 correct=True tokens=157
+validation 15/32 gsm8k-train-01767 correct=True tokens=170
+validation 16/32 gsm8k-train-06195 correct=False tokens=512
+validation 17/32 gsm8k-train-06069 correct=True tokens=76
+validation 18/32 gsm8k-train-04249 correct=True tokens=103
+validation 19/32 gsm8k-train-03931 correct=True tokens=111
+validation 20/32 gsm8k-train-04647 correct=False tokens=512
+validation 21/32 gsm8k-train-04689 correct=True tokens=115
+validation 22/32 gsm8k-train-04580 correct=False tokens=124
+validation 23/32 gsm8k-train-03885 correct=True tokens=87
+validation 24/32 gsm8k-train-01534 correct=False tokens=512
+validation 25/32 gsm8k-train-03587 correct=False tokens=512
+validation 26/32 gsm8k-train-00055 correct=True tokens=112
+validation 27/32 gsm8k-train-06355 correct=False tokens=512
+validation 28/32 gsm8k-train-04953 correct=False tokens=512
+validation 29/32 gsm8k-train-04895 correct=False tokens=135
+validation 30/32 gsm8k-train-03032 correct=False tokens=512
+validation 31/32 gsm8k-train-06836 correct=True tokens=66
+validation 32/32 gsm8k-train-04009 correct=True tokens=90
+{
+  "budget_stop_reason": "Budget reached inside difficulty probe; partial probe not used for selection",
+  "generation_batches": 8,
+  "processed_tokens": 8728,
+  "padded_processed_tokens": 14612,
+  "generation_prompt_tokens": 3284,
+  "logprob_forward_input_tokens": 6680,
+  "logprob_forward_padded_tokens": 14612,
+  "generated_tokens": 5444,
+  "probe_generated_tokens": 14554,
+  "probe_prompt_tokens": 8364,
+  "probe_calls": 1,
+  "zero_variance_groups": 1,
+  "groups": 8,
+  "reward_sum": 11.0,
+  "reward_count": 32,
+  "nonzero_advantage_completions": 28,
+  "last_refresh_step": 0,
+  "sampler_weight_change_events": 0,
+  "format_errors": 10,
+  "parse_errors": 7,
+  "truncated_completions": 4,
+  "adapter_delta_l2": 0.01785593774860198,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "mean_reward": 0.34375,
+  "zero_variance_group_fraction": 0.125,
+  "training_format_error_rate": 0.3125,
+  "training_parse_error_rate": 0.21875,
+  "training_truncation_rate": 0.125,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10pilot_20261105-D-s47",
+  "checkpoint_sha256": "4baf63b07e96f42503242c519b7fdd5ffa7f06ce1050030ddd452eecc0e2a484",
+  "sft_checkpoint_sha256": "b187c090389df7d4fbd23c4e2e6e29301ea511da2455b1f9601c2e2a696872e2",
+  "completed_optimizer_steps": 8,
+  "observed_optimizer_steps_per_grpo_second": 0.017246523955874685,
+  "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
+  "wall_budget_overshoot_seconds": 0
+}

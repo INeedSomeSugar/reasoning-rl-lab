@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/desktoprocm10bf16_20261105-D-s13",
+  "adapter_sha256": "71939502b9a593072ce4b10dff774c96caf1b86fc9a2b94faa6e22b1e7b46913",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

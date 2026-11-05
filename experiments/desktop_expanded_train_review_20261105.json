@@ -1,0 +1,241 @@
+{
+  "reviewer": "Codex agent",
+  "human_reviewed": false,
+  "scope": "training-only candidate positions 128:160",
+  "data_seed": 20261105,
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "candidate_count": 32,
+  "retained_count": 28,
+  "rule": "Exclude explicit reference-condition contradictions, unresolved target wording, dimensional insufficiency, or unspecified percentage base; apply identically before all expanded C/D/E runs and all seeds.",
+  "heldout_accessed": false,
+  "based_on_expanded_model_outcomes": false,
+  "raw_data_modified": false,
+  "global_training_label_quality_claim": false,
+  "items": [
+    {
+      "id": "gsm8k-train-01954",
+      "question_sha256": "5215557dbd71ae1c2381fc8431dfb5e738adc9783bccbd12d773b5f719add8f9",
+      "decision": "retain",
+      "reason": "12+12*6",
+      "reference_answer": "84"
+    },
+    {
+      "id": "gsm8k-train-01408",
+      "question_sha256": "3e52be7a1ddc98102ea3e12ac41675cb897536721014e2c8af463bb166ef68b6",
+      "decision": "retain",
+      "reason": "26*(20+30), using the conventional 52-week year",
+      "reference_answer": "1300"
+    },
+    {
+      "id": "gsm8k-train-00597",
+      "question_sha256": "2b15e37639185c417742909ec885355dc4cb42d0a4bc62b9c4e6425c857efc9b",
+      "decision": "retain",
+      "reason": "3*52+3*26-34",
+      "reference_answer": "200"
+    },
+    {
+      "id": "gsm8k-train-00154",
+      "question_sha256": "974bd4267eb9a986cce41f3f7618a7b353d2896406827b196aa6972ad097a203",
+      "decision": "retain",
+      "reason": "(400+200)*(1+2*0.10), simple interest",
+      "reference_answer": "720"
+    },
+    {
+      "id": "gsm8k-train-00174",
+      "question_sha256": "e8a977ee071146210c41ac3c895141a90bf061c03da4e45e86de1bde6554df69",
+      "decision": "retain",
+      "reason": "5*2+5*5",
+      "reference_answer": "35"
+    },
+    {
+      "id": "gsm8k-train-04291",
+      "question_sha256": "7381309aaf4b989566e24916bba0330e8467e24d8e9b87e271f88baae0e49006",
+      "decision": "retain",
+      "reason": "30+15*0.20",
+      "reference_answer": "33"
+    },
+    {
+      "id": "gsm8k-train-05134",
+      "question_sha256": "5696a70c096a22274d8fd620034770faa5ae93895be1e2b55fa89faed44ce669",
+      "decision": "exclude",
+      "reason": "Jared=0.85*Ann, but the reference uses Ann=1.15*Jared; percentage baseline contradicts the question.",
+      "reference_answer": "983"
+    },
+    {
+      "id": "gsm8k-train-00638",
+      "question_sha256": "94443a8c2226b39221dfccb4cb8398e410bcc94254bb81696ac3ae89b5104de9",
+      "decision": "retain",
+      "reason": "32*5+7*10+5000-200*2",
+      "reference_answer": "4830"
+    },
+    {
+      "id": "gsm8k-train-03208",
+      "question_sha256": "a2668f59c635ed1646eb51bd8b40d60bb64739c4fe2936d132b5ea5cedab014b",
+      "decision": "retain",
+      "reason": "20+18+3*18",
+      "reference_answer": "92"
+    },
+    {
+      "id": "gsm8k-train-03888",
+      "question_sha256": "726cc0863e8708bc953ab352134a6ea2a503b1fee2a3c01d84e13c1e08255b0f",
+      "decision": "retain",
+      "reason": "(20+30)*20",
+      "reference_answer": "1000"
+    },
+    {
+      "id": "gsm8k-train-06843",
+      "question_sha256": "4480182d8f2c9afc32c82bd17e032e114c920548aabb9475a9e9d88ed43b178e",
+      "decision": "retain",
+      "reason": "(4-1)*12-6",
+      "reference_answer": "30"
+    },
+    {
+      "id": "gsm8k-train-06341",
+      "question_sha256": "3e9770b67542ebfe2a14c1ce39baf77baec69d25d329fdccee859ef4ed254716",
+      "decision": "retain",
+      "reason": "21+4+7-2",
+      "reference_answer": "30"
+    },
+    {
+      "id": "gsm8k-train-03914",
+      "question_sha256": "523d602d2375c6e3f4957e782fa31346a3243c1307b332d348ba5654d0987ce7",
+      "decision": "retain",
+      "reason": "10+2*3*10",
+      "reference_answer": "70"
+    },
+    {
+      "id": "gsm8k-train-05111",
+      "question_sha256": "bc786a3107d50cccc02059caa17cbbfc6a1b911df95774ca5dcc6494e0ffb4ca",
+      "decision": "retain",
+      "reason": "(20+10)+(15+10)+(10+10)",
+      "reference_answer": "75"
+    },
+    {
+      "id": "gsm8k-train-06535",
+      "question_sha256": "33142cc6a138eabb44118e283a496890ec4441ad5429d5d6dd9e2c99007346fd",
+      "decision": "retain",
+      "reason": "112/14",
+      "reference_answer": "8"
+    },
+    {
+      "id": "gsm8k-train-04918",
+      "question_sha256": "e28168a21aea0fce4396d9799b3eeb24d015f73f29dac8c8a5f4203f294be826",
+      "decision": "retain",
+      "reason": "14+7+11+22",
+      "reference_answer": "54"
+    },
+    {
+      "id": "gsm8k-train-04443",
+      "question_sha256": "f3a273a5e92a3e7ae808f9472328afb60d3a2683e113447012473fc891316684",
+      "decision": "retain",
+      "reason": "3+9+18+3",
+      "reference_answer": "33"
+    },
+    {
+      "id": "gsm8k-train-01188",
+      "question_sha256": "576e1ff6196b5e5003cabb10aa7d61e8af1de0eeea2a7d517a9b2f01e0bb5641",
+      "decision": "exclude",
+      "reason": "The 10% gratuity base is not specified (food-only versus food plus delivery); do not reward one interpretation as uniquely correct.",
+      "reference_answer": "121"
+    },
+    {
+      "id": "gsm8k-train-02543",
+      "question_sha256": "9242ded7d434c869f6335941379eaeb74d2aa6feb87fa3cefddac7a2e9582ed1",
+      "decision": "retain",
+      "reason": "4*5*7/35",
+      "reference_answer": "4"
+    },
+    {
+      "id": "gsm8k-train-06478",
+      "question_sha256": "968875f99a8d21dac1a562a700610204b0ce5e3fb81560e7b0a7f62d592cafc3",
+      "decision": "retain",
+      "reason": "2+4+16",
+      "reference_answer": "22"
+    },
+    {
+      "id": "gsm8k-train-03295",
+      "question_sha256": "57f14ecb96ee395919d801a5ebec43dba5e795cdb794371fa9742489fd72ef3f",
+      "decision": "retain",
+      "reason": "(8+6)-16/2",
+      "reference_answer": "6"
+    },
+    {
+      "id": "gsm8k-train-07439",
+      "question_sha256": "31cc0bc673144e2ff961bba9499f3fc7addd118a15b73c3ccb3e1954a8d53539",
+      "decision": "exclude",
+      "reason": "Question says 'left eaten' while the reference reports uneaten oranges; 18 eaten versus 78 uneaten is unresolved wording.",
+      "reference_answer": "78"
+    },
+    {
+      "id": "gsm8k-train-06200",
+      "question_sha256": "786529796498a86325fd82234fec2c76d9f819463fb96c173bd9bc82673807fa",
+      "decision": "retain",
+      "reason": "2000-2000*3/5-300",
+      "reference_answer": "500"
+    },
+    {
+      "id": "gsm8k-train-07107",
+      "question_sha256": "c7ca286f6fdbd04421c369c061782b818110bb092e6a6c9f18bb8f195dfc564a",
+      "decision": "retain",
+      "reason": "3*(24+18)",
+      "reference_answer": "126"
+    },
+    {
+      "id": "gsm8k-train-03223",
+      "question_sha256": "db7997f1bf480ba460af4af99c171a88e7a059e3de24966a964238032d498c30",
+      "decision": "retain",
+      "reason": "9000*2/3",
+      "reference_answer": "6000"
+    },
+    {
+      "id": "gsm8k-train-07247",
+      "question_sha256": "d433bd4c3dc21ea15f8f1fc91be7c0aff8c04ca9b8a07f1da0f0131678be644b",
+      "decision": "retain",
+      "reason": "2700/(1+0.5+3)*0.5",
+      "reference_answer": "300"
+    },
+    {
+      "id": "gsm8k-train-05497",
+      "question_sha256": "172865a23f57950ca030c4bc831589054192d0b98bd83f123eda8c901eb77174",
+      "decision": "retain",
+      "reason": "84/2*20/60",
+      "reference_answer": "14"
+    },
+    {
+      "id": "gsm8k-train-00753",
+      "question_sha256": "f219217cc53a2070b3df55e51d66193537eaeefbcc22db621445754ce45412ee",
+      "decision": "retain",
+      "reason": "(29+17)*7",
+      "reference_answer": "322"
+    },
+    {
+      "id": "gsm8k-train-07359",
+      "question_sha256": "c9ae7f5bcf04ce5bc23db1e3889ea64d71cee291454193c088541c6a1ca5caaf",
+      "decision": "retain",
+      "reason": "(110-40-30)/2",
+      "reference_answer": "20"
+    },
+    {
+      "id": "gsm8k-train-04025",
+      "question_sha256": "71551f775ec3f0f257548940588f816de9636ab2ee67bcea9cf8187bfd91781f",
+      "decision": "retain",
+      "reason": "72/(3+5), assuming each consumed person is distinct as stated",
+      "reference_answer": "9"
+    },
+    {
+      "id": "gsm8k-train-02307",
+      "question_sha256": "4710ceb77d413f42b04788dfdde5bb8303c75c38d0904437e8c7807c66fd4b55",
+      "decision": "exclude",
+      "reason": "Filling a sandbox requires depth/volume; the stated bag amount and reference use square feet only. Exclude dimensional ambiguity.",
+      "reference_answer": "12"
+    },
+    {
+      "id": "gsm8k-train-06441",
+      "question_sha256": "3653a7d3b36a0236be9a46d144485a16cf98a2e35adede0aa8b31be1de3b545a",
+      "decision": "retain",
+      "reason": "(100-8*9)/2",
+      "reference_answer": "14"
+    }
+  ],
+  "limitations": "Agent arithmetic and wording review of this 32-item GRPO pool only; conventional 52-week year retained; not human adjudication, not an audit of all SFT labels, not a claim of complete absence of ambiguity."
+}

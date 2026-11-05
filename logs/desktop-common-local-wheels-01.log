@@ -1,0 +1,85 @@
+WARN Retry attempt #0. Sleeping 1.0299092s before the next attempt
+WARN Retry attempt #0. Sleeping 1.5206596s before the next attempt
+WARN Retry attempt #0. Sleeping 1.6535433s before the next attempt
+WARN Retry attempt #0. Sleeping 1.3034674s before the next attempt
+WARN Retry attempt #0. Sleeping 1.234377s before the next attempt
+WARN Retry attempt #0. Sleeping 1.1668736s before the next attempt
+WARN Retry attempt #0. Sleeping 1.4771688s before the next attempt
+WARN Retry attempt #0. Sleeping 1.2613282s before the next attempt
+WARN Retry attempt #0. Sleeping 1.3923188s before the next attempt
+WARN Retry attempt #0. Sleeping 1.1683288s before the next attempt
+WARN Retry attempt #0. Sleeping 1.8785983s before the next attempt
+Resolved 65 packages in 9.96s
+Downloading fonttools (2.4MiB)
+Downloading pandas (10.3MiB)
+Downloading pillow (6.9MiB)
+Downloading pygments (1.2MiB)
+Downloading scipy (35.0MiB)
+Downloading transformers (11.4MiB)
+Downloading matplotlib (7.7MiB)
+Downloading scikit-learn (8.3MiB)
+Downloading tokenizers (2.6MiB)
+Downloading pyarrow (27.7MiB)
+Downloading numpy (12.0MiB)
+Downloading matplotlib (7.7MiB)
+Downloading transformers (11.4MiB)
+Downloading numpy (12.0MiB)
+Downloading pygments (1.2MiB)
+Downloading tokenizers (2.6MiB)
+Downloading scipy (35.0MiB)
+WARN Retry attempt #0. Sleeping 1.5232296s before the next attempt
+WARN Retry attempt #0. Sleeping 1.6061059s before the next attempt
+WARN Retry attempt #0. Sleeping 1.516203s before the next attempt
+WARN Retry attempt #0. Sleeping 1.6631079s before the next attempt
+WARN Retry attempt #0. Sleeping 1.2555556s before the next attempt
+WARN Retry attempt #0. Sleeping 1.0845352s before the next attempt
+WARN Retry attempt #0. Sleeping 1.0367543s before the next attempt
+WARN Retry attempt #0. Sleeping 1.7328812s before the next attempt
+WARN Retry attempt #0. Sleeping 1.6150032s before the next attempt
+WARN Retry attempt #0. Sleeping 1.9145785s before the next attempt
+WARN Retry attempt #0. Sleeping 1.4539537s before the next attempt
+WARN Retry attempt #0. Sleeping 1.9012854s before the next attempt
+WARN Retry attempt #0. Sleeping 1.4079615s before the next attempt
+WARN Retry attempt #0. Sleeping 1.0720039s before the next attempt
+WARN Retry attempt #0. Sleeping 1.9835854s before the next attempt
+WARN Retry attempt #0. Sleeping 1.0770806s before the next attempt
+WARN Retry attempt #0. Sleeping 1.2787752s before the next attempt
+WARN Retry attempt #0. Sleeping 1.7730482s before the next attempt
+WARN Retry attempt #0. Sleeping 1.140107s before the next attempt
+WARN Retry attempt #0. Sleeping 1.3777465s before the next attempt
+WARN Retry attempt #0. Sleeping 1.0850536s before the next attempt
+Downloading pygments (1.2MiB)
+Downloading pillow (6.9MiB)
+Downloading pyarrow (27.7MiB)
+Downloading tokenizers (2.6MiB)
+WARN Retry attempt #0. Sleeping 1.924265s before the next attempt
+WARN Retry attempt #0. Sleeping 1.9189703s before the next attempt
+WARN Retry attempt #0. Sleeping 1.854796s before the next attempt
+WARN Retry attempt #0. Sleeping 1.6809601s before the next attempt
+WARN Retry attempt #0. Sleeping 1.8521928s before the next attempt
+WARN Retry attempt #1. Sleeping 1.3061005s before the next attempt
+WARN Retry attempt #1. Sleeping 2.8990911s before the next attempt
+WARN Retry attempt #1. Sleeping 1.0752956s before the next attempt
+WARN Retry attempt #0. Sleeping 1.6536005s before the next attempt
+WARN Retry attempt #1. Sleeping 1.075753s before the next attempt
+WARN Retry attempt #1. Sleeping 3.3578626s before the next attempt
+WARN Retry attempt #1. Sleeping 3.5475601s before the next attempt
+WARN Retry attempt #1. Sleeping 1.724757s before the next attempt
+WARN Retry attempt #1. Sleeping 2.6585376s before the next attempt
+WARN Retry attempt #1. Sleeping 2.9425512s before the next attempt
+WARN Retry attempt #1. Sleeping 2.1527158s before the next attempt
+WARN Retry attempt #0. Sleeping 1.3165637s before the next attempt
+WARN Retry attempt #1. Sleeping 3.400601s before the next attempt
+WARN Retry attempt #0. Sleeping 1.4311979s before the next attempt
+WARN Retry attempt #0. Sleeping 1.2783579s before the next attempt
+Downloading pygments (1.2MiB)
+Downloading scikit-learn (8.3MiB)
+Downloading scipy (35.0MiB)
+Downloading numpy (12.0MiB)
+Downloading pillow (6.9MiB)
+Downloading matplotlib (7.7MiB)
+Downloading pandas (10.3MiB)
+Downloading transformers (11.4MiB)
+Downloading fonttools (2.4MiB)
+Downloading tokenizers (2.6MiB)
+Downloading pyarrow (27.7MiB)

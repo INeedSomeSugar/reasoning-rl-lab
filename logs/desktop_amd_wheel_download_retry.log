@@ -1,0 +1,26 @@
+Found pinned wheel torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Found pinned wheel amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Found pinned wheel amd_torch_device_gfx1201-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl
+Found pinned wheel rocm_sdk_core-10.0.0-py3-none-win_amd64.whl
+Found pinned wheel rocm_sdk_libraries-10.0.0-py3-none-win_amd64.whl
+Found pinned wheel rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl
+torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: part 2/2
+torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: part 1/2
+Verified torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: 113440240 bytes sha256=4ff21da558065d6c28773f9053eadec4897c579e1f34f623db3825755198b164
+amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: part 3/3
+amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: part 2/3
+amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: part 1/3
+Verified amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: 157950130 bytes sha256=34e0a641843f579b6f97bc37cf1897e544d42088b15f4ad8b275ae91511623c3
+amd_torch_device_gfx1201-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: part 1/1
+Verified amd_torch_device_gfx1201-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl: 51122789 bytes sha256=35774bfcb9bdb5dfbef57bd799d0993ab16b9e454b5a140dd1eb24249bf40ee6
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 1/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 4/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 3/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 5/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 2/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 6/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 9/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 7/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 12/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 11/12
+rocm_sdk_core-10.0.0-py3-none-win_amd64.whl: part 10/12

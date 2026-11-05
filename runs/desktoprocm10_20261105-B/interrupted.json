@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-11-05T14:47:27.623028+00:00",
+  "reason": "Native access violation after automatic dGPU+iGPU DataParallel",
+  "exit_code": -1073741819,
+  "completed_training": false,
+  "completed_checkpoint": false,
+  "failure_log": "logs/desktoprocm10_20261105-B.log",
+  "exact_failure_cost_available": false,
+  "system_driver_changed": false
+}

@@ -1,0 +1,16 @@
+{
+  "standalone_loader": {
+    "input_embedding": "torch.float16",
+    "output_head": "torch.float16",
+    "lora_dtypes": [],
+    "norm_dtypes": [
+      "torch.float16"
+    ],
+    "four_bit_compute_dtypes": [],
+    "is_loaded_in_4bit": false,
+    "attention_implementation": "sdpa",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  }
+}

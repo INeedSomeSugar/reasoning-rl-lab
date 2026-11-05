@@ -1,0 +1,48 @@
+# Independent RX 9070 XT family; never pool with laptop NF4 results.
+stage: desktop_rocm10_fp16_smoke
+model: qwen3_17b
+dtype: float16
+quantization: none
+attention_implementation: sdpa
+seed: 13
+data_seed: 20261105
+lora:
+  r: 8
+  alpha: 16
+  target_modules: [q_proj, v_proj]
+generation:
+  max_prompt_length: 512
+  max_new_tokens: 256
+  temperature: 0.8
+  top_p: 0.95
+  top_k: 20
+sft:
+  pool_size: 32
+  steps: 4
+  gradient_accumulation_steps: 1
+  learning_rate: 0.0001
+  max_length: 512
+grpo:
+  pool_size: 8
+  pool_offset: 32
+  require_disjoint_from_sft: true
+  excluded_train_ids: [gsm8k-train-01226]
+  steps: 4
+  gradient_accumulation_steps: 4
+  num_generations: 4
+  learning_rate: 0.000005
+  loss_type: grpo
+  scale_rewards: group
+  beta: 0.0
+  epsilon: 0.2
+  uniform_mix: 0.25
+  prior: 0.5
+  probe_samples: 2
+  refresh_interval: 2
+  validation_interval: 4
+  max_wall_seconds: 1200
+  max_accounted_tokens: 200000
+evaluation:
+  validation_size: 8
+  test_size: null
+  external_size: null

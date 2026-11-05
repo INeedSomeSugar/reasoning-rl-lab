@@ -1,0 +1,92 @@
+{
+  "collected_utc": "2026-11-05T13:50:20.4249890Z",
+  "source_commit": "c011b71b54b66f028cc545904e45c28e8da8f85a",
+  "os": {
+    "Caption": "Microsoft Windows 11 专业版",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "OSArchitecture": "64 位",
+    "TotalVisibleMemorySize": 24235760,
+    "FreePhysicalMemory": 11905272
+  },
+  "cpu": {
+    "Name": "AMD Ryzen 7 9700X 8-Core Processor             ",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "memory_modules": [
+    {
+      "Capacity": 25769803776,
+      "Speed": 4800,
+      "PartNumber": "AX5U6000C2824G-BB300          "
+    }
+  ],
+  "gpus": [
+    {
+      "Name": "GameViewer Virtual Display Adapter",
+      "DriverVersion": "15.6.5.199",
+      "DriverDate": "2026-02-28T08:00:00+08:00",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    },
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.12012",
+      "DriverDate": "2026-10-28T08:00:00+08:00",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    },
+    {
+      "Name": "AMD Radeon(TM) Graphics",
+      "DriverVersion": "32.0.21045.16010",
+      "DriverDate": "2026-10-16T08:00:00+08:00",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    }
+  ],
+  "display_memory_registry": [
+    {
+      "description": "AMD Radeon(TM) Graphics",
+      "memory_bytes": 536870912,
+      "driver_version": "32.0.21045.16010"
+    },
+    {
+      "description": "AMD Radeon RX 9070 XT",
+      "memory_bytes": 17095983104,
+      "driver_version": "32.0.32015.12012"
+    },
+    {
+      "description": "GameViewer Virtual Display Adapter",
+      "memory_bytes": null,
+      "driver_version": "15.6.5.199"
+    }
+  ],
+  "disks": [
+    {
+      "DeviceID": "C:",
+      "FileSystem": "NTFS",
+      "Size": 214750457856,
+      "FreeSpace": 86510632960
+    },
+    {
+      "DeviceID": "D:",
+      "FileSystem": "NTFS",
+      "Size": 785120956416,
+      "FreeSpace": 226771542016
+    }
+  ],
+  "windows_registry": {
+    "DisplayVersion": "26H2",
+    "ProductName": "Windows 10 Pro",
+    "CurrentBuild": "26300",
+    "UBR": 9818
+  },
+  "amd_registry": {
+    "DriverVersion": "32.0.32015.12012",
+    "ReleaseVersion": null,
+    "BuildNumber": null
+  },
+  "wsl_distribution_registry_present": true,
+  "global_python_installed_by_this_task": false,
+  "system_driver_modified_by_this_task": false
+}

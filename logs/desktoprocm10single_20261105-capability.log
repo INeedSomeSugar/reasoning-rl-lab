@@ -1,0 +1,45 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.10s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.29s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.41s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.08s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.27s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.39s/it]
+{
+  "loss": 4.56075382232666,
+  "finite_gradients": true,
+  "nonzero_gradient_elements": 688117,
+  "frozen_parameter_gradients": 0,
+  "example_id": "gsm8k-train-05110",
+  "adapter_delta_l2": 0.8294795795943392,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10single_20261105-capability",
+  "checkpoint_sha256": "23b7003d737069742f4d5076e3e2b8f171311b44862d7edbf4088f815aa21df5",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}
+{
+  "loss": 4.56075382232666,
+  "finite_gradients": true,
+  "nonzero_gradient_elements": 688117,
+  "frozen_parameter_gradients": 0,
+  "example_id": "gsm8k-train-05110",
+  "adapter_delta_l2": 0.8294795795943392,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprocm10single_20261105-capability",
+  "checkpoint_sha256": "23b7003d737069742f4d5076e3e2b8f171311b44862d7edbf4088f815aa21df5",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}

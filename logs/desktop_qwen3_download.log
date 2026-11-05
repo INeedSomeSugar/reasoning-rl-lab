@@ -1,0 +1,29 @@
+Model file ready: LICENSE
+Model file ready: README.md
+Model file ready: config.json
+Model file ready: generation_config.json
+Model file ready: merges.txt
+Traceback (most recent call last):
+  File "D:\User\AI\reasoning-rl-lab\scripts\download_public.py", line 121, in <module>
+    model(sys.argv[2], mirror="--mirror" in sys.argv)
+  File "D:\User\AI\reasoning-rl-lab\scripts\download_public.py", line 108, in model
+    download(url, target, item.get("lfs", {}).get("sha256"), workers=6)
+  File "D:\User\AI\reasoning-rl-lab\scripts\download_public.py", line 77, in download
+    list(executor.map(part, range(count)))
+  File "D:\User\AI\reasoning-rl-lab\.cache\python\cpython-3.12.14-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.cache\python\cpython-3.12.14-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.cache\python\cpython-3.12.14-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.cache\python\cpython-3.12.14-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\User\AI\reasoning-rl-lab\.cache\python\cpython-3.12.14-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\scripts\download_public.py", line 67, in part
+    raise OSError("Download stream ended early")
+OSError: Download stream ended early

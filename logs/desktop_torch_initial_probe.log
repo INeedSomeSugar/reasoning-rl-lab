@@ -1,0 +1,5 @@
+D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\_subclasses\functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at B:/src/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+torch 2.13.0+rocm10.0.0 hip 7.15.26333
+gpu_available True
+[(0, 'AMD Radeon RX 9070 XT'), (1, 'AMD Radeon(TM) Graphics')]

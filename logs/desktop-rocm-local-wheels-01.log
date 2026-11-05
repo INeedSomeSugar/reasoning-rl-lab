@@ -1,0 +1,30 @@
+WARN Retry attempt #0. Sleeping 1.4412298s before the next attempt
+WARN Retry attempt #0. Sleeping 1.1093969s before the next attempt
+WARN Retry attempt #0. Sleeping 1.8634078s before the next attempt
+WARN Retry attempt #0. Sleeping 1.8780939s before the next attempt
+WARN Retry attempt #0. Sleeping 1.3100177s before the next attempt
+WARN Retry attempt #0. Sleeping 1.9430572s before the next attempt
+WARN Retry attempt #0. Sleeping 1.9854481s before the next attempt
+WARN Retry attempt #0. Sleeping 1.2776857s before the next attempt
+WARN Retry attempt #0. Sleeping 1.271859s before the next attempt
+WARN Retry attempt #0. Sleeping 1.1604119s before the next attempt
+Resolved 17 packages in 9.12s
+Prepared 6 packages in 7.16s
+Installed 17 packages in 3.32s
+ + amd-torch-device-gfx12-0==2.13.0+rocm10.0.0 (from file:///D:/User/AI/reasoning-rl-lab/.cache/wheels/amd_torch_device_gfx12_0-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl)
+ + amd-torch-device-gfx1201==2.13.0+rocm10.0.0 (from file:///D:/User/AI/reasoning-rl-lab/.cache/wheels/amd_torch_device_gfx1201-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl)
+ + filelock==4.0.8
+ + fsspec==2026.9.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.7
+ + rocm==10.0.0
+ + rocm-bootstrap==0.3.0
+ + rocm-sdk-core==10.0.0 (from file:///D:/User/AI/reasoning-rl-lab/.cache/wheels/rocm_sdk_core-10.0.0-py3-none-win_amd64.whl)
+ + rocm-sdk-device-gfx1201==10.0.0 (from file:///D:/User/AI/reasoning-rl-lab/.cache/wheels/rocm_sdk_device_gfx1201-10.0.0-py3-none-win_amd64.whl)
+ + rocm-sdk-libraries==10.0.0 (from file:///D:/User/AI/reasoning-rl-lab/.cache/wheels/rocm_sdk_libraries-10.0.0-py3-none-win_amd64.whl)
+ + setuptools==81.0.0
+ + sympy==1.14.0
+ + torch==2.13.0+rocm10.0.0 (from file:///D:/User/AI/reasoning-rl-lab/.cache/wheels/torch-2.13.0+rocm10.0.0-cp312-cp312-win_amd64.whl)
+ + typing-extensions==4.16.0

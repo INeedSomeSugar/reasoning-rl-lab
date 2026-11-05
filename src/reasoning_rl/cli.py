@@ -14,8 +14,12 @@ def read_config(path, args):
         config["seed"] = args.seed
     if getattr(args, "hardware", None) == "rocm":
         # No CUDA-specific bitsandbytes, flash-attn or vLLM requirement on AMD.
+        precision = config.get("dtype", "float16") if config.get("quantization") == "none" else "float16"
         config["quantization"] = "none"
-        config["dtype"] = "float16"
+        # Preserve an explicitly recorded non-quantized fallback after FP16 diagnostics.
+        config["dtype"] = precision
+        if config["dtype"] not in {"float16", "bfloat16", "float32"}:
+            raise ValueError("ROCm needs an explicit supported floating-point precision")
         config["hardware_profile"] = "rocm_unverified"
     return config
 
@@ -25,7 +29,8 @@ def main():
     parser = argparse.ArgumentParser(description="ReasoningRL Lab")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("prepare-data")
-    sub.add_parser("hardware")
+    p = sub.add_parser("hardware")
+    p.add_argument("--output", default=str(ROOT / "environment/hardware.json"))
     p = sub.add_parser("download-model")
     p.add_argument("--model", choices=["qwen3_17b", "qwen3_06b"], default="qwen3_17b")
     for command in ("check-model", "evaluate", "sft", "grpo", "freeze"):
@@ -58,7 +63,10 @@ def main():
     elif args.command == "hardware":
         from .runtime import hardware_info
         info = hardware_info()
-        json_write(ROOT / "environment/hardware.json", info)
+        output = Path(args.output).resolve()
+        if not output.is_relative_to(ROOT.resolve()):
+            raise ValueError("Hardware evidence must remain inside this project")
+        json_write(output, info)
         print(json.dumps(info, indent=2))
     elif args.command == "download-model":
         from .modeling import download_model

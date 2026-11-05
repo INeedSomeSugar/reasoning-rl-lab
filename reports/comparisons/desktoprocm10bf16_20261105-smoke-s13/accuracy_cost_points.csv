@@ -1,0 +1,4 @@
+﻿run,strategy,seed,optimizer_step,evaluation_context,cumulative_wall_seconds,accuracy,n,wilson95_low,wilson95_high
+desktoprocm10bf16_20261105-C-s13,uniform,13,4,in_training_diagnostic,36.44181760000356,0.875,8,0.5291118177871464,0.9775825085499433
+desktoprocm10bf16_20261105-D-s13,dynamic,13,4,in_training_diagnostic,67.46354310000243,0.875,8,0.5291118177871464,0.9775825085499433
+desktoprocm10bf16_20261105-E-s13,static,13,4,in_training_diagnostic,51.704433200000494,0.875,8,0.5291118177871464,0.9775825085499433

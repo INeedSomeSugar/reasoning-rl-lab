@@ -1,0 +1,36 @@
+{
+  "strategy": "dynamic",
+  "seed": 13,
+  "uniform_mix": 0.25,
+  "prior": 0.5,
+  "updates": 1,
+  "p_success": {
+    "gsm8k-train-00172": 0.8333333333333334,
+    "gsm8k-train-07010": 0.8333333333333334,
+    "gsm8k-train-01705": 0.5,
+    "gsm8k-train-00500": 0.8333333333333334,
+    "gsm8k-train-03274": 0.5,
+    "gsm8k-train-00161": 0.16666666666666666,
+    "gsm8k-train-03398": 0.8333333333333334
+  },
+  "selection_counts": {
+    "gsm8k-train-00172": 0,
+    "gsm8k-train-07010": 0,
+    "gsm8k-train-01705": 0,
+    "gsm8k-train-00500": 0,
+    "gsm8k-train-03274": 0,
+    "gsm8k-train-00161": 0,
+    "gsm8k-train-03398": 0
+  },
+  "weights": {
+    "gsm8k-train-00172": 0.1229235880398671,
+    "gsm8k-train-07010": 0.1229235880398671,
+    "gsm8k-train-01705": 0.1926910299003322,
+    "gsm8k-train-00500": 0.1229235880398671,
+    "gsm8k-train-03274": 0.1926910299003322,
+    "gsm8k-train-00161": 0.12292358803986711,
+    "gsm8k-train-03398": 0.1229235880398671
+  },
+  "entropy": 1.922953443943008,
+  "effective_pool_size": 6.675090252707583
+}

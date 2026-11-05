@@ -1,0 +1,75 @@
+Model file ready: LICENSE
+Model file ready: README.md
+Model file ready: config.json
+Model file ready: generation_config.json
+Model file ready: merges.txt
+model-00001-of-00002.safetensors: part 4/52
+model-00001-of-00002.safetensors: part 6/52
+model-00001-of-00002.safetensors: part 1/52
+model-00001-of-00002.safetensors: part 5/52
+model-00001-of-00002.safetensors: part 2/52
+model-00001-of-00002.safetensors: part 3/52
+model-00001-of-00002.safetensors: part 9/52
+model-00001-of-00002.safetensors: part 10/52
+model-00001-of-00002.safetensors: part 7/52
+model-00001-of-00002.safetensors: part 11/52
+model-00001-of-00002.safetensors: part 12/52
+model-00001-of-00002.safetensors: part 8/52
+model-00001-of-00002.safetensors: part 14/52
+model-00001-of-00002.safetensors: part 13/52
+model-00001-of-00002.safetensors: part 16/52
+model-00001-of-00002.safetensors: part 15/52
+model-00001-of-00002.safetensors: part 20/52
+model-00001-of-00002.safetensors: part 17/52
+model-00001-of-00002.safetensors: part 19/52
+model-00001-of-00002.safetensors: part 18/52
+model-00001-of-00002.safetensors: part 23/52
+model-00001-of-00002.safetensors: part 26/52
+model-00001-of-00002.safetensors: part 25/52
+model-00001-of-00002.safetensors: part 27/52
+model-00001-of-00002.safetensors: part 28/52
+model-00001-of-00002.safetensors: part 24/52
+model-00001-of-00002.safetensors: part 21/52
+model-00001-of-00002.safetensors: part 29/52
+model-00001-of-00002.safetensors: part 33/52
+model-00001-of-00002.safetensors: part 32/52
+model-00001-of-00002.safetensors: part 22/52
+model-00001-of-00002.safetensors: part 34/52
+model-00001-of-00002.safetensors: part 37/52
+model-00001-of-00002.safetensors: part 30/52
+model-00001-of-00002.safetensors: part 31/52
+model-00001-of-00002.safetensors: part 35/52
+model-00001-of-00002.safetensors: part 38/52
+model-00001-of-00002.safetensors: part 39/52
+model-00001-of-00002.safetensors: part 36/52
+model-00001-of-00002.safetensors: part 42/52
+model-00001-of-00002.safetensors: part 40/52
+model-00001-of-00002.safetensors: part 41/52
+model-00001-of-00002.safetensors: part 43/52
+model-00001-of-00002.safetensors: part 44/52
+model-00001-of-00002.safetensors: part 46/52
+model-00001-of-00002.safetensors: part 48/52
+model-00001-of-00002.safetensors: part 45/52
+model-00001-of-00002.safetensors: part 47/52
+model-00001-of-00002.safetensors: part 49/52
+model-00001-of-00002.safetensors: part 50/52
+model-00001-of-00002.safetensors: part 51/52
+model-00001-of-00002.safetensors: part 52/52
+Verified model-00001-of-00002.safetensors: 3441185608 bytes sha256=169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5
+Model file ready: model-00001-of-00002.safetensors
+model-00002-of-00002.safetensors: part 1/10
+model-00002-of-00002.safetensors: part 3/10
+model-00002-of-00002.safetensors: part 7/10
+model-00002-of-00002.safetensors: part 2/10
+model-00002-of-00002.safetensors: part 6/10
+model-00002-of-00002.safetensors: part 4/10
+model-00002-of-00002.safetensors: part 8/10
+model-00002-of-00002.safetensors: part 10/10
+model-00002-of-00002.safetensors: part 9/10
+model-00002-of-00002.safetensors: part 5/10
+Verified model-00002-of-00002.safetensors: 622329984 bytes sha256=912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9
+Model file ready: model-00002-of-00002.safetensors
+Model file ready: model.safetensors.index.json
+Model file ready: tokenizer.json
+Model file ready: tokenizer_config.json
+Model file ready: vocab.json

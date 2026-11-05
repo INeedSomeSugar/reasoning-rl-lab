@@ -1,0 +1,25 @@
+{
+  "n": 8,
+  "correct": 7,
+  "accuracy": 0.875,
+  "accuracy_wilson95": [
+    0.5291118177871464,
+    0.9775825085499433
+  ],
+  "format_error_rate": 0.25,
+  "parse_error_rate": 0.125,
+  "truncation_rate": 0.0,
+  "mean_generated_tokens": 117.625,
+  "p50_generated_tokens": 129,
+  "generated_tokens": 941,
+  "prompt_tokens": 739,
+  "automatic_error_tags": {
+    "answer_extraction_failure": 1,
+    "format_error": 2
+  },
+  "phase": "validation",
+  "optimizer_step": 4,
+  "decoding": "greedy",
+  "thinking": false,
+  "scorer_version": "numeric_final_v2"
+}

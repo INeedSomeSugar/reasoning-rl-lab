@@ -31,6 +31,11 @@ def main():
     reference_ids = [r["id"] for r in reference_predictions]
     reference_config = read(ROOT / "runs" / args.sft_evaluation / "config.json")
     reference_precision = read(ROOT / "runs" / args.sft_evaluation / "model_precision.json")["standalone_loader"]
+    reference_environment = read(ROOT / "runs" / args.sft_evaluation / "environment.json")
+    def hardware_key(environment):
+        return (environment["gpus"][0]["name"] if environment["gpus"] else "CPU",
+                environment["torch_cuda"], environment["torch_hip"], environment["versions"]["torch"])
+    reference_hardware = hardware_key(reference_environment)
 
     def prompt_signature(path):
         tree = ast.parse(path.read_text(encoding="utf-8"))
@@ -39,6 +44,8 @@ def main():
                 or isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id in {"PROMPT", "PROMPT_VERSION"} for t in node.targets)]
 
     def verify_evaluation(directory, metric, baseline=False):
+        if hardware_key(read(directory / "environment.json")) != reference_hardware:
+            raise ValueError("Hardware/build differs; keep separate reports")
         config = read(directory / "config.json")
         for key in ("model", "dtype", "quantization", "data_seed", "generation", "evaluation"):
             if config[key] != reference_config[key]:
@@ -76,6 +83,8 @@ def main():
         result = read(directory / "training_result.json")
         metric = read(evaluation / "validation/metrics.json")
         contract = read(directory / "comparison_contract.json")
+        if hardware_key(read(directory / "environment.json")) != reference_hardware:
+            raise ValueError("Training hardware/build differs")
         eval_protocol = read(evaluation / "evaluation_protocol.json")
         if eval_protocol["adapter_sha256"] != result["checkpoint_sha256"]:
             raise ValueError("Reload evaluated a different checkpoint")
@@ -87,6 +96,11 @@ def main():
         total = next(c for c in costs if c["phase"] == "grpo_total")
         load_seconds = sum(c["wall_seconds"] for c in costs if c["phase"] == "load_model")
         probe_seconds = sum(c["wall_seconds"] for c in costs if c["phase"] == "difficulty_probe")
+        probes = [c for c in costs if c["phase"] == "difficulty_probe"]
+        incomplete_probes = [c for c in probes if not c.get("probe_complete", True)]
+        gradients = [c for c in costs if c["phase"] == "gradient_diagnostic"]
+        if any(not g["finite_gradients"] or g["frozen_parameter_gradients"] for g in gradients):
+            raise ValueError("Invalid gradient evidence: " + directory.name)
         validation_seconds = sum(c["wall_seconds"] for c in costs if c["phase"] == "validation")
         last_progress = [c for c in costs if c["phase"] == "budget_progress"][-1]
         reload_costs = jsonl_read(evaluation / "costs.jsonl")
@@ -103,6 +117,11 @@ def main():
                      "actual_policy_generated_tokens_per_grpo_second": result["generated_tokens"]/total["wall_seconds"],
                      "declared_grpo_wall_cap": cap, "cap_minus_actual_seconds": cap - total["wall_seconds"],
                      "probe_wall_seconds": probe_seconds, "reload_eval_wall_seconds": reload_seconds,
+                     "complete_post_initial_probes": sum(c.get("probe_complete", True) and c["optimizer_step"] > 0 for c in probes),
+                     "incomplete_probe_wall_seconds": sum(c["wall_seconds"] for c in incomplete_probes),
+                     "incomplete_probe_items": sum(c["probe_items"] for c in incomplete_probes),
+                     "gradient_checks": len(gradients),
+                     "nonzero_gradient_steps": sum(g["nonzero_gradient_elements"] > 0 for g in gradients),
                      "in_training_validation_seconds": validation_seconds,
                      "elapsed_before_final_validation_seconds": last_progress["cumulative_training_wall_seconds"],
                      "training_model_load_seconds": load_seconds,
@@ -163,6 +182,7 @@ def main():
             axes[0].annotate(f"{strategy[0].upper()}{row['seed']}", (row["grpo_wall_seconds"] / 60, row["accuracy"] * 100),
                              xytext=(4, 6), textcoords="offset points", fontsize=8)
         axes[0].scatter([], [], color=color, marker=marker, label=strategy)
+    axes[0].axhline(100 * baselines["A"]["accuracy"], color="#64748b", linestyle=":", label="public model A")
     axes[0].axhline(100 * baselines["B"]["accuracy"], color="#475569", linestyle="--", label="shared SFT B")
     axes[0].set(title="Common standalone reload endpoints", xlabel="Actual GRPO time incl. probes/validation (min)",
                 ylabel="Development accuracy (%)", ylim=(0, 100))
@@ -173,8 +193,9 @@ def main():
                 label="difficulty probes", color="#c07810", hatch="//")
     axes[1].set_xticks(positions, [f"{r['strategy'][0].upper()}{r['seed']}" for r in rows])
     axes[1].set(title="Observed budget allocation", ylabel="Wall time (seconds)")
-    axes[1].legend(fontsize=8)
-    fig.suptitle(f"RTX 3060 Laptop | {len(reference_ids)} fixed development questions | no final-test claim", fontsize=11)
+    axes[1].set_ylim(0, 1.1 * max(r["grpo_wall_seconds"] for r in rows))
+    axes[1].legend(fontsize=8, loc="upper center", bbox_to_anchor=(0.5, -0.08))
+    fig.suptitle(f"{reference_hardware[0]} | {reference_config['dtype']} / {reference_config['quantization']} | {len(reference_ids)} development questions | no final-test claim", fontsize=10)
     fig.savefig(output / "standalone_comparison.png", dpi=160)
     fig.savefig(output / "standalone_comparison.svg")
     plt.close(fig)
@@ -182,6 +203,8 @@ def main():
              "## A/B", "", "|组|正确|平均输出token|截断率|格式错误率|", "|---|---:|---:|---:|---:|"]
     for arm, m in baselines.items():
         lines.append(f"|{arm}|{m['correct']}/{m['n']}|{m['mean_generated_tokens']:.2f}|{m['truncation_rate']:.1%}|{m['format_error_rate']:.1%}|")
+    delta_ba = 100 * (baselines["B"]["accuracy"] - baselines["A"]["accuracy"])
+    lines += ["", f"B 相对 A 的开发正确率差为 {delta_ba:+.2f} 个百分点；这不是独立测试结果。训练 loss 不能代替该终点。"]
     lines += ["", "## 逐种子终点与实际成本", "", "|策略/seed|正确|步数|GRPO秒数|探测秒数|另计重载评测秒数|奖励均值|零方差率|LoRA delta|", "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for r in rows:
         lines.append(f"|{r['strategy']}/{r['seed']}|{r['correct']}/{r['n']}|{r['steps']}|{r['grpo_wall_seconds']:.1f}|{r['probe_wall_seconds']:.1f}|{r['reload_eval_wall_seconds']:.1f}|{r['mean_reward']:.4f}|{r['zero_variance_fraction']:.1%}|{r['adapter_delta_l2']:.6f}|")
@@ -189,6 +212,15 @@ def main():
     for a in aggregates:
         std = f"{100*a['accuracy_sample_std']:.2f}个百分点" if a["accuracy_sample_std"] is not None else "单次运行，未估计种子标准差"
         lines.append(f"- {a['strategy']}：实际{a['repeats']}次，seed={a['seeds']}，正确率均值{a['accuracy_mean']:.2%}；{std}。")
+    if paired:
+        paired_mean = statistics.mean(p["dynamic_minus_uniform_pp"] for p in paired)
+        lines.append(f"- D−C 的 {len(paired)} 个配对种子差值均值为 {paired_mean:+.2f} 个百分点；仅作该开发集上的描述，不据此宣称泛化收益。")
+    lines += ["", "## 动态机制与未完成探测", ""]
+    for r in rows:
+        if r["strategy"] != "dynamic":
+            continue
+        lines.append(f"- seed {r['seed']}：初始之后完成 {r['complete_post_initial_probes']} 次全池探测，实际采样权重变化 {r['weight_change_events']} 次；未完成探测 {r['incomplete_probe_items']} 题、{r['incomplete_probe_wall_seconds']:.1f} 秒，已计入耗时但未用于更新采样。梯度检查 {r['gradient_checks']} 次，其中非零 {r['nonzero_gradient_steps']} 次。")
+    lines += ["", "K=2 的经验成功率含采样噪声；权重变化证明代码路径真实运行，不能单独证明模型能力改善。"]
     lines += ["", "共同时间上限不能代替实际计算成本相等；验证预留、自然停止边界、未完成探测和模型输出长度均会影响端点。探测和训练内验证已包含在GRPO总时间，不重复相加。训练模型加载、独立重载评测的加载与生成时间另列；所列阶段之和不包含未计量的进程启动、Trainer准备和检查点序列化，共同SFT成本也单列。", "",
               "种子间标准差不代表题目泛化置信区间。同一批验证题已用于开发；正式结论需要冻结方案后独立测试。当前没有完成正式测试，不能把开发差异写成泛化提升。", "",
               "所有原始预测、选择、探测、梯度和源码快照均保留；更多输出长度/提取/格式/截断、token与显存字段见standalone_endpoints.csv。静态消融只按实际重复数报告。", ""]

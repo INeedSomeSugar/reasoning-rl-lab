@@ -1,0 +1,13 @@
+Model file ready: LICENSE
+Model file ready: README.md
+Model file ready: config.json
+Model file ready: generation_config.json
+Model file ready: merges.txt
+Already downloaded: model-00001-of-00002.safetensors
+Model file ready: model-00001-of-00002.safetensors
+Already downloaded: model-00002-of-00002.safetensors
+Model file ready: model-00002-of-00002.safetensors
+Model file ready: model.safetensors.index.json
+Model file ready: tokenizer.json
+Model file ready: tokenizer_config.json
+Model file ready: vocab.json

@@ -1,0 +1,69 @@
+reasoning-rl-lab-desktop-transfer-20261105.zip: 6196164/6196164 bytes
+Verified reasoning-rl-lab-desktop-transfer-20261105.zip 461f151bd25230f0743171fa58538d0191ba89dc3368e0fb800f5f5c38a4ccf4
+reasoning-rl-lab-laptop-lora-20261105.zip: 6438199/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 8535351/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 10632503/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 12729655/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 14826807/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 16923959/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 19021111/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 21118263/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 23215415/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 25312567/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 27409719/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 29506871/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 31604023/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 33701175/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 35798327/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 37895479/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 39992631/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 42089783/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 44186935/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 46284087/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 48381239/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 50478391/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 52575543/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 54672695/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 56769847/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 58866999/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 60964151/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 63061303/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 65158455/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 67255607/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 69352759/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 71449911/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 73547063/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 75644215/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 77741367/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 79838519/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 81935671/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 84032823/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 86129975/87383748 bytes
+reasoning-rl-lab-laptop-lora-20261105.zip: 87383748/87383748 bytes
+Verified reasoning-rl-lab-laptop-lora-20261105.zip cfa64cb037e6e8b930ebc855be5d853b45dc4e47615feabd4ba2882a575a90c5
+Reusing verified SHA256SUMS.txt
+{
+  "status": "pass",
+  "assets": [
+    {
+      "name": "reasoning-rl-lab-desktop-transfer-20261105.zip",
+      "bytes": 6196164,
+      "sha256": "461f151bd25230f0743171fa58538d0191ba89dc3368e0fb800f5f5c38a4ccf4"
+    },
+    {
+      "name": "reasoning-rl-lab-laptop-lora-20261105.zip",
+      "bytes": 87383748,
+      "sha256": "cfa64cb037e6e8b930ebc855be5d853b45dc4e47615feabd4ba2882a575a90c5"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 221,
+      "sha256": "8f8281d1a50d8e1908b95e0f7831904eb3708c339ef116144086529fbc385587"
+    }
+  ],
+  "files_restored_and_verified": 48,
+  "adapters": 16,
+  "historical_source_extracted": false,
+  "optimizer_resume_available": false,
+  "scope": "Laptop artifact integrity; no AMD execution claim"
+}

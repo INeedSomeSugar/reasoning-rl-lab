@@ -1,0 +1,14 @@
+{
+  "qwen3_17b": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "training_stage": "pretraining and post-training; NOT Base",
+    "license": "Apache-2.0"
+  },
+  "qwen3_06b": {
+    "repo": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "training_stage": "pretraining and post-training; NOT Base",
+    "license": "Apache-2.0"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "scope": "Fixed 32 development questions, after protocol design; no holdout access",
+  "reviewer": "Codex agent",
+  "human_reviewed": false,
+  "baseline_correct": 28,
+  "sft_correct": 16,
+  "paired_counts": {
+    "A_True_B_True": 14,
+    "A_True_B_False": 14,
+    "A_False_B_False": 2,
+    "A_False_B_True": 2
+  },
+  "sft_truncated_ids": [
+    "gsm8k-train-00848",
+    "gsm8k-train-05654",
+    "gsm8k-train-05147",
+    "gsm8k-train-06195",
+    "gsm8k-train-04647",
+    "gsm8k-train-01534",
+    "gsm8k-train-03587",
+    "gsm8k-train-06355",
+    "gsm8k-train-04953"
+  ],
+  "sft_parse_error_ids": [
+    "gsm8k-train-00848",
+    "gsm8k-train-05654",
+    "gsm8k-train-00065",
+    "gsm8k-train-05147",
+    "gsm8k-train-06195",
+    "gsm8k-train-04647",
+    "gsm8k-train-01534",
+    "gsm8k-train-03587",
+    "gsm8k-train-06355",
+    "gsm8k-train-04953"
+  ],
+  "sft_wrong_but_parseable_ids": [
+    "gsm8k-train-00560",
+    "gsm8k-train-01567",
+    "gsm8k-train-04876",
+    "gsm8k-train-03931",
+    "gsm8k-train-04580",
+    "gsm8k-train-04895"
+  ],
+  "observed_repetition_examples": [
+    {
+      "id": "gsm8k-train-00848",
+      "observation": "Repeated '20 cows are on the farm' to the 512-token cap"
+    },
+    {
+      "id": "gsm8k-train-05654",
+      "observation": "Repeated 'So, the answer is 315' to the cap; no unambiguous final numeric answer under frozen scorer"
+    },
+    {
+      "id": "gsm8k-train-05147",
+      "observation": "Repeated the question about waitress wage and tips to the cap"
+    }
+  ],
+  "conclusion": "SFT loss reduction did not improve these development outcomes. Repetition/truncation and parseable wrong answers both contribute; this is not just strict #### format compliance.",
+  "unconfirmed_hypotheses": [
+    "Overfitting or optimization strength on the small SFT set",
+    "Interaction between completion fine-tuning and generation/EOS behavior"
+  ],
+  "causal_root_cause_confirmed": false,
+  "configuration_or_checkpoint_changed_from_review": false,
+  "next_decision": "Finish the frozen paired pilot and retain every endpoint; investigate any SFT repair in a new development family before final holdout authorization."
+}

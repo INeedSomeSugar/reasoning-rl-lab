@@ -1,0 +1,28 @@
+{
+  "n": 32,
+  "correct": 17,
+  "accuracy": 0.53125,
+  "accuracy_wilson95": [
+    0.3644951711897464,
+    0.6913061289193116
+  ],
+  "format_error_rate": 0.4375,
+  "parse_error_rate": 0.3125,
+  "truncation_rate": 0.3125,
+  "mean_generated_tokens": 230.53125,
+  "p50_generated_tokens": 116,
+  "generated_tokens": 7377,
+  "prompt_tokens": 3207,
+  "automatic_error_tags": {
+    "wrong_numeric_answer_requires_review": 5,
+    "truncated": 10,
+    "answer_extraction_failure": 10,
+    "format_error": 14,
+    "repetition_suspected": 10
+  },
+  "phase": "validation",
+  "optimizer_step": 32,
+  "decoding": "greedy",
+  "thinking": false,
+  "scorer_version": "numeric_final_v2"
+}

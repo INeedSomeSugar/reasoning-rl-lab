@@ -1,0 +1,108 @@
+aiohappyeyeballs-2.7.1-py3-none-any.whl: part 1/1
+Verified aiohappyeyeballs-2.7.1-py3-none-any.whl: 15038 bytes sha256=9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472
+aiosignal-1.4.0-py3-none-any.whl: part 1/1
+Verified aiosignal-1.4.0-py3-none-any.whl: 7490 bytes sha256=053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e
+aiohttp-3.14.5-cp312-cp312-win_amd64.whl: part 1/1
+Verified aiohttp-3.14.5-cp312-cp312-win_amd64.whl: 506141 bytes sha256=2cc38a4f2b516bef1714e690df87a0e043faf1a7693c82d860091684453d5111
+attrs-26.1.0-py3-none-any.whl: part 1/1
+Verified attrs-26.1.0-py3-none-any.whl: 67548 bytes sha256=c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309
+accelerate-1.10.1-py3-none-any.whl: part 1/1
+certifi-2026.10.23-py3-none-any.whl: part 1/1
+Verified accelerate-1.10.1-py3-none-any.whl: 374909 bytes sha256=3621cff60b9a27ce798857ece05e2b9f56fcc71631cfb31ccf71f0359c311f11
+Verified certifi-2026.10.23-py3-none-any.whl: 135082 bytes sha256=e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1
+charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl: part 1/1
+Verified charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl: 207486 bytes sha256=780fbe7cab297b81dad9fb8dc5eb003c0468ffb0d9e5f65068c53a34661a96bc
+cloudpickle-3.1.2-py3-none-any.whl: part 1/1
+Verified cloudpickle-3.1.2-py3-none-any.whl: 22228 bytes sha256=9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a
+colorama-0.4.6-py2.py3-none-any.whl: part 1/1
+Verified colorama-0.4.6-py2.py3-none-any.whl: 25335 bytes sha256=4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
+cycler-0.12.1-py3-none-any.whl: part 1/1
+Verified cycler-0.12.1-py3-none-any.whl: 8321 bytes sha256=85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30
+contourpy-1.4.0-cp312-cp312-win_amd64.whl: part 1/1
+Verified contourpy-1.4.0-cp312-cp312-win_amd64.whl: 234083 bytes sha256=6e697d94e69f499ff6bebb899cae97a58d5d14f0e1fe9568b43a0248d2f9af8c
+frozenlist-1.8.0-cp312-cp312-win_amd64.whl: part 1/1
+Verified frozenlist-1.8.0-cp312-cp312-win_amd64.whl: 44591 bytes sha256=34187385b08f866104f0c0617404c8eb08165ab1272e884abc89c112e9c00746
+dill-0.4.0-py3-none-any.whl: part 1/1
+Verified dill-0.4.0-py3-none-any.whl: 119668 bytes sha256=44f54bf6412c2c8464c14e8243eb163690a9800dbe2c367330883b19c7561049
+datasets-4.1.1-py3-none-any.whl: part 1/1
+Verified datasets-4.1.1-py3-none-any.whl: 503623 bytes sha256=62e4f6899a36be9ec74a7e759a6951253cc85b3fcfa0a759b0efa8353b149dac
+fsspec-2025.9.0-py3-none-any.whl: part 1/1
+Verified fsspec-2025.9.0-py3-none-any.whl: 199289 bytes sha256=530dc2a2af60a414a832059574df4a6e10cce927f6f4a78209390fe38955cfb7
+fonttools-4.68.0-cp312-cp312-win_amd64.whl: part 1/1
+Verified fonttools-4.68.0-cp312-cp312-win_amd64.whl: 2533508 bytes sha256=fedc183bdbc3fdbfbdca26e0e04566d089cbb404712509a4e824608e9304cc77
+idna-3.20-py3-none-any.whl: part 1/1
+Verified idna-3.20-py3-none-any.whl: 69583 bytes sha256=ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c
+iniconfig-2.3.1-py3-none-any.whl: part 1/1
+Verified iniconfig-2.3.1-py3-none-any.whl: 7552 bytes sha256=9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7
+joblib-1.6.0-py3-none-any.whl: part 1/1
+Verified joblib-1.6.0-py3-none-any.whl: 306115 bytes sha256=3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba
+kiwisolver-1.5.1-cp312-cp312-win_amd64.whl: part 1/1
+Verified kiwisolver-1.5.1-cp312-cp312-win_amd64.whl: 70748 bytes sha256=06a6917674de9e0fe3f66f5430787f59a9f2ddb64af9b714eaec547e29ef5c19
+multidict-7.2.1-cp312-cp312-win_amd64.whl: part 1/1
+Verified multidict-7.2.1-cp312-cp312-win_amd64.whl: 95372 bytes sha256=781ca5dfc2f1d58e47f52216a0c1c7e1ba91ce8aa235459e20de2d402af77fb3
+multiprocess-0.70.16-py312-none-any.whl: part 1/1
+Verified multiprocess-0.70.16-py312-none-any.whl: 146741 bytes sha256=fc0544c531920dde3b00c29863377f87e1632601092ea2daca74e4beb40faa2e
+huggingface_hub-0.36.2-py3-none-any.whl: part 1/1
+Verified huggingface_hub-0.36.2-py3-none-any.whl: 566395 bytes sha256=48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270
+packaging-26.3-py3-none-any.whl: part 1/1
+Verified packaging-26.3-py3-none-any.whl: 129956 bytes sha256=d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
+peft-0.17.1-py3-none-any.whl: part 1/1
+Verified peft-0.17.1-py3-none-any.whl: 504896 bytes sha256=3d129d64def3d74779c32a080d2567e5f7b674e77d546e3585138216d903f99e
+pandas-3.1.1-cp312-cp312-win_amd64.whl: part 1/1 retry 1: IncompleteRead
+matplotlib-3.10.6-cp312-cp312-win_amd64.whl: part 1/1
+Verified matplotlib-3.10.6-cp312-cp312-win_amd64.whl: 8122784 bytes sha256=590f5925c2d650b5c9d813c5b3b5fc53f2929c3f8ef463e4ecfa7e052044fb2b
+pluggy-1.7.0-py3-none-any.whl: part 1/1
+Verified pluggy-1.7.0-py3-none-any.whl: 27082 bytes sha256=7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec
+propcache-0.5.4-cp312-cp312-win_amd64.whl: part 1/1
+Verified propcache-0.5.4-cp312-cp312-win_amd64.whl: 46190 bytes sha256=98914de2c4d7f0f9f4a8c6ea4bf05841f4175796941e3ef7d47eb718f22311fb
+pillow-13.0.0-cp312-cp312-win_amd64.whl: part 1/1
+psutil-7.1.0-cp37-abi3-win_amd64.whl: part 1/1
+Verified pillow-13.0.0-cp312-cp312-win_amd64.whl: 7272166 bytes sha256=ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b
+Verified psutil-7.1.0-cp37-abi3-win_amd64.whl: 247965 bytes sha256=57f5e987c36d3146c0dd2528cd42151cf96cd359b9d67cfff836995cc5df9a3d
+pygments-2.21.0-py3-none-any.whl: part 1/1
+Verified pygments-2.21.0-py3-none-any.whl: 1250147 bytes sha256=2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9
+pyparsing-3.3.3-py3-none-any.whl: part 1/1
+Verified pyparsing-3.3.3-py3-none-any.whl: 126420 bytes sha256=ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4
+pytest-8.4.2-py3-none-any.whl: part 1/1
+Verified pytest-8.4.2-py3-none-any.whl: 365750 bytes sha256=872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79
+pandas-3.1.1-cp312-cp312-win_amd64.whl: part 1/1
+Verified pandas-3.1.1-cp312-cp312-win_amd64.whl: 10751076 bytes sha256=eef35cb3f07dbc8e10e298b8a55ee4aa04d6511f27d5277f13c3df45d3bbef5c
+pyarrow-26.0.1-cp312-cp312-win_amd64.whl: part 1/1 retry 1: IncompleteRead
+python_dateutil-4.0.0-py3-none-any.whl: part 1/1
+Verified python_dateutil-4.0.0-py3-none-any.whl: 92853 bytes sha256=a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c
+PyYAML-6.0.2-cp312-cp312-win_amd64.whl: part 1/1
+Verified PyYAML-6.0.2-cp312-cp312-win_amd64.whl: 156338 bytes sha256=7e7401d0de89a9a855c839bc697c079a4af81cf878373abd7dc625847d25cbd8
+regex-2026.9.29-cp312-cp312-win_amd64.whl: part 1/1
+Verified regex-2026.9.29-cp312-cp312-win_amd64.whl: 280334 bytes sha256=fdd88ed5e20b1bcdd234421e454962c971aa44b653bdb7f1ea9ef683e90fb649
+requests-2.34.2-py3-none-any.whl: part 1/1
+Verified requests-2.34.2-py3-none-any.whl: 73075 bytes sha256=2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0
+safetensors-0.6.2-cp38-abi3-win_amd64.whl: part 1/1
+Verified safetensors-0.6.2-cp38-abi3-win_amd64.whl: 320192 bytes sha256=c7b214870df923cbc1593c3faee16bec59ea462758699bd3fee399d00aac072c
+numpy-2.2.6-cp312-cp312-win_amd64.whl: part 1/1
+Verified numpy-2.2.6-cp312-cp312-win_amd64.whl: 12614190 bytes sha256=c1f9540be57940698ed329904db803cf7a402f3fc200bfe599334c9bd84a40b2
+threadpoolctl-3.8.0-py3-none-any.whl: part 1/1
+Verified threadpoolctl-3.8.0-py3-none-any.whl: 32091 bytes sha256=f1b49c82704d50f13ffae019c727b0fa4f6791a58f48f06a09c45face1be66da
+tokenizers-0.22.2-cp39-abi3-win_amd64.whl: part 1/1
+Verified tokenizers-0.22.2-cp39-abi3-win_amd64.whl: 2747786 bytes sha256=c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48
+tqdm-4.70.1-py3-none-any.whl: part 1/1
+Verified tqdm-4.70.1-py3-none-any.whl: 80199 bytes sha256=c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73
+scikit_learn-1.7.2-cp312-cp312-win_amd64.whl: part 1/1
+Verified scikit_learn-1.7.2-cp312-cp312-win_amd64.whl: 8731256 bytes sha256=6088aa475f0785e01bcf8529f55280a3d7d298679f50c0bb70a2364a82d0b290
+trl-0.23.1-py3-none-any.whl: part 1/1
+Verified trl-0.23.1-py3-none-any.whl: 564602 bytes sha256=ef43e2f00e6e30f3a8a9cc570e142278bfbd5aedc000ebe4eb0509d2f48415b2
+scipy-1.18.1-cp312-cp312-win_amd64.whl: part 1/1 retry 1: IncompleteRead
+tzdata-2026.6-py2.py3-none-any.whl: part 1/1
+Verified tzdata-2026.6-py2.py3-none-any.whl: 348210 bytes sha256=0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec
+urllib3-2.8.0-py3-none-any.whl: part 1/1
+Verified urllib3-2.8.0-py3-none-any.whl: 135717 bytes sha256=0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3
+xxhash-4.0.2-cp312-cp312-win_amd64.whl: part 1/1
+Verified xxhash-4.0.2-cp312-cp312-win_amd64.whl: 37059 bytes sha256=043dcb74ba30a068a2821c136b61262db67f1e1d174ff4dbe83a3e24996861e7
+yarl-1.25.1-cp312-cp312-win_amd64.whl: part 1/1
+Verified yarl-1.25.1-cp312-cp312-win_amd64.whl: 102593 bytes sha256=7d575b54cb3863ef9bc290ea4b009999d55dc237326131e4853cf33e888fee03
+transformers-4.57.1-py3-none-any.whl: part 1/1
+Verified transformers-4.57.1-py3-none-any.whl: 11990925 bytes sha256=b10d05da8fa67dc41644dbbf9bc45a44cb86ae33da6f9295f5fbf5b7890bd267
+pyarrow-26.0.1-cp312-cp312-win_amd64.whl: part 1/1
+Verified pyarrow-26.0.1-cp312-cp312-win_amd64.whl: 29078866 bytes sha256=9379f0d1056cad6866c4697aec83a15830202ec7e0bd52f8bd508b316260fa61
+scipy-1.18.1-cp312-cp312-win_amd64.whl: part 1/1
+Verified scipy-1.18.1-cp312-cp312-win_amd64.whl: 36658278 bytes sha256=5e4d44984abc0020154ea81b247adeddcc3ac5527b975ff798bd1ba0adc513c2
+All 52 exact resolved wheels passed publisher SHA256, size and ZIP CRC.
