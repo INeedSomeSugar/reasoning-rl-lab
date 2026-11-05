@@ -10,7 +10,7 @@ RX 9070 XT 台式机已自动完成 main 克隆、Release SHA256 核验、16 份
 
 按实测成本扩大的开发轮次也已完成：128 题/32 步 SFT，独立 28 题 GRPO 池；C/D 各 seed 13/29/47，E 仅 seed 13，全部终点独立重载。在共同 32 道开发验证题上，A=28/32、B=16/32，C 均值58.33%、D均值56.25%、E=17/32。D−C 配对差均值 −2.08 个百分点，没有动态优势证据，所有训练终点仍低于原公开模型。SFT 退化与输出重复/截断证据保留，根因未确认。D seed29 实际全池刷新并改变采样权重；其他两个种子的后续探测不完整，耗时计入但未更新分布。66 份运行证据审计通过。
 
-这是三配对种子开发预实验，正式 main 与最终独立测试尚未完成；test/SVAMP 继续封存。训练池仅28题、验证仅32题、静态仅一次，不能写成泛化提升。见[当前交接](HANDOFF.md)、[台式机记录](docs/DESKTOP_SETUP_20261105.md)、[扩大轮次报告](reports/comparisons/desktoprocm10pilot_20261105/findings.md)、[短链路报告](reports/comparisons/desktoprocm10bf16_20261105/findings.md)。本轮已结束，无活动训练；改动尚未推送。
+这是三配对种子开发预实验，正式 main 与最终独立测试尚未完成；test/SVAMP 继续封存。训练池仅28题、验证仅32题、静态仅一次，不能写成泛化提升。见[当前交接](HANDOFF.md)、[台式机记录](docs/DESKTOP_SETUP_20261105.md)、[扩大轮次报告](reports/comparisons/desktoprocm10pilot_20261105/findings.md)、[短链路报告](reports/comparisons/desktoprocm10bf16_20261105/findings.md)。本轮已结束，无活动训练；代码、报告及原始日志已推送 main，[台式机预发布 Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105) 提供源码快照、25份真实适配器/恢复工件及 SHA256SUMS，远端摘要已核验。
 
 下面的 NVIDIA 结果与命令为笔记本历史，台式机结果按硬件和精度独立记录。
 

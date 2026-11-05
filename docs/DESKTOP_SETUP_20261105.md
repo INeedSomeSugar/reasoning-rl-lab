@@ -80,3 +80,9 @@ C/D 按 seed 13/29/47 配对重复，E 只运行 seed 13。探测和训练内验
 七组 GRPO 实际合计3108.52秒，另计独立重载评测1045.00秒、训练加载21.42秒；共同B的 SFT 实测20.23秒、28381处理token/15160监督token。整轮墙钟还包含A/B评测和进程准备等，不能只把局部阶段之和称为全程GPU成本。训练峰值 PyTorch allocated/reserved 为4.62/7.07 GiB；没有观察到本轮OOM，不代表对所有未来负载的稳定性保证。
 
 最终证据审计覆盖66份历史及新增运行，状态pass，无缺失检查点。正式main与最终独立评测未完成。下一轮应先在新的开发家族排查SFT退化，按实测成本确定更充分的动态刷新配置；保留本轮完整负面结果，不改动冻结配置或据验证结果回看保留集。最新接续入口为 [HANDOFF.md](../HANDOFF.md)。
+
+## GitHub 发布（2026-11-06）
+
+本轮代码、报告、运行记录与77份原始日志已推送私有仓库main；[台式机预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105)已发布，三个附件的远端大小及SHA256均与本地匹配。源码ZIP固定在提交 `d5cf22cbbd93a4f90c5f600450c6b6cfa6f5833f`，main还包含后续发布收据与链接，继续工作优先克隆main。
+
+LoRA ZIP含25份真实工件：3份能力检查、2份SFT、10份GRPO及10份恢复适配器，不是25个正式实验终点；逐文件摘要见 `migration/DESKTOP_CHECKPOINTS_MANIFEST_20261105.json`。基础模型、环境、缓存、下载wheel和完整优化器状态不上传。附件和SHA256SUMS位于本地 `dist/desktop-rocm10-pilot-20261105/`，发布收据为 `environment/desktop_publication_20261106.json`；本轮负面结论和保留集隔离状态不变。

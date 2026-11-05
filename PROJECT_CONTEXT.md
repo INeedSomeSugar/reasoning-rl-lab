@@ -1,6 +1,6 @@
 # 项目上下文
 
-更新日期：2026-11-05。工作区仅 `D:\User\AI\reasoning-rl-lab`；不改动其他项目。方向为**大模型算法相关实习**，优先展示训练、算法、受控消融、误差分析和可复现结果。
+更新日期：2026-11-06。工作区仅 `D:\User\AI\reasoning-rl-lab`；不改动其他项目。方向为**大模型算法相关实习**，优先展示训练、算法、受控消融、误差分析和可复现结果。
 
 问题：同一计算预算下，按当前模型训练题成功率进行动态采样是否优于均匀采样？不声称算法新颖性。第一版仅做 GSM8K 数学推理后训练，外部迁移集为 SVAMP。
 
@@ -10,7 +10,7 @@
 
 本机短链路已完成；随后 `desktoprocm10pilot_20261105` 已完成 128 题/32 步 SFT、28 题训练池的 C/D 各 seed 13/29/47、E 仅 seed 13，以及全部独立重载终点评测。共同 32 道开发题、512-token 上限：A 28/32、B 16/32；C 19/19/18、D 19/16/19、E 17（均以32为分母）。C/D 均值 58.33%/56.25%，D−C 配对差均值 −2.08 个百分点，无动态优势证据，全部仍低于 A。D seed 29 完成真实全池刷新且 28 个采样权重变化；另两个 D 种子的后续探测不完整，未用于更新。194 次 GRPO 梯度检查均有限、冻结骨干无梯度，七个终点有 LoRA 更新；66 个历史及新增运行证据审计通过。
 
-本轮已经结束，没有活动训练；当前为已完成三配对种子开发预实验，非正式 main/独立测试。SFT 退化与输出重复/截断需要在新家族排查；具体根因未确认。当前训练池和验证题都很小，K=2 含噪声，静态仅一次，不能声称泛化提升。测试与 SVAMP 继续封存；最终方案、检查点与评测预算尚未冻结。本轮 wall time 74分42秒，训练峰值 allocated/reserved 4.62/7.07 GiB。完整结果、成本、失败和下一步见 [HANDOFF.md](HANDOFF.md) 与 [台式机开发报告](reports/comparisons/desktoprocm10pilot_20261105/findings.md)。台式机改动及工件仅在本地，未推送。
+本轮已经结束，没有活动训练；当前为已完成三配对种子开发预实验，非正式 main/独立测试。SFT 退化与输出重复/截断需要在新家族排查；具体根因未确认。当前训练池和验证题都很小，K=2 含噪声，静态仅一次，不能声称泛化提升。测试与 SVAMP 继续封存；最终方案、检查点与评测预算尚未冻结。本轮 wall time 74分42秒，训练峰值 allocated/reserved 4.62/7.07 GiB。完整结果、成本、失败和下一步见 [HANDOFF.md](HANDOFF.md) 与 [台式机开发报告](reports/comparisons/desktoprocm10pilot_20261105/findings.md)。台式机代码、报告和原始日志已推送main；[台式机预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105)含源码快照、25份适配器/恢复工件及SHA256SUMS，远端大小和摘要均已核验；发布收据为environment/desktop_publication_20261106.json。
 
 采用 Qwen3-1.7B（公开已后训练版本，非 Base），锁定官方完整 revision；备选 Qwen3-0.6B。笔记本历史使用 NVIDIA NF4 + BF16 + rank-8 LoRA。台式机首轮 FP16 失败后，独立使用官方 ROCm PyTorch + BF16 + 非量化 + SDPA，LoRA rank 8；两种硬件/精度的结果分开记录。
 

@@ -1,6 +1,6 @@
 # 当前交接状态
 
-更新：2026-11-05。只修改本项目，求职方向为大模型算法实习。笔记本阶段完整与失败证据保留；当前已在 RX 9070 XT 台式机执行接续。
+更新：2026-11-06。只修改本项目，求职方向为大模型算法实习。笔记本阶段完整与失败证据保留；当前已在 RX 9070 XT 台式机执行接续。
 
 台式机已从 main `c011b71` 克隆，三个 Release 附件通过 SHA256，16 份笔记本 LoRA/48 文件已恢复。项目内 Python 3.12.14、官方 torch 2.13.0+rocm10.0.0、固定上层依赖及锁定 Qwen3-1.7B 均准备完成。pip check 和本机 40 项工程测试通过；独显可寻址显存约 15.92 GiB。系统 OS/驱动高于官方验证组合，实际证据与矩阵边界分开记录，未修改系统驱动或使用付费服务。
 
@@ -24,7 +24,9 @@ D−C 配对差均值为 −2.08 个百分点，无动态采样收益证据，�
 
 证据等级：实现与冒烟已验证；本机 SFT、GRPO 与三配对种子开发对照已真实完成；**正式 main/最终独立测试尚未完成**。当前训练池仅 28 题，开发验证仅 32 题且被重复使用，静态仅一次；不能写成正式泛化提升。下一轮优先在新的运行家族中排查 SFT 的标签/EOS/优化强度与输出重复，再按实测探测成本确定各 D 种子能完成多次全池刷新的 main 配置；不改动本轮冻结配置或覆盖负面结果。最终协议、具体检查点与评测预算冻结后才运行 GSM8K test/SVAMP；本次两个保留集均未评测。云 GPU 和付费 API 仍未使用，本机电费未计量。
 
-保留两次 FP16 失败：首次 B 在误启用独显+集显 DataParallel 后原生异常；单卡 B 在首次优化前检测到非有限 LoRA 梯度。两者均没有成功 SFT 终点。`scripts/desktop_env.ps1` 仅向项目进程暴露独显；另建明确 BF16 配置后短链路及扩大开发链路通过，未将这些异常解释为已确认驱动故障。下载、实查、官方支持与失败日志入口见 [台式机接续记录](docs/DESKTOP_SETUP_20261105.md)。历史源码 ZIP 未覆盖 main，历史 NF4 权重未作为本机 B。本轮所有改动和新工件仅在本地，未推送。
+保留两次 FP16 失败：首次 B 在误启用独显+集显 DataParallel 后原生异常；单卡 B 在首次优化前检测到非有限 LoRA 梯度。两者均没有成功 SFT 终点。`scripts/desktop_env.ps1` 仅向项目进程暴露独显；另建明确 BF16 配置后短链路及扩大开发链路通过，未将这些异常解释为已确认驱动故障。下载、实查、官方支持与失败日志入口见 [台式机接续记录](docs/DESKTOP_SETUP_20261105.md)。历史源码 ZIP 未覆盖 main，历史 NF4 权重未作为本机 B。本轮代码、报告和77份原始日志已推送main；真实权重通过[台式机预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105)单独提供。
+
+发布材料（2026-11-06）：[台式机Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105)包含源码ZIP、25份适配器/恢复工件ZIP和SHA256SUMS。源码快照固定于 `d5cf22c`，main另含发布收据，继续工作优先克隆main。25份工件中3份为能力检查、2份SFT、10份GRPO、10份恢复适配器，不是25个正式实验终点；逐文件清单为 `migration/DESKTOP_CHECKPOINTS_MANIFEST_20261105.json`，远端摘要核验收据为 `environment/desktop_publication_20261106.json`。公开基础模型、环境和缓存不上传。
 
 ## 已完成的笔记本历史证据
 
@@ -75,4 +77,4 @@ D−C 配对差均值为 −2.08 个百分点，无动态采样收益证据，�
 
 该尝试在B的第9题再次失败，按预计划停止后续，**预算未校准、冻结文件未生成**。同步单题诊断成功也不能证明长链路修复。新中断凭据为experiments/local_nf4_eager_interruption.json。当前无活动训练进程；建议现在迁移扩大训练、三种子同预算对照与最终独立测试，在目标机重新建立A/B及共同SFT。没有将失败B的部分预测拼成完整准确率。不同后端均失败，根因仍未知，不能承诺换卡必然解决。
 
-以上“本机”异常和“当前无活动训练进程”是笔记本交接时的历史状态。现在已在台式机本地访问 RX 9070 XT 并完成独立 ROCm 短链路和扩大三配对种子开发轮次，详见本文顶部；不能把 NVIDIA 异常归因于 AMD，也不能把更换显卡当作正确率提升。源码迁移包与单独的16份笔记本LoRA备份在dist；清单和SHA256在migration及environment。历史成果已推送到私有仓库 https://github.com/INeedSomeSugar/reasoning-rl-lab；16份LoRA二进制通过Release附件提供，没有放入Git历史。本轮台式机改动和新工件尚未推送。台式机接力提示词见migration/CODEX_PROMPT_ZH.md。云GPU预算300元仍待确认，没有租卡或付费API调用。
+以上“本机”异常和“当前无活动训练进程”是笔记本交接时的历史状态。现在已在台式机本地访问 RX 9070 XT 并完成独立 ROCm 短链路和扩大三配对种子开发轮次，详见本文顶部；不能把 NVIDIA 异常归因于 AMD，也不能把更换显卡当作正确率提升。源码迁移包与单独的16份笔记本LoRA备份在dist；清单和SHA256在migration及environment。历史成果已推送到私有仓库 https://github.com/INeedSomeSugar/reasoning-rl-lab；16份LoRA二进制通过Release附件提供，没有放入Git历史。本轮台式机成果已另行推送并发布，入口见本文顶部。台式机接力提示词见migration/CODEX_PROMPT_ZH.md。云GPU预算300元仍待确认，没有租卡或付费API调用。

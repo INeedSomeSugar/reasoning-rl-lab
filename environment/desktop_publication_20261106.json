@@ -1,0 +1,70 @@
+{
+  "status": "published_and_verified",
+  "verified_utc": "2026-11-05T16:27:04.915916+00:00",
+  "repo": "INeedSomeSugar/reasoning-rl-lab",
+  "branch": "main",
+  "release": {
+    "id": 435433513,
+    "tag": "desktop-rocm10-pilot-20261105",
+    "url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105",
+    "published_at": "2026-11-05T16:24:44Z",
+    "prerelease": true,
+    "source_commit": "d5cf22cbbd93a4f90c5f600450c6b6cfa6f5833f",
+    "git_object_hash_algorithm": "sha1",
+    "annotated_tag_object_sha": "b4bd037920eaeadadd7a2561bb54d65c7d0d63e0",
+    "assets": [
+      {
+        "name": "reasoning-rl-lab-desktop-rocm10-20261105.zip",
+        "size": 7481293,
+        "sha256": "14c1f915823971d8559226d8d9bb63d856d2f5481c4405bdd378a43f751684d5",
+        "github_asset_id": 714007361,
+        "remote_digest": "sha256:14c1f915823971d8559226d8d9bb63d856d2f5481c4405bdd378a43f751684d5",
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-rocm10-pilot-20261105/reasoning-rl-lab-desktop-rocm10-20261105.zip",
+        "verified": true
+      },
+      {
+        "name": "reasoning-rl-lab-desktop-lora-20261105.zip",
+        "size": 140452063,
+        "sha256": "dd03ca153653e16df068bbfda2cb70ddfdbabbb727867a78f3d6cdb334580a84",
+        "github_asset_id": 714014086,
+        "remote_digest": "sha256:dd03ca153653e16df068bbfda2cb70ddfdbabbb727867a78f3d6cdb334580a84",
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-rocm10-pilot-20261105/reasoning-rl-lab-desktop-lora-20261105.zip",
+        "verified": true
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "size": 220,
+        "sha256": "347565b9fd870988226c88e79c2c6042be1bb4242aec47018fc4ad63b20d07ec",
+        "github_asset_id": 714007363,
+        "remote_digest": "sha256:347565b9fd870988226c88e79c2c6042be1bb4242aec47018fc4ad63b20d07ec",
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-rocm10-pilot-20261105/SHA256SUMS.txt",
+        "verified": true
+      }
+    ]
+  },
+  "source_archive_note": "The source ZIP is the exact d5cf22c snapshot. Main additionally contains this publication receipt and updated publication links; clone main for current handoff.",
+  "checkpoint_manifest": "migration/DESKTOP_CHECKPOINTS_MANIFEST_20261105.json",
+  "checkpoint_artifacts": {
+    "capability": 3,
+    "sft": 2,
+    "grpo": 10,
+    "recovery": 10,
+    "total": 25,
+    "portable_files": 75
+  },
+  "evidence": "Development pilot and negative results; not a formal main or independent-test claim",
+  "heldout_evaluated": false,
+  "excluded": [
+    "public base-model weights",
+    "virtual environments",
+    "caches",
+    "downloaded wheels",
+    "full optimizer state"
+  ],
+  "resolved_publication_incidents": [
+    "Automatic approval service intermittently returned HTTP 403 before execution; authorized commands were retried through the same review mechanism and completed.",
+    "Git HTTPS reported interrupted TLS/RPC responses; remote main was checked by hash rather than treating the exit text as proof of failure or success.",
+    "Release auto-tag creation returned HTTP 500 and native tag push returned commit_refs_rules; standard Git Data API created the identical annotated tag object and reference without modifying repository rules.",
+    "Upload retry reported duplicate asset name; existing source/checksum assets were verified, only the missing LoRA archive was uploaded, and all three final remote digests matched."
+  ]
+}
