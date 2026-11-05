@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/localpilot2_20261105_B",
+  "adapter_sha256": "068fdf285e8f01b40012a5660260ca762868de4d4b1a0711fb80e320fe9bf8f8",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

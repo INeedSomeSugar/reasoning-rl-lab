@@ -1,0 +1,4 @@
+﻿run,strategy,seed,steps,wall_seconds,device_elapsed_seconds,peak_allocated_gib,policy_loss_input_tokens,policy_generated_tokens,probe_generated_tokens,probe_prompt_tokens,probe_calls,mean_reward,zero_variance_fraction,adapter_delta_l2,validation_accuracy,validation_n
+local17signalv2_20261105_C_s13,uniform,13,8,359.9455721999984,359.938125,1.7953882217407227,6350,3406,0,0,0,0.9375,0.75,0.0057840854504669645,0.75,8
+local17signalv2_20261105_D_s13,dynamic,13,8,843.7431267999928,843.725625,1.7977237701416016,6202,3326,7850,6416,2,0.96875,0.875,0.005887371859329086,0.75,8
+local17signalv2_20261105_E_s13,static,13,8,447.5462035999808,447.53584375,1.7464666366577148,6313,3441,4055,3208,1,0.90625,0.625,0.007587035640213464,0.75,8

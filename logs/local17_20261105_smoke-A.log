@@ -1,0 +1,39 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.20s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.53s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.93s/it]
+`generation_config` default values have been modified to match model-specific defaults: {'do_sample': True, 'temperature': 0.6, 'top_k': 20, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.
+validation 1/8 gsm8k-train-06134 correct=False tokens=78
+validation 2/8 gsm8k-train-00560 correct=False tokens=87
+validation 3/8 gsm8k-train-00848 correct=False tokens=131
+validation 4/8 gsm8k-train-05654 correct=False tokens=117
+validation 5/8 gsm8k-train-06336 correct=False tokens=89
+validation 6/8 gsm8k-train-03502 correct=False tokens=68
+validation 7/8 gsm8k-train-01891 correct=False tokens=128
+validation 8/8 gsm8k-train-00065 correct=False tokens=95
+{
+  "n": 8,
+  "correct": 0,
+  "accuracy": 0.0,
+  "accuracy_wilson95": [
+    0.0,
+    0.32440756488388023
+  ],
+  "format_error_rate": 1.0,
+  "parse_error_rate": 1.0,
+  "truncation_rate": 0.0,
+  "mean_generated_tokens": 99.125,
+  "p50_generated_tokens": 95,
+  "generated_tokens": 793,
+  "prompt_tokens": 675,
+  "automatic_error_tags": {
+    "answer_extraction_failure": 8,
+    "format_error": 8
+  },
+  "phase": "validation",
+  "optimizer_step": null,
+  "decoding": "greedy",
+  "thinking": false
+}

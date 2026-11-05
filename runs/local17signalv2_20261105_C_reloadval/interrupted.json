@@ -1,0 +1,7 @@
+{
+  "status": "incomplete_validation_run",
+  "observed": "No live Python process or resumable tool session; log contains only validation item 1/8 and no completed metrics.json.",
+  "cause": "unknown; do not attribute to GPU memory or model failure",
+  "recovery": "Preserve raw partial output. Re-evaluate the same checkpoint under the unchanged validation protocol in local17signalv2_20261105_C_reloadval_r2.",
+  "holdout_accessed": false
+}

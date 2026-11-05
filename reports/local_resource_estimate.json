@@ -1,0 +1,10 @@
+{
+  "basis": "two standalone validation runs, 8 questions each, GSM8K development subset only",
+  "n_questions": 16,
+  "wall_seconds_per_question": 10.892947256250409,
+  "generated_tokens_per_second": 10.144178375287252,
+  "gsm8k_1319_hours_per_checkpoint_proxy": 3.991054841942858,
+  "gsm8k_1319_hours_for_A_B_and_C_D_3seeds_proxy": 31.928438735542866,
+  "external_speed": "not measured; SVAMP holdout has not been opened",
+  "status": "planning extrapolation, not a hardware impossibility or guaranteed duration"
+}

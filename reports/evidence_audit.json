@@ -1,0 +1,148 @@
+{
+  "status": "pass",
+  "errors": [],
+  "runs": [
+    {
+      "run": "local17_20261105_smoke-A",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17_20261105_smoke-capability",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17signal_20261105_C_s13",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17signalv2_20261105_C_reloadval",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17signalv2_20261105_C_reloadval_r2",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17signalv2_20261105_C_s13",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true,
+      "pool_is_train_only": true,
+      "selections_in_pool": true,
+      "rollout_tokens_reconcile": true,
+      "reward_sum_reconciles": true,
+      "reward_recomputation_matches": true,
+      "groups_are_single_question": true,
+      "zero_variance_groups_reconcile": true,
+      "sampler_weights_normalized": true,
+      "uniform_floor_preserved": true,
+      "gradients_finite": true,
+      "nonzero_gradient_steps": 2
+    },
+    {
+      "run": "local17signalv2_20261105_D_reloadval",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17signalv2_20261105_D_s13",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true,
+      "pool_is_train_only": true,
+      "selections_in_pool": true,
+      "rollout_tokens_reconcile": true,
+      "reward_sum_reconciles": true,
+      "reward_recomputation_matches": true,
+      "groups_are_single_question": true,
+      "zero_variance_groups_reconcile": true,
+      "sampler_weights_normalized": true,
+      "uniform_floor_preserved": true,
+      "gradients_finite": true,
+      "nonzero_gradient_steps": 1
+    },
+    {
+      "run": "local17signalv2_20261105_E_reloadval",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17signalv2_20261105_E_s13",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true,
+      "pool_is_train_only": true,
+      "selections_in_pool": true,
+      "rollout_tokens_reconcile": true,
+      "reward_sum_reconciles": true,
+      "reward_recomputation_matches": true,
+      "groups_are_single_question": true,
+      "zero_variance_groups_reconcile": true,
+      "sampler_weights_normalized": true,
+      "uniform_floor_preserved": true,
+      "gradients_finite": true,
+      "nonzero_gradient_steps": 3
+    },
+    {
+      "run": "local17v2_20261105_smoke-A",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17v2_20261105_smoke-B",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true
+    },
+    {
+      "run": "local17v2_20261105_smoke-B-val",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17v2_20261105_smoke-capability",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17v3_20261105_C_s13",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17v4_20261105_C_reloadval",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "local17v4_20261105_C_s13",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": false,
+      "checkpoint_hash_matches": true,
+      "pool_is_train_only": true,
+      "selections_in_pool": true,
+      "rollout_tokens_reconcile": true,
+      "reward_sum_reconciles": true,
+      "reward_recomputation_matches": true,
+      "groups_are_single_question": true,
+      "zero_variance_groups_reconcile": true,
+      "sampler_weights_normalized": true,
+      "uniform_floor_preserved": true,
+      "gradients_finite": true,
+      "nonzero_gradient_steps": 0
+    }
+  ],
+  "holdout_content_read": false,
+  "final_claims_present": false,
+  "scope": "File integrity, split membership, raw reward/token/gradient reconciliation; not a scientific benefit claim"
+}

@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/local17v2_20261105_smoke-B",
+  "adapter_sha256": "08bac92bda6e0dec47cd4de6c53caa9c225171a00d18db3ae05e9940abbcfd73",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "amd_linux.html",
+    "url": "https://rocm.docs.amd.com/projects/radeon-ryzen/en/docs-7.2.1/docs/compatibility/compatibilityrad/native_linux/native_linux_compatibility.html",
+    "sha256": "aca6be7015f616ae8fd9587e5ad25cd18771474ab2e450126146eabafbc0307e",
+    "retrieval_date": "2026-11-05"
+  },
+  {
+    "file": "amd_windows.html",
+    "url": "https://rocm.docs.amd.com/projects/radeon-ryzen/en/docs-7.2.1/docs/compatibility/compatibilityrad/windows/windows_compatibility.html",
+    "sha256": "ee0986714bebda6574c9d50246355e5059b3454442d7c325863b79953d44447d",
+    "retrieval_date": "2026-11-05"
+  },
+  {
+    "file": "amd_linux_pytorch.html",
+    "url": "https://rocm.docs.amd.com/projects/radeon-ryzen/en/docs-7.2.1/docs/install/installrad/native_linux/install-pytorch.html",
+    "sha256": "e2fd0b8c232a2df40e0cdd07d120e4f1c7c55d27b174e8611782cee237711df3",
+    "retrieval_date": "2026-11-05"
+  },
+  {
+    "file": "peft_setup.py",
+    "url": "https://raw.githubusercontent.com/huggingface/peft/v0.17.1/setup.py",
+    "sha256": "a8e4498b0adca48f4622792136a3db2c38f00d49219af81f81d20aed6da32015",
+    "retrieval_date": "2026-11-05"
+  },
+  {
+    "file": "grpo_trainer_v0231.py",
+    "url": "https://raw.githubusercontent.com/huggingface/trl/v0.23.1/trl/trainer/grpo_trainer.py",
+    "sha256": "dfff393a406913e135a3b372fc663631fdff8710315256368c239ab43a6aa54f",
+    "retrieval_date": "2026-11-05"
+  },
+  {
+    "file": "bitsandbytes_v0481.md",
+    "url": "https://huggingface.co/docs/bitsandbytes/v0.48.1/installation",
+    "sha256": "cf2cf4bd817b5d239712ef804d406388addaf237f7b7404213f5cb310c7335c4",
+    "retrieval_date": "2026-11-05"
+  },
+  {
+    "file": "storage.html",
+    "url": "https://docs.runpod.io/pods/pricing",
+    "sha256": "634f1ececa4ed5c8aa6ae789254e46f0e1343be0eb97e66c578185de9a778505",
+    "retrieval_date": "2026-11-05"
+  }
+]

@@ -1,0 +1,73 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.10s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.48s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.88s/it]
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\__main__.py", line 3, in <module>
+    main()
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\cli.py", line 74, in main
+    result = training.run_grpo(config, args.name, args.sft_checkpoint, args.strategy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 387, in run_grpo
+    output = trainer.train()
+             ^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\trainer.py", line 4014, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\trl\extras\profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\trl\trainer\grpo_trainer.py", line 992, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 276, in _generate_and_score_completions
+    generated = super()._generate_and_score_completions(actual)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\trl\trainer\grpo_trainer.py", line 1325, in _generate_and_score_completions
+    prompt_completion_ids = unwrapped_model.generate(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\peft\peft_model.py", line 1973, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2564, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2784, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\utils\generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 494, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected scalar type Float but found BFloat16

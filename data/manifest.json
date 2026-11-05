@@ -1,0 +1,54 @@
+{
+  "sources": {
+    "gsm8k": {
+      "repo": "openai/grade-school-math",
+      "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "license": "MIT"
+    },
+    "svamp": {
+      "repo": "arkilpatel/SVAMP",
+      "revision": "78e727689e1c1bebfc4be39c446898e8e10b0518",
+      "license": "MIT"
+    }
+  },
+  "source_sha256": {
+    "gsm_train": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+    "gsm_test": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "gsm_license": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+    "svamp": "5be77703a6d891ae476d7c082787ad361392aa02453b132516cdd5f4e7934e3e",
+    "svamp_license": "07ce3a34de7a865345634f9278bc26ddcacc2d0defd348c28e3f4603448b9ba4"
+  },
+  "seed": 20261105,
+  "validation_target": 512,
+  "near_threshold": 0.9,
+  "near_method": "question-only word(1,2) TF-IDF cosine; connected components; conservative quarantine",
+  "official_train_count": 7473,
+  "quarantined_train_count": 0,
+  "pretraining_contamination": "unknown for GSM8K and SVAMP; deduplication does not establish absence",
+  "splits": {
+    "train": {
+      "path": "data/processed/train.jsonl",
+      "count": 6961,
+      "sha256": "e0b0345eaae955dda7cec75f2fda6f033e4e974a1ec21537fe39eb7a2ae569bd",
+      "id_sha256": "e1615efe9297e8f6938799733610d47d0e8ab93911075b7bf2f99ca47a166bbf"
+    },
+    "validation": {
+      "path": "data/processed/validation.jsonl",
+      "count": 512,
+      "sha256": "499665a0ec58fab61f9ad36ab251a283e69edfabf9888bf7d5eada9dbd639c0e",
+      "id_sha256": "6b2b77bd5c5f9997d6070dc5d1103bb666f381822c314939dba66616aec24de0"
+    },
+    "test": {
+      "path": "data/holdout/gsm8k_test.jsonl",
+      "count": 1319,
+      "sha256": "b69dd9485f2d0e660eda28a6044521e31fd7aa7d0e1e11c555e24110e6088717",
+      "id_sha256": "3bbae59bd77f9e4502eaeef0c780530be8adeb1140c693c6c5d7b563ec2e84a8"
+    },
+    "external": {
+      "path": "data/holdout/svamp.jsonl",
+      "count": 1000,
+      "sha256": "b1d51ed1b2bc1eef015321379a614ba3d61e3b4c7fa7dc18c82f30d7c694196f",
+      "id_sha256": "327156bd048e5c6bd46d02b4be256f7126121655251d065e7417befecfbba42a"
+    }
+  }
+}

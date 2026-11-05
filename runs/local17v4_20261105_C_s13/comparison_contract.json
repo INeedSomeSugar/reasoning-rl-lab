@@ -1,0 +1,71 @@
+{
+  "sft_checkpoint_sha256": "08bac92bda6e0dec47cd4de6c53caa9c225171a00d18db3ae05e9940abbcfd73",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "pool_ids": [
+    "gsm8k-train-05110",
+    "gsm8k-train-05559",
+    "gsm8k-train-03493",
+    "gsm8k-train-02253",
+    "gsm8k-train-04568",
+    "gsm8k-train-00634",
+    "gsm8k-train-02599",
+    "gsm8k-train-02865"
+  ],
+  "protocol": {
+    "stage": "smoke",
+    "model": "qwen3_17b",
+    "dtype": "bfloat16",
+    "quantization": "nf4",
+    "seed": 13,
+    "data_seed": 20261105,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "max_prompt_length": 384,
+      "max_new_tokens": 192,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "sft": {
+      "pool_size": 32,
+      "steps": 4,
+      "gradient_accumulation_steps": 1,
+      "learning_rate": 0.0001,
+      "max_length": 512
+    },
+    "grpo": {
+      "pool_size": 8,
+      "steps": 4,
+      "gradient_accumulation_steps": 2,
+      "num_generations": 2,
+      "learning_rate": 5e-06,
+      "loss_type": "grpo",
+      "scale_rewards": "group",
+      "beta": 0.0,
+      "epsilon": 0.2,
+      "uniform_mix": 0.25,
+      "prior": 0.5,
+      "probe_samples": 2,
+      "refresh_interval": 2,
+      "validation_interval": 4,
+      "max_wall_seconds": 2400,
+      "max_accounted_tokens": 200000
+    },
+    "evaluation": {
+      "validation_size": 8,
+      "test_size": null,
+      "external_size": null
+    }
+  },
+  "strategy": "uniform",
+  "code_sha256": "722b33e7bcafaa0e96248cb1df42e5c422c75ffb39aedd369094e93fe8dc18df",
+  "probe_cost_included": true,
+  "distributed_supported": false
+}

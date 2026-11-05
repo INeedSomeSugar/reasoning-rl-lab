@@ -1,0 +1,61 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.57s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.84s/it]
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 472.0, 'completions/mean_length': 135.0, 'completions/min_length': 119.0, 'completions/max_length': 151.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 135.0, 'completions/min_terminated_length': 119.0, 'completions/max_terminated_length': 151.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.09952088445425034, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.125}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 959.0, 'completions/mean_length': 139.5, 'completions/min_length': 132.0, 'completions/max_length': 147.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 139.5, 'completions/min_terminated_length': 132.0, 'completions/max_terminated_length': 147.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.06334155425429344, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.25}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 1445.0, 'completions/mean_length': 139.0, 'completions/min_length': 137.0, 'completions/max_length': 141.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 139.0, 'completions/min_terminated_length': 137.0, 'completions/max_terminated_length': 141.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.08292093873023987, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.375}
+validation 1/8 gsm8k-train-06134 correct=True tokens=85
+validation 2/8 gsm8k-train-00560 correct=True tokens=117
+validation 3/8 gsm8k-train-00848 correct=False tokens=192
+validation 4/8 gsm8k-train-05654 correct=False tokens=127
+validation 5/8 gsm8k-train-06336 correct=True tokens=114
+validation 6/8 gsm8k-train-03502 correct=True tokens=71
+validation 7/8 gsm8k-train-01891 correct=True tokens=143
+validation 8/8 gsm8k-train-00065 correct=True tokens=110
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 1651.0, 'completions/mean_length': 192.0, 'completions/min_length': 192.0, 'completions/max_length': 192.0, 'completions/clipped_ratio': 1.0, 'completions/mean_terminated_length': 0.0, 'completions/min_terminated_length': 0.0, 'completions/max_terminated_length': 0.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.0, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.5}
+{'train_runtime': 182.8485, 'train_samples_per_second': 0.044, 'train_steps_per_second': 0.022, 'train_loss': 0.0, 'epoch': 0.5}
+{
+  "train_runtime": 182.8485,
+  "train_samples_per_second": 0.044,
+  "train_steps_per_second": 0.022,
+  "total_flos": 0.0,
+  "train_loss": 0.0,
+  "generation_batches": 4,
+  "processed_tokens": 2035,
+  "padded_processed_tokens": 2086,
+  "generation_prompt_tokens": 824,
+  "logprob_forward_input_tokens": 1651,
+  "logprob_forward_padded_tokens": 2086,
+  "generated_tokens": 1211,
+  "probe_generated_tokens": 0,
+  "probe_prompt_tokens": 0,
+  "probe_calls": 0,
+  "zero_variance_groups": 4,
+  "groups": 4,
+  "reward_sum": 6.0,
+  "reward_count": 8,
+  "nonzero_advantage_completions": 0,
+  "last_refresh_step": null,
+  "sampler_weight_change_events": 0,
+  "format_errors": 6,
+  "parse_errors": 2,
+  "truncated_completions": 2,
+  "adapter_delta_l2": 0.0,
+  "adapter_updated": false,
+  "trainable_parameters": 1605632,
+  "frozen_parameters": 1015931904,
+  "mean_reward": 0.75,
+  "zero_variance_group_fraction": 1.0,
+  "training_format_error_rate": 0.75,
+  "training_parse_error_rate": 0.25,
+  "training_truncation_rate": 0.25,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\local17v4_20261105_C_s13",
+  "checkpoint_sha256": "7c2b755e3a6201a0d2dedeae98253dc3b42cd710232828fa7d488173b84a328f",
+  "sft_checkpoint_sha256": "08bac92bda6e0dec47cd4de6c53caa9c225171a00d18db3ae05e9940abbcfd73",
+  "completed_optimizer_steps": 4,
+  "wall_budget_overshoot_seconds": 0
+}

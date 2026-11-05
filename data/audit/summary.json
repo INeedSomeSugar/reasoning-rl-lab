@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "train": 6961,
+    "validation": 512,
+    "test": 1319,
+    "external": 1000
+  },
+  "near_pairs": 208,
+  "exact_pairs": 0,
+  "quarantined_train_count": 0,
+  "near_threshold": 0.9,
+  "residual_cross_split_train_validation_pairs": 0,
+  "scope": "one problem per row; no semantic or pretraining contamination guarantee"
+}

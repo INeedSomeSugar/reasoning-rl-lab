@@ -1,0 +1,9 @@
+{
+  "original_sha256": "ccc4adc403918788fd308deed26d5f4575281b84fd55edbabb4af5cbb8b2c305",
+  "rescored_sha256": "8e17cfe492724e2982d741b79c11a880ae3a6a33bcdc4dad738cf05239083969",
+  "scorer_version": "numeric_final_v2",
+  "code_sha256": "c402a88394d6830deaa1f92db33391f05fa25fdb94fc58291ddc355089f4d3fd",
+  "reason": "Accept a single unambiguous number in the final #### section across newlines/Markdown; keep format independent",
+  "generation_repeated": false,
+  "split": "validation"
+}

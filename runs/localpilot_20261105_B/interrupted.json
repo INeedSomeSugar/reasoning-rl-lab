@@ -1,0 +1,6 @@
+{
+  "status": "failed_before_training",
+  "cause": "Precision metadata collection assumed all classes named Linear4bit expose compute_dtype; PEFT's wrapper does not.",
+  "training_updates_performed": false,
+  "recovery": "Inspect the attribute rather than the shared class name. Preserve this run and repeat as localpilot2_20261105_B."
+}

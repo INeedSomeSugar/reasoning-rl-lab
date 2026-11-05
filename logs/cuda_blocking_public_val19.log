@@ -1,0 +1,37 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.46s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.19s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+{
+  "name": "cuda_blocking_public_val19",
+  "time_unix": 1793874598.3668199,
+  "item": "gsm8k-train-03931",
+  "cuda_launch_blocking": "1",
+  "scope": "Validation-only diagnosis, not a complete baseline or throughput claim",
+  "predictions": [
+    {
+      "id": "gsm8k-train-03931",
+      "split": "validation",
+      "prediction": "Let's break the problem into steps:\n\n- On the first day:\n  - Gina scored 2 goals.\n  - Tom scored 2 + 3 = 5 goals.\n\n- On the second day:\n  - Gina scored 2 less than Tom: Tom scored 6 goals, so Gina scored 6 - 2 = 4 goals.\n\nTotal goals scored by Gina and Tom:\n- Gina: 2 + 4 = 6 goals\n- Tom: 5 + 6 = 11 goals\n\nTotal goals scored during the two days:\n$$\n6 + 11 = 17\n$$\n\n####\n\n**Final answer:** 17",
+      "gold_answer": "17",
+      "prompt_tokens": 99,
+      "generated_tokens": 138,
+      "truncated": false,
+      "correct": true,
+      "format_ok": false,
+      "parse_ok": true,
+      "extracted": "17",
+      "parse_method": "hash_region",
+      "diagnostic_tags": [
+        "format_error"
+      ]
+    }
+  ],
+  "counts": {
+    "prompt_tokens": 99,
+    "generated_tokens": 138,
+    "wall_seconds": 18.374310400000013
+  }
+}

@@ -1,0 +1,39 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.86s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.35s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.58s/it]
+validation 1/8 gsm8k-train-06134 correct=True tokens=84
+validation 2/8 gsm8k-train-00560 correct=False tokens=91
+validation 3/8 gsm8k-train-00848 correct=False tokens=192
+validation 4/8 gsm8k-train-05654 correct=False tokens=116
+validation 5/8 gsm8k-train-06336 correct=False tokens=114
+validation 6/8 gsm8k-train-03502 correct=True tokens=67
+validation 7/8 gsm8k-train-01891 correct=False tokens=146
+validation 8/8 gsm8k-train-00065 correct=False tokens=54
+{
+  "n": 8,
+  "correct": 2,
+  "accuracy": 0.25,
+  "accuracy_wilson95": [
+    0.071479212752109,
+    0.5907245696898311
+  ],
+  "format_error_rate": 0.75,
+  "parse_error_rate": 0.75,
+  "truncation_rate": 0.125,
+  "mean_generated_tokens": 108.0,
+  "p50_generated_tokens": 114,
+  "generated_tokens": 864,
+  "prompt_tokens": 739,
+  "automatic_error_tags": {
+    "answer_extraction_failure": 6,
+    "format_error": 6,
+    "truncated": 1
+  },
+  "phase": "validation",
+  "optimizer_step": null,
+  "decoding": "greedy",
+  "thinking": false
+}

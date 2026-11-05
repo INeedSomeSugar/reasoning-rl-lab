@@ -1,0 +1,23 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.76s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.38s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.74s/it]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\__main__.py", line 3, in <module>
+    main()
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\cli.py", line 72, in main
+    result = training.run_sft(config, args.name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 161, in run_sft
+    json_write(directory / "model_precision.json", {"trainer": precision_snapshot(model)})
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\modeling.py", line 84, in precision_snapshot
+    "four_bit_compute_dtypes": sorted({str(m.compute_dtype) for m in model.modules()
+                                           ^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1962, in __getattr__
+    raise AttributeError(
+AttributeError: 'Linear4bit' object has no attribute 'compute_dtype'

@@ -1,0 +1,25 @@
+{
+  "n": 8,
+  "correct": 2,
+  "accuracy": 0.25,
+  "accuracy_wilson95": [
+    0.071479212752109,
+    0.5907245696898311
+  ],
+  "format_error_rate": 0.75,
+  "parse_error_rate": 0.75,
+  "truncation_rate": 0.125,
+  "mean_generated_tokens": 108.0,
+  "p50_generated_tokens": 114,
+  "generated_tokens": 864,
+  "prompt_tokens": 739,
+  "automatic_error_tags": {
+    "answer_extraction_failure": 6,
+    "format_error": 6,
+    "truncated": 1
+  },
+  "phase": "validation",
+  "optimizer_step": null,
+  "decoding": "greedy",
+  "thinking": false
+}

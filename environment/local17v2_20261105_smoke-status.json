@@ -1,0 +1,76 @@
+[
+  {
+    "stage": "capability",
+    "status": "completed",
+    "started": "2026-11-05T16:45:53.2522875+08:00",
+    "arguments": [
+      "check-model",
+      "--name",
+      "local17v2_20261105_smoke-capability",
+      "--config",
+      "configs/smoke.yaml"
+    ],
+    "finished": "2026-11-05T16:46:21.1367516+08:00",
+    "wall_seconds": 27.8851009
+  },
+  {
+    "stage": "A",
+    "status": "completed",
+    "started": "2026-11-05T16:46:21.1553661+08:00",
+    "arguments": [
+      "evaluate",
+      "--name",
+      "local17v2_20261105_smoke-A",
+      "--config",
+      "configs/smoke.yaml"
+    ],
+    "finished": "2026-11-05T16:47:47.8790143+08:00",
+    "wall_seconds": 86.7237381
+  },
+  {
+    "stage": "B",
+    "status": "completed",
+    "started": "2026-11-05T16:47:47.8815315+08:00",
+    "arguments": [
+      "sft",
+      "--name",
+      "local17v2_20261105_smoke-B",
+      "--config",
+      "configs/smoke.yaml"
+    ],
+    "finished": "2026-11-05T16:48:12.6287471+08:00",
+    "wall_seconds": 24.7473084
+  },
+  {
+    "stage": "B-val",
+    "status": "completed",
+    "started": "2026-11-05T16:48:12.6309614+08:00",
+    "arguments": [
+      "evaluate",
+      "--name",
+      "local17v2_20261105_smoke-B-val",
+      "--config",
+      "configs/smoke.yaml",
+      "--adapter",
+      "checkpoints/local17v2_20261105_smoke-B"
+    ],
+    "finished": "2026-11-05T16:50:16.5062254+08:00",
+    "wall_seconds": 123.875371
+  },
+  {
+    "stage": "C",
+    "status": "running",
+    "started": "2026-11-05T16:50:16.5106340+08:00",
+    "arguments": [
+      "grpo",
+      "--name",
+      "local17v2_20261105_smoke-C-s13",
+      "--config",
+      "configs/smoke.yaml",
+      "--sft-checkpoint",
+      "checkpoints/local17v2_20261105_smoke-B",
+      "--strategy",
+      "uniform"
+    ]
+  }
+]

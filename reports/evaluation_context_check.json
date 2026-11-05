@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "B_count": 8,
+  "C_count": 8,
+  "adapter_files_identical": true,
+  "standalone_predictions_identical": true,
+  "finding": "Unchanged adapter yields identical outputs after common standalone reload; in-training validation is diagnostic and not the final endpoint protocol."
+}

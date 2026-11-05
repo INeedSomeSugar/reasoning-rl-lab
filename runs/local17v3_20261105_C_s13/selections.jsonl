@@ -1,0 +1,1 @@
+{"optimizer_step": 0, "generation_batch": 0, "ids": ["gsm8k-train-03493"], "sampler_updates": 0, "weights": {"gsm8k-train-05110": 0.125, "gsm8k-train-05559": 0.125, "gsm8k-train-03493": 0.125, "gsm8k-train-02253": 0.125, "gsm8k-train-04568": 0.125, "gsm8k-train-00634": 0.125, "gsm8k-train-02599": 0.125, "gsm8k-train-02865": 0.125}}

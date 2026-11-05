@@ -1,0 +1,1 @@
+{"time_unix": 1793868615.3583636, "phase": "validation", "success": true, "wall_seconds": 105.22175029999926, "device_elapsed_seconds": 105.2191171875, "peak_allocated_bytes": 2713816576, "peak_reserved_bytes": 3745513472, "peak_scope": "outer_stage_to_date", "hardware": "NVIDIA GeForce RTX 3060 Laptop GPU", "optimizer_step": null, "prompt_tokens": 739, "generated_tokens": 904}

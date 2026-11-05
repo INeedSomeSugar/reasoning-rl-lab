@@ -1,0 +1,58 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.11s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.50s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.74s/it]
+{'loss': 2.2803, 'grad_norm': 3.8844308853149414, 'learning_rate': 0.0001, 'epoch': 0.03125}
+{'loss': 1.8319, 'grad_norm': 3.5010132789611816, 'learning_rate': 0.0001, 'epoch': 0.0625}
+{'loss': 2.3572, 'grad_norm': 5.905352592468262, 'learning_rate': 0.0001, 'epoch': 0.09375}
+{'loss': 2.8415, 'grad_norm': 5.959883213043213, 'learning_rate': 0.0001, 'epoch': 0.125}
+{'loss': 2.0033, 'grad_norm': 5.565370082855225, 'learning_rate': 0.0001, 'epoch': 0.15625}
+{'loss': 1.6635, 'grad_norm': 4.542969703674316, 'learning_rate': 0.0001, 'epoch': 0.1875}
+{'loss': 1.7287, 'grad_norm': 4.929294109344482, 'learning_rate': 0.0001, 'epoch': 0.21875}
+{'loss': 1.6754, 'grad_norm': 5.009109020233154, 'learning_rate': 0.0001, 'epoch': 0.25}
+{'loss': 1.4616, 'grad_norm': 3.6266775131225586, 'learning_rate': 0.0001, 'epoch': 0.28125}
+{'loss': 1.308, 'grad_norm': 2.9870245456695557, 'learning_rate': 0.0001, 'epoch': 0.3125}
+{'loss': 1.4728, 'grad_norm': 3.9936180114746094, 'learning_rate': 0.0001, 'epoch': 0.34375}
+{'loss': 0.9104, 'grad_norm': 2.082876205444336, 'learning_rate': 0.0001, 'epoch': 0.375}
+{'loss': 0.947, 'grad_norm': 2.610074520111084, 'learning_rate': 0.0001, 'epoch': 0.40625}
+{'loss': 0.9152, 'grad_norm': 1.753113031387329, 'learning_rate': 0.0001, 'epoch': 0.4375}
+{'loss': 1.0141, 'grad_norm': 1.9185985326766968, 'learning_rate': 0.0001, 'epoch': 0.46875}
+{'loss': 0.8064, 'grad_norm': 1.3651337623596191, 'learning_rate': 0.0001, 'epoch': 0.5}
+{'loss': 0.8813, 'grad_norm': 1.858689785003662, 'learning_rate': 0.0001, 'epoch': 0.53125}
+{'loss': 0.98, 'grad_norm': 1.6014224290847778, 'learning_rate': 0.0001, 'epoch': 0.5625}
+{'loss': 1.1228, 'grad_norm': 1.2864580154418945, 'learning_rate': 0.0001, 'epoch': 0.59375}
+{'loss': 0.9369, 'grad_norm': 1.4607443809509277, 'learning_rate': 0.0001, 'epoch': 0.625}
+{'loss': 0.7383, 'grad_norm': 1.0913336277008057, 'learning_rate': 0.0001, 'epoch': 0.65625}
+{'loss': 0.7598, 'grad_norm': 0.8037089705467224, 'learning_rate': 0.0001, 'epoch': 0.6875}
+{'loss': 0.6348, 'grad_norm': 0.8447761535644531, 'learning_rate': 0.0001, 'epoch': 0.71875}
+{'loss': 0.6795, 'grad_norm': 0.9682013988494873, 'learning_rate': 0.0001, 'epoch': 0.75}
+{'loss': 0.6682, 'grad_norm': 1.0485234260559082, 'learning_rate': 0.0001, 'epoch': 0.78125}
+{'loss': 0.6357, 'grad_norm': 0.9587457180023193, 'learning_rate': 0.0001, 'epoch': 0.8125}
+{'loss': 0.817, 'grad_norm': 0.8007976412773132, 'learning_rate': 0.0001, 'epoch': 0.84375}
+{'loss': 0.6712, 'grad_norm': 0.7525370717048645, 'learning_rate': 0.0001, 'epoch': 0.875}
+{'loss': 0.6858, 'grad_norm': 0.8081591725349426, 'learning_rate': 0.0001, 'epoch': 0.90625}
+{'loss': 0.8521, 'grad_norm': 0.7636297345161438, 'learning_rate': 0.0001, 'epoch': 0.9375}
+{'loss': 0.6682, 'grad_norm': 0.6969144344329834, 'learning_rate': 0.0001, 'epoch': 0.96875}
+{'loss': 0.6115, 'grad_norm': 1.2521164417266846, 'learning_rate': 0.0001, 'epoch': 1.0}
+{'train_runtime': 63.4629, 'train_samples_per_second': 2.017, 'train_steps_per_second': 0.504, 'train_loss': 1.1737691219896078, 'epoch': 1.0}
+{
+  "train_runtime": 63.4629,
+  "train_samples_per_second": 2.017,
+  "train_steps_per_second": 0.504,
+  "train_loss": 1.1737691219896078,
+  "epoch": 1.0,
+  "adapter_delta_l2": 2.5499379193705733,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1015931904,
+  "processed_tokens": 28381,
+  "supervised_tokens": 15160,
+  "retained_examples": 128,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\localpilot2_20261105_B",
+  "checkpoint_sha256": "068fdf285e8f01b40012a5660260ca762868de4d4b1a0711fb80e320fe9bf8f8"
+}

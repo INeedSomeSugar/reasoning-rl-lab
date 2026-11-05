@@ -1,0 +1,110 @@
+{
+  "summary": [
+    {
+      "run": "local17signalv2_20261105_C_s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "steps": 8,
+      "wall_seconds": 359.9455721999984,
+      "device_elapsed_seconds": 359.938125,
+      "peak_allocated_gib": 1.7953882217407227,
+      "policy_loss_input_tokens": 6350,
+      "policy_generated_tokens": 3406,
+      "probe_generated_tokens": 0,
+      "probe_prompt_tokens": 0,
+      "probe_calls": 0,
+      "mean_reward": 0.9375,
+      "zero_variance_fraction": 0.75,
+      "adapter_delta_l2": 0.0057840854504669645,
+      "validation_accuracy": 0.75,
+      "validation_n": 8
+    },
+    {
+      "run": "local17signalv2_20261105_D_s13",
+      "strategy": "dynamic",
+      "seed": 13,
+      "steps": 8,
+      "wall_seconds": 843.7431267999928,
+      "device_elapsed_seconds": 843.725625,
+      "peak_allocated_gib": 1.7977237701416016,
+      "policy_loss_input_tokens": 6202,
+      "policy_generated_tokens": 3326,
+      "probe_generated_tokens": 7850,
+      "probe_prompt_tokens": 6416,
+      "probe_calls": 2,
+      "mean_reward": 0.96875,
+      "zero_variance_fraction": 0.875,
+      "adapter_delta_l2": 0.005887371859329086,
+      "validation_accuracy": 0.75,
+      "validation_n": 8
+    },
+    {
+      "run": "local17signalv2_20261105_E_s13",
+      "strategy": "static",
+      "seed": 13,
+      "steps": 8,
+      "wall_seconds": 447.5462035999808,
+      "device_elapsed_seconds": 447.53584375,
+      "peak_allocated_gib": 1.7464666366577148,
+      "policy_loss_input_tokens": 6313,
+      "policy_generated_tokens": 3441,
+      "probe_generated_tokens": 4055,
+      "probe_prompt_tokens": 3208,
+      "probe_calls": 1,
+      "mean_reward": 0.90625,
+      "zero_variance_fraction": 0.625,
+      "adapter_delta_l2": 0.007587035640213464,
+      "validation_accuracy": 0.75,
+      "validation_n": 8
+    }
+  ],
+  "points": [
+    {
+      "run": "local17signalv2_20261105_C_s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "optimizer_step": 8,
+      "cumulative_wall_seconds": 359.91245519998483,
+      "accuracy": 0.75,
+      "n": 8,
+      "wilson95_low": 0.40927543031016883,
+      "wilson95_high": 0.9285207872478909
+    },
+    {
+      "run": "local17signalv2_20261105_D_s13",
+      "strategy": "dynamic",
+      "seed": 13,
+      "optimizer_step": 8,
+      "cumulative_wall_seconds": 843.7298737999809,
+      "accuracy": 0.75,
+      "n": 8,
+      "wilson95_low": 0.40927543031016883,
+      "wilson95_high": 0.9285207872478909
+    },
+    {
+      "run": "local17signalv2_20261105_E_s13",
+      "strategy": "static",
+      "seed": 13,
+      "optimizer_step": 8,
+      "cumulative_wall_seconds": 447.5324537999986,
+      "accuracy": 0.75,
+      "n": 8,
+      "wilson95_low": 0.40927543031016883,
+      "wilson95_high": 0.9285207872478909
+    }
+  ],
+  "paired_seeds": [
+    13
+  ],
+  "formal_comparison_completed": false,
+  "three_seed_validation_comparison": false,
+  "scope": "Saved validation observations only. Formal claim requires frozen holdout evaluation.",
+  "sft_checkpoint_sha256": "08bac92bda6e0dec47cd4de6c53caa9c225171a00d18db3ae05e9940abbcfd73",
+  "hardware": [
+    "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "12.8",
+    null,
+    "2.8.0+cu128"
+  ],
+  "cost_fairness": "Smoke endpoints need not use equal compute; plots expose actual probe/time overhead."
+}

@@ -1,0 +1,6 @@
+﻿arm,evaluation_run,n,correct,accuracy,mean_generated_tokens,format_error_rate,parse_error_rate,truncation_rate
+A,local17v2_20261105_smoke-A,8,5,0.625,108.0,0.75,0.125,0.125
+B,local17v2_20261105_smoke-B-val,8,6,0.75,113.0,0.75,0.0,0.0
+C,local17signalv2_20261105_C_reloadval_r2,8,5,0.625,112.0,0.875,0.125,0.125
+D,local17signalv2_20261105_D_reloadval,8,6,0.75,110.75,0.75,0.0,0.0
+E,local17signalv2_20261105_E_reloadval,8,5,0.625,112.375,0.875,0.125,0.125

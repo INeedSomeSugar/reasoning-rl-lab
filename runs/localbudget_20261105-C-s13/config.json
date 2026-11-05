@@ -1,0 +1,57 @@
+{
+  "stage": "local_pilot",
+  "model": "qwen3_17b",
+  "dtype": "bfloat16",
+  "quantization": "nf4",
+  "seed": 13,
+  "data_seed": 20261105,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "generation": {
+    "max_prompt_length": 512,
+    "max_new_tokens": 256,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "sft": {
+    "pool_size": 128,
+    "steps": 32,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "max_length": 768
+  },
+  "grpo": {
+    "pool_size": 8,
+    "pool_offset": 128,
+    "require_disjoint_from_sft": true,
+    "steps": 100000,
+    "gradient_accumulation_steps": 4,
+    "num_generations": 4,
+    "learning_rate": 5e-06,
+    "loss_type": "grpo",
+    "scale_rewards": "group",
+    "beta": 0.0,
+    "epsilon": 0.2,
+    "uniform_mix": 0.25,
+    "prior": 0.5,
+    "probe_samples": 2,
+    "refresh_interval": 8,
+    "validation_interval": 100000,
+    "max_wall_seconds": 1200,
+    "final_validation_reserve_seconds": 540,
+    "max_accounted_tokens": 1000000
+  },
+  "evaluation": {
+    "validation_size": 32,
+    "test_size": null,
+    "external_size": null
+  },
+  "strategy": "uniform"
+}

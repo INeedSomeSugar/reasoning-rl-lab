@@ -1,0 +1,42 @@
+[
+  {
+    "stage": "capability",
+    "status": "completed",
+    "started": "2026-11-05T16:34:29.2469433+08:00",
+    "arguments": [
+      "check-model",
+      "--name",
+      "local17_20261105_smoke-capability",
+      "--config",
+      "configs/smoke.yaml"
+    ],
+    "finished": "2026-11-05T16:35:06.2054688+08:00",
+    "wall_seconds": 36.9590927
+  },
+  {
+    "stage": "A",
+    "status": "completed",
+    "started": "2026-11-05T16:35:06.2280567+08:00",
+    "arguments": [
+      "evaluate",
+      "--name",
+      "local17_20261105_smoke-A",
+      "--config",
+      "configs/smoke.yaml"
+    ],
+    "finished": "2026-11-05T16:36:44.1183443+08:00",
+    "wall_seconds": 97.8909692
+  },
+  {
+    "stage": "B",
+    "status": "running",
+    "started": "2026-11-05T16:36:44.1211782+08:00",
+    "arguments": [
+      "sft",
+      "--name",
+      "local17_20261105_smoke-B",
+      "--config",
+      "configs/smoke.yaml"
+    ]
+  }
+]

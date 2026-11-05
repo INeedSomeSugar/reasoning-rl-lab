@@ -1,0 +1,5 @@
+{
+  "status": "development_calibration_failure",
+  "reason": "v1 prompt literal numeric placeholder copied; model-default merging changed intended greedy decoding to sampling. Raw predictions retained; excluded from valid baseline/comparison.",
+  "replacement": "local17v2_20261105_smoke-A"
+}

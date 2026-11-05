@@ -1,0 +1,23 @@
+{
+  "status": "development_plan_before_GRPO",
+  "stage": "local_pilot",
+  "config": "configs/local_pilot.yaml",
+  "public_model": "Qwen/Qwen3-1.7B",
+  "public_model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "sft_run": "localpilot2_20261105_B",
+  "sft_steps": 32,
+  "sft_pool_size": 128,
+  "grpo_pool_size": 8,
+  "grpo_pool_offset": 128,
+  "pool_selection": "Predetermined slice of seed-20261105 shuffled official training subset; disjoint from SFT pool",
+  "strategies": ["uniform", "dynamic", "static"],
+  "first_seed": 13,
+  "planned_replication_seeds_if_feasible": [29, 47],
+  "wall_cap_per_arm_seconds": 1200,
+  "validation_size": 32,
+  "validation_reserve_seconds": 540,
+  "calibration": "B validation: 511.0662469 seconds for 32 questions; reserve rounded upward to 540. Shrink initially planned GRPO pool 16 to 8 before any GRPO run, based on time cost only.",
+  "checkpoint_selection": "Fixed budget endpoints, no best-of-validation checkpoint selection",
+  "holdout_evaluation_authorized_by_this_plan": false,
+  "interpretation": "Larger local development pilot, not a final frozen multi-seed/test protocol"
+}

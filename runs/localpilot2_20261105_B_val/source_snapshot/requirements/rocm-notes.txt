@@ -1,0 +1,7 @@
+# Platform-specific official AMD torch wheels must be installed FIRST, after checking the actual host.
+# Validated in AMD docs (not runtime-verified by this project):
+# native Linux: ROCm 7.2.1 + torch 2.9.1 + CPython 3.12; consult exact Radeon OS/kernel matrix.
+# native Windows 11: AMD torch 2.9 family + ROCm 7.2.1 components + CPython 3.12.
+# PEFT 0.17.1 / TRL 0.23.1 are dependency-compatible candidates; their ROCm training must pass check-model.
+# Do not install requirements/cuda-local.txt or assume bitsandbytes 0.48.1 supports this AMD target.
+-r common.txt

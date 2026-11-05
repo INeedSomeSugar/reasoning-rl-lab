@@ -1,0 +1,10 @@
+{
+  "status": "failed_during_validation",
+  "completed_predictions": 18,
+  "requested_predictions": 32,
+  "error": "CUDA illegal memory access; secondary event-record failure in Ledger cleanup",
+  "cause": "unknown; asynchronous stack does not identify the offending kernel",
+  "oom_observed": false,
+  "recovery": "Preserve partial evidence, diagnose item 19 in a fresh process with CUDA_LAUNCH_BLOCKING=1, then use a new run name for a complete validation baseline.",
+  "holdout_accessed": false
+}

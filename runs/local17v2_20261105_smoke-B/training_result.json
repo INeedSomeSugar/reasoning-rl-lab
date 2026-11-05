@@ -1,0 +1,17 @@
+{
+  "train_runtime": 2.6147,
+  "train_samples_per_second": 1.53,
+  "train_steps_per_second": 1.53,
+  "train_loss": 3.1137563586235046,
+  "epoch": 0.125,
+  "adapter_delta_l2": 0.3066835473059382,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "frozen_parameters": 1015931904,
+  "processed_tokens": 754,
+  "supervised_tokens": 380,
+  "retained_examples": 32,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\local17v2_20261105_smoke-B",
+  "checkpoint_sha256": "08bac92bda6e0dec47cd4de6c53caa9c225171a00d18db3ae05e9940abbcfd73"
+}

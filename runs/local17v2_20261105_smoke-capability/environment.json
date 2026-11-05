@@ -1,0 +1,33 @@
+{
+  "os": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "ram_total_bytes": 16979623936,
+  "ram_available_bytes": 4896436224,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "trl": "0.23.1",
+    "accelerate": "1.10.1",
+    "datasets": "4.1.1",
+    "bitsandbytes": "0.48.1",
+    "numpy": "2.2.6"
+  },
+  "torch_cuda": "12.8",
+  "torch_hip": null,
+  "cuda_available": true,
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "total_bytes": 6441926656,
+      "free_bytes": 5379194880,
+      "compute_capability": [
+        8,
+        6
+      ]
+    }
+  ],
+  "rx9070xt_access": "not established; no remote host or credentials supplied",
+  "nvidia_smi": "name, memory.total [MiB], memory.free [MiB], driver_version\nNVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 3960 MiB, 621.01"
+}

@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/local17signalv2_20261105_C_s13",
+  "adapter_sha256": "7d0a227b81c094c6a177e78f92095083af29b9660a2b0777a07cbc0d1e75b433",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

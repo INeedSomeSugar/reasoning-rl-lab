@@ -1,0 +1,12 @@
+{
+  "gsm8k": {
+    "repo": "openai/grade-school-math",
+    "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+    "license": "MIT"
+  },
+  "svamp": {
+    "repo": "arkilpatel/SVAMP",
+    "revision": "78e727689e1c1bebfc4be39c446898e8e10b0518",
+    "license": "MIT"
+  }
+}

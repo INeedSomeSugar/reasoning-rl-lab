@@ -1,0 +1,7 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.19s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.57s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.96s/it]
+validation 1/8 gsm8k-train-06134 correct=True tokens=85

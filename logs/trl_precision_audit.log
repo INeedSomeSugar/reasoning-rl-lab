@@ -1,0 +1,7 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.32s/it]
+{'status': 'measured', 'training_performed': False, 'holdout_accessed': False, 'library': 'trl==0.23.1', 'function': 'trl.models.utils.prepare_peft_model', 'library_source_sha256': '640c95b2e2ce484ad212fa59237734ecbe7eb34f8cb60d88805d5c4b34ae65ba', 'before': {'input_embedding': 'torch.float32', 'output_head': 'torch.float32', 'lora_dtypes': ['torch.float32'], 'norm_dtypes': ['torch.float32']}, 'after': {'input_embedding': 'torch.bfloat16', 'output_head': 'torch.bfloat16', 'lora_dtypes': ['torch.float32'], 'norm_dtypes': ['torch.float32']}, 'interpretation': 'The GRPO constructor casts FP32 embedding/head to BF16 for this 4-bit BF16 model. Independent endpoint evaluation uses the shared standalone loader; in-training validation is diagnostic.'}

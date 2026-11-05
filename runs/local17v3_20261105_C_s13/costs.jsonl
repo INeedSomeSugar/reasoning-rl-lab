@@ -1,0 +1,1 @@
+{"time_unix": 1793868869.8824415, "phase": "grpo_total", "success": false, "wall_seconds": 0.9827139999833889, "device_elapsed_seconds": 0.9824491577148438, "peak_allocated_bytes": 1452668416, "peak_reserved_bytes": 3686793216, "peak_scope": "outer_stage_to_date", "hardware": "NVIDIA GeForce RTX 3060 Laptop GPU"}

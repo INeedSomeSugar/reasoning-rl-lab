@@ -1,0 +1,119 @@
+{
+  "type": "frozen development protocol, not final holdout authorization",
+  "created_unix": 1793875427.0448654,
+  "config": {
+    "stage": "local_pilot",
+    "model": "qwen3_17b",
+    "dtype": "bfloat16",
+    "quantization": "nf4",
+    "seed": 13,
+    "data_seed": 20261105,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "max_prompt_length": 512,
+      "max_new_tokens": 256,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "sft": {
+      "pool_size": 128,
+      "steps": 32,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "max_length": 768
+    },
+    "grpo": {
+      "pool_size": 8,
+      "pool_offset": 128,
+      "require_disjoint_from_sft": true,
+      "steps": 100000,
+      "gradient_accumulation_steps": 4,
+      "num_generations": 4,
+      "learning_rate": 5e-06,
+      "loss_type": "grpo",
+      "scale_rewards": "group",
+      "beta": 0.0,
+      "epsilon": 0.2,
+      "uniform_mix": 0.25,
+      "prior": 0.5,
+      "probe_samples": 2,
+      "refresh_interval": 8,
+      "validation_interval": 100000,
+      "max_wall_seconds": 1200,
+      "final_validation_reserve_seconds": 540,
+      "max_accounted_tokens": 1000000
+    },
+    "evaluation": {
+      "validation_size": 32,
+      "test_size": null,
+      "external_size": null
+    }
+  },
+  "code_sha256": "d90de43622ff1792fc630b9e4b16670343143f69ae99dc1e5e0193a7ebb43b6b",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "sft_checkpoint_sha256": "068fdf285e8f01b40012a5660260ca762868de4d4b1a0711fb80e320fe9bf8f8",
+  "sft_checkpoint": "checkpoints/localpilot2_20261105_B",
+  "grpo_pool_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-05134",
+    "gsm8k-train-00638"
+  ],
+  "sft_grpo_disjoint": true,
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "first_run_order": [
+    [
+      13,
+      "uniform"
+    ],
+    [
+      13,
+      "dynamic"
+    ],
+    [
+      13,
+      "static"
+    ]
+  ],
+  "replication_order": [
+    [
+      29,
+      "dynamic"
+    ],
+    [
+      29,
+      "uniform"
+    ],
+    [
+      47,
+      "uniform"
+    ],
+    [
+      47,
+      "dynamic"
+    ]
+  ],
+  "stop_if_first_seed_all_three_have_no_parameter_update": true,
+  "baseline_A_validation": "localpilot3_20261105_A_val",
+  "sft_B_validation": "localpilot2_20261105_B_val",
+  "calibration": "B validation cost 511.0662469s; final-validation reserve 540s; shared wall cap 1200s; pool reduced to 8 before GRPO using costs only.",
+  "selection_rule": "Fixed budget endpoint; retain negative SFT/GRPO results; no best-of-validation endpoint selection",
+  "allows_holdout": false,
+  "final_comparison_completed": false
+}

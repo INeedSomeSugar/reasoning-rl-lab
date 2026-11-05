@@ -1,0 +1,9 @@
+{
+  "user_authorized_github_push": true,
+  "intended_visibility": "private",
+  "repository_url": null,
+  "pushed": false,
+  "status": "GitHub CLI authentication invalid; user chose to sign in later and continue local experiments",
+  "credentials_stored_in_project": false,
+  "checkpoint_upload_completed": false
+}

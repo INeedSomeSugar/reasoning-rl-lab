@@ -1,0 +1,67 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.18s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  2.68s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.05s/it]
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 814.0, 'completions/mean_length': 120.5, 'completions/min_length': 110.0, 'completions/max_length': 133.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 120.5, 'completions/min_terminated_length': 110.0, 'completions/max_terminated_length': 133.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.10812697745859623, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.0625}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 1655.0, 'completions/mean_length': 114.25, 'completions/min_length': 87.0, 'completions/max_length': 171.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 114.25, 'completions/min_terminated_length': 87.0, 'completions/max_terminated_length': 171.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.14573066495358944, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.125}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 2546.0, 'completions/mean_length': 126.75, 'completions/min_length': 103.0, 'completions/max_length': 159.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 126.75, 'completions/min_terminated_length': 103.0, 'completions/max_terminated_length': 159.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.13798486813902855, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.1875}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 3404.0, 'completions/mean_length': 123.5, 'completions/min_length': 102.0, 'completions/max_length': 162.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 123.5, 'completions/min_terminated_length': 102.0, 'completions/max_terminated_length': 162.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.07120331563055515, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.25}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 4216.0, 'completions/mean_length': 102.0, 'completions/min_length': 94.0, 'completions/max_length': 115.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 102.0, 'completions/min_terminated_length': 94.0, 'completions/max_terminated_length': 115.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.08790312707424164, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.3125}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 4796.0, 'completions/mean_length': 61.0, 'completions/min_length': 43.0, 'completions/max_length': 84.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 61.0, 'completions/min_terminated_length': 43.0, 'completions/max_terminated_length': 84.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.10565185546875, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.375}
+{'loss': -0.0, 'grad_norm': 0.4416632056236267, 'learning_rate': 5e-06, 'num_tokens': 5624.0, 'completions/mean_length': 106.0, 'completions/min_length': 94.0, 'completions/max_length': 140.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 106.0, 'completions/min_terminated_length': 94.0, 'completions/max_terminated_length': 140.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.1094950083643198, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.4375}
+validation 1/8 gsm8k-train-06134 correct=True tokens=85
+validation 2/8 gsm8k-train-00560 correct=True tokens=94
+validation 3/8 gsm8k-train-00848 correct=True tokens=174
+validation 4/8 gsm8k-train-05654 correct=False tokens=127
+validation 5/8 gsm8k-train-06336 correct=True tokens=114
+validation 6/8 gsm8k-train-03502 correct=True tokens=71
+validation 7/8 gsm8k-train-01891 correct=True tokens=143
+validation 8/8 gsm8k-train-00065 correct=False tokens=74
+{'loss': -0.3749, 'grad_norm': 0.30450496077537537, 'learning_rate': 5e-06, 'num_tokens': 6158.0, 'completions/mean_length': 97.5, 'completions/min_length': 57.0, 'completions/max_length': 192.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 66.0, 'completions/min_terminated_length': 57.0, 'completions/max_terminated_length': 81.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.08223282732069492, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.5}
+{'train_runtime': 359.7358, 'train_samples_per_second': 0.089, 'train_steps_per_second': 0.022, 'train_loss': -0.046865626238286495, 'epoch': 0.5}
+{
+  "train_runtime": 359.7358,
+  "train_samples_per_second": 0.089,
+  "train_steps_per_second": 0.022,
+  "total_flos": 0.0,
+  "train_loss": -0.046865626238286495,
+  "generation_batches": 8,
+  "processed_tokens": 6350,
+  "padded_processed_tokens": 7568,
+  "generation_prompt_tokens": 2944,
+  "logprob_forward_input_tokens": 6158,
+  "logprob_forward_padded_tokens": 7568,
+  "generated_tokens": 3406,
+  "probe_generated_tokens": 0,
+  "probe_prompt_tokens": 0,
+  "probe_calls": 0,
+  "zero_variance_groups": 6,
+  "groups": 8,
+  "reward_sum": 30.0,
+  "reward_count": 32,
+  "nonzero_advantage_completions": 8,
+  "last_refresh_step": null,
+  "sampler_weight_change_events": 0,
+  "format_errors": 21,
+  "parse_errors": 2,
+  "truncated_completions": 1,
+  "adapter_delta_l2": 0.0057840854504669645,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1015931904,
+  "mean_reward": 0.9375,
+  "zero_variance_group_fraction": 0.75,
+  "training_format_error_rate": 0.65625,
+  "training_parse_error_rate": 0.0625,
+  "training_truncation_rate": 0.03125,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\local17signalv2_20261105_C_s13",
+  "checkpoint_sha256": "7d0a227b81c094c6a177e78f92095083af29b9660a2b0777a07cbc0d1e75b433",
+  "sft_checkpoint_sha256": "08bac92bda6e0dec47cd4de6c53caa9c225171a00d18db3ae05e9940abbcfd73",
+  "completed_optimizer_steps": 8,
+  "wall_budget_overshoot_seconds": 0
+}

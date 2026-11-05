@@ -1,0 +1,10 @@
+﻿run,strategy,seed,feature,pool_count,pool_n,pool_share,selected_count,draws,exposure_share,relative_exposure,interpretation
+local17signalv2_20261105_C_s13,uniform,13,solution_contains_division,9,16,0.5625,6,8,0.75,1.3333333333333333,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_C_s13,uniform,13,solution_contains_multiplication,12,16,0.75,5,8,0.625,0.8333333333333334,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_C_s13,uniform,13,question_above_pool_median_length,6,16,0.375,2,8,0.25,0.6666666666666666,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_D_s13,dynamic,13,solution_contains_division,9,16,0.5625,7,8,0.875,1.5555555555555556,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_D_s13,dynamic,13,solution_contains_multiplication,12,16,0.75,5,8,0.625,0.8333333333333334,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_D_s13,dynamic,13,question_above_pool_median_length,6,16,0.375,2,8,0.25,0.6666666666666666,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_E_s13,static,13,solution_contains_division,9,16,0.5625,7,8,0.875,1.5555555555555556,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_E_s13,static,13,solution_contains_multiplication,12,16,0.75,5,8,0.625,0.8333333333333334,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
+local17signalv2_20261105_E_s13,static,13,question_above_pool_median_length,6,16,0.375,2,8,0.25,0.6666666666666666,"Overlapping heuristic features, not human topic labels; short runs are diagnostic only"
