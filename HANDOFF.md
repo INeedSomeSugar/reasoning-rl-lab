@@ -19,7 +19,7 @@
 |NF4/eager候选|已冒烟验证及真实短训练|前后向、LoRA、重载通过；4步SFT与4步G4 GRPO完成；验证前恢复权重与最终适配器字节一致|
 |NF4/eager新开发轮次|B训练完成，评测中断|A为11/16；128题/32步B已保存，B评测完成8/16后CUDA非法内存访问；无完整B正确率，C/D/E未启动|
 |正式三种子、最终独立测试|未完成|GSM8K test和SVAMP尚无模型评测；不编造迁移或泛化指标|
-|GitHub|已授权，尚未推送|本地独立Git仓库已初始化；CLI登录失效，用户选择稍后登录，先继续实验|
+|GitHub|已推送私有仓库并发布迁移附件|[仓库](https://github.com/INeedSomeSugar/reasoning-rl-lab)；[预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105)含源码包、16份LoRA备份、SHA256，已核对远端摘要|
 
 完整结果以training_result.json和完成的metrics.json为准。总报告：[LOCAL_RESULTS.md](reports/LOCAL_RESULTS.md)；首轮报告：[local_pilot_findings.md](reports/local_pilot_findings.md)；成本图：[local_pilot_endpoints.png](reports/local_pilot_endpoints.png)。最近一次完整工程测试36 passed，见environment/verification.json；包含恢复检查点与训练标签排除的回归检查。工程通过不等于长GPU链路稳定。
 
@@ -51,4 +51,4 @@
 
 该尝试在B的第9题再次失败，按预计划停止后续，**预算未校准、冻结文件未生成**。同步单题诊断成功也不能证明长链路修复。新中断凭据为experiments/local_nf4_eager_interruption.json。当前无活动训练进程；建议现在迁移扩大训练、三种子同预算对照与最终独立测试，在目标机重新建立A/B及共同SFT。没有将失败B的部分预测拼成完整准确率。不同后端均失败，根因仍未知，不能承诺换卡必然解决。
 
-9070XT位于另一台台式机，无当前访问通道。本机已完成可行的短训练并反复记录长生成失败，现建议迁移剩余扩大对照。其16GB显存提供更多余量，实际吞吐、PEFT/TRL与FP16链路需在那里另验，更换显卡不会自动提高正确率。源码迁移包与单独的16份本机LoRA备份在dist；清单和SHA256在migration及environment。GitHub尚未推送；登录恢复后再创建私有仓库同步，二进制权重不自动进入Git。台式机接力提示词见migration/CODEX_PROMPT_ZH.md。云GPU预算300元待确认，没有租卡或付费API调用。
+9070XT位于另一台台式机，无当前访问通道。本机已完成可行的短训练并反复记录长生成失败，现建议迁移剩余扩大对照。其16GB显存提供更多余量，实际吞吐、PEFT/TRL与FP16链路需在那里另验，更换显卡不会自动提高正确率。源码迁移包与单独的16份本机LoRA备份在dist；清单和SHA256在migration及environment。已推送到私有仓库https://github.com/INeedSomeSugar/reasoning-rl-lab；16份LoRA二进制通过Release附件提供，没有放入Git历史。Release地址为https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105，远端摘要与本地一致。台式机接力提示词见migration/CODEX_PROMPT_ZH.md。云GPU预算300元待确认，没有租卡或付费API调用。

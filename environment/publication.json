@@ -1,9 +1,41 @@
 {
   "user_authorized_github_push": true,
   "intended_visibility": "private",
-  "repository_url": null,
-  "pushed": false,
-  "status": "GitHub CLI authentication invalid; user chose to sign in later and continue local experiments",
+  "verified_visibility": "private",
+  "repository_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab",
+  "pushed": true,
+  "status": "Source pushed and private prerelease assets verified against local SHA256",
   "credentials_stored_in_project": false,
-  "checkpoint_upload_completed": false
+  "checkpoint_upload_completed": true,
+  "public_base_model_uploaded": false,
+  "release": {
+    "tag": "local-pilot-20261105",
+    "url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105",
+    "prerelease": true,
+    "archive_target_commit": "f0eb7cf8fbccde3eeff88244c41de0e769cc9e87",
+    "published_at_utc": "2026-11-05T13:06:17Z",
+    "assets": [
+      {
+        "name": "reasoning-rl-lab-desktop-transfer-20261105.zip",
+        "bytes": 6196164,
+        "sha256": "461f151bd25230f0743171fa58538d0191ba89dc3368e0fb800f5f5c38a4ccf4",
+        "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/local-pilot-20261105/reasoning-rl-lab-desktop-transfer-20261105.zip",
+        "github_digest_verified": true
+      },
+      {
+        "name": "reasoning-rl-lab-laptop-lora-20261105.zip",
+        "bytes": 87383748,
+        "sha256": "cfa64cb037e6e8b930ebc855be5d853b45dc4e47615feabd4ba2882a575a90c5",
+        "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/local-pilot-20261105/reasoning-rl-lab-laptop-lora-20261105.zip",
+        "github_digest_verified": true
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 221,
+        "sha256": "8f8281d1a50d8e1908b95e0f7831904eb3708c339ef116144086529fbc385587",
+        "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/local-pilot-20261105/SHA256SUMS.txt",
+        "github_digest_verified": true
+      }
+    ]
+  }
 }

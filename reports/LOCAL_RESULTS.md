@@ -49,4 +49,4 @@ C/D/E均为seed13、G4、8步、同16题池和同一B权重。实际GRPO阶段�
 
 本机不是完全不能训练；它已完成上述短训练，但当前CUDA栈尚不能可靠完成较长生成，重复重跑不会提供受控结论。建议现在迁移剩余扩大训练、C/D至少3种子、静态消融及冻结后的GSM8K/SVAMP独立评测。9070XT的16GB显存提供更大余量，**没有实际访问或AMD训练成功证据，也不保证自动提分**。目标机先核对官方支持组合、重做前后向/重载/短GRPO，然后以实测速度确定规模与探测占比，重新建立同机A/B及共同SFT。
 
-迁移入口：[提示词](../migration/CODEX_PROMPT_ZH.md)。所有环境在项目内重建，不复制CUDA虚拟环境。GitHub推送已获授权，CLI登录失效且用户选择稍后登录，当前未推送。云GPU、付费API均未使用，300元仅为待确认方案预算。简历条目尚未撰写。
+迁移入口：[提示词](../migration/CODEX_PROMPT_ZH.md)。所有环境在项目内重建，不复制CUDA虚拟环境。已按授权推送到[私有仓库](https://github.com/INeedSomeSugar/reasoning-rl-lab)，[预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105)提供源码迁移包及16份本机LoRA备份，远端SHA256与本地一致。云GPU、付费API均未使用，300元仅为待确认方案预算。简历条目尚未撰写。

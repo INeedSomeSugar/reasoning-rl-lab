@@ -12,7 +12,7 @@ RTX 3060 Laptop 6GB已实际完成Qwen3-1.7B的前后向、LoRA更新、保存�
 
 扩大开发验证中，原NF4/SDPA配置的A为22/32、B为19/32；其预算轮次C完成21步，D在8步后的验证中发生CUDA非法内存访问。NF4/eager完成4步G4 GRPO冒烟后另开轮次：A11/16，128题/32步B已完成，但B独立评测在8/16题后再次发生非法内存访问，没有完整B正确率，也未启动该轮C/D/E。当前无活动训练进程，建议把剩余三种子同预算对照、扩大训练池和独立评测迁移后完成；目标机仍需实查验证。详见[运行事件](reports/runtime_incidents.md)、[复现命令](docs/REPRODUCING_LOCAL.md)。没有同预算优势或正式测试提升结论。
 
-GitHub同步已获用户授权，默认私有仓库。本机CLI登录已失效，用户选择稍后登录，当前仅准备本地Git版本；不把“已初始化Git”写成“已推送GitHub”。后续可通过GitHub下载到台式机，迁移时重建AMD环境。
+已推送到[GitHub私有仓库](https://github.com/INeedSomeSugar/reasoning-rl-lab)；[预实验Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/local-pilot-20261105)提供源码迁移包、16份本机LoRA备份及SHA256，远端摘要已核对。台式机可克隆main获取最新交接说明，按[migration/README_ZH.md](migration/README_ZH.md)重建AMD环境。Release源码包保留首次推送前的本机快照，发布状态以main为准。
 
 ## 实验链路
 
