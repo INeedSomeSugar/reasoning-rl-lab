@@ -1,0 +1,11 @@
+{
+  "state": "interrupted",
+  "completed_optimizer_steps": 3,
+  "last_logged_step_unix": 1793878004.176357,
+  "reason": "Long generation at step 4 showed no optimizer progress for over 300 seconds while total GPU memory was near capacity; interrupted owned session, not an observed OOM",
+  "checkpoint_saved": false,
+  "attention_implementation": "eager",
+  "quantization": "none",
+  "precision": "bfloat16",
+  "time_utc": "2026-11-05T11:33:03.6467356Z"
+}

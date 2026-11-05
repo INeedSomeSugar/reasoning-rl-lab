@@ -1,0 +1,39 @@
+{
+  "loader": {
+    "input_embedding": "torch.float32",
+    "output_head": "torch.float32",
+    "lora_dtypes": [
+      "torch.float32"
+    ],
+    "norm_dtypes": [
+      "torch.float32"
+    ],
+    "four_bit_compute_dtypes": [
+      "torch.bfloat16"
+    ],
+    "is_loaded_in_4bit": true,
+    "attention_implementation": "eager",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "trainer": {
+    "input_embedding": "torch.bfloat16",
+    "output_head": "torch.bfloat16",
+    "lora_dtypes": [
+      "torch.float32"
+    ],
+    "norm_dtypes": [
+      "torch.float32"
+    ],
+    "four_bit_compute_dtypes": [
+      "torch.bfloat16"
+    ],
+    "is_loaded_in_4bit": true,
+    "attention_implementation": "eager",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "endpoint_evaluation": "Common standalone reload; in-training validation is diagnostic"
+}

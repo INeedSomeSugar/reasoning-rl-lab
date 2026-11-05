@@ -1,0 +1,12 @@
+{
+  "trl_version": "0.23.1",
+  "source_sha256": "f217183c84be9b38b23454920eb1b914726aa3c4b9dd4c076d455bdaa67bf1b8",
+  "completion_ids_built_before_truncated_loss_mask": true,
+  "checked_run": "localbudget_20261105-C-s13",
+  "truncated_completions": 15,
+  "observed_generated_token_values": [
+    256
+  ],
+  "scope": "Installed library source ordering and recorded training rollouts; no GPU or holdout use",
+  "conclusion": "Truncated completions retain generated token counts even though their loss mask is zero"
+}

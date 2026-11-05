@@ -1,0 +1,74 @@
+{
+  "sft_checkpoint_sha256": "f6a0287455c6393fdd58d502c13c1e84c1d5b2bf3a896e15671c3b5d7718d01e",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "pool_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-05134",
+    "gsm8k-train-00638"
+  ],
+  "protocol": {
+    "stage": "engineering_eager_smoke",
+    "model": "qwen3_17b",
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "attention_implementation": "eager",
+    "seed": 13,
+    "data_seed": 20261105,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "max_prompt_length": 384,
+      "max_new_tokens": 192,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "sft": {
+      "pool_size": 32,
+      "steps": 4,
+      "gradient_accumulation_steps": 1,
+      "learning_rate": 0.0001,
+      "max_length": 512
+    },
+    "grpo": {
+      "pool_size": 8,
+      "pool_offset": 128,
+      "require_disjoint_from_sft": true,
+      "steps": 4,
+      "gradient_accumulation_steps": 4,
+      "num_generations": 4,
+      "learning_rate": 5e-06,
+      "loss_type": "grpo",
+      "scale_rewards": "group",
+      "beta": 0.0,
+      "epsilon": 0.2,
+      "uniform_mix": 0.25,
+      "prior": 0.5,
+      "probe_samples": 2,
+      "refresh_interval": 2,
+      "validation_interval": 4,
+      "max_wall_seconds": 2400,
+      "max_accounted_tokens": 200000
+    },
+    "evaluation": {
+      "validation_size": 8,
+      "test_size": null,
+      "external_size": null
+    }
+  },
+  "strategy": "uniform",
+  "code_sha256": "8c51c5a9db39adc3a18313fc17c8958d27fbed5e3686fb4698c31536abc51ef6",
+  "probe_cost_included": true,
+  "distributed_supported": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "archive": "dist\\reasoning-rl-lab-desktop-transfer-20261105.zip",
+  "bytes": 6196164,
+  "sha256": "461f151bd25230f0743171fa58538d0191ba89dc3368e0fb800f5f5c38a4ccf4",
+  "manifest_files_checked": 1351,
+  "extracted_files": 1352,
+  "scope": "Source/data/text evidence byte integrity, no AMD execution claim",
+  "verification_copy": "dist\\transfer_verification_20261105"
+}

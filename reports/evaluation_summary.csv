@@ -9,3 +9,8 @@ local17v2_20261105_smoke-A,validation,standalone_reload,,8,5,0.625,108.0,0.125,0
 local17v2_20261105_smoke-B-val,validation,standalone_reload,,8,6,0.75,113.0,0.0,0.75,0.0
 local17v4_20261105_C_reloadval,validation,standalone_reload,,8,6,0.75,113.0,0.0,0.75,0.0
 local17v4_20261105_C_s13,validation,in_training_diagnostic,4,8,6,0.75,119.875,0.125,0.75,0.125
+localbudget_20261105-C-s13,validation,in_training_diagnostic,21,32,16,0.5,150.625,0.28125,0.5,0.375
+localnf4eager_20261105_C_smoke,validation,in_training_diagnostic,4,8,5,0.625,114.375,0.125,0.875,0.125
+localnf4eagerpilot_20261105-A-val,validation,standalone_reload,,16,11,0.6875,125.9375,0.0625,0.6875,0.125
+localpilot2_20261105_B_val,validation,standalone_reload,,32,19,0.59375,140.34375,0.25,0.4375,0.25
+localpilot3_20261105_A_val,validation,standalone_reload,,32,22,0.6875,130.125,0.09375,0.75,0.1875

@@ -8,7 +8,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 allowed_roots = {"src", "configs", "scripts", "tests", "requirements", "docs", "migration", "data", "environment", "reports", "runs", "experiments", "logs"}
-allowed_files = {"AGENTS.md", "README.md", "PROJECT_CONTEXT.md", "HANDOFF.md", "pyproject.toml", ".gitignore", "LICENSE"}
+allowed_files = {"AGENTS.md", "README.md", "PROJECT_CONTEXT.md", "HANDOFF.md", "pyproject.toml", ".gitignore", ".gitattributes", "LICENSE"}
 suffixes = {".py", ".yaml", ".json", ".jsonl", ".txt", ".md", ".toml", ".csv", ".png", ".svg", ".ps1", ".sh", ".html", ".log"}
 files = []
 candidate_paths = [root/name for name in allowed_files if (root/name).is_file()]
@@ -21,7 +21,7 @@ for directory_name in sorted(allowed_roots):
         candidate_paths.extend(Path(folder)/name for name in names)
 for p in candidate_paths:
     relative = p.relative_to(root)
-    # Pruning is handled by rglob's traversal; only approved small artifacts enter the archive.
+    # os.walk prunes environment/build folders; only approved small artifacts enter the archive.
     if not p.is_file() or any(part in {"__pycache__", ".pytest_cache", ".ruff_cache", ".git"} for part in relative.parts):
         continue
     if relative.parts[0] not in allowed_roots and str(relative) not in allowed_files:

@@ -1,0 +1,114 @@
+{
+  "name": "localnf4eagerpilot_20261105-B-sync-q9",
+  "time_unix": 1793880095.2435732,
+  "item": "gsm8k-train-01286",
+  "cuda_launch_blocking": "1",
+  "scope": "Validation-only diagnosis, not a complete baseline or throughput claim",
+  "config": {
+    "stage": "local_nf4_eager_pilot",
+    "model": "qwen3_17b",
+    "dtype": "bfloat16",
+    "quantization": "nf4",
+    "attention_implementation": "eager",
+    "seed": 13,
+    "data_seed": 20261105,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "max_prompt_length": 512,
+      "max_new_tokens": 256,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "sft": {
+      "pool_size": 128,
+      "steps": 32,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "max_length": 512
+    },
+    "grpo": {
+      "pool_size": 8,
+      "pool_offset": 128,
+      "require_disjoint_from_sft": true,
+      "excluded_train_ids": [
+        "gsm8k-train-05134"
+      ],
+      "steps": 100000,
+      "gradient_accumulation_steps": 4,
+      "num_generations": 4,
+      "learning_rate": 5e-06,
+      "loss_type": "grpo",
+      "scale_rewards": "group",
+      "beta": 0.0,
+      "epsilon": 0.2,
+      "uniform_mix": 0.25,
+      "prior": 0.5,
+      "probe_samples": 2,
+      "refresh_interval": 4,
+      "validation_interval": 100000,
+      "max_wall_seconds": 960,
+      "final_validation_reserve_seconds": 360,
+      "max_accounted_tokens": 1000000
+    },
+    "evaluation": {
+      "validation_size": 16,
+      "test_size": null,
+      "external_size": null
+    }
+  },
+  "config_sha256": "edd6abd3662124bd50c213f3e8b4168e76a6c5bf40ba0d01abba3b5359b317de",
+  "adapter": "checkpoints/localnf4eagerpilot_20261105-B",
+  "adapter_sha256": "cd2560ad9a4fbda89ef0ed8db5c076333c0abc81254113d1625c0c4961b27152",
+  "success": true,
+  "model_precision": {
+    "input_embedding": "torch.float32",
+    "output_head": "torch.float32",
+    "lora_dtypes": [
+      "torch.float32"
+    ],
+    "norm_dtypes": [
+      "torch.float32"
+    ],
+    "four_bit_compute_dtypes": [
+      "torch.bfloat16"
+    ],
+    "is_loaded_in_4bit": true,
+    "attention_implementation": "eager",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "predictions": [
+    {
+      "id": "gsm8k-train-01286",
+      "split": "validation",
+      "prediction": "Let's start by calculating the number of blue fish. Since there are half as many blue fish as yellow fish, we divide the number of yellow fish by 2 to get the number of blue fish. 12 yellow fish divided by 2 is 6 blue fish.\n\nNow, we calculate the number of green fish. Since there are twice as many green fish as yellow fish, we multiply the number of yellow fish by 2 to get the number of green fish. 12 yellow fish multiplied by 2 is 24 green fish.\n\nNow, we add the number of yellow, blue, and green fish to get the total number of fish in the aquarium. 12 yellow fish plus 6 blue fish plus 24 green fish is 42 fish in total.\n\n#### 42\n\nThe final numerical answer is 42.####",
+      "gold_answer": "42",
+      "prompt_tokens": 93,
+      "generated_tokens": 177,
+      "truncated": false,
+      "correct": false,
+      "format_ok": false,
+      "parse_ok": false,
+      "extracted": null,
+      "parse_method": "invalid_hash",
+      "diagnostic_tags": [
+        "answer_extraction_failure",
+        "format_error"
+      ]
+    }
+  ],
+  "counts": {
+    "prompt_tokens": 93,
+    "generated_tokens": 177,
+    "wall_seconds": 34.51458560000083
+  }
+}

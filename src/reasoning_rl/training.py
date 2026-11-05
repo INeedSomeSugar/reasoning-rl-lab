@@ -47,6 +47,35 @@ def _gradient_evidence(model):
             "frozen_parameter_gradients": frozen_with_grad}
 
 
+def _evaluate_with_recovery(model, tokenizer, rows, config, directory, ledger, step, sft_hash):
+    """Persist trained weights before diagnostic generation can invalidate a CUDA context."""
+    path = ROOT / "checkpoints" / (directory.name + "-recovery") / f"step_{step:05d}"
+    receipt = directory / "recovery_checkpoints" / f"step_{step:05d}.json"
+    if path.exists() or receipt.exists():
+        raise FileExistsError("Preserve existing recovery evidence instead of overwriting it")
+    with ledger.measure("recovery_checkpoint", optimizer_step=step):
+        save_adapter(model, tokenizer, path, config, "grpo_recovery", completed_optimizer_steps=step,
+                     sft_checkpoint_sha256=sft_hash, data_manifest_sha256=sha256_file(ROOT / "data/manifest.json"))
+        record = {"checkpoint": str(path), "checkpoint_sha256": checkpoint_hash(path),
+                  "completed_optimizer_steps": step, "evaluation_completed": False,
+                  "exact_optimizer_resume_supported": False, "not_a_completed_run": True}
+        json_write(receipt, record)
+    result = evaluate_rows(model, tokenizer, rows, config,
+                           directory / f"validation/step_{step:05d}", ledger, phase="validation", step=step)
+    json_write(receipt, {**record, "evaluation_completed": True})
+    return result
+
+
+def _exclude_training_items(pool, excluded_ids):
+    """Apply an explicit, training-only audit exclusion before sampling or probing."""
+    excluded = set(excluded_ids)
+    if len(excluded) != len(excluded_ids):
+        raise ValueError("Duplicate audited training exclusion")
+    if any(r["split"] != "train" for r in pool) or not excluded <= {r["id"] for r in pool}:
+        raise ValueError("Audited exclusions must refer to this training candidate pool")
+    return [r for r in pool if r["id"] not in excluded]
+
+
 def check_model(config, name):
     import torch
     directory, ledger = create_run(name, config)
@@ -200,6 +229,8 @@ def run_grpo(config, name, sft_checkpoint, strategy):
     loader_precision = precision_snapshot(model)
     offset = opts.get("pool_offset", 0)
     pool = load_split("train", "select", limit=offset+opts["pool_size"], seed=config["data_seed"])[offset:]
+    candidate_pool_ids = [r["id"] for r in pool]
+    pool = _exclude_training_items(pool, opts.get("excluded_train_ids", []))
     if opts.get("require_disjoint_from_sft", False):
         if set(source_meta["training_ids"]) & {r["id"] for r in pool}:
             raise ValueError("This protocol declares disjoint SFT and GRPO train pools")
@@ -216,6 +247,7 @@ def run_grpo(config, name, sft_checkpoint, strategy):
     json_write(directory / "comparison_contract.json", {
         "sft_checkpoint_sha256": initial_hash, "data_manifest_sha256": sha256_file(ROOT / "data/manifest.json"),
         "pool_ids": list(by_id), "protocol": config, "strategy": strategy,
+        "candidate_pool_ids": candidate_pool_ids, "audited_excluded_train_ids": opts.get("excluded_train_ids", []),
         "code_sha256": code_hash(),
         "probe_cost_included": True, "distributed_supported": False})
     statistics = {"generation_batches": 0, "processed_tokens": 0, "padded_processed_tokens": 0,
@@ -367,10 +399,9 @@ def run_grpo(config, name, sft_checkpoint, strategy):
             if budget_exceeded():
                 control.should_training_stop = True
             if state.global_step % opts["validation_interval"] == 0 or control.should_training_stop:
-                evaluate_rows(trainer.accelerator.unwrap_model(trainer.model), tokenizer,
+                _evaluate_with_recovery(trainer.accelerator.unwrap_model(trainer.model), tokenizer,
                     load_split("validation", "evaluate_validation", limit=config["evaluation"]["validation_size"], seed=config["data_seed"]),
-                    config, directory / f"validation/step_{state.global_step:05d}", ledger,
-                    phase="validation", step=state.global_step)
+                    config, directory, ledger, state.global_step, initial_hash)
             # Validation time counts against the run's wall budget, too.
             if time.perf_counter()-training_started >= opts["max_wall_seconds"]:
                 control.should_training_stop = True
@@ -418,9 +449,9 @@ def run_grpo(config, name, sft_checkpoint, strategy):
                         probe_generated_tokens=statistics["probe_generated_tokens"],
                         policy_loss_input_tokens=statistics["processed_tokens"],
                         probe_prompt_tokens=statistics["probe_prompt_tokens"], final_endpoint=True)
-            evaluate_rows(trainer.accelerator.unwrap_model(trainer.model), tokenizer,
+            _evaluate_with_recovery(trainer.accelerator.unwrap_model(trainer.model), tokenizer,
                 load_split("validation", "evaluate_validation", limit=config["evaluation"]["validation_size"], seed=config["data_seed"]),
-                config, directory / f"validation/step_{final_step:05d}", ledger, phase="validation", step=final_step)
+                config, directory, ledger, final_step, initial_hash)
         cost.update(policy_loss_input_tokens=statistics["processed_tokens"],
                     policy_loss_padded_input_tokens=statistics["padded_processed_tokens"],
                     generation_prompt_tokens=statistics["generation_prompt_tokens"],
@@ -429,6 +460,7 @@ def run_grpo(config, name, sft_checkpoint, strategy):
                     generated_tokens=statistics["generated_tokens"],
                     probe_prompt_tokens=statistics["probe_prompt_tokens"],
                     probe_generated_tokens=statistics["probe_generated_tokens"])
+    measured_grpo_seconds = next(r["wall_seconds"] for r in reversed(ledger.rows) if r["phase"] == "grpo_total")
     path = ROOT / "checkpoints" / name
     save_adapter(model, tokenizer, path, config, "grpo", strategy=strategy,
                  sft_checkpoint_sha256=initial_hash, data_manifest_sha256=sha256_file(ROOT / "data/manifest.json"))
@@ -441,6 +473,8 @@ def run_grpo(config, name, sft_checkpoint, strategy):
               "training_truncation_rate": statistics["truncated_completions"]/max(1, statistics["reward_count"]),
               "checkpoint": str(path), "checkpoint_sha256": checkpoint_hash(path),
               "sft_checkpoint_sha256": initial_hash, "completed_optimizer_steps": trainer.state.global_step,
+              "observed_optimizer_steps_per_grpo_second": trainer.state.global_step/measured_grpo_seconds,
+              "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
               "wall_budget_overshoot_seconds": max(0, time.perf_counter()-training_started-opts["max_wall_seconds"])}
     if strategy == "uniform" or selector.updates:
         json_write(directory / "sampler_final.json", selector.state_dict())

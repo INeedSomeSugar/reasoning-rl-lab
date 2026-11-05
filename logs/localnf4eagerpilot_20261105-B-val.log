@@ -1,0 +1,48 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|����������     | 1/2 [00:03<00:03,  3.02s/it]
+Loading checkpoint shards: 100%|��������������������| 2/2 [00:03<00:00,  1.46s/it]
+Loading checkpoint shards: 100%|��������������������| 2/2 [00:03<00:00,  1.70s/it]
+validation 1/16 gsm8k-train-06134 correct=True tokens=89
+validation 2/16 gsm8k-train-00560 correct=False tokens=54
+validation 3/16 gsm8k-train-00848 correct=False tokens=256
+validation 4/16 gsm8k-train-05654 correct=False tokens=256
+validation 5/16 gsm8k-train-06336 correct=True tokens=88
+validation 6/16 gsm8k-train-03502 correct=True tokens=63
+validation 7/16 gsm8k-train-01891 correct=True tokens=88
+validation 8/16 gsm8k-train-00065 correct=True tokens=68
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\__main__.py", line 3, in <module>
+    main()
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\cli.py", line 104, in main
+    result = evaluate_rows(model, tokenizer, rows, config, directory / args.split, ledger, phase=args.split)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\evaluation.py", line 99, in evaluate_rows
+    result, _ = generate_one(model, tokenizer, row, config, sample=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\evaluation.py", line 51, in generate_one
+    generated = model.generate(**inputs, generation_config=generation_config,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\peft\peft_model.py", line 1973, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2564, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2779, in _sample
+    while self._has_unfinished_sequences(this_peer_finished, synced_gpus, device=input_ids.device):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2597, in _has_unfinished_sequences
+    elif this_peer_finished:
+         ^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

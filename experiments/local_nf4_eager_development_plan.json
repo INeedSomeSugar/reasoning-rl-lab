@@ -1,0 +1,57 @@
+{
+  "type": "Development pilot plan before new A/B and C/D/E; no holdout authorization",
+  "prefix": "localnf4eagerpilot_20261105",
+  "config": "configs/local_nf4_eager_pilot.yaml",
+  "reason": "NF4/SDPA pilot interrupted by repeated CUDA illegal memory access. Full BF16/eager passed capability and SFT but long G4 generation stalled near 6GB capacity. NF4/eager completed capability, four-step SFT, four-step G4 GRPO and eight-question diagnostic validation.",
+  "model": "Qwen3-1.7B, same fixed public posttrained revision; not Base",
+  "new_AB_validation_size": 16,
+  "evaluation_rule": "Same deterministic first 16 validation IDs, greedy, max_new_tokens=256, thinking disabled; no model/parameter choice from test/external",
+  "sft": {
+    "pool_size": 128,
+    "optimizer_steps": 32,
+    "gradient_accumulation": 4,
+    "max_length": 512,
+    "length_precheck": "All 128 fixed training examples <=466 tokens, so cap512 retains the same examples"
+  },
+  "grpo_candidate_pool_size": 8,
+  "audited_train_exclusions": [
+    "gsm8k-train-05134"
+  ],
+  "expected_retained_pool_size": 7,
+  "exclusion_reason": "Question/reference percentage inversion identified from training wording and reference only; preserve official data and old noisy-pool experiment, do not rewrite gold",
+  "shared_policy_and_probe_budget_seconds": 600,
+  "calibration_rule": "Before any C/D/E, reserve=30*ceil(B16_validation_seconds/30)+30; GRPO cap=600+reserve. Both fixed in final development freeze; report actual boundary overrun.",
+  "probe_samples": 2,
+  "refresh_interval": 4,
+  "uniform_mix": 0.25,
+  "seed13_order": [
+    "uniform",
+    "dynamic",
+    "static"
+  ],
+  "replication_order": [
+    [
+      29,
+      "dynamic"
+    ],
+    [
+      29,
+      "uniform"
+    ],
+    [
+      47,
+      "uniform"
+    ],
+    [
+      47,
+      "dynamic"
+    ]
+  ],
+  "checkpoint_rule": "Fixed budget endpoint from shared SFT; preserve recovery weights before diagnostic validation; no best-checkpoint selection",
+  "stop_rules": [
+    "If all three seed13 arms have zero adapter update, inspect negative pilot before more seeds",
+    "If repeated CUDA illegal access occurs again in NF4/eager, preserve recovery evidence and reassess laptop stack before further seeds"
+  ],
+  "scope": "Development validation, one SFT seed, C/D up to three paired GRPO seeds, E one seed; no formal independent-test claim",
+  "allows_holdout": false
+}

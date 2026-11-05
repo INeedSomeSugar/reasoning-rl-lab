@@ -1,0 +1,58 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|����������     | 1/2 [00:03<00:03,  3.70s/it]
+Loading checkpoint shards: 100%|��������������������| 2/2 [00:04<00:00,  1.74s/it]
+Loading checkpoint shards: 100%|��������������������| 2/2 [00:04<00:00,  2.03s/it]
+{'loss': 2.2853, 'grad_norm': 3.8795580863952637, 'learning_rate': 0.0001, 'epoch': 0.03125}
+{'loss': 1.8423, 'grad_norm': 3.5424211025238037, 'learning_rate': 0.0001, 'epoch': 0.0625}
+{'loss': 2.3559, 'grad_norm': 5.865396022796631, 'learning_rate': 0.0001, 'epoch': 0.09375}
+{'loss': 2.8269, 'grad_norm': 5.934946537017822, 'learning_rate': 0.0001, 'epoch': 0.125}
+{'loss': 1.9896, 'grad_norm': 5.46402645111084, 'learning_rate': 0.0001, 'epoch': 0.15625}
+{'loss': 1.6764, 'grad_norm': 4.584023952484131, 'learning_rate': 0.0001, 'epoch': 0.1875}
+{'loss': 1.7125, 'grad_norm': 4.8880615234375, 'learning_rate': 0.0001, 'epoch': 0.21875}
+{'loss': 1.6708, 'grad_norm': 5.038584232330322, 'learning_rate': 0.0001, 'epoch': 0.25}
+{'loss': 1.4587, 'grad_norm': 3.631289005279541, 'learning_rate': 0.0001, 'epoch': 0.28125}
+{'loss': 1.3067, 'grad_norm': 2.968712329864502, 'learning_rate': 0.0001, 'epoch': 0.3125}
+{'loss': 1.475, 'grad_norm': 4.000273704528809, 'learning_rate': 0.0001, 'epoch': 0.34375}
+{'loss': 0.9099, 'grad_norm': 2.1061851978302, 'learning_rate': 0.0001, 'epoch': 0.375}
+{'loss': 0.9553, 'grad_norm': 2.64211368560791, 'learning_rate': 0.0001, 'epoch': 0.40625}
+{'loss': 0.9179, 'grad_norm': 1.778570294380188, 'learning_rate': 0.0001, 'epoch': 0.4375}
+{'loss': 1.0145, 'grad_norm': 1.9114488363265991, 'learning_rate': 0.0001, 'epoch': 0.46875}
+{'loss': 0.8081, 'grad_norm': 1.3694459199905396, 'learning_rate': 0.0001, 'epoch': 0.5}
+{'loss': 0.8822, 'grad_norm': 1.8644226789474487, 'learning_rate': 0.0001, 'epoch': 0.53125}
+{'loss': 0.9831, 'grad_norm': 1.6157877445220947, 'learning_rate': 0.0001, 'epoch': 0.5625}
+{'loss': 1.1215, 'grad_norm': 1.283909797668457, 'learning_rate': 0.0001, 'epoch': 0.59375}
+{'loss': 0.9349, 'grad_norm': 1.4483635425567627, 'learning_rate': 0.0001, 'epoch': 0.625}
+{'loss': 0.7388, 'grad_norm': 1.0996705293655396, 'learning_rate': 0.0001, 'epoch': 0.65625}
+{'loss': 0.7604, 'grad_norm': 0.8059389591217041, 'learning_rate': 0.0001, 'epoch': 0.6875}
+{'loss': 0.6403, 'grad_norm': 0.8591001033782959, 'learning_rate': 0.0001, 'epoch': 0.71875}
+{'loss': 0.677, 'grad_norm': 0.9640336632728577, 'learning_rate': 0.0001, 'epoch': 0.75}
+{'loss': 0.6668, 'grad_norm': 1.0378413200378418, 'learning_rate': 0.0001, 'epoch': 0.78125}
+{'loss': 0.638, 'grad_norm': 0.9667249917984009, 'learning_rate': 0.0001, 'epoch': 0.8125}
+{'loss': 0.8184, 'grad_norm': 0.7984169721603394, 'learning_rate': 0.0001, 'epoch': 0.84375}
+{'loss': 0.6727, 'grad_norm': 0.7594234943389893, 'learning_rate': 0.0001, 'epoch': 0.875}
+{'loss': 0.6844, 'grad_norm': 0.8019269704818726, 'learning_rate': 0.0001, 'epoch': 0.90625}
+{'loss': 0.8539, 'grad_norm': 0.7631017565727234, 'learning_rate': 0.0001, 'epoch': 0.9375}
+{'loss': 0.6693, 'grad_norm': 0.693828821182251, 'learning_rate': 0.0001, 'epoch': 0.96875}
+{'loss': 0.6151, 'grad_norm': 1.2445560693740845, 'learning_rate': 0.0001, 'epoch': 1.0}
+{'train_runtime': 113.2, 'train_samples_per_second': 1.131, 'train_steps_per_second': 0.283, 'train_loss': 1.173832256346941, 'epoch': 1.0}
+{
+  "train_runtime": 113.2,
+  "train_samples_per_second": 1.131,
+  "train_steps_per_second": 0.283,
+  "train_loss": 1.173832256346941,
+  "epoch": 1.0,
+  "adapter_delta_l2": 2.5485134504175706,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1015931904,
+  "processed_tokens": 28381,
+  "supervised_tokens": 15160,
+  "retained_examples": 128,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\localnf4eagerpilot_20261105-B",
+  "checkpoint_sha256": "cd2560ad9a4fbda89ef0ed8db5c076333c0abc81254113d1625c0c4961b27152"
+}

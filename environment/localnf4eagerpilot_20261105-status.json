@@ -1,0 +1,13 @@
+{
+  "state": "stopped_environment_failure",
+  "prefix": "localnf4eagerpilot_20261105",
+  "completed": [
+    "localnf4eagerpilot_20261105-A-val",
+    "localnf4eagerpilot_20261105-B"
+  ],
+  "failed": "localnf4eagerpilot_20261105-B-val",
+  "CDE_started": false,
+  "details": "experiments/local_nf4_eager_interruption.json",
+  "paid_resources_used": false,
+  "gpu_process_running": false
+}

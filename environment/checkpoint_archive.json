@@ -1,0 +1,8 @@
+{
+  "archive": "dist/reasoning-rl-lab-laptop-lora-20261105.zip",
+  "sha256": "cfa64cb037e6e8b930ebc855be5d853b45dc4e47615feabd4ba2882a575a90c5",
+  "bytes": 87383748,
+  "checkpoint_count": 16,
+  "public_model_included": false,
+  "optimizer_state_included": false
+}

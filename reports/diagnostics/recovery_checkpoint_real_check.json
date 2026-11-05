@@ -1,0 +1,7 @@
+{
+  "run": "localnf4eager_20261105_C_smoke",
+  "recovery_and_final_adapter_bytes_equal": true,
+  "adapter_weights_sha256": "555f9e7c1416a4ed0553cf47cfdf917efdebb559b693cf4a65dd7d9ceb7e5f5b",
+  "completed_optimizer_steps": 4,
+  "scope": "Real serialized adapter bytes match; capability smoke separately verified actual model save/reload. Optimizer state is not resumable."
+}

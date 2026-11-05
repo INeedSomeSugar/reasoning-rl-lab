@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "files_checked": 48,
+  "checkpoint_count": 16,
+  "archive_sha256": "cfa64cb037e6e8b930ebc855be5d853b45dc4e47615feabd4ba2882a575a90c5",
+  "scope": "Portable adapter byte integrity; no model quality or AMD execution claim"
+}

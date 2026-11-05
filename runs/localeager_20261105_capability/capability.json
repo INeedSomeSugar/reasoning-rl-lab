@@ -1,0 +1,17 @@
+{
+  "loss": 4.5951104164123535,
+  "finite_gradients": true,
+  "nonzero_gradient_elements": 688128,
+  "frozen_parameter_gradients": 0,
+  "example_id": "gsm8k-train-05110",
+  "adapter_delta_l2": 0.8294747914896842,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\localeager_20261105_capability",
+  "checkpoint_sha256": "e62d32318a038e5d98d8bb6ca3434162dc5c5f74c0d1a45de3b9bc494c971be6",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}

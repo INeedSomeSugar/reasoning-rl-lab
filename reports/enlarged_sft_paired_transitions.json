@@ -1,0 +1,119 @@
+{
+  "scope": "32 fixed development questions, both 256-token greedy; not a test effect",
+  "A_correct": 22,
+  "B_correct": 19,
+  "transitions": [
+    {
+      "id": "gsm8k-train-00560",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 91,
+      "B_tokens": 256,
+      "B_tags": [
+        "truncated",
+        "answer_extraction_failure",
+        "format_error"
+      ]
+    },
+    {
+      "id": "gsm8k-train-00848",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 195,
+      "B_tokens": 101,
+      "B_tags": [
+        "wrong_numeric_answer_requires_review"
+      ]
+    },
+    {
+      "id": "gsm8k-train-01567",
+      "A_correct": false,
+      "B_correct": true,
+      "A_tokens": 256,
+      "B_tokens": 182,
+      "B_tags": []
+    },
+    {
+      "id": "gsm8k-train-01527",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 96,
+      "B_tokens": 256,
+      "B_tags": [
+        "truncated",
+        "answer_extraction_failure",
+        "format_error",
+        "repetition_suspected"
+      ]
+    },
+    {
+      "id": "gsm8k-train-06069",
+      "A_correct": false,
+      "B_correct": true,
+      "A_tokens": 118,
+      "B_tokens": 117,
+      "B_tags": []
+    },
+    {
+      "id": "gsm8k-train-03931",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 138,
+      "B_tokens": 82,
+      "B_tags": [
+        "wrong_numeric_answer_requires_review"
+      ]
+    },
+    {
+      "id": "gsm8k-train-03885",
+      "A_correct": false,
+      "B_correct": true,
+      "A_tokens": 79,
+      "B_tokens": 61,
+      "B_tags": []
+    },
+    {
+      "id": "gsm8k-train-01534",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 138,
+      "B_tokens": 140,
+      "B_tags": [
+        "wrong_numeric_answer_requires_review"
+      ]
+    },
+    {
+      "id": "gsm8k-train-04953",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 101,
+      "B_tokens": 256,
+      "B_tags": [
+        "truncated",
+        "answer_extraction_failure",
+        "format_error",
+        "repetition_suspected"
+      ]
+    },
+    {
+      "id": "gsm8k-train-04895",
+      "A_correct": false,
+      "B_correct": true,
+      "A_tokens": 256,
+      "B_tokens": 118,
+      "B_tags": []
+    },
+    {
+      "id": "gsm8k-train-03032",
+      "A_correct": true,
+      "B_correct": false,
+      "A_tokens": 178,
+      "B_tokens": 256,
+      "B_tags": [
+        "truncated",
+        "answer_extraction_failure",
+        "format_error"
+      ]
+    }
+  ]
+}

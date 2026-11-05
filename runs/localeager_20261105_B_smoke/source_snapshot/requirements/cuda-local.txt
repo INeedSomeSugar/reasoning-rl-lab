@@ -1,0 +1,4 @@
+# Install torch from the official cu128 index first; no dependency on a system CUDA toolkit.
+torch==2.8.0+cu128
+bitsandbytes==0.48.1
+-r common.txt

@@ -1,0 +1,19 @@
+{
+  "train_runtime": 113.2,
+  "train_samples_per_second": 1.131,
+  "train_steps_per_second": 0.283,
+  "train_loss": 1.173832256346941,
+  "epoch": 1.0,
+  "adapter_delta_l2": 2.5485134504175706,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1015931904,
+  "processed_tokens": 28381,
+  "supervised_tokens": 15160,
+  "retained_examples": 128,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\localnf4eagerpilot_20261105-B",
+  "checkpoint_sha256": "cd2560ad9a4fbda89ef0ed8db5c076333c0abc81254113d1625c0c4961b27152"
+}

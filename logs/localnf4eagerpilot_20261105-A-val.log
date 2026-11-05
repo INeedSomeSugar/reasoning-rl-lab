@@ -1,0 +1,50 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.92s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.63s/it]
+validation 1/16 gsm8k-train-06134 correct=True tokens=86
+validation 2/16 gsm8k-train-00560 correct=True tokens=91
+validation 3/16 gsm8k-train-00848 correct=True tokens=195
+validation 4/16 gsm8k-train-05654 correct=False tokens=127
+validation 5/16 gsm8k-train-06336 correct=True tokens=114
+validation 6/16 gsm8k-train-03502 correct=True tokens=67
+validation 7/16 gsm8k-train-01891 correct=True tokens=144
+validation 8/16 gsm8k-train-00065 correct=False tokens=52
+validation 9/16 gsm8k-train-01286 correct=True tokens=97
+validation 10/16 gsm8k-train-01567 correct=False tokens=256
+validation 11/16 gsm8k-train-05147 correct=False tokens=42
+validation 12/16 gsm8k-train-01527 correct=True tokens=96
+validation 13/16 gsm8k-train-04876 correct=False tokens=249
+validation 14/16 gsm8k-train-02106 correct=True tokens=192
+validation 15/16 gsm8k-train-01767 correct=True tokens=102
+validation 16/16 gsm8k-train-06195 correct=True tokens=105
+{
+  "n": 16,
+  "correct": 11,
+  "accuracy": 0.6875,
+  "accuracy_wilson95": [
+    0.44404355834740666,
+    0.8583535614521796
+  ],
+  "format_error_rate": 0.6875,
+  "parse_error_rate": 0.125,
+  "truncation_rate": 0.0625,
+  "mean_generated_tokens": 125.9375,
+  "p50_generated_tokens": 105,
+  "generated_tokens": 2015,
+  "prompt_tokens": 1575,
+  "automatic_error_tags": {
+    "format_error": 11,
+    "wrong_numeric_answer_requires_review": 3,
+    "truncated": 1,
+    "answer_extraction_failure": 2,
+    "repetition_suspected": 1
+  },
+  "phase": "validation",
+  "optimizer_step": null,
+  "decoding": "greedy",
+  "thinking": false,
+  "scorer_version": "numeric_final_v2"
+}

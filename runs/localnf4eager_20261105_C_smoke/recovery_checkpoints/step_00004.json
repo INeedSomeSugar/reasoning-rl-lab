@@ -1,0 +1,8 @@
+{
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\localnf4eager_20261105_C_smoke-recovery\\step_00004",
+  "checkpoint_sha256": "7f23a30b8a1d1db88e271e0c44fc8f60bdfb52dfedfdac842b8943313c01a4bf",
+  "completed_optimizer_steps": 4,
+  "evaluation_completed": true,
+  "exact_optimizer_resume_supported": false,
+  "not_a_completed_run": true
+}

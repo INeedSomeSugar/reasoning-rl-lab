@@ -44,9 +44,13 @@ D在step0与每refresh_interval个optimizer step进行全池刷新，采用最�
 
 扩大本机pilot的开发配置为`local_pilot.yaml`：SFT池是固定训练随机序列前128题，GRPO池初定其后16题，在B验证耗时511秒后缩为其后8题并将末次验证预留校准为540秒；二者不相交，C/D/E共享后者。调整只依据实际资源成本，在GRPO开始前确定，避免少量GRPO题已被SFT逐题监督；仍全部来源于GSM8K官方train，不涉及验证题或保留题。
 
+上述NF4/SDPA轮次在D验证时中断，不能拼接后端修改后的结果。新NF4/eager开发计划为`experiments/local_nf4_eager_development_plan.json`：重建A/B、固定前16道验证题和256-token上限；SFT仍为同128题/32步。训练题标签疑义审阅导致候选8题中预先排除gsm8k-train-05134，保留7题，原始数据与旧奖励不改。新C/D/E共享600秒优化/探测预算，末次验证预留按B实测时长执行预先固定的取整规则。具体配置、源码、数据、SFT哈希及题池在新冻结文件中保存。该规模仅作开发诊断，不能代表全量训练池的效果。
+
 可声明`final_validation_reserve_seconds`，依据先前固定验证的实际时长为末次验证预留预算。训练/探测在剩余预算到达该预留量时停止；末次验证的真实成本照常计入grpo_total。预留不是精确预测，实际超额或未用尽的时间均需报告，不能把共同上限直接当作实际耗时相等。
 
 主轴是**同机端到端GRPO增量wall time**，从首次探测前开始，包含所有探测、生成、优化与预定验证。共同SFT作为共享前置成本单列。模型加载/下载与云租用时间另列，不从账单中抹除。C不需要探测，可将省下预算用于更多更新；不能强制C与D只跑相同步数然后称预算公平。
+
+该上限实际覆盖`grpo_total`阶段，不覆盖进程启动、Trainer准备、检查点序列化及另一次独立重载评测。加载有单独计量；汇总给出加载、GRPO、重载评测之和，并标明未计量的外围阶段。保留原始Trainer吞吐字段，但时间早停后它可能仍用计划max_steps计算，实测吞吐必须用实际完成步数或真实token重算。
 
 同时保存生成token、探测prompt/生成token、策略loss输入token、验证token、CUDA event device elapsed与本进程峰值allocated/reserved显存。token相加只是辅助预算代理，不能当等价FLOPs。CUDA event elapsed不是活跃kernel计时。嵌套probe/validation成本已包含在grpo_total，汇总不能重复相加。不同GPU/驱动/精度的耗时分表，不直接比较速度收益。
 

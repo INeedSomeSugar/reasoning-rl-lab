@@ -1,0 +1,9 @@
+﻿run,strategy,seed,id,selected_count,expected_selected_count,observed_groups,mixed_reward_groups,suspected_label_issue,question_words,solution_contains_division,solution_contains_multiplication,topic_label_status
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-01954,1,2.625,1,0,False,24,True,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-01408,7,2.625,7,3,False,50,True,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-00597,3,2.625,3,0,False,111,True,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-00154,1,2.625,1,1,False,43,True,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-00174,2,2.625,2,1,False,40,False,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-04291,3,2.625,3,1,False,26,True,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-05134,4,2.625,4,3,True,41,False,True,Only overlapping text features; no human math-topic annotation
+localbudget_20261105-C-s13,uniform,13,gsm8k-train-00638,0,2.625,0,0,False,44,False,True,Only overlapping text features; no human math-topic annotation

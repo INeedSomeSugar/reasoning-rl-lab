@@ -35,7 +35,10 @@ def load_model(config, adapter=None, trainable=False, fresh_lora=False):
         raise ValueError("Local model revision does not match models.lock.json")
     dtype = {"bfloat16": torch.bfloat16, "float16": torch.float16, "float32": torch.float32}[config["dtype"]]
     quantized = config.get("quantization") == "nf4"
-    kwargs = {"torch_dtype": dtype, "attn_implementation": "sdpa", "local_files_only": True,
+    attention = config.get("attention_implementation", "sdpa")
+    if attention not in {"sdpa", "eager"}:
+        raise ValueError("Choose an explicit supported attention implementation: sdpa or eager")
+    kwargs = {"torch_dtype": dtype, "attn_implementation": attention, "local_files_only": True,
               "trust_remote_code": False, "device_map": {"": 0} if torch.cuda.is_available() else {"": "cpu"}}
     if quantized:
         if not torch.cuda.is_available() or torch.version.hip:
@@ -60,6 +63,8 @@ def load_model(config, adapter=None, trainable=False, fresh_lora=False):
         for field in ("model", "dtype", "quantization"):
             if metadata["config"][field] != config[field]:
                 raise ValueError(f"Checkpoint loading protocol mismatch: {field}")
+        if metadata["config"].get("attention_implementation", "sdpa") != attention:
+            raise ValueError("Checkpoint attention implementation mismatch; use a separately recorded diagnostic for cross-backend inspection")
         model = PeftModel.from_pretrained(model, adapter, is_trainable=trainable)
     elif fresh_lora:
         lora = config["lora"]
@@ -86,6 +91,8 @@ def precision_snapshot(model):
         "four_bit_compute_dtypes": sorted({str(m.compute_dtype) for m in model.modules()
                                             if hasattr(m, "compute_dtype")}),
         "is_loaded_in_4bit": bool(getattr(model, "is_loaded_in_4bit", False)),
+        "attention_implementation": getattr(model.config, "_attn_implementation", None),
+        "parameter_devices": sorted({str(p.device) for p in model.parameters()}),
     }
 
 

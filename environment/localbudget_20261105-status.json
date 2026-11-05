@@ -1,9 +1,12 @@
 {
-  "state": "running",
+  "state": "failed",
   "prefix": "localbudget_20261105",
   "pid": 6188,
   "started_utc": "2026-11-05T10:44:32.6945286Z",
-  "completed": [],
-  "current": "localbudget_20261105-C-s13",
-  "error": null
+  "completed": [
+    "localbudget_20261105-C-s13"
+  ],
+  "current": "localbudget_20261105-D-s13",
+  "error": "Stage failed: localbudget_20261105-D-s13 (exit 1). Preserve partial evidence and inspect before selecting a new run name.",
+  "finished_utc": "2026-11-05T11:17:30.3199334Z"
 }

@@ -1,0 +1,109 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.13s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.47s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.72s/it]
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 929.0, 'completions/mean_length': 125.25, 'completions/min_length': 63.0, 'completions/max_length': 256.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 81.66667175292969, 'completions/min_terminated_length': 63.0, 'completions/max_terminated_length': 103.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.3409319743514061, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.125}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 1334.0, 'completions/mean_length': 209.25, 'completions/min_length': 69.0, 'completions/max_length': 256.0, 'completions/clipped_ratio': 0.75, 'completions/mean_terminated_length': 69.0, 'completions/min_terminated_length': 69.0, 'completions/max_terminated_length': 69.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.212007537484169, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.25}
+{'loss': -0.25, 'grad_norm': 0.6639519929885864, 'learning_rate': 5e-06, 'num_tokens': 1854.0, 'completions/mean_length': 174.0, 'completions/min_length': 90.0, 'completions/max_length': 256.0, 'completions/clipped_ratio': 0.5, 'completions/mean_terminated_length': 92.0, 'completions/min_terminated_length': 90.0, 'completions/max_terminated_length': 94.0, 'rewards/reward/mean': 0.25, 'rewards/reward/std': 0.5, 'reward': 0.25, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.3601171225309372, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.375}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 2775.0, 'completions/mean_length': 197.25, 'completions/min_length': 135.0, 'completions/max_length': 256.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 177.6666717529297, 'completions/min_terminated_length': 135.0, 'completions/max_terminated_length': 212.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.27848538011312485, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.5}
+{'loss': 0.0, 'grad_norm': 0.39800745248794556, 'learning_rate': 5e-06, 'num_tokens': 3802.0, 'completions/mean_length': 150.75, 'completions/min_length': 91.0, 'completions/max_length': 249.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 150.75, 'completions/min_terminated_length': 91.0, 'completions/max_terminated_length': 249.0, 'rewards/reward/mean': 0.5, 'rewards/reward/std': 0.5773502588272095, 'reward': 0.5, 'reward_std': 0.5773502588272095, 'frac_reward_zero_std': 0.0, 'entropy': 0.2966335192322731, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.625}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 4965.0, 'completions/mean_length': 119.75, 'completions/min_length': 89.0, 'completions/max_length': 172.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 119.75, 'completions/min_terminated_length': 89.0, 'completions/max_terminated_length': 172.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.4280175045132637, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.75}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 5685.0, 'completions/mean_length': 138.0, 'completions/min_length': 61.0, 'completions/max_length': 256.0, 'completions/clipped_ratio': 0.25, 'completions/mean_terminated_length': 98.66667175292969, 'completions/min_terminated_length': 61.0, 'completions/max_terminated_length': 121.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.18753931298851967, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.875}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 6767.0, 'completions/mean_length': 99.5, 'completions/min_length': 63.0, 'completions/max_length': 127.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 99.5, 'completions/min_terminated_length': 63.0, 'completions/max_terminated_length': 127.0, 'rewards/reward/mean': 0.0, 'rewards/reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.5015767440199852, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 1.0}
+validation 1/32 gsm8k-train-06134 correct=True tokens=53
+validation 2/32 gsm8k-train-00560 correct=False tokens=54
+validation 3/32 gsm8k-train-00848 correct=False tokens=256
+validation 4/32 gsm8k-train-05654 correct=False tokens=256
+validation 5/32 gsm8k-train-06336 correct=True tokens=88
+validation 6/32 gsm8k-train-03502 correct=True tokens=63
+validation 7/32 gsm8k-train-01891 correct=True tokens=88
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\__main__.py", line 3, in <module>
+    main()
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\cli.py", line 74, in main
+    result = training.run_grpo(config, args.name, args.sft_checkpoint, args.strategy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\training.py", line 421, in run_grpo
+    evaluate_rows(trainer.accelerator.unwrap_model(trainer.model), tokenizer,
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\evaluation.py", line 99, in evaluate_rows
+    result, _ = generate_one(model, tokenizer, row, config, sample=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\src\reasoning_rl\evaluation.py", line 51, in generate_one
+    generated = model.generate(**inputs, generation_config=generation_config,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\peft\peft_model.py", line 1973, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2564, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\generation\utils.py", line 2787, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\utils\generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 480, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\utils\generic.py", line 1064, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\utils\deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\utils\deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "D:\User\AI\reasoning-rl-lab\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py", line 96, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

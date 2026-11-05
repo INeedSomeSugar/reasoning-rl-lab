@@ -1,6 +1,7 @@
 {
   "status": "pass",
   "errors": [],
+  "unavailable_checkpoints": [],
   "runs": [
     {
       "run": "local17_20261105_smoke-A",
@@ -140,6 +141,120 @@
       "uniform_floor_preserved": true,
       "gradients_finite": true,
       "nonzero_gradient_steps": 0
+    },
+    {
+      "run": "localbudget_20261105-C-s13",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true,
+      "pool_is_train_only": true,
+      "selections_in_pool": true,
+      "rollout_tokens_reconcile": true,
+      "reward_sum_reconciles": true,
+      "reward_recomputation_matches": true,
+      "groups_are_single_question": true,
+      "zero_variance_groups_reconcile": true,
+      "sampler_weights_normalized": true,
+      "uniform_floor_preserved": true,
+      "gradients_finite": true,
+      "nonzero_gradient_steps": 9
+    },
+    {
+      "run": "localbudget_20261105-D-s13",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localeager_20261105_B_smoke",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true
+    },
+    {
+      "run": "localeager_20261105_C_smoke",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localeager_20261105_capability",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localnf4eager_20261105_B_smoke",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true
+    },
+    {
+      "run": "localnf4eager_20261105_C_smoke",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true,
+      "pool_is_train_only": true,
+      "selections_in_pool": true,
+      "rollout_tokens_reconcile": true,
+      "reward_sum_reconciles": true,
+      "reward_recomputation_matches": true,
+      "groups_are_single_question": true,
+      "zero_variance_groups_reconcile": true,
+      "sampler_weights_normalized": true,
+      "uniform_floor_preserved": true,
+      "gradients_finite": true,
+      "nonzero_gradient_steps": 2
+    },
+    {
+      "run": "localnf4eager_20261105_capability",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localnf4eagerpilot_20261105-A-val",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localnf4eagerpilot_20261105-B",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true
+    },
+    {
+      "run": "localnf4eagerpilot_20261105-B-val",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localpilot2_20261105_A_val",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localpilot2_20261105_B",
+      "source_snapshot_matches": true,
+      "status": "completed_training_run",
+      "adapter_updated": true,
+      "checkpoint_hash_matches": true
+    },
+    {
+      "run": "localpilot2_20261105_B_val",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localpilot3_20261105_A_val",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
+    },
+    {
+      "run": "localpilot_20261105_B",
+      "source_snapshot_matches": true,
+      "status": "not_a_completed_training_run"
     }
   ],
   "holdout_content_read": false,

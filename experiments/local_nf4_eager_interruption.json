@@ -1,0 +1,42 @@
+{
+  "type": "Development attempt interrupted before C/D/E freeze",
+  "created_unix": 1793880226.8715062,
+  "prefix": "localnf4eagerpilot_20261105",
+  "plan": "experiments/local_nf4_eager_development_plan.json",
+  "config_sha256": "edd6abd3662124bd50c213f3e8b4168e76a6c5bf40ba0d01abba3b5359b317de",
+  "code_sha256": "5f6a45db2e6f46e74affa8aa2caa44e5c10a17abc2ed361a853838a15a9ab663",
+  "A": {
+    "run": "localnf4eagerpilot_20261105-A-val",
+    "status": "completed",
+    "correct": 11,
+    "n": 16
+  },
+  "B_training": {
+    "run": "localnf4eagerpilot_20261105-B",
+    "status": "completed",
+    "steps": 32,
+    "retained_examples": 128,
+    "checkpoint": "checkpoints/localnf4eagerpilot_20261105-B",
+    "checkpoint_sha256": "cd2560ad9a4fbda89ef0ed8db5c076333c0abc81254113d1625c0c4961b27152"
+  },
+  "B_evaluation": {
+    "run": "localnf4eagerpilot_20261105-B-val",
+    "status": "failed",
+    "completed_predictions": 8,
+    "declared_predictions": 16,
+    "aggregate_accuracy": null,
+    "last_completed_id": "gsm8k-train-00065",
+    "failed_item_by_fixed_order": "gsm8k-train-01286",
+    "exception": "torch.AcceleratorError: CUDA illegal memory access",
+    "failed_validation_wall_seconds": 182.94891760000064,
+    "token_count_scope": "Completed predictions only; tokens generated within the failing call are unknown, so failed-run token totals are a lower bound"
+  },
+  "synchronous_single_item_diagnostic": "reports/diagnostics/localnf4eagerpilot_20261105-B-sync-q9.json",
+  "diagnostic_result": "passed, but one-item success does not establish long-run stability or identify a cause",
+  "CDE_started": false,
+  "budget_calibrated_or_frozen": false,
+  "other_seeds_started": false,
+  "holdout_evaluation_started": false,
+  "action": "Preserve weights and partial outputs; stop this development attempt; prepare desktop transfer rather than repeatedly selecting successful laptop retries",
+  "causal_conclusion": "NF4/eager also failed; SDPA alone is not an established cause. No observed OOM. AMD has not been tested."
+}

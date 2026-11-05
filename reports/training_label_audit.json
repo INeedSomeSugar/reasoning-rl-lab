@@ -1,0 +1,25 @@
+{
+  "scope": "Post-freeze descriptive review of the eight-question GRPO training pool; no validation or holdout label changes",
+  "reviewer": "Codex model-assisted mathematical review",
+  "human_reviewed": false,
+  "original_data_modified": false,
+  "active_comparison_modified": false,
+  "records": [
+    {
+      "id": "gsm8k-train-05134",
+      "status": "suspected_question_reference_inconsistency",
+      "official_answer_preserved": "983",
+      "source_revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "source_file": "grade_school_math/data/train.jsonl",
+      "source_one_based_line": 5135,
+      "source_url": "https://github.com/openai/grade-school-math/blob/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/train.jsonl#L5135",
+      "question_condition": "Jared counted 15% fewer cars than Ann; Jared counted 300; Ann counted seven more than Alfred.",
+      "official_reference_operation": "Ann = 1.15 * 300 = 345; Alfred = 338; total = 983",
+      "literal_condition_equations": ["300 = 0.85 * Ann", "Alfred = Ann - 7"],
+      "literal_exact_total": "16981/17",
+      "diagnosis": "The inverse of 15% fewer is division by 0.85, not multiplication by 1.15. Literal equations also yield fractional car counts, so a unique corrected integer answer is not justified by the wording.",
+      "action": "Keep the official answer and all frozen pilot evidence. Report the item's actual exposure/rewards separately. Future cleanup must use a separate training-only audit, an explicit exclusion rule and a new frozen comparison; no silent relabeling or change between arms."
+    }
+  ],
+  "coverage_limit": "This identifies a concrete issue in the tiny development pool, not a complete GSM8K label-quality estimate. Other records are not thereby certified clean."
+}

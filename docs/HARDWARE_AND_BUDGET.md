@@ -19,7 +19,7 @@
 
 使用 NF4 双重量化、BF16计算、rank8 LoRA、SDPA、AdamW、gradient checkpointing，不依赖vLLM、FlashAttention或系统级CUDA Toolkit安装。量化只在已验证的NVIDIA路径启用。已真实完成1.7B的SFT与GRPO；扩大SFT的128题/32步用时63.68秒，峰值allocated约3.353GiB、reserved约4.149GiB。32道验证题的B耗时511.07秒，生成4491token；生成明显比SFT优化更耗时。完整正式对照的主要资源约束是生成时间与多次重复，不仅是模型权重能否放进显存。
 
-一次原模型验证在第19题遭遇CUDA非法内存访问，未观察到OOM；新进程单题同步诊断通过，完整32题重跑也完成，原因尚未定位。保留原始失败与重跑记录，不能据此宣称运行栈已消除全部间歇性问题。当前未修改系统驱动或结束用户进程。
+NF4/SDPA原模型验证与后续动态组诊断验证分别出现CUDA非法内存访问；未观察到OOM，原因未定位。完整BF16/eager实际通过前后向、LoRA、重载和4步SFT，但G4 GRPO长生成在显存接近6GB时停滞，记录3步后中断。NF4/eager完成4步G4 GRPO及8题诊断验证，GRPO峰值allocated约1.697GiB、reserved约3.434GiB；另开扩大轮次又完成128题/32步SFT，但B评测8/16后再次非法内存访问。短链路通过不能证明长训练稳定，SDPA也不是已确认根因。当前建议把扩大对照迁移后重新验证；没有活动训练进程，未修改系统驱动或结束用户进程。详见[运行事件记录](../reports/runtime_incidents.md)。
 
 ## RX 9070 XT 的官方支持与边界
 

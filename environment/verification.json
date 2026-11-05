@@ -2,9 +2,16 @@
   "date": "2026-11-05",
   "command": ".venv/Scripts/python.exe -m pytest -q",
   "exit_code": 0,
-  "passed": 32,
+  "passed": 36,
   "skipped": 0,
-  "duration_seconds": 9.43,
-  "source_code_sha256": "d90de43622ff1792fc630b9e4b16670343143f69ae99dc1e5e0193a7ebb43b6b",
-  "scope": "Engineering protocol, score/data isolation, generation configuration regression and error-cost audit; not model-quality evidence"
+  "duration_seconds": 11.0,
+  "source_code_sha256": "5f6a45db2e6f46e74affa8aa2caa44e5c10a17abc2ed361a853838a15a9ab663",
+  "log": "logs/local_final_verification_20261105.log",
+  "additional_checks": {
+    "compileall_src_scripts_tests": "passed",
+    "evidence_audit_runs": 33,
+    "evidence_audit_errors": 0,
+    "holdout_evaluations": 0
+  },
+  "scope": "Engineering protocol, scoring/isolation, LoRA loss mask, reward grouping, failure-cost preservation, recovery checkpoint and audited training exclusions. Not model-quality evidence or long-GPU stability certification."
 }

@@ -1,0 +1,33 @@
+{
+  "scope": "Training-only descriptive diagnostics; no holdout read",
+  "runs": [
+    {
+      "run": "localbudget_20261105-C-s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "pool_n": 8,
+      "draws": 21,
+      "unique_selected": 7,
+      "unseen_pool_items": [
+        "gsm8k-train-00638"
+      ],
+      "max_exposure_share": 0.3333333333333333,
+      "empirical_vs_expected_selection_tv": 0.30952380952380953,
+      "groups": 21,
+      "mixed_reward_groups": 9,
+      "mixed_groups_per_grpo_minute": 0.47013460010365377,
+      "probe_fraction_of_grpo_time": 0.0,
+      "validation_fraction_of_grpo_time": 0.424141967292533,
+      "complete_probe_events": [],
+      "incomplete_probe_calls": 0,
+      "incomplete_probe_items": 0,
+      "weight_change_events": 0,
+      "suspected_label_issue_draws": 4,
+      "suspected_label_issue_rollouts": 16,
+      "suspected_label_issue_positive_rewards": 4.0,
+      "note": "Mixed reward can still yield no gradient after truncated-completion masking; no learning or accuracy claim from this statistic alone."
+    }
+  ],
+  "uncertainty_note": "With K=2 and prior=0.5, success estimates take only 1/6, 1/2, 5/6. Changes can be Monte Carlo noise.",
+  "coverage_note": "A positive sampling floor ensures nonzero draw probability, not exposure to every item in a short run."
+}

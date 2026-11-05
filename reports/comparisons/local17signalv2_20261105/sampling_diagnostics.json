@@ -1,0 +1,126 @@
+{
+  "scope": "Training-only descriptive diagnostics; no holdout read",
+  "runs": [
+    {
+      "run": "local17signalv2_20261105_C_s13",
+      "strategy": "uniform",
+      "seed": 13,
+      "pool_n": 16,
+      "draws": 8,
+      "unique_selected": 5,
+      "unseen_pool_items": [
+        "gsm8k-train-05110",
+        "gsm8k-train-05559",
+        "gsm8k-train-00634",
+        "gsm8k-train-02599",
+        "gsm8k-train-02865",
+        "gsm8k-train-05384",
+        "gsm8k-train-00119",
+        "gsm8k-train-06660",
+        "gsm8k-train-00113",
+        "gsm8k-train-00401",
+        "gsm8k-train-07262"
+      ],
+      "max_exposure_share": 0.25,
+      "empirical_vs_expected_selection_tv": 0.6875,
+      "groups": 8,
+      "mixed_reward_groups": 2,
+      "mixed_groups_per_grpo_minute": 0.3333837370649021,
+      "probe_fraction_of_grpo_time": 0.0,
+      "validation_fraction_of_grpo_time": 0.3780208812358311,
+      "complete_probe_events": [],
+      "incomplete_probe_calls": 0,
+      "incomplete_probe_items": 0,
+      "weight_change_events": 0,
+      "note": "Mixed reward can still yield no gradient after truncated-completion masking; no learning or accuracy claim from this statistic alone."
+    },
+    {
+      "run": "local17signalv2_20261105_D_s13",
+      "strategy": "dynamic",
+      "seed": 13,
+      "pool_n": 16,
+      "draws": 8,
+      "unique_selected": 5,
+      "unseen_pool_items": [
+        "gsm8k-train-05110",
+        "gsm8k-train-05559",
+        "gsm8k-train-00634",
+        "gsm8k-train-02599",
+        "gsm8k-train-02865",
+        "gsm8k-train-05384",
+        "gsm8k-train-00119",
+        "gsm8k-train-06660",
+        "gsm8k-train-00113",
+        "gsm8k-train-00401",
+        "gsm8k-train-07262"
+      ],
+      "max_exposure_share": 0.375,
+      "empirical_vs_expected_selection_tv": 0.6920613354037267,
+      "groups": 8,
+      "mixed_reward_groups": 1,
+      "mixed_groups_per_grpo_minute": 0.07111169038799513,
+      "probe_fraction_of_grpo_time": 0.705824278603181,
+      "validation_fraction_of_grpo_time": 0.08818888929170669,
+      "complete_probe_events": [
+        {
+          "step": 0,
+          "effective_pool_size": 15.362904140669313,
+          "max_min_weight_ratio": 1.5783132530120483,
+          "weight_total_variation_from_previous": null
+        },
+        {
+          "step": 4,
+          "effective_pool_size": 15.699624530663328,
+          "max_min_weight_ratio": 1.5925925925925926,
+          "weight_total_variation_from_previous": 0.057453416149068334
+        }
+      ],
+      "incomplete_probe_calls": 0,
+      "incomplete_probe_items": 0,
+      "weight_change_events": 1,
+      "note": "Mixed reward can still yield no gradient after truncated-completion masking; no learning or accuracy claim from this statistic alone."
+    },
+    {
+      "run": "local17signalv2_20261105_E_s13",
+      "strategy": "static",
+      "seed": 13,
+      "pool_n": 16,
+      "draws": 8,
+      "unique_selected": 5,
+      "unseen_pool_items": [
+        "gsm8k-train-05110",
+        "gsm8k-train-05559",
+        "gsm8k-train-00634",
+        "gsm8k-train-02599",
+        "gsm8k-train-02865",
+        "gsm8k-train-05384",
+        "gsm8k-train-00119",
+        "gsm8k-train-06660",
+        "gsm8k-train-00113",
+        "gsm8k-train-00401",
+        "gsm8k-train-07262"
+      ],
+      "max_exposure_share": 0.25,
+      "empirical_vs_expected_selection_tv": 0.6854619565217391,
+      "groups": 8,
+      "mixed_reward_groups": 3,
+      "mixed_groups_per_grpo_minute": 0.4021931111293371,
+      "probe_fraction_of_grpo_time": 0.48413966682573295,
+      "validation_fraction_of_grpo_time": 0.20342851345330987,
+      "complete_probe_events": [
+        {
+          "step": 0,
+          "effective_pool_size": 15.362904140669313,
+          "max_min_weight_ratio": 1.5783132530120483,
+          "weight_total_variation_from_previous": null
+        }
+      ],
+      "incomplete_probe_calls": 0,
+      "incomplete_probe_items": 0,
+      "weight_change_events": 0,
+      "note": "Mixed reward can still yield no gradient after truncated-completion masking; no learning or accuracy claim from this statistic alone."
+    }
+  ],
+  "uncertainty_note": "With K=2 and prior=0.5, success estimates take only 1/6, 1/2, 5/6. Changes can be Monte Carlo noise.",
+  "coverage_note": "A positive sampling floor ensures nonzero draw probability, not exposure to every item in a short run."
+}

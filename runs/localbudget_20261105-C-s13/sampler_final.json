@@ -1,0 +1,30 @@
+{
+  "strategy": "uniform",
+  "seed": 13,
+  "uniform_mix": 0.25,
+  "prior": 0.5,
+  "updates": 0,
+  "p_success": {},
+  "selection_counts": {
+    "gsm8k-train-01954": 1,
+    "gsm8k-train-01408": 7,
+    "gsm8k-train-00597": 3,
+    "gsm8k-train-00154": 1,
+    "gsm8k-train-00174": 2,
+    "gsm8k-train-04291": 3,
+    "gsm8k-train-05134": 4,
+    "gsm8k-train-00638": 0
+  },
+  "weights": {
+    "gsm8k-train-01954": 0.125,
+    "gsm8k-train-01408": 0.125,
+    "gsm8k-train-00597": 0.125,
+    "gsm8k-train-00154": 0.125,
+    "gsm8k-train-00174": 0.125,
+    "gsm8k-train-04291": 0.125,
+    "gsm8k-train-05134": 0.125,
+    "gsm8k-train-00638": 0.125
+  },
+  "entropy": 2.0794415416798357,
+  "effective_pool_size": 8.0
+}

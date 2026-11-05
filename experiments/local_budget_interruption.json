@@ -1,0 +1,15 @@
+{
+  "state": "interrupted",
+  "prefix": "localbudget_20261105",
+  "completed_training": [
+    "localbudget_20261105-C-s13"
+  ],
+  "failed_run": "localbudget_20261105-D-s13",
+  "completed_steps_before_failure": 8,
+  "partial_validation_predictions": 7,
+  "weights_saved_for_failed_run": false,
+  "reason": "Repeated CUDA illegal memory access during diagnostic validation; OOM not established",
+  "next": "Preserve frozen protocol and all evidence. Validate recovery checkpoint saving and an independently named eager/full-BF16 engineering profile before a new comparison.",
+  "original_frozen_plan": "experiments/local_budget_frozen_development.json",
+  "time_utc": "2026-11-05T11:22:13.9326995Z"
+}

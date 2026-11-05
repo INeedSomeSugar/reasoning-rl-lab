@@ -1,5 +1,6 @@
 """Summarize completed time-budget pilot runs and independent reloads; no model or holdout access."""
 import argparse
+import ast
 import json
 import statistics
 from collections import defaultdict
@@ -28,6 +29,40 @@ def main():
         baselines[arm]["run"] = name
     reference_predictions = jsonl_read(ROOT / "runs" / args.sft_evaluation / "validation/predictions.jsonl")
     reference_ids = [r["id"] for r in reference_predictions]
+    reference_config = read(ROOT / "runs" / args.sft_evaluation / "config.json")
+    reference_precision = read(ROOT / "runs" / args.sft_evaluation / "model_precision.json")["standalone_loader"]
+
+    def prompt_signature(path):
+        tree = ast.parse(path.read_text(encoding="utf-8"))
+        return [ast.dump(node, include_attributes=False) for node in tree.body
+                if isinstance(node, ast.FunctionDef) and node.name == "render_prompt"
+                or isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id in {"PROMPT", "PROMPT_VERSION"} for t in node.targets)]
+
+    def verify_evaluation(directory, metric, baseline=False):
+        config = read(directory / "config.json")
+        for key in ("model", "dtype", "quantization", "data_seed", "generation", "evaluation"):
+            if config[key] != reference_config[key]:
+                raise ValueError("Endpoint evaluation configuration differs: " + key)
+        if config.get("attention_implementation", "sdpa") != reference_config.get("attention_implementation", "sdpa"):
+            raise ValueError("Endpoint attention implementation differs")
+        precision = read(directory / "model_precision.json")["standalone_loader"]
+        backbone_fields = ("input_embedding", "output_head", "norm_dtypes", "four_bit_compute_dtypes", "is_loaded_in_4bit")
+        if any(precision[k] != reference_precision[k] for k in backbone_fields):
+            raise ValueError("Standalone backbone precision differs")
+        if not baseline and precision["lora_dtypes"] != reference_precision["lora_dtypes"]:
+            raise ValueError("Standalone adapter precision differs")
+        if metric["scorer_version"] != baselines["B"]["scorer_version"] or metric["thinking"] or metric["decoding"] != "greedy":
+            raise ValueError("Scorer/decoding differs")
+        # Runtime/logging fixes can differ between A/B. Prompt, parsing, and model revision must agree.
+        for relative in ("src/reasoning_rl/scoring.py", "configs/models.lock.json"):
+            if (directory / "source_snapshot" / relative).read_bytes() != (ROOT / "runs" / args.sft_evaluation / "source_snapshot" / relative).read_bytes():
+                raise ValueError("Endpoint prompt/scorer/model source differs: " + relative)
+        relative = "src/reasoning_rl/modeling.py"
+        if prompt_signature(directory / "source_snapshot" / relative) != prompt_signature(ROOT / "runs" / args.sft_evaluation / "source_snapshot" / relative):
+            raise ValueError("Endpoint prompt implementation differs")
+
+    verify_evaluation(ROOT / "runs" / args.baseline, baselines["A"], baseline=True)
+    verify_evaluation(ROOT / "runs" / args.sft_evaluation, baselines["B"])
     a_ids = [r["id"] for r in jsonl_read(ROOT / "runs" / args.baseline / "validation/predictions.jsonl")]
     if a_ids != reference_ids:
         raise ValueError("A/B validation IDs differ")
@@ -47,11 +82,13 @@ def main():
         predictions = jsonl_read(evaluation / "validation/predictions.jsonl")
         if [r["id"] for r in predictions] != reference_ids:
             raise ValueError("GRPO endpoint validation IDs differ from A/B")
-        if metric["scorer_version"] != baselines["B"]["scorer_version"] or metric["thinking"] or metric["decoding"] != "greedy":
-            raise ValueError("Scorer/decoding differs")
+        verify_evaluation(evaluation, metric)
         costs = jsonl_read(directory / "costs.jsonl")
         total = next(c for c in costs if c["phase"] == "grpo_total")
+        load_seconds = sum(c["wall_seconds"] for c in costs if c["phase"] == "load_model")
         probe_seconds = sum(c["wall_seconds"] for c in costs if c["phase"] == "difficulty_probe")
+        validation_seconds = sum(c["wall_seconds"] for c in costs if c["phase"] == "validation")
+        last_progress = [c for c in costs if c["phase"] == "budget_progress"][-1]
         reload_costs = jsonl_read(evaluation / "costs.jsonl")
         reload_seconds = sum(c["wall_seconds"] for c in reload_costs if c["phase"] in ("load_model", "validation"))
         cap = contract["protocol"]["grpo"]["max_wall_seconds"]
@@ -62,9 +99,16 @@ def main():
                      "truncation_rate": metric["truncation_rate"], "format_error_rate": metric["format_error_rate"],
                      "parse_error_rate": metric["parse_error_rate"],
                      "steps": result["completed_optimizer_steps"], "grpo_wall_seconds": total["wall_seconds"],
+                     "actual_optimizer_steps_per_grpo_second": result["completed_optimizer_steps"]/total["wall_seconds"],
+                     "actual_policy_generated_tokens_per_grpo_second": result["generated_tokens"]/total["wall_seconds"],
                      "declared_grpo_wall_cap": cap, "cap_minus_actual_seconds": cap - total["wall_seconds"],
                      "probe_wall_seconds": probe_seconds, "reload_eval_wall_seconds": reload_seconds,
+                     "in_training_validation_seconds": validation_seconds,
+                     "elapsed_before_final_validation_seconds": last_progress["cumulative_training_wall_seconds"],
+                     "training_model_load_seconds": load_seconds,
                      "grpo_plus_reload_eval_seconds": total["wall_seconds"] + reload_seconds,
+                     "load_grpo_reload_total_seconds": load_seconds + total["wall_seconds"] + reload_seconds,
+                     "grpo_device_elapsed_seconds": total["device_elapsed_seconds"],
                      "generated_tokens": result["generated_tokens"], "processed_tokens": result["processed_tokens"],
                      "probe_generated_tokens": result["probe_generated_tokens"], "probe_prompt_tokens": result["probe_prompt_tokens"],
                      "probe_calls": result["probe_calls"], "weight_change_events": result["sampler_weight_change_events"],
@@ -78,6 +122,12 @@ def main():
     for key in ("sft_checkpoint_sha256", "data_manifest_sha256", "pool_ids", "code_sha256"):
         if any(c[key] != contracts[0][key] for c in contracts):
             raise ValueError("Comparison contract mismatch: " + key)
+    canonical = {k: v for k, v in contracts[0]["protocol"].items() if k != "seed"}
+    if any({k: v for k, v in c["protocol"].items() if k != "seed"} != canonical for c in contracts):
+        raise ValueError("Training protocols differ beyond paired random seeds")
+    b_protocol = read(ROOT / "runs" / args.sft_evaluation / "evaluation_protocol.json")
+    if b_protocol["adapter_sha256"] != contracts[0]["sft_checkpoint_sha256"]:
+        raise ValueError("B baseline is not the shared SFT checkpoint")
     groups = defaultdict(list)
     for row in rows:
         groups[row["strategy"]].append(row)
@@ -97,7 +147,8 @@ def main():
     json_write(output / "standalone_comparison.json", {"scope": "Development validation only; repeated questions across seeds; no independent test claim",
         "formal_comparison_completed": False, "baselines": baselines, "endpoints": rows,
         "aggregates": aggregates, "paired_seed_differences": paired,
-        "cost_note": "Common GRPO time cap with declared final-validation reserve. Report actual time; a shared cap is not exact matched compute. Reload evaluation is separately charged and shown.",
+        "cost_note": "Common GRPO-stage time cap with declared final-validation reserve; includes probes and in-training validation. Model loading and standalone reload evaluation are recorded separately. Listed phase sums exclude unmetered process startup and checkpoint serialization. A shared cap is not exact matched compute.",
+        "throughput_note": "Use completed optimizer steps or real tokens divided by measured elapsed time. Raw Transformers speed fields can use planned max_steps after early stopping and are not adopted as observed throughput.",
         "source_snapshot_sha256": contracts[0]["code_sha256"]})
     write_csv(output / "standalone_endpoints.csv", rows)
     write_csv(output / "strategy_aggregates.csv", aggregates)
@@ -138,7 +189,7 @@ def main():
     for a in aggregates:
         std = f"{100*a['accuracy_sample_std']:.2f}个百分点" if a["accuracy_sample_std"] is not None else "单次运行，未估计种子标准差"
         lines.append(f"- {a['strategy']}：实际{a['repeats']}次，seed={a['seeds']}，正确率均值{a['accuracy_mean']:.2%}；{std}。")
-    lines += ["", "共同时间上限不能代替实际计算成本相等；验证预留、自然停止边界、未完成探测和模型输出长度均会影响端点。探测和训练内验证已包含在GRPO总时间，不重复相加。独立重载评测的加载与生成时间另列。", "",
+    lines += ["", "共同时间上限不能代替实际计算成本相等；验证预留、自然停止边界、未完成探测和模型输出长度均会影响端点。探测和训练内验证已包含在GRPO总时间，不重复相加。训练模型加载、独立重载评测的加载与生成时间另列；所列阶段之和不包含未计量的进程启动、Trainer准备和检查点序列化，共同SFT成本也单列。", "",
               "种子间标准差不代表题目泛化置信区间。同一批验证题已用于开发；正式结论需要冻结方案后独立测试。当前没有完成正式测试，不能把开发差异写成泛化提升。", "",
               "所有原始预测、选择、探测、梯度和源码快照均保留；更多输出长度/提取/格式/截断、token与显存字段见standalone_endpoints.csv。静态消融只按实际重复数报告。", ""]
     (output / "findings.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")

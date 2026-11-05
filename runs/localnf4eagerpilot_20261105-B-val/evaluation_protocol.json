@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/localnf4eagerpilot_20261105-B",
+  "adapter_sha256": "cd2560ad9a4fbda89ef0ed8db5c076333c0abc81254113d1625c0c4961b27152",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

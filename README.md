@@ -2,15 +2,15 @@
 
 **小模型推理后训练与难度感知数据选择。** 面向大模型算法实习的独立研究工程项目。
 
-研究问题：在**同一硬件、相同端到端计算预算**下，用模型当前解题成功率指导训练题采样，能否比均匀随机采样更有效地改善数学推理？主要交付是训练代码、检查点、原始运行证据和受控实验，结果以 [HANDOFF.md](HANDOFF.md) 和 [实验报告](reports/experiment_report.md) 为准。
+研究问题：在**同一硬件、相同端到端计算预算**下，用模型当前解题成功率指导训练题采样，能否比均匀随机采样更有效地改善数学推理？主要交付是训练代码、检查点、原始运行证据和受控实验，先看[本机结果与证据边界](reports/LOCAL_RESULTS.md)，逐运行指标见[自动报告](reports/experiment_report.md)。
 
 ## 已有真实结果与当前实验
 
-RTX 3060 Laptop 6GB已实际完成Qwen3-1.7B的前后向、LoRA更新、保存重载、4步SFT，以及均匀/动态/静态各8步的seed13预实验；适配器权重保存在本项目`checkpoints/`。工程测试32项通过，源码快照、原始预测、梯度、token和成本账本保留在`runs/`。
+RTX 3060 Laptop 6GB已实际完成Qwen3-1.7B的前后向、LoRA更新、保存重载、128题/32步SFT，以及均匀/动态/静态各8步的seed13预实验；适配器权重保存在本项目`checkpoints/`。工程测试36项通过，源码快照、原始预测、梯度、token和成本账本保留在`runs/`。
 
 首轮统一重载8道开发题：A5/8、B6/8、C5/8、D6/8、E5/8；各组耗时不同，不构成同预算或泛化提升证据。[首轮报告](reports/local_pilot_findings.md)明确保留零方差无更新、答案区域失败和截断等负面结果。
 
-按用户要求继续本机扩大预实验：`configs/local_pilot.yaml`使用128题/32步SFT、32道固定验证题，C/D/E采用共同时间上限并记录实际边界误差；GRPO训练池使用固定随机序列中第129–136题，与SFT池隔离。B的32题验证耗时511秒，据此将末次验证预留设为540秒，并把GRPO池从16题缩为8题以负担真实探测。模型版本、评分器和提示不根据保留集调整。当前状态见HANDOFF，尚未进行正式独立测试。
+扩大开发验证中，原NF4/SDPA配置的A为22/32、B为19/32；其预算轮次C完成21步，D在8步后的验证中发生CUDA非法内存访问。NF4/eager完成4步G4 GRPO冒烟后另开轮次：A11/16，128题/32步B已完成，但B独立评测在8/16题后再次发生非法内存访问，没有完整B正确率，也未启动该轮C/D/E。当前无活动训练进程，建议把剩余三种子同预算对照、扩大训练池和独立评测迁移后完成；目标机仍需实查验证。详见[运行事件](reports/runtime_incidents.md)、[复现命令](docs/REPRODUCING_LOCAL.md)。没有同预算优势或正式测试提升结论。
 
 GitHub同步已获用户授权，默认私有仓库。本机CLI登录已失效，用户选择稍后登录，当前仅准备本地Git版本；不把“已初始化Git”写成“已推送GitHub”。后续可通过GitHub下载到台式机，迁移时重建AMD环境。
 
@@ -96,6 +96,8 @@ GSM8K 来自官方 `openai/grade-school-math`，官方训练集按种子 **20261
 | [docs/PROTOCOL.md](docs/PROTOCOL.md) | 实验、预算、公平比较与独立测试规则 |
 | [docs/HARDWARE_AND_BUDGET.md](docs/HARDWARE_AND_BUDGET.md) | 本机实查、AMD 官方兼容与待确认云方案 |
 | [docs/LEARNING_GUIDE.md](docs/LEARNING_GUIDE.md) | 公式、代码入口、取舍和面试问题 |
+| [docs/REPRODUCING_LOCAL.md](docs/REPRODUCING_LOCAL.md) | 本机实际轮次、从头复现与接续命令 |
+| [docs/RELATED_WORK.md](docs/RELATED_WORK.md) | 课程学习、DAPO与本项目方法的关系 |
 | `src/reasoning_rl/data.py`、`scoring.py` | 数据锁定、隔离与可验证评分 |
 | `modeling.py`、`training.py`、`sampling.py` | loss mask、LoRA、TRL 接入与动态采样 |
 | `evaluation.py`、`reporting.py` | 原始预测、指标、误差队列和对照图 |

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-05",
+  "status": "pass",
+  "source_archive": "dist/reasoning-rl-lab-desktop-transfer-20261105.zip",
+  "source_archive_sha256": "461f151bd25230f0743171fa58538d0191ba89dc3368e0fb800f5f5c38a4ccf4",
+  "verified_source_import": "dist/transfer_verification_20261105/reasoning-rl-lab/src/reasoning_rl/__init__.py",
+  "pytest": {
+    "passed": 36,
+    "seconds": 10.99,
+    "log": "logs/local_transfer_cpu_verification_20261105.log"
+  },
+  "evidence_audit": {
+    "runs_checked": 33,
+    "errors": 0,
+    "status": "pass_with_unavailable_checkpoints"
+  },
+  "scope": "Executed extracted source with the existing laptop Python environment, CPU engineering checks only; no fresh dependency installation or AMD GPU run. Missing adapters in source-only package were reported explicitly; separate LoRA archive verified independently."
+}
