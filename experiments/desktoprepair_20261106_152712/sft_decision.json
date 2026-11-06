@@ -1,0 +1,188 @@
+{
+  "baseline": {
+    "n": 128,
+    "correct": 107,
+    "accuracy": 0.8359375,
+    "accuracy_wilson95": [
+      0.7621819239629298,
+      0.8901166835408066
+    ],
+    "format_error_rate": 0.2421875,
+    "parse_error_rate": 0.015625,
+    "truncation_rate": 0.0,
+    "mean_generated_tokens": 135.34375,
+    "p50_generated_tokens": 116,
+    "generated_tokens": 17324,
+    "prompt_tokens": 12871,
+    "automatic_error_tags": {
+      "format_error": 31,
+      "wrong_numeric_answer_requires_review": 19,
+      "answer_extraction_failure": 2
+    },
+    "phase": "validation",
+    "optimizer_step": null,
+    "decoding": "greedy",
+    "thinking": false,
+    "scorer_version": "numeric_final_v2"
+  },
+  "candidates": [
+    {
+      "name": "S1",
+      "learning_rate": 0.0001,
+      "steps": 32,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4,
+      "metrics": {
+        "n": 128,
+        "correct": 64,
+        "accuracy": 0.5,
+        "accuracy_wilson95": [
+          0.41465224626050723,
+          0.5853477537394928
+        ],
+        "format_error_rate": 0.53125,
+        "parse_error_rate": 0.3359375,
+        "truncation_rate": 0.3125,
+        "mean_generated_tokens": 227.2265625,
+        "p50_generated_tokens": 116,
+        "generated_tokens": 29085,
+        "prompt_tokens": 12871,
+        "automatic_error_tags": {
+          "format_error": 68,
+          "wrong_numeric_answer_requires_review": 21,
+          "truncated": 40,
+          "answer_extraction_failure": 43,
+          "repetition_suspected": 39
+        },
+        "phase": "validation",
+        "optimizer_step": null,
+        "decoding": "greedy",
+        "thinking": false,
+        "scorer_version": "numeric_final_v2"
+      },
+      "eligible": false,
+      "adapter_delta_l2": 2.5870498731020843,
+      "checkpoint_sha256": "8b7e35b17854561faf3fc2e1814d3b7084abe4858cec881675988634a01deb0a",
+      "reload_logits_max_abs_difference": 0.0
+    },
+    {
+      "name": "S2",
+      "learning_rate": 1e-05,
+      "steps": 8,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4,
+      "metrics": {
+        "n": 128,
+        "correct": 110,
+        "accuracy": 0.859375,
+        "accuracy_wilson95": [
+          0.7886475076210383,
+          0.9091603050573774
+        ],
+        "format_error_rate": 0.2421875,
+        "parse_error_rate": 0.015625,
+        "truncation_rate": 0.0,
+        "mean_generated_tokens": 136.15625,
+        "p50_generated_tokens": 116,
+        "generated_tokens": 17428,
+        "prompt_tokens": 12871,
+        "automatic_error_tags": {
+          "format_error": 31,
+          "wrong_numeric_answer_requires_review": 16,
+          "answer_extraction_failure": 2
+        },
+        "phase": "validation",
+        "optimizer_step": null,
+        "decoding": "greedy",
+        "thinking": false,
+        "scorer_version": "numeric_final_v2"
+      },
+      "eligible": true,
+      "adapter_delta_l2": 0.0696725782352138,
+      "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+      "reload_logits_max_abs_difference": 0.0
+    },
+    {
+      "name": "S3",
+      "learning_rate": 1e-05,
+      "steps": 32,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4,
+      "metrics": {
+        "n": 128,
+        "correct": 106,
+        "accuracy": 0.828125,
+        "accuracy_wilson95": [
+          0.7534600319269827,
+          0.8836688405185272
+        ],
+        "format_error_rate": 0.3125,
+        "parse_error_rate": 0.046875,
+        "truncation_rate": 0.0,
+        "mean_generated_tokens": 142.3984375,
+        "p50_generated_tokens": 119,
+        "generated_tokens": 18227,
+        "prompt_tokens": 12871,
+        "automatic_error_tags": {
+          "format_error": 40,
+          "wrong_numeric_answer_requires_review": 16,
+          "answer_extraction_failure": 6,
+          "repetition_suspected": 1
+        },
+        "phase": "validation",
+        "optimizer_step": null,
+        "decoding": "greedy",
+        "thinking": false,
+        "scorer_version": "numeric_final_v2"
+      },
+      "eligible": false,
+      "adapter_delta_l2": 0.3285546392176122,
+      "checkpoint_sha256": "b2ef3a0a461f102e330de4aeb2e09f5fba6afdc50973901feb7d3672b7ee1e3e",
+      "reload_logits_max_abs_difference": 0.0
+    },
+    {
+      "name": "S4",
+      "learning_rate": 3e-05,
+      "steps": 16,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4,
+      "metrics": {
+        "n": 128,
+        "correct": 106,
+        "accuracy": 0.828125,
+        "accuracy_wilson95": [
+          0.7534600319269827,
+          0.8836688405185272
+        ],
+        "format_error_rate": 0.375,
+        "parse_error_rate": 0.03125,
+        "truncation_rate": 0.0,
+        "mean_generated_tokens": 143.125,
+        "p50_generated_tokens": 119,
+        "generated_tokens": 18320,
+        "prompt_tokens": 12871,
+        "automatic_error_tags": {
+          "format_error": 48,
+          "wrong_numeric_answer_requires_review": 18,
+          "answer_extraction_failure": 4,
+          "repetition_suspected": 1
+        },
+        "phase": "validation",
+        "optimizer_step": null,
+        "decoding": "greedy",
+        "thinking": false,
+        "scorer_version": "numeric_final_v2"
+      },
+      "eligible": true,
+      "adapter_delta_l2": 0.4515769592546393,
+      "checkpoint_sha256": "2839aa5185048bdfa636baa57924208f8a24d0d5e039bff6c7330ca6023821ab",
+      "reload_logits_max_abs_difference": 0.0
+    }
+  ],
+  "selection_uses_comparison_only": true,
+  "route": "real_sft",
+  "selected_candidate": "S2",
+  "checkpoint": "checkpoints/desktoprepair_20261106_152712-S2",
+  "confirmation_not_opened": true,
+  "preregistration_sha256": "da6aa04703ccd64ef2230ec9cad3465a9faa25838a6fec834c406fa3109aa532"
+}

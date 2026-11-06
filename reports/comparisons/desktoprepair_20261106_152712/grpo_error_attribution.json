@@ -1,0 +1,276 @@
+{
+  "records": [
+    {
+      "subset": "comparison",
+      "contrast": "D-C",
+      "seed": 13,
+      "n": 128,
+      "right_correct_left_wrong": 1,
+      "right_wrong_left_correct": 5,
+      "net_correct_difference": 4,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-03547"
+      ],
+      "gain_ids": [
+        "gsm8k-train-01346",
+        "gsm8k-train-02855",
+        "gsm8k-train-04976",
+        "gsm8k-train-01242",
+        "gsm8k-train-04437"
+      ]
+    },
+    {
+      "subset": "comparison",
+      "contrast": "D-C",
+      "seed": 29,
+      "n": 128,
+      "right_correct_left_wrong": 2,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": 0,
+      "left_regression_surface_partition": {
+        "nontruncated_parse_failure": 1,
+        "nontruncated_wrong_numeric_requires_review": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-04614",
+        "gsm8k-train-03547"
+      ],
+      "gain_ids": [
+        "gsm8k-train-01346",
+        "gsm8k-train-05364"
+      ]
+    },
+    {
+      "subset": "comparison",
+      "contrast": "D-C",
+      "seed": 47,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": -1,
+      "left_regression_surface_partition": {
+        "nontruncated_parse_failure": 2,
+        "nontruncated_wrong_numeric_requires_review": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-01346",
+        "gsm8k-train-04976",
+        "gsm8k-train-04614"
+      ],
+      "gain_ids": [
+        "gsm8k-train-01242",
+        "gsm8k-train-00183"
+      ]
+    },
+    {
+      "subset": "comparison",
+      "contrast": "D-E",
+      "seed": 13,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 4,
+      "net_correct_difference": 1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 3
+      },
+      "regression_ids": [
+        "gsm8k-train-05364",
+        "gsm8k-train-05091",
+        "gsm8k-train-03867"
+      ],
+      "gain_ids": [
+        "gsm8k-train-02855",
+        "gsm8k-train-04614",
+        "gsm8k-train-02369",
+        "gsm8k-train-04437"
+      ]
+    },
+    {
+      "subset": "comparison",
+      "contrast": "D-E",
+      "seed": 29,
+      "n": 128,
+      "right_correct_left_wrong": 2,
+      "right_wrong_left_correct": 3,
+      "net_correct_difference": 1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 2
+      },
+      "regression_ids": [
+        "gsm8k-train-04976",
+        "gsm8k-train-04437"
+      ],
+      "gain_ids": [
+        "gsm8k-train-01346",
+        "gsm8k-train-05364",
+        "gsm8k-train-01242"
+      ]
+    },
+    {
+      "subset": "comparison",
+      "contrast": "D-E",
+      "seed": 47,
+      "n": 128,
+      "right_correct_left_wrong": 2,
+      "right_wrong_left_correct": 3,
+      "net_correct_difference": 1,
+      "left_regression_surface_partition": {
+        "nontruncated_parse_failure": 1,
+        "nontruncated_wrong_numeric_requires_review": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-01346",
+        "gsm8k-train-05369"
+      ],
+      "gain_ids": [
+        "gsm8k-train-02855",
+        "gsm8k-train-01242",
+        "gsm8k-train-00183"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seed": 13,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 1,
+      "net_correct_difference": -2,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 2,
+        "nontruncated_parse_failure": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-06348",
+        "gsm8k-train-02439",
+        "gsm8k-train-06767"
+      ],
+      "gain_ids": [
+        "gsm8k-train-03216"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seed": 29,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": -1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 2,
+        "truncated": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-06978",
+        "gsm8k-train-00229",
+        "gsm8k-train-00986"
+      ],
+      "gain_ids": [
+        "gsm8k-train-03216",
+        "gsm8k-train-01277"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seed": 47,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": -1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 3
+      },
+      "regression_ids": [
+        "gsm8k-train-03216",
+        "gsm8k-train-06767",
+        "gsm8k-train-01004"
+      ],
+      "gain_ids": [
+        "gsm8k-train-04448",
+        "gsm8k-train-00986"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-E",
+      "seed": 13,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 0,
+      "net_correct_difference": -3,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 3
+      },
+      "regression_ids": [
+        "gsm8k-train-06348",
+        "gsm8k-train-03331",
+        "gsm8k-train-06767"
+      ],
+      "gain_ids": []
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-E",
+      "seed": 29,
+      "n": 128,
+      "right_correct_left_wrong": 1,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": 1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-01004"
+      ],
+      "gain_ids": [
+        "gsm8k-train-06348",
+        "gsm8k-train-06416"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-E",
+      "seed": 47,
+      "n": 128,
+      "right_correct_left_wrong": 2,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": 0,
+      "left_regression_surface_partition": {
+        "nontruncated_parse_failure": 1,
+        "nontruncated_wrong_numeric_requires_review": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-02439",
+        "gsm8k-train-06767"
+      ],
+      "gain_ids": [
+        "gsm8k-train-04448",
+        "gsm8k-train-01277"
+      ]
+    }
+  ],
+  "learning_signal_by_arm": {
+    "C": {
+      "steps": 389,
+      "nonzero_gradient_steps": 82,
+      "draw_weighted_zero_variance_rate": 0.7892030848329049
+    },
+    "D": {
+      "steps": 309,
+      "nonzero_gradient_steps": 83,
+      "draw_weighted_zero_variance_rate": 0.7313915857605178
+    },
+    "E": {
+      "steps": 281,
+      "nonzero_gradient_steps": 79,
+      "draw_weighted_zero_variance_rate": 0.7188612099644128
+    }
+  },
+  "scope": "Same-question surface outcome accounting, conditional on fixed development subsets; partitions are not causal/semantic diagnoses",
+  "interpretation": "More optimizer steps need not yield more nonzero learning steps. Sampling, generated rewards, actual time and endpoints must be interpreted together; no matched-step extra experiment was performed."
+}

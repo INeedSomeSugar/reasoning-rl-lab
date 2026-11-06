@@ -1,0 +1,21 @@
+{
+  "reviewer": "Codex agent",
+  "human_reviewed": false,
+  "scope": "Deterministic SFT error case pack plus all three S2 gains; illustrative agent review, not exhaustive semantic classification",
+  "scorer_changed": false,
+  "training_or_candidate_selection_changed_from_review": false,
+  "cases": [
+    {"candidate":"S1","id":"gsm8k-train-07281","category":"correct_calculation_then_repetition_and_no_valid_final","notes":"先算出50×14=700、1512−700=812，随后重复So the answer is812直至512token，尾部截成8且没有有效最终答案区。该例不能标为算术错误。"},
+    {"candidate":"S1","id":"gsm8k-train-02457","category":"correct_calculation_then_repeated_blank_markers","notes":"已得到60000/1200=50天，之后重复解释与空####，到上限仍无明确最终区。展示终止/答案区行为问题，不能由此证明所有截断样本的推理均正确。"},
+    {"candidate":"S1","id":"gsm8k-train-02271","category":"leading_marker_causes_ambiguous_answer_region","notes":"200−40=160、160×2=320均正确；但####放在开头，其后包含200、40、160、2、320等多个数。冻结评分器判定答案区歧义；不是单纯拒绝另起一行答案。"},
+    {"candidate":"S1","id":"gsm8k-train-03742","category":"wrong_refund_base_and_failed_constraint_model","notes":"把原付款120美元的25%误解成裤子总价3y的25%，据此推出矛盾并拒答。这里解析失败伴随条件建模错误，不能都归因于格式。参考按120×25%=30退款、(120−30)/2=45解答。"},
+    {"candidate":"S1","id":"gsm8k-train-01596","category":"alternating_pattern_misread_as_arithmetic_progression","notes":"把400/800公里隔月交替误读成400、800、1200持续递增。120000是错误模型下的计算结果；参考为12×400+12×800=14400。"},
+    {"candidate":"S1","id":"gsm8k-train-06015","category":"age_subject_and_time_constraints_omitted","notes":"James现在30岁后，直接把James五年后的35岁当成Matt现在年龄；遗漏未来两倍关系和回到现在的减5。参考为(30+5)×2−5=65。"},
+    {"candidate":"S1","id":"gsm8k-train-05364","category":"corrected_cost_aggregation","notes":"A列出了15000采购成本，但求利润时只扣20000固定成本，得到16000；S1将25000毛利减20000再扣税，得到4000。不是仅由提取规则变化得到的改善。"},
+    {"candidate":"S1","id":"gsm8k-train-04976","category":"corrected_volume_reference_base","notes":"A以已有48盎司的1/5补水，错误得到9.6；S1按总容量60减已有48得到12。"},
+    {"candidate":"S2","id":"gsm8k-train-05364","category":"corrected_cost_aggregation","notes":"与A相比补回15000采购成本，净利润4000；固定评分器接受末尾最后一个####后的4000。A本身可解析但数值16000错误。"},
+    {"candidate":"S2","id":"gsm8k-train-04976","category":"corrected_volume_reference_base","notes":"S2按60−48=12；A输出可解析9.6。S2虽不满足严格同行####格式，仍被numeric_final_v2判对，说明正确性与格式已分开。"},
+    {"candidate":"S2","id":"gsm8k-train-04437","category":"reference_interval_model_and_arithmetic_change","notes":"S2采用参考的六段划分，1200/6×2=400。A采用五个桌间空隙且把1200/5×2算成240。题面没有完全明示第一桌相对起点的位置，解释空间单独记录；本轮不改金标、不排除该题。"}
+  ],
+  "conclusion": "S1退化同时包含重复/截断、最终区歧义和真实条件建模错误。S2三个新增判对样本的A输出均可解析且数值错误；不能把这3题差异概括为评分器修复或已证实的推理泛化收益。"
+}

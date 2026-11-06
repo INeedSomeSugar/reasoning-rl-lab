@@ -10,6 +10,26 @@ from .modeling import render_prompt, autocast
 from .scoring import score_answer, SCORER_VERSION
 
 
+def validation_rows(config):
+    """Resolve a preregistered development subset without permitting split leakage."""
+    from .data import load_split
+    rows = load_split("validation", "evaluate_validation", seed=config["data_seed"])
+    options = config["evaluation"]
+    if not options.get("validation_ids_path"):
+        return rows[:options["validation_size"]]
+    path = (ROOT / options["validation_ids_path"]).resolve()
+    if not path.is_relative_to(ROOT.resolve()):
+        raise ValueError("Development ID manifest must be project-local")
+    selected = json.loads(path.read_text(encoding="utf-8"))
+    ids = selected[options.get("validation_subset", "comparison")]
+    by_id = {r["id"]: r for r in rows}
+    if len(ids) != len(set(ids)) or not set(ids) <= set(by_id):
+        raise ValueError("Development IDs must be unique members of validation")
+    if len(ids) != options["validation_size"]:
+        raise ValueError("Development size differs from preregistered IDs")
+    return [by_id[i] for i in ids]
+
+
 def diagnostic_tags(text, score, truncated):
     """Automatic surface diagnostics; arithmetic/condition errors require human review."""
     tags = []

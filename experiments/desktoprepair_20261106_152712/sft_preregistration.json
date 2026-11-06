@@ -1,0 +1,64 @@
+{
+  "registered_utc": "2026-11-06T07:32:15.822719+00:00",
+  "family": "desktoprepair_20261106_152712",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "development_ids_sha256": "5bfff1eee139f0dbfb040043c0955e9c17218856912f5e1a311d6aadcab01f49",
+  "configs": {
+    "S1": "configs/desktoprepair_20261106_152712_S1.yaml",
+    "S2": "configs/desktoprepair_20261106_152712_S2.yaml",
+    "S3": "configs/desktoprepair_20261106_152712_S3.yaml",
+    "S4": "configs/desktoprepair_20261106_152712_S4.yaml",
+    "eval": "configs/desktoprepair_20261106_152712_eval.yaml",
+    "confirm": "configs/desktoprepair_20261106_152712_confirm.yaml",
+    "regression": "configs/desktoprepair_20261106_152712_regression.yaml"
+  },
+  "candidates": [
+    {
+      "name": "S1",
+      "learning_rate": 0.0001,
+      "steps": 32,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4
+    },
+    {
+      "name": "S2",
+      "learning_rate": 1e-05,
+      "steps": 8,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4
+    },
+    {
+      "name": "S3",
+      "learning_rate": 1e-05,
+      "steps": 32,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4
+    },
+    {
+      "name": "S4",
+      "learning_rate": 3e-05,
+      "steps": 16,
+      "pool_size": 128,
+      "gradient_accumulation_steps": 4
+    }
+  ],
+  "limit": "At most these four SFT candidates; no additional SFT tuning in this session",
+  "checks_before_training": [
+    "actual tokenizer boundaries and full gold",
+    "causal label shift",
+    "prompt and padding masks",
+    "EOS and chat template",
+    "base/fresh-untrained-LoRA/saved-reloaded logits and predictions"
+  ],
+  "selection_rule": {
+    "eligible": "On fixed comparison128: correct >= A_correct - 2; truncations <= A_truncations + 2; parse_errors <= A_parse_errors + 2; all gradients finite and adapter updated",
+    "rank": "Max correct, then fewer truncations, then lower learning_rate*steps, then candidate order",
+    "route": "Select highest eligible real SFT. If none is eligible, use explicitly verified PUBLIC_POSTTRAINED_A with fresh zero-output LoRA as GRPO initialization, never label it SFT.",
+    "no_forced_improvement": true
+  },
+  "old32": "regression diagnosis only, never candidate selection",
+  "confirmation128": "sealed until the sampling protocol and all nine C/D/E endpoint checkpoints are fixed; one stage opening for A, selected SFT if any, and all nine endpoints; no subsequent tuning",
+  "sampling_next": "Measure full-pool probe and real rollout before freezing one rollout-cache dynamic mainline, C/D/E seeds13,29,47. No claim against historical full-pool D without a new same-budget baseline.",
+  "code_sha256_at_registration": "e51cb7a627d0cab07074b8de7125318978beff127cdfa3915aa93f7e0c93a119",
+  "test_and_svamp": "sealed"
+}

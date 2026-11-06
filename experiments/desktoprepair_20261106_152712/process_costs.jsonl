@@ -1,0 +1,49 @@
+{"phase": "A-comparison", "process_wall_seconds": 294.1796786785126, "exit_code": 0, "started_unix": 1793950658.146212, "finished_unix": 1793950952.3258908}
+{"phase": "S1", "process_wall_seconds": 30.050193548202515, "exit_code": 0, "started_unix": 1793950952.3273911, "finished_unix": 1793950982.3775847}
+{"phase": "S1-comparison", "process_wall_seconds": 475.04629588127136, "exit_code": 0, "started_unix": 1793950982.3790872, "finished_unix": 1793951457.425383}
+{"phase": "S1-regression", "process_wall_seconds": 123.08350849151611, "exit_code": 0, "started_unix": 1793951457.4263823, "finished_unix": 1793951580.5098908}
+{"phase": "S2", "process_wall_seconds": 19.608330726623535, "exit_code": 0, "started_unix": 1793951580.5108933, "finished_unix": 1793951600.119224}
+{"phase": "S2-comparison", "process_wall_seconds": 304.4641795158386, "exit_code": 0, "started_unix": 1793951600.1207242, "finished_unix": 1793951904.5849037}
+{"phase": "S2-regression", "process_wall_seconds": 83.70810580253601, "exit_code": 0, "started_unix": 1793951904.585904, "finished_unix": 1793951988.2940097}
+{"phase": "S3", "process_wall_seconds": 29.789814949035645, "exit_code": 0, "started_unix": 1793951988.2950103, "finished_unix": 1793952018.0848253}
+{"phase": "S3-comparison", "process_wall_seconds": 298.71156454086304, "exit_code": 0, "started_unix": 1793952018.085828, "finished_unix": 1793952316.7973926}
+{"phase": "S3-regression", "process_wall_seconds": 85.9393310546875, "exit_code": 0, "started_unix": 1793952316.7983925, "finished_unix": 1793952402.7377236}
+{"phase": "S4", "process_wall_seconds": 23.087919235229492, "exit_code": 0, "started_unix": 1793952402.7387228, "finished_unix": 1793952425.826642}
+{"phase": "S4-comparison", "process_wall_seconds": 306.26346826553345, "exit_code": 0, "started_unix": 1793952425.8276422, "finished_unix": 1793952732.0911105}
+{"phase": "S4-regression", "process_wall_seconds": 109.94938468933105, "exit_code": 0, "started_unix": 1793952732.0921106, "finished_unix": 1793952842.0414953}
+{"phase": "initialize-start", "process_wall_seconds": 4.544689655303955, "exit_code": 0, "error": null, "started_unix": 1793952845.5034127, "finished_unix": 1793952850.0481024}
+{"phase": "calibration-C", "process_wall_seconds": 45.65024209022522, "exit_code": 0, "error": null, "started_unix": 1793952850.0741286, "finished_unix": 1793952895.7248707}
+{"phase": "calibration-C-reloadregression", "process_wall_seconds": 112.3046019077301, "exit_code": 0, "error": null, "started_unix": 1793952895.7253706, "finished_unix": 1793953008.0299726}
+{"phase": "calibration-D", "process_wall_seconds": 316.8973627090454, "exit_code": 0, "error": null, "started_unix": 1793953008.0309725, "finished_unix": 1793953324.9283352}
+{"phase": "calibration-D-reloadregression", "process_wall_seconds": 119.51958727836609, "exit_code": 0, "error": null, "started_unix": 1793953324.929835, "finished_unix": 1793953444.4494224}
+{"phase": "calibration-E", "process_wall_seconds": 275.2128117084503, "exit_code": 0, "error": null, "started_unix": 1793953444.4514415, "finished_unix": 1793953719.6642532}
+{"phase": "calibration-E-reloadregression", "process_wall_seconds": 111.2065041065216, "exit_code": 0, "error": null, "started_unix": 1793953719.6657531, "finished_unix": 1793953830.8722572}
+{"phase": "C-s13", "process_wall_seconds": 608.1101760864258, "exit_code": 0, "error": null, "started_unix": 1793953837.477753, "finished_unix": 1793954445.587929}
+{"phase": "C-s13-comparison", "process_wall_seconds": 391.64202308654785, "exit_code": 0, "error": null, "started_unix": 1793954445.594487, "finished_unix": 1793954837.23651}
+{"phase": "D-s13", "process_wall_seconds": 609.778835773468, "exit_code": 0, "error": null, "started_unix": 1793954837.3395064, "finished_unix": 1793955447.1183422}
+{"phase": "D-s13-comparison", "process_wall_seconds": 391.3073034286499, "exit_code": 0, "error": null, "started_unix": 1793955447.125342, "finished_unix": 1793955838.4326453}
+{"phase": "E-s13", "process_wall_seconds": 608.5636487007141, "exit_code": 0, "error": null, "started_unix": 1793955838.5377116, "finished_unix": 1793956447.1013603}
+{"phase": "E-s13-comparison", "process_wall_seconds": 327.83847284317017, "exit_code": 0, "error": null, "started_unix": 1793956447.1098645, "finished_unix": 1793956774.9483373}
+{"phase": "E-s29", "process_wall_seconds": 608.6623985767365, "exit_code": 0, "error": null, "started_unix": 1793956775.0529191, "finished_unix": 1793957383.7153177}
+{"phase": "E-s29-comparison", "process_wall_seconds": 323.6589572429657, "exit_code": 0, "error": null, "started_unix": 1793957383.7228239, "finished_unix": 1793957707.381781}
+{"phase": "D-s29", "process_wall_seconds": 610.2983243465424, "exit_code": 0, "error": null, "started_unix": 1793957707.4858398, "finished_unix": 1793958317.7841642}
+{"phase": "D-s29-comparison", "process_wall_seconds": 334.3609745502472, "exit_code": 0, "error": null, "started_unix": 1793958317.7911677, "finished_unix": 1793958652.1521423}
+{"phase": "C-s29", "process_wall_seconds": 609.716878414154, "exit_code": 0, "error": null, "started_unix": 1793958652.2602124, "finished_unix": 1793959261.9770908}
+{"phase": "C-s29-comparison", "process_wall_seconds": 331.1541693210602, "exit_code": 0, "error": null, "started_unix": 1793959261.9850936, "finished_unix": 1793959593.139263}
+{"phase": "D-s47", "process_wall_seconds": 609.5899603366852, "exit_code": 0, "error": null, "started_unix": 1793959593.245844, "finished_unix": 1793960202.8358042}
+{"phase": "D-s47-comparison", "process_wall_seconds": 356.2327263355255, "exit_code": 0, "error": null, "started_unix": 1793960202.8448083, "finished_unix": 1793960559.0775347}
+{"phase": "C-s47", "process_wall_seconds": 611.8954000473022, "exit_code": 0, "error": null, "started_unix": 1793960559.1815917, "finished_unix": 1793961171.0769918}
+{"phase": "C-s47-comparison", "process_wall_seconds": 421.5939447879791, "exit_code": 0, "error": null, "started_unix": 1793961171.084492, "finished_unix": 1793961592.6784368}
+{"phase": "E-s47", "process_wall_seconds": 613.8929159641266, "exit_code": 0, "error": null, "started_unix": 1793961592.780937, "finished_unix": 1793962206.673853}
+{"phase": "E-s47-comparison", "process_wall_seconds": 403.04095578193665, "exit_code": 0, "error": null, "started_unix": 1793962206.6813536, "finished_unix": 1793962609.7223094}
+{"phase": "A-confirmation", "process_wall_seconds": 287.32537937164307, "exit_code": 0, "error": null, "started_unix": 1793962610.0275586, "finished_unix": 1793962897.352938}
+{"phase": "S2-confirmation", "process_wall_seconds": 443.2968707084656, "exit_code": 0, "error": null, "started_unix": 1793962897.4544978, "finished_unix": 1793963340.7513685}
+{"phase": "C-s13-confirmation", "process_wall_seconds": 416.05678248405457, "exit_code": 0, "error": null, "started_unix": 1793963340.8544292, "finished_unix": 1793963756.9112117}
+{"phase": "D-s13-confirmation", "process_wall_seconds": 419.0799458026886, "exit_code": 0, "error": null, "started_unix": 1793963757.0127676, "finished_unix": 1793964176.0927134}
+{"phase": "E-s13-confirmation", "process_wall_seconds": 420.98865127563477, "exit_code": 0, "error": null, "started_unix": 1793964176.1952903, "finished_unix": 1793964597.1839416}
+{"phase": "C-s29-confirmation", "process_wall_seconds": 416.9573829174042, "exit_code": 0, "error": null, "started_unix": 1793964597.2859995, "finished_unix": 1793965014.2433825}
+{"phase": "D-s29-confirmation", "process_wall_seconds": 416.62047123908997, "exit_code": 0, "error": null, "started_unix": 1793965014.3449633, "finished_unix": 1793965430.9654346}
+{"phase": "E-s29-confirmation", "process_wall_seconds": 433.30801916122437, "exit_code": 0, "error": null, "started_unix": 1793965431.065982, "finished_unix": 1793965864.3740013}
+{"phase": "C-s47-confirmation", "process_wall_seconds": 427.2019054889679, "exit_code": 0, "error": null, "started_unix": 1793965864.4887543, "finished_unix": 1793966291.6906598}
+{"phase": "D-s47-confirmation", "process_wall_seconds": 420.18996262550354, "exit_code": 0, "error": null, "started_unix": 1793966291.78266, "finished_unix": 1793966711.9731228}
+{"phase": "E-s47-confirmation", "process_wall_seconds": 418.00338315963745, "exit_code": 0, "error": null, "started_unix": 1793966712.0896225, "finished_unix": 1793967130.0930057}

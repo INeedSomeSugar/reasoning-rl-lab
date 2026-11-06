@@ -1,0 +1,11 @@
+{
+  "family": "desktoprepair_20261106_152712",
+  "started_utc": "2026-11-06T07:27:12+00:00",
+  "deadline_utc": "2026-11-06T13:27:12+00:00",
+  "max_wall_seconds": 21600,
+  "cleanup_reserve_seconds": 900,
+  "holdout_opened": false,
+  "initial_local_head": "4e938eb696b1cbb4290c14515d30069ff6e50113",
+  "verified_remote_main": "4e938eb696b1cbb4290c14515d30069ff6e50113",
+  "initial_worktree_clean": true
+}

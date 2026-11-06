@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-11-06T12:22:21.297230+00:00",
+  "publication_status": "local_only_not_committed_or_pushed",
+  "archives": [
+    {
+      "path": "dist/desktoprepair_20261106_152712/desktoprepair_20261106_152712-source-and-evidence.zip",
+      "bytes": 17443536,
+      "sha256": "effe8fba0d18d7e6a86ecc1bc93deeadd89a2a152d266b9bc1f20a6d633e36d3"
+    },
+    {
+      "path": "dist/desktoprepair_20261106_152712/desktoprepair_20261106_152712-lora.zip",
+      "bytes": 96570221,
+      "sha256": "22231ff336b8da17262f3cd16d4a5ab63546aaf3b0174a6c23a87d4eb4dc2440"
+    }
+  ],
+  "checkpoint_count": 17,
+  "count_by_stage": {
+    "grpo": 12,
+    "sft": 4,
+    "untrained_lora_control": 1
+  },
+  "source_and_evidence_file_count": 7294,
+  "manifest": "migration/desktoprepair_20261106_152712_CHECKPOINTS_MANIFEST.json",
+  "manifest_sha256": "04832a4c175cb4a262c4133bf6c44977dacc07d95d75f72dbeaae3ba6026fd70",
+  "public_model_or_environment_included": false,
+  "optimizer_exact_resume_supported": false,
+  "note": "Archive receipt is generated after the source snapshot and is supplied beside the ZIPs, avoiding a self-hash cycle. Source evidence includes preserved historical records; holdout files are only archived as opaque bytes, not deserialized or evaluated."
+}

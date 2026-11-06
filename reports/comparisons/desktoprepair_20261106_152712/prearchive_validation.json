@@ -1,0 +1,36 @@
+{
+  "status": "prearchive_pass",
+  "local_links_checked": 89,
+  "missing_links": [],
+  "figures": [
+    {
+      "file": "standalone_comparison.png",
+      "width": 2340,
+      "height": 1007,
+      "sha256": "8c4e5b5a1068466188c43aacdfa43f7aa1023d40cb8bfc935cd553240e04ccc7"
+    },
+    {
+      "file": "cost_ledger.png",
+      "width": 2340,
+      "height": 1350,
+      "sha256": "768707d4271edd1f2df18ac539ee9e053b49eef6fe16c69bd7f9534fbb9137ed"
+    },
+    {
+      "file": "effective_pool_observed.png",
+      "width": 2520,
+      "height": 827,
+      "sha256": "3b4e893390ab9878ae0e70a6aeaa7b6661fc60d67247efbb759b5726d01bcd11"
+    },
+    {
+      "file": "sft_strength.png",
+      "width": 1800,
+      "height": 1007,
+      "sha256": "392ad89ddf7fc8dca985bfc8a5a45db967cf0836db2657ff15aff361770228a0"
+    }
+  ],
+  "csv_arithmetic_reconciles": true,
+  "all_nine_endpoint_sets_complete": true,
+  "source_execution_hash_matches_freeze": true,
+  "formal_holdout_not_opened": true,
+  "visual_review": "Agent inspection is separately recorded in visual_qa.json and bound to exact image hashes; this script checks bindings and dimensions, not visual acceptance"
+}

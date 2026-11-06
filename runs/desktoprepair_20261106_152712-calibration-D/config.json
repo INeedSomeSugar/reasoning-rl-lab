@@ -1,0 +1,71 @@
+{
+  "stage": "desktop_rollout_cache_calibration",
+  "model": "qwen3_17b",
+  "dtype": "bfloat16",
+  "quantization": "none",
+  "attention_implementation": "sdpa",
+  "seed": 13,
+  "data_seed": 20261105,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "generation": {
+    "max_prompt_length": 512,
+    "max_new_tokens": 512,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "sft": {
+    "pool_size": 128,
+    "steps": 32,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "max_length": 768
+  },
+  "grpo": {
+    "pool_size": 64,
+    "pool_offset": 128,
+    "require_disjoint_from_sft": true,
+    "excluded_train_ids": [
+      "gsm8k-train-05134",
+      "gsm8k-train-01188",
+      "gsm8k-train-07439",
+      "gsm8k-train-02307"
+    ],
+    "steps": 12,
+    "gradient_accumulation_steps": 4,
+    "num_generations": 4,
+    "learning_rate": 5e-06,
+    "loss_type": "grpo",
+    "scale_rewards": "group",
+    "beta": 0.0,
+    "epsilon": 0.2,
+    "uniform_mix": 0.25,
+    "prior": 0.5,
+    "probe_samples": 4,
+    "refresh_interval": 8,
+    "validation_interval": 100000,
+    "max_wall_seconds": 900,
+    "max_accounted_tokens": 10000000,
+    "final_validation_reserve_seconds": 0,
+    "sampling_mechanism": "rollout_cache_fifo_v1",
+    "cache_max_trials": 16,
+    "cache_ttl_steps": 32,
+    "standalone_endpoints_only": true
+  },
+  "evaluation": {
+    "validation_size": 128,
+    "test_size": null,
+    "external_size": null,
+    "validation_ids_path": "experiments/desktoprepair_20261106_152712/development_ids.json",
+    "validation_subset": "comparison"
+  },
+  "hardware_profile": "rocm_unverified",
+  "strategy": "dynamic"
+}

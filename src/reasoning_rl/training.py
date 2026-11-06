@@ -7,9 +7,9 @@ from pathlib import Path
 from .runtime import ROOT, create_run, json_write, jsonl_write, jsonl_append, sha256_file, checkpoint_hash, code_hash, seed_everything
 from .modeling import load_model, encode_sft, CompletionCollator, save_adapter, render_prompt, autocast, precision_snapshot
 from .data import load_split
-from .evaluation import evaluate_rows, generate_one
+from .evaluation import evaluate_rows, generate_one, validation_rows
 from .scoring import score_answer, group_advantages
-from .sampling import DifficultySampler
+from .sampling import DifficultySampler, RolloutCacheSampler
 
 
 def _snapshot_trainable(model):
@@ -156,6 +156,11 @@ def run_sft(config, name):
             dropped.append(row["id"])
     if not prepared:
         raise ValueError("All SFT examples exceeded length budget")
+    # Retain exact supervision, rather than inferring it from a nominal example count.
+    jsonl_write(directory / "supervision.jsonl", [
+        {"id": identifier, **encoded} for identifier, encoded in zip(retained, prepared, strict=True)])
+    example_by_tokens = {tuple(e["input_ids"]): identifier
+                         for identifier, e in zip(retained, prepared, strict=True)}
     json_write(directory / "data_usage.json", {"retained": retained, "dropped_length": dropped,
                                                "manifest_sha256": sha256_file(ROOT / "data/manifest.json")})
     initial = _snapshot_trainable(model)
@@ -165,6 +170,14 @@ def run_sft(config, name):
         def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
             counts["processed_tokens"] += int(inputs["attention_mask"].sum().item())
             counts["supervised_tokens"] += int((inputs["labels"] != -100).sum().item())
+            batch_evidence = []
+            for ids, mask, labels in zip(inputs["input_ids"], inputs["attention_mask"], inputs["labels"], strict=True):
+                real_ids = ids[mask.bool()].tolist()
+                batch_evidence.append({"optimizer_step": self.state.global_step,
+                    "id": example_by_tokens[tuple(real_ids)], "processed_tokens": len(real_ids),
+                    "supervised_tokens": int((labels != -100).sum().item()),
+                    "causally_shifted_supervised_tokens": int((labels[1:] != -100).sum().item())})
+            jsonl_append(directory / "supervision_batches.jsonl", batch_evidence)
             # CausalLM shifts labels internally. Prompt/pad positions already carry -100.
             return super().compute_loss(model, inputs, return_outputs=return_outputs, num_items_in_batch=num_items_in_batch)
 
@@ -199,24 +212,53 @@ def run_sft(config, name):
     result = {**output.metrics, **_update_evidence(model, initial), **counts,
               "retained_examples": len(retained), "dropped_length": len(dropped),
               "checkpoint": str(path), "checkpoint_sha256": checkpoint_hash(path)}
+    # Compare the actual Trainer endpoint with a fresh common loader, not a copy of its state dict.
+    check_batch = {k: v.to(model.device) for k, v in CompletionCollator(tokenizer.pad_token_id)([prepared[0]]).items()
+                   if k != "labels"}
+    model.eval()
+    with torch.inference_mode(), autocast(config):
+        expected = model(**check_batch, logits_to_keep=1).logits.float().cpu()
+    with ledger.measure("sft_independent_reload_check"):
+        reloaded, _ = load_model(config, adapter=path)
+        reloaded.eval()
+        with torch.inference_mode(), autocast(config):
+            actual = reloaded(**check_batch, logits_to_keep=1).logits.float().cpu()
+        result["reload_logits_max_absolute_difference"] = float((expected-actual).abs().max())
+        result["reload_logits_match"] = bool(torch.allclose(expected, actual, atol=0.02, rtol=0.002))
+        del reloaded
     json_write(directory / "training_result.json", result)
-    if not result["adapter_updated"]:
-        raise RuntimeError("SFT did not update the adapter")
+    if not result["adapter_updated"] or not result["reload_logits_match"]:
+        raise RuntimeError("SFT update or independent reload check failed")
     return result
 
 
-def run_grpo(config, name, sft_checkpoint, strategy):
+def _starting_checkpoint_metadata(checkpoint, public_start=False):
+    source_meta = json.loads((Path(checkpoint) / "rrl_checkpoint.json").read_text(encoding="utf-8"))
+    expected_stage = "public_posttrained_initialization" if public_start else "sft"
+    if source_meta["stage"] != expected_stage:
+        raise ValueError(f"Explicit initialization requires checkpoint stage {expected_stage}")
+    if public_start:
+        if not source_meta.get("explicitly_not_sft") or source_meta.get("optimizer_steps") != 0:
+            raise ValueError("Public initialization must be untrained and explicitly not SFT")
+        verification = (ROOT / source_meta["source_verification_receipt"]).resolve()
+        if not verification.is_relative_to(ROOT.resolve()):
+            raise ValueError("Public model verification receipt must be project-local")
+        if sha256_file(verification) != source_meta["source_verification_receipt_sha256"]:
+            raise ValueError("Public model verification receipt changed")
+    if source_meta["data_manifest_sha256"] != sha256_file(ROOT / "data/manifest.json"):
+        raise ValueError("SFT and GRPO data manifests differ")
+    return source_meta, expected_stage
+
+
+def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
     import torch
     from datasets import Dataset
     from transformers import TrainerCallback
     from trl import GRPOConfig, GRPOTrainer
     if strategy not in ("uniform", "dynamic", "static"):
         raise ValueError(strategy)
-    source_meta = json.loads((Path(sft_checkpoint) / "rrl_checkpoint.json").read_text(encoding="utf-8"))
-    if source_meta["stage"] != "sft":
-        raise ValueError("C/D/static must start from a real SFT checkpoint")
-    if source_meta["data_manifest_sha256"] != sha256_file(ROOT / "data/manifest.json"):
-        raise ValueError("SFT and GRPO data manifests differ")
+    arm_started = time.perf_counter()
+    source_meta, expected_stage = _starting_checkpoint_metadata(sft_checkpoint,public_start)
     directory, ledger = create_run(name, {**config, "strategy": strategy})
     seed_everything(config["seed"])
     opts = config["grpo"]
@@ -226,6 +268,8 @@ def run_grpo(config, name, sft_checkpoint, strategy):
         raise ValueError("v0.1 fixes beta=0; nonzero KL needs an explicit frozen SFT reference adapter")
     with ledger.measure("load_model"):
         model, tokenizer = load_model(config, adapter=sft_checkpoint, trainable=True)
+    if public_start and any(torch.count_nonzero(p).item() for n,p in model.named_parameters() if "lora_B" in n):
+        raise ValueError("Public-model initialization requires actual zero-output LoRA weights")
     loader_precision = precision_snapshot(model)
     offset = opts.get("pool_offset", 0)
     pool = load_split("train", "select", limit=offset+opts["pool_size"], seed=config["data_seed"])[offset:]
@@ -240,12 +284,19 @@ def run_grpo(config, name, sft_checkpoint, strategy):
     if not pool:
         raise ValueError("Empty GRPO pool")
     by_id = {r["id"]: {"id": r["id"], "answer": r["answer"], "prompt": render_prompt(tokenizer, r["question"])} for r in pool}
-    selector = DifficultySampler([r["id"] for r in pool], strategy, config["seed"],
-                                 opts["uniform_mix"], opts["prior"])
+    cache_mode = opts.get("sampling_mechanism") == "rollout_cache_fifo_v1"
+    if cache_mode and strategy != "uniform":
+        selector = RolloutCacheSampler([r["id"] for r in pool], strategy, config["seed"],
+            opts["uniform_mix"], opts["prior"], opts["cache_max_trials"], opts["cache_ttl_steps"])
+    else:
+        selector = DifficultySampler([r["id"] for r in pool], strategy, config["seed"],
+                                     opts["uniform_mix"], opts["prior"])
     initial = _snapshot_trainable(model)
     initial_hash = checkpoint_hash(sft_checkpoint)
     json_write(directory / "comparison_contract.json", {
-        "sft_checkpoint_sha256": initial_hash, "data_manifest_sha256": sha256_file(ROOT / "data/manifest.json"),
+        "sft_checkpoint_sha256": None if public_start else initial_hash, "data_manifest_sha256": sha256_file(ROOT / "data/manifest.json"),
+        "initialization_kind": expected_stage, "initial_checkpoint_sha256": initial_hash,
+        "is_sft_initialization": not public_start,
         "pool_ids": list(by_id), "protocol": config, "strategy": strategy,
         "candidate_pool_ids": candidate_pool_ids, "audited_excluded_train_ids": opts.get("excluded_train_ids", []),
         "code_sha256": code_hash(),
@@ -258,6 +309,8 @@ def run_grpo(config, name, sft_checkpoint, strategy):
                   "nonzero_advantage_completions": 0, "last_refresh_step": None,
                   "sampler_weight_change_events": 0, "format_errors": 0, "parse_errors": 0,
                   "truncated_completions": 0}
+    statistics.update(sampler_maintenance_seconds=0.0, cache_rollout_update_events=0,
+                      full_post_initial_probes=0, incomplete_probes=0)
     budget_started = time.perf_counter()
     training_started = None
 
@@ -271,14 +324,24 @@ def run_grpo(config, name, sft_checkpoint, strategy):
         # Reserve a declared amount for the final fixed validation, based on prior validation timing.
         # Its actual cost still enters grpo_total; natural-boundary over/undershoot is reported.
         usable = opts["max_wall_seconds"] - opts.get("final_validation_reserve_seconds", 0)
-        return time.perf_counter()-training_started >= usable or accounted_tokens() >= opts["max_accounted_tokens"]
+        clock_start = arm_started if opts.get("standalone_endpoints_only") else training_started
+        return time.perf_counter()-clock_start >= usable or accounted_tokens() >= opts["max_accounted_tokens"]
 
     class InstrumentedGRPO(GRPOTrainer):
         """Single-device prompt selection at the actual generation boundary avoids dataloader lookahead."""
         def _generate_and_score_completions(self, inputs):
             step = self.state.global_step
+            if cache_mode and strategy != "uniform" and selector.updates:
+                maintain_started = time.perf_counter()
+                previous = selector.weights()
+                selector.advance(step)
+                changed = any(abs(a-b)>1e-12 for a,b in zip(previous,selector.weights(),strict=True))
+                statistics["sampler_weight_change_events"] += int(changed)
+                elapsed = time.perf_counter()-maintain_started
+                statistics["sampler_maintenance_seconds"] += elapsed
+                ledger.emit(phase="cache_age_maintenance", optimizer_step=step, wall_seconds=elapsed,weights_changed=changed)
             refresh = strategy != "uniform" and (selector.updates == 0 or
-                (strategy == "dynamic" and step > 0 and step % opts["refresh_interval"] == 0
+                (not cache_mode and strategy == "dynamic" and step > 0 and step % opts["refresh_interval"] == 0
                  and statistics["last_refresh_step"] != step))
             if refresh:
                 observations, predictions = {}, []
@@ -301,13 +364,23 @@ def run_grpo(config, name, sft_checkpoint, strategy):
                                 prompt_tokens=sum(r["prompt_tokens"] for r in predictions),
                                 probe_items=len(observations), probe_complete=probe_complete)
                 if not probe_complete:
+                    statistics["incomplete_probes"] += 1
                     jsonl_write(directory / f"probes/step_{step:05d}_incomplete.jsonl", predictions)
                     raise BudgetReached("Budget reached inside difficulty probe; partial probe not used for selection")
                 old_weights = selector.weights() if selector.updates else None
-                selector.refresh(observations)
+                maintain_started = time.perf_counter()
+                if cache_mode:
+                    ordered = {row["id"]: [float(r["correct"]) for r in predictions if r["id"] == row["id"]] for row in pool}
+                    selector.initialize_ordered(ordered)
+                else:
+                    selector.refresh(observations)
+                elapsed = time.perf_counter()-maintain_started
+                statistics["sampler_maintenance_seconds"] += elapsed
+                ledger.emit(phase="sampler_initialization_or_refresh", optimizer_step=step, wall_seconds=elapsed)
                 if old_weights is not None:
                     statistics["sampler_weight_change_events"] += int(any(abs(a-b)>1e-12 for a,b in zip(old_weights, selector.weights(), strict=True)))
                 statistics["probe_calls"] += 1
+                statistics["full_post_initial_probes"] += int(step > 0)
                 statistics["last_refresh_step"] = step
                 jsonl_write(directory / f"probes/step_{step:05d}.jsonl", predictions)
                 json_write(directory / f"probes/step_{step:05d}_state.json", selector.state_dict())
@@ -315,11 +388,15 @@ def run_grpo(config, name, sft_checkpoint, strategy):
                 raise BudgetReached("Budget reached before next rollout group")
             if len(inputs) % self.num_generations:
                 raise ValueError("Generation batch must contain complete GRPO groups")
+            maintain_started = time.perf_counter()
             chosen = selector.draw(len(inputs)//self.num_generations)
             actual = [dict(by_id[i]) for i in chosen for _ in range(self.num_generations)]
             jsonl_append(directory / "selections.jsonl", [{"optimizer_step": step, "generation_batch": statistics["generation_batches"],
                                "ids": chosen, "sampler_updates": selector.updates,
                                "weights": selector.state_dict()["weights"]}])
+            elapsed = time.perf_counter()-maintain_started
+            statistics["sampler_maintenance_seconds"] += elapsed
+            ledger.emit(phase="sampler_selection", optimizer_step=step, wall_seconds=elapsed)
             statistics["generation_batches"] += 1
             # TRL unwraps the model for generation; re-enter AMP explicitly for FP32 frozen
             # embedding/head layers alongside BF16 k-bit compute on the native Windows path.
@@ -367,6 +444,21 @@ def run_grpo(config, name, sft_checkpoint, strategy):
             statistics["groups"] += 1
             statistics["zero_variance_groups"] += int(len(set(group)) == 1)
             statistics["nonzero_advantage_completions"] += sum(a != 0 for a in group_advantages(group, opts["scale_rewards"]))
+            if cache_mode and strategy == "dynamic":
+                maintain_started = time.perf_counter()
+                before_weights = selector.weights()
+                selector.observe_rollouts(id[begin], group, trainer.state.global_step)
+                after_weights = selector.weights()
+                changed = any(abs(a-b) > 1e-12 for a, b in zip(before_weights, after_weights, strict=True))
+                statistics["sampler_weight_change_events"] += int(changed)
+                statistics["cache_rollout_update_events"] += 1
+                jsonl_append(directory / "cache_updates.jsonl", [{"optimizer_step": trainer.state.global_step,
+                    "generation_batch": statistics["generation_batches"]-1, "id": id[begin],
+                    "rewards": group, "weights_changed": changed, "state": selector.state_dict()}])
+                elapsed = time.perf_counter()-maintain_started
+                statistics["sampler_maintenance_seconds"] += elapsed
+                ledger.emit(phase="rollout_cache_update", optimizer_step=trainer.state.global_step,
+                            wall_seconds=elapsed, weights_changed=changed)
         reward_log = []
         for i, (text, score, r) in enumerate(zip(texts, scores, rewards, strict=True)):
             ids = completion_ids[i] if completion_ids is not None else []
@@ -398,7 +490,7 @@ def run_grpo(config, name, sft_checkpoint, strategy):
                         zero_variance_group_fraction=statistics["zero_variance_groups"]/max(statistics["groups"], 1))
             if budget_exceeded():
                 control.should_training_stop = True
-            if state.global_step % opts["validation_interval"] == 0 or control.should_training_stop:
+            if not opts.get("standalone_endpoints_only") and (state.global_step % opts["validation_interval"] == 0 or control.should_training_stop):
                 _evaluate_with_recovery(trainer.accelerator.unwrap_model(trainer.model), tokenizer,
                     load_split("validation", "evaluate_validation", limit=config["evaluation"]["validation_size"], seed=config["data_seed"]),
                     config, directory, ledger, state.global_step, initial_hash)
@@ -442,7 +534,7 @@ def run_grpo(config, name, sft_checkpoint, strategy):
         except BudgetReached as error:
             output_metrics = {"budget_stop_reason": str(error)}
         final_step = trainer.state.global_step
-        if not (directory / f"validation/step_{final_step:05d}/metrics.json").exists():
+        if not opts.get("standalone_endpoints_only") and not (directory / f"validation/step_{final_step:05d}/metrics.json").exists():
             ledger.emit(phase="budget_progress", optimizer_step=final_step,
                         cumulative_training_wall_seconds=time.perf_counter()-training_started,
                         generated_tokens=statistics["generated_tokens"],
@@ -463,7 +555,9 @@ def run_grpo(config, name, sft_checkpoint, strategy):
     measured_grpo_seconds = next(r["wall_seconds"] for r in reversed(ledger.rows) if r["phase"] == "grpo_total")
     path = ROOT / "checkpoints" / name
     save_adapter(model, tokenizer, path, config, "grpo", strategy=strategy,
-                 sft_checkpoint_sha256=initial_hash, data_manifest_sha256=sha256_file(ROOT / "data/manifest.json"))
+                 sft_checkpoint_sha256=None if public_start else initial_hash,
+                 initial_checkpoint_sha256=initial_hash, initialization_kind=expected_stage,
+                 data_manifest_sha256=sha256_file(ROOT / "data/manifest.json"))
     trainer.save_state()
     result = {**output_metrics, **statistics, **_update_evidence(model, initial),
               "mean_reward": statistics["reward_sum"]/max(1, statistics["reward_count"]),
@@ -472,10 +566,13 @@ def run_grpo(config, name, sft_checkpoint, strategy):
               "training_parse_error_rate": statistics["parse_errors"]/max(1, statistics["reward_count"]),
               "training_truncation_rate": statistics["truncated_completions"]/max(1, statistics["reward_count"]),
               "checkpoint": str(path), "checkpoint_sha256": checkpoint_hash(path),
-              "sft_checkpoint_sha256": initial_hash, "completed_optimizer_steps": trainer.state.global_step,
+              "sft_checkpoint_sha256": None if public_start else initial_hash, "completed_optimizer_steps": trainer.state.global_step,
+              "initial_checkpoint_sha256": initial_hash, "initialization_kind": expected_stage,
+              "is_sft_initialization": not public_start,
+              "arm_total_through_checkpoint_seconds": time.perf_counter()-arm_started,
               "observed_optimizer_steps_per_grpo_second": trainer.state.global_step/measured_grpo_seconds,
               "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
-              "wall_budget_overshoot_seconds": max(0, time.perf_counter()-training_started-opts["max_wall_seconds"])}
+              "wall_budget_overshoot_seconds": max(0, time.perf_counter()-(arm_started if opts.get("standalone_endpoints_only") else training_started)-opts["max_wall_seconds"])}
     if strategy == "uniform" or selector.updates:
         json_write(directory / "sampler_final.json", selector.state_dict())
     else:

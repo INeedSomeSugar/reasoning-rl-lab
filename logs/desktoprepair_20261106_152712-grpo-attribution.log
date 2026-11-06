@@ -1,0 +1,85 @@
+{
+  "learning_signal": {
+    "C": {
+      "steps": 389,
+      "nonzero_gradient_steps": 82,
+      "draw_weighted_zero_variance_rate": 0.7892030848329049
+    },
+    "D": {
+      "steps": 309,
+      "nonzero_gradient_steps": 83,
+      "draw_weighted_zero_variance_rate": 0.7313915857605178
+    },
+    "E": {
+      "steps": 281,
+      "nonzero_gradient_steps": 79,
+      "draw_weighted_zero_variance_rate": 0.7188612099644128
+    }
+  },
+  "confirmation_DC": [
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seed": 13,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 1,
+      "net_correct_difference": -2,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 2,
+        "nontruncated_parse_failure": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-06348",
+        "gsm8k-train-02439",
+        "gsm8k-train-06767"
+      ],
+      "gain_ids": [
+        "gsm8k-train-03216"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seed": 29,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": -1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 2,
+        "truncated": 1
+      },
+      "regression_ids": [
+        "gsm8k-train-06978",
+        "gsm8k-train-00229",
+        "gsm8k-train-00986"
+      ],
+      "gain_ids": [
+        "gsm8k-train-03216",
+        "gsm8k-train-01277"
+      ]
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seed": 47,
+      "n": 128,
+      "right_correct_left_wrong": 3,
+      "right_wrong_left_correct": 2,
+      "net_correct_difference": -1,
+      "left_regression_surface_partition": {
+        "nontruncated_wrong_numeric_requires_review": 3
+      },
+      "regression_ids": [
+        "gsm8k-train-03216",
+        "gsm8k-train-06767",
+        "gsm8k-train-01004"
+      ],
+      "gain_ids": [
+        "gsm8k-train-04448",
+        "gsm8k-train-00986"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 788.0, 'completions/mean_length': 104.0, 'completions/min_length': 85.0, 'completions/max_length': 127.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 104.0, 'completions/min_terminated_length': 85.0, 'completions/max_terminated_length': 127.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.06994453817605972, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.016666666666666666}
+{'train_runtime': 262.9865, 'train_samples_per_second': 0.015, 'train_steps_per_second': 0.004, 'train_loss': 0.0, 'epoch': 0.016666666666666666}
+{
+  "train_runtime": 262.9865,
+  "train_samples_per_second": 0.015,
+  "train_steps_per_second": 0.004,
+  "total_flos": 0.0,
+  "train_loss": 0.0,
+  "generation_batches": 1,
+  "processed_tokens": 788,
+  "padded_processed_tokens": 880,
+  "generation_prompt_tokens": 372,
+  "logprob_forward_input_tokens": 788,
+  "logprob_forward_padded_tokens": 880,
+  "generated_tokens": 416,
+  "probe_generated_tokens": 36623,
+  "probe_prompt_tokens": 26012,
+  "probe_calls": 1,
+  "zero_variance_groups": 1,
+  "groups": 1,
+  "reward_sum": 4.0,
+  "reward_count": 4,
+  "nonzero_advantage_completions": 0,
+  "last_refresh_step": 0,
+  "sampler_weight_change_events": 0,
+  "format_errors": 0,
+  "parse_errors": 0,
+  "truncated_completions": 0,
+  "sampler_maintenance_seconds": 0.0008370000032300595,
+  "cache_rollout_update_events": 0,
+  "full_post_initial_probes": 0,
+  "incomplete_probes": 0,
+  "adapter_delta_l2": 0.0,
+  "adapter_updated": false,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "mean_reward": 1.0,
+  "zero_variance_group_fraction": 1.0,
+  "training_format_error_rate": 0.0,
+  "training_parse_error_rate": 0.0,
+  "training_truncation_rate": 0.0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprepair_20261106_152712-calibration-E",
+  "checkpoint_sha256": "037d4d209587e1572cbc681218c1132f1bd1eec14a464937108b46653244bc44",
+  "sft_checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "completed_optimizer_steps": 1,
+  "initial_checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "initialization_kind": "sft",
+  "is_sft_initialization": true,
+  "arm_total_through_checkpoint_seconds": 267.3233376999997,
+  "observed_optimizer_steps_per_grpo_second": 0.00380012969926264,
+  "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
+  "wall_budget_overshoot_seconds": 0
+}

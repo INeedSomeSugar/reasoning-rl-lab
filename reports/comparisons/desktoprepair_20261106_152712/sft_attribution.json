@@ -1,0 +1,278 @@
+{
+  "scope": "Fixed comparison128, old32 regression only; no holdout access",
+  "baseline_correct": 107,
+  "candidates": [
+    {
+      "candidate": "S1",
+      "learning_rate": 0.0001,
+      "steps": 32,
+      "pool_n": 128,
+      "actual_unique_supervised_examples": 128,
+      "actual_supervised_tokens": 15160,
+      "actual_processed_tokens": 28381,
+      "correct": 64,
+      "n": 128,
+      "truncated": 40,
+      "parse_failed": 43,
+      "repetition_suspected": 39,
+      "A_correct_candidate_wrong": 48,
+      "A_wrong_candidate_correct": 5,
+      "lost_truncated": 30,
+      "lost_nontruncated_parse_failure": 4,
+      "lost_nontruncated_wrong_numeric": 14,
+      "adapter_delta_l2": 2.5870498731020843,
+      "finite_gradient_checks": 32,
+      "nonzero_gradient_checks": 32,
+      "frozen_gradient_checks_failed": 0,
+      "max_clipped_gradient_l2": 0.999999898005621,
+      "reload_logits_max_abs_difference": 0.0,
+      "eligible": false
+    },
+    {
+      "candidate": "S2",
+      "learning_rate": 1e-05,
+      "steps": 8,
+      "pool_n": 128,
+      "actual_unique_supervised_examples": 32,
+      "actual_supervised_tokens": 3688,
+      "actual_processed_tokens": 7019,
+      "correct": 110,
+      "n": 128,
+      "truncated": 0,
+      "parse_failed": 2,
+      "repetition_suspected": 0,
+      "A_correct_candidate_wrong": 0,
+      "A_wrong_candidate_correct": 3,
+      "lost_truncated": 0,
+      "lost_nontruncated_parse_failure": 0,
+      "lost_nontruncated_wrong_numeric": 0,
+      "adapter_delta_l2": 0.0696725782352138,
+      "finite_gradient_checks": 8,
+      "nonzero_gradient_checks": 8,
+      "frozen_gradient_checks_failed": 0,
+      "max_clipped_gradient_l2": 0.999999898005621,
+      "reload_logits_max_abs_difference": 0.0,
+      "eligible": true
+    },
+    {
+      "candidate": "S3",
+      "learning_rate": 1e-05,
+      "steps": 32,
+      "pool_n": 128,
+      "actual_unique_supervised_examples": 128,
+      "actual_supervised_tokens": 15160,
+      "actual_processed_tokens": 28381,
+      "correct": 106,
+      "n": 128,
+      "truncated": 0,
+      "parse_failed": 6,
+      "repetition_suspected": 1,
+      "A_correct_candidate_wrong": 3,
+      "A_wrong_candidate_correct": 2,
+      "lost_truncated": 0,
+      "lost_nontruncated_parse_failure": 2,
+      "lost_nontruncated_wrong_numeric": 1,
+      "adapter_delta_l2": 0.3285546392176122,
+      "finite_gradient_checks": 32,
+      "nonzero_gradient_checks": 32,
+      "frozen_gradient_checks_failed": 0,
+      "max_clipped_gradient_l2": 0.999999898005621,
+      "reload_logits_max_abs_difference": 0.0,
+      "eligible": false
+    },
+    {
+      "candidate": "S4",
+      "learning_rate": 3e-05,
+      "steps": 16,
+      "pool_n": 128,
+      "actual_unique_supervised_examples": 64,
+      "actual_supervised_tokens": 7775,
+      "actual_processed_tokens": 14546,
+      "correct": 106,
+      "n": 128,
+      "truncated": 0,
+      "parse_failed": 4,
+      "repetition_suspected": 1,
+      "A_correct_candidate_wrong": 5,
+      "A_wrong_candidate_correct": 4,
+      "lost_truncated": 0,
+      "lost_nontruncated_parse_failure": 2,
+      "lost_nontruncated_wrong_numeric": 3,
+      "adapter_delta_l2": 0.4515769592546393,
+      "finite_gradient_checks": 16,
+      "nonzero_gradient_checks": 16,
+      "frozen_gradient_checks_failed": 0,
+      "max_clipped_gradient_l2": 0.999999898005621,
+      "reload_logits_max_abs_difference": 0.0,
+      "eligible": true
+    }
+  ],
+  "paired_attribution": [
+    {
+      "candidate": "S1",
+      "regressions": [
+        "gsm8k-train-01596",
+        "gsm8k-train-07281",
+        "gsm8k-train-02457",
+        "gsm8k-train-06456",
+        "gsm8k-train-05797",
+        "gsm8k-train-06623",
+        "gsm8k-train-04404",
+        "gsm8k-train-01311",
+        "gsm8k-train-04163",
+        "gsm8k-train-06015",
+        "gsm8k-train-05787",
+        "gsm8k-train-06622",
+        "gsm8k-train-04289",
+        "gsm8k-train-00440",
+        "gsm8k-train-06697",
+        "gsm8k-train-02577",
+        "gsm8k-train-02987",
+        "gsm8k-train-06259",
+        "gsm8k-train-01074",
+        "gsm8k-train-06985",
+        "gsm8k-train-07209",
+        "gsm8k-train-03373",
+        "gsm8k-train-04614",
+        "gsm8k-train-06552",
+        "gsm8k-train-06183",
+        "gsm8k-train-03093",
+        "gsm8k-train-06331",
+        "gsm8k-train-06608",
+        "gsm8k-train-02271",
+        "gsm8k-train-06124",
+        "gsm8k-train-02535",
+        "gsm8k-train-07386",
+        "gsm8k-train-03742",
+        "gsm8k-train-01242",
+        "gsm8k-train-03421",
+        "gsm8k-train-04373",
+        "gsm8k-train-03156",
+        "gsm8k-train-07232",
+        "gsm8k-train-06515",
+        "gsm8k-train-03189",
+        "gsm8k-train-05642",
+        "gsm8k-train-00375",
+        "gsm8k-train-03676",
+        "gsm8k-train-00666",
+        "gsm8k-train-05441",
+        "gsm8k-train-05062",
+        "gsm8k-train-06349",
+        "gsm8k-train-02562"
+      ],
+      "fixes": [
+        "gsm8k-train-05364",
+        "gsm8k-train-04976",
+        "gsm8k-train-04268",
+        "gsm8k-train-00183",
+        "gsm8k-train-06641"
+      ],
+      "regression_partition": {
+        "nontruncated_wrong_numeric_requires_review": 14,
+        "truncated": 30,
+        "nontruncated_parse_failure": 4
+      },
+      "partition_is_mutually_exclusive": true,
+      "repetition_is_overlapping_surface_tag_not_causal_label": true
+    },
+    {
+      "candidate": "S2",
+      "regressions": [],
+      "fixes": [
+        "gsm8k-train-05364",
+        "gsm8k-train-04976",
+        "gsm8k-train-04437"
+      ],
+      "regression_partition": {},
+      "partition_is_mutually_exclusive": true,
+      "repetition_is_overlapping_surface_tag_not_causal_label": true
+    },
+    {
+      "candidate": "S3",
+      "regressions": [
+        "gsm8k-train-06985",
+        "gsm8k-train-04614",
+        "gsm8k-train-00666"
+      ],
+      "fixes": [
+        "gsm8k-train-00470",
+        "gsm8k-train-04437"
+      ],
+      "regression_partition": {
+        "nontruncated_wrong_numeric_requires_review": 1,
+        "nontruncated_parse_failure": 2
+      },
+      "partition_is_mutually_exclusive": true,
+      "repetition_is_overlapping_surface_tag_not_causal_label": true
+    },
+    {
+      "candidate": "S4",
+      "regressions": [
+        "gsm8k-train-04163",
+        "gsm8k-train-02577",
+        "gsm8k-train-06985",
+        "gsm8k-train-04614",
+        "gsm8k-train-02535"
+      ],
+      "fixes": [
+        "gsm8k-train-03454",
+        "gsm8k-train-01346",
+        "gsm8k-train-04976",
+        "gsm8k-train-05369"
+      ],
+      "regression_partition": {
+        "nontruncated_wrong_numeric_requires_review": 3,
+        "nontruncated_parse_failure": 2
+      },
+      "partition_is_mutually_exclusive": true,
+      "repetition_is_overlapping_surface_tag_not_causal_label": true
+    }
+  ],
+  "exact_reproduction": {
+    "old_and_S1_adapter_weight_bytes_identical": true,
+    "adapter_weight_sha256": "9f72b38dec4ad9745b0eb27d8e70c219c08eaf5895d67ab5d1e4b9d5713e0e18",
+    "old32_all_raw_predictions_identical": true
+  },
+  "sft_relevant_implementation_ast_identical_across_candidates": true,
+  "implementation_fingerprints": [
+    {
+      "candidate": "S1",
+      "modeling_module_sha256": "18ca144e7d30852d3ef83b22c98082ac9d0f29d37a55ab997340cc76ea715f6e",
+      "run_sft_ast_sha256": "f054dc125cb1dcdb7f33779185ac27808e01d8dc856da97875d2b4601292e35e",
+      "gradient_check_ast_sha256": "60fce19b7ab4a001684a6ccceca4d3c5d98dd19db33f2a72b59b0113cef99836",
+      "encode_sft_ast_sha256": "b489a7e1cdae42ff05f32311d0ad992bddda31f3a572d2b7f9790d94f286bf54",
+      "collator_ast_sha256": "5504517729c0c347eac02e82ce50865613873657f1a23d6964e86722a17a3b94",
+      "generate_one_ast_sha256": "172f0b34fe3dbaf0991faecb2fc01bdcb3a6a19a7b1dd6af25beb41c882fe23f"
+    },
+    {
+      "candidate": "S2",
+      "modeling_module_sha256": "18ca144e7d30852d3ef83b22c98082ac9d0f29d37a55ab997340cc76ea715f6e",
+      "run_sft_ast_sha256": "f054dc125cb1dcdb7f33779185ac27808e01d8dc856da97875d2b4601292e35e",
+      "gradient_check_ast_sha256": "60fce19b7ab4a001684a6ccceca4d3c5d98dd19db33f2a72b59b0113cef99836",
+      "encode_sft_ast_sha256": "b489a7e1cdae42ff05f32311d0ad992bddda31f3a572d2b7f9790d94f286bf54",
+      "collator_ast_sha256": "5504517729c0c347eac02e82ce50865613873657f1a23d6964e86722a17a3b94",
+      "generate_one_ast_sha256": "172f0b34fe3dbaf0991faecb2fc01bdcb3a6a19a7b1dd6af25beb41c882fe23f"
+    },
+    {
+      "candidate": "S3",
+      "modeling_module_sha256": "18ca144e7d30852d3ef83b22c98082ac9d0f29d37a55ab997340cc76ea715f6e",
+      "run_sft_ast_sha256": "f054dc125cb1dcdb7f33779185ac27808e01d8dc856da97875d2b4601292e35e",
+      "gradient_check_ast_sha256": "60fce19b7ab4a001684a6ccceca4d3c5d98dd19db33f2a72b59b0113cef99836",
+      "encode_sft_ast_sha256": "b489a7e1cdae42ff05f32311d0ad992bddda31f3a572d2b7f9790d94f286bf54",
+      "collator_ast_sha256": "5504517729c0c347eac02e82ce50865613873657f1a23d6964e86722a17a3b94",
+      "generate_one_ast_sha256": "172f0b34fe3dbaf0991faecb2fc01bdcb3a6a19a7b1dd6af25beb41c882fe23f"
+    },
+    {
+      "candidate": "S4",
+      "modeling_module_sha256": "18ca144e7d30852d3ef83b22c98082ac9d0f29d37a55ab997340cc76ea715f6e",
+      "run_sft_ast_sha256": "f054dc125cb1dcdb7f33779185ac27808e01d8dc856da97875d2b4601292e35e",
+      "gradient_check_ast_sha256": "60fce19b7ab4a001684a6ccceca4d3c5d98dd19db33f2a72b59b0113cef99836",
+      "encode_sft_ast_sha256": "b489a7e1cdae42ff05f32311d0ad992bddda31f3a572d2b7f9790d94f286bf54",
+      "collator_ast_sha256": "5504517729c0c347eac02e82ce50865613873657f1a23d6964e86722a17a3b94",
+      "generate_one_ast_sha256": "172f0b34fe3dbaf0991faecb2fc01bdcb3a6a19a7b1dd6af25beb41c882fe23f"
+    }
+  ],
+  "gold_final_numeric_matches_manifest_all128": true,
+  "gold_quality_limit": "Numeric consistency and complete serialization do not prove every reference reasoning statement is mathematically correct",
+  "interpretation": "Strong optimization intervention reproduces degradation. Masks/shift/unchanged-LoRA/reload controls rule out the checked implementation defects. The specific internal mechanism behind repetitive generation remains unresolved."
+}

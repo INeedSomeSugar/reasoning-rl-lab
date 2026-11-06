@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex agent",
+  "human_reviewed": false,
+  "recorded_unix": 1793967558.3507357,
+  "figure_sha256": {
+    "standalone_comparison.png": "8c4e5b5a1068466188c43aacdfa43f7aa1023d40cb8bfc935cd553240e04ccc7",
+    "cost_ledger.png": "768707d4271edd1f2df18ac539ee9e053b49eef6fe16c69bd7f9534fbb9137ed",
+    "effective_pool_observed.png": "3b4e893390ab9878ae0e70a6aeaa7b6661fc60d67247efbb759b5726d01bcd11",
+    "sft_strength.png": "392ad89ddf7fc8dca985bfc8a5a45db967cf0836db2657ff15aff361770228a0"
+  },
+  "checks": [
+    "Final comparison and full one-stage confirmation panels show all actual endpoints",
+    "Counts and axis scope match the exact summary",
+    "Cost components and unused budgets are readable; title/legend overlap was repaired in place",
+    "Effective-pool plots use only actual selection points",
+    "SFT strength counts, zero truncation labels and legend are visible"
+  ],
+  "limitations": "Static exported images inspected with the local image viewer; no interactive viewer is implied"
+}

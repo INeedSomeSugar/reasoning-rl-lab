@@ -1,0 +1,7 @@
+{
+  "verified_unix": 1793967724.064377,
+  "method": "Authenticated local read-only git ls-remote origin refs/heads/main",
+  "remote_main": "4e938eb696b1cbb4290c14515d30069ff6e50113",
+  "local_head": "4e938eb696b1cbb4290c14515d30069ff6e50113",
+  "this_study_committed_or_pushed": false
+}

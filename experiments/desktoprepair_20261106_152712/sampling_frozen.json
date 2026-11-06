@@ -1,0 +1,202 @@
+{
+  "registered_unix": 1793953836.5356925,
+  "family": "desktoprepair_20261106_152712",
+  "status": "frozen_development_only",
+  "common_start": {
+    "kind": "sft",
+    "checkpoint": "checkpoints\\desktoprepair_20261106_152712-S2",
+    "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+    "sft_candidate": "S2",
+    "public_model_verification_sha256": "c7cbe70435a50495a47b5e25c18dfa1d71d4e8dc0321618590cd9fa15b00280e"
+  },
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "development_ids_sha256": "5bfff1eee139f0dbfb040043c0955e9c17218856912f5e1a311d6aadcab01f49",
+  "public_model_verification_sha256": "c7cbe70435a50495a47b5e25c18dfa1d71d4e8dc0321618590cd9fa15b00280e",
+  "configs": {
+    "13": {
+      "path": "configs/desktoprepair_20261106_152712_grpo_s13.yaml",
+      "sha256": "0001ab6e4b1852e6a43d490274e37ccc3e43c7f3f529e4200cc70fede2df4b4a"
+    },
+    "29": {
+      "path": "configs/desktoprepair_20261106_152712_grpo_s29.yaml",
+      "sha256": "5e2b7d5e5f5468554615cd3f1f86552d8da75202f3bd8a7a29b7d846ebe7590d"
+    },
+    "47": {
+      "path": "configs/desktoprepair_20261106_152712_grpo_s47.yaml",
+      "sha256": "0c0771b689b1e49826f40dbb3b8c800a27661d45fab2629dbc1d7d9cd5bb624d"
+    }
+  },
+  "code_sha256": "8f2578aae3bb03fe0eed6fa65adf326297da1b7e9a3c9002547f4e31362f3373",
+  "frozen_source_manifest_sha256": "ef8ad9039867c3c1eab47e91ab606d4de2859ce46bb5b9c1846f3370470be51b",
+  "pool_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-00638",
+    "gsm8k-train-03208",
+    "gsm8k-train-03888",
+    "gsm8k-train-06843",
+    "gsm8k-train-06341",
+    "gsm8k-train-03914",
+    "gsm8k-train-05111",
+    "gsm8k-train-06535",
+    "gsm8k-train-04918",
+    "gsm8k-train-04443",
+    "gsm8k-train-02543",
+    "gsm8k-train-06478",
+    "gsm8k-train-03295",
+    "gsm8k-train-06200",
+    "gsm8k-train-07107",
+    "gsm8k-train-03223",
+    "gsm8k-train-07247",
+    "gsm8k-train-05497",
+    "gsm8k-train-00753",
+    "gsm8k-train-07359",
+    "gsm8k-train-04025",
+    "gsm8k-train-06441",
+    "gsm8k-train-05819",
+    "gsm8k-train-06413",
+    "gsm8k-train-06648",
+    "gsm8k-train-06711",
+    "gsm8k-train-05029",
+    "gsm8k-train-04452",
+    "gsm8k-train-06754",
+    "gsm8k-train-02323",
+    "gsm8k-train-00935",
+    "gsm8k-train-02359",
+    "gsm8k-train-01897",
+    "gsm8k-train-01498",
+    "gsm8k-train-06078",
+    "gsm8k-train-00209",
+    "gsm8k-train-03506",
+    "gsm8k-train-05733"
+  ],
+  "audited_excluded_train_ids": [
+    "gsm8k-train-01188",
+    "gsm8k-train-02307",
+    "gsm8k-train-05134",
+    "gsm8k-train-07439"
+  ],
+  "pool_quality": "Four historical flagged items excluded before sampling; other training labels not exhaustively human-reviewed",
+  "cost_based_capacity": {
+    "actual60_item_probe_seconds": 253.67742390000058,
+    "pool_candidates": [
+      {
+        "retained_size": 60,
+        "candidate_size": 64,
+        "estimated_probe_seconds": 253.67742390000058,
+        "estimated_probe_fraction": 0.422795706500001
+      },
+      {
+        "retained_size": 44,
+        "candidate_size": 48,
+        "estimated_probe_seconds": 186.03011086000043,
+        "estimated_probe_fraction": 0.3100501847666674
+      },
+      {
+        "retained_size": 28,
+        "candidate_size": 32,
+        "estimated_probe_seconds": 118.38279782000026,
+        "estimated_probe_fraction": 0.19730466303333377
+      }
+    ],
+    "selected_pool": {
+      "retained_size": 44,
+      "candidate_size": 48,
+      "estimated_probe_seconds": 186.03011086000043,
+      "estimated_probe_fraction": 0.3100501847666674
+    },
+    "session_remaining_seconds_at_freeze": 17795.44972372055,
+    "training_cap_candidates": [
+      {
+        "training_cap": 600,
+        "reserved_remaining_seconds": 17700,
+        "fits_current_session": true
+      },
+      {
+        "training_cap": 480,
+        "reserved_remaining_seconds": 16620,
+        "fits_current_session": true
+      },
+      {
+        "training_cap": 360,
+        "reserved_remaining_seconds": 15540,
+        "fits_current_session": true
+      }
+    ],
+    "evaluation_reserve_rule": "ceil(max(all A/S1/S2/S3/S4 comparison128 load+generation seconds)/30)*30+60",
+    "evaluation_reserve_seconds": 540,
+    "training_including_loading_and_sampling_cap_seconds": 600,
+    "end_to_end_common_cap_seconds": 1170,
+    "unused_eval_reserve": "No after-evaluation training; report real underuse and natural-boundary overshoot",
+    "confirmation_count": 11
+  },
+  "arms": {
+    "C": "uniform_with_replacement",
+    "D": "rollout_cache_fifo_v1_dynamic",
+    "E": "initial_probe_static_ablation"
+  },
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "order": [
+    [
+      13,
+      "C"
+    ],
+    [
+      13,
+      "D"
+    ],
+    [
+      13,
+      "E"
+    ],
+    [
+      29,
+      "E"
+    ],
+    [
+      29,
+      "D"
+    ],
+    [
+      29,
+      "C"
+    ],
+    [
+      47,
+      "D"
+    ],
+    [
+      47,
+      "C"
+    ],
+    [
+      47,
+      "E"
+    ]
+  ],
+  "sampler": {
+    "initial_probe": "Each D/E independently generates K4 for every train-pool question with identical paired-seed forked RNG; actual cost paid in each arm",
+    "success_estimator": "p_i=(sum(last up to16 binary rewards)+0.5)/(n_i+1); initial observations=ordered K4 probe",
+    "sampling_formula": "q_i=0.25/N +0.75*[4*p_i*(1-p_i)]/sum_j[4*p_j*(1-p_j)]",
+    "dynamic_refresh": "After each real training rollout group, append its rewards and keep last16 for that question; no extra generated probe",
+    "cache_expiry": "At selection/update time, 32 optimizer steps since last observation clears that question's cache and sets p=0.5; static E never updates or expires",
+    "coverage": "Uniform floor 0.25/N plus prior reversion for stale items; finite-budget full coverage is measured, not guaranteed",
+    "maintenance_cost": "Age checks, weight computation, state persistence and update logs run inside the common clock; CPU maintenance logged separately without double-counting",
+    "initial_weights": "D and E per seed must have byte-equivalent probe predictions and identical initial weights; verification is mandatory"
+  },
+  "common_reward_loss_generation_optimizer": "Exact shared config per seed; only sampling mechanism and necessary cost differ",
+  "learning_signal_gate": "Passed preregistered C8/D12/E1 diagnostics, not a performance selection",
+  "comparison": "Independent fresh-process reload on fixed comparison128 at one fixed endpoint per arm; no interpolation/no checkpoint selection",
+  "confirmation": "After all nine checkpoints fixed, one opening of disjoint128 for A, selectedSFT if any, and all nine. No subsequent tuning.",
+  "claim_limit": "No new-protocol full-pool dynamic baseline is run, so no claim that cache sampling improves model outcomes over original full-pool dynamic. Historical timing is descriptive only.",
+  "stop": "Six hours from session start, reserve900s for handoff; retain every negative/failed/incomplete run",
+  "holdout": "GSM8K test and SVAMP sealed"
+}

@@ -1,0 +1,34 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+{'loss': 2.4012, 'grad_norm': 4.28529691696167, 'learning_rate': 1e-05, 'epoch': 0.03125}
+{'loss': 2.0511, 'grad_norm': 2.9048633575439453, 'learning_rate': 1e-05, 'epoch': 0.0625}
+{'loss': 2.7377, 'grad_norm': 5.132856845855713, 'learning_rate': 1e-05, 'epoch': 0.09375}
+{'loss': 3.0281, 'grad_norm': 4.699493408203125, 'learning_rate': 1e-05, 'epoch': 0.125}
+{'loss': 2.6326, 'grad_norm': 4.567491054534912, 'learning_rate': 1e-05, 'epoch': 0.15625}
+{'loss': 2.46, 'grad_norm': 4.080331325531006, 'learning_rate': 1e-05, 'epoch': 0.1875}
+{'loss': 2.5392, 'grad_norm': 3.6928038597106934, 'learning_rate': 1e-05, 'epoch': 0.21875}
+{'loss': 2.5639, 'grad_norm': 4.023158073425293, 'learning_rate': 1e-05, 'epoch': 0.25}
+{'train_runtime': 5.8867, 'train_samples_per_second': 5.436, 'train_steps_per_second': 1.359, 'train_loss': 2.5517238676548004, 'epoch': 0.25}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "train_runtime": 5.8867,
+  "train_samples_per_second": 5.436,
+  "train_steps_per_second": 1.359,
+  "train_loss": 2.5517238676548004,
+  "epoch": 0.25,
+  "adapter_delta_l2": 0.0696725782352138,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "processed_tokens": 7019,
+  "supervised_tokens": 3688,
+  "retained_examples": 128,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprepair_20261106_152712-S2",
+  "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}

@@ -197,9 +197,9 @@ def create_run(name, config):
     json_write(directory / "environment.json", hardware_info())
     json_write(directory / "provenance.json", {"code_sha256": code_hash(), "created_unix": time.time()})
     # Preserve executable source at run time, even if later runs repair or extend the project.
-    for folder in ("src", "configs", "requirements"):
+    for folder in ("src", "configs", "requirements", "scripts", "tests"):
         for source in (ROOT / folder).rglob("*"):
-            if source.is_file() and source.suffix in {".py", ".yaml", ".json", ".txt"}:
+            if source.is_file() and source.suffix in {".py", ".ps1", ".yaml", ".json", ".txt"}:
                 destination = directory / "source_snapshot" / source.relative_to(ROOT)
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(source, destination)

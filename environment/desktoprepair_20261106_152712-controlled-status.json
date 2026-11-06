@@ -1,0 +1,27 @@
+{
+  "status": "completed_balanced_development_comparison",
+  "started_unix": 1793953837.3783097,
+  "completed": [
+    "C-s13",
+    "C-s13-comparison",
+    "D-s13",
+    "D-s13-comparison",
+    "E-s13",
+    "E-s13-comparison",
+    "E-s29",
+    "E-s29-comparison",
+    "D-s29",
+    "D-s29-comparison",
+    "C-s29",
+    "C-s29-comparison",
+    "D-s47",
+    "D-s47-comparison",
+    "C-s47",
+    "C-s47-comparison",
+    "E-s47",
+    "E-s47-comparison"
+  ],
+  "holdout_opened": false,
+  "phase": "E-s47-comparison",
+  "finished_unix": 1793962609.7483096
+}

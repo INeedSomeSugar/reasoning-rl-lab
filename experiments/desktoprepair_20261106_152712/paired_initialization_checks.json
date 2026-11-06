@@ -1,0 +1,17 @@
+[
+  {
+    "seed": 13,
+    "initial_predictions_equal": true,
+    "initial_weights_equal": true
+  },
+  {
+    "seed": 29,
+    "initial_predictions_equal": true,
+    "initial_weights_equal": true
+  },
+  {
+    "seed": 47,
+    "initial_predictions_equal": true,
+    "initial_weights_equal": true
+  }
+]

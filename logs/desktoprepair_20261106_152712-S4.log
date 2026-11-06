@@ -1,0 +1,42 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+{'loss': 2.4012, 'grad_norm': 4.28529691696167, 'learning_rate': 3e-05, 'epoch': 0.03125}
+{'loss': 2.0434, 'grad_norm': 2.9126434326171875, 'learning_rate': 3e-05, 'epoch': 0.0625}
+{'loss': 2.7375, 'grad_norm': 5.21409273147583, 'learning_rate': 3e-05, 'epoch': 0.09375}
+{'loss': 3.0074, 'grad_norm': 4.706446647644043, 'learning_rate': 3e-05, 'epoch': 0.125}
+{'loss': 2.6018, 'grad_norm': 4.74897575378418, 'learning_rate': 3e-05, 'epoch': 0.15625}
+{'loss': 2.3992, 'grad_norm': 4.300837993621826, 'learning_rate': 3e-05, 'epoch': 0.1875}
+{'loss': 2.485, 'grad_norm': 3.94633150100708, 'learning_rate': 3e-05, 'epoch': 0.21875}
+{'loss': 2.4725, 'grad_norm': 4.2375383377075195, 'learning_rate': 3e-05, 'epoch': 0.25}
+{'loss': 2.406, 'grad_norm': 5.146457195281982, 'learning_rate': 3e-05, 'epoch': 0.28125}
+{'loss': 2.2561, 'grad_norm': 4.7944536209106445, 'learning_rate': 3e-05, 'epoch': 0.3125}
+{'loss': 2.8864, 'grad_norm': 5.960487365722656, 'learning_rate': 3e-05, 'epoch': 0.34375}
+{'loss': 1.8245, 'grad_norm': 3.5525288581848145, 'learning_rate': 3e-05, 'epoch': 0.375}
+{'loss': 2.105, 'grad_norm': 4.098744869232178, 'learning_rate': 3e-05, 'epoch': 0.40625}
+{'loss': 1.8634, 'grad_norm': 3.6937472820281982, 'learning_rate': 3e-05, 'epoch': 0.4375}
+{'loss': 2.2011, 'grad_norm': 4.952516555786133, 'learning_rate': 3e-05, 'epoch': 0.46875}
+{'loss': 1.6272, 'grad_norm': 3.491312026977539, 'learning_rate': 3e-05, 'epoch': 0.5}
+{'train_runtime': 9.172, 'train_samples_per_second': 6.978, 'train_steps_per_second': 1.744, 'train_loss': 2.332352466881275, 'epoch': 0.5}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]
+{
+  "train_runtime": 9.172,
+  "train_samples_per_second": 6.978,
+  "train_steps_per_second": 1.744,
+  "train_loss": 2.332352466881275,
+  "epoch": 0.5,
+  "adapter_delta_l2": 0.4515769592546393,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "processed_tokens": 14546,
+  "supervised_tokens": 7775,
+  "retained_examples": 128,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprepair_20261106_152712-S4",
+  "checkpoint_sha256": "2839aa5185048bdfa636baa57924208f8a24d0d5e039bff6c7330ca6023821ab",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}

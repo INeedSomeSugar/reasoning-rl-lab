@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/desktoprepair_20261106_152712-S4",
+  "adapter_sha256": "2839aa5185048bdfa636baa57924208f8a24d0d5e039bff6c7330ca6023821ab",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

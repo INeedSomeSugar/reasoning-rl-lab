@@ -1,0 +1,209 @@
+{
+  "aggregates": {
+    "comparison": {
+      "C": {
+        "n_seeds": 3,
+        "seed_accuracy_pct": [
+          84.375,
+          85.9375,
+          85.15625
+        ],
+        "mean_accuracy_pct": 85.15625,
+        "sample_seed_sd_pct": 0.78125
+      },
+      "D": {
+        "n_seeds": 3,
+        "seed_accuracy_pct": [
+          87.5,
+          85.9375,
+          84.375
+        ],
+        "mean_accuracy_pct": 85.9375,
+        "sample_seed_sd_pct": 1.5625
+      },
+      "E": {
+        "n_seeds": 3,
+        "seed_accuracy_pct": [
+          86.71875,
+          85.15625,
+          83.59375
+        ],
+        "mean_accuracy_pct": 85.15625,
+        "sample_seed_sd_pct": 1.5625
+      }
+    },
+    "confirmation": {
+      "C": {
+        "n_seeds": 3,
+        "seed_accuracy_pct": [
+          79.6875,
+          81.25,
+          80.46875
+        ],
+        "mean_accuracy_pct": 80.46875,
+        "sample_seed_sd_pct": 0.78125
+      },
+      "D": {
+        "n_seeds": 3,
+        "seed_accuracy_pct": [
+          78.125,
+          80.46875,
+          79.6875
+        ],
+        "mean_accuracy_pct": 79.42708333333333,
+        "sample_seed_sd_pct": 1.1933790872280834
+      },
+      "E": {
+        "n_seeds": 3,
+        "seed_accuracy_pct": [
+          80.46875,
+          79.6875,
+          79.6875
+        ],
+        "mean_accuracy_pct": 79.94791666666667,
+        "sample_seed_sd_pct": 0.4510548978043951
+      }
+    }
+  },
+  "paired_effects": [
+    {
+      "subset": "comparison",
+      "contrast": "D-C",
+      "seeds": [
+        13,
+        29,
+        47
+      ],
+      "paired_seed_differences_pp": [
+        3.125,
+        0.0,
+        -0.78125
+      ],
+      "mean_difference_pp": 0.78125,
+      "sample_seed_sd_pp": 2.0669932117692116,
+      "question_paired_bootstrap95_pp": [
+        -1.3020833333333333,
+        2.864583333333333
+      ],
+      "interval_scope": "IID-question resampling conditional on these3 fixed seeds and this already developer-accessible validation subset; within-validation similar questions may violate IID; not seed/population/generalization uncertainty"
+    },
+    {
+      "subset": "comparison",
+      "contrast": "D-E",
+      "seeds": [
+        13,
+        29,
+        47
+      ],
+      "paired_seed_differences_pp": [
+        0.78125,
+        0.78125,
+        0.78125
+      ],
+      "mean_difference_pp": 0.78125,
+      "sample_seed_sd_pp": 0.0,
+      "question_paired_bootstrap95_pp": [
+        -1.0416666666666665,
+        2.864583333333333
+      ],
+      "interval_scope": "IID-question resampling conditional on these3 fixed seeds and this already developer-accessible validation subset; within-validation similar questions may violate IID; not seed/population/generalization uncertainty"
+    },
+    {
+      "subset": "comparison",
+      "contrast": "E-C",
+      "seeds": [
+        13,
+        29,
+        47
+      ],
+      "paired_seed_differences_pp": [
+        2.34375,
+        -0.78125,
+        -1.5625
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_seed_sd_pp": 2.0669932117692116,
+      "question_paired_bootstrap95_pp": [
+        -2.6041666666666665,
+        2.0833333333333335
+      ],
+      "interval_scope": "IID-question resampling conditional on these3 fixed seeds and this already developer-accessible validation subset; within-validation similar questions may violate IID; not seed/population/generalization uncertainty"
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-C",
+      "seeds": [
+        13,
+        29,
+        47
+      ],
+      "paired_seed_differences_pp": [
+        -1.5625,
+        -0.78125,
+        -0.78125
+      ],
+      "mean_difference_pp": -1.0416666666666667,
+      "sample_seed_sd_pp": 0.4510548978043951,
+      "question_paired_bootstrap95_pp": [
+        -2.864583333333333,
+        0.5208333333333334
+      ],
+      "interval_scope": "IID-question resampling conditional on these3 fixed seeds and this already developer-accessible validation subset; within-validation similar questions may violate IID; not seed/population/generalization uncertainty"
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "D-E",
+      "seeds": [
+        13,
+        29,
+        47
+      ],
+      "paired_seed_differences_pp": [
+        -2.34375,
+        0.78125,
+        0.0
+      ],
+      "mean_difference_pp": -0.5208333333333334,
+      "sample_seed_sd_pp": 1.6263015620829162,
+      "question_paired_bootstrap95_pp": [
+        -2.34375,
+        1.0416666666666665
+      ],
+      "interval_scope": "IID-question resampling conditional on these3 fixed seeds and this already developer-accessible validation subset; within-validation similar questions may violate IID; not seed/population/generalization uncertainty"
+    },
+    {
+      "subset": "confirmation",
+      "contrast": "E-C",
+      "seeds": [
+        13,
+        29,
+        47
+      ],
+      "paired_seed_differences_pp": [
+        0.78125,
+        -1.5625,
+        -0.78125
+      ],
+      "mean_difference_pp": -0.5208333333333334,
+      "sample_seed_sd_pp": 1.1933790872280834,
+      "question_paired_bootstrap95_pp": [
+        -1.8229166666666665,
+        0.78125
+      ],
+      "interval_scope": "IID-question resampling conditional on these3 fixed seeds and this already developer-accessible validation subset; within-validation similar questions may violate IID; not seed/population/generalization uncertainty"
+    }
+  ],
+  "cost_accounting": {
+    "session_started_utc": "2026-11-06T07:27:12+00:00",
+    "session_deadline_utc": "2026-11-06T13:27:12+00:00",
+    "session_elapsed_to_summary_seconds": 17102.875258922577,
+    "all_recorded_child_process_seconds": 16459.584394693375,
+    "sft_contract_from_run_creation_seconds": 296.4433710575104,
+    "sum_nine_training_process_seconds": 5490.508538246155,
+    "sum_nine_independent_comparison_seconds": 3280.8295273780823,
+    "sum_nine_probe_seconds_nested_in_training": 926.3263976999988,
+    "sum_nine_cache_maintenance_seconds_nested_in_training": 0.6555433000539779,
+    "confirmation_child_process_seconds": 4519.028754234314,
+    "accounting_note": "Probe/maintenance are nested in training, not added again. Child process time includes interpreter/setup/serialization; session wall also includes diagnosis, engineering, analysis and handoff. GPU event elapsed is not active-kernel time or FLOPs."
+  }
+}

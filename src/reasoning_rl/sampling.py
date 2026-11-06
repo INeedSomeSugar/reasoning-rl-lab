@@ -59,3 +59,81 @@ class DifficultySampler:
                 "prior": self.prior, "updates": self.updates, "p_success": self.probabilities,
                 "selection_counts": self.counts, "weights": dict(zip(self.ids, w, strict=True)),
                 "entropy": -sum(x*math.log(x) for x in w), "effective_pool_size": 1/sum(x*x for x in w)}
+
+
+class RolloutCacheSampler(DifficultySampler):
+    """One initial full probe, then only already-paid training rewards.
+
+    FIFO binary observations are capped per question. Dynamic estimates older than
+    ttl optimizer steps revert to the symmetric prior at selection time. Static
+    keeps the EXACT initial distribution, including disabling expiry.
+    """
+    def __init__(self, ids, strategy, seed, uniform_mix=0.25, prior=0.5,
+                 max_trials=16, ttl_steps=32):
+        super().__init__(ids, strategy, seed, uniform_mix, prior)
+        if strategy not in {"dynamic", "static"} or max_trials < 2 or ttl_steps < 1:
+            raise ValueError("Cache requires dynamic/static, >=2 trials and positive TTL")
+        self.max_trials, self.ttl_steps = max_trials, ttl_steps
+        self.cache = {i: [] for i in ids}
+        self.last_observed = {i: None for i in ids}
+        self.step = 0
+        self.rollout_update_events = 0
+        self.expiry_events = 0
+        self.expired = set()
+
+    def refresh(self, observations):
+        super().refresh(observations)
+        for i, (successes, trials) in observations.items():
+            if trials > self.max_trials:
+                raise ValueError("Initial probe exceeds cache capacity")
+            # Aggregate initialization is an unordered block; later FIFO truncation
+            # drops that block in a deterministic order, not a fictitious new trial.
+            self.cache[i] = [1.0] * int(successes) + [0.0] * (trials-int(successes))
+            self.last_observed[i] = 0
+
+    def initialize_ordered(self, rewards_by_id):
+        """Preserve actual initial-probe ordering for FIFO expiry."""
+        if set(rewards_by_id) != set(self.ids):
+            raise ValueError("Complete train-pool probe required")
+        if any(v not in {0, 1, 0.0, 1.0} for values in rewards_by_id.values() for v in values):
+            raise ValueError("Initial probe rewards must be binary")
+        self.refresh({i: (sum(values), len(values)) for i, values in rewards_by_id.items()})
+        self.cache = {i: list(values) for i, values in rewards_by_id.items()}
+
+    def advance(self, step):
+        if step < self.step:
+            raise ValueError("Cache time must be monotone")
+        self.step = step
+        if self.strategy == "static":
+            return
+        for i in self.ids:
+            if self.last_observed[i] is not None and step-self.last_observed[i] >= self.ttl_steps:
+                if i not in self.expired:
+                    self.expiry_events += 1
+                self.expired.add(i)
+                self.cache[i] = []
+                self.probabilities[i] = 0.5
+
+    def observe_rollouts(self, identifier, rewards, step):
+        if self.strategy != "dynamic":
+            raise ValueError("Static weights cannot consume later observations")
+        if identifier not in self.cache or not rewards or any(v not in {0, 1, 0.0, 1.0} for v in rewards):
+            raise ValueError("Only binary train-pool rewards may update the cache")
+        self.advance(step)
+        self.expired.discard(identifier)
+        self.cache[identifier] = (self.cache[identifier] + list(rewards))[-self.max_trials:]
+        self.last_observed[identifier] = step
+        values = self.cache[identifier]
+        self.probabilities[identifier] = (sum(values)+self.prior)/(len(values)+2*self.prior)
+        self.rollout_update_events += 1
+        self.updates += 1
+
+    def state_dict(self):
+        return {**super().state_dict(), "mechanism": "rollout_cache_fifo_v1",
+                "cache_max_trials": self.max_trials, "cache_ttl_optimizer_steps": self.ttl_steps,
+                "optimizer_step": self.step, "cache": self.cache,
+                "last_observed_step": self.last_observed,
+                "stale_reverted_to_prior_ids": sorted(self.expired),
+                "rollout_update_events": self.rollout_update_events, "expiry_events": self.expiry_events,
+                "complete_full_pool_probes": 1 if self.updates else 0,
+                "post_initial_generation_probes": 0}

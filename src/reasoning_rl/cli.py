@@ -46,7 +46,9 @@ def main():
             p.add_argument("--split", choices=["validation", "test", "external"], default="validation")
             p.add_argument("--frozen-plan")
         if command == "grpo":
-            p.add_argument("--sft-checkpoint", required=True)
+            initial = p.add_mutually_exclusive_group(required=True)
+            initial.add_argument("--sft-checkpoint")
+            initial.add_argument("--public-initialization", help="Verified zero-update public-model initialization, explicitly not SFT")
             p.add_argument("--strategy", choices=["uniform", "dynamic", "static"], required=True)
         if command == "freeze":
             p.add_argument("--checkpoints", nargs="+", required=True)
@@ -79,13 +81,14 @@ def main():
         elif args.command == "sft":
             result = training.run_sft(config, args.name)
         else:
-            result = training.run_grpo(config, args.name, args.sft_checkpoint, args.strategy)
+            result = training.run_grpo(config, args.name, args.sft_checkpoint or args.public_initialization,
+                                       args.strategy, public_start=args.public_initialization is not None)
         print(json.dumps(result, indent=2))
     elif args.command == "evaluate":
         from .runtime import create_run
         from .modeling import load_model, precision_snapshot
         from .data import load_split
-        from .evaluation import authorize_final, evaluate_rows
+        from .evaluation import authorize_final, evaluate_rows, validation_rows
         config = read_config(args.config, args)
         seed_everything(config["seed"])
         if args.split != "validation":
@@ -107,8 +110,13 @@ def main():
             model, tokenizer = load_model(config, adapter=args.adapter)
         json_write(directory / "model_precision.json", {"standalone_loader": precision_snapshot(model)})
         key = "validation_size" if args.split == "validation" else args.split+"_size"
-        rows = load_split(args.split, "evaluate_validation" if args.split == "validation" else "final",
-                          limit=config["evaluation"][key], seed=config["data_seed"])
+        rows = validation_rows(config) if args.split == "validation" else load_split(
+            args.split, "final", limit=config["evaluation"][key], seed=config["data_seed"])
+        json_write(directory / "resolved_evaluation_ids.json", {
+            "split": args.split, "ids": [r["id"] for r in rows],
+            "development_subset": config["evaluation"].get("validation_subset") if args.split == "validation" else None,
+            "development_id_manifest_sha256": sha256_file(ROOT / config["evaluation"]["validation_ids_path"])
+                if args.split == "validation" and config["evaluation"].get("validation_ids_path") else None})
         result = evaluate_rows(model, tokenizer, rows, config, directory / args.split, ledger, phase=args.split)
         print(json.dumps(result, indent=2))
     elif args.command == "freeze":

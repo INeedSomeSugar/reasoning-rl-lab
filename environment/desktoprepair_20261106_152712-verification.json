@@ -1,0 +1,11 @@
+{
+  "engineering_tests_passed": 47,
+  "engineering_test_log": "logs/desktoprepair_20261106_152712-engineering-check.log",
+  "dependency_packages_checked": 69,
+  "dependency_log": "logs/desktoprepair_20261106_152712-dependency-check.log",
+  "new_runs_evidence_audited": 49,
+  "code_sha256": "8f2578aae3bb03fe0eed6fa65adf326297da1b7e9a3c9002547f4e31362f3373",
+  "scientific_execution_source_unchanged_since_main_freeze": true,
+  "confirmation_complete": true,
+  "formal_test_opened": false
+}

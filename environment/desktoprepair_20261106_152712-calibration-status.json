@@ -1,0 +1,16 @@
+{
+  "status": "completed_calibration",
+  "completed": [
+    "initialize-start",
+    "calibration-C",
+    "calibration-C-reloadregression",
+    "calibration-D",
+    "calibration-D-reloadregression",
+    "calibration-E",
+    "calibration-E-reloadregression"
+  ],
+  "started_unix": 1793952845.5024137,
+  "holdout_opened": false,
+  "phase": "calibration-E-reloadregression",
+  "finished_unix": 1793953830.9387546
+}

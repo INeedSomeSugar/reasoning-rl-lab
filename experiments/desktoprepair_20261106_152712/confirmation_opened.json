@@ -1,0 +1,64 @@
+{
+  "opened_unix": 1793962609.8520558,
+  "independent_test": false,
+  "scope": "disjoint validation128, one stage opening, no tuning afterwards",
+  "development_ids_sha256": "5bfff1eee139f0dbfb040043c0955e9c17218856912f5e1a311d6aadcab01f49",
+  "code_sha256": "8f2578aae3bb03fe0eed6fa65adf326297da1b7e9a3c9002547f4e31362f3373",
+  "endpoints": [
+    {
+      "label": "A",
+      "checkpoint": null,
+      "checkpoint_sha256": null
+    },
+    {
+      "label": "S2",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-S2",
+      "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff"
+    },
+    {
+      "label": "C-s13",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-C-s13",
+      "checkpoint_sha256": "2e1c7ddf51b3bf3fb3ffbcbe317cf62df8db11ec6198dc30aebf655293cd9f25"
+    },
+    {
+      "label": "D-s13",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-D-s13",
+      "checkpoint_sha256": "5c0200429a2b4e177f61560ce7a4ee971ee036b1556cf0c2fcb6449298848bc8"
+    },
+    {
+      "label": "E-s13",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-E-s13",
+      "checkpoint_sha256": "969c1f892749a3f92cf3074a7e567abeb391c00639d31ad20532c38ba53cadb1"
+    },
+    {
+      "label": "C-s29",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-C-s29",
+      "checkpoint_sha256": "ad1fe88c4303ffcb3ca9fc3c006a6aae1416b0c0213aa10bdb1078b2275b2e83"
+    },
+    {
+      "label": "D-s29",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-D-s29",
+      "checkpoint_sha256": "fda4113363fbb792cf3d96cee603134fbe6e4ebf08683dd4feafd3b8865dee88"
+    },
+    {
+      "label": "E-s29",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-E-s29",
+      "checkpoint_sha256": "c85702b17746c6c447d45660e926bf9157709c29d41cb9977edbbddaafbe6e8e"
+    },
+    {
+      "label": "C-s47",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-C-s47",
+      "checkpoint_sha256": "df7af2049c9e1c5bc10ee6119630ef2871da20f81df110c83abe18b3d531694e"
+    },
+    {
+      "label": "D-s47",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-D-s47",
+      "checkpoint_sha256": "06c7d1f66915543fbab9bc4cb8a53a32f1fe19cfd61340d8b991b186ce0d5090"
+    },
+    {
+      "label": "E-s47",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-E-s47",
+      "checkpoint_sha256": "dc2a99bf8e991cf245f88a912a3bdb23ac0eb1284a1bcd5f30eb931f0c1ffba6"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "completed_one_stage_confirmation",
+  "started_unix": 1793962609.9270618,
+  "completed": [
+    "A-confirmation",
+    "S2-confirmation",
+    "C-s13-confirmation",
+    "D-s13-confirmation",
+    "E-s13-confirmation",
+    "C-s29-confirmation",
+    "D-s29-confirmation",
+    "E-s29-confirmation",
+    "C-s47-confirmation",
+    "D-s47-confirmation",
+    "E-s47-confirmation"
+  ],
+  "holdout_opened": false,
+  "phase": "E-s47-confirmation",
+  "finished_unix": 1793967130.0940056
+}

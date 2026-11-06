@@ -1,0 +1,7 @@
+{
+  "kind": "sft",
+  "checkpoint": "checkpoints\\desktoprepair_20261106_152712-S2",
+  "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "sft_candidate": "S2",
+  "public_model_verification_sha256": "c7cbe70435a50495a47b5e25c18dfa1d71d4e8dc0321618590cd9fa15b00280e"
+}

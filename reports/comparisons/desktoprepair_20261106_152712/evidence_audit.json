@@ -1,0 +1,346 @@
+{
+  "status": "pass",
+  "runs_checked": 49,
+  "runs": [
+    {
+      "run": "desktoprepair_20261106_152712-A-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-A-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s13",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.07555777079139157,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 31
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s13-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s13-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s29",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.07519995450385389,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 25
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s29-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s29-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s47",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.0777028159455732,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 26
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s47-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-C-s47-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-calibration-C",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.009858686548888426,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 3
+    },
+    {
+      "run": "desktoprepair_20261106_152712-calibration-C-reloadregression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-calibration-D",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.015381791778030366,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 4
+    },
+    {
+      "run": "desktoprepair_20261106_152712-calibration-D-reloadregression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-calibration-E",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.0,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 0
+    },
+    {
+      "run": "desktoprepair_20261106_152712-calibration-E-reloadregression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s13",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.06282431512255097,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 21
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s13-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s13-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s29",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.06610638074541497,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 30
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s29-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s29-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s47",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.05867158104293072,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 32
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s47-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-D-s47-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s13",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.07157782080714171,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 22
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s13-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s13-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s29",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.06579105745546801,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 28
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s29-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s29-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s47",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "independent_saved_weight_delta_l2": 0.054497284895420876,
+      "exact_sampler_replay_matches": true,
+      "reward_token_group_counts_reconcile": true,
+      "finite_gradients": true,
+      "nonzero_gradient_steps": 29
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s47-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-E-s47-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S1",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "supervision_reconciles": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S1-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S1-regression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S2",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "supervision_reconciles": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S2-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S2-confirmation",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S2-regression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S3",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "supervision_reconciles": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S3-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S3-regression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S4",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true,
+      "checkpoint_hash_matches": true,
+      "supervision_reconciles": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S4-comparison",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-S4-regression",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    },
+    {
+      "run": "desktoprepair_20261106_152712-sft-contract",
+      "source_snapshot_hash_matches": true,
+      "single_RX9070XT": true
+    }
+  ],
+  "complete_nine_endpoints": [
+    "desktoprepair_20261106_152712-C-s13",
+    "desktoprepair_20261106_152712-D-s13",
+    "desktoprepair_20261106_152712-E-s13",
+    "desktoprepair_20261106_152712-C-s29",
+    "desktoprepair_20261106_152712-D-s29",
+    "desktoprepair_20261106_152712-E-s29",
+    "desktoprepair_20261106_152712-C-s47",
+    "desktoprepair_20261106_152712-D-s47",
+    "desktoprepair_20261106_152712-E-s47"
+  ],
+  "one_stage_confirmation_complete": true,
+  "test_SVAMP_content_deserialized": false,
+  "formal_final_claims_present": false,
+  "checks": "Source/config snapshots, one9070XT, raw scores, full supervision, actual saved parameter deltas, exact seed/weight/cache sampling replay and paired initial probes"
+}

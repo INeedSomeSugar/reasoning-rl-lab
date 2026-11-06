@@ -1,5 +1,11 @@
 # RX 9070 XT 台式机接续记录
 
+<!-- REPAIR_20261106_CURRENT_BEGIN -->
+## 2026-11-06 后续实测
+
+本机复用该环境完成 `desktoprepair_20261106_152712`：四SFT候选、C/D/E各三种子及所有终点独立重载、互斥128题阶段确认。47项工程测试和69个依赖检查通过，所有运行只暴露RX9070XT、实际非量化BF16/SDPA。`main.yaml` 已按成本定标，不是最终保留集授权。[新结果](../reports/comparisons/desktoprepair_20261106_152712/findings.md) 与 [复现说明](REPRODUCING_REPAIR_20261106.md) 是当前入口；下文为迁移与上一轮历史。
+<!-- REPAIR_20261106_CURRENT_END -->
+
 日期：2026-11-05。源码来自 main `c011b71b54b66f028cc545904e45c28e8da8f85a`，浅克隆；原始工作树干净。父目录 `D:\User\AI\AGENTS.md` 不存在，已读取项目 AGENTS、README、PROJECT_CONTEXT、HANDOFF 与两份迁移指令。所有改动仅在本项目。
 
 ## 已完成迁移

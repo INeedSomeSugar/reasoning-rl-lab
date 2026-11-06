@@ -1,0 +1,3 @@
+{"stage": "recovery", "observation": "Sandbox CIM process enumeration denied", "resolution": "Did not change system permissions; used project process/runtime evidence and PyTorch device isolation assertions"}
+{"stage": "remote_verification", "observation": "Sandbox git DNS failure; connected GitHub API returned404 for the private repository", "resolution": "Read-only authenticated local git ls-remote outside sandbox succeeded; local and remote main match4e938eb"}
+{"stage": "dependency_check", "observation": "python -m pip check unavailable because project uv environment has no pip module", "resolution": "Project-local uv pip check verified69 installed packages compatible; no reinstall needed"}

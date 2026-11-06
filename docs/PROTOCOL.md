@@ -1,5 +1,15 @@
 # 实验协议 v0.1
 
+<!-- REPAIR_20261106_CURRENT_BEGIN -->
+## 2026-11-06 当前开发协议
+
+当前已执行方案以 [冻结文件](../experiments/desktoprepair_20261106_152712/sampling_frozen.json) 为准：真实S2共同起点、train44题、C均匀/D rollout_cache_fifo_v1_dynamic/E初始静态、三个配对种子13/29/47，独立重载比较128题，端点全部固定后一次互斥128题阶段确认。600秒算法钟包括加载准备、初始K4探测、rollout、优化和维护；540秒独立评测和30秒进程外围预留形成1170秒共同上限，实际未用足与自然边界超额逐项报告。
+
+D只用训练rollout更新最近16奖励缓存，32个优化步无新观测时回到p=0.5，概率含0.25均匀下界；E初始探测和初始权重与D一致，此后不更新。后续全池生成次数为0，不冒称完成了周期全池刷新。所有探测/成功率估计只使用train。下文周期全池与NF4段落保留为历史v0.1协议，不能替代本轮冻结文件。
+
+[中文结果与局限](../reports/comparisons/desktoprepair_20261106_152712/findings.md) · [复现](REPRODUCING_REPAIR_20261106.md)。两组128题均为开发validation；未冻结最终正式协议，test/SVAMP仍封存。
+<!-- REPAIR_20261106_CURRENT_END -->
+
 2026-11-05 台式机补充：下文 NF4/CUDA 和 `local*` 轮次为 RTX 3060 Laptop 历史。RX 9070 XT 另用非量化 BF16/SDPA，见 `experiments/desktoprocm10pilot_20261105-frozen-development.json`：共同真实台式机 B、相同 28 题训练池、32 道开发验证题、seed 13/29/47 的 C/D、仅 seed 13 的 E。每组 300 秒策略+探测额度及按 B 实测校准的 180 秒验证预留已在 C/D/E 前冻结；加载和独立重载评测另计，实际未用足或超额照实保留。它是开发预实验，未冻结最终 main/测试方案，不能据此启用 test/SVAMP。未完成刷新不可用于更新采样分布，也不能被称为一次成功动态更新。
 
 该开发轮次已完整结束，七个训练终点均通过独立重载验证，66份运行证据审计通过。D seed29 完成一次后续全池刷新，seed13/47 的刷新未完成；不把所有 D 运行都称为完成多次动态更新。结果与负面解释见 [台式机开发报告](../reports/comparisons/desktoprocm10pilot_20261105/findings.md)。当前仍无正式 main 或最终测试结论。

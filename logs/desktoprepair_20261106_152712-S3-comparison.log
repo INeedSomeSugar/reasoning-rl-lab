@@ -1,0 +1,157 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+validation 1/128 gsm8k-train-07325 correct=True tokens=182
+validation 2/128 gsm8k-train-01596 correct=True tokens=330
+validation 3/128 gsm8k-train-07281 correct=True tokens=91
+validation 4/128 gsm8k-train-02457 correct=True tokens=247
+validation 5/128 gsm8k-train-06456 correct=True tokens=115
+validation 6/128 gsm8k-train-05797 correct=True tokens=74
+validation 7/128 gsm8k-train-06623 correct=True tokens=140
+validation 8/128 gsm8k-train-04404 correct=True tokens=68
+validation 9/128 gsm8k-train-05718 correct=False tokens=92
+validation 10/128 gsm8k-train-01311 correct=True tokens=89
+validation 11/128 gsm8k-train-04163 correct=True tokens=131
+validation 12/128 gsm8k-train-06015 correct=True tokens=153
+validation 13/128 gsm8k-train-05787 correct=True tokens=113
+validation 14/128 gsm8k-train-03454 correct=False tokens=242
+validation 15/128 gsm8k-train-01911 correct=True tokens=145
+validation 16/128 gsm8k-train-01346 correct=False tokens=284
+validation 17/128 gsm8k-train-07383 correct=True tokens=95
+validation 18/128 gsm8k-train-07076 correct=True tokens=249
+validation 19/128 gsm8k-train-02739 correct=True tokens=102
+validation 20/128 gsm8k-train-06622 correct=True tokens=114
+validation 21/128 gsm8k-train-03486 correct=True tokens=164
+validation 22/128 gsm8k-train-05364 correct=False tokens=353
+validation 23/128 gsm8k-train-05533 correct=True tokens=129
+validation 24/128 gsm8k-train-04289 correct=True tokens=149
+validation 25/128 gsm8k-train-04642 correct=True tokens=54
+validation 26/128 gsm8k-train-02855 correct=False tokens=116
+validation 27/128 gsm8k-train-00056 correct=True tokens=129
+validation 28/128 gsm8k-train-00440 correct=True tokens=159
+validation 29/128 gsm8k-train-02138 correct=True tokens=58
+validation 30/128 gsm8k-train-01629 correct=True tokens=149
+validation 31/128 gsm8k-train-05777 correct=True tokens=122
+validation 32/128 gsm8k-train-06697 correct=True tokens=72
+validation 33/128 gsm8k-train-04976 correct=False tokens=218
+validation 34/128 gsm8k-train-02577 correct=True tokens=64
+validation 35/128 gsm8k-train-04268 correct=False tokens=162
+validation 36/128 gsm8k-train-00478 correct=True tokens=107
+validation 37/128 gsm8k-train-03384 correct=True tokens=117
+validation 38/128 gsm8k-train-05066 correct=True tokens=86
+validation 39/128 gsm8k-train-04871 correct=False tokens=109
+validation 40/128 gsm8k-train-02987 correct=True tokens=133
+validation 41/128 gsm8k-train-00989 correct=True tokens=89
+validation 42/128 gsm8k-train-05475 correct=False tokens=131
+validation 43/128 gsm8k-train-04818 correct=True tokens=89
+validation 44/128 gsm8k-train-06259 correct=True tokens=251
+validation 45/128 gsm8k-train-05369 correct=False tokens=414
+validation 46/128 gsm8k-train-01039 correct=True tokens=168
+validation 47/128 gsm8k-train-06430 correct=False tokens=268
+validation 48/128 gsm8k-train-01074 correct=True tokens=177
+validation 49/128 gsm8k-train-05091 correct=False tokens=79
+validation 50/128 gsm8k-train-00470 correct=True tokens=329
+validation 51/128 gsm8k-train-05398 correct=True tokens=113
+validation 52/128 gsm8k-train-05077 correct=True tokens=83
+validation 53/128 gsm8k-train-06354 correct=True tokens=130
+validation 54/128 gsm8k-train-02948 correct=False tokens=87
+validation 55/128 gsm8k-train-06304 correct=True tokens=116
+validation 56/128 gsm8k-train-00575 correct=True tokens=79
+validation 57/128 gsm8k-train-06277 correct=True tokens=70
+validation 58/128 gsm8k-train-00745 correct=True tokens=115
+validation 59/128 gsm8k-train-07326 correct=True tokens=109
+validation 60/128 gsm8k-train-06985 correct=False tokens=123
+validation 61/128 gsm8k-train-03358 correct=True tokens=89
+validation 62/128 gsm8k-train-06249 correct=True tokens=39
+validation 63/128 gsm8k-train-07209 correct=True tokens=155
+validation 64/128 gsm8k-train-03711 correct=True tokens=95
+validation 65/128 gsm8k-train-03373 correct=True tokens=102
+validation 66/128 gsm8k-train-05764 correct=True tokens=83
+validation 67/128 gsm8k-train-04614 correct=False tokens=300
+validation 68/128 gsm8k-train-00930 correct=True tokens=120
+validation 69/128 gsm8k-train-03027 correct=False tokens=165
+validation 70/128 gsm8k-train-03340 correct=True tokens=115
+validation 71/128 gsm8k-train-06552 correct=True tokens=97
+validation 72/128 gsm8k-train-06406 correct=True tokens=152
+validation 73/128 gsm8k-train-02118 correct=True tokens=109
+validation 74/128 gsm8k-train-00337 correct=True tokens=144
+validation 75/128 gsm8k-train-03547 correct=False tokens=234
+validation 76/128 gsm8k-train-06183 correct=True tokens=78
+validation 77/128 gsm8k-train-03093 correct=True tokens=102
+validation 78/128 gsm8k-train-01583 correct=True tokens=87
+validation 79/128 gsm8k-train-02284 correct=True tokens=110
+validation 80/128 gsm8k-train-06331 correct=True tokens=132
+validation 81/128 gsm8k-train-06608 correct=True tokens=213
+validation 82/128 gsm8k-train-02271 correct=True tokens=70
+validation 83/128 gsm8k-train-06574 correct=True tokens=99
+validation 84/128 gsm8k-train-04472 correct=True tokens=148
+validation 85/128 gsm8k-train-06124 correct=True tokens=184
+validation 86/128 gsm8k-train-06463 correct=True tokens=51
+validation 87/128 gsm8k-train-02535 correct=True tokens=112
+validation 88/128 gsm8k-train-01838 correct=True tokens=84
+validation 89/128 gsm8k-train-04812 correct=True tokens=100
+validation 90/128 gsm8k-train-07386 correct=True tokens=108
+validation 91/128 gsm8k-train-03742 correct=True tokens=165
+validation 92/128 gsm8k-train-03296 correct=True tokens=150
+validation 93/128 gsm8k-train-06129 correct=True tokens=107
+validation 94/128 gsm8k-train-03775 correct=True tokens=155
+validation 95/128 gsm8k-train-01242 correct=True tokens=317
+validation 96/128 gsm8k-train-03421 correct=True tokens=90
+validation 97/128 gsm8k-train-00183 correct=False tokens=230
+validation 98/128 gsm8k-train-02793 correct=True tokens=90
+validation 99/128 gsm8k-train-02369 correct=False tokens=272
+validation 100/128 gsm8k-train-04373 correct=True tokens=274
+validation 101/128 gsm8k-train-03336 correct=True tokens=114
+validation 102/128 gsm8k-train-03156 correct=True tokens=89
+validation 103/128 gsm8k-train-02209 correct=True tokens=73
+validation 104/128 gsm8k-train-07232 correct=True tokens=88
+validation 105/128 gsm8k-train-01542 correct=True tokens=116
+validation 106/128 gsm8k-train-06515 correct=True tokens=70
+validation 107/128 gsm8k-train-03189 correct=True tokens=131
+validation 108/128 gsm8k-train-05642 correct=True tokens=150
+validation 109/128 gsm8k-train-03867 correct=False tokens=223
+validation 110/128 gsm8k-train-06641 correct=False tokens=118
+validation 111/128 gsm8k-train-00375 correct=True tokens=119
+validation 112/128 gsm8k-train-03802 correct=True tokens=243
+validation 113/128 gsm8k-train-04437 correct=True tokens=156
+validation 114/128 gsm8k-train-06469 correct=True tokens=77
+validation 115/128 gsm8k-train-03676 correct=True tokens=189
+validation 116/128 gsm8k-train-03470 correct=True tokens=84
+validation 117/128 gsm8k-train-00666 correct=False tokens=162
+validation 118/128 gsm8k-train-05355 correct=True tokens=111
+validation 119/128 gsm8k-train-05441 correct=True tokens=181
+validation 120/128 gsm8k-train-06008 correct=True tokens=135
+validation 121/128 gsm8k-train-04511 correct=True tokens=104
+validation 122/128 gsm8k-train-02966 correct=True tokens=219
+validation 123/128 gsm8k-train-05062 correct=True tokens=234
+validation 124/128 gsm8k-train-00999 correct=True tokens=163
+validation 125/128 gsm8k-train-06349 correct=True tokens=241
+validation 126/128 gsm8k-train-04331 correct=True tokens=77
+validation 127/128 gsm8k-train-02562 correct=True tokens=163
+validation 128/128 gsm8k-train-07436 correct=True tokens=144
+{
+  "n": 128,
+  "correct": 106,
+  "accuracy": 0.828125,
+  "accuracy_wilson95": [
+    0.7534600319269827,
+    0.8836688405185272
+  ],
+  "format_error_rate": 0.3125,
+  "parse_error_rate": 0.046875,
+  "truncation_rate": 0.0,
+  "mean_generated_tokens": 142.3984375,
+  "p50_generated_tokens": 119,
+  "generated_tokens": 18227,
+  "prompt_tokens": 12871,
+  "automatic_error_tags": {
+    "format_error": 40,
+    "wrong_numeric_answer_requires_review": 16,
+    "answer_extraction_failure": 6,
+    "repetition_suspected": 1
+  },
+  "phase": "validation",
+  "optimizer_step": null,
+  "decoding": "greedy",
+  "thinking": false,
+  "scorer_version": "numeric_final_v2"
+}

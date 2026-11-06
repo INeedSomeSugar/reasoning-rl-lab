@@ -1,0 +1,60 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.06s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+validation 1/32 gsm8k-train-06134 correct=False tokens=112
+validation 2/32 gsm8k-train-00560 correct=True tokens=70
+validation 3/32 gsm8k-train-00848 correct=True tokens=159
+validation 4/32 gsm8k-train-05654 correct=True tokens=147
+validation 5/32 gsm8k-train-06336 correct=True tokens=84
+validation 6/32 gsm8k-train-03502 correct=True tokens=65
+validation 7/32 gsm8k-train-01891 correct=True tokens=76
+validation 8/32 gsm8k-train-00065 correct=True tokens=101
+validation 9/32 gsm8k-train-01286 correct=True tokens=96
+validation 10/32 gsm8k-train-01567 correct=True tokens=222
+validation 11/32 gsm8k-train-05147 correct=True tokens=75
+validation 12/32 gsm8k-train-01527 correct=True tokens=78
+validation 13/32 gsm8k-train-04876 correct=False tokens=291
+validation 14/32 gsm8k-train-02106 correct=True tokens=166
+validation 15/32 gsm8k-train-01767 correct=False tokens=77
+validation 16/32 gsm8k-train-06195 correct=True tokens=102
+validation 17/32 gsm8k-train-06069 correct=False tokens=177
+validation 18/32 gsm8k-train-04249 correct=True tokens=98
+validation 19/32 gsm8k-train-03931 correct=True tokens=143
+validation 20/32 gsm8k-train-04647 correct=True tokens=71
+validation 21/32 gsm8k-train-04689 correct=True tokens=69
+validation 22/32 gsm8k-train-04580 correct=True tokens=302
+validation 23/32 gsm8k-train-03885 correct=True tokens=78
+validation 24/32 gsm8k-train-01534 correct=True tokens=178
+validation 25/32 gsm8k-train-03587 correct=True tokens=116
+validation 26/32 gsm8k-train-00055 correct=True tokens=148
+validation 27/32 gsm8k-train-06355 correct=True tokens=140
+validation 28/32 gsm8k-train-04953 correct=True tokens=186
+validation 29/32 gsm8k-train-04895 correct=True tokens=276
+validation 30/32 gsm8k-train-03032 correct=True tokens=180
+validation 31/32 gsm8k-train-06836 correct=True tokens=151
+validation 32/32 gsm8k-train-04009 correct=True tokens=118
+{
+  "n": 32,
+  "correct": 28,
+  "accuracy": 0.875,
+  "accuracy_wilson95": [
+    0.7193169451834978,
+    0.9502986561251991
+  ],
+  "format_error_rate": 0.25,
+  "parse_error_rate": 0.03125,
+  "truncation_rate": 0.0,
+  "mean_generated_tokens": 136.0,
+  "p50_generated_tokens": 118,
+  "generated_tokens": 4352,
+  "prompt_tokens": 3207,
+  "automatic_error_tags": {
+    "answer_extraction_failure": 1,
+    "format_error": 8,
+    "wrong_numeric_answer_requires_review": 3
+  },
+  "phase": "validation",
+  "optimizer_step": null,
+  "decoding": "greedy",
+  "thinking": false,
+  "scorer_version": "numeric_final_v2"
+}

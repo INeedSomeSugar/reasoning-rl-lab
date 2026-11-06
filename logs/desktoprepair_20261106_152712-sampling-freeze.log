@@ -1,0 +1,6 @@
+{
+  "training_cap": 600,
+  "eval_reserve": 540,
+  "pool_n": 44,
+  "code_sha256": "8f2578aae3bb03fe0eed6fa65adf326297da1b7e9a3c9002547f4e31362f3373"
+}

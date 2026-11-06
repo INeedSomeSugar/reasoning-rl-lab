@@ -1,0 +1,5 @@
+﻿candidate,learning_rate,steps,pool_n,actual_unique_supervised_examples,actual_supervised_tokens,actual_processed_tokens,correct,n,truncated,parse_failed,repetition_suspected,A_correct_candidate_wrong,A_wrong_candidate_correct,lost_truncated,lost_nontruncated_parse_failure,lost_nontruncated_wrong_numeric,adapter_delta_l2,finite_gradient_checks,nonzero_gradient_checks,frozen_gradient_checks_failed,max_clipped_gradient_l2,reload_logits_max_abs_difference,eligible
+S1,0.0001,32,128,128,15160,28381,64,128,40,43,39,48,5,30,4,14,2.5870498731020843,32,32,0,0.999999898005621,0.0,False
+S2,1e-05,8,128,32,3688,7019,110,128,0,2,0,0,3,0,0,0,0.0696725782352138,8,8,0,0.999999898005621,0.0,True
+S3,1e-05,32,128,128,15160,28381,106,128,0,6,1,3,2,0,2,1,0.3285546392176122,32,32,0,0.999999898005621,0.0,False
+S4,3e-05,16,128,64,7775,14546,106,128,0,4,1,5,4,0,2,3,0.4515769592546393,16,16,0,0.999999898005621,0.0,True

@@ -1,0 +1,113 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.99s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.77s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.96s/it]
+public_regression 1/32 gsm8k-train-06134 correct=True tokens=108
+public_regression 2/32 gsm8k-train-00560 correct=True tokens=70
+public_regression 3/32 gsm8k-train-00848 correct=True tokens=158
+public_regression 4/32 gsm8k-train-05654 correct=True tokens=134
+public_regression 5/32 gsm8k-train-06336 correct=True tokens=97
+public_regression 6/32 gsm8k-train-03502 correct=True tokens=65
+public_regression 7/32 gsm8k-train-01891 correct=True tokens=115
+public_regression 8/32 gsm8k-train-00065 correct=True tokens=101
+public_regression 9/32 gsm8k-train-01286 correct=True tokens=96
+public_regression 10/32 gsm8k-train-01567 correct=True tokens=223
+public_regression 11/32 gsm8k-train-05147 correct=True tokens=75
+public_regression 12/32 gsm8k-train-01527 correct=True tokens=78
+public_regression 13/32 gsm8k-train-04876 correct=False tokens=291
+public_regression 14/32 gsm8k-train-02106 correct=True tokens=166
+public_regression 15/32 gsm8k-train-01767 correct=False tokens=77
+public_regression 16/32 gsm8k-train-06195 correct=True tokens=102
+public_regression 17/32 gsm8k-train-06069 correct=False tokens=177
+public_regression 18/32 gsm8k-train-04249 correct=True tokens=98
+public_regression 19/32 gsm8k-train-03931 correct=True tokens=143
+public_regression 20/32 gsm8k-train-04647 correct=True tokens=71
+public_regression 21/32 gsm8k-train-04689 correct=True tokens=69
+public_regression 22/32 gsm8k-train-04580 correct=False tokens=303
+public_regression 23/32 gsm8k-train-03885 correct=True tokens=78
+public_regression 24/32 gsm8k-train-01534 correct=True tokens=178
+public_regression 25/32 gsm8k-train-03587 correct=True tokens=116
+public_regression 26/32 gsm8k-train-00055 correct=True tokens=148
+public_regression 27/32 gsm8k-train-06355 correct=True tokens=140
+public_regression 28/32 gsm8k-train-04953 correct=True tokens=186
+public_regression 29/32 gsm8k-train-04895 correct=True tokens=276
+public_regression 30/32 gsm8k-train-03032 correct=True tokens=180
+public_regression 31/32 gsm8k-train-06836 correct=True tokens=150
+public_regression 32/32 gsm8k-train-04009 correct=True tokens=118
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.06s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+untrained_regression 1/32 gsm8k-train-06134 correct=True tokens=108
+untrained_regression 2/32 gsm8k-train-00560 correct=True tokens=70
+untrained_regression 3/32 gsm8k-train-00848 correct=True tokens=158
+untrained_regression 4/32 gsm8k-train-05654 correct=True tokens=134
+untrained_regression 5/32 gsm8k-train-06336 correct=True tokens=97
+untrained_regression 6/32 gsm8k-train-03502 correct=True tokens=65
+untrained_regression 7/32 gsm8k-train-01891 correct=True tokens=115
+untrained_regression 8/32 gsm8k-train-00065 correct=True tokens=101
+untrained_regression 9/32 gsm8k-train-01286 correct=True tokens=96
+untrained_regression 10/32 gsm8k-train-01567 correct=True tokens=223
+untrained_regression 11/32 gsm8k-train-05147 correct=True tokens=75
+untrained_regression 12/32 gsm8k-train-01527 correct=True tokens=78
+untrained_regression 13/32 gsm8k-train-04876 correct=False tokens=291
+untrained_regression 14/32 gsm8k-train-02106 correct=True tokens=166
+untrained_regression 15/32 gsm8k-train-01767 correct=False tokens=77
+untrained_regression 16/32 gsm8k-train-06195 correct=True tokens=102
+untrained_regression 17/32 gsm8k-train-06069 correct=False tokens=177
+untrained_regression 18/32 gsm8k-train-04249 correct=True tokens=98
+untrained_regression 19/32 gsm8k-train-03931 correct=True tokens=143
+untrained_regression 20/32 gsm8k-train-04647 correct=True tokens=71
+untrained_regression 21/32 gsm8k-train-04689 correct=True tokens=69
+untrained_regression 22/32 gsm8k-train-04580 correct=False tokens=303
+untrained_regression 23/32 gsm8k-train-03885 correct=True tokens=78
+untrained_regression 24/32 gsm8k-train-01534 correct=True tokens=178
+untrained_regression 25/32 gsm8k-train-03587 correct=True tokens=116
+untrained_regression 26/32 gsm8k-train-00055 correct=True tokens=148
+untrained_regression 27/32 gsm8k-train-06355 correct=True tokens=140
+untrained_regression 28/32 gsm8k-train-04953 correct=True tokens=186
+untrained_regression 29/32 gsm8k-train-04895 correct=True tokens=276
+untrained_regression 30/32 gsm8k-train-03032 correct=True tokens=180
+untrained_regression 31/32 gsm8k-train-06836 correct=True tokens=150
+untrained_regression 32/32 gsm8k-train-04009 correct=True tokens=118
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.08s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+untrained_reloaded_regression 1/32 gsm8k-train-06134 correct=True tokens=108
+untrained_reloaded_regression 2/32 gsm8k-train-00560 correct=True tokens=70
+untrained_reloaded_regression 3/32 gsm8k-train-00848 correct=True tokens=158
+untrained_reloaded_regression 4/32 gsm8k-train-05654 correct=True tokens=134
+untrained_reloaded_regression 5/32 gsm8k-train-06336 correct=True tokens=97
+untrained_reloaded_regression 6/32 gsm8k-train-03502 correct=True tokens=65
+untrained_reloaded_regression 7/32 gsm8k-train-01891 correct=True tokens=115
+untrained_reloaded_regression 8/32 gsm8k-train-00065 correct=True tokens=101
+untrained_reloaded_regression 9/32 gsm8k-train-01286 correct=True tokens=96
+untrained_reloaded_regression 10/32 gsm8k-train-01567 correct=True tokens=223
+untrained_reloaded_regression 11/32 gsm8k-train-05147 correct=True tokens=75
+untrained_reloaded_regression 12/32 gsm8k-train-01527 correct=True tokens=78
+untrained_reloaded_regression 13/32 gsm8k-train-04876 correct=False tokens=291
+untrained_reloaded_regression 14/32 gsm8k-train-02106 correct=True tokens=166
+untrained_reloaded_regression 15/32 gsm8k-train-01767 correct=False tokens=77
+untrained_reloaded_regression 16/32 gsm8k-train-06195 correct=True tokens=102
+untrained_reloaded_regression 17/32 gsm8k-train-06069 correct=False tokens=177
+untrained_reloaded_regression 18/32 gsm8k-train-04249 correct=True tokens=98
+untrained_reloaded_regression 19/32 gsm8k-train-03931 correct=True tokens=143
+untrained_reloaded_regression 20/32 gsm8k-train-04647 correct=True tokens=71
+untrained_reloaded_regression 21/32 gsm8k-train-04689 correct=True tokens=69
+untrained_reloaded_regression 22/32 gsm8k-train-04580 correct=False tokens=303
+untrained_reloaded_regression 23/32 gsm8k-train-03885 correct=True tokens=78
+untrained_reloaded_regression 24/32 gsm8k-train-01534 correct=True tokens=178
+untrained_reloaded_regression 25/32 gsm8k-train-03587 correct=True tokens=116
+untrained_reloaded_regression 26/32 gsm8k-train-00055 correct=True tokens=148
+untrained_reloaded_regression 27/32 gsm8k-train-06355 correct=True tokens=140
+untrained_reloaded_regression 28/32 gsm8k-train-04953 correct=True tokens=186
+untrained_reloaded_regression 29/32 gsm8k-train-04895 correct=True tokens=276
+untrained_reloaded_regression 30/32 gsm8k-train-03032 correct=True tokens=180
+untrained_reloaded_regression 31/32 gsm8k-train-06836 correct=True tokens=150
+untrained_reloaded_regression 32/32 gsm8k-train-04009 correct=True tokens=118
+PASS: real-tokenizer/causal-loss/untrained-LoRA/reload audit

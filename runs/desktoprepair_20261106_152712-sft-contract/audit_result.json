@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "loss_audit": {
+    "model_loss": 1.7742661237716675,
+    "manual_causal_shift_loss": 1.7742661237716675,
+    "absolute_difference": 0.0,
+    "padding_positions": 348,
+    "padding_all_ignored": true,
+    "supervised_positions": 344,
+    "double_shift": false,
+    "full_gold_truncation": false
+  },
+  "all128_boundaries_masks_full_gold_eos_pass": true,
+  "retained": 128,
+  "dropped": 0,
+  "untrained_vs_public_logits_max_abs_difference": 0.0,
+  "reloaded_vs_public_logits_max_abs_difference": 0.0,
+  "all32_predictions_identical": true,
+  "regression_correct_counts": [
+    28,
+    28,
+    28
+  ],
+  "fresh_precision": {
+    "input_embedding": "torch.bfloat16",
+    "output_head": "torch.bfloat16",
+    "lora_dtypes": [
+      "torch.float32"
+    ],
+    "norm_dtypes": [
+      "torch.bfloat16"
+    ],
+    "four_bit_compute_dtypes": [],
+    "is_loaded_in_4bit": false,
+    "attention_implementation": "sdpa",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "reload_precision": {
+    "input_embedding": "torch.bfloat16",
+    "output_head": "torch.bfloat16",
+    "lora_dtypes": [
+      "torch.float32"
+    ],
+    "norm_dtypes": [
+      "torch.bfloat16"
+    ],
+    "four_bit_compute_dtypes": [],
+    "is_loaded_in_4bit": false,
+    "attention_implementation": "sdpa",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "control_stage": "untrained_lora_control; not SFT",
+  "control_checkpoint_sha256": "2a5ca9e535be855ade788da1ae49cebaf2cb89cf4511a8f70e33be14f0eac15e",
+  "model_spec": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "training_stage": "pretraining and post-training; NOT Base",
+    "license": "Apache-2.0"
+  },
+  "model_verification_receipt_sha256": "27d9c7884d86895cc675a44d42ec869b83b02c1d881408f0d895f66de11c1873",
+  "chat_template_note": "Inference prefix explicitly closes the non-thinking block; target continues this identical prefix. Full-conversation rendering is retained for inspection.",
+  "causal_claim": "No boundary, label shift, EOS, masking or unchanged-adapter loading defect observed; this does not identify SFT degradation cause."
+}

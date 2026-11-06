@@ -1,0 +1,58 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+{'loss': 2.4012, 'grad_norm': 4.28529691696167, 'learning_rate': 0.0001, 'epoch': 0.03125}
+{'loss': 2.0307, 'grad_norm': 2.903447151184082, 'learning_rate': 0.0001, 'epoch': 0.0625}
+{'loss': 2.6208, 'grad_norm': 5.463333606719971, 'learning_rate': 0.0001, 'epoch': 0.09375}
+{'loss': 2.8138, 'grad_norm': 4.39772367477417, 'learning_rate': 0.0001, 'epoch': 0.125}
+{'loss': 2.3058, 'grad_norm': 4.893688201904297, 'learning_rate': 0.0001, 'epoch': 0.15625}
+{'loss': 2.029, 'grad_norm': 4.826790809631348, 'learning_rate': 0.0001, 'epoch': 0.1875}
+{'loss': 1.9674, 'grad_norm': 4.604308605194092, 'learning_rate': 0.0001, 'epoch': 0.21875}
+{'loss': 1.9104, 'grad_norm': 4.580019474029541, 'learning_rate': 0.0001, 'epoch': 0.25}
+{'loss': 1.7156, 'grad_norm': 4.4123430252075195, 'learning_rate': 0.0001, 'epoch': 0.28125}
+{'loss': 1.4483, 'grad_norm': 3.6936445236206055, 'learning_rate': 0.0001, 'epoch': 0.3125}
+{'loss': 1.7067, 'grad_norm': 5.317348480224609, 'learning_rate': 0.0001, 'epoch': 0.34375}
+{'loss': 1.088, 'grad_norm': 3.070483684539795, 'learning_rate': 0.0001, 'epoch': 0.375}
+{'loss': 1.1409, 'grad_norm': 3.2637264728546143, 'learning_rate': 0.0001, 'epoch': 0.40625}
+{'loss': 1.0141, 'grad_norm': 2.6533210277557373, 'learning_rate': 0.0001, 'epoch': 0.4375}
+{'loss': 1.0864, 'grad_norm': 2.367305040359497, 'learning_rate': 0.0001, 'epoch': 0.46875}
+{'loss': 0.8236, 'grad_norm': 1.5234919786453247, 'learning_rate': 0.0001, 'epoch': 0.5}
+{'loss': 0.9099, 'grad_norm': 2.191141366958618, 'learning_rate': 0.0001, 'epoch': 0.53125}
+{'loss': 1.0002, 'grad_norm': 2.0301342010498047, 'learning_rate': 0.0001, 'epoch': 0.5625}
+{'loss': 1.1129, 'grad_norm': 1.601647973060608, 'learning_rate': 0.0001, 'epoch': 0.59375}
+{'loss': 0.9646, 'grad_norm': 1.794649362564087, 'learning_rate': 0.0001, 'epoch': 0.625}
+{'loss': 0.7459, 'grad_norm': 1.3866363763809204, 'learning_rate': 0.0001, 'epoch': 0.65625}
+{'loss': 0.7514, 'grad_norm': 1.137990951538086, 'learning_rate': 0.0001, 'epoch': 0.6875}
+{'loss': 0.6239, 'grad_norm': 0.9529229402542114, 'learning_rate': 0.0001, 'epoch': 0.71875}
+{'loss': 0.6677, 'grad_norm': 1.0677495002746582, 'learning_rate': 0.0001, 'epoch': 0.75}
+{'loss': 0.6517, 'grad_norm': 1.155085802078247, 'learning_rate': 0.0001, 'epoch': 0.78125}
+{'loss': 0.6188, 'grad_norm': 1.0914685726165771, 'learning_rate': 0.0001, 'epoch': 0.8125}
+{'loss': 0.7821, 'grad_norm': 0.7782381176948547, 'learning_rate': 0.0001, 'epoch': 0.84375}
+{'loss': 0.6755, 'grad_norm': 0.9412971138954163, 'learning_rate': 0.0001, 'epoch': 0.875}
+{'loss': 0.6443, 'grad_norm': 0.7189258933067322, 'learning_rate': 0.0001, 'epoch': 0.90625}
+{'loss': 0.8486, 'grad_norm': 0.7455706000328064, 'learning_rate': 0.0001, 'epoch': 0.9375}
+{'loss': 0.6518, 'grad_norm': 0.638680100440979, 'learning_rate': 0.0001, 'epoch': 0.96875}
+{'loss': 0.61, 'grad_norm': 1.1979641914367676, 'learning_rate': 0.0001, 'epoch': 1.0}
+{'train_runtime': 15.7832, 'train_samples_per_second': 8.11, 'train_steps_per_second': 2.027, 'train_loss': 1.2613082714378834, 'epoch': 1.0}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]
+{
+  "train_runtime": 15.7832,
+  "train_samples_per_second": 8.11,
+  "train_steps_per_second": 2.027,
+  "train_loss": 1.2613082714378834,
+  "epoch": 1.0,
+  "adapter_delta_l2": 2.5870498731020843,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "processed_tokens": 28381,
+  "supervised_tokens": 15160,
+  "retained_examples": 128,
+  "dropped_length": 0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktoprepair_20261106_152712-S1",
+  "checkpoint_sha256": "8b7e35b17854561faf3fc2e1814d3b7084abe4858cec881675988634a01deb0a",
+  "reload_logits_max_absolute_difference": 0.0,
+  "reload_logits_match": true
+}

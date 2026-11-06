@@ -1,0 +1,468 @@
+{
+  "strategy": "dynamic",
+  "seed": 13,
+  "uniform_mix": 0.25,
+  "prior": 0.5,
+  "updates": 1,
+  "p_success": {
+    "gsm8k-train-01954": 0.9,
+    "gsm8k-train-01408": 0.1,
+    "gsm8k-train-00597": 0.1,
+    "gsm8k-train-00154": 0.9,
+    "gsm8k-train-00174": 0.9,
+    "gsm8k-train-04291": 0.9,
+    "gsm8k-train-00638": 0.1,
+    "gsm8k-train-03208": 0.9,
+    "gsm8k-train-03888": 0.7,
+    "gsm8k-train-06843": 0.9,
+    "gsm8k-train-06341": 0.1,
+    "gsm8k-train-03914": 0.3,
+    "gsm8k-train-05111": 0.9,
+    "gsm8k-train-06535": 0.7,
+    "gsm8k-train-04918": 0.9,
+    "gsm8k-train-04443": 0.9,
+    "gsm8k-train-02543": 0.7,
+    "gsm8k-train-06478": 0.3,
+    "gsm8k-train-03295": 0.3,
+    "gsm8k-train-06200": 0.9,
+    "gsm8k-train-07107": 0.5,
+    "gsm8k-train-03223": 0.9,
+    "gsm8k-train-07247": 0.9,
+    "gsm8k-train-05497": 0.9,
+    "gsm8k-train-00753": 0.9,
+    "gsm8k-train-07359": 0.9,
+    "gsm8k-train-04025": 0.9,
+    "gsm8k-train-06441": 0.9,
+    "gsm8k-train-05819": 0.9,
+    "gsm8k-train-06413": 0.5,
+    "gsm8k-train-06648": 0.9,
+    "gsm8k-train-06711": 0.9,
+    "gsm8k-train-05029": 0.9,
+    "gsm8k-train-04452": 0.9,
+    "gsm8k-train-06754": 0.9,
+    "gsm8k-train-02323": 0.9,
+    "gsm8k-train-00935": 0.9,
+    "gsm8k-train-02359": 0.9,
+    "gsm8k-train-01897": 0.9,
+    "gsm8k-train-01498": 0.9,
+    "gsm8k-train-06078": 0.9,
+    "gsm8k-train-00209": 0.9,
+    "gsm8k-train-03506": 0.3,
+    "gsm8k-train-05733": 0.9
+  },
+  "selection_counts": {
+    "gsm8k-train-01954": 0,
+    "gsm8k-train-01408": 0,
+    "gsm8k-train-00597": 0,
+    "gsm8k-train-00154": 0,
+    "gsm8k-train-00174": 0,
+    "gsm8k-train-04291": 0,
+    "gsm8k-train-00638": 0,
+    "gsm8k-train-03208": 0,
+    "gsm8k-train-03888": 0,
+    "gsm8k-train-06843": 0,
+    "gsm8k-train-06341": 0,
+    "gsm8k-train-03914": 0,
+    "gsm8k-train-05111": 0,
+    "gsm8k-train-06535": 0,
+    "gsm8k-train-04918": 0,
+    "gsm8k-train-04443": 0,
+    "gsm8k-train-02543": 0,
+    "gsm8k-train-06478": 0,
+    "gsm8k-train-03295": 0,
+    "gsm8k-train-06200": 0,
+    "gsm8k-train-07107": 0,
+    "gsm8k-train-03223": 0,
+    "gsm8k-train-07247": 0,
+    "gsm8k-train-05497": 0,
+    "gsm8k-train-00753": 0,
+    "gsm8k-train-07359": 0,
+    "gsm8k-train-04025": 0,
+    "gsm8k-train-06441": 0,
+    "gsm8k-train-05819": 0,
+    "gsm8k-train-06413": 0,
+    "gsm8k-train-06648": 0,
+    "gsm8k-train-06711": 0,
+    "gsm8k-train-05029": 0,
+    "gsm8k-train-04452": 0,
+    "gsm8k-train-06754": 0,
+    "gsm8k-train-02323": 0,
+    "gsm8k-train-00935": 0,
+    "gsm8k-train-02359": 0,
+    "gsm8k-train-01897": 0,
+    "gsm8k-train-01498": 0,
+    "gsm8k-train-06078": 0,
+    "gsm8k-train-00209": 0,
+    "gsm8k-train-03506": 0,
+    "gsm8k-train-05733": 0
+  },
+  "weights": {
+    "gsm8k-train-01954": 0.018865411931818184,
+    "gsm8k-train-01408": 0.018865411931818184,
+    "gsm8k-train-00597": 0.018865411931818184,
+    "gsm8k-train-00154": 0.018865411931818184,
+    "gsm8k-train-00174": 0.018865411931818184,
+    "gsm8k-train-04291": 0.018865411931818184,
+    "gsm8k-train-00638": 0.018865411931818184,
+    "gsm8k-train-03208": 0.018865411931818184,
+    "gsm8k-train-03888": 0.03644353693181819,
+    "gsm8k-train-06843": 0.018865411931818184,
+    "gsm8k-train-06341": 0.018865411931818184,
+    "gsm8k-train-03914": 0.036443536931818184,
+    "gsm8k-train-05111": 0.018865411931818184,
+    "gsm8k-train-06535": 0.03644353693181819,
+    "gsm8k-train-04918": 0.018865411931818184,
+    "gsm8k-train-04443": 0.018865411931818184,
+    "gsm8k-train-02543": 0.03644353693181819,
+    "gsm8k-train-06478": 0.036443536931818184,
+    "gsm8k-train-03295": 0.036443536931818184,
+    "gsm8k-train-06200": 0.018865411931818184,
+    "gsm8k-train-07107": 0.04230291193181819,
+    "gsm8k-train-03223": 0.018865411931818184,
+    "gsm8k-train-07247": 0.018865411931818184,
+    "gsm8k-train-05497": 0.018865411931818184,
+    "gsm8k-train-00753": 0.018865411931818184,
+    "gsm8k-train-07359": 0.018865411931818184,
+    "gsm8k-train-04025": 0.018865411931818184,
+    "gsm8k-train-06441": 0.018865411931818184,
+    "gsm8k-train-05819": 0.018865411931818184,
+    "gsm8k-train-06413": 0.04230291193181819,
+    "gsm8k-train-06648": 0.018865411931818184,
+    "gsm8k-train-06711": 0.018865411931818184,
+    "gsm8k-train-05029": 0.018865411931818184,
+    "gsm8k-train-04452": 0.018865411931818184,
+    "gsm8k-train-06754": 0.018865411931818184,
+    "gsm8k-train-02323": 0.018865411931818184,
+    "gsm8k-train-00935": 0.018865411931818184,
+    "gsm8k-train-02359": 0.018865411931818184,
+    "gsm8k-train-01897": 0.018865411931818184,
+    "gsm8k-train-01498": 0.018865411931818184,
+    "gsm8k-train-06078": 0.018865411931818184,
+    "gsm8k-train-00209": 0.018865411931818184,
+    "gsm8k-train-03506": 0.036443536931818184,
+    "gsm8k-train-05733": 0.018865411931818184
+  },
+  "entropy": 3.7341340785538844,
+  "effective_pool_size": 39.47478909632265,
+  "mechanism": "rollout_cache_fifo_v1",
+  "cache_max_trials": 16,
+  "cache_ttl_optimizer_steps": 32,
+  "optimizer_step": 0,
+  "cache": {
+    "gsm8k-train-01954": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-01408": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gsm8k-train-00597": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gsm8k-train-00154": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-00174": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-04291": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-00638": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gsm8k-train-03208": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-03888": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06843": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06341": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gsm8k-train-03914": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gsm8k-train-05111": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06535": [
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "gsm8k-train-04918": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-04443": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-02543": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06478": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gsm8k-train-03295": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gsm8k-train-06200": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-07107": [
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "gsm8k-train-03223": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-07247": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-05497": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-00753": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-07359": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-04025": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06441": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-05819": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06413": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gsm8k-train-06648": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06711": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-05029": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-04452": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06754": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-02323": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-00935": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-02359": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-01897": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-01498": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-06078": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-00209": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "gsm8k-train-03506": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "gsm8k-train-05733": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "last_observed_step": {
+    "gsm8k-train-01954": 0,
+    "gsm8k-train-01408": 0,
+    "gsm8k-train-00597": 0,
+    "gsm8k-train-00154": 0,
+    "gsm8k-train-00174": 0,
+    "gsm8k-train-04291": 0,
+    "gsm8k-train-00638": 0,
+    "gsm8k-train-03208": 0,
+    "gsm8k-train-03888": 0,
+    "gsm8k-train-06843": 0,
+    "gsm8k-train-06341": 0,
+    "gsm8k-train-03914": 0,
+    "gsm8k-train-05111": 0,
+    "gsm8k-train-06535": 0,
+    "gsm8k-train-04918": 0,
+    "gsm8k-train-04443": 0,
+    "gsm8k-train-02543": 0,
+    "gsm8k-train-06478": 0,
+    "gsm8k-train-03295": 0,
+    "gsm8k-train-06200": 0,
+    "gsm8k-train-07107": 0,
+    "gsm8k-train-03223": 0,
+    "gsm8k-train-07247": 0,
+    "gsm8k-train-05497": 0,
+    "gsm8k-train-00753": 0,
+    "gsm8k-train-07359": 0,
+    "gsm8k-train-04025": 0,
+    "gsm8k-train-06441": 0,
+    "gsm8k-train-05819": 0,
+    "gsm8k-train-06413": 0,
+    "gsm8k-train-06648": 0,
+    "gsm8k-train-06711": 0,
+    "gsm8k-train-05029": 0,
+    "gsm8k-train-04452": 0,
+    "gsm8k-train-06754": 0,
+    "gsm8k-train-02323": 0,
+    "gsm8k-train-00935": 0,
+    "gsm8k-train-02359": 0,
+    "gsm8k-train-01897": 0,
+    "gsm8k-train-01498": 0,
+    "gsm8k-train-06078": 0,
+    "gsm8k-train-00209": 0,
+    "gsm8k-train-03506": 0,
+    "gsm8k-train-05733": 0
+  },
+  "stale_reverted_to_prior_ids": [],
+  "rollout_update_events": 0,
+  "expiry_events": 0,
+  "complete_full_pool_probes": 1,
+  "post_initial_generation_probes": 0
+}

@@ -1,10 +1,28 @@
 # ReasoningRL Lab
 
+<!-- REPAIR_20261106_CURRENT_BEGIN -->
+## 最新完成状态：2026-11-06
+
+家族 `desktoprepair_20261106_152712` 已完整完成：实际 tokenizer/标签/EOS/重载审计、未训练 LoRA 控制、四个预登记 SFT 候选、成本定标、C/D/E 各 seed13/29/47，以及所有终点独立重载和互斥128题的一次阶段确认。模型任务结束于北京时间 2026-11-06 20:12:10；本轮完整墙钟见 `experiments/desktoprepair_20261106_152712/session_final.json`。
+
+S1 以完全相同的适配器权重复现历史 SFT 退化；同32步降低学习率后比较集从64/128变为106/128、截断40变0。按预登记规则选真实 S2（1e-5、8步、实际32条样本/3688监督token），没有把未训练适配器标为 SFT。所查边界、mask、EOS与重载未发现缺陷；重复输出的内部机制仍未确认。
+
+固定 comparison128：A107、S2=110；C=108/110/109，D=112/110/108，E=111/109/107。D−C 均值 +0.781pp。固定 confirmation128：A=102、S2=101；C=102/104/103，D=100/103/102，E=103/102/102，D−C 均值 -1.042pp。分母均为128；两组都是 validation 开发数据，不能写成正式独立测试或稳定泛化收益。
+
+新主线为 `rollout_cache_fifo_v1_dynamic`，44题训练池，D/E各自初始K4探测；D复用真实训练rollout的最近16次奖励，32步无新观测回归先验，E固定初始权重。每组600秒训练/采样钟、540秒重载评测预留及30秒外围预留。979个主优化步骤均检查有限、244步非零，九个主适配器确实更新。没有补跑同协议周期全池动态基线，因此不声称优于该历史方法。
+
+工程47项测试、69个依赖兼容检查通过；本轮 49 份运行完成证据审计，含保存权重改变量和精确选题/缓存重放。当前进程隔离为单 RX9070XT，非量化BF16/SDPA；公开模型11个文件已复核，版本与数据均沿用锁定来源。
+
+`configs/main.yaml` 已改为实测容量配置 `main_capacity_calibrated_development_only`，不再沿用未测量2048题/NF4草案。最终正式方案、端点选择及独立测试预算仍未冻结；GSM8K test/SVAMP继续封存。具备真实开发对照的工程条件，尚无足够证据宣称动态策略优势或直接启封正式测试。
+
+[完整中文报告](reports/comparisons/desktoprepair_20261106_152712/findings.md) · [复现命令](docs/REPRODUCING_REPAIR_20261106.md) · [逐终点成本](reports/comparisons/desktoprepair_20261106_152712/standalone_endpoints.csv) · [证据审计](reports/comparisons/desktoprepair_20261106_152712/evidence_audit.json)。本轮源码、配置、报告及原始工件仍待Git提交/推送；本地适配器备份不含公开基础模型、环境或完整优化器状态。此前已发布的历史结果保持原样。
+<!-- REPAIR_20261106_CURRENT_END -->
+
 **小模型推理后训练与难度感知数据选择。** 面向大模型算法实习的独立研究工程项目。
 
 研究问题：在**同一硬件、相同端到端计算预算**下，用模型当前解题成功率指导训练题采样，能否比均匀随机采样更有效地改善数学推理？主要交付是训练代码、检查点、原始运行证据和受控实验，先看[当前交接与证据边界](HANDOFF.md)、[RX 9070 XT 开发结果](reports/comparisons/desktoprocm10pilot_20261105/findings.md)；[笔记本历史结果](reports/LOCAL_RESULTS.md)和[历史自动报告](reports/experiment_report.md)单列保留。
 
-## 已有真实结果与当前实验
+## 2026-11-05 历史真实结果
 
 RX 9070 XT 台式机已自动完成 main 克隆、Release SHA256 核验、16 份历史 LoRA 恢复、项目独立 ROCm 环境与公开模型下载。非量化 BF16/SDPA 的前后向、LoRA、保存重载和短链路实测通过，40 项工程测试通过。
 
@@ -88,7 +106,7 @@ GSM8K 来自官方 `openai/grade-school-math`，官方训练集按种子 **20261
 & $py -m reasoning_rl evaluate --name D-final-svamp --config configs/main.yaml --adapter checkpoints/D-main-s13 --split external --frozen-plan experiments/frozen/<id>.json
 ```
 
-`main.yaml` 目前是容量上限草案，正式冻结前需要 pilot 定标。测试题及其派生结果不得回流训练。最终评测会在生成前写入单次使用凭据，意外中断也保留记录，不能重复抽取有利结果。
+`main.yaml` 已按2026-11-06本机实测改为开发容量配置，尚非最终正式协议；本轮不得使用上面的历史示意命令启封test/SVAMP。测试题及其派生结果不得回流训练。最终评测会在生成前写入单次使用凭据，意外中断也保留记录，不能重复抽取有利结果。
 
 ## 训练与成本约定
 

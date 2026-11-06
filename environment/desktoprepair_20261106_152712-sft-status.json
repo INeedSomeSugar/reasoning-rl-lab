@@ -1,0 +1,23 @@
+{
+  "status": "completed_sft_diagnostics",
+  "started_unix": 1793950658.1457121,
+  "completed": [
+    "A-comparison",
+    "S1",
+    "S1-comparison",
+    "S1-regression",
+    "S2",
+    "S2-comparison",
+    "S2-regression",
+    "S3",
+    "S3-comparison",
+    "S3-regression",
+    "S4",
+    "S4-comparison",
+    "S4-regression"
+  ],
+  "holdout_opened": false,
+  "phase": "S4-regression",
+  "finished_unix": 1793952842.0725145,
+  "decision": "real_sft"
+}

@@ -1,0 +1,33 @@
+{
+  "runtime_failed_phases": [],
+  "all_model_phases_completed": true,
+  "negative_results_preserved": [
+    "S1 exact reproduction of SFT collapse",
+    "S2 comparison gain not repeated on confirmation",
+    "Sparse GRPO gradient signal and small/inconsistent sampler gains"
+  ],
+  "engineering_recovery_incidents": [
+    {
+      "stage": "recovery",
+      "observation": "Sandbox CIM process enumeration denied",
+      "resolution": "Did not change system permissions; used project process/runtime evidence and PyTorch device isolation assertions"
+    },
+    {
+      "stage": "remote_verification",
+      "observation": "Sandbox git DNS failure; connected GitHub API returned404 for the private repository",
+      "resolution": "Read-only authenticated local git ls-remote outside sandbox succeeded; local and remote main match4e938eb"
+    },
+    {
+      "stage": "dependency_check",
+      "observation": "python -m pip check unavailable because project uv environment has no pip module",
+      "resolution": "Project-local uv pip check verified69 installed packages compatible; no reinstall needed"
+    }
+  ],
+  "additional_analysis_incident": {
+    "error": "One ad-hoc Python -c read command hit an unterminated string literal due to PowerShell quoting",
+    "resolution": "Read-only command replaced with native PowerShell/here-string; no experiment was restarted or changed"
+  },
+  "source_evolution_note": "During early SFT candidates, GRPO-only code and provenance collectors evolved. Whole-source per-run hashes are retained. SFT/encoding/collator/generation ASTs are identical, and S1 saved weights and old32 raw predictions match the historical B exactly. The later frozen main/confirmation execution source is identical across all arms.",
+  "planned_budget_deviations": "Small natural-boundary600s overshoot and unused independent-evaluation reserve are measured, not hidden. No endpoint/checkpoint selection after stage confirmation.",
+  "holdout_or_paid_service_used": false
+}

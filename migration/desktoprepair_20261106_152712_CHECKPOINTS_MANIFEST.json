@@ -1,0 +1,367 @@
+{
+  "created_utc": "2026-11-06T12:22:04.447638+00:00",
+  "family": "desktoprepair_20261106_152712",
+  "checkpoints": [
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-C-s13",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "2e1c7ddf51b3bf3fb3ffbcbe317cf62df8db11ec6198dc30aebf655293cd9f25",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "e5d8641d94b0fece6f5230f3ed4ba9aed6b468e5c0f9d4a05e8527839d28ee16"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2574,
+          "sha256": "383e0ad22b2904c423b856f093e41a73208e9c147cd2542de8b120bae4e4aae3"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-C-s29",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "ad1fe88c4303ffcb3ca9fc3c006a6aae1416b0c0213aa10bdb1078b2275b2e83",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "79f7d74657de602d5fb41108a3f51dfde0e16f7f083e8832c664eeb9e0bdb2f3"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2574,
+          "sha256": "1429e40b97cbbd62b02b996fc227cdbe4190c63d6de20656f37e51780237a487"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-C-s47",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "df7af2049c9e1c5bc10ee6119630ef2871da20f81df110c83abe18b3d531694e",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "b59a8c3855ec49c7f6f17c04e6e734f7fa305382fb91d9e890929dc121cd9e0b"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2574,
+          "sha256": "8042c194150e8579f6fe71910feefaaf9e5f0ba29ea7faee361cdc532748c497"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-calibration-C",
+      "stage": "grpo",
+      "role": "cost_learning_signal_calibration",
+      "checkpoint_sha256": "937bc1511d7b7cd614023d7781c22404d8d2cdcc8bacca8553574195e2348ce9",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "4e514d6df4c6e758f5db007eeb45bc3ce470ee216eb02d92ed91f55cfa14ee8f"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2475,
+          "sha256": "34d356d16c1f523f4fdc83e0d88d86cc80ae5ecacc121d1cc5490516bd47595e"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-calibration-D",
+      "stage": "grpo",
+      "role": "cost_learning_signal_calibration",
+      "checkpoint_sha256": "fe9a08ce435739a2fad41618baad87e309d17be07d487ea6f452fe1817e90e91",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "93e2a85a079539174df017dba5956cdd5f5db53962a7a0c4d92fe243f2fb4001"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2476,
+          "sha256": "c72003e0d5d9a261e9e45e4adba58ab315b32c876113470919e478ed4492c765"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-calibration-E",
+      "stage": "grpo",
+      "role": "cost_learning_signal_calibration",
+      "checkpoint_sha256": "037d4d209587e1572cbc681218c1132f1bd1eec14a464937108b46653244bc44",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "9d3008b3ffdb95c92931133c8d458f43ee62699baa91060f2d2dabc9a26f6938"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2474,
+          "sha256": "4f5abd50ff3d023c77bdfa52d529a03068fec1c8d0f0fcb33a08b1a9660d2090"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-D-s13",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "5c0200429a2b4e177f61560ce7a4ee971ee036b1556cf0c2fcb6449298848bc8",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "52a4fbc1dda7e1716c2fc1bd1b1391d801fc890f0e4e4fa1233bc988b9c41794"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2574,
+          "sha256": "4651cfc411336cf48969ca3b12fd3ef48c62238e40bc66201a834689bbb50541"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-D-s29",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "fda4113363fbb792cf3d96cee603134fbe6e4ebf08683dd4feafd3b8865dee88",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "f4b843da9e67f5d4d84615f933b614dc3159d1076e232fb62276c7ba6d96616c"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2574,
+          "sha256": "1faf7c270b7449caf4cbf730935207010ebd70b454b11e5039ac818bc75626c5"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-D-s47",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "06c7d1f66915543fbab9bc4cb8a53a32f1fe19cfd61340d8b991b186ce0d5090",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "7cb997bfbbe909add89a31e9ed837cdb324e3e7c9c87255f972693258d5b67ff"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2574,
+          "sha256": "59cbb6614fc4e93117fbb070254ee5cfbc50ab373c2c621e15c8fb7d1ae8416d"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-E-s13",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "969c1f892749a3f92cf3074a7e567abeb391c00639d31ad20532c38ba53cadb1",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "7aa2110d4e14d8b388550488857b4e94f2959f29a11fa1cd7c29f8cadb535d83"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2573,
+          "sha256": "92b364ea714cdf070e898ebf9464abf60f5325ab712758a05225fdf973c91195"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-E-s29",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "c85702b17746c6c447d45660e926bf9157709c29d41cb9977edbbddaafbe6e8e",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "e217569c3d2f68d61b432683fd2a591812af97318cbe66b4b377aecbb988eccd"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2573,
+          "sha256": "ba6392797932cfe1cfcb3938076d1c65a39e2c8abd26fb887dbefbff2376dadf"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-E-s47",
+      "stage": "grpo",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "dc2a99bf8e991cf245f88a912a3bdb23ac0eb1284a1bcd5f30eb931f0c1ffba6",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "306bbb6c4d958c7f8d61b42b76a35d673707d31171e385aa35ce08d090ab142b"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2573,
+          "sha256": "4e9e5465b7ca8983e4f5f6bad8c381c9208689937956c82069f7a29dfeb3ebfe"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-S1",
+      "stage": "sft",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "8b7e35b17854561faf3fc2e1814d3b7084abe4858cec881675988634a01deb0a",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "9f72b38dec4ad9745b0eb27d8e70c219c08eaf5895d67ab5d1e4b9d5713e0e18"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 5297,
+          "sha256": "b7d9e54a5c57a137446740b9467f00a85e9b27511dcda4c2974e3bf3fce8ba98"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-S2",
+      "stage": "sft",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "9d3008b3ffdb95c92931133c8d458f43ee62699baa91060f2d2dabc9a26f6938"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 5295,
+          "sha256": "85a18df2576f760ed05a1030477dc6737ba18cc4496c12e48c84e96457962967"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-S3",
+      "stage": "sft",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "b2ef3a0a461f102e330de4aeb2e09f5fba6afdc50973901feb7d3672b7ee1e3e",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "490e2b96745d58883e4ce78d8ad2a47ad927a528418c3c28ac2544be421013af"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 5296,
+          "sha256": "5ac074b5a7b2c00c3adbbb24155f72316b90cc42785dca60886920e8deb3f3aa"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-S4",
+      "stage": "sft",
+      "role": "trained_endpoint",
+      "checkpoint_sha256": "2839aa5185048bdfa636baa57924208f8a24d0d5e039bff6c7330ca6023821ab",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "140e7d9dd5c2703d7b4f45f03335284b67a424b8cc340828b652f5a64c2dd0be"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 5296,
+          "sha256": "9ca115a13a8c0effd086ee1f0dd5ee6da303705b702927d7165559c1e6ee18da"
+        }
+      }
+    },
+    {
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-untrained-control",
+      "stage": "untrained_lora_control",
+      "role": "untrained_control_not_SFT",
+      "checkpoint_sha256": "2a5ca9e535be855ade788da1ae49cebaf2cb89cf4511a8f70e33be14f0eac15e",
+      "files": {
+        "adapter_config.json": {
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        "adapter_model.safetensors": {
+          "bytes": 6437272,
+          "sha256": "f7a91a3bb32ebcc39d59160ff6e0e059312b4ba28a9b065315435ca28748dae6"
+        },
+        "rrl_checkpoint.json": {
+          "bytes": 2145,
+          "sha256": "a96426b65eb9561cec98f03dc71a757e0d3fb95c6c04cc915f3900223324c1a1"
+        }
+      }
+    }
+  ],
+  "count_by_stage": {
+    "grpo": 12,
+    "sft": 4,
+    "untrained_lora_control": 1
+  },
+  "checkpoint_count": 17,
+  "qualification": "Untrained control and calibration endpoints are explicitly distinguished; not all are scientific training comparisons",
+  "excluded": [
+    "public model weights",
+    "tokenizer copies (use pinned base)",
+    "environment",
+    "caches",
+    "complete optimizer state"
+  ],
+  "common_start": {
+    "kind": "sft",
+    "checkpoint": "checkpoints\\desktoprepair_20261106_152712-S2",
+    "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+    "sft_candidate": "S2",
+    "public_model_verification_sha256": "c7cbe70435a50495a47b5e25c18dfa1d71d4e8dc0321618590cd9fa15b00280e"
+  }
+}
