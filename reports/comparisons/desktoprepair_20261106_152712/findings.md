@@ -143,3 +143,7 @@ SFT保住比较集表现与采样机制真实执行均已验证；是否带来�
 - 云 GPU 与付费 API 未使用；本机能耗未计量。LoRA 与 trainer state JSON 不包含可精确续训的完整优化器状态。
 
 本轮49份运行完成 [证据终审](evidence_audit.json)，所有新训练终点、未训练控制和一次阶段确认均保留。[复现命令](../../../docs/REPRODUCING_REPAIR_20261106.md)、[失败/偏差记录](failures_and_deviations.json) 与 [待提交/归档清单](pending_artifacts.md) 一并交接。历史运行、旧配置和负面结果保留，不与本轮均值混算。
+
+## GitHub 发布记录
+
+源码与完整证据已推送main（[d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)），[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106) 提供源码/证据ZIP、17份适配器ZIP、SHA256SUMS及本地归档收据。4个远端附件的大小和SHA256已核对，仓库保持私有。[发布核验收据](../../../environment/desktoprepair_20261106_152712-github-publication.json)单独记录发布时间，不改写此前5小时6分钟的本地实验/收尾账本。源ZIP早于最后收尾/发布元数据，继续工作优先克隆main。该发布不改变开发实验与正式独立测试的证据边界。

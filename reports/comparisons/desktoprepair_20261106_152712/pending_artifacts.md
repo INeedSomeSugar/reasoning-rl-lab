@@ -1,4 +1,10 @@
-# 本轮待提交与备份清单
+# 本轮待提交与备份清单（推送前留档）
+
+## 后续发布已完成
+
+本清单保留发布前的文件快照。随后用户授权推送及4个Release附件上传，源码已在main提交 [d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)，附件已发布到 [私有仓库开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106)。4个附件远端大小/SHA256均通过核验。当前状态见 [发布收据](../../../environment/desktoprepair_20261106_152712-github-publication.json)；下文“未推送”和文件计数是原收尾时点的历史状态。
+
+---
 
 家族：`desktoprepair_20261106_152712`。本轮没有执行Git提交或推送，当前HEAD仍为 `4e938eb696b1cbb4290c14515d30069ff6e50113`。历史工件保留。
 

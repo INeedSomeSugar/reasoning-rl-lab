@@ -1,5 +1,15 @@
 # 当前交接状态
 
+<!-- REPAIR_20261106_PUBLICATION_BEGIN -->
+## GitHub 发布已完成（2026-11-06）
+
+本轮代码、配置、报告及49份运行证据已推送私有仓库main，源码提交为 [d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)；[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106) 已发布。4个附件的远端大小与SHA256全部匹配：[源码/证据ZIP](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106)、17份适配器ZIP、SHA256SUMS.txt、archive_receipt.json。仓库可见性保持私有。
+
+17份适配器包括4份SFT、9份主GRPO、3份定标GRPO和1份未训练控制，不能都标成正式对照。源ZIP为本轮较早的收尾快照，不等同于当前main；main另包含最后收尾与发布收据。继续工作优先克隆main，按 [发布核验收据](environment/desktoprepair_20261106_152712-github-publication.json) 和检查点manifest核对下载；不包含基础模型、环境或完整优化器状态。
+
+原待提交清单、session_final和本地归档收据保留的是发布前状态，本次发布不改写实验耗时、原始预测、冻结配置或test/SVAMP封存边界。
+<!-- REPAIR_20261106_PUBLICATION_END -->
+
 <!-- REPAIR_20261106_CURRENT_BEGIN -->
 ## 最新完成状态：2026-11-06
 
@@ -15,9 +25,9 @@ S1 以完全相同的适配器权重复现历史 SFT 退化；同32步降低学�
 
 `configs/main.yaml` 已改为实测容量配置 `main_capacity_calibrated_development_only`，不再沿用未测量2048题/NF4草案。最终正式方案、端点选择及独立测试预算仍未冻结；GSM8K test/SVAMP继续封存。具备真实开发对照的工程条件，尚无足够证据宣称动态策略优势或直接启封正式测试。
 
-[完整中文报告](reports/comparisons/desktoprepair_20261106_152712/findings.md) · [复现命令](docs/REPRODUCING_REPAIR_20261106.md) · [逐终点成本](reports/comparisons/desktoprepair_20261106_152712/standalone_endpoints.csv) · [证据审计](reports/comparisons/desktoprepair_20261106_152712/evidence_audit.json)。本轮源码、配置、报告及原始工件仍待Git提交/推送；本地适配器备份不含公开基础模型、环境或完整优化器状态。此前已发布的历史结果保持原样。
+[完整中文报告](reports/comparisons/desktoprepair_20261106_152712/findings.md) · [复现命令](docs/REPRODUCING_REPAIR_20261106.md) · [逐终点成本](reports/comparisons/desktoprepair_20261106_152712/standalone_endpoints.csv) · [证据审计](reports/comparisons/desktoprepair_20261106_152712/evidence_audit.json)。本轮源码、配置、报告及原始工件已推送main，适配器与源码备份已上传 [开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106)，远端摘要核验通过。此前历史结果与发布前快照保持原样。
 
-继续时优先阅读本节、完整报告和 `experiments/desktoprepair_20261106_152712/sampling_frozen.json`。本轮模型任务已结束，不续跑旧状态、不覆盖旧家族。待提交/备份清单见 `reports/comparisons/desktoprepair_20261106_152712/pending_artifacts.md`；最终墙钟、归档校验和本地未推送状态以收尾收据为准。
+继续时优先阅读本节、完整报告和 `experiments/desktoprepair_20261106_152712/sampling_frozen.json`。本轮模型任务已结束，不续跑旧状态、不覆盖旧家族。发布前工件清单留档于 `reports/comparisons/desktoprepair_20261106_152712/pending_artifacts.md`；当前推送/Release状态以本页发布段和GitHub发布收据为准，实验墙钟仍以原收尾收据为准。
 <!-- REPAIR_20261106_CURRENT_END -->
 
 ## 历史交接（上一轮与笔记本记录原样保留）

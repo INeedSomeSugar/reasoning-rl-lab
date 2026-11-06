@@ -1,0 +1,91 @@
+{
+  "status": "published_and_verified",
+  "verified_utc": "2026-11-06T13:04:53.481917+00:00",
+  "repo": "INeedSomeSugar/reasoning-rl-lab",
+  "repo_private": true,
+  "branch": "main",
+  "code_commit": "d4eec11d675e079e7462f601a7ff98487801c18a",
+  "code_commit_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a",
+  "release": {
+    "id": 436502867,
+    "tag": "desktop-repair-cache-dev-20261106",
+    "url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106",
+    "published_at": "2026-11-06T13:04:43Z",
+    "prerelease": true,
+    "draft": false,
+    "source_commit": "d4eec11d675e079e7462f601a7ff98487801c18a",
+    "annotated_tag_object_sha": null,
+    "assets": [
+      {
+        "name": "desktoprepair_20261106_152712-source-and-evidence.zip",
+        "bytes": 17443536,
+        "sha256": "effe8fba0d18d7e6a86ecc1bc93deeadd89a2a152d266b9bc1f20a6d633e36d3",
+        "remote_digest": "sha256:effe8fba0d18d7e6a86ecc1bc93deeadd89a2a152d266b9bc1f20a6d633e36d3",
+        "github_asset_id": 717192032,
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-repair-cache-dev-20261106/desktoprepair_20261106_152712-source-and-evidence.zip",
+        "verified": true
+      },
+      {
+        "name": "desktoprepair_20261106_152712-lora.zip",
+        "bytes": 96570221,
+        "sha256": "22231ff336b8da17262f3cd16d4a5ab63546aaf3b0174a6c23a87d4eb4dc2440",
+        "remote_digest": "sha256:22231ff336b8da17262f3cd16d4a5ab63546aaf3b0174a6c23a87d4eb4dc2440",
+        "github_asset_id": 717192201,
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-repair-cache-dev-20261106/desktoprepair_20261106_152712-lora.zip",
+        "verified": true
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 227,
+        "sha256": "564afe392535a7a2bdbcd120a025c449658300024aba21c03a0ead5f29aa0bd9",
+        "remote_digest": "sha256:564afe392535a7a2bdbcd120a025c449658300024aba21c03a0ead5f29aa0bd9",
+        "github_asset_id": 717192790,
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-repair-cache-dev-20261106/SHA256SUMS.txt",
+        "verified": true
+      },
+      {
+        "name": "archive_receipt.json",
+        "bytes": 1264,
+        "sha256": "8fc52edb477bb8417cc0704474331c1f90bd873d43ad50a9029ad3937a5aa715",
+        "remote_digest": "sha256:8fc52edb477bb8417cc0704474331c1f90bd873d43ad50a9029ad3937a5aa715",
+        "github_asset_id": 717192899,
+        "browser_download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/desktop-repair-cache-dev-20261106/archive_receipt.json",
+        "verified": true
+      }
+    ]
+  },
+  "frozen_execution_code_sha256": "8f2578aae3bb03fe0eed6fa65adf326297da1b7e9a3c9002547f4e31362f3373",
+  "checkpoint_manifest": "migration/desktoprepair_20261106_152712_CHECKPOINTS_MANIFEST.json",
+  "checkpoint_manifest_sha256": "04832a4c175cb4a262c4133bf6c44977dacc07d95d75f72dbeaae3ba6026fd70",
+  "checkpoint_artifacts": {
+    "sft": 4,
+    "grpo_calibration": 3,
+    "grpo_main": 9,
+    "untrained_control_not_sft": 1,
+    "total": 17
+  },
+  "release_upload_explicitly_authorized": true,
+  "authorized_upload_names": [
+    "desktoprepair_20261106_152712-source-and-evidence.zip",
+    "desktoprepair_20261106_152712-lora.zip",
+    "SHA256SUMS.txt",
+    "archive_receipt.json"
+  ],
+  "source_archive_note": "Local closeout snapshot created before final closeout/publication receipts; it is not an exact archive of the code commit. Clone main for current handoff and receipt metadata.",
+  "evidence_boundary": "Development comparison and confirmation only; no stable dynamic gain; formal test/SVAMP sealed.",
+  "study_session_receipt_unchanged": true,
+  "gpu_training_or_paid_api_run_for_publication": false,
+  "verification": {
+    "remote_asset_sizes_and_sha256_match": true,
+    "existing_47_engineering_tests_and_49_run_audit_preserved": true,
+    "source_hashes_verified_before_push": 97,
+    "git_source_whitespace_check_with_cr_at_eol": "pass",
+    "raw_logs_and_source_snapshots": "Original CRLF and byte hashes retained; no whitespace normalization of evidence"
+  },
+  "not_uploaded": [
+    "base model weights",
+    "virtualenv",
+    "caches",
+    "complete optimizer state"
+  ]
+}
