@@ -1,9 +1,9 @@
 # 项目上下文
 
 <!-- REPAIR_20261106_PUBLICATION_BEGIN -->
-## GitHub 发布已完成（2026-11-06）
+## GitHub 发布与当前可见性（2026-11-10 更新）
 
-本轮代码、配置、报告及49份运行证据已推送私有仓库main，源码提交为 [d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)；[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106) 已发布。4个附件的远端大小与SHA256全部匹配：[源码/证据ZIP](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106)、17份适配器ZIP、SHA256SUMS.txt、archive_receipt.json。仓库可见性保持私有。
+本轮代码、配置、报告及49份运行证据已推送main，源码提交为 [d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)；[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106) 已发布。4个附件的远端大小与SHA256全部匹配：[源码/证据ZIP](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106)、17份适配器ZIP、SHA256SUMS.txt、archive_receipt.json。2026-11-10 已核验仓库为公开；2026-11-06 发布收据中的私有字段保留当时状态。
 
 17份适配器包括4份SFT、9份主GRPO、3份定标GRPO和1份未训练控制，不能都标成正式对照。源ZIP为本轮较早的收尾快照，不等同于当前main；main另包含最后收尾与发布收据。继续工作优先克隆main，按 [发布核验收据](environment/desktoprepair_20261106_152712-github-publication.json) 和检查点manifest核对下载；不包含基础模型、环境或完整优化器状态。
 

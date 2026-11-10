@@ -8,4 +8,4 @@
 - docs/sources/grpo_trainer_v0231.py为Hugging Face TRL 0.23.1源快照，保留原版权头，Apache-2.0许可文本另存docs/sources/LICENSE_APACHE_2_0.txt。运行时使用固定安装版本，不从该阅读快照导入。
 - AMD、PyTorch、PEFT、bitsandbytes等文档快照用于核对兼容与实现，原始URL和检索记录见docs/SOURCES.md及docs/sources/index.json。
 
-本文件记录第三方材料；不替用户为原创项目代码选择公开发布许可。当前拟建私有GitHub仓库。
+仓库已公开（2026-11-10 核验）。本文件记录第三方材料与各自许可，未为原创项目代码新增项目级许可证。

@@ -146,4 +146,4 @@ SFT保住比较集表现与采样机制真实执行均已验证；是否带来�
 
 ## GitHub 发布记录
 
-源码与完整证据已推送main（[d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)），[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106) 提供源码/证据ZIP、17份适配器ZIP、SHA256SUMS及本地归档收据。4个远端附件的大小和SHA256已核对，仓库保持私有。[发布核验收据](../../../environment/desktoprepair_20261106_152712-github-publication.json)单独记录发布时间，不改写此前5小时6分钟的本地实验/收尾账本。源ZIP早于最后收尾/发布元数据，继续工作优先克隆main。该发布不改变开发实验与正式独立测试的证据边界。
+源码与完整证据已推送main（[d4eec11](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/d4eec11d675e079e7462f601a7ff98487801c18a)），[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-repair-cache-dev-20261106) 提供源码/证据ZIP、17份适配器ZIP、SHA256SUMS及本地归档收据。4个远端附件的大小和SHA256已核对；发布时仓库为私有，2026-11-10 已核验为公开。[发布核验收据](../../../environment/desktoprepair_20261106_152712-github-publication.json)保留当时的可见性与发布时间，不改写此前5小时6分钟的本地实验/收尾账本。源ZIP早于最后收尾/发布元数据，继续工作优先克隆main。该发布不改变开发实验与正式独立测试的证据边界。

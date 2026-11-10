@@ -89,6 +89,6 @@ C/D 按 seed 13/29/47 配对重复，E 只运行 seed 13。探测和训练内验
 
 ## GitHub 发布（2026-11-06）
 
-本轮代码、报告、运行记录与77份原始日志已推送私有仓库main；[台式机预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105)已发布，三个附件的远端大小及SHA256均与本地匹配。源码ZIP固定在提交 `d5cf22cbbd93a4f90c5f600450c6b6cfa6f5833f`，main还包含后续发布收据与链接，继续工作优先克隆main。
+本轮代码、报告、运行记录与77份原始日志已推送main；[台式机预发布Release](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/desktop-rocm10-pilot-20261105)已发布，三个附件的远端大小及SHA256均与本地匹配。发布时仓库为私有，现已公开（2026-11-10 核验），原发布收据保留当时状态。源码ZIP固定在提交 `d5cf22cbbd93a4f90c5f600450c6b6cfa6f5833f`，main还包含后续发布收据与链接，继续工作优先克隆main。
 
 LoRA ZIP含25份真实工件：3份能力检查、2份SFT、10份GRPO及10份恢复适配器，不是25个正式实验终点；逐文件摘要见 `migration/DESKTOP_CHECKPOINTS_MANIFEST_20261105.json`。基础模型、环境、缓存、下载wheel和完整优化器状态不上传。附件和SHA256SUMS位于本地 `dist/desktop-rocm10-pilot-20261105/`，发布收据为 `environment/desktop_publication_20261106.json`；本轮负面结论和保留集隔离状态不变。
