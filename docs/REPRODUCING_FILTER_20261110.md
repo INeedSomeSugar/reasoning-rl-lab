@@ -80,10 +80,36 @@ $py = '.\.venv\Scripts\python.exe'
 ## 工件解释
 
 - `experiments/desktopfilter_20261110/`：预登记、ID、完整冻结协议、源码快照/哈希、实际筛选、进程账本、终点成本、全部终点固定凭据。
-- `runs/desktopfilter_20261110-{U,F}-s{13,29,47}/`：原始reward/rollout、completion token ID、实际advantage与mask、每微步输入信号、梯度、Adam一阶矩、逐步权重差、选题和成本。
+- `runs/desktopfilter_20261110-r1-{U,F}-s{13,29,47}/`：原始reward/rollout、completion token ID、实际advantage与mask、每微步输入信号、梯度、Adam一阶矩、逐步权重差、选题和成本。
 - `runs/desktopfilter_20261110-probe/`：全部256条随机探测输出、原始成功次数、token和成本。定标16题探测另列，不混成K8。
 - `runs/desktopfilter_20261110-*-development/`：独立加载模型精度、适配器哈希、实际评测ID和128条原始预测。
 - `checkpoints/desktopfilter_20261110-*/`：适配器与配置；训练终点额外保存Adam/RNG诊断状态。尚无自动精确恢复dataloader/sampler位置的实现，不承诺精确断点续训。
 - `reports/comparisons/desktopfilter_20261110/`：离线复算汇总、逐终点CSV、三种子配对差、原始误差样例和图。
 
 表中“有效优势样本”为原始非零advantage且实际loss mask非空的completion；rollout组、completion、optimizer step分别计算。零梯度不代表Adam状态为空或权重不变。训练随机成功率与开发greedy准确率分列；三种子以及开发数据的局限必须与结果同时报告。
+
+## GitHub 下载与恢复
+
+代码和原始证据位于main；本轮冻结源码/结果提交为 `def2a1ba165e059ac7c6db3f01d14d85e6b9b5da`。开发预发布标签为 `fixed-prefilter-dev-20261110`，标签与源码ZIP指向该提交，main另外包含发布核验收据和入口更新。源码ZIP是声明范围内的可移植子集，排除了正式holdout内容；优先克隆main，避免将较早快照覆盖当前工作区。
+
+以下命令在项目内下载四个附件并校验两个ZIP与归档收据。若目录已有同名附件，gh会拒绝覆盖；应先核对已有文件，不加clobber。
+
+```powershell
+$download = Join-Path (Get-Location) 'dist\desktopfilter_20261110-download'
+gh release download fixed-prefilter-dev-20261110 --repo INeedSomeSugar/reasoning-rl-lab --dir $download --pattern '*.zip' --pattern SHA256SUMS.txt --pattern archive_receipt.json
+if ($LASTEXITCODE -ne 0) { throw 'Release download failed' }
+foreach ($entry in (Get-Content -LiteralPath (Join-Path $download 'SHA256SUMS.txt'))) {
+    if ($entry -notmatch '^([a-f0-9]{64})  (.+)$') { throw 'Invalid checksum entry' }
+    $expected = $Matches[1]
+    $assetPath = Join-Path $download $Matches[2]
+    $actual = (Get-FileHash -LiteralPath $assetPath -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($actual -ne $expected) { throw "SHA256 mismatch: $assetPath" }
+}
+$restore = Join-Path (Get-Location) 'dist\desktopfilter_20261110-restore'
+if (Test-Path -LiteralPath $restore) { throw 'Preserve existing restore directory' }
+Expand-Archive -LiteralPath (Join-Path $download 'desktopfilter_20261110-lora-and-optimizer-diagnostics.zip') -DestinationPath $restore
+```
+
+解压后在 `$restore/reasoning-rl-lab/checkpoints/` 下核对并恢复缺失的适配器目录至本项目 `checkpoints/`；已有同名目录先按 [检查点manifest](../migration/desktopfilter_20261110_CHECKPOINTS_MANIFEST.json) 验证，不覆盖不同权重。九份适配器的角色为六个主U/F终点、共同S2、定标和保存重载诊断；七份Adam/RNG文件用于诊断，不能据此承诺自动精确续训。tokenizer使用协议锁定的基础模型版本。本机权重和环境已齐备，无需再次下载或恢复。
+
+[GitHub发布核验收据](../environment/desktopfilter_20261110-github-publication.json)记录四个远端附件摘要与大小、标签提交、原实验manifest及各检查点角色。[归档收据](../environment/desktopfilter_20261110-local-archives.json)是ZIP构建后的历史快照，原session_final与pending_artifacts仍表述20:47发布前状态；当前发布状态以GitHub发布收据为准。

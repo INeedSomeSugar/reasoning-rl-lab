@@ -9,8 +9,18 @@
 
 冻结后发现训练题06831自指措辞疑义，已单列其信号贡献，本轮未改金标/删题。confirmation128明确是已使用的开发数据；GSM8K test/SVAMP继续封存。下一步：保留固定筛选作为简单基线，优先在更大共同候选池、预先排除新疑义题后，用一次新冻结开发子集做同预算三配对复验。额外计算首先用于题目覆盖和复验，不直接延长同16题的训练；动态过滤留作后续独立消融，当前未见信号系统性枯竭。模型、学习率、奖励、G4和温度继续共同锁定，GSM8K test/SVAMP继续封存。
 
-[完整报告](reports/comparisons/desktopfilter_20261110/findings.md) · [复现命令](docs/REPRODUCING_FILTER_20261110.md) · [证据审计](reports/comparisons/desktopfilter_20261110/evidence_audit.json) · [冻结协议](experiments/desktopfilter_20261110/protocol_frozen.json)。全部模型任务已结束，成果保存在本项目，尚未提交/推送；不要重跑已完成家族或启封正式测试。
+[完整报告](reports/comparisons/desktopfilter_20261110/findings.md) · [复现命令](docs/REPRODUCING_FILTER_20261110.md) · [证据审计](reports/comparisons/desktopfilter_20261110/evidence_audit.json) · [冻结协议](experiments/desktopfilter_20261110/protocol_frozen.json)。全部模型任务已结束，代码和证据已推送main，检查点已上传[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/fixed-prefilter-dev-20261110)；不要重跑已完成家族或启封正式测试。
 <!-- FILTER_20261110_CURRENT_END -->
+
+<!-- FILTER_20261110_PUBLICATION_BEGIN -->
+## 本轮 GitHub 发布（2026-11-10）
+
+本轮代码、配置、报告和原始运行证据已推送main，源码提交为 [def2a1b](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/def2a1ba165e059ac7c6db3f01d14d85e6b9b5da)；[固定预筛开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/fixed-prefilter-dev-20261110) 已发布。四个附件的远端大小和SHA256全部匹配，详见 [发布核验收据](environment/desktopfilter_20261110-github-publication.json)。仓库当前公开。
+
+检查点ZIP包含九份适配器：六个U/F主GRPO终点、共同真实S2、一份定标和一份保存重载诊断；额外保留七份Adam/RNG诊断状态，不承诺自动精确断点续训。源码/证据ZIP为def2a1b提交的可移植子集，含历史工件，排除正式holdout内容和二进制权重；基础模型、虚拟环境与缓存未上传。当前main另含发布收据及文档入口更新，下载与校验步骤见 [复现文档](docs/REPRODUCING_FILTER_20261110.md)。
+
+原session_final、artifact_manifest和pending_artifacts保留北京时间20:47实验交接完成时的发布前状态；发布不改写实验耗时、配置、原始预测或结果，也不启封GSM8K test/SVAMP。
+<!-- FILTER_20261110_PUBLICATION_END -->
 
 <!-- REPAIR_20261106_PUBLICATION_BEGIN -->
 ## GitHub 发布与当前可见性（2026-11-10 更新）

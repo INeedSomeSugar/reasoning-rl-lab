@@ -80,7 +80,7 @@ F三终点训练生成 279181 token，独立评测生成 54911 token；单终点
 
 **下一步判断：** 保留固定筛选作为简单基线，优先在更大共同候选池、预先排除新疑义题后，用一次新冻结开发子集做同预算三配对复验。额外计算首先用于题目覆盖和复验，不直接延长同16题的训练；动态过滤留作后续独立消融，当前未见信号系统性枯竭。模型、学习率、奖励、G4和温度继续共同锁定，GSM8K test/SVAMP继续封存。
 
-工程59项回归测试通过，69个项目环境包兼容；全部实际advantage/mask、梯度、均匀采样权重、预算、检查点哈希及独立加载协议通过[证据审计](evidence_audit.json)。[复现命令](../../../docs/REPRODUCING_FILTER_20261110.md)及[检查点清单](checkpoint_manifest.json)可直接定位权重与Adam/RNG诊断状态；尚未实现精确恢复dataloader/sampler位置的自动续训。本轮只保存本地成果，未推送GitHub或发布Release。
+工程59项回归测试通过，69个项目环境包兼容；全部实际advantage/mask、梯度、均匀采样权重、预算、检查点哈希及独立加载协议通过[证据审计](evidence_audit.json)。[复现命令](../../../docs/REPRODUCING_FILTER_20261110.md)及[检查点清单](checkpoint_manifest.json)可直接定位权重与Adam/RNG诊断状态；尚未实现精确恢复dataloader/sampler位置的自动续训。代码和证据已推送GitHub，检查点已发布；发布核验与工件范围见文末，原实验收尾收据保留发布前状态。
 
 ---
 家族 `desktopfilter_20261110`，2026-11-10，单 RX 9070 XT、Qwen3-1.7B、非量化 BF16/SDPA。**三个配对种子U/F训练及六个独立进程终点评测已全部完成。** GSM8K test 与 SVAMP 继续封存，沿用的 confirmation128 明确属于已使用过的开发数据。
@@ -128,3 +128,9 @@ U 在共同候选池均匀采样；F 由固定 S2、固定 probe seed、K=4 探�
 交互中断后，原U/13进程已消失，原始工件留下136个optimizer step，没有保存终点权重；退出时间未知。失败尝试的最后已观察运行时长与首次确认进程消失的保守上界均记录在 [中断收据](../../../experiments/desktopfilter_20261110/interruption_receipt.json)。这些成本不会从全会话预算中删除。恢复从同一S2、同一冻结配置出发，用 `desktopfilter_20261110-r1` 新工件前缀重做全部六个终点，不覆盖原始失败，也不按任何主终点准确率选择重跑。全部方法参数、筛选、顺序、每臂预算和总四小时截止不变。报告已将匹配成功终点的算法比较与包含失败尝试的实际运行成本分列。
 
 冻结后的保留16题内容审阅发现 `gsm8k-train-06831` 的题干包含“第三个猜测比第三个少200”的自指措辞，参考解实际使用第二个猜测；本轮S2原始探测成功2/4，因此该题在F子集内。该发现已在任何主终点评测前 [登记](../../../experiments/desktopfilter_20261110/postfreeze_data_quality_note.json)。本轮不修改金标、不删题、不改协议，主训练池、筛后池与训练信号统计保留该题；它与开发集隔离，不是开发128题的一员。只把该题的训练曝光与有效信号贡献作为明确标注的冻结后诊断。四个历史疑义排除已继承，但不能据此声称剩余训练题经过完整语义审阅。这是数据质量与外推局限，不是已确认的loss/reward实现缺陷。
+
+## GitHub 发布与归档核验
+
+2026-11-10已发布[开发预发布](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/fixed-prefilter-dev-20261110)，源码/结果提交为[def2a1b](https://github.com/INeedSomeSugar/reasoning-rl-lab/commit/def2a1ba165e059ac7c6db3f01d14d85e6b9b5da)。四个附件（源码/证据ZIP、适配器/优化器诊断ZIP、SHA256SUMS.txt、archive_receipt.json）的GitHub服务器SHA256与大小全部匹配本地文件；[发布收据](../../../environment/desktopfilter_20261110-github-publication.json)记录远端附件ID、摘要、下载链接及标签提交。
+
+适配器归档为六个主GRPO终点、共同S2、定标和保存重载诊断共九份，并保留七份Adam/RNG诊断状态；后两类不计入三配对种子结果。源码ZIP包含def2a1b提交中的9630个可移植源码/证据文件及历史记录，排除正式holdout内容和二进制权重。基础模型、tokenizer副本、虚拟环境与缓存不包含在附件中。当前main另含发布元数据；原20:47收尾收据、冻结源码、奖励和预测保持其历史状态。发布耗时与原四小时模型/交接预算分开，未新增模型运行。

@@ -1,0 +1,115 @@
+{
+  "verified_utc": "2026-11-10T13:34:19.604944+00:00",
+  "family": "desktopfilter_20261110",
+  "repo": "INeedSomeSugar/reasoning-rl-lab",
+  "repo_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab",
+  "repo_private_at_verification": false,
+  "code_commit": "def2a1ba165e059ac7c6db3f01d14d85e6b9b5da",
+  "previous_main_commit": "28ca51053b9a1c9a5a283e18155c48631332f622",
+  "release": {
+    "id": 440400754,
+    "tag": "fixed-prefilter-dev-20261110",
+    "target_commit": "def2a1ba165e059ac7c6db3f01d14d85e6b9b5da",
+    "url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/fixed-prefilter-dev-20261110",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-11-10T13:31:56Z"
+  },
+  "assets": [
+    {
+      "id": 731544672,
+      "name": "archive_receipt.json",
+      "bytes": 1755,
+      "sha256": "03cf633ebb4224e2072fc7c567e0f09bc328d8f3703c6ff9c1450c0fe9957cf1",
+      "github_digest": "sha256:03cf633ebb4224e2072fc7c567e0f09bc328d8f3703c6ff9c1450c0fe9957cf1",
+      "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/fixed-prefilter-dev-20261110/archive_receipt.json",
+      "remote_size_and_digest_match": true
+    },
+    {
+      "id": 731544677,
+      "name": "desktopfilter_20261110-lora-and-optimizer-diagnostics.zip",
+      "bytes": 135665506,
+      "sha256": "3a907c22cbac1a4557a84956de61d598b1a18eb2fcf66bb5dd3e3fcbffee56a8",
+      "github_digest": "sha256:3a907c22cbac1a4557a84956de61d598b1a18eb2fcf66bb5dd3e3fcbffee56a8",
+      "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/fixed-prefilter-dev-20261110/desktopfilter_20261110-lora-and-optimizer-diagnostics.zip",
+      "remote_size_and_digest_match": true
+    },
+    {
+      "id": 731544663,
+      "name": "desktopfilter_20261110-source-and-evidence.zip",
+      "bytes": 23299729,
+      "sha256": "a01b79c693b14389fb50d5bdaf30588984ebe965b25f00af83e2f0ef58576516",
+      "github_digest": "sha256:a01b79c693b14389fb50d5bdaf30588984ebe965b25f00af83e2f0ef58576516",
+      "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/fixed-prefilter-dev-20261110/desktopfilter_20261110-source-and-evidence.zip",
+      "remote_size_and_digest_match": true
+    },
+    {
+      "id": 731544661,
+      "name": "SHA256SUMS.txt",
+      "bytes": 324,
+      "sha256": "1b7320d5c27465a0b441ca0158a149c1264731d4e625b2dffd322ddbe7d9a435",
+      "github_digest": "sha256:1b7320d5c27465a0b441ca0158a149c1264731d4e625b2dffd322ddbe7d9a435",
+      "download_url": "https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/download/fixed-prefilter-dev-20261110/SHA256SUMS.txt",
+      "remote_size_and_digest_match": true
+    }
+  ],
+  "all_remote_sizes_and_sha256_verified": true,
+  "verification_method": "GitHub REST asset digest and size, authenticated existing gh CLI; tag/main additionally read through connected GitHub tool",
+  "checkpoint_count": 9,
+  "checkpoint_count_by_role": {
+    "paired_training_endpoint": 6,
+    "calibration_only": 1,
+    "forward_backward_save_reload_diagnostic_only": 1,
+    "common_S2_start": 1
+  },
+  "checkpoint_manifest": "migration/desktopfilter_20261110_CHECKPOINTS_MANIFEST.json",
+  "checkpoint_manifest_sha256": "943d0a216724a18c7a4cbb636785d9e777dcd16cfe73fcbbc4d2ad484c411c5a",
+  "optimizer_exact_resume_supported": false,
+  "frozen_execution_source_data_and_common_start_verified": true,
+  "original_closeout_manifest_sha256": "47c4f1e1876119d13261f82564a5a0767751841b28c75a103deecd5bf6c46c7d",
+  "original_closeout_session_sha256": "93cf7c87628c724f29301143895f12f23282bd7b85c9e7dbaea491f13f5e4e87",
+  "original_closeout_files_verified_before_packaging": 2536,
+  "original_closeout_receipts_preserved": true,
+  "post_closeout_document_updates": [
+    "README.md",
+    "HANDOFF.md",
+    "PROJECT_CONTEXT.md",
+    "reports/comparisons/desktopfilter_20261110/findings.md",
+    "docs/REPRODUCING_FILTER_20261110.md"
+  ],
+  "source_archive_scope": "Exact git-archive commit bytes in declared project folders/root files, excluding formal holdout contents and binary weights; this is a portable subset of the commit.",
+  "source_archive_code_commit_equals_tag_target": true,
+  "publication_metadata_commit": "The containing commit of this receipt; deliberately excluded from its own hash cycle.",
+  "publication_time_separate_from_experiment_budget": true,
+  "holdout_model_evaluation_performed": false,
+  "base_model_or_virtual_environment_uploaded": false,
+  "post_publication_original_manifest_unchanged_files": 2531,
+  "post_publication_document_hash_changes": [
+    {
+      "path": "docs/REPRODUCING_FILTER_20261110.md",
+      "prepublication_sha256": "a6c0a33691654fff9ef9d91f68471c6101fddcf71ff5ba9b244f5861e8d1d8b3",
+      "current_sha256": "025b82c4ab52e92f927223aee75f370f13f45466b33012fab40d319e7353f0ef"
+    },
+    {
+      "path": "HANDOFF.md",
+      "prepublication_sha256": "c14cb66cf3ed1f555b5d092d4017cecf3855784b0523eac9bc32747a3f4e3f68",
+      "current_sha256": "e6e56bb25917c573804c609d81bd9b8488e42276a38e0dd4cb8cb68bd6e00dc4"
+    },
+    {
+      "path": "PROJECT_CONTEXT.md",
+      "prepublication_sha256": "2a1eefcaaa94741de2f435b5cad38fe3dac21a412473f0ccb2d5cd7b8da5d291",
+      "current_sha256": "29b704be0961af70c76a105c66d135bc6fd86738527bf84483d671c4af9e9e97"
+    },
+    {
+      "path": "README.md",
+      "prepublication_sha256": "3c0d2471d7f05a45d6b22956d2ba9c88dcf7a4418194d800177a075c9462a3cd",
+      "current_sha256": "d4702b5d6c66394456c5f7c18007050b512036f8c636bd03261448bafb8ce93c"
+    },
+    {
+      "path": "reports/comparisons/desktopfilter_20261110/findings.md",
+      "prepublication_sha256": "81b958e8fb6be21668ca85a2f3abbe03c1c88665b24f11998aafe4ef1f497910",
+      "current_sha256": "e36c949176e680684fd3891a96df372a8818d811526431812260d08c75828e41"
+    }
+  ],
+  "scientific_evidence_unchanged_after_publication": true
+}
