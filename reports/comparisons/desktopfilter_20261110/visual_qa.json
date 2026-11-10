@@ -1,0 +1,7 @@
+{
+  "surface": "Local exported PNGs inspected through view_image",
+  "paired_accuracy": "All three seed shapes/line styles and exact counts visible; S2 baseline present; labels fit",
+  "mechanism_and_cost": "Reviewed percentages/rates/cost means match summary.json; axes start at zero for bars; labels and legends readable",
+  "original_images_preserved": true,
+  "data_modified_for_presentation": false
+}

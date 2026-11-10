@@ -1,0 +1,9 @@
+{
+  "adapter": "checkpoints/desktopfilter_20261110-r1-F-s29",
+  "adapter_sha256": "4b9dda2060f06cb6d46cf8b5ccb7aa07d81e6275f1c32813b59828e0fa9dedad",
+  "split": "validation",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "frozen_plan": null,
+  "thinking": false,
+  "decoding": "greedy"
+}

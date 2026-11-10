@@ -1,0 +1,16 @@
+{
+  "input_embedding": "torch.bfloat16",
+  "output_head": "torch.bfloat16",
+  "lora_dtypes": [
+    "torch.float32"
+  ],
+  "norm_dtypes": [
+    "torch.bfloat16"
+  ],
+  "four_bit_compute_dtypes": [],
+  "is_loaded_in_4bit": false,
+  "attention_implementation": "sdpa",
+  "parameter_devices": [
+    "cuda:0"
+  ]
+}

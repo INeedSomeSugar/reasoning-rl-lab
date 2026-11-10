@@ -1,0 +1,23 @@
+{
+  "registered_unix": 1794305371.5401542,
+  "event": "Interactive turn was aborted; first owned controller/session no longer exists and no Python process remained at verification",
+  "original_partial_run": "desktopfilter_20261110-U-s13",
+  "original_log": "logs/desktopfilter_20261110-U-s13.log",
+  "completed_optimizer_steps_observed": 136,
+  "saved_endpoint_checkpoint": false,
+  "original_process_start_unix": 1794302033.9995804,
+  "last_observed_event_unix": 1794302864.4541671,
+  "first_confirmed_absent_unix": 1794305167.0,
+  "failed_attempt_observed_minimum_seconds": 830.4545867443085,
+  "failed_attempt_conservative_upper_bound_seconds": 3133.000419616699,
+  "exit_time_and_exact_process_duration_known": false,
+  "cost_policy": "Retain failed attempt and its observed/upper-bound interval in campaign cost; do not call its partial weights a valid endpoint. All completed U/F endpoints retain the same frozen allocation. Report operational campaign cost separately from matched successful-endpoint cost.",
+  "recovery": "Same frozen controller, same configs/data/subset/S2/budgets/order, new artifact prefix r1; no completed main score was observed or selected",
+  "whole_session_deadline_changed": false,
+  "frozen_source_changed": false,
+  "observed_failed_attempt_completions": 544,
+  "observed_failed_attempt_generated_tokens": 80926,
+  "unlogged_inflight_generation_group_possible": true,
+  "unlogged_generation_token_upper_bound_from_one_G4_group": 2048,
+  "token_scope": "Observed completed outputs only; possible final in-flight generation was not persisted, do not claim an exact whole-attempt generated-token total"
+}

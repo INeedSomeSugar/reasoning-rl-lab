@@ -1,0 +1,40 @@
+{
+  "os": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "ram_total_bytes": 24817418240,
+  "ram_available_bytes": 10623385600,
+  "versions": {
+    "torch": "2.13.0+rocm10.0.0",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "trl": "0.23.1",
+    "accelerate": "1.10.1",
+    "datasets": "4.1.1",
+    "bitsandbytes": null,
+    "numpy": "2.2.6"
+  },
+  "torch_cuda": null,
+  "torch_hip": "7.15.26333",
+  "cuda_available": true,
+  "gpus": [
+    {
+      "index": 0,
+      "name": "AMD Radeon RX 9070 XT",
+      "total_bytes": 17095983104,
+      "free_bytes": 16937582592,
+      "compute_capability": [
+        12,
+        0
+      ]
+    }
+  ],
+  "diagnostic_flags": {
+    "CUDA_LAUNCH_BLOCKING": null,
+    "PYTORCH_NO_CUDA_MEMORY_CACHING": null,
+    "HIP_VISIBLE_DEVICES": "0",
+    "CUDA_VISIBLE_DEVICES": null
+  },
+  "gpu_backend": "ROCm",
+  "rx9070xt_access": "local device detected by PyTorch; training capability requires separate validation",
+  "nvidia_smi": null
+}

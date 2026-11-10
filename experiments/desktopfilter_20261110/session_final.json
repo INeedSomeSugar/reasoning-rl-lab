@@ -1,0 +1,20 @@
+{
+  "family": "desktopfilter_20261110",
+  "status": "completed_three_paired_seed_development_and_handoff",
+  "model_finished_unix": 1794314256.4253225,
+  "model_finished_beijing": "2026-11-10T20:37:36.425323+08:00",
+  "handoff_finished_unix": 1794314859.4901352,
+  "handoff_finished_beijing": "2026-11-10T20:47:39.490135+08:00",
+  "wall_through_models_seconds": 13362.790499448776,
+  "wall_through_handoff_seconds": 13965.855312108994,
+  "max_session_seconds": 14400,
+  "model_tasks_within_original_deadline": true,
+  "handoff_manifest_sha256": "47c4f1e1876119d13261f82564a5a0767751841b28c75a103deecd5bf6c46c7d",
+  "manifest_file_count": 2536,
+  "common_start_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "holdout_opened": false,
+  "cloud_gpu_used": false,
+  "paid_api_used": false,
+  "resume_note": "Original interrupted136-step attempt preserved, six completed endpoints use r1 names with original frozen parameters and budgets",
+  "git_publication": "Not performed; local changes and artifacts are reviewable"
+}

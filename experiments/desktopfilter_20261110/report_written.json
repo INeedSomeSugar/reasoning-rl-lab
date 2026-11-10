@@ -1,0 +1,14 @@
+{
+  "written_unix": 1794314633.5636134,
+  "report_sha256": "81b958e8fb6be21668ca85a2f3abbe03c1c88665b24f11998aafe4ef1f497910",
+  "reviewed_interpretation_sha256": "b96fe2c7bca8a19ef6cf3182411de638c5209617fc1b649cfccf903b6a623bc7",
+  "files": [
+    "HANDOFF.md",
+    "PROJECT_CONTEXT.md",
+    "README.md",
+    "reports\\comparisons\\desktopfilter_20261110\\findings.md"
+  ],
+  "initial_report_sha256": "7285be3b3820f83eac492c7a27f7dfcf585e0ff9c86d09db35670018202ad71d",
+  "editorial_review_unix": 1794314776.528962,
+  "editorial_note": "Exact paired mean shown to4 decimals and sentence punctuation completed; no data/scoring/model changes"
+}

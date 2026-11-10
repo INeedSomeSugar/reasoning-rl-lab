@@ -1,0 +1,6 @@
+{
+  "compared_completions": 544,
+  "matched_prefix_completions": 544,
+  "mismatch_indices": [],
+  "scope": "All544 interrupted rollout completions versus fresh same-S2 same-seed recovery prefix; same-machine prefix only, not equal-step endpoint performance"
+}

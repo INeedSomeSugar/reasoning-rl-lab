@@ -1,0 +1,67 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.41s/it]
+probe 1/64 gsm8k-train-01954 successes=4/4
+probe 2/64 gsm8k-train-01408 successes=0/4
+probe 3/64 gsm8k-train-00597 successes=0/4
+probe 4/64 gsm8k-train-00154 successes=4/4
+probe 5/64 gsm8k-train-00174 successes=4/4
+probe 6/64 gsm8k-train-04291 successes=4/4
+probe 7/64 gsm8k-train-00638 successes=0/4
+probe 8/64 gsm8k-train-03208 successes=4/4
+probe 9/64 gsm8k-train-03888 successes=4/4
+probe 10/64 gsm8k-train-06843 successes=4/4
+probe 11/64 gsm8k-train-06341 successes=0/4
+probe 12/64 gsm8k-train-03914 successes=1/4
+probe 13/64 gsm8k-train-05111 successes=4/4
+probe 14/64 gsm8k-train-06535 successes=3/4
+probe 15/64 gsm8k-train-04918 successes=4/4
+probe 16/64 gsm8k-train-04443 successes=4/4
+probe 17/64 gsm8k-train-02543 successes=1/4
+probe 18/64 gsm8k-train-06478 successes=1/4
+probe 19/64 gsm8k-train-03295 successes=2/4
+probe 20/64 gsm8k-train-06200 successes=4/4
+probe 21/64 gsm8k-train-07107 successes=4/4
+probe 22/64 gsm8k-train-03223 successes=3/4
+probe 23/64 gsm8k-train-07247 successes=4/4
+probe 24/64 gsm8k-train-05497 successes=3/4
+probe 25/64 gsm8k-train-00753 successes=4/4
+probe 26/64 gsm8k-train-07359 successes=4/4
+probe 27/64 gsm8k-train-04025 successes=4/4
+probe 28/64 gsm8k-train-06441 successes=4/4
+probe 29/64 gsm8k-train-05819 successes=4/4
+probe 30/64 gsm8k-train-06413 successes=2/4
+probe 31/64 gsm8k-train-06648 successes=4/4
+probe 32/64 gsm8k-train-06711 successes=4/4
+probe 33/64 gsm8k-train-05029 successes=4/4
+probe 34/64 gsm8k-train-04452 successes=4/4
+probe 35/64 gsm8k-train-06754 successes=4/4
+probe 36/64 gsm8k-train-02323 successes=4/4
+probe 37/64 gsm8k-train-00935 successes=4/4
+probe 38/64 gsm8k-train-02359 successes=3/4
+probe 39/64 gsm8k-train-01897 successes=4/4
+probe 40/64 gsm8k-train-01498 successes=4/4
+probe 41/64 gsm8k-train-06078 successes=4/4
+probe 42/64 gsm8k-train-00209 successes=4/4
+probe 43/64 gsm8k-train-03506 successes=1/4
+probe 44/64 gsm8k-train-05733 successes=4/4
+probe 45/64 gsm8k-train-00171 successes=3/4
+probe 46/64 gsm8k-train-01984 successes=4/4
+probe 47/64 gsm8k-train-04930 successes=0/4
+probe 48/64 gsm8k-train-01890 successes=4/4
+probe 49/64 gsm8k-train-01545 successes=4/4
+probe 50/64 gsm8k-train-06906 successes=0/4
+probe 51/64 gsm8k-train-02721 successes=3/4
+probe 52/64 gsm8k-train-03114 successes=4/4
+probe 53/64 gsm8k-train-00454 successes=0/4
+probe 54/64 gsm8k-train-01695 successes=3/4
+probe 55/64 gsm8k-train-05616 successes=1/4
+probe 56/64 gsm8k-train-06831 successes=2/4
+probe 57/64 gsm8k-train-02169 successes=4/4
+probe 58/64 gsm8k-train-06290 successes=4/4
+probe 59/64 gsm8k-train-02278 successes=0/4
+probe 60/64 gsm8k-train-02013 successes=4/4
+probe 61/64 gsm8k-train-03429 successes=3/4
+probe 62/64 gsm8k-train-04697 successes=4/4
+probe 63/64 gsm8k-train-06011 successes=4/4
+probe 64/64 gsm8k-train-04212 successes=4/4
+{"items": 64, "retained": 16, "histogram": {"0": 8, "1": 5, "2": 3, "3": 8, "4": 40}}

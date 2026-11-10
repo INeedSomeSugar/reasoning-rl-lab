@@ -1,0 +1,231 @@
+{
+  "family": "desktopfilter_20261110",
+  "status": "frozen_development_only",
+  "frozen_utc": "2026-11-10T09:13:53.680045+00:00",
+  "common_start": "checkpoints/desktoprepair_20261106_152712-S2",
+  "common_start_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "model_spec": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "training_stage": "pretraining and post-training; NOT Base",
+    "license": "Apache-2.0"
+  },
+  "prompt_version": "math_numeric_v2",
+  "scorer_version": "numeric_final_v2",
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "candidate_pool_path": "experiments/desktopfilter_20261110/candidate_pool.json",
+  "candidate_pool_sha256": "5620f44ad3a103deda21f1454f4009d6497ab89e64f41ea3fdb637d5b3e1300e",
+  "candidate_pool_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-00638",
+    "gsm8k-train-03208",
+    "gsm8k-train-03888",
+    "gsm8k-train-06843",
+    "gsm8k-train-06341",
+    "gsm8k-train-03914",
+    "gsm8k-train-05111",
+    "gsm8k-train-06535",
+    "gsm8k-train-04918",
+    "gsm8k-train-04443",
+    "gsm8k-train-02543",
+    "gsm8k-train-06478",
+    "gsm8k-train-03295",
+    "gsm8k-train-06200",
+    "gsm8k-train-07107",
+    "gsm8k-train-03223",
+    "gsm8k-train-07247",
+    "gsm8k-train-05497",
+    "gsm8k-train-00753",
+    "gsm8k-train-07359",
+    "gsm8k-train-04025",
+    "gsm8k-train-06441",
+    "gsm8k-train-05819",
+    "gsm8k-train-06413",
+    "gsm8k-train-06648",
+    "gsm8k-train-06711",
+    "gsm8k-train-05029",
+    "gsm8k-train-04452",
+    "gsm8k-train-06754",
+    "gsm8k-train-02323",
+    "gsm8k-train-00935",
+    "gsm8k-train-02359",
+    "gsm8k-train-01897",
+    "gsm8k-train-01498",
+    "gsm8k-train-06078",
+    "gsm8k-train-00209",
+    "gsm8k-train-03506",
+    "gsm8k-train-05733",
+    "gsm8k-train-00171",
+    "gsm8k-train-01984",
+    "gsm8k-train-04930",
+    "gsm8k-train-01890",
+    "gsm8k-train-01545",
+    "gsm8k-train-06906",
+    "gsm8k-train-02721",
+    "gsm8k-train-03114",
+    "gsm8k-train-00454",
+    "gsm8k-train-01695",
+    "gsm8k-train-05616",
+    "gsm8k-train-06831",
+    "gsm8k-train-02169",
+    "gsm8k-train-06290",
+    "gsm8k-train-02278",
+    "gsm8k-train-02013",
+    "gsm8k-train-03429",
+    "gsm8k-train-04697",
+    "gsm8k-train-06011",
+    "gsm8k-train-04212"
+  ],
+  "prefilter_manifest_sha256": "ae6c1cf7c86c8e97405100a6cdcc8af70cd075db4c3a854218973228822a1c35",
+  "retained_ids": [
+    "gsm8k-train-03914",
+    "gsm8k-train-06535",
+    "gsm8k-train-02543",
+    "gsm8k-train-06478",
+    "gsm8k-train-03295",
+    "gsm8k-train-03223",
+    "gsm8k-train-05497",
+    "gsm8k-train-06413",
+    "gsm8k-train-02359",
+    "gsm8k-train-03506",
+    "gsm8k-train-00171",
+    "gsm8k-train-02721",
+    "gsm8k-train-01695",
+    "gsm8k-train-05616",
+    "gsm8k-train-06831",
+    "gsm8k-train-03429"
+  ],
+  "development_ids_sha256": "c69c4f50563216f9e2f49409f2aa7489f46541b21fec94157ee0c3d9a0196869",
+  "development_scope": "Previously used confirmation128 reused as DEVELOPMENT; no independent test claim or subsequent tuning",
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "order": [
+    [
+      13,
+      "U"
+    ],
+    [
+      13,
+      "F"
+    ],
+    [
+      29,
+      "F"
+    ],
+    [
+      29,
+      "U"
+    ],
+    [
+      47,
+      "U"
+    ],
+    [
+      47,
+      "F"
+    ]
+  ],
+  "configs": {
+    "U-s13": {
+      "path": "configs\\desktopfilter_20261110_U_s13.yaml",
+      "sha256": "3ef519265ab980fa40ed3bdfc4e2bcdde4c41577cc693177e5038d520467031d"
+    },
+    "F-s13": {
+      "path": "configs\\desktopfilter_20261110_F_s13.yaml",
+      "sha256": "e483f13abd2f8bd26b3143999fe47560504b6f6ccfbb28151e6b3211e27daf40"
+    },
+    "U-s29": {
+      "path": "configs\\desktopfilter_20261110_U_s29.yaml",
+      "sha256": "c50063e84871a10fccf70c8c4e4615044997a9d5d294d8e835910f02e9878ded"
+    },
+    "F-s29": {
+      "path": "configs\\desktopfilter_20261110_F_s29.yaml",
+      "sha256": "4e73b3b7b929588b61478182037f31f02e27ac02082ba9dfa0640a5284153f3b"
+    },
+    "U-s47": {
+      "path": "configs\\desktopfilter_20261110_U_s47.yaml",
+      "sha256": "609944b3e0cbc8cc1d7b16d45ea8f84689688d1d065d24cd83e11efecddc3d87"
+    },
+    "F-s47": {
+      "path": "configs\\desktopfilter_20261110_F_s47.yaml",
+      "sha256": "5feb42bb68894545500bdc813cd96b5fff7d7bbc6ea38cd3d0f183433a4b74af"
+    }
+  },
+  "code_sha256": "1baeb1b6d72b68cad749dc1e69f4f35de2510bd24e3e80b1849d3c15dfb2793a",
+  "frozen_source_manifest_sha256": "42cc6bcab04401dbdfe4c33ae4562c62ca33601db8a496cbbc2a08c024fce3fe",
+  "budget": {
+    "frozen_utc": "2026-11-10T09:07:37.592680+00:00",
+    "remaining_session_seconds_at_decision": 13636.04814529419,
+    "calibration_eval_process_seconds": 478.5653223991394,
+    "evaluation_reserve_seconds": 570,
+    "probe_calibration_process_seconds": 84.22478914260864,
+    "probe_calibration_generation_seconds": 73.08489570000006,
+    "estimated_probe_seconds_per_item": 5.709757476562505,
+    "estimated_probe_setup_seconds": 11.139893442608582,
+    "evaluated_choices": [
+      {
+        "train_allocation_seconds": 1500,
+        "candidate_pool_size": 96,
+        "estimated_probe_process_seconds": 559.276611192609,
+        "conservative_whole_session_seconds_needed": 13939.276611192608,
+        "fits_remaining": false
+      },
+      {
+        "train_allocation_seconds": 1200,
+        "candidate_pool_size": 64,
+        "estimated_probe_process_seconds": 376.5643719426089,
+        "conservative_whole_session_seconds_needed": 11956.56437194261,
+        "fits_remaining": true
+      },
+      {
+        "train_allocation_seconds": 900,
+        "candidate_pool_size": 64,
+        "estimated_probe_process_seconds": 376.5643719426089,
+        "conservative_whole_session_seconds_needed": 10156.56437194261,
+        "fits_remaining": true
+      }
+    ],
+    "selected": {
+      "train_allocation_seconds": 1200,
+      "candidate_pool_size": 64,
+      "estimated_probe_process_seconds": 376.5643719426089,
+      "conservative_whole_session_seconds_needed": 11956.56437194261,
+      "fits_remaining": true
+    },
+    "end_to_end_common_cap_seconds": 1830,
+    "candidate_pool_sha256": "5620f44ad3a103deda21f1454f4009d6497ab89e64f41ea3fdb637d5b3e1300e",
+    "basis": "Timing only. Baseline development accuracy and calibration reward histogram do not select capacity."
+  },
+  "probe_cost": {
+    "physical_one_time_seconds": 292.8328413963318,
+    "primary_standalone_debit_per_F_endpoint_seconds": 292.8328413963318,
+    "secondary_amortized_debit_per_F_endpoint_seconds": 97.6109471321106,
+    "F_endpoint_count": 3,
+    "never_free": true
+  },
+  "only_intervention": "Full fixed train candidate pool uniform versus fixed-S2 raw-K4 mixed-success subset uniform. Shared LR/model/reward/optimizer/group size/temperature and budget. No dynamic resampling.",
+  "evaluation": "All six checkpoints fixed before any main endpoint score. Independent fresh-process reload, same frozen128 IDs, greedy, max512, no training after evaluation.",
+  "primary_measures": [
+    "paired F-U accuracy difference at fixed end-to-end cap",
+    "effective nonzero-advantage unmasked completions / charged end-to-end second",
+    "nonzero-gradient steps / charged end-to-end second"
+  ],
+  "cost_scope": "Training process includes startup/loading/cache verification/sampling/optimization/saving; independent evaluation process includes its startup/loading/generation/saving. F additionally debited full probe process. Nonoverlapping elapsed totals, tokens separate.",
+  "stop_rule": "Complete current atomic rollout/update, save then stop; report natural-boundary overshoot and unused evaluation reserve; outer endpoint common cap enforced by parent.",
+  "no_best_seed_selection": true,
+  "no_formal_holdout": true,
+  "limitations": [
+    "Single fixed probe seed and candidate pool",
+    "Only three training seeds",
+    "Already-used development128",
+    "Exact bitwise reproducibility across GPU kernels not claimed"
+  ]
+}

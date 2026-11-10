@@ -1,0 +1,128 @@
+[
+  {
+    "label": "U-s13",
+    "flagged_id": "gsm8k-train-06831",
+    "flagged_item": {
+      "groups": 5,
+      "mixed_groups": 2,
+      "mixed_group_fraction": 0.4,
+      "zero_variance_group_fraction": 0.6,
+      "training_stochastic_success_fraction": 0.9,
+      "effective_advantage_completions": 7
+    },
+    "remaining_items_postfreeze_descriptive_only": {
+      "groups": 220,
+      "mixed_groups": 42,
+      "mixed_group_fraction": 0.19090909090909092,
+      "zero_variance_group_fraction": 0.8090909090909091,
+      "training_stochastic_success_fraction": 0.8045454545454546,
+      "effective_advantage_completions": 166
+    },
+    "primary_protocol_and_all_outcomes_still_include_flagged_item": true
+  },
+  {
+    "label": "F-s13",
+    "flagged_id": "gsm8k-train-06831",
+    "flagged_item": {
+      "groups": 3,
+      "mixed_groups": 2,
+      "mixed_group_fraction": 0.6666666666666666,
+      "zero_variance_group_fraction": 0.33333333333333337,
+      "training_stochastic_success_fraction": 0.8333333333333334,
+      "effective_advantage_completions": 7
+    },
+    "remaining_items_postfreeze_descriptive_only": {
+      "groups": 142,
+      "mixed_groups": 67,
+      "mixed_group_fraction": 0.47183098591549294,
+      "zero_variance_group_fraction": 0.528169014084507,
+      "training_stochastic_success_fraction": 0.6690140845070423,
+      "effective_advantage_completions": 267
+    },
+    "primary_protocol_and_all_outcomes_still_include_flagged_item": true
+  },
+  {
+    "label": "F-s29",
+    "flagged_id": "gsm8k-train-06831",
+    "flagged_item": {
+      "groups": 11,
+      "mixed_groups": 7,
+      "mixed_group_fraction": 0.6363636363636364,
+      "zero_variance_group_fraction": 0.36363636363636365,
+      "training_stochastic_success_fraction": 0.8181818181818182,
+      "effective_advantage_completions": 25
+    },
+    "remaining_items_postfreeze_descriptive_only": {
+      "groups": 132,
+      "mixed_groups": 60,
+      "mixed_group_fraction": 0.45454545454545453,
+      "zero_variance_group_fraction": 0.5454545454545454,
+      "training_stochastic_success_fraction": 0.7045454545454546,
+      "effective_advantage_completions": 239
+    },
+    "primary_protocol_and_all_outcomes_still_include_flagged_item": true
+  },
+  {
+    "label": "U-s29",
+    "flagged_id": "gsm8k-train-06831",
+    "flagged_item": {
+      "groups": 4,
+      "mixed_groups": 3,
+      "mixed_group_fraction": 0.75,
+      "zero_variance_group_fraction": 0.25,
+      "training_stochastic_success_fraction": 0.75,
+      "effective_advantage_completions": 12
+    },
+    "remaining_items_postfreeze_descriptive_only": {
+      "groups": 216,
+      "mixed_groups": 36,
+      "mixed_group_fraction": 0.16666666666666666,
+      "zero_variance_group_fraction": 0.8333333333333334,
+      "training_stochastic_success_fraction": 0.8043981481481481,
+      "effective_advantage_completions": 143
+    },
+    "primary_protocol_and_all_outcomes_still_include_flagged_item": true
+  },
+  {
+    "label": "U-s47",
+    "flagged_id": "gsm8k-train-06831",
+    "flagged_item": {
+      "groups": 4,
+      "mixed_groups": 2,
+      "mixed_group_fraction": 0.5,
+      "zero_variance_group_fraction": 0.5,
+      "training_stochastic_success_fraction": 0.875,
+      "effective_advantage_completions": 7
+    },
+    "remaining_items_postfreeze_descriptive_only": {
+      "groups": 218,
+      "mixed_groups": 41,
+      "mixed_group_fraction": 0.18807339449541285,
+      "zero_variance_group_fraction": 0.8119266055045872,
+      "training_stochastic_success_fraction": 0.7786697247706422,
+      "effective_advantage_completions": 163
+    },
+    "primary_protocol_and_all_outcomes_still_include_flagged_item": true
+  },
+  {
+    "label": "F-s47",
+    "flagged_id": "gsm8k-train-06831",
+    "flagged_item": {
+      "groups": 11,
+      "mixed_groups": 6,
+      "mixed_group_fraction": 0.5454545454545454,
+      "zero_variance_group_fraction": 0.4545454545454546,
+      "training_stochastic_success_fraction": 0.7954545454545454,
+      "effective_advantage_completions": 22
+    },
+    "remaining_items_postfreeze_descriptive_only": {
+      "groups": 154,
+      "mixed_groups": 76,
+      "mixed_group_fraction": 0.4935064935064935,
+      "zero_variance_group_fraction": 0.5064935064935066,
+      "training_stochastic_success_fraction": 0.7012987012987013,
+      "effective_advantage_completions": 304
+    },
+    "primary_protocol_and_all_outcomes_still_include_flagged_item": true
+  }
+]

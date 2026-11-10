@@ -1,0 +1,6 @@
+{
+  "n": 128,
+  "mismatch_indices": [],
+  "same_fixed_S2_same_development_ids": true,
+  "scope": "Historical S2 confirmation128 was already development; same output is not new generalization evidence"
+}

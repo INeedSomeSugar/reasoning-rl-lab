@@ -1,0 +1,67 @@
+{
+  "fixed_unix": 1794311763.7355824,
+  "before_any_main_endpoint_evaluation": true,
+  "endpoints": {
+    "U-s13": {
+      "arm": "U",
+      "seed": 13,
+      "training_run": "desktopfilter_20261110-r1-U-s13",
+      "config": "configs\\desktopfilter_20261110_U_s13.yaml",
+      "checkpoint_sha256": "809e94d2f3d6085e636d24200c560ed8cae3d0a8ebeb1f5c5a6a3987ad2106eb",
+      "training_process_seconds": 1209.7816269397736,
+      "initial_probe_standalone_debit_seconds": 0.0,
+      "parent_preparation_and_training_audit_seconds": 0.16532399999960035
+    },
+    "F-s13": {
+      "arm": "F",
+      "seed": 13,
+      "training_run": "desktopfilter_20261110-r1-F-s13",
+      "config": "configs\\desktopfilter_20261110_F_s13.yaml",
+      "checkpoint_sha256": "00483b520b722e656c2b461ad3eff1135df7ae7e1c1e1f5325effdd2faad81b9",
+      "training_process_seconds": 917.9195659160614,
+      "initial_probe_standalone_debit_seconds": 292.8328413963318,
+      "parent_preparation_and_training_audit_seconds": 0.16984530000081577
+    },
+    "F-s29": {
+      "arm": "F",
+      "seed": 29,
+      "training_run": "desktopfilter_20261110-r1-F-s29",
+      "config": "configs\\desktopfilter_20261110_F_s29.yaml",
+      "checkpoint_sha256": "4b9dda2060f06cb6d46cf8b5ccb7aa07d81e6275f1c32813b59828e0fa9dedad",
+      "training_process_seconds": 928.2319774627686,
+      "initial_probe_standalone_debit_seconds": 292.8328413963318,
+      "parent_preparation_and_training_audit_seconds": 0.5275752999996257
+    },
+    "U-s29": {
+      "arm": "U",
+      "seed": 29,
+      "training_run": "desktopfilter_20261110-r1-U-s29",
+      "config": "configs\\desktopfilter_20261110_U_s29.yaml",
+      "checkpoint_sha256": "ccbd2faf27fd73b693e817042b6d1e827043db7dc4842567d188948e0a3d23b4",
+      "training_process_seconds": 1207.7418322563171,
+      "initial_probe_standalone_debit_seconds": 0.0,
+      "parent_preparation_and_training_audit_seconds": 0.16460089999964111
+    },
+    "U-s47": {
+      "arm": "U",
+      "seed": 47,
+      "training_run": "desktopfilter_20261110-r1-U-s47",
+      "config": "configs\\desktopfilter_20261110_U_s47.yaml",
+      "checkpoint_sha256": "3d937cc6b37e44329176d3fa3a0c4bc96f735f05a2d97d56593c592a21e1d8f3",
+      "training_process_seconds": 1209.2627708911896,
+      "initial_probe_standalone_debit_seconds": 0.0,
+      "parent_preparation_and_training_audit_seconds": 0.16370119999919552
+    },
+    "F-s47": {
+      "arm": "F",
+      "seed": 47,
+      "training_run": "desktopfilter_20261110-r1-F-s47",
+      "config": "configs\\desktopfilter_20261110_F_s47.yaml",
+      "checkpoint_sha256": "da0520f442fe5904a349ed4788600f61d2f77ef082d8710e97763fbd33d6b962",
+      "training_process_seconds": 917.6957914829254,
+      "initial_probe_standalone_debit_seconds": 292.8328413963318,
+      "parent_preparation_and_training_audit_seconds": 0.16221500000028755
+    }
+  },
+  "protocol_sha256": "61378893d5d42faec0d0cbdcf550778fcaa76fccff696a94f5ccc3c3946ead25"
+}

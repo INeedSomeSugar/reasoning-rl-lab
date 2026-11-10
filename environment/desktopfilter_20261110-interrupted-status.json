@@ -1,0 +1,8 @@
+{
+  "status": "running_training",
+  "started_unix": 1794302033.8613899,
+  "completed_training": [],
+  "completed_evaluation": [],
+  "holdout_opened": false,
+  "phase": "U-s13"
+}

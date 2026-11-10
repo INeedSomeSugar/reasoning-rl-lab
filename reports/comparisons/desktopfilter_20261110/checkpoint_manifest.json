@@ -1,0 +1,50 @@
+[
+  {
+    "label": "U-s13",
+    "checkpoint": "checkpoints\\desktopfilter_20261110-r1-U-s13",
+    "checkpoint_sha256": "809e94d2f3d6085e636d24200c560ed8cae3d0a8ebeb1f5c5a6a3987ad2106eb",
+    "optimizer_diagnostic_state_sha256": "94f1a86aeb837b0cbf31ae8a573e60f810096fd8cc7a55baca781892e4a73831",
+    "optimizer_diagnostic_state_bytes": 12951523,
+    "exact_resume_supported": false
+  },
+  {
+    "label": "F-s13",
+    "checkpoint": "checkpoints\\desktopfilter_20261110-r1-F-s13",
+    "checkpoint_sha256": "00483b520b722e656c2b461ad3eff1135df7ae7e1c1e1f5325effdd2faad81b9",
+    "optimizer_diagnostic_state_sha256": "bf38a73e01263c0b63e19e397432eb8d06e1672776edc56c95baea55a28f5a5d",
+    "optimizer_diagnostic_state_bytes": 12951523,
+    "exact_resume_supported": false
+  },
+  {
+    "label": "F-s29",
+    "checkpoint": "checkpoints\\desktopfilter_20261110-r1-F-s29",
+    "checkpoint_sha256": "4b9dda2060f06cb6d46cf8b5ccb7aa07d81e6275f1c32813b59828e0fa9dedad",
+    "optimizer_diagnostic_state_sha256": "e43d71ef3f4901acd40f2467ef8cd009edf5c7af4d4a60b73785f3eff79162c6",
+    "optimizer_diagnostic_state_bytes": 12951523,
+    "exact_resume_supported": false
+  },
+  {
+    "label": "U-s29",
+    "checkpoint": "checkpoints\\desktopfilter_20261110-r1-U-s29",
+    "checkpoint_sha256": "ccbd2faf27fd73b693e817042b6d1e827043db7dc4842567d188948e0a3d23b4",
+    "optimizer_diagnostic_state_sha256": "d0558cd7d511b5f1110e9a17de7486e4002b12c9830549a8ae7c2a3e5193b07b",
+    "optimizer_diagnostic_state_bytes": 12951523,
+    "exact_resume_supported": false
+  },
+  {
+    "label": "U-s47",
+    "checkpoint": "checkpoints\\desktopfilter_20261110-r1-U-s47",
+    "checkpoint_sha256": "3d937cc6b37e44329176d3fa3a0c4bc96f735f05a2d97d56593c592a21e1d8f3",
+    "optimizer_diagnostic_state_sha256": "5fdae1d43297120b749a61b0316b1aca09ef94f8ae936d822fba1e84db28e75d",
+    "optimizer_diagnostic_state_bytes": 12951523,
+    "exact_resume_supported": false
+  },
+  {
+    "label": "F-s47",
+    "checkpoint": "checkpoints\\desktopfilter_20261110-r1-F-s47",
+    "checkpoint_sha256": "da0520f442fe5904a349ed4788600f61d2f77ef082d8710e97763fbd33d6b962",
+    "optimizer_diagnostic_state_sha256": "69fcd1940cd1cd8f53914837a365cf7fce4586a51bbb90480dc521cf5e0f0e02",
+    "optimizer_diagnostic_state_bytes": 12951523,
+    "exact_resume_supported": false
+  }
+]

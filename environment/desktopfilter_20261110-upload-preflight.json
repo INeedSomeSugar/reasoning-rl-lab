@@ -1,0 +1,14 @@
+{
+  "family": "desktopfilter_20261110",
+  "verified_utc": "2026-11-10T13:27:16.506387+00:00",
+  "original_manifest_sha256": "47c4f1e1876119d13261f82564a5a0767751841b28c75a103deecd5bf6c46c7d",
+  "original_manifest_file_count_verified": 2536,
+  "original_manifest_mismatches": [],
+  "frozen_source_data_common_start_verified": true,
+  "checkpoint_manifest": "migration/desktopfilter_20261110_CHECKPOINTS_MANIFEST.json",
+  "checkpoint_manifest_sha256": "943d0a216724a18c7a4cbb636785d9e777dcd16cfe73fcbbc4d2ad484c411c5a",
+  "release_tag": "fixed-prefilter-dev-20261110",
+  "publication_does_not_change_experiment_runtime_or_predictions": true,
+  "no_model_execution": true,
+  "holdout_read_for_evaluation": false
+}

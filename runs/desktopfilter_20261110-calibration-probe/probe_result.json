@@ -1,0 +1,56 @@
+{
+  "candidate_ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-00638",
+    "gsm8k-train-03208",
+    "gsm8k-train-03888",
+    "gsm8k-train-06843",
+    "gsm8k-train-06341",
+    "gsm8k-train-03914",
+    "gsm8k-train-05111",
+    "gsm8k-train-06535",
+    "gsm8k-train-04918",
+    "gsm8k-train-04443"
+  ],
+  "retained_ids": [
+    "gsm8k-train-03914",
+    "gsm8k-train-06535"
+  ],
+  "raw_success_counts": {
+    "gsm8k-train-01954": 4,
+    "gsm8k-train-01408": 0,
+    "gsm8k-train-00597": 0,
+    "gsm8k-train-00154": 4,
+    "gsm8k-train-00174": 4,
+    "gsm8k-train-04291": 4,
+    "gsm8k-train-00638": 0,
+    "gsm8k-train-03208": 4,
+    "gsm8k-train-03888": 4,
+    "gsm8k-train-06843": 4,
+    "gsm8k-train-06341": 0,
+    "gsm8k-train-03914": 1,
+    "gsm8k-train-05111": 4,
+    "gsm8k-train-06535": 3,
+    "gsm8k-train-04918": 4,
+    "gsm8k-train-04443": 4
+  },
+  "raw_success_histogram": {
+    "0": 4,
+    "1": 1,
+    "3": 1,
+    "4": 10
+  },
+  "probe_seed": 20261110,
+  "k": 4,
+  "s2_checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "generated_tokens": 8652,
+  "prompt_tokens": 6560,
+  "parse_failures": 1,
+  "truncations": 0,
+  "data_scope": "train only; these stochastic rates are distinct from development greedy accuracy"
+}

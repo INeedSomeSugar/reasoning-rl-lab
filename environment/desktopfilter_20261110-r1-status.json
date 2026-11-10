@@ -1,0 +1,23 @@
+{
+  "status": "completed_three_paired_seed_development",
+  "started_unix": 1794305371.6910799,
+  "completed_training": [
+    "U-s13",
+    "F-s13",
+    "F-s29",
+    "U-s29",
+    "U-s47",
+    "F-s47"
+  ],
+  "completed_evaluation": [
+    "U-s13",
+    "F-s13",
+    "F-s29",
+    "U-s29",
+    "U-s47",
+    "F-s47"
+  ],
+  "holdout_opened": false,
+  "phase": "F-s47-development",
+  "finished_unix": 1794314256.4253225
+}

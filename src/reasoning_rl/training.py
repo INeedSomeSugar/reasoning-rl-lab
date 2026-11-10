@@ -1,5 +1,6 @@
 """Transformers SFT and TRL GRPO, with explicit masks and instrumented selection."""
 import gc
+import hashlib
 import json
 import math
 import time
@@ -10,6 +11,7 @@ from .data import load_split
 from .evaluation import evaluate_rows, generate_one, validation_rows
 from .scoring import score_answer, group_advantages
 from .sampling import DifficultySampler, RolloutCacheSampler
+from .prefiltering import resolve_frozen_pool, remaining_training_seconds
 
 
 def _snapshot_trainable(model):
@@ -271,16 +273,29 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
     if public_start and any(torch.count_nonzero(p).item() for n,p in model.named_parameters() if "lora_B" in n):
         raise ValueError("Public-model initialization requires actual zero-output LoRA weights")
     loader_precision = precision_snapshot(model)
-    offset = opts.get("pool_offset", 0)
-    pool = load_split("train", "select", limit=offset+opts["pool_size"], seed=config["data_seed"])[offset:]
-    candidate_pool_ids = [r["id"] for r in pool]
-    pool = _exclude_training_items(pool, opts.get("excluded_train_ids", []))
+    initial_hash = checkpoint_hash(sft_checkpoint)
+    probe_cost_debit, probe_cost_evidence = 0.0, None
+    if opts.get("candidate_pool_path"):
+        if strategy != "uniform":
+            raise ValueError("Frozen prefilter experiment only permits uniform sampling")
+        pool, candidate_pool_ids, probe_cost_debit, probe_cost_evidence = resolve_frozen_pool(
+            opts, load_split("train", "select", seed=config["data_seed"]), initial_hash)
+        if {r["id"] for r in pool} & set(opts.get("excluded_train_ids", [])):
+            raise ValueError("Flagged training item in frozen pool")
+    else:
+        offset = opts.get("pool_offset", 0)
+        pool = load_split("train", "select", limit=offset+opts["pool_size"], seed=config["data_seed"])[offset:]
+        candidate_pool_ids = [r["id"] for r in pool]
+        pool = _exclude_training_items(pool, opts.get("excluded_train_ids", []))
     if opts.get("require_disjoint_from_sft", False):
         if set(source_meta["training_ids"]) & {r["id"] for r in pool}:
             raise ValueError("This protocol declares disjoint SFT and GRPO train pools")
     # Reject overlong prompts before any arm starts; use precisely the same IDs in all arms.
+    prior_pool_size = len(pool)
     pool = [r for r in pool if len(tokenizer.encode(render_prompt(tokenizer, r["question"]), add_special_tokens=False))
             <= config["generation"]["max_prompt_length"]]
+    if opts.get("candidate_pool_path") and len(pool) != prior_pool_size:
+        raise ValueError("Frozen pool changed due to an overlong prompt")
     if not pool:
         raise ValueError("Empty GRPO pool")
     by_id = {r["id"]: {"id": r["id"], "answer": r["answer"], "prompt": render_prompt(tokenizer, r["question"])} for r in pool}
@@ -292,7 +307,6 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
         selector = DifficultySampler([r["id"] for r in pool], strategy, config["seed"],
                                      opts["uniform_mix"], opts["prior"])
     initial = _snapshot_trainable(model)
-    initial_hash = checkpoint_hash(sft_checkpoint)
     json_write(directory / "comparison_contract.json", {
         "sft_checkpoint_sha256": None if public_start else initial_hash, "data_manifest_sha256": sha256_file(ROOT / "data/manifest.json"),
         "initialization_kind": expected_stage, "initial_checkpoint_sha256": initial_hash,
@@ -300,7 +314,10 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
         "pool_ids": list(by_id), "protocol": config, "strategy": strategy,
         "candidate_pool_ids": candidate_pool_ids, "audited_excluded_train_ids": opts.get("excluded_train_ids", []),
         "code_sha256": code_hash(),
-        "probe_cost_included": True, "distributed_supported": False})
+        "probe_cost_included": True, "distributed_supported": False,
+        "experiment_arm": opts.get("experiment_arm"),
+        "initial_probe_standalone_cost_debit_seconds": probe_cost_debit,
+        "shared_probe_cost_accounting": probe_cost_evidence})
     statistics = {"generation_batches": 0, "processed_tokens": 0, "padded_processed_tokens": 0,
                   "generation_prompt_tokens": 0, "logprob_forward_input_tokens": 0,
                   "logprob_forward_padded_tokens": 0, "generated_tokens": 0,
@@ -311,6 +328,10 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
                   "truncated_completions": 0}
     statistics.update(sampler_maintenance_seconds=0.0, cache_rollout_update_events=0,
                       full_post_initial_probes=0, incomplete_probes=0)
+    statistics.update(actual_signal_checked_groups=0, actual_nonzero_advantage_completions=0,
+                      actual_effective_advantage_completions=0, actual_completion_loss_tokens=0,
+                      initial_probe_standalone_cost_debit_seconds=probe_cost_debit)
+    latest_rewards = []
     budget_started = time.perf_counter()
     training_started = None
 
@@ -325,7 +346,8 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
         # Its actual cost still enters grpo_total; natural-boundary over/undershoot is reported.
         usable = opts["max_wall_seconds"] - opts.get("final_validation_reserve_seconds", 0)
         clock_start = arm_started if opts.get("standalone_endpoints_only") else training_started
-        return time.perf_counter()-clock_start >= usable or accounted_tokens() >= opts["max_accounted_tokens"]
+        return (remaining_training_seconds(usable, time.perf_counter()-clock_start, probe_cost_debit) <= 0
+                or accounted_tokens() >= opts["max_accounted_tokens"])
 
     class InstrumentedGRPO(GRPOTrainer):
         """Single-device prompt selection at the actual generation boundary avoids dataloader lookahead."""
@@ -408,6 +430,30 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
                 self.accelerator.unwrap_model(self.model).gradient_checkpointing_enable(
                     gradient_checkpointing_kwargs={"use_reentrant": False})
             statistics["generation_prompt_tokens"] += int(generated["prompt_mask"].sum().item())
+            if opts.get("audit_loss_signal"):
+                actual_adv = generated["advantages"].detach().float().cpu().tolist()
+                expected_adv = []
+                for begin in range(0, len(latest_rewards), self.num_generations):
+                    expected_adv.extend(group_advantages(latest_rewards[begin:begin+self.num_generations], opts["scale_rewards"]))
+                if len(actual_adv) != len(expected_adv) or any(abs(a-b) > 2e-6 for a,b in zip(actual_adv,expected_adv,strict=True)):
+                    raise AssertionError("Actual TRL advantages differ from raw reward reference")
+                ids = generated["completion_ids"]
+                positions = torch.arange(ids.shape[1], device=ids.device).expand_as(ids)
+                has_eos = (ids == tokenizer.eos_token_id).any(dim=1)
+                first_eos = torch.where(ids == tokenizer.eos_token_id, positions, ids.shape[1]).amin(dim=1)
+                expected_mask = (positions <= first_eos[:, None]) & has_eos[:, None]
+                if not torch.equal(generated["completion_mask"].bool(), expected_mask):
+                    raise AssertionError("Actual completion loss mask differs from EOS/truncation rule")
+                mask_lengths = generated["completion_mask"].sum(dim=1).cpu().tolist()
+                statistics["actual_signal_checked_groups"] += len(actual_adv)//self.num_generations
+                statistics["actual_nonzero_advantage_completions"] += sum(a != 0 for a in actual_adv)
+                statistics["actual_effective_advantage_completions"] += sum(a != 0 and n > 0 for a,n in zip(actual_adv,mask_lengths,strict=True))
+                statistics["actual_completion_loss_tokens"] += sum(mask_lengths)
+                jsonl_append(directory / "rollout_group_signal.jsonl", [{"optimizer_step_zero_based": step,
+                    "generation_batch": statistics["generation_batches"]-1, "raw_rewards": list(latest_rewards),
+                    "actual_advantages": actual_adv, "reference_advantages": expected_adv,
+                    "actual_loss_mask_tokens_per_completion": mask_lengths,
+                    "mask_and_advantage_checks_passed": True}])
             return generated
 
         def _get_per_token_logps_and_entropies(self, model, input_ids, attention_mask, *args, **kwargs):
@@ -424,12 +470,20 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
             lengths = (first_eos+1).clamp(max=ids.shape[1])
             statistics["processed_tokens"] += int(lengths.sum().item())
             statistics["padded_processed_tokens"] += int(inputs["prompt_ids"].numel()+ids.numel())
+            if opts.get("audit_loss_signal"):
+                jsonl_append(directory / "loss_signal.jsonl", [{"optimizer_step_zero_based": self.state.global_step,
+                    "advantages": inputs["advantages"].detach().float().cpu().tolist(),
+                    "completion_loss_tokens": inputs["completion_mask"].sum(dim=1).cpu().tolist(),
+                    "prompt_tokens": inputs["prompt_mask"].sum(dim=1).cpu().tolist(),
+                    "completion_tokens_sha256": [hashlib.sha256(json.dumps(row.tolist()).encode()).hexdigest() for row in ids]}])
             return super().compute_loss(model, inputs, return_outputs=return_outputs, num_items_in_batch=num_items_in_batch)
 
     def reward(completions, answer, id, completion_ids=None, **kwargs):
         texts = [c[0]["content"] if isinstance(c, list) else c for c in completions]
         scores = [score_answer(t, a) for t, a in zip(texts, answer, strict=True)]
         rewards = [float(s.correct) for s in scores]
+        latest_rewards.clear()
+        latest_rewards.extend(rewards)
         statistics["reward_sum"] += sum(rewards)
         statistics["reward_count"] += len(rewards)
         statistics["format_errors"] += sum(not s.format_ok for s in scores)
@@ -468,12 +522,31 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
                                "group_within_batch": i//group_size,
                                "prediction": text, "gold_answer": answer[i], "reward": r,
                                "generated_tokens": len(ids), "truncated": truncated, **score.as_dict()})
+            if opts.get("audit_loss_signal"):
+                reward_log[-1]["completion_token_ids"] = ids
         jsonl_append(directory / "rollouts.jsonl", reward_log)
         return rewards
 
     class EvidenceCallback(TrainerCallback):
-        def on_pre_optimizer_step(self, args, state, control, model=None, **kwargs):
-            ledger.emit(phase="gradient_diagnostic", optimizer_step=state.global_step+1, **_gradient_evidence(model))
+        def on_pre_optimizer_step(self, args, state, control, model=None, optimizer=None, **kwargs):
+            evidence = _gradient_evidence(model)
+            ledger.emit(phase="gradient_diagnostic", optimizer_step=state.global_step+1, **evidence)
+            if opts.get("audit_optimizer_deltas"):
+                self.before_step = torch.cat([p.detach().float().flatten() for p in model.parameters() if p.requires_grad])
+                self.zero_gradient = evidence["nonzero_gradient_elements"] == 0
+                moments = [s["exp_avg"].detach().float().flatten() for s in optimizer.state.values() if "exp_avg" in s]
+                self.moment_l2 = float(torch.linalg.vector_norm(torch.cat(moments))) if moments else 0.0
+
+        def on_optimizer_step(self, args, state, control, model=None, **kwargs):
+            if opts.get("audit_optimizer_deltas"):
+                after = torch.cat([p.detach().float().flatten() for p in model.parameters() if p.requires_grad])
+                delta = after-self.before_step
+                ledger.emit(phase="optimizer_weight_update", optimizer_step=state.global_step+1,
+                    zero_gradient_step=self.zero_gradient, adam_exp_avg_l2_before=self.moment_l2,
+                    actual_weight_delta_l2=float(torch.linalg.vector_norm(delta)),
+                    actual_weight_max_absolute_delta=float(delta.abs().max()),
+                    actual_changed_weight_elements=int(torch.count_nonzero(delta)))
+                del self.before_step
 
         def on_log(self, args, state, control, logs=None, **kwargs):
             if logs:
@@ -554,11 +627,16 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
                     probe_generated_tokens=statistics["probe_generated_tokens"])
     measured_grpo_seconds = next(r["wall_seconds"] for r in reversed(ledger.rows) if r["phase"] == "grpo_total")
     path = ROOT / "checkpoints" / name
-    save_adapter(model, tokenizer, path, config, "grpo", strategy=strategy,
-                 sft_checkpoint_sha256=None if public_start else initial_hash,
-                 initial_checkpoint_sha256=initial_hash, initialization_kind=expected_stage,
-                 data_manifest_sha256=sha256_file(ROOT / "data/manifest.json"))
-    trainer.save_state()
+    with ledger.measure("save_grpo_checkpoint"):
+        save_adapter(model, tokenizer, path, config, "grpo", strategy=strategy,
+                     sft_checkpoint_sha256=None if public_start else initial_hash,
+                     initial_checkpoint_sha256=initial_hash, initialization_kind=expected_stage,
+                     data_manifest_sha256=sha256_file(ROOT / "data/manifest.json"))
+        trainer.save_state()
+        if opts.get("save_optimizer_state"):
+            torch.save({"optimizer": trainer.optimizer.state_dict(), "torch_cpu_rng": torch.get_rng_state(),
+                "torch_gpu_rng": torch.cuda.get_rng_state_all() if torch.cuda.is_available() else [],
+                "exact_resume_supported": False, "note": "Sampler/dataloader position is separately logged; no automatic exact-resume implementation."}, path / "optimizer_diagnostic_state.pt")
     result = {**output_metrics, **statistics, **_update_evidence(model, initial),
               "mean_reward": statistics["reward_sum"]/max(1, statistics["reward_count"]),
               "zero_variance_group_fraction": statistics["zero_variance_groups"]/max(1, statistics["groups"]),
@@ -570,9 +648,10 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
               "initial_checkpoint_sha256": initial_hash, "initialization_kind": expected_stage,
               "is_sft_initialization": not public_start,
               "arm_total_through_checkpoint_seconds": time.perf_counter()-arm_started,
+              "charged_training_entry_through_checkpoint_seconds": time.perf_counter()-arm_started+probe_cost_debit,
               "observed_optimizer_steps_per_grpo_second": trainer.state.global_step/measured_grpo_seconds,
               "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
-              "wall_budget_overshoot_seconds": max(0, time.perf_counter()-(arm_started if opts.get("standalone_endpoints_only") else training_started)-opts["max_wall_seconds"])}
+              "wall_budget_overshoot_seconds": max(0, time.perf_counter()-(arm_started if opts.get("standalone_endpoints_only") else training_started)+probe_cost_debit-opts["max_wall_seconds"])}
     if strategy == "uniform" or selector.updates:
         json_write(directory / "sampler_final.json", selector.state_dict())
     else:

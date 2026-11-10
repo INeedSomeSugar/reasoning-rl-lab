@@ -1,0 +1,6 @@
+{
+  "completed": true,
+  "actual_optimizer_steps": 8,
+  "mask_and_advantage_tensor_checks": 8,
+  "accuracy_not_used_for_capacity": true
+}

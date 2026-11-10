@@ -1,0 +1,134 @@
+[
+  {
+    "label": "U-s13",
+    "buckets": {
+      "probe_mixed_retained": {
+        "groups": 59,
+        "mixed_groups": 31,
+        "mixed_group_fraction": 0.5254237288135594,
+        "zero_variance_group_fraction": 0.47457627118644063,
+        "training_stochastic_success_fraction": 0.690677966101695,
+        "effective_advantage_completions": 122
+      },
+      "probe_all_correct_excluded": {
+        "groups": 144,
+        "mixed_groups": 11,
+        "mixed_group_fraction": 0.0763888888888889,
+        "zero_variance_group_fraction": 0.9236111111111112,
+        "training_stochastic_success_fraction": 0.9739583333333334,
+        "effective_advantage_completions": 43
+      },
+      "probe_all_wrong_excluded": {
+        "groups": 22,
+        "mixed_groups": 2,
+        "mixed_group_fraction": 0.09090909090909091,
+        "zero_variance_group_fraction": 0.9090909090909091,
+        "training_stochastic_success_fraction": 0.022727272727272728,
+        "effective_advantage_completions": 8
+      }
+    },
+    "scope": "Actual policy trajectory only. Mixed rewards on excluded items show finite-K screening is not an oracle; they are not counterfactual F outcomes."
+  },
+  {
+    "label": "F-s13",
+    "buckets": {
+      "probe_mixed_retained": {
+        "groups": 145,
+        "mixed_groups": 69,
+        "mixed_group_fraction": 0.47586206896551725,
+        "zero_variance_group_fraction": 0.5241379310344827,
+        "training_stochastic_success_fraction": 0.6724137931034483,
+        "effective_advantage_completions": 274
+      }
+    },
+    "scope": "Actual policy trajectory only. Mixed rewards on excluded items show finite-K screening is not an oracle; they are not counterfactual F outcomes."
+  },
+  {
+    "label": "F-s29",
+    "buckets": {
+      "probe_mixed_retained": {
+        "groups": 143,
+        "mixed_groups": 67,
+        "mixed_group_fraction": 0.46853146853146854,
+        "zero_variance_group_fraction": 0.5314685314685315,
+        "training_stochastic_success_fraction": 0.7132867132867133,
+        "effective_advantage_completions": 264
+      }
+    },
+    "scope": "Actual policy trajectory only. Mixed rewards on excluded items show finite-K screening is not an oracle; they are not counterfactual F outcomes."
+  },
+  {
+    "label": "U-s29",
+    "buckets": {
+      "probe_all_correct_excluded": {
+        "groups": 144,
+        "mixed_groups": 8,
+        "mixed_group_fraction": 0.05555555555555555,
+        "zero_variance_group_fraction": 0.9444444444444444,
+        "training_stochastic_success_fraction": 0.984375,
+        "effective_advantage_completions": 32
+      },
+      "probe_mixed_retained": {
+        "groups": 50,
+        "mixed_groups": 27,
+        "mixed_group_fraction": 0.54,
+        "zero_variance_group_fraction": 0.45999999999999996,
+        "training_stochastic_success_fraction": 0.67,
+        "effective_advantage_completions": 107
+      },
+      "probe_all_wrong_excluded": {
+        "groups": 26,
+        "mixed_groups": 4,
+        "mixed_group_fraction": 0.15384615384615385,
+        "zero_variance_group_fraction": 0.8461538461538461,
+        "training_stochastic_success_fraction": 0.057692307692307696,
+        "effective_advantage_completions": 16
+      }
+    },
+    "scope": "Actual policy trajectory only. Mixed rewards on excluded items show finite-K screening is not an oracle; they are not counterfactual F outcomes."
+  },
+  {
+    "label": "U-s47",
+    "buckets": {
+      "probe_all_correct_excluded": {
+        "groups": 138,
+        "mixed_groups": 10,
+        "mixed_group_fraction": 0.07246376811594203,
+        "zero_variance_group_fraction": 0.927536231884058,
+        "training_stochastic_success_fraction": 0.980072463768116,
+        "effective_advantage_completions": 40
+      },
+      "probe_mixed_retained": {
+        "groups": 53,
+        "mixed_groups": 30,
+        "mixed_group_fraction": 0.5660377358490566,
+        "zero_variance_group_fraction": 0.4339622641509434,
+        "training_stochastic_success_fraction": 0.6981132075471698,
+        "effective_advantage_completions": 118
+      },
+      "probe_all_wrong_excluded": {
+        "groups": 31,
+        "mixed_groups": 3,
+        "mixed_group_fraction": 0.0967741935483871,
+        "zero_variance_group_fraction": 0.9032258064516129,
+        "training_stochastic_success_fraction": 0.03225806451612903,
+        "effective_advantage_completions": 12
+      }
+    },
+    "scope": "Actual policy trajectory only. Mixed rewards on excluded items show finite-K screening is not an oracle; they are not counterfactual F outcomes."
+  },
+  {
+    "label": "F-s47",
+    "buckets": {
+      "probe_mixed_retained": {
+        "groups": 165,
+        "mixed_groups": 82,
+        "mixed_group_fraction": 0.49696969696969695,
+        "zero_variance_group_fraction": 0.503030303030303,
+        "training_stochastic_success_fraction": 0.7075757575757575,
+        "effective_advantage_completions": 326
+      }
+    },
+    "scope": "Actual policy trajectory only. Mixed rewards on excluded items show finite-K screening is not an oracle; they are not counterfactual F outcomes."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "source": "summary.json",
+  "original_frozen_analyzer_images_preserved": true,
+  "changes": "Distinct seed marker shapes and line styles; two-row layout for legible labels; no metric or endpoint changes",
+  "images": [
+    "accuracy_paired_accessible.png",
+    "mechanism_and_cost_accessible.png"
+  ]
+}

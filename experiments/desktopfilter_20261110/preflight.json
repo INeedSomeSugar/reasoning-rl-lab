@@ -1,0 +1,142 @@
+{
+  "hardware": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.14",
+    "ram_total_bytes": 24817418240,
+    "ram_available_bytes": 10922582016,
+    "versions": {
+      "torch": "2.13.0+rocm10.0.0",
+      "transformers": "4.57.1",
+      "peft": "0.17.1",
+      "trl": "0.23.1",
+      "accelerate": "1.10.1",
+      "datasets": "4.1.1",
+      "bitsandbytes": null,
+      "numpy": "2.2.6"
+    },
+    "torch_cuda": null,
+    "torch_hip": "7.15.26333",
+    "cuda_available": true,
+    "gpus": [
+      {
+        "index": 0,
+        "name": "AMD Radeon RX 9070 XT",
+        "total_bytes": 17095983104,
+        "free_bytes": 16937582592,
+        "compute_capability": [
+          12,
+          0
+        ]
+      }
+    ],
+    "diagnostic_flags": {
+      "CUDA_LAUNCH_BLOCKING": null,
+      "PYTORCH_NO_CUDA_MEMORY_CACHING": null,
+      "HIP_VISIBLE_DEVICES": "0",
+      "CUDA_VISIBLE_DEVICES": null
+    },
+    "gpu_backend": "ROCm",
+    "rx9070xt_access": "local device detected by PyTorch; training capability requires separate validation",
+    "nvidia_smi": null
+  },
+  "precision": {
+    "input_embedding": "torch.bfloat16",
+    "output_head": "torch.bfloat16",
+    "lora_dtypes": [
+      "torch.float32"
+    ],
+    "norm_dtypes": [
+      "torch.bfloat16"
+    ],
+    "four_bit_compute_dtypes": [],
+    "is_loaded_in_4bit": false,
+    "attention_implementation": "sdpa",
+    "parameter_devices": [
+      "cuda:0"
+    ]
+  },
+  "fixed_s2_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "verified_model_files": [
+    {
+      "name": "LICENSE",
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "name": "README.md",
+      "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091"
+    },
+    {
+      "name": "config.json",
+      "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+    },
+    {
+      "name": "generation_config.json",
+      "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+    },
+    {
+      "name": "merges.txt",
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "name": "model-00001-of-00002.safetensors",
+      "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5"
+    },
+    {
+      "name": "model-00002-of-00002.safetensors",
+      "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d"
+    },
+    {
+      "name": "tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+    },
+    {
+      "name": "vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "loss": 4.517793655395508,
+  "example_id": "gsm8k-train-05110",
+  "nonzero_backward": {
+    "finite_gradients": true,
+    "gradient_tensors": 112,
+    "nonzero_gradient_elements": 1605632,
+    "clipped_gradient_l2": 9.72075301123812,
+    "frozen_parameter_gradients": 0
+  },
+  "zero_gradient_diagnostic": {
+    "finite_gradients": true,
+    "gradient_tensors": 112,
+    "nonzero_gradient_elements": 0,
+    "clipped_gradient_l2": 0.0,
+    "frozen_parameter_gradients": 0
+  },
+  "actual_weight_delta_after_zero_gradient_adam_step": {
+    "adapter_delta_l2": 0.004242161755596851,
+    "adapter_updated": true,
+    "trainable_parameters": 1605632,
+    "logical_total_parameters": 1722180608,
+    "logical_frozen_parameters": 1720574976,
+    "frozen_storage_tensor_elements": 1720574976
+  },
+  "total_diagnostic_weight_update": {
+    "adapter_delta_l2": 0.01057437543911517,
+    "adapter_updated": true,
+    "trainable_parameters": 1605632,
+    "logical_total_parameters": 1722180608,
+    "logical_frozen_parameters": 1720574976,
+    "frozen_storage_tensor_elements": 1720574976
+  },
+  "saved_checkpoint_sha256": "35392949faf8526e662975ddc3cdb656e3911c6c5a7f40cb7f334d3332a5d4de",
+  "reload_logits_max_absolute_difference": 0.0,
+  "fixed_s2_unchanged": true,
+  "diagnostic_only": true,
+  "no_new_sft_start": true
+}

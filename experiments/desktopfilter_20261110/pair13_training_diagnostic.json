@@ -1,0 +1,60 @@
+[
+  {
+    "label": "U-s13",
+    "all": {
+      "groups": 225,
+      "mixed_groups": 44,
+      "mixed_group_fraction": 0.19555555555555557,
+      "zero_variance_group_fraction": 0.8044444444444444,
+      "training_stochastic_success_fraction": 0.8066666666666666,
+      "effective_advantage_completions": 173
+    },
+    "flagged_item": {
+      "groups": 5,
+      "mixed_groups": 2,
+      "mixed_group_fraction": 0.4,
+      "zero_variance_group_fraction": 0.6,
+      "training_stochastic_success_fraction": 0.9,
+      "effective_advantage_completions": 7
+    },
+    "other_items": {
+      "groups": 220,
+      "mixed_groups": 42,
+      "mixed_group_fraction": 0.19090909090909092,
+      "zero_variance_group_fraction": 0.8090909090909091,
+      "training_stochastic_success_fraction": 0.8045454545454546,
+      "effective_advantage_completions": 166
+    },
+    "parse_failures": 23,
+    "truncations": 4
+  },
+  {
+    "label": "F-s13",
+    "all": {
+      "groups": 145,
+      "mixed_groups": 69,
+      "mixed_group_fraction": 0.47586206896551725,
+      "zero_variance_group_fraction": 0.5241379310344827,
+      "training_stochastic_success_fraction": 0.6724137931034483,
+      "effective_advantage_completions": 274
+    },
+    "flagged_item": {
+      "groups": 3,
+      "mixed_groups": 2,
+      "mixed_group_fraction": 0.6666666666666666,
+      "zero_variance_group_fraction": 0.33333333333333337,
+      "training_stochastic_success_fraction": 0.8333333333333334,
+      "effective_advantage_completions": 7
+    },
+    "other_items": {
+      "groups": 142,
+      "mixed_groups": 67,
+      "mixed_group_fraction": 0.47183098591549294,
+      "zero_variance_group_fraction": 0.528169014084507,
+      "training_stochastic_success_fraction": 0.6690140845070423,
+      "effective_advantage_completions": 267
+    },
+    "parse_failures": 8,
+    "truncations": 3
+  }
+]

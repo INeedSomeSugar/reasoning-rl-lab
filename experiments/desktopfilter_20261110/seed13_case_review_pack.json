@@ -1,0 +1,33 @@
+{
+  "selection": "First two discordant validation IDs in frozen order per direction for seed13; illustrative agent review only, all final cases will be retained",
+  "recorded_unix": 1794312750.726173,
+  "cases": [
+    {
+      "seed": 13,
+      "id": "gsm8k-train-03331",
+      "direction": "F_correct_U_wrong",
+      "question": "Hasan is packing up his apartment because he’s moving across the country for a new job. He needs to ship several boxes to his new home. The movers have asked that Hasan avoid putting more than a certain weight in pounds in any cardboard box. The moving company has helpfully provided Hasan with a digital scale that will alert him if a package is too heavy. Hasan is in the kitchen, and he fills a cardboard box with 38 dinner plates. When he checks the box, the scale reports his box is too heavy. Hasan knows each of his plates weighs 10 ounces. He removes a single plate from the box and checks the movers’ scale again. The scale reports his box is still too heavy. Hasan repeats the process again and again. When he has removed enough plates, the movers’ scale shows the box is now an acceptable weight for shipping. Hasan deduces that each shipping box can hold 20 pounds before the scale says the box is too heavy.  How many plates did Hasan need to remove from the shipping box?",
+      "gold": "6",
+      "U": "We are given:\n\n- Each plate weighs 10 ounces.\n- The box is too heavy when it contains more than 20 pounds.\n- Hasan removes plates one by one until the scale says the box is acceptable.\n\nFirst, convert 20 pounds to ounces:\n\n$$\n20 \\text{ pounds} \\times 16 \\text{ ounces per pound} = 320 \\text{ ounces}\n$$\n\nEach plate is 10 ounces, so the number of plates in the box is:\n\n$$\n\\frac{320 \\text{ ounces}}{10 \\text{ ounces per plate}} = 32 \\text{ plates}\n$$\n\nNow, Hasan removes plates one by one until the scale says the box is acceptable. Since the box was initially too heavy with 32 plates, and he removes one plate at a time, the number of plates he needs to remove is:\n\n$$\n32 - 1 = 31\n$$\n\n### Final Answer:\n$$\n\\boxed{31}\n$$\n\n####\n\n#### 31",
+      "F": "We are given:\n\n- Each plate weighs 10 ounces.\n- The box is too heavy when it contains more than 20 pounds.\n- Hasan removes plates one by one until the scale says the box is acceptable.\n\n**Step 1: Convert 20 pounds to ounces.**\n\n$$\n20 \\text{ pounds} \\times 16 \\text{ ounces per pound} = 320 \\text{ ounces}\n$$\n\n**Step 2: Calculate the total weight of 38 plates.**\n\n$$\n38 \\text{ plates} \\times 10 \\text{ ounces per plate} = 380 \\text{ ounces}\n$$\n\n**Step 3: Determine how many plates need to be removed.**\n\n$$\n380 \\text{ ounces} - 320 \\text{ ounces} = 60 \\text{ ounces}\n$$\n\n$$\n\\frac{60 \\text{ ounces}}{10 \\text{ ounces per plate}} = 6 \\text{ plates}\n$$\n\n**Final Answer:**\n\n$$\n\\boxed{6}\n$$\n\n#### 6"
+    },
+    {
+      "seed": 13,
+      "id": "gsm8k-train-02782",
+      "direction": "F_correct_U_wrong",
+      "question": "Susie's pet lizard Moe takes 10 seconds to eat 40 pieces of cuttlebone each day. How long would it take Moe to eat 800 pieces?",
+      "gold": "200",
+      "U": "To find out how long it takes Moe to eat 800 pieces of cuttlebone, we can use proportion.\n\nMoe eats 40 pieces in 10 seconds.\n\nSo, the rate is:\n$$\n\\frac{10 \\text{ seconds}}{40 \\text{ pieces}} = 0.25 \\text{ seconds per piece}\n$$\n\nNow, for 800 pieces:\n$$\n800 \\text{ pieces} \\times 0.25 \\text{ seconds per piece} = 200 \\text{ seconds}\n$$\n\nFinal answer:\n$$\n\\boxed{200} ####\n$$",
+      "F": "To find out how long it takes Moe to eat 800 pieces of cuttlebone, we can use proportion.\n\nMoe eats 40 pieces in 10 seconds.\n\nSo, the rate is:\n$$\n\\frac{10 \\text{ seconds}}{40 \\text{ pieces}} = 0.25 \\text{ seconds per piece}\n$$\n\nNow, for 800 pieces:\n$$\n800 \\text{ pieces} \\times 0.25 \\text{ seconds per piece} = 200 \\text{ seconds}\n$$\n\nFinal answer:\n$$\n\\boxed{200} \\text{ seconds}\n$$\n\n#### 200"
+    },
+    {
+      "seed": 13,
+      "id": "gsm8k-train-06767",
+      "direction": "U_correct_F_wrong",
+      "question": "Jenna sets a goal of reading 600 pages a month for the month of September (which has 30 days). She knows that she'll be really busy at work the four weekdays starting on the 13th, so she won't have time to read. She can also read 100 pages on the 23rd, when she'll have a long boring flight. If she reads the same number of pages every other day, how many pages a day does she need to read?",
+      "gold": "20",
+      "U": "Let's break down the problem step by step.\n\n- Total pages to read: 600\n- Total days in September: 30\n- Days she can't read: 4 weekdays starting on the 13th (13th, 14th, 15th, 16th)\n- Day she reads 100 pages: 23rd\n- She reads the same number of pages every other day\n\n### Step 1: Calculate the number of days she can read\n- Total days: 30\n- Days she can't read: 4\n- Days she can read: $ 30 - 4 = 26 $\n\n### Step 2: Account for the 23rd day\n- She reads 100 pages on the 23rd, so we add that to the total pages.\n\n### Step 3: Set up the equation\nLet $ x $ be the number of pages she reads each other day.\n\n- Total pages read: $ 26x + 100 = 600 $\n\n### Step 4: Solve for $ x $\n$$\n26x + 100 = 600 \\\\\n26x = 500 \\\\\nx = \\frac{500}{26} \\approx 19.23\n$$\n\nSince she can't read a fraction of a page, we round up to the nearest whole number.\n\n### Final Answer:\n$$\n\\boxed{20}\n$$\n\n#### Final numerical answer:\n#### 20",
+      "F": "Let's break down the problem step by step.\n\nJenna wants to read 600 pages in September (30 days).\n\nShe will not read on 4 weekdays starting on the 13th. That means she will not read on the 13th, 14th, 15th, and 16th.\n\nShe also reads 100 pages on the 23rd.\n\nSo, the number of days she can read is:\n\n- 30 days total\n- 4 days she won't read (13, 14, 15, 16)\n- 1 day she reads 100 pages (23rd)\n\nSo, the number of days she can read is:\n\n$$\n30 - 4 - 1 = 25 \\text{ days}\n$$\n\nShe needs to read 600 pages in 25 days.\n\nLet $ x $ be the number of pages she reads each day on the days she can read.\n\nSo:\n\n$$\n25x = 600\n$$\n\n$$\nx = \\frac{600}{25} = 24\n$$\n\n### Final Answer:\n$$\n\\boxed{24}\n$$\n\n####\n\n#### 24"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "label": "U-s13",
+    "quarter_groups": 56,
+    "overall": {
+      "groups": 225,
+      "mixed_groups": 44,
+      "mixed_group_fraction": 0.19555555555555557,
+      "zero_variance_group_fraction": 0.8044444444444444,
+      "training_stochastic_success_fraction": 0.8066666666666666,
+      "effective_advantage_completions": 173
+    },
+    "first_quarter": {
+      "groups": 56,
+      "mixed_groups": 11,
+      "mixed_group_fraction": 0.19642857142857142,
+      "zero_variance_group_fraction": 0.8035714285714286,
+      "training_stochastic_success_fraction": 0.8258928571428571,
+      "effective_advantage_completions": 44
+    },
+    "last_quarter": {
+      "groups": 56,
+      "mixed_groups": 10,
+      "mixed_group_fraction": 0.17857142857142858,
+      "zero_variance_group_fraction": 0.8214285714285714,
+      "training_stochastic_success_fraction": 0.8035714285714286,
+      "effective_advantage_completions": 39
+    },
+    "scope": "Within-endpoint descriptive first/last group quarters, not a matched-budget validation curve"
+  },
+  {
+    "label": "F-s13",
+    "quarter_groups": 36,
+    "overall": {
+      "groups": 145,
+      "mixed_groups": 69,
+      "mixed_group_fraction": 0.47586206896551725,
+      "zero_variance_group_fraction": 0.5241379310344827,
+      "training_stochastic_success_fraction": 0.6724137931034483,
+      "effective_advantage_completions": 274
+    },
+    "first_quarter": {
+      "groups": 36,
+      "mixed_groups": 15,
+      "mixed_group_fraction": 0.4166666666666667,
+      "zero_variance_group_fraction": 0.5833333333333333,
+      "training_stochastic_success_fraction": 0.6736111111111112,
+      "effective_advantage_completions": 60
+    },
+    "last_quarter": {
+      "groups": 36,
+      "mixed_groups": 19,
+      "mixed_group_fraction": 0.5277777777777778,
+      "zero_variance_group_fraction": 0.4722222222222222,
+      "training_stochastic_success_fraction": 0.7083333333333334,
+      "effective_advantage_completions": 76
+    },
+    "scope": "Within-endpoint descriptive first/last group quarters, not a matched-budget validation curve"
+  },
+  {
+    "label": "F-s29",
+    "quarter_groups": 35,
+    "overall": {
+      "groups": 143,
+      "mixed_groups": 67,
+      "mixed_group_fraction": 0.46853146853146854,
+      "zero_variance_group_fraction": 0.5314685314685315,
+      "training_stochastic_success_fraction": 0.7132867132867133,
+      "effective_advantage_completions": 264
+    },
+    "first_quarter": {
+      "groups": 35,
+      "mixed_groups": 15,
+      "mixed_group_fraction": 0.42857142857142855,
+      "zero_variance_group_fraction": 0.5714285714285714,
+      "training_stochastic_success_fraction": 0.7428571428571429,
+      "effective_advantage_completions": 60
+    },
+    "last_quarter": {
+      "groups": 35,
+      "mixed_groups": 20,
+      "mixed_group_fraction": 0.5714285714285714,
+      "zero_variance_group_fraction": 0.4285714285714286,
+      "training_stochastic_success_fraction": 0.7428571428571429,
+      "effective_advantage_completions": 80
+    },
+    "scope": "Within-endpoint descriptive first/last group quarters, not a matched-budget validation curve"
+  },
+  {
+    "label": "U-s29",
+    "quarter_groups": 55,
+    "overall": {
+      "groups": 220,
+      "mixed_groups": 39,
+      "mixed_group_fraction": 0.17727272727272728,
+      "zero_variance_group_fraction": 0.8227272727272728,
+      "training_stochastic_success_fraction": 0.803409090909091,
+      "effective_advantage_completions": 155
+    },
+    "first_quarter": {
+      "groups": 55,
+      "mixed_groups": 10,
+      "mixed_group_fraction": 0.18181818181818182,
+      "zero_variance_group_fraction": 0.8181818181818181,
+      "training_stochastic_success_fraction": 0.8136363636363636,
+      "effective_advantage_completions": 40
+    },
+    "last_quarter": {
+      "groups": 55,
+      "mixed_groups": 12,
+      "mixed_group_fraction": 0.21818181818181817,
+      "zero_variance_group_fraction": 0.7818181818181819,
+      "training_stochastic_success_fraction": 0.8090909090909091,
+      "effective_advantage_completions": 47
+    },
+    "scope": "Within-endpoint descriptive first/last group quarters, not a matched-budget validation curve"
+  },
+  {
+    "label": "U-s47",
+    "quarter_groups": 55,
+    "overall": {
+      "groups": 222,
+      "mixed_groups": 43,
+      "mixed_group_fraction": 0.19369369369369369,
+      "zero_variance_group_fraction": 0.8063063063063063,
+      "training_stochastic_success_fraction": 0.7804054054054054,
+      "effective_advantage_completions": 170
+    },
+    "first_quarter": {
+      "groups": 55,
+      "mixed_groups": 10,
+      "mixed_group_fraction": 0.18181818181818182,
+      "zero_variance_group_fraction": 0.8181818181818181,
+      "training_stochastic_success_fraction": 0.7363636363636363,
+      "effective_advantage_completions": 40
+    },
+    "last_quarter": {
+      "groups": 55,
+      "mixed_groups": 11,
+      "mixed_group_fraction": 0.2,
+      "zero_variance_group_fraction": 0.8,
+      "training_stochastic_success_fraction": 0.7863636363636364,
+      "effective_advantage_completions": 42
+    },
+    "scope": "Within-endpoint descriptive first/last group quarters, not a matched-budget validation curve"
+  },
+  {
+    "label": "F-s47",
+    "quarter_groups": 41,
+    "overall": {
+      "groups": 165,
+      "mixed_groups": 82,
+      "mixed_group_fraction": 0.49696969696969695,
+      "zero_variance_group_fraction": 0.503030303030303,
+      "training_stochastic_success_fraction": 0.7075757575757575,
+      "effective_advantage_completions": 326
+    },
+    "first_quarter": {
+      "groups": 41,
+      "mixed_groups": 19,
+      "mixed_group_fraction": 0.4634146341463415,
+      "zero_variance_group_fraction": 0.5365853658536586,
+      "training_stochastic_success_fraction": 0.7195121951219512,
+      "effective_advantage_completions": 75
+    },
+    "last_quarter": {
+      "groups": 41,
+      "mixed_groups": 20,
+      "mixed_group_fraction": 0.4878048780487805,
+      "zero_variance_group_fraction": 0.5121951219512195,
+      "training_stochastic_success_fraction": 0.6890243902439024,
+      "effective_advantage_completions": 80
+    },
+    "scope": "Within-endpoint descriptive first/last group quarters, not a matched-budget validation curve"
+  }
+]

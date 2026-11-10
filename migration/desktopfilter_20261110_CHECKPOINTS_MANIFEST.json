@@ -1,0 +1,270 @@
+{
+  "family": "desktopfilter_20261110",
+  "created_utc": "2026-11-10T13:27:16.505888+00:00",
+  "checkpoint_count": 9,
+  "count_by_role": {
+    "paired_training_endpoint": 6,
+    "calibration_only": 1,
+    "forward_backward_save_reload_diagnostic_only": 1,
+    "common_S2_start": 1
+  },
+  "checkpoints": [
+    {
+      "label": "U-s13",
+      "role": "paired_training_endpoint",
+      "checkpoint": "checkpoints/desktopfilter_20261110-r1-U-s13",
+      "checkpoint_sha256": "809e94d2f3d6085e636d24200c560ed8cae3d0a8ebeb1f5c5a6a3987ad2106eb",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s13/adapter_config.json",
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s13/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "dc797a39ad53899b87d50318efa0490dc81aa740372716fb8c5ad6f91629e1bb"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s13/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "94f1a86aeb837b0cbf31ae8a573e60f810096fd8cc7a55baca781892e4a73831"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s13/rrl_checkpoint.json",
+          "bytes": 2787,
+          "sha256": "d1ab4911135fbf7160547674b254cad171b99294d7413c2fc6911208ec9eb565"
+        }
+      ]
+    },
+    {
+      "label": "F-s13",
+      "role": "paired_training_endpoint",
+      "checkpoint": "checkpoints/desktopfilter_20261110-r1-F-s13",
+      "checkpoint_sha256": "00483b520b722e656c2b461ad3eff1135df7ae7e1c1e1f5325effdd2faad81b9",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s13/adapter_config.json",
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s13/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "e5b33d29f42b2679228066d92a4f97b6f04829579bea2921df74faad0199e1bf"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s13/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "bf38a73e01263c0b63e19e397432eb8d06e1672776edc56c95baea55a28f5a5d"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s13/rrl_checkpoint.json",
+          "bytes": 2882,
+          "sha256": "653193348f59eb966371967795090d95f904b99aaca290bb8cd8a64e05f3cb22"
+        }
+      ]
+    },
+    {
+      "label": "F-s29",
+      "role": "paired_training_endpoint",
+      "checkpoint": "checkpoints/desktopfilter_20261110-r1-F-s29",
+      "checkpoint_sha256": "4b9dda2060f06cb6d46cf8b5ccb7aa07d81e6275f1c32813b59828e0fa9dedad",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s29/adapter_config.json",
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s29/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "49f35cd07147ecf9c106270b43bc01df0c291c9d0724050f1e5193f84072312c"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s29/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "e43d71ef3f4901acd40f2467ef8cd009edf5c7af4d4a60b73785f3eff79162c6"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s29/rrl_checkpoint.json",
+          "bytes": 2882,
+          "sha256": "3e7f54a0c61876dc7a3d3ee1ca0634bad2585b672c99ad614e883a07c83cfb8a"
+        }
+      ]
+    },
+    {
+      "label": "U-s29",
+      "role": "paired_training_endpoint",
+      "checkpoint": "checkpoints/desktopfilter_20261110-r1-U-s29",
+      "checkpoint_sha256": "ccbd2faf27fd73b693e817042b6d1e827043db7dc4842567d188948e0a3d23b4",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s29/adapter_config.json",
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s29/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "4ebcf808436dc43b9a6aff276f179a90f842d7ce50578583f7bbe0f968c13689"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s29/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "d0558cd7d511b5f1110e9a17de7486e4002b12c9830549a8ae7c2a3e5193b07b"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s29/rrl_checkpoint.json",
+          "bytes": 2787,
+          "sha256": "96c20fb22b9b1ee5695f0b2b0b56ec190c19fe9d523def20f8f89b72ded579ac"
+        }
+      ]
+    },
+    {
+      "label": "U-s47",
+      "role": "paired_training_endpoint",
+      "checkpoint": "checkpoints/desktopfilter_20261110-r1-U-s47",
+      "checkpoint_sha256": "3d937cc6b37e44329176d3fa3a0c4bc96f735f05a2d97d56593c592a21e1d8f3",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s47/adapter_config.json",
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s47/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "432211af8cc7697496560992484e2fedba05fcd1886cd7ae73295b1e6dca9a34"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s47/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "5fdae1d43297120b749a61b0316b1aca09ef94f8ae936d822fba1e84db28e75d"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-U-s47/rrl_checkpoint.json",
+          "bytes": 2787,
+          "sha256": "e53f3372e2dacec333033106571bc0ec2913ed7011d93420b32cf1810803720d"
+        }
+      ]
+    },
+    {
+      "label": "F-s47",
+      "role": "paired_training_endpoint",
+      "checkpoint": "checkpoints/desktopfilter_20261110-r1-F-s47",
+      "checkpoint_sha256": "da0520f442fe5904a349ed4788600f61d2f77ef082d8710e97763fbd33d6b962",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s47/adapter_config.json",
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s47/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "cf8632694c7e8f13911b2e63a278948d465ca98851b2cd410383c2578700b1ec"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s47/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "69fcd1940cd1cd8f53914837a365cf7fce4586a51bbb90480dc521cf5e0f0e02"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-r1-F-s47/rrl_checkpoint.json",
+          "bytes": 2882,
+          "sha256": "b7b2e22fb917da8ea4254c3da875efca0de059389eee913de807fb70b8f2ab8e"
+        }
+      ]
+    },
+    {
+      "label": "calibration",
+      "role": "calibration_only",
+      "checkpoint": "checkpoints/desktopfilter_20261110-calibration-train",
+      "checkpoint_sha256": "9b6a3f3bbc226d52819435088bbfb166118f076f41e07088eeabc4296b5d270c",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-calibration-train/adapter_config.json",
+          "bytes": 918,
+          "sha256": "1f30505fb0aa92f6ff87b249a85594532d0a7300c50528e063d655332541f4fe"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-calibration-train/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "17db1038ff4d6e43dfa6f9869d09df70e54a80be793138975e6d793e7aaba98e"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-calibration-train/optimizer_diagnostic_state.pt",
+          "bytes": 12951523,
+          "sha256": "e2cd4dc04b55a110864fd89c88fffda6dbcbd29620982d2d023288af8f84d8ea"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-calibration-train/rrl_checkpoint.json",
+          "bytes": 2802,
+          "sha256": "186e781ed509bfda99cc7634875b3a5715f4aa0e96293a0d6252380c9d07db7a"
+        }
+      ]
+    },
+    {
+      "label": "preflight",
+      "role": "forward_backward_save_reload_diagnostic_only",
+      "checkpoint": "checkpoints/desktopfilter_20261110-preflight",
+      "checkpoint_sha256": "35392949faf8526e662975ddc3cdb656e3911c6c5a7f40cb7f334d3332a5d4de",
+      "files": [
+        {
+          "path": "checkpoints/desktopfilter_20261110-preflight/adapter_config.json",
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-preflight/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "696fd553ff13bff5dd837141fcebeeb3ca4b97be4cc57547ee5db264eaf14319"
+        },
+        {
+          "path": "checkpoints/desktopfilter_20261110-preflight/rrl_checkpoint.json",
+          "bytes": 2264,
+          "sha256": "22f6ed863abc3198c6d0a3f764bfd8704dd442361bc70ecb79f4589a52da157f"
+        }
+      ]
+    },
+    {
+      "label": "S2",
+      "role": "common_S2_start",
+      "checkpoint": "checkpoints/desktoprepair_20261106_152712-S2",
+      "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+      "files": [
+        {
+          "path": "checkpoints/desktoprepair_20261106_152712-S2/adapter_config.json",
+          "bytes": 918,
+          "sha256": "b905aae2a7760f1c0c89b2bad90b753f0092edace6c74d28e02f4322a442842c"
+        },
+        {
+          "path": "checkpoints/desktoprepair_20261106_152712-S2/adapter_model.safetensors",
+          "bytes": 6437272,
+          "sha256": "9d3008b3ffdb95c92931133c8d458f43ee62699baa91060f2d2dabc9a26f6938"
+        },
+        {
+          "path": "checkpoints/desktoprepair_20261106_152712-S2/rrl_checkpoint.json",
+          "bytes": 5295,
+          "sha256": "85a18df2576f760ed05a1030477dc6737ba18cc4496c12e48c84e96457962967"
+        }
+      ]
+    }
+  ],
+  "model_spec": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "training_stage": "pretraining and post-training; NOT Base",
+    "license": "Apache-2.0"
+  },
+  "checkpoint_hash_definition": "runtime.checkpoint_hash: sorted core filenames and SHA256 bytes",
+  "optimizer_exact_resume_supported": false,
+  "optimizer_note": "Seven Adam/RNG diagnostic states are included as opaque bytes; sampler/dataloader exact automatic resume is not implemented.",
+  "excluded": [
+    "public base-model weights",
+    "virtual environment",
+    "caches",
+    "tokenizer copies (use pinned base tokenizer)"
+  ]
+}

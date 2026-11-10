@@ -1,0 +1,12 @@
+{
+  "family": "desktopfilter_20261110",
+  "started_utc": "2026-11-10T08:54:53.634823+00:00",
+  "started_unix": 1794300893.634823,
+  "deadline_unix": 1794315293.634823,
+  "max_wall_seconds": 14400,
+  "time_scope": "Conservative whole-session limit from preregistration, including code/calibration/model failures/evaluation; model process seconds also summed separately.",
+  "initial_local_head": "5246f0c8a2b74331dc5927cb31516c38bb0c967e",
+  "inherited_remote_main": "28ca51053b9a1c9a5a283e18155c48631332f622",
+  "initial_worktree_clean": true,
+  "holdout_opened": false
+}

@@ -1,0 +1,19 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.05s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.25s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.37s/it]
+probe 1/16 gsm8k-train-01954 successes=4/4
+probe 2/16 gsm8k-train-01408 successes=0/4
+probe 3/16 gsm8k-train-00597 successes=0/4
+probe 4/16 gsm8k-train-00154 successes=4/4
+probe 5/16 gsm8k-train-00174 successes=4/4
+probe 6/16 gsm8k-train-04291 successes=4/4
+probe 7/16 gsm8k-train-00638 successes=0/4
+probe 8/16 gsm8k-train-03208 successes=4/4
+probe 9/16 gsm8k-train-03888 successes=4/4
+probe 10/16 gsm8k-train-06843 successes=4/4
+probe 11/16 gsm8k-train-06341 successes=0/4
+probe 12/16 gsm8k-train-03914 successes=1/4
+probe 13/16 gsm8k-train-05111 successes=4/4
+probe 14/16 gsm8k-train-06535 successes=3/4
+probe 15/16 gsm8k-train-04918 successes=4/4
+probe 16/16 gsm8k-train-04443 successes=4/4
+{"items": 16, "retained": 2, "histogram": {"0": 4, "1": 1, "3": 1, "4": 10}}

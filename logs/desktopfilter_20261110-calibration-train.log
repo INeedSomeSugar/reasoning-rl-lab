@@ -1,0 +1,72 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.16s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.44s/it]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 840.0, 'completions/mean_length': 119.0, 'completions/min_length': 119.0, 'completions/max_length': 119.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 119.0, 'completions/min_terminated_length': 119.0, 'completions/max_terminated_length': 119.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.042183639481663704, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.03125}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 1835.0, 'completions/mean_length': 158.75, 'completions/min_length': 137.0, 'completions/max_length': 191.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 158.75, 'completions/min_terminated_length': 137.0, 'completions/max_terminated_length': 191.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.05498839635401964, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.0625}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 2785.0, 'completions/mean_length': 147.5, 'completions/min_length': 132.0, 'completions/max_length': 158.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 147.5, 'completions/min_terminated_length': 132.0, 'completions/max_terminated_length': 158.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.055500976741313934, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.09375}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 3788.0, 'completions/mean_length': 136.75, 'completions/min_length': 125.0, 'completions/max_length': 154.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 136.75, 'completions/min_terminated_length': 125.0, 'completions/max_terminated_length': 154.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.09419187903404236, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.125}
+{'loss': 0.0, 'grad_norm': 0.6757184863090515, 'learning_rate': 5e-06, 'num_tokens': 4562.0, 'completions/mean_length': 109.5, 'completions/min_length': 98.0, 'completions/max_length': 118.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 109.5, 'completions/min_terminated_length': 98.0, 'completions/max_terminated_length': 118.0, 'rewards/reward/mean': 0.75, 'rewards/reward/std': 0.5, 'reward': 0.75, 'reward_std': 0.5, 'frac_reward_zero_std': 0.0, 'entropy': 0.07158979121595621, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.15625}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 5208.0, 'completions/mean_length': 75.5, 'completions/min_length': 53.0, 'completions/max_length': 86.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 75.5, 'completions/min_terminated_length': 53.0, 'completions/max_terminated_length': 86.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.06295637879520655, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.1875}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 5984.0, 'completions/mean_length': 103.0, 'completions/min_length': 93.0, 'completions/max_length': 120.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 103.0, 'completions/min_terminated_length': 93.0, 'completions/max_terminated_length': 120.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.10111786983907223, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.21875}
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 5e-06, 'num_tokens': 6637.0, 'completions/mean_length': 77.25, 'completions/min_length': 76.0, 'completions/max_length': 79.0, 'completions/clipped_ratio': 0.0, 'completions/mean_terminated_length': 77.25, 'completions/min_terminated_length': 76.0, 'completions/max_terminated_length': 79.0, 'rewards/reward/mean': 1.0, 'rewards/reward/std': 0.0, 'reward': 1.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 0.06594892498105764, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.25}
+{'train_runtime': 38.7053, 'train_samples_per_second': 0.827, 'train_steps_per_second': 0.207, 'train_loss': 9.313225746154785e-10, 'epoch': 0.25}
+{
+  "train_runtime": 38.7053,
+  "train_samples_per_second": 0.827,
+  "train_steps_per_second": 0.207,
+  "total_flos": 0.0,
+  "train_loss": 9.313225746154785e-10,
+  "generation_batches": 8,
+  "processed_tokens": 6637,
+  "padded_processed_tokens": 7028,
+  "generation_prompt_tokens": 2928,
+  "logprob_forward_input_tokens": 6637,
+  "logprob_forward_padded_tokens": 7028,
+  "generated_tokens": 3709,
+  "probe_generated_tokens": 0,
+  "probe_prompt_tokens": 0,
+  "probe_calls": 0,
+  "zero_variance_groups": 7,
+  "groups": 8,
+  "reward_sum": 31.0,
+  "reward_count": 32,
+  "nonzero_advantage_completions": 4,
+  "last_refresh_step": null,
+  "sampler_weight_change_events": 0,
+  "format_errors": 5,
+  "parse_errors": 0,
+  "truncated_completions": 0,
+  "sampler_maintenance_seconds": 0.003347900000107984,
+  "cache_rollout_update_events": 0,
+  "full_post_initial_probes": 0,
+  "incomplete_probes": 0,
+  "actual_signal_checked_groups": 8,
+  "actual_nonzero_advantage_completions": 4,
+  "actual_effective_advantage_completions": 4,
+  "actual_completion_loss_tokens": 3709,
+  "initial_probe_standalone_cost_debit_seconds": 0.0,
+  "adapter_delta_l2": 0.011074669522074976,
+  "adapter_updated": true,
+  "trainable_parameters": 1605632,
+  "logical_total_parameters": 1722180608,
+  "logical_frozen_parameters": 1720574976,
+  "frozen_storage_tensor_elements": 1720574976,
+  "mean_reward": 0.96875,
+  "zero_variance_group_fraction": 0.875,
+  "training_format_error_rate": 0.15625,
+  "training_parse_error_rate": 0.0,
+  "training_truncation_rate": 0.0,
+  "checkpoint": "D:\\User\\AI\\reasoning-rl-lab\\checkpoints\\desktopfilter_20261110-calibration-train",
+  "checkpoint_sha256": "9b6a3f3bbc226d52819435088bbfb166118f076f41e07088eeabc4296b5d270c",
+  "sft_checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "completed_optimizer_steps": 8,
+  "initial_checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "initialization_kind": "sft",
+  "is_sft_initialization": true,
+  "arm_total_through_checkpoint_seconds": 43.35663260000001,
+  "charged_training_entry_through_checkpoint_seconds": 43.35663390000013,
+  "observed_optimizer_steps_per_grpo_second": 0.20571270031589245,
+  "library_speed_metrics_note": "Raw Trainer throughput can use planned max_steps after early stopping; use observed counts over measured time.",
+  "wall_budget_overshoot_seconds": 0
+}

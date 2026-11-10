@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-11-10T09:07:37.592680+00:00",
+  "remaining_session_seconds_at_decision": 13636.04814529419,
+  "calibration_eval_process_seconds": 478.5653223991394,
+  "evaluation_reserve_seconds": 570,
+  "probe_calibration_process_seconds": 84.22478914260864,
+  "probe_calibration_generation_seconds": 73.08489570000006,
+  "estimated_probe_seconds_per_item": 5.709757476562505,
+  "estimated_probe_setup_seconds": 11.139893442608582,
+  "evaluated_choices": [
+    {
+      "train_allocation_seconds": 1500,
+      "candidate_pool_size": 96,
+      "estimated_probe_process_seconds": 559.276611192609,
+      "conservative_whole_session_seconds_needed": 13939.276611192608,
+      "fits_remaining": false
+    },
+    {
+      "train_allocation_seconds": 1200,
+      "candidate_pool_size": 64,
+      "estimated_probe_process_seconds": 376.5643719426089,
+      "conservative_whole_session_seconds_needed": 11956.56437194261,
+      "fits_remaining": true
+    },
+    {
+      "train_allocation_seconds": 900,
+      "candidate_pool_size": 64,
+      "estimated_probe_process_seconds": 376.5643719426089,
+      "conservative_whole_session_seconds_needed": 10156.56437194261,
+      "fits_remaining": true
+    }
+  ],
+  "selected": {
+    "train_allocation_seconds": 1200,
+    "candidate_pool_size": 64,
+    "estimated_probe_process_seconds": 376.5643719426089,
+    "conservative_whole_session_seconds_needed": 11956.56437194261,
+    "fits_remaining": true
+  },
+  "end_to_end_common_cap_seconds": 1830,
+  "candidate_pool_sha256": "5620f44ad3a103deda21f1454f4009d6497ab89e64f41ea3fdb637d5b3e1300e",
+  "basis": "Timing only. Baseline development accuracy and calibration reward histogram do not select capacity."
+}

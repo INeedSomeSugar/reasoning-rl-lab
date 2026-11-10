@@ -1,0 +1,40 @@
+{
+  "scope": "Illustrative seed13 discordances, first two IDs per direction in frozen validation order; not exhaustive or human semantic grading",
+  "reviewer": "agent",
+  "human_reviewed": false,
+  "primary_scores_or_protocol_changed": false,
+  "cases": [
+    {
+      "seed": 13,
+      "id": "gsm8k-train-03331",
+      "direction": "F_correct_U_wrong",
+      "finding": "U correctly converts 20 pounds to 320 ounces and a capacity of32 plates, then treats32 as the original plate count and returns31 instead of the number removed. F retains the original38 plates and computes(380-320)/10=6.",
+      "interpretation": "Observed quantity/state interpretation repair in this example; no claim of a general reasoning mechanism.",
+      "starting_S2_correct": true,
+      "starting_S2_extracted": "6",
+      "starting_S2_parse_ok": true
+    },
+    {
+      "seed": 13,
+      "id": "gsm8k-train-02782",
+      "direction": "F_correct_U_wrong",
+      "finding": "Both outputs calculate200 seconds. U puts a trailing empty #### after boxed200, followed only by the closing math delimiter; the frozen scorer prefers this last hash region and records parse failure. F ends with ####200 and is scored correct.",
+      "interpretation": "A final-answer extraction/format difference, not evidence that only F solved the arithmetic. This is sensitivity of the frozen conservative answer-region rule; do not silently relax the parser or rescore primary results.",
+      "starting_S2_correct": true,
+      "starting_S2_extracted": "200",
+      "starting_S2_parse_ok": true
+    },
+    {
+      "seed": 13,
+      "id": "gsm8k-train-06767",
+      "direction": "U_correct_F_wrong",
+      "finding": "F identifies25 regular reading days but fails to subtract the special100 pages from600, yielding24. U incorrectly uses26 regular days and rounds500/26 up to20, matching the gold answer despite an incorrect intermediate equation. The intended calculation is(600-100)/(30-4-1)=20.",
+      "interpretation": "Numeric-answer correctness does not guarantee faithful intermediate reasoning. F has an observed condition-omission error here; U's scored success is not a clean reasoning success.",
+      "starting_S2_correct": false,
+      "starting_S2_extracted": "24",
+      "starting_S2_parse_ok": true
+    }
+  ],
+  "boundary": "No training or evaluation membership, gold answer, checkpoint, generation setting or scoring rule was changed after these observations. All seed outcomes and raw discordant cases remain in the final analysis.",
+  "S2_context": "Plates and lizard were already correct at the common S2 start; F preserves those successes while U regresses. Reading-days S2 and F both return24; U reaches the gold20 via an incorrect intermediate equation and rounding. These examples do not establish new general reasoning ability."
+}
