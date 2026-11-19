@@ -1,0 +1,575 @@
+{
+  "unblinded_utc": "2026-11-18T18:57:28.936419+00:00",
+  "completed_cases": 338,
+  "pending_cases": 0,
+  "reviewed_responses": 676,
+  "unique_question_ids": 219,
+  "unique_endpoint_question_responses": 618,
+  "annotation_sha256_fixed_before_unblinding": "a5bf68ea93b682422822252cee3d34b6851d4b52370fa3e09020a05f806a8e80",
+  "pack_sha256": "d82bfdaf7c08173033ddd7bf41337a48c8a638b6eb833032d9d803ad0abd5cff",
+  "human_reviewed": false,
+  "reviewer_kind": "Agent",
+  "method_names_hidden_in_annotation_pack": true,
+  "scope": "Registered seed29 pairs where both objects succeeded. Include all discordant questions plus up to16 each common-correct and common-wrong per pair. An explicit exploratory same-driver F/U pair is listed separately if available.",
+  "stratum_counts": [
+    {
+      "comparison": "F-j20261111-s29/R-j20261111-s29",
+      "stratum": "discordant",
+      "n": 54
+    },
+    {
+      "comparison": "F-j20261111-s29/R-j20261111-s29",
+      "stratum": "common_correct",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261112-s29/S2",
+      "stratum": "discordant",
+      "n": 50
+    },
+    {
+      "comparison": "F-j20261111-s13/U-s13",
+      "stratum": "discordant",
+      "n": 59
+    },
+    {
+      "comparison": "F-j20261111-s29/R-j20261111-s29",
+      "stratum": "common_wrong",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261111-s29/S2",
+      "stratum": "common_wrong",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261111-s29/S2",
+      "stratum": "common_correct",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261111-s29/S2",
+      "stratum": "discordant",
+      "n": 47
+    },
+    {
+      "comparison": "F-j20261111-s13/U-s13",
+      "stratum": "common_correct",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261111-s13/U-s13",
+      "stratum": "common_wrong",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261112-s29/S2",
+      "stratum": "common_wrong",
+      "n": 16
+    },
+    {
+      "comparison": "F-j20261112-s29/S2",
+      "stratum": "common_correct",
+      "n": 16
+    }
+  ],
+  "registered_pair_count": 9,
+  "unavailable_registered_pairs": [
+    {
+      "comparison": "F-j20261111-s29/U-s29",
+      "missing_endpoints": [
+        "U-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261112-s29/U-s29",
+      "missing_endpoints": [
+        "U-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261112-s29/R-j20261112-s29",
+      "missing_endpoints": [
+        "R-j20261112-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261113-s29/U-s29",
+      "missing_endpoints": [
+        "F-j20261113-s29",
+        "U-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261113-s29/R-j20261113-s29",
+      "missing_endpoints": [
+        "F-j20261113-s29",
+        "R-j20261113-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261113-s29/S2",
+      "missing_endpoints": [
+        "F-j20261113-s29"
+      ]
+    }
+  ],
+  "complete_registered_scope": false,
+  "exploratory_pairs": [
+    "F-j20261111-s13/U-s13"
+  ],
+  "case_counts_by_scope": {
+    "registered_seed29": 247,
+    "exploratory_same_driver_seed13": 91
+  },
+  "unique_response_category_counts": [
+    {
+      "endpoint": "F-j20261111-s13",
+      "category": "calculation_error",
+      "n": 2
+    },
+    {
+      "endpoint": "F-j20261111-s13",
+      "category": "lucky_numeric_correct",
+      "n": 1
+    },
+    {
+      "endpoint": "F-j20261111-s13",
+      "category": "parsing_error",
+      "n": 3
+    },
+    {
+      "endpoint": "F-j20261111-s13",
+      "category": "read_or_modeling_error",
+      "n": 34
+    },
+    {
+      "endpoint": "F-j20261111-s13",
+      "category": "supported_correct",
+      "n": 45
+    },
+    {
+      "endpoint": "F-j20261111-s13",
+      "category": "uncertain",
+      "n": 6
+    },
+    {
+      "endpoint": "F-j20261111-s29",
+      "category": "calculation_error",
+      "n": 7
+    },
+    {
+      "endpoint": "F-j20261111-s29",
+      "category": "lucky_numeric_correct",
+      "n": 1
+    },
+    {
+      "endpoint": "F-j20261111-s29",
+      "category": "parsing_error",
+      "n": 4
+    },
+    {
+      "endpoint": "F-j20261111-s29",
+      "category": "read_or_modeling_error",
+      "n": 51
+    },
+    {
+      "endpoint": "F-j20261111-s29",
+      "category": "supported_correct",
+      "n": 68
+    },
+    {
+      "endpoint": "F-j20261111-s29",
+      "category": "uncertain",
+      "n": 4
+    },
+    {
+      "endpoint": "F-j20261112-s29",
+      "category": "calculation_error",
+      "n": 5
+    },
+    {
+      "endpoint": "F-j20261112-s29",
+      "category": "parsing_error",
+      "n": 5
+    },
+    {
+      "endpoint": "F-j20261112-s29",
+      "category": "read_or_modeling_error",
+      "n": 31
+    },
+    {
+      "endpoint": "F-j20261112-s29",
+      "category": "supported_correct",
+      "n": 38
+    },
+    {
+      "endpoint": "F-j20261112-s29",
+      "category": "uncertain",
+      "n": 3
+    },
+    {
+      "endpoint": "R-j20261111-s29",
+      "category": "calculation_error",
+      "n": 4
+    },
+    {
+      "endpoint": "R-j20261111-s29",
+      "category": "read_or_modeling_error",
+      "n": 30
+    },
+    {
+      "endpoint": "R-j20261111-s29",
+      "category": "supported_correct",
+      "n": 47
+    },
+    {
+      "endpoint": "R-j20261111-s29",
+      "category": "uncertain",
+      "n": 5
+    },
+    {
+      "endpoint": "S2",
+      "category": "calculation_error",
+      "n": 5
+    },
+    {
+      "endpoint": "S2",
+      "category": "lucky_numeric_correct",
+      "n": 2
+    },
+    {
+      "endpoint": "S2",
+      "category": "parsing_error",
+      "n": 8
+    },
+    {
+      "endpoint": "S2",
+      "category": "read_or_modeling_error",
+      "n": 45
+    },
+    {
+      "endpoint": "S2",
+      "category": "supported_correct",
+      "n": 68
+    },
+    {
+      "endpoint": "S2",
+      "category": "uncertain",
+      "n": 5
+    },
+    {
+      "endpoint": "U-s13",
+      "category": "calculation_error",
+      "n": 3
+    },
+    {
+      "endpoint": "U-s13",
+      "category": "parsing_error",
+      "n": 3
+    },
+    {
+      "endpoint": "U-s13",
+      "category": "read_or_modeling_error",
+      "n": 38
+    },
+    {
+      "endpoint": "U-s13",
+      "category": "supported_correct",
+      "n": 40
+    },
+    {
+      "endpoint": "U-s13",
+      "category": "truncated",
+      "n": 1
+    },
+    {
+      "endpoint": "U-s13",
+      "category": "uncertain",
+      "n": 6
+    }
+  ],
+  "repeated_response_judgment_conflicts": [],
+  "question_or_gold_flags": [
+    {
+      "case_id": "case-15b38ba034860a2e",
+      "id": "gsm8k-train-01138",
+      "notes": "问句how much will he have saved可指累计，而参考解只写四周后的单周额度60。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-4fc01b4c0bb71625",
+      "id": "gsm8k-train-02364",
+      "notes": "题干是严格大于75%，27%只达到75%。若分数须整数，最小28%；实数口径无可取的最小值。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-5d3211d58fc675d1",
+      "id": "gsm8k-train-05391",
+      "notes": "100颗属于朋友，Reggie初始数量未知。即使假设他也有100，净输10也不等于只输了一局。 | 未给雷吉初始弹珠数，无唯一解；参考解也把净损失当成输局数。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-e9d2e1f1295ec792",
+      "id": "gsm8k-train-05983",
+      "notes": "末句if they all stayed与前句有人离开略冲突，金标按其余人留场。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-9a42265ad18edbab",
+      "id": "gsm8k-train-07472",
+      "notes": "题面Anika30，Maddie应22.5，十五年后均龄41.25。参考解把比例反了。 | 题面比例下Maddie=30×3/4=22.5，十五年后均龄41.25。参考解反乘4/3。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-99c6c175f449eb8b",
+      "id": "gsm8k-train-05391",
+      "notes": "100颗属于朋友，Reggie初始数量未知。即使假设他也有100，净输10也不等于只输了一局。 | 未给雷吉初始弹珠数，无唯一解；参考解也把净损失当成输局数。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-b8687975bf5c4a60",
+      "id": "gsm8k-train-06929",
+      "notes": "参考解中一处把Matt写成Marcus，计算未变。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-b46f78ae1b7013a8",
+      "id": "gsm8k-train-01486",
+      "notes": "题干问剪发总次数，金标79只计付费累计；若含5次已领取免费剪发应是84。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-919e197c7c0473a6",
+      "id": "gsm8k-train-07157",
+      "notes": "参考解一处将6名工人误写成8名，但计算和金标使用6名。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-f196e6a18ea2da5d",
+      "id": "gsm8k-train-04319",
+      "notes": "题干未明说每天12个是每树还是10棵合计。 | 题干未说每棵树，参考解用每棵12个。按全园日产12个为84。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-4f4cbc94a9b25b59",
+      "id": "gsm8k-train-00796",
+      "notes": "题干未说明炉具能否并行或同批烹调，参考解默认所有步骤顺序进行。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-3383a204f4f805cb",
+      "id": "gsm8k-train-00778",
+      "notes": "另一辆车是否在3000美元购物中未明说，纳入时应从已有总价扣掉售价。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-731d8314e2d27094",
+      "id": "gsm8k-train-06044",
+      "notes": "题干按轮数叙述、按洞给数据，未给每轮洞数。金标9相当于每轮一洞。 | 题干说9轮，每洞超1杆，未给每轮洞数；标准18洞一轮时是162杆。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-0edbcc8c36dfb8b9",
+      "id": "gsm8k-train-00570",
+      "notes": "问句put into可指投放总额225，取出条件和金标采用净留池内200。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-f17467c4dc53606f",
+      "id": "gsm8k-train-00220",
+      "notes": "600 miles, back and forth可读作往返合计600或单程600，金标取单程600。 | 600英里往返可能表示往返共600或单程600。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-5d6cf5a3196173b1",
+      "id": "gsm8k-train-01388",
+      "notes": "蜘蛛不是昆虫。按题干问昆虫，12只蚂蚁加6只瓢虫为18；金标按全部小动物计。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-8ddaa7dfea28c882",
+      "id": "gsm8k-train-07157",
+      "notes": "参考解一处将6名工人误写成8名，但计算和金标使用6名。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-252ed9eb89dc8f0a",
+      "id": "gsm8k-train-00696",
+      "notes": "参考中间一处写52=B+8，实际应53，最终金标45仍正确。 | 参考解中间一处把53抄成52，方程、最终计算及金标45一致。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-b9c530d29f8c0c2a",
+      "id": "gsm8k-train-06196",
+      "notes": "开头与问句换人名，按同一业务计算不影响4。 | 题干主体从Vanessa切为Lisa，按同一业务理解可作答。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-3bd2a4fd9e6f6319",
+      "id": "gsm8k-train-06094",
+      "notes": "参考解一处说减8，实际是减13，算式结果117和金标13正确。 | 参考解有减8的文字笔误，117实际来自减13。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-b11eebfc0ef53acc",
+      "id": "gsm8k-train-01670",
+      "notes": "题干只说可容纳40个，未明说实际装满。这是金标所用假设。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-de0c5f34b6f4b4e4",
+      "id": "gsm8k-train-06929",
+      "notes": "参考解中一处把Matt写成Marcus，计算未变。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-7a1bf4c546eb7955",
+      "id": "gsm8k-train-00939",
+      "notes": "参考解称16只玩一种，实际16为至少一种。金标4按容斥仍正确。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-5568e4daff85c203",
+      "id": "gsm8k-train-03995",
+      "notes": "金标96把6平方英寸当作两条6英寸边等于36平方英寸。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-ec88cd1174692fed",
+      "id": "gsm8k-train-04973",
+      "notes": "题干两倍的参照鱼种不明；参考解将0.50误写成0.55。 | 题干只说金枪鱼是两倍，未明说参照鱼种；参考解把50%误写成0.55，但计算采用0.50。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-db3d2e13d94e09af",
+      "id": "gsm8k-train-02656",
+      "notes": "参考解称Z为200，题干及最终算式取400。数值金标1000仍成立。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-d6ad104903a8b703",
+      "id": "gsm8k-train-00675",
+      "notes": "题面未说明独立，边际概率不能唯一确定联合概率。更可能的相对增幅也与百分点差不同。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-9d2cd8d83326946b",
+      "id": "gsm8k-train-05391",
+      "notes": "100是朋友所带的数量；雷吉初始弹珠数缺失，参考解的1不可推出。 | 题干的100属于朋友，没有给雷吉的起始量；参考解省略胜局。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-dce4fc556840c7ac",
+      "id": "gsm8k-train-05391",
+      "notes": "100是朋友所带的数量；雷吉初始弹珠数缺失，参考解的1不可推出。 | 100颗属于朋友，Reggie初始数量未知。即使假设他也有100，净输10也不等于只输了一局。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-d23f59dae63dcd15",
+      "id": "gsm8k-train-00675",
+      "notes": "题面未说明独立，边际概率不能唯一确定联合概率。更可能的相对增幅也与百分点差不同。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-1955c5f86a8c9c0a",
+      "id": "gsm8k-train-07472",
+      "notes": "题面Anika30，Maddie应22.5，十五年后均龄41.25。参考解把比例反了。 | 题面比例下Maddie=30×3/4=22.5，十五年后均龄41.25。参考解反乘4/3。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-1b8ab8e37cbb8a21",
+      "id": "gsm8k-train-03110",
+      "notes": "参考解也把14岁按3–12岁价计。两成人及14岁共33，两儿童16，两老人18，按题干合67。 | 按价格年龄段14岁应按成人价，合计67。金标64沿用了错误年龄分类。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-c59558e63b598f7b",
+      "id": "gsm8k-train-05983",
+      "notes": "末句if they all stayed与前句有人离开略冲突，金标按其余人留场。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-67fd8f73ab8dcc31",
+      "id": "gsm8k-train-07444",
+      "notes": "金标280按14场计，与every other day冲突。参考解写14×20=140也不一致。 | 题干每隔一天是7场，按此140。金标280与题干频次冲突。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-6e62c013551ae47c",
+      "id": "gsm8k-train-06230",
+      "notes": "参考解一处将3/8写成2/8，实际用3/8正确计算。 | 参考解文字一处写2/8，实际算式和题干都使用3/8。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-486fe0d86c352b17",
+      "id": "gsm8k-train-00321",
+      "notes": "10 times more可指10倍或多10倍，参考用后者得15400。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-4915fe5143e9cad9",
+      "id": "gsm8k-train-07245",
+      "notes": "参考解一处把奥利维娅误写成阿米莉娅，计算及金标正确。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-6f8cb293c1cc83c0",
+      "id": "gsm8k-train-07075",
+      "notes": "剩20克的语法主语不够清楚。参考解采用全批只剩20克。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-e920165e5b2fed91",
+      "id": "gsm8k-train-02472",
+      "notes": "金标12%对应独立选择后随机给定一个上学日；若问全周是否出现同日组合，在独立选择下为60%。",
+      "gold_changed": false
+    },
+    {
+      "case_id": "case-17a99cb040beaf8f",
+      "id": "gsm8k-train-06929",
+      "notes": "参考解中一处把Matt写成Marcus，计算未变。",
+      "gold_changed": false
+    }
+  ],
+  "exact_text_deduplication": {
+    "source_pack_sha256": "d82bfdaf7c08173033ddd7bf41337a48c8a638b6eb833032d9d803ad0abd5cff",
+    "original_cases": 338,
+    "original_response_presentations": 676,
+    "unique_response_units_actually_annotated": 473,
+    "unit_annotations_fixed_sha256": "4fa781d7d450a50921d6f29405bcc0409219e4fe690df39bfe32afa5c6787e2a",
+    "derived_case_annotations_sha256": "a5bf68ea93b682422822252cee3d34b6851d4b52370fa3e09020a05f806a8e80",
+    "unit_annotation_batches": {
+      "blind_unit_review_batch_00001.jsonl": "a702e48af31a4d86e1d0d6846e02251f646fadcd212793023dd42d07c2174c37",
+      "blind_unit_review_batch_00021.jsonl": "cbf3712609c55369db5623a92441ed900c44a4f60d3d03160e4a66096c4a7c45",
+      "blind_unit_review_batch_00041.jsonl": "1b7e5ab13225ad9a1bae9cfd67413db9a601aff13a4f6c423421373f7ec51d92",
+      "blind_unit_review_batch_00061.jsonl": "fe9204d14a13a422d07ba418c0973138479834f90b51c476c24bc543022de84a",
+      "blind_unit_review_batch_00081.jsonl": "b75fb874e17e9e096714329e0e9ca74ce7094b14591878d5e72cbbd5fc63502f",
+      "blind_unit_review_batch_00101.jsonl": "08091475e9a7bdced0f1ac3ad70425d5f2859d8c0e54a46b8390e8667892c406",
+      "blind_unit_review_batch_00121.jsonl": "40966478e577cf456be2f4f19408b2ea5f3fd748bd4d559d9539352538364a03",
+      "blind_unit_review_batch_00141.jsonl": "edb71919579dc2dd5cdadfe8563d12072485d4083030b02cea03d3105c2f3c1f",
+      "blind_unit_review_batch_00161.jsonl": "a76ffd95e77916e16ecf3042f600d7615ebb2f3c16950c80710de878fb6c78c6",
+      "blind_unit_review_batch_00181.jsonl": "6d2fb78e8caec80d631ffd60f260add8b307091d51757dedee2ac4b06148924a",
+      "blind_unit_review_batch_00201.jsonl": "bd957d871f38bb74a2433458391107a562726dd3b430491e2bb29b35aa16b9a5",
+      "blind_unit_review_batch_00221.jsonl": "05f8a3ab3b287942faa25c47904dd7588adfe6d7a8f39a8b29d09a5ac4a1ab08",
+      "blind_unit_review_batch_00241.jsonl": "5c4b2dea0003ed2f4e5ea20e75f115d4913c0a0875f0fb6a4e67d40bbe557bb9",
+      "blind_unit_review_batch_00261.jsonl": "393b6325a9429dad7efd7ee535dcc6d295a538b80b9f437e1f13dba4c2220dcd",
+      "blind_unit_review_batch_00281.jsonl": "8989df34fa82417d24e33cade78e20b7f1f2ba057185f228b56b7964c976bc00",
+      "blind_unit_review_batch_00301.jsonl": "d701f0210ce6b944ed8f65be79af7d3fa4526848e234050362a1e5412ab72962",
+      "blind_unit_review_batch_00321.jsonl": "c377a6aa89973b3ab9cf344977bbf71ba1713a7fe36adcd76d23850df5c4484d",
+      "blind_unit_review_batch_00341.jsonl": "d6d7788286464e90450f6d867cb12230ef4b16fd8cff29000a36b87784f83ba5",
+      "blind_unit_review_batch_00361.jsonl": "4d8360513135471f8cfa058b35e849591e98c5e5ed3ced326978be307ca50825",
+      "blind_unit_review_batch_00381.jsonl": "1032a14b6acd3b84cbe7a5b29a48f364126ba2cad4c2347e9f6ca6d33474a4ad",
+      "blind_unit_review_batch_00401.jsonl": "02dea449f83fdc45b94fa450377af8baf4d56fa7aea6b939979955cd72705c9d",
+      "blind_unit_review_batch_00421.jsonl": "1e285aedf596d334c3ba6b82a37a47f29ed44556da7ead4ffd184f8f2866f39e",
+      "blind_unit_review_batch_00441.jsonl": "5359c23711a208d496f701f29214641051fd6839ca76ca846273444db5c59188",
+      "blind_unit_review_batch_00461.jsonl": "2fe54b31be3055c9bf59704135ff1b4e18cbb514714d07d66ad2bc72725d4585"
+    },
+    "all_original_case_aliases_preserved": true,
+    "identity_map_read": false,
+    "semantic_categories_assigned_by_program": false,
+    "human_reviewed": false
+  },
+  "unreviewed_other_seed_numeric_errors_automatically_arithmetic": false,
+  "scorer_gold_and_primary_outcomes_changed": false
+}

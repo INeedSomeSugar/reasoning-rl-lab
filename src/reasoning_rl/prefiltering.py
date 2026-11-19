@@ -3,6 +3,7 @@ from collections import Counter
 import json
 import math
 from pathlib import Path
+import random
 from .runtime import ROOT, jsonl_read, sha256_file
 
 
@@ -44,6 +45,14 @@ def remaining_training_seconds(common_seconds, elapsed_seconds, debit_seconds=0.
     return max(0.0, common_seconds - elapsed_seconds - debit_seconds)
 
 
+def matched_random_subset(candidate_ids, size, seed):
+    """Uniform subset of the FULL pool; overlap with the filtered set is permitted."""
+    if len(candidate_ids) != len(set(candidate_ids)) or not 0 < size <= len(candidate_ids):
+        raise ValueError("Random subset needs unique candidates and a valid nonzero size")
+    sampled = set(random.Random(seed).sample(candidate_ids, size))
+    return [i for i in candidate_ids if i in sampled]
+
+
 def resolve_frozen_pool(options, train, start_hash):
     """Validate paid probe bytes, raw membership and fixed S2 before uniform sampling."""
     path = local_file(options["candidate_pool_path"])
@@ -57,8 +66,17 @@ def resolve_frozen_pool(options, train, start_hash):
     if not set(ids) <= set(by_id) or any(by_id[i]["split"] != "train" for i in ids):
         raise ValueError("Candidate pool must be train-only")
     chosen, debit, evidence = ids, 0.0, None
-    if options.get("prefilter_manifest_path"):
-        manifest = json.loads(local_file(options["prefilter_manifest_path"]).read_text(encoding="utf-8"))
+    if options.get("prefilter_manifest_path") and options.get("random_subset_manifest_path"):
+        raise ValueError("One intervention per endpoint")
+    filter_path = options.get("prefilter_manifest_path")
+    random_manifest = None
+    if options.get("random_subset_manifest_path"):
+        random_manifest = json.loads(local_file(options["random_subset_manifest_path"]).read_text(encoding="utf-8"))
+        filter_path = random_manifest["matched_prefilter_manifest_path"]
+        if sha256_file(local_file(filter_path)) != random_manifest["matched_prefilter_manifest_sha256"]:
+            raise ValueError("Matched filtering evidence changed")
+    if filter_path:
+        manifest = json.loads(local_file(filter_path).read_text(encoding="utf-8"))
         if manifest["candidate_pool_sha256"] != sha256_file(path) or manifest["s2_checkpoint_sha256"] != start_hash:
             raise ValueError("Probe candidates or fixed S2 differ")
         raw_path = local_file(manifest["predictions_path"])
@@ -69,6 +87,17 @@ def resolve_frozen_pool(options, train, start_hash):
             raise ValueError("Frozen raw-count filter membership changed")
         if not chosen:
             raise ValueError("Empty filtered pool; do not silently change the probe seed")
-        evidence = charge_probe(manifest["probe_process_wall_seconds"])
+        evidence = charge_probe(manifest["probe_process_wall_seconds"], manifest.get("F_endpoint_count", 3))
         debit = evidence["primary_standalone_debit_per_F_endpoint_seconds"]
+        if random_manifest is not None:
+            if random_manifest["candidate_pool_sha256"] != sha256_file(path):
+                raise ValueError("Random subset candidate pool changed")
+            chosen = matched_random_subset(ids, len(chosen), random_manifest["random_subset_seed"])
+            if chosen != random_manifest["ids"]:
+                raise ValueError("Random subset differs from its uniform full-pool draw")
+            evidence.update(accounting_kind="R_experimental_matching_debit", physical_probe_required_by_R=False,
+                physical_R_subset_draw_seconds=random_manifest["physical_subset_draw_seconds"],
+                warning="Full probe deduction balances trainable time with F; it is not an intrinsic cost of random selection.")
+        else:
+            evidence.update(accounting_kind="F_full_standalone_probe_debit")
     return [by_id[i] for i in chosen], ids, debit, evidence

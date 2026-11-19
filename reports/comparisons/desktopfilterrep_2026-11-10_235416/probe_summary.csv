@@ -1,0 +1,4 @@
+﻿probe_seed,candidate_n,K,M,raw_success_0_items,raw_success_1_items,raw_success_2_items,raw_success_3_items,raw_success_4_items,full_process_seconds,generated_tokens,prompt_tokens,parse_failures,truncations,random_subset_seed,R_overlap_with_F
+20261111,256,4,70,11,15,16,39,175,1080.9531228542328,155991,108904,13,8,3101,25
+20261112,256,4,62,14,16,21,25,180,1085.6781723499298,154366,108904,15,9,3102,12
+20261113,256,4,70,9,13,24,33,177,1081.0220532417297,155584,108904,20,6,3103,19

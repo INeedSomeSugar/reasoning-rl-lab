@@ -1,0 +1,560 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "frozen_utc": "2026-11-10T18:07:18.995488+00:00",
+  "status": "frozen_before_any_main_training_or_new_development_evaluation",
+  "base_commit": "4ea43b03ce76a38fe5a525dd83a65e9751398d5a",
+  "common_start": "checkpoints/desktoprepair_20261106_152712-S2",
+  "common_start_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "model": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "training_stage": "pretraining and post-training; NOT Base",
+    "license": "Apache-2.0"
+  },
+  "budget": {
+    "B_seconds": 3600,
+    "E_seconds": 7500,
+    "O_seconds": 300,
+    "C_seconds": 11400,
+    "P_seconds": {
+      "20261111": 1080.9531228542328,
+      "20261112": 1085.6781723499298,
+      "20261113": 1081.0220532417297
+    },
+    "eval_old64_process_seconds": 218.6020951271057,
+    "eval_newN_linear_estimate_seconds": 3497.6335220336914,
+    "evaluation_reserve_unused_never_refills_training": true,
+    "evaluation_reserve_amendment_sha256": "ac7185e1be3958ddc8aee12b10828d9ea267b3b910b3127d24816847b23904d1",
+    "basis": "Only complete probe durations and historical-development timing; no fresh-development scores exist"
+  },
+  "session_limit": {
+    "frozen_utc": "2026-11-10T18:07:18.743039+00:00",
+    "registered_unix": 1794326057.1341243,
+    "preparation_calibration_probes_elapsed_wall_seconds": 7981.60591506958,
+    "remaining_primary_training_process_upper_seconds": 98773.46651554108,
+    "remaining_primary_evaluation_process_upper_seconds": 283050.0,
+    "failure_reserve_one_full_attempt_for_every_training_and_evaluation_unit_seconds": 381823.4665155411,
+    "scheduling_and_audit_margin_seconds": 152729.38660621643,
+    "analysis_reserve_seconds": 21600,
+    "total_session_hard_seconds": 946200,
+    "deadline_unix": 1795272257.1341243,
+    "likely_remaining_model_seconds_timing_estimate": 222935.90683078766,
+    "not_permission_for_extra_experiments": true,
+    "each_unit_max_attempts": 2,
+    "budget_cannot_be_extended_after_fresh_evaluation": true
+  },
+  "candidate_n": 256,
+  "development_n": 1024,
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "fresh_manifest_path": "data/fresh_development/desktopfilterrep_2026-11-10_235416/manifest.json",
+  "reservation_registry_sha256": "17ed726b1994c4a207f70ee9dea699c86a2e0adfe06388945f9ee4f7f11d8127",
+  "fresh_manifest_sha256": "3d9fe19b49f738352d18617e82949c274f3137c7d0c3b8809252fbc0b1cf32ca",
+  "subsets": {
+    "20261111": {
+      "F_path": "experiments/desktopfilterrep_2026-11-10_235416/prefilter_j20261111.json",
+      "F_sha256": "4d6042526f4c4ebc36933c6a6717da9adc63d26666cf072bc70e1a0fa96f0f75",
+      "R_path": "experiments/desktopfilterrep_2026-11-10_235416/random_j20261111.json",
+      "R_sha256": "204b39a401429558573083f2fcc7abf47041dedfe763d2d5bbeefcff9fe90223",
+      "M": 70
+    },
+    "20261112": {
+      "F_path": "experiments/desktopfilterrep_2026-11-10_235416/prefilter_j20261112.json",
+      "F_sha256": "2f6cd9448e0a772fff9747d16a6e8aac34ba21a85b954baf7ea77c3b40a8adc2",
+      "R_path": "experiments/desktopfilterrep_2026-11-10_235416/random_j20261112.json",
+      "R_sha256": "1eb93b85b7cbdc67e12373b3792dc1bda9e9e939a16986005ac850b7ce62f1df",
+      "M": 62
+    },
+    "20261113": {
+      "F_path": "experiments/desktopfilterrep_2026-11-10_235416/prefilter_j20261113.json",
+      "F_sha256": "7d4f9a1662712cc0ca735c856c93bdb13284b71ec1853ebb7a2231924a01a91e",
+      "R_path": "experiments/desktopfilterrep_2026-11-10_235416/random_j20261113.json",
+      "R_sha256": "7f5263840c8c5ee661d29d479d8d135014ecad9bc3d0f93e45d0cd2bb7a8fe32",
+      "M": 70
+    }
+  },
+  "configs": {
+    "U-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_U-s13.yaml",
+      "sha256": "027b333b3549b2c833aac0bfa850670459903d3b5a1567f39287ab20f1f7b700"
+    },
+    "F-j20261111-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261111-s13.yaml",
+      "sha256": "026551d19829a1f480aa0947f8e8732c25cb610a73043f6e2e6e7e6f754e4cfc"
+    },
+    "R-j20261111-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261111-s13.yaml",
+      "sha256": "9d4cc0cc4ba5048b3200fbbdd4967000a958a6dbc110913738e1856d98961954"
+    },
+    "R-j20261112-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261112-s13.yaml",
+      "sha256": "f2595cf5dd2db0620110758fe69057e28a98408a87f8ead9b360efb7b597cf57"
+    },
+    "F-j20261112-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261112-s13.yaml",
+      "sha256": "d4da29add1388385deba5e6f13a8fabfb62221b6ff1dac35e3891d22e8a3f843"
+    },
+    "F-j20261113-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261113-s13.yaml",
+      "sha256": "035133601829152a276c969d4df888502f7f9bbc2c8cf1f1776280e9a08f9ab7"
+    },
+    "R-j20261113-s13": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261113-s13.yaml",
+      "sha256": "733a2e3faf05a13f534df766fbfe2882a7a6e5009ec939e35608dcad6cbced98"
+    },
+    "R-j20261111-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261111-s29.yaml",
+      "sha256": "00d38e5befa0ebc6663d875f5d723f9698bdf2116e8a46accf918ebbe387e9d2"
+    },
+    "F-j20261111-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261111-s29.yaml",
+      "sha256": "4db1596d5fb7692207285ef52ccc0920a509ee7bf340ac0822f2c4fc290d1941"
+    },
+    "F-j20261112-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261112-s29.yaml",
+      "sha256": "e6cdb4cbeb3c19733ae050c2270018c2026afa48face8b7688ce60ad6da11a5b"
+    },
+    "U-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_U-s29.yaml",
+      "sha256": "16b559c9ebec738ed0f6eabfee6e93619cc69214261a6cfe93ece8941aa85467"
+    },
+    "R-j20261112-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261112-s29.yaml",
+      "sha256": "6ecae322575e5edf61456e9855dd461470ee568051b817abbebfb176a953788d"
+    },
+    "R-j20261113-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261113-s29.yaml",
+      "sha256": "aedb46dad1989fa903fb824f1aaba0b2936624515a56d734840db8655e511a00"
+    },
+    "F-j20261113-s29": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261113-s29.yaml",
+      "sha256": "227249ab1d39b303635f70658a7f6ed4ca26d7b85cd87919a977dc7360d8521a"
+    },
+    "F-j20261111-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261111-s47.yaml",
+      "sha256": "cfeb137afc82c984103297961b233c9d6a50cb61638645f127258c743915e2ad"
+    },
+    "R-j20261111-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261111-s47.yaml",
+      "sha256": "48af179a5d0732d075adef35179adace7c8f51bb4f462b89c5dcc7fbf6baad8f"
+    },
+    "R-j20261112-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261112-s47.yaml",
+      "sha256": "c72c585482dd627a2990239d5b5190729f14a6c9e6a9aae1587dd0b17ab3582b"
+    },
+    "F-j20261112-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261112-s47.yaml",
+      "sha256": "ad82dd46618c5ff82c6414da4f5a0c29da206c3732d8150f51e144954118c432"
+    },
+    "F-j20261113-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261113-s47.yaml",
+      "sha256": "3e57add5f06607985066ce4cf5af1995075ac51cb1be982b43dd8e2c3a9e4a25"
+    },
+    "R-j20261113-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261113-s47.yaml",
+      "sha256": "9e4c87de0fa37dccfb2ebe41562237ab41778ac36c24c39083f56bd0ed4b487d"
+    },
+    "U-s47": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_U-s47.yaml",
+      "sha256": "898eca3f67e1420b2120af9e2fe2fc119341cea64d5a69a4d32b46016fe60631"
+    },
+    "R-j20261111-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261111-s71.yaml",
+      "sha256": "b86f59c531d88008e0a038cb3ea0dd487457b70522eb5dfcb1ec90b61c7ce72d"
+    },
+    "F-j20261111-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261111-s71.yaml",
+      "sha256": "fea50fa5f7503d4b99104ec8f3fd326695b69f31212aa37840552ac525b4015f"
+    },
+    "U-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_U-s71.yaml",
+      "sha256": "e1bfa4d24487ed50a69d34ccbc5a974fd9b99dd9bfdc1884ab77513785f7f5ca"
+    },
+    "F-j20261112-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261112-s71.yaml",
+      "sha256": "c64744d4190d9e75b1d46537b64f31463ebc0721e6236a9cfc5ad8a7028ba90a"
+    },
+    "R-j20261112-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261112-s71.yaml",
+      "sha256": "e88ee1772f933dbe899a1fa6b634e10c0f82a125d340b94058da4d5d09e75603"
+    },
+    "R-j20261113-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261113-s71.yaml",
+      "sha256": "959aa0e47ec7ae66dd9b184eb43b9f6fb37d0b520b6f8564e80186fbd73caeb7"
+    },
+    "F-j20261113-s71": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261113-s71.yaml",
+      "sha256": "ddfc1d962d76db6760251eb7ad5f1c684eae9cbbd0311b87f724ef7075b63b40"
+    },
+    "F-j20261111-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261111-s97.yaml",
+      "sha256": "2c3628a5b81fce7b6f7107a3e3a8327c9ba93fdff6074f0e7730720bf04c5d70"
+    },
+    "R-j20261111-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261111-s97.yaml",
+      "sha256": "98c85ebb269e1f10763e14252256b1331d3229f5dda1e33829e9b93038ed6921"
+    },
+    "R-j20261112-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261112-s97.yaml",
+      "sha256": "621df322339188bb3d49317ff9f83a808f07a0db182c488e0e2a303757e59ca3"
+    },
+    "F-j20261112-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261112-s97.yaml",
+      "sha256": "d6fad682d8a9d8717b8c67f1769c944c62b9410ee48f672acb060231640d1157"
+    },
+    "F-j20261113-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_F-j20261113-s97.yaml",
+      "sha256": "e9d1afe26448ade5dc41617a354797f047c841b6b4ee65231a9d3f774e7f1f88"
+    },
+    "U-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_U-s97.yaml",
+      "sha256": "6b4d52e46e482f86e6a2d1e8f71d1aa2fa4fa3226f3c7ce3a47554f0b98507a3"
+    },
+    "R-j20261113-s97": {
+      "path": "configs/desktopfilterrep_2026-11-10_235416_R-j20261113-s97.yaml",
+      "sha256": "f3f5a30fb6512daaaa2d5c8e6e78f849dc0c74d215b7f8cb4c0e244b6b67b155"
+    }
+  },
+  "evaluation_config": {
+    "path": "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+    "sha256": "48d468098a706eaf5cdf9e99eb987f47d751f9e8999cdb90f44064920a37ee33"
+  },
+  "order": [
+    {
+      "key": "U-s13",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 13
+    },
+    {
+      "key": "F-j20261111-s13",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261111-s13",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261112-s13",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 13
+    },
+    {
+      "key": "F-j20261112-s13",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 13
+    },
+    {
+      "key": "F-j20261113-s13",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261113-s13",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261111-s29",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261111-s29",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261112-s29",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 29
+    },
+    {
+      "key": "U-s29",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 29
+    },
+    {
+      "key": "R-j20261112-s29",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 29
+    },
+    {
+      "key": "R-j20261113-s29",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261113-s29",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261111-s47",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261111-s47",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261112-s47",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 47
+    },
+    {
+      "key": "F-j20261112-s47",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 47
+    },
+    {
+      "key": "F-j20261113-s47",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261113-s47",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 47
+    },
+    {
+      "key": "U-s47",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261111-s71",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261111-s71",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 71
+    },
+    {
+      "key": "U-s71",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261112-s71",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 71
+    },
+    {
+      "key": "R-j20261112-s71",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 71
+    },
+    {
+      "key": "R-j20261113-s71",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261113-s71",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261111-s97",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 97
+    },
+    {
+      "key": "R-j20261111-s97",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 97
+    },
+    {
+      "key": "R-j20261112-s97",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 97
+    },
+    {
+      "key": "F-j20261112-s97",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 97
+    },
+    {
+      "key": "F-j20261113-s97",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 97
+    },
+    {
+      "key": "U-s97",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 97
+    },
+    {
+      "key": "R-j20261113-s97",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 97
+    }
+  ],
+  "evaluation_order": [
+    "S2",
+    "A",
+    "R-j20261113-s97",
+    "U-s97",
+    "F-j20261113-s97",
+    "F-j20261112-s97",
+    "R-j20261112-s97",
+    "R-j20261111-s97",
+    "F-j20261111-s97",
+    "F-j20261113-s71",
+    "R-j20261113-s71",
+    "R-j20261112-s71",
+    "F-j20261112-s71",
+    "U-s71",
+    "F-j20261111-s71",
+    "R-j20261111-s71",
+    "U-s47",
+    "R-j20261113-s47",
+    "F-j20261113-s47",
+    "F-j20261112-s47",
+    "R-j20261112-s47",
+    "R-j20261111-s47",
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29",
+    "F-j20261112-s29",
+    "F-j20261111-s29",
+    "R-j20261111-s29",
+    "R-j20261113-s13",
+    "F-j20261113-s13",
+    "F-j20261112-s13",
+    "R-j20261112-s13",
+    "R-j20261111-s13",
+    "F-j20261111-s13",
+    "U-s13"
+  ],
+  "code_sha256": "3622033fc1eecf3f51ee160cfe07af9c1cb98664698dbf94bc2fb57dc04eee2e",
+  "artifacts": {
+    "preregistration.json": "e2c09e1aa59b3688c26f224c88ded38c7c2bfc4a419594ae4853410741d61844",
+    "evaluation_reserve_amendment_before_main.json": "ac7185e1be3958ddc8aee12b10828d9ea267b3b910b3127d24816847b23904d1",
+    "remote_baseline_checked.json": "ff6af1b262f1fecd24059d82bdc5e008dc5eddfe123fc4295521d4f77fa8d9b1",
+    "history_audit.json": "dbb2135b606a12270d59093c523787b00e3a87caef689b1e8b599291a3dc0971",
+    "history_sources.jsonl": "4132fc9daeed84944997689ade0b8972d3f6d7f007fd030c76400b2aa758fd78",
+    "history_exposure_ledger.jsonl": "a21ed837bfd7b49c5cb6d9f62b0bc5a275d7272e703e0613a5526a3c0ddb0271",
+    "historical_exclusions.jsonl": "60e2836ef55740065bcff99d00716772e5067825755c0789d0366e7109829491",
+    "clusters.jsonl": "f190c9193ef2a7fbb7eb59d022c2821947a369b11bd72fc215c794e77886e7c9",
+    "candidate_order.json": "be39d3a8332b4f56050f5fe6734881b61b82b1adc16f4ce5b07d1f057521d0f1",
+    "candidate_review_pack.jsonl": "a33582c4219dc9bb3c19c159a49074e6192b20a1cc8e82b271e397f2397bdff7",
+    "candidate_review_completed.jsonl": "af7ccfa905fe03cbd11a7c11c428cd81bc52dbff9b650899861a4a7769b03aae",
+    "candidate_pool.json": "32975de2e830f7a27212b460f3c00de66d0099f1637de2bd4631087196ff5a5e",
+    "data_frozen.json": "7e47de41db81cb2882dcbecbc3b6a100c43b92ad939e08e02777cc56c5618e14",
+    "registered_matrix_order.json": "67da5b2d4ca398b1a3372e9ebe63cf3e19309ab95a81624722db5839e578a514",
+    "all_probes_complete.json": "08e67a0c6422c6d249a3ccc8e448ec07b52d9a2f2159e5c6a83057d48a760057",
+    "selection_diagnostics.json": "6f929621a6f0564aab250019d3be4162bba000173d8db0c94d34a3c1f5b38ac4",
+    "session_limit_frozen.json": "d9d5b37781da4d60883f8738d2845b85b8c644c4eb847f4824cfe3111d014f50",
+    "frozen_source_manifest.json": "1fbab33116c8be5266996df00003c8e6328d7ba1b8f369f600bf5f964c2cb4e6",
+    "preflight.json": "0daa2333a4685b40892b26cadc9488725bd66b104a1210f5eab77e57f071e1ff",
+    "calibration_complete.json": "64dd3e752389e88d0c28c413cc28061496440f95f83658d214150e907d9f05b4",
+    "probe_inputs_frozen.json": "a6865abdfc567c8f4c900006b63ed62d8cf0234c0096a83fa8f64a181eaf9f38",
+    "history_restoration.jsonl": "47af17ad25287b091e7f566af5313074165181436400cf363819f7bc4173336f",
+    "near_pairs_train_only.jsonl": "a855ce7467ecffe0b0c571cb7f4d839978d36ec34954e71025393c938547a626",
+    "offline_training_audit_smoke.json": "967baba9563d8c08b93413c5b781c70719504f3fba0d48c4c1eabec7fe192719",
+    "full_process_clock_smoke.json": "7f18f944e0a58bc473f1bf03c3eb914d4650700587aa9b860f9dc52e8c94b24c",
+    "prefilter_j20261111.json": "4d6042526f4c4ebc36933c6a6717da9adc63d26666cf072bc70e1a0fa96f0f75",
+    "random_j20261111.json": "204b39a401429558573083f2fcc7abf47041dedfe763d2d5bbeefcff9fe90223",
+    "prefilter_j20261112.json": "2f6cd9448e0a772fff9747d16a6e8aac34ba21a85b954baf7ea77c3b40a8adc2",
+    "random_j20261112.json": "1eb93b85b7cbdc67e12373b3792dc1bda9e9e939a16986005ac850b7ce62f1df",
+    "prefilter_j20261113.json": "7d4f9a1662712cc0ca735c856c93bdb13284b71ec1853ebb7a2231924a01a91e",
+    "random_j20261113.json": "7f5263840c8c5ee661d29d479d8d135014ecad9bc3d0f93e45d0cd2bb7a8fe32"
+  },
+  "fixed_variables": {
+    "precision": "nonquantized BF16/SDPA",
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "generation": {
+      "max_prompt_length": 512,
+      "max_new_tokens": 512,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "GRPO": {
+      "learning_rate": 5e-06,
+      "num_generations": 4,
+      "gradient_accumulation_steps": 4,
+      "loss_type": "grpo",
+      "scale_rewards": "group",
+      "beta": 0.0,
+      "epsilon": 0.2
+    },
+    "prompt": "math_numeric_v2",
+    "scorer": "numeric_final_v2",
+    "enable_thinking": false,
+    "unchanged_existing_behaviors": "token importance ratio; one iteration; truncated completion mask; AdamW/constant scheduler; zero-gradient Adam steps retained"
+  },
+  "statistics": {
+    "conditional_cluster_bootstrap_replicates": 20000,
+    "seed": 20261116,
+    "conditional_scope": "Jointly resample fresh-development near-duplicate clusters for the same fixed37 models; training/probe seeds fixed. Reuse each of five U endpoints in all three F-U blocks.",
+    "crossed_bootstrap_replicates": 20000,
+    "crossed_scope": "Resample five training-seed blocks, three paired selection blocks (F_j/R_j) and question clusters; reuse U within each sampled training-seed block. Exploratory with only3 selection blocks and one candidate pool."
+  },
+  "decisions": {
+    "engineering_signal_min_relative_improvement": 0.2,
+    "all_three_probe_blocks_signal_direction_positive": true,
+    "development_evidence_min_F_minus_U_pp": 1.0,
+    "conditional95_lower_bound_positive": true,
+    "interpretation": "Thresholds prospectively guide a second independent-pool study; are neither guaranteed outcomes nor a power claim. Negative/cross-zero results retained; no result-driven extra runs."
+  },
+  "blind_review": {
+    "seed": 20261117,
+    "rule": "For each F-U, F-R, F-S2 comparison use seed29 in each selection block; include all discordant question IDs across those pairs. Hide methods and outcome labels, randomize aliases/order. Also deterministic sample16 jointly correct and16 jointly wrong per comparison; preserve common-seed sampling. Agent review, not human. No unreviewed numeric error called arithmetic error."
+  },
+  "R_matching": "Deduct full P_j for equal trainable time; not an inherent physical random-selection cost; no claim about an unrun longer-training R",
+  "training_clock": "B starts at controller preparation before full source/model/tokenizer cache verification. Recorded outer UNIX start is passed to the child and converted once into its monotonic budget clock, including interpreter imports/loading/training/saving. Post-checkpoint parent audit and natural-boundary overshoot are charged and reported under C.",
+  "U_reuse": "Only five independent U endpoints; reused in the15 paired F-U cells and in resampling dependencies",
+  "missingness": "Preserve failed attempts; maxone full retry fromS2/config; first success. Freeze all35 terminal statuses before fresh evaluation; report all missing cells, never silently delete.",
+  "holdout": "GSM8K test/SVAMP sealed. Fresh development is isolated official train, project-record unseen only; public pretraining contamination unknown."
+}

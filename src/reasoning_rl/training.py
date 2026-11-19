@@ -3,6 +3,7 @@ import gc
 import hashlib
 import json
 import math
+import os
 import time
 from pathlib import Path
 from .runtime import ROOT, create_run, json_write, jsonl_write, jsonl_append, sha256_file, checkpoint_hash, code_hash, seed_everything
@@ -12,6 +13,21 @@ from .evaluation import evaluate_rows, generate_one, validation_rows
 from .scoring import score_answer, group_advantages
 from .sampling import DifficultySampler, RolloutCacheSampler
 from .prefiltering import resolve_frozen_pool, remaining_training_seconds
+
+
+def _accounted_arm_start(options, outer_started=None, now_unix=None, now_perf=None):
+    """Optionally charge controller verification and interpreter startup inside B."""
+    observed_perf = time.perf_counter() if now_perf is None else now_perf
+    if not options.get("account_outer_process_start", False):
+        return observed_perf
+    raw = os.environ.get("RRL_BUDGET_START_UNIX") if outer_started is None else outer_started
+    if raw is None:
+        raise ValueError("Full process accounting requires the controlled runner's recorded outer budget start")
+    started = float(raw)
+    observed_unix = time.time() if now_unix is None else now_unix
+    if not math.isfinite(started) or started > observed_unix+1:
+        raise ValueError("Invalid outer process budget start")
+    return observed_perf-max(0, observed_unix-started)
 
 
 def _snapshot_trainable(model):
@@ -259,7 +275,7 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
     from trl import GRPOConfig, GRPOTrainer
     if strategy not in ("uniform", "dynamic", "static"):
         raise ValueError(strategy)
-    arm_started = time.perf_counter()
+    arm_started = _accounted_arm_start(config["grpo"])
     source_meta, expected_stage = _starting_checkpoint_metadata(sft_checkpoint,public_start)
     directory, ledger = create_run(name, {**config, "strategy": strategy})
     seed_everything(config["seed"])
@@ -316,6 +332,7 @@ def run_grpo(config, name, sft_checkpoint, strategy, public_start=False):
         "code_sha256": code_hash(),
         "probe_cost_included": True, "distributed_supported": False,
         "experiment_arm": opts.get("experiment_arm"),
+        "outer_budget_start_unix": float(os.environ["RRL_BUDGET_START_UNIX"]) if opts.get("account_outer_process_start") else None,
         "initial_probe_standalone_cost_debit_seconds": probe_cost_debit,
         "shared_probe_cost_accounting": probe_cost_evidence})
     statistics = {"generation_batches": 0, "processed_tokens": 0, "padded_processed_tokens": 0,

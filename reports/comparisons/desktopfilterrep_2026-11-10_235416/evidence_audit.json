@@ -1,0 +1,18 @@
+{
+  "status": "passed_with_explicit_missingness",
+  "successful_training_audited": 35,
+  "successful_evaluations_audited": 32,
+  "missing_objects": [
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29"
+  ],
+  "all_scores_recomputed_with_unchanged_scorer": true,
+  "actual_tensor_masks_advantages_gradients_adam_and_parameter_deltas_checked": true,
+  "no_formal_holdout_contents_read": true,
+  "blind_review_is_separate_pending_step": true,
+  "interrupted_process_costs_not_omitted": true,
+  "primary_metrics_and_thresholds_unchanged": true
+}

@@ -1,5 +1,19 @@
 # 项目上下文
 
+<!-- LARGE_FILTER_CURRENT_BEGIN -->
+## 固定预筛复验
+
+`desktopfilterrep_2026-11-10_235416` 已复核 35/35 个训练终点及 32/37 个对象在同一新开发 1024 题上的完整评估。共同池 256 题，三次固定 S2/K4 实际 F 集合大小 70/62/70。U 共 5 个独立终点，在三个探测块复用。全部训练权重在新开发集开启前锁定。
+
+F−U 在 11/15 个可观测配对中平均 -0.293 pp，条件 95% 区间为 [-0.923, +0.346] pp。F−R 在 12/15 个可观测配对中平均 -0.285 pp。端到端记录齐全的训练种子整块中，F 的有效 completion/秒相对 U 变化 +65.06%。5 个对象耗尽重试。原定完整矩阵准确率和端到端工程阈值无法判定。报告含 35 个训练终点的信号证据、完整缺失矩阵、可用配对区间和盲化 Agent 审阅。
+
+全部登记对象已到终态，待运行队列为空。新开发集来自官方 train 的后置隔离子集。项目记录未显示这些题被曝光，公开模型预训练曝光未知。GSM8K 正式 test 和 SVAMP 保持封存。本轮报告、汇总统计和代码已发布。原始运行归档与权重附件的公开范围待确认。
+
+[中文报告](reports/comparisons/desktopfilterrep_2026-11-10_235416/findings.md) · [全部终点及成本](reports/comparisons/desktopfilterrep_2026-11-10_235416/endpoints.csv) · [配对差与区间](reports/comparisons/desktopfilterrep_2026-11-10_235416/summary.json) · [协议](experiments/desktopfilterrep_2026-11-10_235416/protocol_frozen.json) · 完整工件 SHA256 · [复现](docs/REPRODUCING_FILTER_REPLICATION_20261110.md) · [文档导航](docs/INDEX.md)
+
+
+<!-- LARGE_FILTER_CURRENT_END -->
+
 <!-- FILTER_20261110_CURRENT_BEGIN -->
 ## 最新完成：固定S2预筛与均匀对照（2026-11-10）
 
