@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-11-12T09:35:33.9461973Z",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "active_project_model_or_controller_processes": [],
+  "gpu_lock_exists": false,
+  "scope": "HOST process inventory after completed evaluation-boundary pause",
+  "read_only_host_check": true
+}

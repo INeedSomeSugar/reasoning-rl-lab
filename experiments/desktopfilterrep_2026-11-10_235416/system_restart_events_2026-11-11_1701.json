@@ -1,0 +1,62 @@
+[
+  {
+    "TimeCreated": "2026-11-11T17:03:12.4180143+08:00",
+    "Id": 12,
+    "ProviderName": "Microsoft-Windows-Kernel-General",
+    "Message": "操作系统已在系统时间 ‎2026‎-‎11‎-‎11T09:03:11.500000000Z 启动。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:02:52.3268931+08:00",
+    "Id": 13,
+    "ProviderName": "Microsoft-Windows-Kernel-General",
+    "Message": "操作系统将在系统时间 ‎2026‎-‎11‎-‎11T09:02:52.326891800Z 关闭。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:03:22.7841532+08:00",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:02:46.9897783+08:00",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:02:45.7748111+08:00",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\servicing\\TrustedInstaller.exe (KEON) 由于以下原因已代表用户 NT AUTHORITY\\SYSTEM 启动计算机 KEON 的 重启: 操作系统: 升级(计划内)\r\n 原因代码: 0x80020003\r\n 关机类型: 重启\r\n 注释: "
+  },
+  {
+    "TimeCreated": "2026-11-11T17:02:17.4198451+08:00",
+    "Id": 12,
+    "ProviderName": "Microsoft-Windows-Kernel-General",
+    "Message": "操作系统已在系统时间 ‎2026‎-‎11‎-‎11T09:02:16.500000000Z 启动。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:01:42.1538949+08:00",
+    "Id": 13,
+    "ProviderName": "Microsoft-Windows-Kernel-General",
+    "Message": "操作系统将在系统时间 ‎2026‎-‎11‎-‎11T09:01:42.153893300Z 关闭。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:02:29.4543125+08:00",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:01:37.8356922+08:00",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "TimeCreated": "2026-11-11T17:01:14.6381291+08:00",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe (KEON) 由于以下原因已代表用户 Keon\\jiang 启动计算机 KEON 的 重启: 其他(计划外)\r\n 原因代码: 0x0\r\n 关机类型: 重启\r\n 注释: "
+  }
+]

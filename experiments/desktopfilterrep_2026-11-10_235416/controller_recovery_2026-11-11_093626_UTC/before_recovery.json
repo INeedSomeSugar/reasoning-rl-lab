@@ -1,0 +1,34 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "recorded_utc": "2026-11-11T09:36:26.976817+00:00",
+  "old_runner_pid": 4488,
+  "old_child_pid": 22416,
+  "new_runner_pid": 22920,
+  "old_heartbeat": {
+    "family": "desktopfilterrep_2026-11-10_235416",
+    "runner_pid": 4488,
+    "child_pid": 22416,
+    "phase": "U-s47-a0",
+    "elapsed_seconds": 960.5186188220978,
+    "timeout_seconds": 3746.5250356000033,
+    "heartbeat_utc": "2026-11-11T09:01:12.431770+00:00",
+    "host": {
+      "utc": "2026-11-11T09:01:12.431770+00:00",
+      "ram_available_bytes": 9226911744,
+      "disk_free_bytes": 211296378880,
+      "cpu_percent_instantaneous": 18.8,
+      "process_pid": 4488,
+      "boot_time_unix": 1794299602.0518286
+    }
+  },
+  "units_before_sha256": "094d6989b1a240713ce44e28c7e6c03e693387734b0479867abcf1bc1aa79b9b",
+  "old_pid_receipt_preserved": "runner_controlled_pid.json",
+  "boot_time_unix": 1794387791.0505672,
+  "old_lock_evidence_path": "experiments/desktopfilterrep_2026-11-10_235416/controller_recovery_2026-11-11_093414_UTC/stale_gpu_lock.json",
+  "frozen_protocol_sha256": "c653ebc367094d694cbabb37c159afb2bff1348a1d68fe9ffb92491edd5a0d24",
+  "frozen_source_verified": true,
+  "all20_successful_endpoints_preserved": true,
+  "same_S2_config_seed_complete_retry_only": true,
+  "exact_sampler_optimizer_resume": false,
+  "original_session_deadline_unchanged": 1795272257.1341243
+}

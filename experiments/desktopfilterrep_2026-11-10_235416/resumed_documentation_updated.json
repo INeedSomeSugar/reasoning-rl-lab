@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-11-11T14:49:55.911364+00:00",
+  "runner_pid": 29064,
+  "completed_training_at_update": 21,
+  "fresh_evaluations": 0,
+  "resume_record": "experiments/desktopfilterrep_2026-11-10_235416/controller_resume_2026-11-11_144845_UTC/resume_record.json",
+  "files": {
+    "README.md": "7f9005056a66d41ac8b63ec40b9e57f1b58f56b98328cb77d59a1c10c1c9e19c",
+    "PROJECT_CONTEXT.md": "2db6f5d43a0344ba398f20e1f900d579b3b3da080bdb17a71a9c1d7b8c564620",
+    "HANDOFF.md": "967d9a8bded945e0042036a42e29561895743ea3c158560da8d207f58fb414af"
+  },
+  "historical_pause_receipts_preserved": true,
+  "original_deadline_unchanged": true
+}

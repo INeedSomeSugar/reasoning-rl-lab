@@ -1,0 +1,74 @@
+{
+  "checked_utc": "2026-11-12T17:09:20.121746+00:00",
+  "status": "all_completed_evaluation_integrity_passed",
+  "completed_evaluations": 13,
+  "records": [
+    {
+      "endpoint": "S2",
+      "n": 1024,
+      "predictions_sha256": "d6fa6461504b9f451f9aade67e37d64758d66ae94b1f2dbdadcc307bacf4984a"
+    },
+    {
+      "endpoint": "A",
+      "n": 1024,
+      "predictions_sha256": "8e83da47958b66ffb49ef3ef595bee84969f8207c6b4975a0b146950d330b85c"
+    },
+    {
+      "endpoint": "R-j20261113-s97",
+      "n": 1024,
+      "predictions_sha256": "c2e973b2ec70c1fbf4c1bdf08316ce4d81da52917441b9990ccfdf5b20c69c78"
+    },
+    {
+      "endpoint": "U-s97",
+      "n": 1024,
+      "predictions_sha256": "f57cb672235487c6b54acc21f6d1c3099a4daf84898bbb76691bca0a107bc668"
+    },
+    {
+      "endpoint": "F-j20261113-s97",
+      "n": 1024,
+      "predictions_sha256": "a5520de63622844301dc5c2f906c74191c8f049fa73d13dd5cdff7f164ed7217"
+    },
+    {
+      "endpoint": "F-j20261112-s97",
+      "n": 1024,
+      "predictions_sha256": "596ebc1266f9cbb58928d142ba9985437cf4339d5034b9357c3d9665e18d4e2e"
+    },
+    {
+      "endpoint": "R-j20261112-s97",
+      "n": 1024,
+      "predictions_sha256": "70253a704a39236f49fabf7bb43113ef83b2ef602b391b5d7405358a3401c59b"
+    },
+    {
+      "endpoint": "R-j20261111-s97",
+      "n": 1024,
+      "predictions_sha256": "07671562fc161a00d99c9922bc2ae5ac74cb3833ef5c75a2226e3965a9b841a4"
+    },
+    {
+      "endpoint": "F-j20261111-s97",
+      "n": 1024,
+      "predictions_sha256": "1511b2761fdde7555b10ac374b04d134c79f1184ab5a845ace1adfdff11ea1cf"
+    },
+    {
+      "endpoint": "F-j20261113-s71",
+      "n": 1024,
+      "predictions_sha256": "f11d7ef5a8b46ee29b73169684d695cd71759a06c19c1d67db6b6458eee2e607"
+    },
+    {
+      "endpoint": "R-j20261113-s71",
+      "n": 1024,
+      "predictions_sha256": "c3d6abda45551699931d2f8ce79e6398eedeea3e1364a0b5ffa43bcc17ac4e59"
+    },
+    {
+      "endpoint": "R-j20261112-s71",
+      "n": 1024,
+      "predictions_sha256": "94d60ce30d7f992ec222f2aa181bf724c72d6ac2220e458e18c833543f11d5b7"
+    },
+    {
+      "endpoint": "F-j20261112-s71",
+      "n": 1024,
+      "predictions_sha256": "9425338d51880995665576a608f5c9a0393268c781f636376901eed32d861ac1"
+    }
+  ],
+  "no_scores_or_response_text_printed": true,
+  "main_statistics_not_run": true
+}

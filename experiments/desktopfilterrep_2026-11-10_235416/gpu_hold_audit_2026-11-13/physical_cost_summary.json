@@ -1,0 +1,20 @@
+{
+  "measured_owned_model_process_seconds": 165828.4363670349,
+  "exact_completed_process_receipt_count": 75,
+  "interrupted_process_count": 1,
+  "interrupted_model_process_seconds_lower_bound": 962.6498498916626,
+  "interrupted_model_process_seconds_upper_bound": 1025.5066931247711,
+  "all_attempt_model_process_seconds_lower_bound": 166791.08621692657,
+  "all_attempt_model_process_seconds_upper_bound": 166853.94306015968,
+  "measured_owned_model_process_seconds_scope": "Exact completed process receipts only; interrupted model costs are included in all-attempt bounds",
+  "completed_failed_process_seconds": 874.4288160800934,
+  "failed_process_seconds": null,
+  "failed_process_seconds_scope": "Unknown exact total when an interruption exists; use failed-model cost bounds, never impute zero",
+  "completed_failed_process_count": 11,
+  "failed_model_process_seconds_lower_bound": 1837.078665971756,
+  "failed_model_process_seconds_upper_bound": 1899.9355092048645,
+  "controller_preparation_failures_with_preserved_source": 1,
+  "CPU_preparation_and_user_pause_cost_scope": "Included in registered session wall time; not falsely labeled GPU-active process time",
+  "all_attempts_in_physical_ledger": true,
+  "unknown_exit_codes_not_imputed": true
+}

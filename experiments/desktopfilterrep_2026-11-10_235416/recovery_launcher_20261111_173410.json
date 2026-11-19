@@ -1,0 +1,9 @@
+{
+  "launcher_pid": 17464,
+  "launched_local": "2026-11-11T17:34:10.4584527+08:00",
+  "stdout": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-controlled-recovery-20261111_173410.stdout.log",
+  "stderr": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-controlled-recovery-20261111_173410.stderr.log",
+  "protocol_unchanged": true,
+  "only_U47_a1_retry": true,
+  "old_PID_and_outputs_preserved": true
+}

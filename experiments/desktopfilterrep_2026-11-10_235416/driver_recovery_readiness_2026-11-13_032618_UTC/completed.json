@@ -1,0 +1,112 @@
+{
+  "completed_utc": "2026-11-13T03:30:41.602533+00:00",
+  "status": "passed",
+  "process_receipts": [
+    {
+      "label": "driver-recovery-tensor-2026-11-13_032618_UTC",
+      "argv": [
+        "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+        "-u",
+        "analysis/check_large_filter_driver_recovery.py",
+        "--tensor-child",
+        "--record",
+        "experiments/desktopfilterrep_2026-11-10_235416/driver_recovery_readiness_2026-11-13_032618_UTC/tensor.json"
+      ],
+      "pid": 3576,
+      "runner_pid": 23260,
+      "started_unix": 1794540378.2334967,
+      "finished_unix": 1794540383.677849,
+      "process_wall_seconds": 5.444352388381958,
+      "outer_budget_start_unix": null,
+      "exit_code": 0,
+      "timeout": false,
+      "timeout_seconds": 180,
+      "log": "logs/desktopfilterrep_2026-11-10_235416-driver-recovery-tensor-2026-11-13_032618_UTC.log",
+      "host_before": {
+        "utc": "2026-11-13T03:26:18.233496+00:00",
+        "ram_available_bytes": 8952344576,
+        "disk_free_bytes": 210896420864,
+        "cpu_percent_instantaneous": 40.0,
+        "process_pid": 23260,
+        "boot_time_unix": 1794539132.050429
+      },
+      "host_after": {
+        "utc": "2026-11-13T03:26:23.677849+00:00",
+        "ram_available_bytes": 8895328256,
+        "disk_free_bytes": 210896416768,
+        "cpu_percent_instantaneous": 15.6,
+        "process_pid": 23260,
+        "boot_time_unix": 1794539132.050429
+      }
+    },
+    {
+      "label": "driver-recovery-old64-2026-11-13_032618_UTC",
+      "argv": [
+        "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "reasoning_rl",
+        "evaluate",
+        "--name",
+        "desktopfilterrep_2026-11-10_235416-driver-recovery-old64-2026-11-13_032618_UTC",
+        "--config",
+        "configs/desktopfilterrep_2026-11-10_235416_calibration.yaml",
+        "--hardware",
+        "rocm",
+        "--adapter",
+        "checkpoints/desktoprepair_20261106_152712-S2"
+      ],
+      "pid": 19464,
+      "runner_pid": 23260,
+      "started_unix": 1794540383.685346,
+      "finished_unix": 1794540638.5163066,
+      "process_wall_seconds": 254.83096075057983,
+      "outer_budget_start_unix": null,
+      "exit_code": 0,
+      "timeout": false,
+      "timeout_seconds": 1200,
+      "log": "logs/desktopfilterrep_2026-11-10_235416-driver-recovery-old64-2026-11-13_032618_UTC.log",
+      "host_before": {
+        "utc": "2026-11-13T03:26:23.685345+00:00",
+        "ram_available_bytes": 8900001792,
+        "disk_free_bytes": 210896416768,
+        "cpu_percent_instantaneous": 0.0,
+        "process_pid": 23260,
+        "boot_time_unix": 1794539132.050429
+      },
+      "host_after": {
+        "utc": "2026-11-13T03:30:38.516306+00:00",
+        "ram_available_bytes": 8668925952,
+        "disk_free_bytes": 210894606336,
+        "cpu_percent_instantaneous": 20.9,
+        "process_pid": 23260,
+        "boot_time_unix": 1794539132.050429
+      }
+    }
+  ],
+  "tensor": {
+    "checked_utc": "2026-11-13T03:26:23.293377+00:00",
+    "status": "tensor_BF16_SDPA_forward_backward_and_cast_passed",
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "device": "AMD Radeon RX 9070 XT",
+    "visible_device_count": 1,
+    "peak_allocated_bytes": 527360,
+    "no_model_or_dataset_loaded": true,
+    "no_optimizer_or_saved_model_modified": true
+  },
+  "old64_parity": {
+    "n": 64,
+    "prediction_text_identical": 64,
+    "strict_correct_flags_identical": 64,
+    "original_correct": 52,
+    "recovered_driver_correct": 52,
+    "original_predictions_sha256": "b4568567aaae183a0483db53f12b9d1e56f0f320a530005dd67b587def19052f",
+    "recovery_predictions_sha256": "b4568567aaae183a0483db53f12b9d1e56f0f320a530005dd67b587def19052f",
+    "ID_order_matches_original64": true,
+    "does_not_prove_full_new_development_driver_equivalence": true
+  },
+  "frozen_source_data_models_unchanged": true,
+  "fresh_development_test_SVAMP_not_accessed": true,
+  "no_training_or_primary_evaluation_attempts_consumed": true
+}

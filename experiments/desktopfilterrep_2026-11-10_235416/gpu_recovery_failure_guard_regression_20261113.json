@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-13T03:46:04.907004+00:00",
+  "status": "passed",
+  "checks": [
+    "child failure stops before next attempt",
+    "evaluation args and budget passed unchanged",
+    "training rejected before process launch",
+    "historical failures retained and tolerated",
+    "new validation failure stops before GPU check"
+  ],
+  "CPU_only": true,
+  "no_actual_model_generation_or_training": true,
+  "guard_source_sha256": "9db5671a1de5a56704b91fbd4fb3fcda5f5f36a02dcfe32bbdf2cb2cdeba7386",
+  "test_source_sha256": "227008195c5472985b7096de9a32560e690dbde7e340e750939e61a6d0230ffd"
+}

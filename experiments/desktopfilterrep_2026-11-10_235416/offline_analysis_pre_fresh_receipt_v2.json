@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-11-11T02:28:22.597567+00:00",
+  "fresh_evaluation_opened": false,
+  "previous_receipt_sha256": "d1e30802be04eac121fbd713237baa6c2e35998ac245868636dd88619db73f3c",
+  "files": {
+    "analysis/write_large_filter_report.py": "4a4ecdf839130cbc6cf5ba8ace62b2c927a12e6b7174c8748b56ccd051fa3118",
+    "analysis/audit_large_filter_closeout.py": "d4b084d2bdc409fdf34431f40ccbe7c08ad98c9e5d8704682883079c6f7102fb"
+  },
+  "change": "Clarify actual endpoint counts versus 5 training-seed blocks, 3 probe-selection blocks and 1 candidate pool. No changes to model runtime, data, inference, bootstrap or thresholds.",
+  "all_inferential_design_remains_frozen": true
+}

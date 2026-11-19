@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-11-12T14:27:23.0619946Z",
+  "active_project_model_or_controller_processes": [],
+  "gpu_lock_exists": false,
+  "video": [
+    {
+      "Name": "GameViewer Virtual Display Adapter",
+      "DriverVersion": "15.6.5.199",
+      "AdapterRAM": null,
+      "Status": "OK"
+    },
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.12012",
+      "AdapterRAM": 4293918720,
+      "Status": "OK"
+    },
+    {
+      "Name": "AMD Radeon(TM) Graphics",
+      "DriverVersion": "32.0.21045.16010",
+      "AdapterRAM": 536870912,
+      "Status": "OK"
+    }
+  ],
+  "os": [
+    {
+      "Caption": "Microsoft Windows 11 专业版",
+      "Version": "10.0.26300",
+      "BuildNumber": "26300",
+      "LastBootUpTime": "2026-11-11T17:03:11.500168+08:00"
+    }
+  ]
+}

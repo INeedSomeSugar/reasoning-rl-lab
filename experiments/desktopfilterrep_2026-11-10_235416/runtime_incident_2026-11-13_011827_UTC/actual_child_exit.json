@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "child_created_unix": 1794532491.9220238,
+  "child_exit_unix": 1794532503.9694843,
+  "timing_source": "Windows GetProcessTimes held process handle; not controller resume time"
+}

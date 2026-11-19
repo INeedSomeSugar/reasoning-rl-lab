@@ -1,0 +1,24 @@
+{
+  "paused_utc": "2026-11-11T10:36:34.758673+00:00",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "status": "paused_by_user_after_terminal_checkpoint",
+  "completed_training": 21,
+  "registered_training": 35,
+  "completed_evaluation": 0,
+  "current_endpoint_status": "first_success_fixed",
+  "checkpoint": "checkpoints/desktopfilterrep_2026-11-10_235416-U-s47-a1",
+  "checkpoint_sha256": "3f0584c03d10f72c5c422aa04217923f48a5204d9b572026fd6ad3a21bd05cb7",
+  "attempt_exit_info": {
+    "exit_code": 0,
+    "child_created_unix": 1794389792.735361,
+    "child_exit_unix": 1794393394.7131748,
+    "timing_source": "Windows GetProcessTimes held process handle; not controller resume time"
+  },
+  "old_controller_terminated_after_checkpoint": 22920,
+  "model_child_finished": 11672,
+  "no_next_unit_started": true,
+  "fresh_development_opened": false,
+  "original_deadline_unix_unchanged": 1795272257.1341243,
+  "exact_sampler_optimizer_resume_claimed": false,
+  "resume_policy": "Skip successful fixed endpoints; begin the next pending unit from the same frozen S2/config. No mid-unit resume."
+}

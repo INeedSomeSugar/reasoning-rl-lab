@@ -1,0 +1,1 @@
+{"family": "desktopfilterrep_2026-11-10_235416", "label": "user-evaluation-pause-guard", "runner_pid": 3724, "started_unix": 1794540872.975021, "purpose": "Fence the next model launch while the current evaluation finishes", "current_controller_pid": 28840, "current_label": "eval-F-j20261112-s29-a1"}

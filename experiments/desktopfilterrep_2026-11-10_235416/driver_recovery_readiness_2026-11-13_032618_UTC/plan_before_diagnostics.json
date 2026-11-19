@@ -1,0 +1,9 @@
+{
+  "registered_utc": "2026-11-13T03:26:18.200657+00:00",
+  "source_sha256": "45d0d17f751f9bb611e4b5d9f015e3241ea8f9bc99cc5361f4615373f46d6882",
+  "tensor_acceptance": "same9070XT,onevisibleGPU,finiteBF16SDPAforward/backward,finiteBF16tofloat32cast",
+  "old_development_diagnostic": "Replay frozen original64 IDs and greedy S2, original512token cap; no fresh/test/SVAMP",
+  "driver_change_scope": "User-performed recovery; record environment stratum, no numerical configuration change",
+  "parity_comparison_is_diagnostic_only": true,
+  "no_adjustment_of_B_E_O_C_or_session_deadline": true
+}

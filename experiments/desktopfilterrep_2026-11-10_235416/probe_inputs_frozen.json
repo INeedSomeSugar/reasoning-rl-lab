@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-10T17:08:29.414256+00:00",
+  "order": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "files": {
+    "src/reasoning_rl/modeling.py": "18ca144e7d30852d3ef83b22c98082ac9d0f29d37a55ab997340cc76ea715f6e",
+    "src/reasoning_rl/evaluation.py": "a656b10550add2825da2750d58bf30085044b80fa81eb5c81bfffc718d79304e",
+    "src/reasoning_rl/scoring.py": "676d3ba6146da229626c273d848c58d27952d6dd2df44e86331da17019f06a8b",
+    "src/reasoning_rl/data.py": "f9a89ee7f2800b0d2f249e644600eb35f5bf60a3b3ae332f58a5067b7be87182",
+    "src/reasoning_rl/fresh_development.py": "9fce5c5643c73f08730a40f04218193f3e3f6e4befde9f754b7d76a0c9dc0fd3",
+    "src/reasoning_rl/prefiltering.py": "7e2f31442c8acae1a338d1ce82e97d3e5d2efc5d78c54cd2d8048cfdd2839ac6",
+    "scripts/large_filter_tasks.py": "e5d0cabcfdc5b33ae28d7272915862d4794f9ab40e51c9c4f8dc1e548e3b50a0",
+    "configs/desktopfilterrep_2026-11-10_235416_calibration.yaml": "dd4beb60eb0075d673ce3d35383f60398c747dddbc5d92840465857d4cd5ebcc"
+  },
+  "candidate_pool_sha256": "32975de2e830f7a27212b460f3c00de66d0099f1637de2bd4631087196ff5a5e",
+  "common_start_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+  "attempt_limit": 2,
+  "full_process_timeout_seconds": 3600
+}

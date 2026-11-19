@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-11-10T18:07:18.743039+00:00",
+  "registered_unix": 1794326057.1341243,
+  "preparation_calibration_probes_elapsed_wall_seconds": 7981.60591506958,
+  "remaining_primary_training_process_upper_seconds": 98773.46651554108,
+  "remaining_primary_evaluation_process_upper_seconds": 283050.0,
+  "failure_reserve_one_full_attempt_for_every_training_and_evaluation_unit_seconds": 381823.4665155411,
+  "scheduling_and_audit_margin_seconds": 152729.38660621643,
+  "analysis_reserve_seconds": 21600,
+  "total_session_hard_seconds": 946200,
+  "deadline_unix": 1795272257.1341243,
+  "likely_remaining_model_seconds_timing_estimate": 222935.90683078766,
+  "not_permission_for_extra_experiments": true,
+  "each_unit_max_attempts": 2,
+  "budget_cannot_be_extended_after_fresh_evaluation": true
+}

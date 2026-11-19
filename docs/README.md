@@ -2,7 +2,9 @@
 
 本目录存放实验协议、复现步骤与来源说明。**结果与证据不在这里**：对照报告在 [`reports/comparisons/`](../reports/comparisons/)，运行记录在 [`runs/`](../runs/) 与 [`experiments/`](../experiments/)。
 
-更新：2026-11-10。
+更新于 2026-11-19。
+
+固定预筛复验已完成可用矩阵的分析。[中文报告](../reports/comparisons/desktopfilterrep_2026-11-10_235416/findings.md) · [复现命令](REPRODUCING_FILTER_REPLICATION_20261110.md) · [原始证据与检查点](https://github.com/INeedSomeSugar/reasoning-rl-lab/releases/tag/fixed-prefilter-replication-dev-20261119)
 
 ## 建议阅读顺序
 
@@ -17,7 +19,7 @@
 | 文档 | 内容 | 何时读 |
 | --- | --- | --- |
 | [PREFILTER_REVIEW_AND_PLAN_2026-11-10.md](PREFILTER_REVIEW_AND_PLAN_2026-11-10.md) | 固定预筛结果复算、关键问题与下一轮证据优先方案 | 解读 2026-11-10 实验、规划复验 |
-| [NEXT_EXPERIMENT_PROMPT_2026-11-10.md](NEXT_EXPERIMENT_PROMPT_2026-11-10.md) | 下一轮实验的完整执行方案：目标、35 终点矩阵、指标、预算与交付 | 了解后续计划；尚未启动 |
+| [NEXT_EXPERIMENT_PROMPT_2026-11-10.md](NEXT_EXPERIMENT_PROMPT_2026-11-10.md) | 下一轮实验的完整执行方案：目标、35 终点矩阵、指标、预算与交付 | 对照已执行方案与冻结记录 |
 | [LEARNING_GUIDE.md](LEARNING_GUIDE.md) | 从代码理解 SFT、GRPO 与采样 | 首次读源码 |
 | [PROTOCOL.md](PROTOCOL.md) | 实验协议与终点、预算、冻结规则 | 核对实验口径 |
 | [REPRODUCING_LOCAL.md](REPRODUCING_LOCAL.md) | 本机（RTX3060 Laptop）复现步骤 | 在笔记本环境复跑 |

@@ -1,0 +1,575 @@
+{
+  "recorded_utc": "2026-11-13T01:20:04.6521802Z",
+  "system_events": [
+    {
+      "TimeCreated": "2026-11-13T09:11:09.717648+08:00",
+      "Id": 12,
+      "ProviderName": "Microsoft-Windows-UserModePowerService",
+      "LevelDisplayName": "信息",
+      "Message": "进程 C:\\Windows\\System32\\DriverStore\\FileRepository\\u0205499.inf_amd64_855a791c0c4d0461\\B026716\\atieclxx.exe (进程 ID: 6260)将策略方案从 {381b4222-f694-41f0-9685-ff5bb260df2e} 重置为 {381b4222-f694-41f0-9685-ff5bb260df2e}"
+    }
+  ],
+  "application_events": [
+    {
+      "TimeCreated": "2026-11-13T09:11:31.7845867+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 2109863543249591262，类型 5\r\n事件名称: BEX64\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: python.exe\r\nP2: 3.12.14150.1013\r\nP3: 6a96deaf\r\nP4: ucrtbase.dll\r\nP5: 10.0.26100.9711\r\nP6: 3f426c5b\r\nP7: 00000000000a527e\r\nP8: c0000409\r\nP9: 0000000000000007\r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.c8b95bd1-9289-4bac-b589-ce15f4438c82.tmp.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.c591a4a0-f563-4356-ae72-02686cdb2a33.tmp.WERInternalMetadata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.9e262676-bc10-435c-b8cd-bdc4d91bea31.tmp.csv\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.a2dad620-1fed-40b0-b5e1-28d809a096c0.tmp.txt\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.227352a8-7e48-4e1c-a2a4-46d8f3f6201d.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportArchive\\AppCrash_python.exe_b42f2fa472162b382cfed8fa9516c752bdcb91_56a84765_addfc0a1-05ca-4d5d-9a20-0ffc623da7ec\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 89eb9970-0c6b-4720-9a27-1992afb0ef7b\r\n报告状态: 268435456\r\n哈希存储段: 20c8718df4a1781e6d47bdb6cbf05bde\r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:27.3829414+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0911.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144473796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.eb61f5b1-e413-4a2c-bacd-0bef82b54e67.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_82c90a89-8d0a-4e5c-9c97-f73dae4104d3\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 82c90a89-8d0a-4e5c-9c97-f73dae4104d3\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:26.7203772+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0909.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144383625-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b1186ad8-5bb6-4e88-b36c-d3feba088475.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_3486bb3c-4124-4bd2-b50c-60c5720988d1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3486bb3c-4124-4bd2-b50c-60c5720988d1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:25.8372428+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.5d3f87aa-4b6e-462e-81a9-685d173feb57.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:25.1707872+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333906-1.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.691bd2c9-f428-4292-a57c-61f99f604561.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:23.4114056+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144332937-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4383dd9d-3f5c-42fe-bdf2-2f258a0e0b35.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_187c0148-07a1-42e4-9e8b-1b356657bf85\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 187c0148-07a1-42e4-9e8b-1b356657bf85\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:22.9662521+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261110-2334.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-25261140-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.30eb71f7-dcc8-4032-8945-68350f08a460.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_ed63d0a6-9591-4006-9637-5efebcf0a925\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: ed63d0a6-9591-4006-9637-5efebcf0a925\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:22.0859737+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1537.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-345156-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4f8a175b-a4b4-4b55-b9c2-81cd0836d17b.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_30e30b94-5498-4be4-8d79-4681a056ceb1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 30e30b94-5498-4be4-8d79-4681a056ceb1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:19.2151537+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1531.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21755562-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.84a36cf9-b68f-426f-a0e2-f6e79d155eb8.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_df19ada3-74cd-4623-9e57-8ded3db571a1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: df19ada3-74cd-4623-9e57-8ded3db571a1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:17.0329158+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706265-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b7fd0c12-094d-4127-b6d0-5829977b3875.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_87a7fe9c-b071-465d-bcb8-277d91498efc\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 87a7fe9c-b071-465d-bcb8-277d91498efc\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:16.786621+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706281-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e20e45c1-9268-484c-8002-8111ca85c150.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_05090fa0-7db7-4808-a27e-bc16ca80118b\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 05090fa0-7db7-4808-a27e-bc16ca80118b\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:16.5767915+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706078-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d9cd557b-7470-4324-a2aa-cbb0464c567c.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:15.479613+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-35707843-0.sysdata.xml\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d8516f57-20cf-4734-8cae-48ede681ec16.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_115569e4-8a75-462e-a0ba-a365d4f22a52\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 115569e4-8a75-462e-a0ba-a365d4f22a52\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:14.1398886+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7489484-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.52923288-480c-4b18-a371-a10184dc0f08.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_e5c77715-03e0-460d-bffd-1e3deaaac696\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e5c77715-03e0-460d-bffd-1e3deaaac696\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:12.1512314+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7488578-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d749e9d0-fd6d-466c-9f0a-a511058e1c18.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:10.8288501+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7487406-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e28c7cba-d6d1-4d22-881b-eee8f86dd99d.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:10.3953538+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261103-2304.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-2031390-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.8b26654f-644c-45e3-8c7e-e62389b58084.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_5293900b-4f5e-45f8-a8d5-02277720283d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 5293900b-4f5e-45f8-a8d5-02277720283d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:10.1407473+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0911.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144473796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.eb61f5b1-e413-4a2c-bacd-0bef82b54e67.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_82c90a89-8d0a-4e5c-9c97-f73dae4104d3\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 82c90a89-8d0a-4e5c-9c97-f73dae4104d3\r\n报告状态: 4\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:11:09.4812709+08:00",
+      "Id": 1000,
+      "ProviderName": "Application Error",
+      "LevelDisplayName": "错误",
+      "Message": "出错应用程序名称： python.exe，版本： 3.12.14150.1013，时间戳： 0x6a96deaf\r\n出错模块名称： ucrtbase.dll， 版本： 10.0.26100.9711，时间戳： 0x3f426c5b\r\n异常代码： 0xc0000409\r\n错误偏移： 0x00000000000a527e\r\n出错进程 ID： 0x7794\r\n出错应用程序开始时间： 0x1DD730A4BD8681D\r\nFaulting 应用程序路径： D:\\User\\AI\\reasoning-rl-lab\\.cache\\python\\cpython-3.12.14-windows-x86_64-none\\python.exe\r\nFaulting 模块路径： C:\\Windows\\System32\\ucrtbase.dll\r\nReport ID： 89eb9970-0c6b-4720-9a27-1992afb0ef7b\r\nFaulting 包全名： \r\nFaulting 程序包相对应用程序 ID：  个"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.122999+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0909.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144383625-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b1186ad8-5bb6-4e88-b36c-d3feba088475.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_3486bb3c-4124-4bd2-b50c-60c5720988d1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3486bb3c-4124-4bd2-b50c-60c5720988d1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.1090489+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.5d3f87aa-4b6e-462e-81a9-685d173feb57.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0950111+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333906-1.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.691bd2c9-f428-4292-a57c-61f99f604561.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0810149+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144332937-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4383dd9d-3f5c-42fe-bdf2-2f258a0e0b35.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_187c0148-07a1-42e4-9e8b-1b356657bf85\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 187c0148-07a1-42e4-9e8b-1b356657bf85\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0670121+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261110-2334.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-25261140-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.30eb71f7-dcc8-4032-8945-68350f08a460.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_ed63d0a6-9591-4006-9637-5efebcf0a925\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: ed63d0a6-9591-4006-9637-5efebcf0a925\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0528575+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1537.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-345156-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4f8a175b-a4b4-4b55-b9c2-81cd0836d17b.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_30e30b94-5498-4be4-8d79-4681a056ceb1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 30e30b94-5498-4be4-8d79-4681a056ceb1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0382638+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1531.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21755562-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.84a36cf9-b68f-426f-a0e2-f6e79d155eb8.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_df19ada3-74cd-4623-9e57-8ded3db571a1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: df19ada3-74cd-4623-9e57-8ded3db571a1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0242214+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706265-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b7fd0c12-094d-4127-b6d0-5829977b3875.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_87a7fe9c-b071-465d-bcb8-277d91498efc\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 87a7fe9c-b071-465d-bcb8-277d91498efc\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:37.0100741+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706281-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e20e45c1-9268-484c-8002-8111ca85c150.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_05090fa0-7db7-4808-a27e-bc16ca80118b\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 05090fa0-7db7-4808-a27e-bc16ca80118b\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.9960187+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706078-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d9cd557b-7470-4324-a2aa-cbb0464c567c.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.9813569+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-35707843-0.sysdata.xml\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d8516f57-20cf-4734-8cae-48ede681ec16.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_115569e4-8a75-462e-a0ba-a365d4f22a52\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 115569e4-8a75-462e-a0ba-a365d4f22a52\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.9671568+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7489484-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.52923288-480c-4b18-a371-a10184dc0f08.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_e5c77715-03e0-460d-bffd-1e3deaaac696\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e5c77715-03e0-460d-bffd-1e3deaaac696\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.9522389+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7488578-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d749e9d0-fd6d-466c-9f0a-a511058e1c18.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.93802+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7487406-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e28c7cba-d6d1-4d22-881b-eee8f86dd99d.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.9230085+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261103-2304.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-2031390-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.8b26654f-644c-45e3-8c7e-e62389b58084.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_5293900b-4f5e-45f8-a8d5-02277720283d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 5293900b-4f5e-45f8-a8d5-02277720283d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:36.8892965+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0909.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144383625-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b1186ad8-5bb6-4e88-b36c-d3feba088475.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_3486bb3c-4124-4bd2-b50c-60c5720988d1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3486bb3c-4124-4bd2-b50c-60c5720988d1\r\n报告状态: 4\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.9142055+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.5d3f87aa-4b6e-462e-81a9-685d173feb57.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.8964127+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333906-1.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.691bd2c9-f428-4292-a57c-61f99f604561.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.880081+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144332937-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4383dd9d-3f5c-42fe-bdf2-2f258a0e0b35.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_187c0148-07a1-42e4-9e8b-1b356657bf85\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 187c0148-07a1-42e4-9e8b-1b356657bf85\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.862653+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261110-2334.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-25261140-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.30eb71f7-dcc8-4032-8945-68350f08a460.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_ed63d0a6-9591-4006-9637-5efebcf0a925\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: ed63d0a6-9591-4006-9637-5efebcf0a925\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.8455305+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1537.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-345156-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4f8a175b-a4b4-4b55-b9c2-81cd0836d17b.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_30e30b94-5498-4be4-8d79-4681a056ceb1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 30e30b94-5498-4be4-8d79-4681a056ceb1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.8299636+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1531.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21755562-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.84a36cf9-b68f-426f-a0e2-f6e79d155eb8.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_df19ada3-74cd-4623-9e57-8ded3db571a1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: df19ada3-74cd-4623-9e57-8ded3db571a1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.8122168+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706265-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b7fd0c12-094d-4127-b6d0-5829977b3875.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_87a7fe9c-b071-465d-bcb8-277d91498efc\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 87a7fe9c-b071-465d-bcb8-277d91498efc\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.7947072+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706281-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e20e45c1-9268-484c-8002-8111ca85c150.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_05090fa0-7db7-4808-a27e-bc16ca80118b\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 05090fa0-7db7-4808-a27e-bc16ca80118b\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.7771732+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706078-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d9cd557b-7470-4324-a2aa-cbb0464c567c.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.7596281+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-35707843-0.sysdata.xml\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d8516f57-20cf-4734-8cae-48ede681ec16.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_115569e4-8a75-462e-a0ba-a365d4f22a52\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 115569e4-8a75-462e-a0ba-a365d4f22a52\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.741477+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7489484-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.52923288-480c-4b18-a371-a10184dc0f08.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_e5c77715-03e0-460d-bffd-1e3deaaac696\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e5c77715-03e0-460d-bffd-1e3deaaac696\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.7241639+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7488578-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d749e9d0-fd6d-466c-9f0a-a511058e1c18.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.705292+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7487406-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e28c7cba-d6d1-4d22-881b-eee8f86dd99d.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.6884821+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261103-2304.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-2031390-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.8b26654f-644c-45e3-8c7e-e62389b58084.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_5293900b-4f5e-45f8-a8d5-02277720283d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 5293900b-4f5e-45f8-a8d5-02277720283d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.6378417+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.5d3f87aa-4b6e-462e-81a9-685d173feb57.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.6207451+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333906-1.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.691bd2c9-f428-4292-a57c-61f99f604561.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.6038187+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144332937-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4383dd9d-3f5c-42fe-bdf2-2f258a0e0b35.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_187c0148-07a1-42e4-9e8b-1b356657bf85\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 187c0148-07a1-42e4-9e8b-1b356657bf85\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.5866437+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261110-2334.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-25261140-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.30eb71f7-dcc8-4032-8945-68350f08a460.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_ed63d0a6-9591-4006-9637-5efebcf0a925\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: ed63d0a6-9591-4006-9637-5efebcf0a925\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.5706171+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1537.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-345156-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4f8a175b-a4b4-4b55-b9c2-81cd0836d17b.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_30e30b94-5498-4be4-8d79-4681a056ceb1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 30e30b94-5498-4be4-8d79-4681a056ceb1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.554222+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1531.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21755562-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.84a36cf9-b68f-426f-a0e2-f6e79d155eb8.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_df19ada3-74cd-4623-9e57-8ded3db571a1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: df19ada3-74cd-4623-9e57-8ded3db571a1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.5367043+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706265-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b7fd0c12-094d-4127-b6d0-5829977b3875.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_87a7fe9c-b071-465d-bcb8-277d91498efc\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 87a7fe9c-b071-465d-bcb8-277d91498efc\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.5214325+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706281-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e20e45c1-9268-484c-8002-8111ca85c150.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_05090fa0-7db7-4808-a27e-bc16ca80118b\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 05090fa0-7db7-4808-a27e-bc16ca80118b\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.5037918+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706078-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d9cd557b-7470-4324-a2aa-cbb0464c567c.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.4861801+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-35707843-0.sysdata.xml\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d8516f57-20cf-4734-8cae-48ede681ec16.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_115569e4-8a75-462e-a0ba-a365d4f22a52\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 115569e4-8a75-462e-a0ba-a365d4f22a52\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.4683365+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7489484-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.52923288-480c-4b18-a371-a10184dc0f08.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_e5c77715-03e0-460d-bffd-1e3deaaac696\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e5c77715-03e0-460d-bffd-1e3deaaac696\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.4508461+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7488578-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d749e9d0-fd6d-466c-9f0a-a511058e1c18.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.4352783+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7487406-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e28c7cba-d6d1-4d22-881b-eee8f86dd99d.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.4175854+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261103-2304.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-2031390-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.8b26654f-644c-45e3-8c7e-e62389b58084.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_5293900b-4f5e-45f8-a8d5-02277720283d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 5293900b-4f5e-45f8-a8d5-02277720283d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.4001591+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333796-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.5d3f87aa-4b6e-462e-81a9-685d173feb57.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a4b94a71-4044-44a1-88b9-99f7b56b2dd1\r\n报告状态: 4\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.3652178+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144332937-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4383dd9d-3f5c-42fe-bdf2-2f258a0e0b35.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_187c0148-07a1-42e4-9e8b-1b356657bf85\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 187c0148-07a1-42e4-9e8b-1b356657bf85\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.3543843+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144333906-1.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.691bd2c9-f428-4292-a57c-61f99f604561.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 3028349a-6a14-4d65-aa9b-ed10641c71d2\r\n报告状态: 4\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.3470366+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261110-2334.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-25261140-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.30eb71f7-dcc8-4032-8945-68350f08a460.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_ed63d0a6-9591-4006-9637-5efebcf0a925\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: ed63d0a6-9591-4006-9637-5efebcf0a925\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.3274444+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1537.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-345156-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4f8a175b-a4b4-4b55-b9c2-81cd0836d17b.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_30e30b94-5498-4be4-8d79-4681a056ceb1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 30e30b94-5498-4be4-8d79-4681a056ceb1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.3087851+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1531.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21755562-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.84a36cf9-b68f-426f-a0e2-f6e79d155eb8.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_df19ada3-74cd-4623-9e57-8ded3db571a1\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: df19ada3-74cd-4623-9e57-8ded3db571a1\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.2665713+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706265-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.b7fd0c12-094d-4127-b6d0-5829977b3875.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_87a7fe9c-b071-465d-bcb8-277d91498efc\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 87a7fe9c-b071-465d-bcb8-277d91498efc\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.2471729+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706281-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e20e45c1-9268-484c-8002-8111ca85c150.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_05090fa0-7db7-4808-a27e-bc16ca80118b\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 05090fa0-7db7-4808-a27e-bc16ca80118b\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.2279464+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261107-1530.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-21706078-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d9cd557b-7470-4324-a2aa-cbb0464c567c.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e12cf114-7a72-47b1-9fab-ad28fd39cf16\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.2079822+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-35707843-0.sysdata.xml\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG-20261106-1948.dmp\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d8516f57-20cf-4734-8cae-48ede681ec16.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_115569e4-8a75-462e-a0ba-a365d4f22a52\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 115569e4-8a75-462e-a0ba-a365d4f22a52\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.187877+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 141\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7489484-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.52923288-480c-4b18-a371-a10184dc0f08.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_141_d5a5bdff6a6e2cc24dc29aeb44b22d16dc7ab_00000000_e5c77715-03e0-460d-bffd-1e3deaaac696\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e5c77715-03e0-460d-bffd-1e3deaaac696\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.1689022+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a2000002\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_REPORT_UM\\AMD_REPORT_UM-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7488578-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.d749e9d0-fd6d-466c-9f0a-a511058e1c18.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a2000002_37f77de832cf6956a4daa7434dceee9347ff12b_00000000_a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: a9945f13-c2c0-4ca5-995a-d1572f208fae\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.1498818+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261104-2014.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-7487406-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.e28c7cba-d6d1-4d22-881b-eee8f86dd99d.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: e4068a66-e9f9-4c4c-8eba-fc085df7723d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.1313463+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: 193\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\WATCHDOG\\WATCHDOG-20261103-2304.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-2031390-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.8b26654f-644c-45e3-8c7e-e62389b58084.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_193_481db55693277c43da6042207b9536ac63f58f74_00000000_5293900b-4f5e-45f8-a8d5-02277720283d\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 5293900b-4f5e-45f8-a8d5-02277720283d\r\n报告状态: 2049\r\n哈希存储段: \r\nCab GUID: 0"
+    },
+    {
+      "TimeCreated": "2026-11-13T09:09:19.0917516+08:00",
+      "Id": 1001,
+      "ProviderName": "Windows Error Reporting",
+      "LevelDisplayName": "信息",
+      "Message": "故障存储段 ，类型 0\r\n事件名称: LiveKernelEvent\r\n响应: 不可用\r\nCab ID: 0\r\n\r\n问题签名:\r\nP1: a1000001\r\nP2: aaaaaaaaaaaaaaaa\r\nP3: aaaaaaaaaaaaaaaa\r\nP4: aaaaaaaaaaaaaaaa\r\nP5: aaaaaaaaaaaaaaaa\r\nP6: 10_0_26300\r\nP7: 0_0\r\nP8: 256_1\r\nP9: \r\nP10: \r\n\r\n附加文件:\r\n\\\\?\\C:\\Windows\\LiveKernelReports\\AMD_WATCHDOG\\AMD_WATCHDOG-20261113-0908.dmp\r\n\\\\?\\C:\\Windows\\SystemTemp\\WER-144332937-0.sysdata.xml\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER.4383dd9d-3f5c-42fe-bdf2-2f258a0e0b35.tmp.xml\r\n\r\n可在此处获取这些文件:\r\n\\\\?\\C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\Kernel_a1000001_3f356f96f3fde35c543040135b01fe7bee4589f_00000000_187c0148-07a1-42e4-9e8b-1b356657bf85\r\n\r\n分析符号: \r\n重新检查解决方案: 0\r\n报告 ID: 187c0148-07a1-42e4-9e8b-1b356657bf85\r\n报告状态: 4\r\n哈希存储段: \r\nCab GUID: 0"
+    }
+  ],
+  "video": [
+    {
+      "Name": "GameViewer Virtual Display Adapter",
+      "DriverVersion": "15.6.5.199",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    },
+    {
+      "Name": "AMD Radeon(TM) Graphics",
+      "DriverVersion": "32.0.21045.16010",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    }
+  ],
+  "active_project_models": []
+}

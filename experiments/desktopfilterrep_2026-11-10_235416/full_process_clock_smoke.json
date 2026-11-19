@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "outer_budget_start_unix": 1794333911.7183003,
+  "parent_model_cache_hash_verification_seconds": 2.4710819721221924,
+  "receipt": {
+    "label": "accounting-clock-smoke-a0",
+    "argv": [
+      "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "reasoning_rl",
+      "grpo",
+      "--name",
+      "desktopfilterrep_2026-11-10_235416-accounting-clock-smoke-a0",
+      "--hardware",
+      "rocm",
+      "--config",
+      "configs/desktopfilterrep_2026-11-10_235416_accounting_clock_smoke.yaml",
+      "--strategy",
+      "uniform",
+      "--sft-checkpoint",
+      "checkpoints/desktoprepair_20261106_152712-S2"
+    ],
+    "pid": 7652,
+    "runner_pid": 7816,
+    "started_unix": 1794333914.1893823,
+    "finished_unix": 1794333940.7517679,
+    "process_wall_seconds": 26.56238555908203,
+    "outer_budget_start_unix": 1794333911.7183003,
+    "exit_code": 0,
+    "timeout": false,
+    "timeout_seconds": 150,
+    "log": "logs/desktopfilterrep_2026-11-10_235416-accounting-clock-smoke-a0.log",
+    "host_before": {
+      "utc": "2026-11-10T18:05:14.189382+00:00",
+      "ram_available_bytes": 11355836416,
+      "disk_free_bytes": 212241469440,
+      "cpu_percent_instantaneous": 0.0,
+      "process_pid": 7816,
+      "boot_time_unix": 1794299602.0518286
+    },
+    "host_after": {
+      "utc": "2026-11-10T18:05:40.751767+00:00",
+      "ram_available_bytes": 11254607872,
+      "disk_free_bytes": 212204736512,
+      "cpu_percent_instantaneous": 11.6,
+      "process_pid": 7816,
+      "boot_time_unix": 1794299602.0518286
+    }
+  },
+  "steps": 2,
+  "recorded_by_child": 1794333911.7183003,
+  "fresh_development_inference": false,
+  "only_historical_training_items": true
+}

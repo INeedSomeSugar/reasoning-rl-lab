@@ -1,0 +1,13 @@
+{
+  "prepared_utc": "2026-11-18T18:46:52.698255+00:00",
+  "source_pack_sha256": "d82bfdaf7c08173033ddd7bf41337a48c8a638b6eb833032d9d803ad0abd5cff",
+  "units_sha256": "ad707ac45cd7f735207e6fcfdaa70d82b751dda2f2bb3d60a90821e9c167fe89",
+  "crosswalk_sha256": "eb92d15ef55dd1e6c8ea3bfc59e2dbf6e894dc3c1aaad0a80e2e11e366e3f1d1",
+  "original_cases": 338,
+  "original_response_presentations": 676,
+  "unique_response_units": 473,
+  "rule": "Exact same ID, question, gold, reference, prediction text and truncation only; no normalization or semantic merging",
+  "method_names_and_occurrence_counts_hidden_in_review_units": true,
+  "identity_map_read": false,
+  "semantic_categories_assigned_by_program": false
+}

@@ -1,0 +1,30 @@
+{
+  "registered_utc": "2026-11-11T04:37:50.810074+00:00",
+  "fresh_evaluation_opened": false,
+  "files": {
+    "analysis/analyze_large_filter.py": "c23849e9aed20b972a5b746b1ddf37a4edae663cacdb0feebf908ede085e31e9",
+    "analysis/large_filter_blind_units.py": "096f9ad4f28991ea82241f5f6837e59c01a500f3fa59b2b7bafdd38bbfc8935a",
+    "analysis/finalize_large_filter_reviews.py": "4ec7ea356d8e42e7cf4507c6bcde5f3bd59d1147103f3c4f90b8ec8d1b1785b6",
+    "analysis/write_large_filter_report.py": "10a7d372534f55035a1cb0c230659cf80178e81f004e7e83cd7f5e6671e299c3"
+  },
+  "previous_receipt_sha256": "b08d2c53d5fd829b61cc904ff8f737911b15aa9f99168271b1a6b31ed9894a2e",
+  "changes": [
+    "Add all-correct/all-wrong group counts, generated lengths and truncations to the same fixed first/middle/last diagnostic windows.",
+    "Exact text-only deduplication for blinded Agent review; every original case and alias retained, no semantic classification by code, all unique responses explicitly annotated before materialization and unblinding."
+  ],
+  "case_selection_scope_unchanged": "All discordant pairs plus the same fixed common-correct/common-wrong samples, training seed29 and all3 probe blocks.",
+  "all_main_metrics_resampling_and_decision_thresholds_unchanged": true,
+  "model_execution_source_unchanged": true,
+  "selfchecks": {
+    "synthetic_blind_units": {
+      "status": "passed",
+      "synthetic_only": true,
+      "real_cases_read": false,
+      "exact_duplicates_reused": true,
+      "gold_and_truncation_differences_not_merged": true,
+      "all_case_aliases_preserved": true,
+      "missing_duplicate_and_human_annotations_rejected": true
+    },
+    "real_completed_U29_window_audit": "signal_window_extended_CPU_selfcheck.json"
+  }
+}

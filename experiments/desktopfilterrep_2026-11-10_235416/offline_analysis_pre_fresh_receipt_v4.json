@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-11-11T14:56:24.905838+00:00",
+  "fresh_evaluation_opened": false,
+  "files": {
+    "analysis/large_filter_cost_accounting.py": "986b83953b1913bc8e459b111f1d2e83adf3290e2403bf3ffad7db20044c048c",
+    "analysis/analyze_large_filter.py": "97266dd748be11e2a0b55b67ebb66d45e7f4185d4d07f86697aeda4fc170b337",
+    "analysis/write_large_filter_report.py": "723cf301816689e9dd9652487884f775c79dfab0ef6b989ff84e421e5c1fb98f",
+    "analysis/render_large_filter.py": "e86db1137f2e23009a2d899be0cabee121c340dbf3494889a340d0e4298a598b",
+    "analysis/audit_large_filter_closeout.py": "92c21a843c1139207b2d6b48cbf4ed893e69a02b1d3e18b74b2c24a6484ee9a5",
+    "analysis/resume_large_filter_from_pause.py": "e57db716db228d36350776e92d5f6309857da940222d94eba69faf216cca15dc",
+    "analysis/record_large_filter_resume.py": "0092e3f9214496f18cb573280245c1c9c9f12e820ccc1687e40c3ba8a9a3d0e3"
+  },
+  "previous_analysis_receipt_sha256": "7ae15821ce98b2fc492ff46ee8b6c657a3dd3554b05008d7cbf81482fa4f4316",
+  "changes": "Include confirmed interrupted failed attempt in full physical ledger and cost bounds, add perendpoint failure-inclusive operational rate sensitivity, record pause/resume state and all-attempt final session bounds.",
+  "primary_accuracy_pairing_bootstrap_metrics_and_decision_thresholds_unchanged": true,
+  "frozen_model_execution_source_unchanged": true,
+  "discarded_failed_training_signal_not_credited_to_retained_endpoints": true,
+  "unknown_exact_failure_cost_is_null_with_explicit_bounds_not_zero": true,
+  "selfcheck_receipt_sha256": "44e5feb898b4757ab7ad9bd29bc7a03e38aae2a3154712c8af9a48be31d154e9"
+}

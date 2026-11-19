@@ -1,0 +1,103 @@
+"""Raw K-shot filtering and explicit standalone versus amortized cost accounting."""
+from collections import Counter
+import json
+import math
+from pathlib import Path
+import random
+from .runtime import ROOT, jsonl_read, sha256_file
+
+
+def local_file(relative):
+    path = (ROOT / relative).resolve()
+    if not path.is_relative_to(ROOT.resolve()):
+        raise ValueError("Frozen study files must stay project-local")
+    return path
+
+
+def raw_success_filter(candidate_ids, predictions, k=4):
+    """Jeffreys smoothing is deliberately irrelevant to eligibility."""
+    if k != 4 or len(set(candidate_ids)) != len(candidate_ids) or not candidate_ids:
+        raise ValueError("This controlled filter requires nonempty unique candidates and K4")
+    observed, success = Counter(), Counter()
+    ids = set(candidate_ids)
+    for r in predictions:
+        if r["id"] not in ids or type(r["correct"]) is not bool:
+            raise ValueError("Probe records must be binary-scored members of the candidate pool")
+        observed[r["id"]] += 1
+        success[r["id"]] += int(r["correct"])
+    if any(observed[i] != k for i in candidate_ids):
+        raise ValueError("Require exactly K raw observations per candidate; no partial cache")
+    return [i for i in candidate_ids if success[i] in (1, 2, 3)], {i: success[i] for i in candidate_ids}
+
+
+def charge_probe(physical_seconds, endpoint_count=3):
+    if not math.isfinite(physical_seconds) or physical_seconds <= 0 or endpoint_count <= 0:
+        raise ValueError("Probe cost must be a measured positive finite duration")
+    return {"physical_one_time_seconds": physical_seconds,
+        "primary_standalone_debit_per_F_endpoint_seconds": physical_seconds,
+        "secondary_amortized_debit_per_F_endpoint_seconds": physical_seconds / endpoint_count,
+        "F_endpoint_count": endpoint_count, "never_free": True}
+
+
+def remaining_training_seconds(common_seconds, elapsed_seconds, debit_seconds=0.0):
+    if any(not math.isfinite(x) or x < 0 for x in (common_seconds, elapsed_seconds, debit_seconds)):
+        raise ValueError("Budgets and elapsed costs must be nonnegative finite seconds")
+    return max(0.0, common_seconds - elapsed_seconds - debit_seconds)
+
+
+def matched_random_subset(candidate_ids, size, seed):
+    """Uniform subset of the FULL pool; overlap with the filtered set is permitted."""
+    if len(candidate_ids) != len(set(candidate_ids)) or not 0 < size <= len(candidate_ids):
+        raise ValueError("Random subset needs unique candidates and a valid nonzero size")
+    sampled = set(random.Random(seed).sample(candidate_ids, size))
+    return [i for i in candidate_ids if i in sampled]
+
+
+def resolve_frozen_pool(options, train, start_hash):
+    """Validate paid probe bytes, raw membership and fixed S2 before uniform sampling."""
+    path = local_file(options["candidate_pool_path"])
+    candidate = json.loads(path.read_text(encoding="utf-8"))
+    ids = candidate["ids"]
+    if not ids or len(ids) != len(set(ids)):
+        raise ValueError("Candidate pool IDs must be nonempty and unique")
+    if candidate["data_manifest_sha256"] != sha256_file(ROOT / "data/manifest.json"):
+        raise ValueError("Candidate data changed")
+    by_id = {r["id"]: r for r in train}
+    if not set(ids) <= set(by_id) or any(by_id[i]["split"] != "train" for i in ids):
+        raise ValueError("Candidate pool must be train-only")
+    chosen, debit, evidence = ids, 0.0, None
+    if options.get("prefilter_manifest_path") and options.get("random_subset_manifest_path"):
+        raise ValueError("One intervention per endpoint")
+    filter_path = options.get("prefilter_manifest_path")
+    random_manifest = None
+    if options.get("random_subset_manifest_path"):
+        random_manifest = json.loads(local_file(options["random_subset_manifest_path"]).read_text(encoding="utf-8"))
+        filter_path = random_manifest["matched_prefilter_manifest_path"]
+        if sha256_file(local_file(filter_path)) != random_manifest["matched_prefilter_manifest_sha256"]:
+            raise ValueError("Matched filtering evidence changed")
+    if filter_path:
+        manifest = json.loads(local_file(filter_path).read_text(encoding="utf-8"))
+        if manifest["candidate_pool_sha256"] != sha256_file(path) or manifest["s2_checkpoint_sha256"] != start_hash:
+            raise ValueError("Probe candidates or fixed S2 differ")
+        raw_path = local_file(manifest["predictions_path"])
+        if sha256_file(raw_path) != manifest["predictions_sha256"]:
+            raise ValueError("Paid probe output changed")
+        chosen, successes = raw_success_filter(ids, jsonl_read(raw_path), manifest["k"])
+        if chosen != manifest["retained_ids"] or successes != manifest["raw_success_counts"]:
+            raise ValueError("Frozen raw-count filter membership changed")
+        if not chosen:
+            raise ValueError("Empty filtered pool; do not silently change the probe seed")
+        evidence = charge_probe(manifest["probe_process_wall_seconds"], manifest.get("F_endpoint_count", 3))
+        debit = evidence["primary_standalone_debit_per_F_endpoint_seconds"]
+        if random_manifest is not None:
+            if random_manifest["candidate_pool_sha256"] != sha256_file(path):
+                raise ValueError("Random subset candidate pool changed")
+            chosen = matched_random_subset(ids, len(chosen), random_manifest["random_subset_seed"])
+            if chosen != random_manifest["ids"]:
+                raise ValueError("Random subset differs from its uniform full-pool draw")
+            evidence.update(accounting_kind="R_experimental_matching_debit", physical_probe_required_by_R=False,
+                physical_R_subset_draw_seconds=random_manifest["physical_subset_draw_seconds"],
+                warning="Full probe deduction balances trainable time with F; it is not an intrinsic cost of random selection.")
+        else:
+            evidence.update(accounting_kind="F_full_standalone_probe_debit")
+    return [by_id[i] for i in chosen], ids, debit, evidence

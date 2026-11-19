@@ -1,0 +1,29 @@
+{
+  "requested_utc": "2026-11-11T09:46:31.969289+00:00",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "user_instruction": "Wait for current endpoint to save, then pause without starting another unit",
+  "parent_pid": 22920,
+  "child_pid": 11672,
+  "observer_pid": 6272,
+  "heartbeat_before_suspension": {
+    "family": "desktopfilterrep_2026-11-10_235416",
+    "runner_pid": 22920,
+    "child_pid": 11672,
+    "phase": "U-s47-a1",
+    "elapsed_seconds": 585.3908743858337,
+    "timeout_seconds": 3747.1067675000004,
+    "heartbeat_utc": "2026-11-11T09:46:18.111486+00:00",
+    "host": {
+      "utc": "2026-11-11T09:46:18.111486+00:00",
+      "ram_available_bytes": 7822254080,
+      "disk_free_bytes": 211309641728,
+      "cpu_percent_instantaneous": 12.2,
+      "process_pid": 22920,
+      "boot_time_unix": 1794387791.0505672
+    }
+  },
+  "child_not_suspended": true,
+  "same_timeout_and_original_session_deadline": true,
+  "frozen_source_verified": true,
+  "source_sha256": "02d0094f72b400ff6c27627dd4181922a01edab0e68c8e8316e9c8b8539c37f2"
+}

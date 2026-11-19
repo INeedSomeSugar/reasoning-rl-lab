@@ -1,0 +1,67 @@
+{
+  "registered_utc": "2026-11-10T15:54:17.198686+00:00",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "train_sampling_seed": 20261114,
+  "development_sampling_seed": 20261115,
+  "training_seeds": [
+    13,
+    29,
+    47,
+    71,
+    97
+  ],
+  "probe_seeds": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "random_subset_seeds": [
+    3101,
+    3102,
+    3103
+  ],
+  "candidate_target": 256,
+  "development_minimum_target": 1024,
+  "eligibility": "Original official GSM8K train only; preserve original manifest; exclude original validation, nominal SFT128, any historical training/probe/calibration/development/prediction and conservative historical mentions, flags and their entire near/exact components. Prompt <=512. One candidate per qualified cluster; development contains whole remaining clusters.",
+  "candidate_order": "Sort eligible clusters by minimum ID, Python random.Random(20261114).shuffle; smallest eligible ID per cluster. Review in that order, exclude questionable clusters and take first256 accepted. No reward or model-performance selection.",
+  "development_order": "After candidate/quality exclusions, sort remaining eligible clusters, random.Random(20261115).shuffle; append whole clusters until >=1024. No development inference until all endpoints frozen.",
+  "review": "Agent reviews question and original reference solution under a common rule: coherent quantities, unambiguous requested number, reference derivation and final gold consistent. Preserve originals; never edit gold. human_reviewed=false.",
+  "known_questionable_ids": [
+    "gsm8k-train-05134",
+    "gsm8k-train-01188",
+    "gsm8k-train-07439",
+    "gsm8k-train-02307",
+    "gsm8k-train-06831"
+  ],
+  "k": 4,
+  "retain_successes": [
+    1,
+    2,
+    3
+  ],
+  "budget_rule": "P_j=full independent probe process including startup/loading/saving; B=max(3600,300*ceil(3*max(P_j)/300)); F/R deduct P_j in full; U does not. Only time sets B.",
+  "evaluation_reserve_rule": "Use independent S2 greedy evaluation on64 already-used development questions. E=300*ceil((1.35*calibration_process_seconds*N/64+120)/300). O=300. C=B+E+O; never refill training from evaluation reserve.",
+  "session_rule": "Before any main training freeze primary physical allowance (35 training processes after F/R debits +37*E +3*P already measured + calibration/preparation actual), plus one full retry allowance per failed unit (35 training and37 evaluations), plus20% scheduling/audit margin and six hours analysis. Fixed deadline from session registration; never extend based on fresh outcomes.",
+  "retry_rule": "At most two full attempts per unit; new attempt prefix, same S2/config/data. First success is used. No exact optimizer/sampler resume claim. All training retries finish or exhaust before fresh evaluation. Evaluation failures can have one complete same-weight retry; no training thereafter.",
+  "degenerate_rule": "If any F_j is empty: preserve all probes and stop the main matrix before training, report unavailable comparisons; no seed/pool/K change. If all256 retained, F/R/U still run as registered and report degeneracy.",
+  "statistics": {
+    "conditional_cluster_bootstrap_replicates": 20000,
+    "seed": 20261116,
+    "conditional_scope": "Jointly resample fresh-development near-duplicate clusters for the same fixed37 models; training/probe seeds fixed. Reuse each of five U endpoints in all three F-U blocks.",
+    "crossed_bootstrap_replicates": 20000,
+    "crossed_scope": "Resample five training-seed blocks, three paired selection blocks (F_j/R_j) and question clusters; reuse U within each sampled training-seed block. Exploratory with only3 selection blocks and one candidate pool."
+  },
+  "decisions": {
+    "engineering_signal_min_relative_improvement": 0.2,
+    "all_three_probe_blocks_signal_direction_positive": true,
+    "development_evidence_min_F_minus_U_pp": 1.0,
+    "conditional95_lower_bound_positive": true,
+    "interpretation": "Thresholds prospectively guide a second independent-pool study; are neither guaranteed outcomes nor a power claim. Negative/cross-zero results retained; no result-driven extra runs."
+  },
+  "blind_review": {
+    "seed": 20261117,
+    "rule": "For each F-U, F-R, F-S2 comparison use seed29 in each selection block; include all discordant question IDs across those pairs. Hide methods and outcome labels, randomize aliases/order. Also deterministic sample16 jointly correct and16 jointly wrong per comparison; preserve common-seed sampling. Agent review, not human. No unreviewed numeric error called arithmetic error."
+  },
+  "calibration": "Only historical used questions for timing/backward/save/reload; no new candidate calibration exposure. No new SFT run.",
+  "heldout": "GSM8K official test and SVAMP remain sealed; fresh development is retrospectively isolated original-train data, project-record unexposed only; public pretraining exposure unknown."
+}

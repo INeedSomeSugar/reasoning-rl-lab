@@ -1,0 +1,22 @@
+{
+  "ids": [
+    "gsm8k-train-01954",
+    "gsm8k-train-01408",
+    "gsm8k-train-00597",
+    "gsm8k-train-00154",
+    "gsm8k-train-00174",
+    "gsm8k-train-04291",
+    "gsm8k-train-00638",
+    "gsm8k-train-03208",
+    "gsm8k-train-03888",
+    "gsm8k-train-06843",
+    "gsm8k-train-06341",
+    "gsm8k-train-03914",
+    "gsm8k-train-05111",
+    "gsm8k-train-06535",
+    "gsm8k-train-04918",
+    "gsm8k-train-04443"
+  ],
+  "data_manifest_sha256": "1538f488abad2b401cae8cd634402aca3ffe5b2bf203850f69db2efb19174cc7",
+  "scope": "historical training items, not new candidates"
+}

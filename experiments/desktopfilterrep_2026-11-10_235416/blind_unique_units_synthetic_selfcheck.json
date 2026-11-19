@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "real_cases_read": false,
+  "exact_duplicates_reused": true,
+  "gold_and_truncation_differences_not_merged": true,
+  "all_case_aliases_preserved": true,
+  "missing_duplicate_and_human_annotations_rejected": true
+}

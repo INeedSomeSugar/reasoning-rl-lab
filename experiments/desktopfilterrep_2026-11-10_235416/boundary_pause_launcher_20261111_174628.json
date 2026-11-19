@@ -1,0 +1,9 @@
+{
+  "launcher_pid": 13852,
+  "launched_local": "2026-11-11T17:46:28.9279229+08:00",
+  "stdout": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-user-boundary-pause-20261111_174628.stdout.log",
+  "stderr": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-user-boundary-pause-20261111_174628.stderr.log",
+  "user_selected_wait_for_saved_endpoint": true,
+  "model_child_not_suspended": true,
+  "no_next_unit_allowed": true
+}

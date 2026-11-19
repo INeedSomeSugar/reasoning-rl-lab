@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-11-12T14:29:39.0804958Z",
+  "launcher_pid": 14448,
+  "stdout": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-eval-resume-20261112_222939.stdout.log",
+  "stderr": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-eval-resume-20261112_222939.stderr.log",
+  "entrypoint": "analysis/resume_large_filter_evaluation.py",
+  "user_authorization": "继续吧，还需要多久",
+  "training_closed": true,
+  "prior_evaluations_kept": 10,
+  "pending_evaluations": 27
+}

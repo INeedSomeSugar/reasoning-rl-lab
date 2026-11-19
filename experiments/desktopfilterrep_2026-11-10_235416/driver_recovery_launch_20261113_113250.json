@@ -1,0 +1,9 @@
+{
+  "launcher_pid": 28696,
+  "launched": "2026-11-13T11:32:50.2542729+08:00",
+  "stdout": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-driver-recovery-resume-20261113_113250.stdout.log",
+  "stderr": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-driver-recovery-resume-20261113_113250.stderr.log",
+  "original_deadline_unchanged": true,
+  "only_10_remaining_eligible_evaluations": true,
+  "first_new_failure_halts_further_attempts": true
+}

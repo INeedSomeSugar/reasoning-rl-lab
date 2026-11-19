@@ -1,0 +1,11 @@
+{
+  "updated_utc": "2026-11-13T04:29:51.000407+00:00",
+  "runner_pid": null,
+  "stage": "paused_after_evaluation",
+  "status": "paused_by_user",
+  "successful_training": 35,
+  "successful_evaluation": 23,
+  "pause_receipt": "pause_after_driver_recovery_evaluation_completed.json",
+  "original_deadline_unix_unchanged": 1795272257.1341243,
+  "latest_pause_receipt": "experiments/desktopfilterrep_2026-11-10_235416/pause_after_driver_recovery_evaluation_completed.json"
+}

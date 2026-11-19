@@ -1,0 +1,7 @@
+{
+  "launcher_pid": 21596,
+  "started": "2026-11-18T23:11:08.7818289+08:00",
+  "stdout": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-continue-20261118_231108.stdout.log",
+  "stderr": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-continue-20261118_231108.stderr.log",
+  "prior_receipt": "experiments/desktopfilterrep_2026-11-10_235416/evaluation_continuation_2026-11-18_072707_UTC/pause_handoff.json"
+}

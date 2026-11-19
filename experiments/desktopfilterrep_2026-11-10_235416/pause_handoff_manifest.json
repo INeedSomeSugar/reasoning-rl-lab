@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-11-11T10:38:53.123322+00:00",
+  "status": "paused_by_explicit_user_request",
+  "completed_training": 21,
+  "fresh_evaluations": 0,
+  "no_next_unit_started": true,
+  "no_active_project_GPU_model_tasks_confirmed": true,
+  "files": {
+    "README.md": "acf967fd3e8cfe42f7c93018cd1c41db6e6036f19196d4fafdee75079bad325b",
+    "PROJECT_CONTEXT.md": "6d6e6e99171358790fddeaf8d2cf2f1dcf4f8eec066b03b08c6c8ca17a894c89",
+    "HANDOFF.md": "adee89ca435224787418e3429b162596640964b2bd87bb42f15b6a110b3b7cbc",
+    "experiments/desktopfilterrep_2026-11-10_235416/AGENT_WORK_STATE.md": "8962facc3f1faeca22aa3e1a05c0a961e7e5445fa48ef1a35d58b3eae3c9bb8b",
+    "experiments/desktopfilterrep_2026-11-10_235416/pause_after_endpoint_completed.json": "792676951a438e1c917f29844310b7f48d6907a59329cafda26670bd34473474",
+    "experiments/desktopfilterrep_2026-11-10_235416/pause_host_process_verification.json": "9bc1069cac89459e821c928f7e24a09c3257768ed8ee840ed4d31b523a1c1ea1",
+    "reports/comparisons/desktopfilterrep_2026-11-10_235416/paused_status.md": "41c434f510231b42a48880114be7ce6220bf7a70599a46f0d27a0318781c494d"
+  },
+  "full_experiment_completed": false
+}

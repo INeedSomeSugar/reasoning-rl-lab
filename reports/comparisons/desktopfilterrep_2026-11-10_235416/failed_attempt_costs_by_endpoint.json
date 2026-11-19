@@ -1,0 +1,299 @@
+{
+  "U-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261111-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261111-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261112-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261112-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261113-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261113-s13": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261111-s29": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261111-s29": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261112-s29": {
+    "failed_attempts": 1,
+    "lower_seconds": 12.059457302093506,
+    "upper_seconds": 215.27078485488892,
+    "labels": [
+      "eval-F-j20261112-s29-a0"
+    ],
+    "bounds_notes": [
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion"
+    ]
+  },
+  "U-s29": {
+    "failed_attempts": 2,
+    "lower_seconds": 23.582552433013916,
+    "upper_seconds": 29.65437626838684,
+    "labels": [
+      "eval-U-s29-a0",
+      "eval-U-s29-a1"
+    ],
+    "bounds_notes": [
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion",
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion"
+    ]
+  },
+  "R-j20261112-s29": {
+    "failed_attempts": 2,
+    "lower_seconds": 23.554316520690918,
+    "upper_seconds": 29.61899495124817,
+    "labels": [
+      "eval-R-j20261112-s29-a0",
+      "eval-R-j20261112-s29-a1"
+    ],
+    "bounds_notes": [
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion",
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion"
+    ]
+  },
+  "R-j20261113-s29": {
+    "failed_attempts": 2,
+    "lower_seconds": 23.986209630966187,
+    "upper_seconds": 30.07114267349243,
+    "labels": [
+      "eval-R-j20261113-s29-a0",
+      "eval-R-j20261113-s29-a1"
+    ],
+    "bounds_notes": [
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion",
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion"
+    ]
+  },
+  "F-j20261113-s29": {
+    "failed_attempts": 2,
+    "lower_seconds": 24.25961446762085,
+    "upper_seconds": 30.41281294822693,
+    "labels": [
+      "eval-F-j20261113-s29-a0",
+      "eval-F-j20261113-s29-a1"
+    ],
+    "bounds_notes": [
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion",
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion"
+    ]
+  },
+  "F-j20261111-s47": {
+    "failed_attempts": 2,
+    "lower_seconds": 766.986665725708,
+    "upper_seconds": 777.1485104560852,
+    "labels": [
+      "eval-F-j20261111-s47-a0",
+      "eval-F-j20261111-s47-a1"
+    ],
+    "bounds_notes": [
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion",
+      "Exact child/known outer start; unlogged parent-failure overhead bounded by next process start, verified stop, or controller completion"
+    ]
+  },
+  "R-j20261111-s47": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261112-s47": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261112-s47": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261113-s47": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261113-s47": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "U-s47": {
+    "failed_attempts": 1,
+    "lower_seconds": 966.1250870227814,
+    "upper_seconds": 1028.98193025589,
+    "labels": [
+      "U-s47-a0"
+    ],
+    "bounds_notes": [
+      "Known outer preparation plus live-child activity/next-OS-boot bounds; exact exit unknown"
+    ]
+  },
+  "R-j20261111-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261111-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "U-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261112-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261112-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261113-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261113-s71": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261111-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261111-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261112-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261112-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "F-j20261113-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "U-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "R-j20261113-s97": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "S2": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  },
+  "A": {
+    "failed_attempts": 0,
+    "lower_seconds": 0.0,
+    "upper_seconds": 0.0,
+    "labels": [],
+    "bounds_notes": []
+  }
+}

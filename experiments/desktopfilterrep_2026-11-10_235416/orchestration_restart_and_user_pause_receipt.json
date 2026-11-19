@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-11T09:50:13.174225+00:00",
+  "fresh_evaluation_opened": false,
+  "files": {
+    "analysis/resume_large_filter_after_restart.py": "e2812a92a1c7912d8d6aed08ba52db1879c03dc7a58878274b6ae377d4643ea1",
+    "analysis/pause_large_filter_after_endpoint.py": "02d0094f72b400ff6c27627dd4181922a01edab0e68c8e8316e9c8b8539c37f2",
+    "analysis/record_large_filter_pause.py": "51d5f41cc8477a17a830a0dad13627df7f7d29d312a7eebad01ce80c03868a91",
+    "analysis/audit_large_filter_interruption.py": "6a51c0ad2c91f23a265ef229cac5199540f28d02104cb6f53568d1b95ba6fac5",
+    "analysis/large_filter_status.py": "f7fc826d081028167bf7a09717e3c958ae1658596ce739a23624534d9b7a7f9b"
+  },
+  "purpose": "Confirmed restart recovery and explicit user-requested checkpoint-boundary pause. Model child continues original budget; no next task after checkpoint.",
+  "frozen_training_source_configs_models_data_thresholds_unchanged": true,
+  "exact_sampler_resume_claimed": false,
+  "original_deadline_not_extended": true,
+  "pending_before_final_report": "Integrate interrupted-attempt bounded physical cost in final aggregate and failure-inclusive perendpoint sensitivity; never report zero merely for absent final process receipt."
+}

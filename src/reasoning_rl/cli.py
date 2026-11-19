@@ -43,8 +43,10 @@ def main():
             p.add_argument("--name", required=True)
         if command == "evaluate":
             p.add_argument("--adapter")
-            p.add_argument("--split", choices=["validation", "test", "external"], default="validation")
+            p.add_argument("--split", choices=["validation", "fresh_development", "test", "external"], default="validation")
             p.add_argument("--frozen-plan")
+            p.add_argument("--endpoint-lock")
+            p.add_argument("--endpoint-key")
         if command == "grpo":
             initial = p.add_mutually_exclusive_group(required=True)
             initial.add_argument("--sft-checkpoint")
@@ -91,7 +93,14 @@ def main():
         from .evaluation import authorize_final, evaluate_rows, validation_rows
         config = read_config(args.config, args)
         seed_everything(config["seed"])
-        if args.split != "validation":
+        fresh_rows = None
+        if args.split == "fresh_development":
+            from .fresh_development import load_fresh_development
+            fresh_rows = load_fresh_development(config["evaluation"]["fresh_development_manifest"],
+                intent="evaluate_fresh_development", lock_relative=args.endpoint_lock,
+                endpoint_key=args.endpoint_key, adapter=args.adapter,
+                expected_sha256=config["evaluation"]["fresh_development_manifest_sha256"])
+        elif args.split != "validation":
             if not args.frozen_plan:
                 parser.error("Holdout evaluation requires --frozen-plan")
             authorize_final(args.frozen_plan, config, args.adapter)
@@ -105,13 +114,17 @@ def main():
         json_write(directory / "evaluation_protocol.json", {"adapter": args.adapter,
             "adapter_sha256": checkpoint_hash(args.adapter) if args.adapter else None,
             "split": args.split, "data_manifest_sha256": sha256_file(ROOT / "data/manifest.json"),
-            "frozen_plan": args.frozen_plan, "thinking": False, "decoding": "greedy"})
+            "frozen_plan": args.frozen_plan, "thinking": False, "decoding": "greedy",
+            "fresh_development_manifest": config["evaluation"].get("fresh_development_manifest") if args.split == "fresh_development" else None,
+            "fresh_development_endpoint_lock": args.endpoint_lock,
+            "fresh_development_endpoint_key": args.endpoint_key,
+            "endpoint_lock_sha256": sha256_file(ROOT / args.endpoint_lock) if args.endpoint_lock else None})
         with ledger.measure("load_model"):
             model, tokenizer = load_model(config, adapter=args.adapter)
         json_write(directory / "model_precision.json", {"standalone_loader": precision_snapshot(model)})
         key = "validation_size" if args.split == "validation" else args.split+"_size"
-        rows = validation_rows(config) if args.split == "validation" else load_split(
-            args.split, "final", limit=config["evaluation"][key], seed=config["data_seed"])
+        rows = fresh_rows if fresh_rows is not None else (validation_rows(config) if args.split == "validation" else load_split(
+            args.split, "final", limit=config["evaluation"][key], seed=config["data_seed"]))
         json_write(directory / "resolved_evaluation_ids.json", {
             "split": args.split, "ids": [r["id"] for r in rows],
             "development_subset": config["evaluation"].get("validation_subset") if args.split == "validation" else None,

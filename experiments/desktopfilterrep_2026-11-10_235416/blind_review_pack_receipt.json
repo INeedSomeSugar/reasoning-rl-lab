@@ -1,0 +1,58 @@
+{
+  "case_count": 338,
+  "unique_question_ids": 219,
+  "seed": 20261117,
+  "scope": "Registered seed29 pairs where both objects succeeded. Include all discordant questions plus up to16 each common-correct and common-wrong per pair. An explicit exploratory same-driver F/U pair is listed separately if available.",
+  "registered_pair_count": 9,
+  "unavailable_registered_pairs": [
+    {
+      "comparison": "F-j20261111-s29/U-s29",
+      "missing_endpoints": [
+        "U-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261112-s29/U-s29",
+      "missing_endpoints": [
+        "U-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261112-s29/R-j20261112-s29",
+      "missing_endpoints": [
+        "R-j20261112-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261113-s29/U-s29",
+      "missing_endpoints": [
+        "F-j20261113-s29",
+        "U-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261113-s29/R-j20261113-s29",
+      "missing_endpoints": [
+        "F-j20261113-s29",
+        "R-j20261113-s29"
+      ]
+    },
+    {
+      "comparison": "F-j20261113-s29/S2",
+      "missing_endpoints": [
+        "F-j20261113-s29"
+      ]
+    }
+  ],
+  "complete_registered_scope": false,
+  "exploratory_pairs": [
+    "F-j20261111-s13/U-s13"
+  ],
+  "case_counts_by_scope": {
+    "registered_seed29": 247,
+    "exploratory_same_driver_seed13": 91
+  },
+  "method_names_hidden_in_review_pack": true,
+  "pack_sha256": "d82bfdaf7c08173033ddd7bf41337a48c8a638b6eb833032d9d803ad0abd5cff",
+  "review_status": "pending_Agent_review_not_human"
+}

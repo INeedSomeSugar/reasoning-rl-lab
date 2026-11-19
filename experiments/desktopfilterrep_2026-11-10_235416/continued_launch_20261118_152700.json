@@ -1,0 +1,7 @@
+{
+  "launcher_pid": 12300,
+  "started": "2026-11-18T15:27:00.1594138+08:00",
+  "stdout": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-continue-20261118_152700.stdout.log",
+  "stderr": "D:\\User\\AI\\reasoning-rl-lab\\logs\\desktopfilterrep_2026-11-10_235416-continue-20261118_152700.stderr.log",
+  "prior_receipt": "experiments/desktopfilterrep_2026-11-10_235416/driver_check_documentation_paused_2026-11-13_042951_UTC/manifest.json"
+}

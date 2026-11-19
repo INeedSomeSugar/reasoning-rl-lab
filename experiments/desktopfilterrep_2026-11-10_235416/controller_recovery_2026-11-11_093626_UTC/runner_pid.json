@@ -1,0 +1,6 @@
+{
+  "pid": 22920,
+  "started_utc": "2026-11-11T09:36:26.981317+00:00",
+  "recovery_source_sha256": "e2812a92a1c7912d8d6aed08ba52db1879c03dc7a58878274b6ae377d4643ea1",
+  "status": "controlled_from_same_frozen_plan"
+}

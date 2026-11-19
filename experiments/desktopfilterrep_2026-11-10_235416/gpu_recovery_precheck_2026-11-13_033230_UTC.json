@@ -1,0 +1,52 @@
+{
+  "recorded_utc": "2026-11-13T03:32:30.234954+00:00",
+  "status": "recovered_driver_evaluation_precheck_passed",
+  "training_fixed": 35,
+  "completed_evaluations_verified": 22,
+  "exhausted_preserved": [
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29"
+  ],
+  "remaining_evaluation_order": [
+    "F-j20261112-s29",
+    "F-j20261111-s29",
+    "R-j20261111-s29",
+    "R-j20261113-s13",
+    "F-j20261113-s13",
+    "F-j20261112-s13",
+    "R-j20261112-s13",
+    "R-j20261111-s13",
+    "F-j20261111-s13",
+    "U-s13"
+  ],
+  "readiness_path": "experiments/desktopfilterrep_2026-11-10_235416/driver_recovery_readiness_2026-11-13_032618_UTC/completed.json",
+  "readiness_sha256": "d69142021784f811dc024b030bada5d9da3e4b582130cfa05aba7cfa3b7571df",
+  "GPU": {
+    "pnp": {
+      "FriendlyName": "AMD Radeon RX 9070 XT",
+      "InstanceId": "PCI\\VEN_1002&DEV_7550&SUBSYS_00311EFE&REV_C0\\6&1341E741&0&00000009",
+      "Status": "OK",
+      "Problem": 0,
+      "Present": true
+    },
+    "driver": {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.16001"
+    }
+  },
+  "selfcheck": {
+    "new_failure_blocks_next_attempt_before_verification": true,
+    "baseline_failures_can_be_distinguished_from_new_failures": true,
+    "no_model_calls": true
+  },
+  "source_sha256": "9db5671a1de5a56704b91fbd4fb3fcda5f5f36a02dcfe32bbdf2cb2cdeba7386",
+  "original_deadline_unix": 1795272257.1341243,
+  "remaining_process_hours_at_observed_mean": 8.670860652857357,
+  "driver_changed_from": "32.0.32015.12012",
+  "driver_change_is_environment_recovery_stratum": true,
+  "no_training_completed_evaluation_rerun_or_third_attempt": true,
+  "failure_circuit_breaker_is_operational_overlay_not_numerical_change": true
+}

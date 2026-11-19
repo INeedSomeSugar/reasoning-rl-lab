@@ -1,0 +1,42 @@
+{
+  "start": 192,
+  "notes": [
+    "8-2*(3/2)=5",
+    "1pm+1hour+4hours+(18-6)/3hours=10pm, numeric gold10",
+    "50*(1-2/5-3/10)=15",
+    "15*2*0.8=24",
+    "5*1+3*2+2*3-(5+3+2)/5=15",
+    "160-40-50=70 and triangle inequality holds",
+    "100+200+400+200=900",
+    "170-6*25*(1-1/3)=70",
+    "15*3+15+2*3=66",
+    "25/(4*25)*100=25 for each type",
+    "175*2*8=2800",
+    "20*2/(8+2)=4",
+    "(3+3/8)*8/(1/4)=108",
+    "150-90-(90/2+10)=5",
+    "2*(40-8)+8=72",
+    "After sale has12 dollars is not explicitly sale revenue; reference treats it as revenue despite initial20-dollar holdings",
+    "400-(30+60+50+40)=220",
+    "50+2*50+50/2=175",
+    "405/0.9=450",
+    "20-5*1.5-3*2.5=5",
+    "(6+12+24+6)/16=3",
+    "12*5+2*4*7=116",
+    "20-(2*3.5+1.5+1+1.5*2+2.5-1)=6",
+    "20*(0.4-0.1)=6",
+    "(72-24-5-4)*2-72*0.75=24, subsequent batches inferred dozen from consistent context",
+    "25+40/2=45",
+    "20-3*3=11",
+    "9+(9+3)+(9+3+4)=37",
+    "2*240-400=80",
+    "3*(2*3)=18 square feet; reference omits square label",
+    "6*50/60=5",
+    "(60/2)*(1-1/3)=20"
+  ],
+  "excluded_offsets": [
+    15
+  ],
+  "reviewer": "Codex root Agent",
+  "human_reviewed": false
+}

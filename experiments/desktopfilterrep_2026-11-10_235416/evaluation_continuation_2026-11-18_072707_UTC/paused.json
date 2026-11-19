@@ -1,0 +1,12 @@
+{
+  "updated_utc": "2026-11-18T11:31:16.324343+00:00",
+  "runner_pid": null,
+  "stage": "evaluation_continuation",
+  "status": "paused_by_user",
+  "successful_training": 35,
+  "successful_evaluation": 28,
+  "error": "User requested pause at the next saved evaluation boundary",
+  "continuation": "experiments/desktopfilterrep_2026-11-10_235416/evaluation_continuation_2026-11-18_072707_UTC",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\User\\AI\\reasoning-rl-lab\\analysis\\continue_large_filter_evaluations.py\", line 155, in main\n    controller.controlled(family)\n  File \"D:\\User\\AI\\reasoning-rl-lab\\scripts\\run_large_filter.py\", line 255, in controlled\n    verify_frozen(family, plan)\n  File \"D:\\User\\AI\\reasoning-rl-lab\\analysis\\continue_large_filter_evaluations.py\", line 151, in verify_before_scheduling\n    raise UserPause(\"User requested pause at the next saved evaluation boundary\")\nUserPause: User requested pause at the next saved evaluation boundary\n",
+  "results_and_retry_counts_preserved": true
+}

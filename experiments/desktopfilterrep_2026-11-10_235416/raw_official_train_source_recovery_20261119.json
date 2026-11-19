@@ -1,0 +1,15 @@
+{
+  "recovered_utc": "2026-11-18T19:08:13.378689+00:00",
+  "source_revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+  "archive": "dist/reasoning-rl-lab-desktop-transfer-20261105.zip",
+  "archive_sha256": "461f151bd25230f0743171fa58538d0191ba89dc3368e0fb800f5f5c38a4ccf4",
+  "archive_tag": "local-pilot-20261105",
+  "member": "reasoning-rl-lab/data/raw/gsm_train.jsonl",
+  "restored_to_previously_missing_path": "data/raw/gsm_train.jsonl",
+  "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+  "rows": 7473,
+  "bytes": 4166206,
+  "matches_original_data_manifest": true,
+  "used_for_new_model_generation": false,
+  "holdout_members_extracted": 0
+}

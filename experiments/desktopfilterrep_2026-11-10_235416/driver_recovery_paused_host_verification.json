@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-13T04:29:06.8003632Z",
+  "active_project_model_or_controller_processes": [],
+  "display": {
+    "Name": "AMD Radeon RX 9070 XT",
+    "DriverVersion": "32.0.32015.16001",
+    "Status": "OK",
+    "ConfigManagerErrorCode": 0
+  },
+  "GPU_lock_present": false,
+  "registered_GPU": {
+    "FriendlyName": "AMD Radeon RX 9070 XT",
+    "Present": true,
+    "Problem": 0,
+    "Status": "OK"
+  }
+}

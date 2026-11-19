@@ -1,0 +1,255 @@
+{
+  "registered_utc": "2026-11-10T16:06:41.867238+00:00",
+  "order": [
+    {
+      "key": "U-s13",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 13
+    },
+    {
+      "key": "F-j20261111-s13",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261111-s13",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261112-s13",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 13
+    },
+    {
+      "key": "F-j20261112-s13",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 13
+    },
+    {
+      "key": "F-j20261113-s13",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261113-s13",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 13
+    },
+    {
+      "key": "R-j20261111-s29",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261111-s29",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261112-s29",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 29
+    },
+    {
+      "key": "U-s29",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 29
+    },
+    {
+      "key": "R-j20261112-s29",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 29
+    },
+    {
+      "key": "R-j20261113-s29",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261113-s29",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 29
+    },
+    {
+      "key": "F-j20261111-s47",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261111-s47",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261112-s47",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 47
+    },
+    {
+      "key": "F-j20261112-s47",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 47
+    },
+    {
+      "key": "F-j20261113-s47",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261113-s47",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 47
+    },
+    {
+      "key": "U-s47",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 47
+    },
+    {
+      "key": "R-j20261111-s71",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261111-s71",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 71
+    },
+    {
+      "key": "U-s71",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261112-s71",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 71
+    },
+    {
+      "key": "R-j20261112-s71",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 71
+    },
+    {
+      "key": "R-j20261113-s71",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261113-s71",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 71
+    },
+    {
+      "key": "F-j20261111-s97",
+      "arm": "F",
+      "probe_seed": 20261111,
+      "seed": 97
+    },
+    {
+      "key": "R-j20261111-s97",
+      "arm": "R",
+      "probe_seed": 20261111,
+      "seed": 97
+    },
+    {
+      "key": "R-j20261112-s97",
+      "arm": "R",
+      "probe_seed": 20261112,
+      "seed": 97
+    },
+    {
+      "key": "F-j20261112-s97",
+      "arm": "F",
+      "probe_seed": 20261112,
+      "seed": 97
+    },
+    {
+      "key": "F-j20261113-s97",
+      "arm": "F",
+      "probe_seed": 20261113,
+      "seed": 97
+    },
+    {
+      "key": "U-s97",
+      "arm": "U",
+      "probe_seed": null,
+      "seed": 97
+    },
+    {
+      "key": "R-j20261113-s97",
+      "arm": "R",
+      "probe_seed": 20261113,
+      "seed": 97
+    }
+  ],
+  "reason": "Interleave F/R and rotate U position within each training-seed block. Fixed before probes or new evaluations.",
+  "evaluation_order": [
+    "S2",
+    "A",
+    "R-j20261113-s97",
+    "U-s97",
+    "F-j20261113-s97",
+    "F-j20261112-s97",
+    "R-j20261112-s97",
+    "R-j20261111-s97",
+    "F-j20261111-s97",
+    "F-j20261113-s71",
+    "R-j20261113-s71",
+    "R-j20261112-s71",
+    "F-j20261112-s71",
+    "U-s71",
+    "F-j20261111-s71",
+    "R-j20261111-s71",
+    "U-s47",
+    "R-j20261113-s47",
+    "F-j20261113-s47",
+    "F-j20261112-s47",
+    "R-j20261112-s47",
+    "R-j20261111-s47",
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29",
+    "F-j20261112-s29",
+    "F-j20261111-s29",
+    "R-j20261111-s29",
+    "R-j20261113-s13",
+    "F-j20261113-s13",
+    "F-j20261112-s13",
+    "R-j20261112-s13",
+    "R-j20261111-s13",
+    "F-j20261111-s13",
+    "U-s13"
+  ]
+}

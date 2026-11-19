@@ -1,0 +1,134 @@
+{
+  "completed_utc": "2026-11-10T17:02:51.435931+00:00",
+  "process_costs": {
+    "preflight-a0": {
+      "label": "preflight-a0",
+      "argv": [
+        "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+        "-u",
+        "scripts/large_filter_tasks.py",
+        "--family",
+        "desktopfilterrep_2026-11-10_235416",
+        "--task",
+        "preflight"
+      ],
+      "pid": 2592,
+      "runner_pid": 30792,
+      "started_unix": 1794329866.8641133,
+      "finished_unix": 1794329896.8329582,
+      "process_wall_seconds": 29.968844890594482,
+      "exit_code": 0,
+      "timeout": false,
+      "timeout_seconds": 600,
+      "log": "logs/desktopfilterrep_2026-11-10_235416-preflight-a0.log",
+      "host_before": {
+        "utc": "2026-11-10T16:57:46.864113+00:00",
+        "ram_available_bytes": 10307248128,
+        "disk_free_bytes": 212309479424,
+        "cpu_percent_instantaneous": 0.0,
+        "process_pid": 30792,
+        "boot_time_unix": 1794299602.0518286
+      },
+      "host_after": {
+        "utc": "2026-11-10T16:58:16.832958+00:00",
+        "ram_available_bytes": 10343280640,
+        "disk_free_bytes": 212286328832,
+        "cpu_percent_instantaneous": 12.7,
+        "process_pid": 30792,
+        "boot_time_unix": 1794299602.0518286
+      }
+    },
+    "old-development64-a0": {
+      "label": "old-development64-a0",
+      "argv": [
+        "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "reasoning_rl",
+        "evaluate",
+        "--name",
+        "desktopfilterrep_2026-11-10_235416-old-development64-a0",
+        "--config",
+        "configs/desktopfilterrep_2026-11-10_235416_calibration.yaml",
+        "--hardware",
+        "rocm",
+        "--adapter",
+        "checkpoints/desktoprepair_20261106_152712-S2"
+      ],
+      "pid": 25960,
+      "runner_pid": 30792,
+      "started_unix": 1794329896.8399663,
+      "finished_unix": 1794330115.4420614,
+      "process_wall_seconds": 218.6020951271057,
+      "exit_code": 0,
+      "timeout": false,
+      "timeout_seconds": 1200,
+      "log": "logs/desktopfilterrep_2026-11-10_235416-old-development64-a0.log",
+      "host_before": {
+        "utc": "2026-11-10T16:58:16.839966+00:00",
+        "ram_available_bytes": 10344443904,
+        "disk_free_bytes": 212286324736,
+        "cpu_percent_instantaneous": 0.0,
+        "process_pid": 30792,
+        "boot_time_unix": 1794299602.0518286
+      },
+      "host_after": {
+        "utc": "2026-11-10T17:01:55.442061+00:00",
+        "ram_available_bytes": 10989715456,
+        "disk_free_bytes": 212285202432,
+        "cpu_percent_instantaneous": 11.2,
+        "process_pid": 30792,
+        "boot_time_unix": 1794299602.0518286
+      }
+    },
+    "calibration-train-a0": {
+      "label": "calibration-train-a0",
+      "argv": [
+        "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "reasoning_rl",
+        "grpo",
+        "--name",
+        "desktopfilterrep_2026-11-10_235416-calibration-train-a0",
+        "--config",
+        "configs/desktopfilterrep_2026-11-10_235416_calibration_train.yaml",
+        "--hardware",
+        "rocm",
+        "--strategy",
+        "uniform",
+        "--sft-checkpoint",
+        "checkpoints/desktoprepair_20261106_152712-S2"
+      ],
+      "pid": 18976,
+      "runner_pid": 30792,
+      "started_unix": 1794330115.449564,
+      "finished_unix": 1794330171.4249318,
+      "process_wall_seconds": 55.97536778450012,
+      "exit_code": 0,
+      "timeout": false,
+      "timeout_seconds": 400,
+      "log": "logs/desktopfilterrep_2026-11-10_235416-calibration-train-a0.log",
+      "host_before": {
+        "utc": "2026-11-10T17:01:55.449563+00:00",
+        "ram_available_bytes": 10990592000,
+        "disk_free_bytes": 212285202432,
+        "cpu_percent_instantaneous": 0.0,
+        "process_pid": 30792,
+        "boot_time_unix": 1794299602.0518286
+      },
+      "host_after": {
+        "utc": "2026-11-10T17:02:51.425431+00:00",
+        "ram_available_bytes": 10966298624,
+        "disk_free_bytes": 212248985600,
+        "cpu_percent_instantaneous": 10.6,
+        "process_pid": 30792,
+        "boot_time_unix": 1794299602.0518286
+      }
+    }
+  },
+  "old64_evaluation_process_seconds": 218.6020951271057,
+  "optimizer_steps": 8,
+  "fresh_development_accessed": false,
+  "accuracy_not_used_for_budget": true
+}

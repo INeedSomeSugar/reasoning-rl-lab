@@ -1,0 +1,10 @@
+{
+  "updated_utc": "2026-11-18T11:31:16.324343+00:00",
+  "runner_pid": null,
+  "stage": "evaluation_continuation",
+  "status": "paused_by_user",
+  "successful_training": 35,
+  "successful_evaluation": 28,
+  "error": "User requested pause at the next saved evaluation boundary",
+  "continuation": "experiments/desktopfilterrep_2026-11-10_235416/evaluation_continuation_2026-11-18_072707_UTC"
+}

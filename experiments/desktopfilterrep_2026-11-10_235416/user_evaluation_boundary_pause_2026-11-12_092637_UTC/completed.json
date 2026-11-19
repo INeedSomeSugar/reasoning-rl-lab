@@ -1,0 +1,27 @@
+{
+  "paused_utc": "2026-11-12T09:34:09.460842+00:00",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "status": "paused_by_user_after_complete_evaluation",
+  "completed_training": 35,
+  "registered_training": 35,
+  "completed_evaluation": 10,
+  "registered_evaluation": 37,
+  "saved_evaluation_key": "F-j20261113-s71",
+  "saved_run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s71-a0",
+  "saved_predictions_sha256": "f11d7ef5a8b46ee29b73169684d695cd71759a06c19c1d67db6b6458eee2e607",
+  "n": 1024,
+  "attempt_exit_info": {
+    "exit_code": 0,
+    "child_created_unix": 1794473059.3920002,
+    "child_exit_unix": 1794476049.403637,
+    "timing_source": "Windows GetProcessTimes held process handle; not controller resume time"
+  },
+  "old_controller_terminated": 29064,
+  "model_child_finished": 15944,
+  "no_next_model_started": true,
+  "prelaunch_race_records": 0,
+  "fresh_development_opened": true,
+  "training_permanently_closed": true,
+  "original_deadline_unix_unchanged": 1795272257.1341243,
+  "resume_policy": "Only after explicit user continue: skip all 35 training endpoints and completed evaluations; start next pending evaluation in a new process. No partial-evaluation resume."
+}

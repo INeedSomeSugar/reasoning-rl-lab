@@ -1,0 +1,15 @@
+{
+  "requested_utc": "2026-11-12T09:26:37.187440+00:00",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "target_key": "F-j20261113-s71",
+  "target_label": "eval-F-j20261113-s71-a0",
+  "controller_pid": 29064,
+  "child_pid": 15944,
+  "observer_pid": 16584,
+  "user_instruction": "Pause after the current complete evaluation, following the prior saved-boundary preference",
+  "source_sha256": "518c4614429db9b2ccf3dbf7950d21d0bf29aecfe386fe6a287dea0efecfeb31",
+  "frozen_source_models_data_verified": true,
+  "original_deadline_unix_unchanged": 1795272257.1341243,
+  "child_never_suspended": true,
+  "current_controller_keeps_original_cost_accounting": true
+}

@@ -1,0 +1,17 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "runner_pid": 23260,
+  "child_pid": 19464,
+  "phase": "driver-recovery-old64-2026-11-13_032618_UTC",
+  "elapsed_seconds": 240.14943647384644,
+  "timeout_seconds": 1200,
+  "heartbeat_utc": "2026-11-13T03:30:23.834782+00:00",
+  "host": {
+    "utc": "2026-11-13T03:30:23.834782+00:00",
+    "ram_available_bytes": 7012696064,
+    "disk_free_bytes": 210894635008,
+    "cpu_percent_instantaneous": 18.2,
+    "process_pid": 23260,
+    "boot_time_unix": 1794539132.050429
+  }
+}

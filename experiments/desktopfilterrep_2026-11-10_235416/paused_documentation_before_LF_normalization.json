@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-11-11T10:37:54.893478+00:00",
+  "status": "paused_by_explicit_user_request_not_complete",
+  "successful_training": 21,
+  "fresh_evaluations": 0,
+  "original_hard_deadline_unchanged": true,
+  "files": {
+    "README.md": "acf967fd3e8cfe42f7c93018cd1c41db6e6036f19196d4fafdee75079bad325b",
+    "PROJECT_CONTEXT.md": "6d6e6e99171358790fddeaf8d2cf2f1dcf4f8eec066b03b08c6c8ca17a894c89",
+    "HANDOFF.md": "adee89ca435224787418e3429b162596640964b2bd87bb42f15b6a110b3b7cbc"
+  },
+  "pause_report_sha256": "41c434f510231b42a48880114be7ce6220bf7a70599a46f0d27a0318781c494d"
+}

@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-11-12T21:37:42.015650+00:00",
+  "training_fixed": 35,
+  "fresh_evaluations_at_update": 18,
+  "phase": "eval-F-j20261113-s47-a0",
+  "files": {
+    "README.md": "95efb6d78188516b09ca0b122a53b91e96dacdadd4cf015f046eacc047a6e8f7",
+    "PROJECT_CONTEXT.md": "47229f5318eca09b61f41d138209c74aa6d46d5cec6cc83524c4564d41371a1c",
+    "HANDOFF.md": "f5929930488d342aaf103f6fb7b5a17db617b40909a11132b0255aff522c6270"
+  },
+  "no_prediction_contents_or_accuracies_read": true
+}

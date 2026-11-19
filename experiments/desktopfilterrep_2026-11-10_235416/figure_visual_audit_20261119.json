@@ -1,0 +1,90 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "inspected_utc": "2026-11-18T19:05:42.820298+00:00",
+  "reviewer_kind": "Agent",
+  "human_reviewed": false,
+  "png_review": "All eight regenerated PNG figures opened via view_image",
+  "svg_check": "All eight SVG documents parsed and viewBox present",
+  "figures": {
+    "endpoint_accuracies": {
+      "observed": "Three probe panels and five training seeds visible. Both anchor lines, U reuse, and bottom missing markers are labeled.",
+      "png_pixels": [
+        2218,
+        1070
+      ],
+      "png_sha256": "85641d5581ff49c1adf8e3f7612ee83443e3c20945b60c557a928acfcf982344",
+      "svg_sha256": "f9578dcae5df9a9c2235011e2194964d84fc5a805dd3a712e6c75484edfc8f63",
+      "svg_viewbox": "0 0 886.828594 427.610696"
+    },
+    "paired_differences": {
+      "observed": "All fifteen cells per contrast are visible. Missing entries use separate gray fill. Dark labels on warm backgrounds are legible.",
+      "png_pixels": [
+        2086,
+        1064
+      ],
+      "png_sha256": "b7c04fb73fb297deb2f343af8a2a8134fc262501f3e1febcc8da3f58f26f75fc",
+      "svg_sha256": "265d2a541aaed88c7ffc74d42ca8fc46fa583c2cba95f5dade1d2e72df2ba4fb",
+      "svg_viewbox": "0 0 834.57643 425.99952"
+    },
+    "conditional_intervals": {
+      "observed": "Four available-pair point estimates and labeled 95 percent bars cross the zero line. Pair counts are shown.",
+      "png_pixels": [
+        1647,
+        817
+      ],
+      "png_sha256": "0ab672c5c73fd74c51acdee3a803ec425349d101fbbfee36f7620e434de8f65f",
+      "svg_sha256": "ef5e81d40abd38b8d7a749b3a34bbfd42847fab90cb2e082d741a3e6b8e7755c",
+      "svg_viewbox": "0 0 659.121785 325.884406"
+    },
+    "signal_efficiency": {
+      "observed": "Both unit-time signal axes are legible. Actual endpoint dots and pooled rates show full evaluation counts. R matching debit is labeled.",
+      "png_pixels": [
+        2316,
+        855
+      ],
+      "png_sha256": "6a1e8259d508994cc1dd9b1efcd934b75b20297e9bab7e7e883cc4d43aa049c2",
+      "svg_sha256": "2c0944b9c86f7d63446201cd456adff766b13769219f890bc5457b9d17386880",
+      "svg_viewbox": "0 0 926.355781 341.253937"
+    },
+    "coverage_concentration": {
+      "observed": "Unique-question pool coverage and top-ten effective completion shares are labeled. Outcomes from all 35 trained endpoints appear.",
+      "png_pixels": [
+        2318,
+        836
+      ],
+      "png_sha256": "16eaa61b820b5e97930bf67c87b596f15ec1995d53c7514f048ed17dc5dfe09f",
+      "svg_sha256": "22436d1454ce1c4810b0b48dae5fbd2b13c9f66d09a0608c7733fdc64a6cf399",
+      "svg_viewbox": "0 0 926.717187 334.159656"
+    },
+    "signal_time_windows": {
+      "observed": "Axes label zero variance and effective completion ratios across observed time thirds. Legend identifies all groups.",
+      "png_pixels": [
+        2309,
+        847
+      ],
+      "png_sha256": "f50f93f38c7c6ecc4b9c399c206442b0145bdd55ee4ade2a8e258c26893e63d9",
+      "svg_sha256": "157e866b7e30e781c03f26719334fb889b2b380a5f97b9479744968462c264f8",
+      "svg_viewbox": "0 0 923.464502 337.943734"
+    },
+    "cost_breakdown": {
+      "observed": "Algorithm charge components, failed attempt bounds and shared physical probe minutes appear in separate panels. R matching is hatched.",
+      "png_pixels": [
+        2497,
+        900
+      ],
+      "png_sha256": "3306fd2953b2a639409e8b896611af326229f37697b71e3e95beb2d6cdffccf8",
+      "svg_sha256": "4879b08ab89d751dcaf820d91b2334da419de1f09cccf750c74d7a5c8d539957",
+      "svg_viewbox": "0 0 998.649063 358.647349"
+    },
+    "probe_selection": {
+      "observed": "Each stacked histogram shows 256 questions. All five success bins and all four selection frequency totals are legible.",
+      "png_pixels": [
+        2137,
+        836
+      ],
+      "png_sha256": "6840e401d384f422a73d50d3277fbdc302ad3d66622f15cc284c16e57d90ed0a",
+      "svg_sha256": "2e5faa5b9a6bc02c2b7a1baf80b5a5fa43c233bf058a30f12456b0758248ab87",
+      "svg_viewbox": "0 0 854.615312 333.947691"
+    }
+  }
+}

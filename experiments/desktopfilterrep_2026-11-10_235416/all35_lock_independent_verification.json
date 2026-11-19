@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-12T03:02:08.044766+00:00",
+  "all35_successful": true,
+  "all37_weight_objects_registered": true,
+  "all35_checkpoint_digests_independently_reverified": true,
+  "CPU_audits_passed": 35,
+  "arms": {
+    "U": 5,
+    "F": 15,
+    "R": 15
+  },
+  "weight_lock_sha256": "3b68f7892a0855ac42de73be0d9623dcf6908533f55b30e67c5bb8304564bd2b",
+  "all_endpoints_fixed_before_fresh_opened": true,
+  "source_and_data_and_models_unchanged": true,
+  "no_new_predictions_or_accuracies_read": true
+}

@@ -1,0 +1,16 @@
+{
+  "heartbeat_utc": "2026-11-12T09:34:07.343390+00:00",
+  "controller_pid": 29064,
+  "child_pid": 15944,
+  "observer_pid": 16584,
+  "phase": "eval-F-j20261113-s71-a0",
+  "next_model_launch_fenced": true,
+  "host": {
+    "utc": "2026-11-12T09:34:07.343390+00:00",
+    "ram_available_bytes": 8324218880,
+    "disk_free_bytes": 209913651200,
+    "cpu_percent_instantaneous": 14.7,
+    "process_pid": 16584,
+    "boot_time_unix": 1794387791.0505357
+  }
+}

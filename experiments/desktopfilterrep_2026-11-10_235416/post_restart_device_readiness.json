@@ -1,0 +1,10 @@
+{
+  "checked_unix": 1794389518.593862,
+  "boot_time_unix": 1794387791.0505672,
+  "torch_version": "2.13.0+rocm10.0.0",
+  "hip_version": "7.15.26333",
+  "cuda_available": true,
+  "device_count": 1,
+  "device_name": "AMD Radeon RX 9070 XT",
+  "no_model_loaded": true
+}

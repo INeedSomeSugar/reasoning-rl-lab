@@ -1,0 +1,8 @@
+{
+  "stage": "CPU precheck, no primary model attempt",
+  "exit_code": 1,
+  "error": "Windows PowerShell stderr was CP936; UTF8 reader raised UnicodeDecodeError, followed by NoneType stderr slice TypeError",
+  "GPU_smoke_and_old64_already_passed": true,
+  "primary_attempts_consumed": 0,
+  "runtime_source_not_modified": true
+}

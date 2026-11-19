@@ -1,0 +1,14 @@
+{
+  "registered_utc": "2026-11-10T20:01:29.722660+00:00",
+  "fresh_evaluation_opened": false,
+  "files": {
+    "analysis/analyze_large_filter.py": "e7ced584e2f8f532366c2e131b9c42b55c0d5bf2bde4d17dd960c8399656cc51",
+    "analysis/render_large_filter.py": "63492212f89a1a9ae81db61e71596be4b395399679e01ff88f0fa2ff1e64f5da",
+    "analysis/write_large_filter_report.py": "0595a53a93b8dcf47e90f3a342ae482bf890dc6a8b9dec46c9f24da643ce84d4",
+    "analysis/finalize_large_filter_reviews.py": "89156a857358959819283f06b6690c984429c50b3387cd35654b8001bbd02c37",
+    "analysis/audit_large_filter_closeout.py": "1112d3ef5430525f19bd6e42efd38ced6070c41bb4b13816852d3e77db8b3684",
+    "analysis/finish_large_filter_documents.py": "ea6b038674a42745ff56df16cb89434c464fc5829488a9e38ca37a7a48d2263a"
+  },
+  "changes": "Add explicit per-question S2 transition IDs, arithmetic F-U behavioral decomposition and checkpoint roles. No runtime, outcome, scoring, thresholds or statistical resampling changes.",
+  "all_inferential_design_remains_frozen": true
+}

@@ -1,0 +1,17 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "runner_pid": 17892,
+  "child_pid": 26592,
+  "phase": "eval-F-j20261112-s13-a0",
+  "elapsed_seconds": 2716.2712695598602,
+  "timeout_seconds": 7650.0,
+  "heartbeat_utc": "2026-11-18T11:31:04.274975+00:00",
+  "host": {
+    "utc": "2026-11-18T11:31:04.274975+00:00",
+    "ram_available_bytes": 11304009728,
+    "disk_free_bytes": 210087649280,
+    "cpu_percent_instantaneous": 11.1,
+    "process_pid": 17892,
+    "boot_time_unix": 1794974546.049479
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "synthetic": {
+    "status": "passed",
+    "failed_time_added_without_adding_discarded_training_signal": true,
+    "inverse_rate_bounds_in_correct_order": true,
+    "synthetic_only": true
+  },
+  "live_training_cost_only": {
+    "measured_owned_model_process_seconds": 59731.08460211754,
+    "exact_completed_process_receipt_count": 28,
+    "interrupted_process_count": 1,
+    "interrupted_model_process_seconds_lower_bound": 962.6498498916626,
+    "interrupted_model_process_seconds_upper_bound": 1025.5066931247711,
+    "all_attempt_model_process_seconds_lower_bound": 60693.7344520092,
+    "all_attempt_model_process_seconds_upper_bound": 60756.59129524231,
+    "measured_owned_model_process_seconds_scope": "Exact completed process receipts only; interrupted model costs are included in all-attempt bounds",
+    "completed_failed_process_seconds": 0,
+    "failed_process_seconds": null,
+    "failed_process_seconds_scope": "Unknown exact total when an interruption exists; use failed-model cost bounds, never impute zero",
+    "completed_failed_process_count": 0,
+    "failed_model_process_seconds_lower_bound": 962.6498498916626,
+    "failed_model_process_seconds_upper_bound": 1025.5066931247711,
+    "controller_preparation_failures_with_preserved_source": 1,
+    "CPU_preparation_and_user_pause_cost_scope": "Included in registered session wall time; not falsely labeled GPU-active process time",
+    "all_attempts_in_physical_ledger": true,
+    "unknown_exit_codes_not_imputed": true
+  },
+  "U47_failed_path_bounds": {
+    "failed_attempts": 1,
+    "lower_seconds": 966.1250870227814,
+    "upper_seconds": 1028.98193025589,
+    "labels": [
+      "U-s47-a0"
+    ],
+    "bounds_notes": [
+      "Known outer preparation plus live-child activity/next-OS-boot bounds; exact exit unknown"
+    ]
+  },
+  "fresh_predictions_read": false,
+  "source_sha256": "986b83953b1913bc8e459b111f1d2e83adf3290e2403bf3ffad7db20044c048c"
+}

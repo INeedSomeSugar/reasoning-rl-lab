@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "CPU_only_synthetic_process": true,
+  "suspend_resume_and_exact_exit_handle_verified": true,
+  "exit_code": 0,
+  "child_created_unix": 1794390388.3966064,
+  "child_exit_unix": 1794390388.8891964,
+  "timing_source": "Windows GetProcessTimes held process handle; not controller resume time"
+}

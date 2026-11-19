@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-11-13T03:51:41.5891716Z",
+  "user_instruction": "检查完毕先不要启动训练",
+  "selected_answer": "等当前评估保存后暂停（推荐）",
+  "current_evaluation": "eval-F-j20261112-s29-a1",
+  "authorization_scope": "Only finish and save the already running evaluation; then pause all GPU work",
+  "training_authorized": false,
+  "further_evaluations_authorized": false,
+  "no_resume_without_explicit_user_continue": true
+}

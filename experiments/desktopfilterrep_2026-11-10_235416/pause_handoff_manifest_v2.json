@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-11-11T10:39:35.244800+00:00",
+  "status": "paused_by_explicit_user_request",
+  "completed_training": 21,
+  "fresh_evaluations": 0,
+  "no_next_unit_started": true,
+  "no_active_project_GPU_model_tasks_confirmed": true,
+  "files": {
+    "README.md": "d2cd1c716ee4f5ae132bf08935b93a3ae149c25fa131475b217d3e98f1ece9ac",
+    "PROJECT_CONTEXT.md": "4ae8cb10f9946c5cdb0d422aedaee1c1e96d69b9b4e0a966055e27f73647e62e",
+    "HANDOFF.md": "24ca2f8d182a559aae56db4d255759b41e0c53145689741ffc8dfb6a189d4d09",
+    "experiments/desktopfilterrep_2026-11-10_235416/AGENT_WORK_STATE.md": "8962facc3f1faeca22aa3e1a05c0a961e7e5445fa48ef1a35d58b3eae3c9bb8b",
+    "experiments/desktopfilterrep_2026-11-10_235416/pause_after_endpoint_completed.json": "792676951a438e1c917f29844310b7f48d6907a59329cafda26670bd34473474",
+    "experiments/desktopfilterrep_2026-11-10_235416/pause_host_process_verification.json": "9bc1069cac89459e821c928f7e24a09c3257768ed8ee840ed4d31b523a1c1ea1",
+    "reports/comparisons/desktopfilterrep_2026-11-10_235416/paused_status.md": "10fcf7efae431d11fa46651d33cf5d9cc7ed0a2d01743de91ddde56b55b60785",
+    "analysis/record_large_filter_pause.py": "42084650e55a7fec44c92802a92a7c121f6516cc0145714949891046da6032cc",
+    "experiments/desktopfilterrep_2026-11-10_235416/paused_documentation_updated.json": "c074f0a7063b79dedff49fe5b4aa5079c21c004cdbd3cdf31be1f38807973ec4",
+    "environment/desktopfilterrep_2026-11-10_235416-paused-diff-check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "full_experiment_completed": false,
+  "previous_manifest_sha256": "23780ae7ccc14c0e4e7ef04ecd0276681bb222a8488029a88e3aa55a21343682",
+  "documentation_LF_normalized_without_content_changes": true
+}

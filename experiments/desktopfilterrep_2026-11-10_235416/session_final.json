@@ -1,0 +1,30 @@
+{
+  "completed_utc": "2026-11-18T19:08:49.223937+00:00",
+  "registered_unix": 1794326057.1341243,
+  "finished_unix": 1795028929.2239373,
+  "elapsed_registered_session_wall_seconds": 702872.089812994,
+  "hard_limit_seconds": 946200,
+  "measured_model_process_seconds": 196861.5020723343,
+  "measured_model_process_seconds_scope": "Exact completed receipts only; additional interrupted costs in all-attempt bounds",
+  "all_attempt_model_process_seconds_lower_bound": 197824.15192222595,
+  "all_attempt_model_process_seconds_upper_bound": 197887.00876545906,
+  "failed_model_process_seconds_lower_bound": 1837.078665971756,
+  "failed_model_process_seconds_upper_bound": 1899.9355092048645,
+  "finished_before_frozen_deadline": true,
+  "unmeasured_initial_orientation_before_registration": "Before registration; earliest verified clock is a lower bound, not a measured process interval.",
+  "model_tasks": {
+    "completed_utc": "2026-11-18T18:45:47.862196+00:00",
+    "successful_training": 35,
+    "registered_training": 35,
+    "successful_evaluation": 32,
+    "registered_evaluation": 37,
+    "failed_units_preserved": true,
+    "no_further_training": true
+  },
+  "available_blinded_Agent_review_complete": true,
+  "registered_blind_scope_complete": false,
+  "all_requested_local_artifacts_completed": false,
+  "local_evidence_delivered_with_missing_evaluations": true,
+  "formal_holdouts_opened": false,
+  "remote_published": false
+}

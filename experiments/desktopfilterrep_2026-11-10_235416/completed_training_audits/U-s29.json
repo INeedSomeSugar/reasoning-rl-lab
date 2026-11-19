@@ -1,0 +1,68 @@
+{
+  "endpoint": "U-s29",
+  "status": "independent_CPU_audit_passed",
+  "diagnostics": {
+    "optimizer_steps": 880,
+    "pool_n": 256,
+    "all_correct_groups": 604,
+    "all_wrong_groups": 40,
+    "mixed_groups": 236,
+    "effective_completions": 928,
+    "nonzero_advantage_completions": 944,
+    "parse_failures": 63,
+    "format_failures": 660,
+    "truncations": 30,
+    "nonzero_gradient_steps": 236,
+    "zero_gradient_adam_changed_steps": 639,
+    "actual_parameter_changed_steps": 875,
+    "zero_variance_fraction": 0.7318181818181818,
+    "distinct_training_ids": 247,
+    "coverage_fraction": 0.96484375,
+    "repetitions_min_including_zero": 0,
+    "repetitions_max": 9,
+    "effective_top10_question_share": 0.23060344827586207,
+    "adapter_delta_l2_independent": 0.315717139521836,
+    "adam_state_entries": 112,
+    "adam_state_steps": 880,
+    "optimizer_state_sha256": "a3f3aab8012c534e41047b9d1739eba1325f87d7d992bfbf655ecf9e6c9aff8b",
+    "peak_allocated_bytes": 4956600832,
+    "peak_reserved_bytes": 9231663104,
+    "generated_tokens": 551237,
+    "prompt_tokens": 374008,
+    "policy_loss_input_tokens": 925245,
+    "wall_budget_overshoot_seconds": 3.107413632591488
+  },
+  "signal_windows": [
+    {
+      "window": "first",
+      "groups": 260,
+      "mixed_groups": 73,
+      "effective_completions": 290,
+      "mixed_group_fraction": 0.28076923076923077,
+      "nonzero_gradient_steps": 73,
+      "window_definition": "Three equal observed-training-time windows, assigned by optimizer completion time"
+    },
+    {
+      "window": "middle",
+      "groups": 303,
+      "mixed_groups": 91,
+      "effective_completions": 356,
+      "mixed_group_fraction": 0.30033003300330036,
+      "nonzero_gradient_steps": 91,
+      "window_definition": "Three equal observed-training-time windows, assigned by optimizer completion time"
+    },
+    {
+      "window": "last",
+      "groups": 317,
+      "mixed_groups": 72,
+      "effective_completions": 282,
+      "mixed_group_fraction": 0.22712933753943218,
+      "nonzero_gradient_steps": 72,
+      "window_definition": "Three equal observed-training-time windows, assigned by optimizer completion time"
+    }
+  ],
+  "coverage_records": 256,
+  "fresh_development_predictions_read": false,
+  "training_result_sha256": "c74791076cd9b6c44e97b15fc4c6d150e2354affc477c1885e2ca5b5946ee68e",
+  "checkpoint_sha256": "cc833a8757f61e7b6a5f6dafab1877e7992996a74e5bf43f0c7d4d157ea3cd2c"
+}

@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-10 17:30:08 UTC",
+  "source_url": "https://api.github.com/repos/INeedSomeSugar/reasoning-rl-lab/commits?per_page=1",
+  "repository": "INeedSomeSugar/reasoning-rl-lab",
+  "remote_default_branch_latest_sha": "4ea43b03ce76a38fe5a525dd83a65e9751398d5a",
+  "local_initial_head": "4ea43b03ce76a38fe5a525dd83a65e9751398d5a",
+  "matches_initial_head": true,
+  "latest_commit_message": "Record verified fixed-prefilter development release\n\nLink the public prerelease, retain four remote asset digests and checkpoint roles, document download verification, and preserve original scientific closeout receipts.",
+  "latest_commit_date": "2026-11-10T13:36:56Z",
+  "read_only": true,
+  "no_remote_publication_performed": true
+}

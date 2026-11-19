@@ -1,0 +1,13 @@
+{
+  "reports/comparisons/desktopfilterrep_2026-11-10_235416/gpu_runtime_blocked_status.md": "30fcdebc73ca36bd670f917933aff7163a4ad6a62328a29f49afa165d505b1a3",
+  "experiments/desktopfilterrep_2026-11-10_235416/AGENT_WORK_STATE.md": "d904ee15d2814733e20f33c8525d539e9376287d3899be10c8f698d72ef1c922",
+  "docs/REPRODUCING_FILTER_REPLICATION_20261110.md": "500e14c628c5a00b58f743cfe02c21311be3db021b60484bdc3ff19428a5baf9",
+  "README.md": "0e1f14eb0d672973cf7bd893c820cd9a789fc805fd874730f82128bd999f09ed",
+  "PROJECT_CONTEXT.md": "65049f64fc0cf6f7a95caf076bdec9ca8e08fc9d86c023c86228d334c104e40b",
+  "HANDOFF.md": "b01884ecc10858a87d36546656766071fa399418c2b74e8ab8ae2927b74dffb6",
+  "experiments/desktopfilterrep_2026-11-10_235416/gpu_hold_audit_2026-11-13/all_attempt_physical_costs.csv": "39ed5e30a3ae0e82112a6ead582c642ed9738554fb0ddff156729e2e8e99646a",
+  "experiments/desktopfilterrep_2026-11-10_235416/gpu_hold_audit_2026-11-13/evaluation_status_all37.csv": "64394c74da4cd9f72aaabda203623839bc1140335a290577cd469bc0b02926fd",
+  "experiments/desktopfilterrep_2026-11-10_235416/gpu_hold_audit_2026-11-13/failed_endpoint_cost_bounds.json": "0a3674a503e87ea1514511e724940abe55fc34f044cb3b2d1923bd81e34ae9d8",
+  "experiments/desktopfilterrep_2026-11-10_235416/gpu_hold_audit_2026-11-13/physical_cost_summary.json": "c72671e45f2d4dc10d04fbe89b810e11468181fe055be3927a7c678ea41db047",
+  "experiments/desktopfilterrep_2026-11-10_235416/gpu_hold_audit_2026-11-13/summary.json": "f1b110efbba72748dabf20b3ddf6667b86694cf9a7dedea472bf8867fe8f6d73"
+}

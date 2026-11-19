@@ -1,0 +1,55 @@
+{
+  "recorded": "2026-11-18T15:23:02.9885600+08:00",
+  "boot": {
+    "LastBootUpTime": "2026-11-18T12:02:26.500693+08:00",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300"
+  },
+  "display": [
+    {
+      "Name": "GameViewer Virtual Display Adapter",
+      "DriverVersion": "15.6.5.199",
+      "DriverDate": "2026-02-28T08:00:00+08:00",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    },
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.16001",
+      "DriverDate": "2026-11-11T08:00:00+08:00",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    },
+    {
+      "Name": "AMD Radeon(TM) Graphics",
+      "DriverVersion": "32.0.21045.26001",
+      "DriverDate": "2026-11-11T08:00:00+08:00",
+      "Status": "OK",
+      "ConfigManagerErrorCode": 0
+    }
+  ],
+  "pnp": [
+    {
+      "FriendlyName": "GameViewer Virtual Display Adapter",
+      "InstanceId": "ROOT\\DISPLAY\\0000",
+      "Present": true,
+      "Problem": 0,
+      "Status": "OK"
+    },
+    {
+      "FriendlyName": "AMD Radeon RX 9070 XT",
+      "InstanceId": "PCI\\VEN_1002&DEV_7550&SUBSYS_00311EFE&REV_C0\\6&1341E741&0&00000009",
+      "Present": true,
+      "Problem": 0,
+      "Status": "OK"
+    },
+    {
+      "FriendlyName": "AMD Radeon(TM) Graphics",
+      "InstanceId": "PCI\\VEN_1002&DEV_13C0&SUBSYS_D0001458&REV_C5\\4&16012499&0&0041",
+      "Present": true,
+      "Problem": 0,
+      "Status": "OK"
+    }
+  ],
+  "project_processes": []
+}

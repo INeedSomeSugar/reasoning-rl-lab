@@ -1,0 +1,20 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "runner_pid": 22920,
+  "child_pid": 11672,
+  "phase": "U-s47-a1",
+  "elapsed_seconds": 3601.181790113449,
+  "timeout_seconds": 3747.1067675000004,
+  "heartbeat_utc": "2026-11-11T10:36:33.902402+00:00",
+  "host": {
+    "utc": "2026-11-11T10:36:33.902402+00:00",
+    "ram_available_bytes": 10529656832,
+    "disk_free_bytes": 211260305408,
+    "cpu_percent_instantaneous": 21.2,
+    "process_pid": 6272,
+    "boot_time_unix": 1794387791.0505672
+  },
+  "controller_suspended_for_user_boundary_pause": true,
+  "pause_observer_pid": 6272,
+  "child_training_not_suspended": true
+}

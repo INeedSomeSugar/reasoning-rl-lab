@@ -1,0 +1,101 @@
+{"event": "started", "label": "preflight-a0", "pid": 2592, "runner_pid": 30792, "time_unix": 1794329866.8696144}
+{"event": "started", "label": "old-development64-a0", "pid": 25960, "runner_pid": 30792, "time_unix": 1794329896.8449726}
+{"event": "started", "label": "calibration-train-a0", "pid": 18976, "runner_pid": 30792, "time_unix": 1794330115.454564}
+{"event": "started", "label": "probe-j20261111-a0", "pid": 9948, "runner_pid": 31552, "time_unix": 1794330509.4452596}
+{"event": "started", "label": "probe-j20261112-a0", "pid": 16416, "runner_pid": 31552, "time_unix": 1794331590.4343784}
+{"event": "started", "label": "probe-j20261113-a0", "pid": 4272, "runner_pid": 31552, "time_unix": 1794332676.146551}
+{"event": "started", "label": "accounting-clock-smoke-a0", "pid": 7652, "runner_pid": 7816, "time_unix": 1794333914.195387}
+{"event": "idle_sleep_prevention_request", "stage": "controlled", "runner_pid": 4488, "return_value": -2147483648, "time_unix": 1794334099.9787643, "scope": "This runner lifetime only; does not prevent explicit user sleep/shutdown"}
+{"event": "started", "label": "U-s13-a0", "pid": 23812, "runner_pid": 4488, "time_unix": 1794334105.3583665}
+{"event": "started", "label": "F-j20261111-s13-a0", "pid": 29180, "runner_pid": 4488, "time_unix": 1794337709.9147577}
+{"event": "started", "label": "R-j20261111-s13-a0", "pid": 14960, "runner_pid": 4488, "time_unix": 1794340233.225423}
+{"event": "started", "label": "R-j20261112-s13-a0", "pid": 32284, "runner_pid": 4488, "time_unix": 1794342753.995185}
+{"event": "started", "label": "F-j20261112-s13-a0", "pid": 7372, "runner_pid": 4488, "time_unix": 1794345278.609422}
+{"event": "started", "label": "F-j20261113-s13-a0", "pid": 25216, "runner_pid": 4488, "time_unix": 1794347796.7586586}
+{"event": "started", "label": "R-j20261113-s13-a0", "pid": 24912, "runner_pid": 4488, "time_unix": 1794350317.8562164}
+{"event": "started", "label": "R-j20261111-s29-a0", "pid": 6040, "runner_pid": 4488, "time_unix": 1794352839.8670459}
+{"event": "started", "label": "F-j20261111-s29-a0", "pid": 21712, "runner_pid": 4488, "time_unix": 1794355366.8125572}
+{"event": "started", "label": "F-j20261112-s29-a0", "pid": 5152, "runner_pid": 4488, "time_unix": 1794357891.330356}
+{"event": "started", "label": "U-s29-a0", "pid": 28008, "runner_pid": 4488, "time_unix": 1794360412.6826527}
+{"event": "started", "label": "R-j20261112-s29-a0", "pid": 8616, "runner_pid": 4488, "time_unix": 1794364017.2843537}
+{"event": "started", "label": "R-j20261113-s29-a0", "pid": 9400, "runner_pid": 4488, "time_unix": 1794366535.8844063}
+{"event": "started", "label": "F-j20261113-s29-a0", "pid": 26444, "runner_pid": 4488, "time_unix": 1794369058.5888836}
+{"event": "started", "label": "F-j20261111-s47-a0", "pid": 22056, "runner_pid": 4488, "time_unix": 1794371582.6190999}
+{"event": "started", "label": "R-j20261111-s47-a0", "pid": 5980, "runner_pid": 4488, "time_unix": 1794374106.3837934}
+{"event": "started", "label": "R-j20261112-s47-a0", "pid": 28236, "runner_pid": 4488, "time_unix": 1794376628.0309827}
+{"event": "started", "label": "F-j20261112-s47-a0", "pid": 3208, "runner_pid": 4488, "time_unix": 1794379144.343477}
+{"event": "started", "label": "F-j20261113-s47-a0", "pid": 4060, "runner_pid": 4488, "time_unix": 1794381665.959856}
+{"event": "started", "label": "R-j20261113-s47-a0", "pid": 26280, "runner_pid": 4488, "time_unix": 1794384188.6381054}
+{"event": "started", "label": "U-s47-a0", "pid": 22416, "runner_pid": 4488, "time_unix": 1794386711.9266727}
+{"event": "controller_recovery_after_confirmed_system_restart", "runner_pid": 22920, "old_runner_pid": 4488, "old_child_pid": 22416, "time_unix": 1794389786.9823163, "recovery_receipt": "experiments/desktopfilterrep_2026-11-10_235416/controller_recovery_2026-11-11_093626_UTC", "interrupted_attempt": "U-s47-a0", "only_remaining_training_attempt": "U-s47-a1"}
+{"event": "started", "label": "U-s47-a1", "pid": 11672, "runner_pid": 22920, "time_unix": 1794389792.739136}
+{"event": "user_requested_pause_after_current_endpoint_armed", "label": "U-s47-a1", "runner_pid": 22920, "child_pid": 11672, "observer_pid": 6272, "time_unix": 1794390391.971789, "controller_only_suspended": true}
+{"event": "user_resumed_from_saved_endpoint_boundary", "label": "controller-resume", "runner_pid": 29064, "time_unix": 1794408525.2033203, "resume_record": "experiments/desktopfilterrep_2026-11-10_235416/controller_resume_2026-11-11_144845_UTC", "saved_training_endpoints": 21}
+{"event": "started", "label": "R-j20261111-s71-a0", "pid": 23896, "runner_pid": 29064, "time_unix": 1794408531.1847494}
+{"event": "started", "label": "F-j20261111-s71-a0", "pid": 4108, "runner_pid": 29064, "time_unix": 1794411055.8496432}
+{"event": "started", "label": "U-s71-a0", "pid": 7504, "runner_pid": 29064, "time_unix": 1794413579.8259552}
+{"event": "started", "label": "F-j20261112-s71-a0", "pid": 19500, "runner_pid": 29064, "time_unix": 1794417184.1044106}
+{"event": "started", "label": "R-j20261112-s71-a0", "pid": 16556, "runner_pid": 29064, "time_unix": 1794419705.931001}
+{"event": "started", "label": "R-j20261113-s71-a0", "pid": 30628, "runner_pid": 29064, "time_unix": 1794422226.3491848}
+{"event": "started", "label": "F-j20261113-s71-a0", "pid": 25320, "runner_pid": 29064, "time_unix": 1794424747.9006982}
+{"event": "started", "label": "F-j20261111-s97-a0", "pid": 17944, "runner_pid": 29064, "time_unix": 1794427271.1905534}
+{"event": "started", "label": "R-j20261111-s97-a0", "pid": 7816, "runner_pid": 29064, "time_unix": 1794429792.0919995}
+{"event": "started", "label": "R-j20261112-s97-a0", "pid": 16448, "runner_pid": 29064, "time_unix": 1794432314.9940102}
+{"event": "started", "label": "F-j20261112-s97-a0", "pid": 22492, "runner_pid": 29064, "time_unix": 1794434832.1344543}
+{"event": "started", "label": "F-j20261113-s97-a0", "pid": 30716, "runner_pid": 29064, "time_unix": 1794437354.6192725}
+{"event": "started", "label": "U-s97-a0", "pid": 21764, "runner_pid": 29064, "time_unix": 1794439883.469177}
+{"event": "started", "label": "R-j20261113-s97-a0", "pid": 17888, "runner_pid": 29064, "time_unix": 1794443488.5046778}
+{"event": "started", "label": "eval-S2-a0", "pid": 17148, "runner_pid": 29064, "time_unix": 1794446017.8078446}
+{"event": "started", "label": "eval-A-a0", "pid": 15512, "runner_pid": 29064, "time_unix": 1794449085.5807736}
+{"event": "started", "label": "eval-R-j20261113-s97-a0", "pid": 14040, "runner_pid": 29064, "time_unix": 1794451370.8175368}
+{"event": "started", "label": "eval-U-s97-a0", "pid": 20596, "runner_pid": 29064, "time_unix": 1794454138.4162042}
+{"event": "started", "label": "eval-F-j20261113-s97-a0", "pid": 27820, "runner_pid": 29064, "time_unix": 1794457168.7873154}
+{"event": "started", "label": "eval-F-j20261112-s97-a0", "pid": 30148, "runner_pid": 29064, "time_unix": 1794460356.1014276}
+{"event": "started", "label": "eval-R-j20261112-s97-a0", "pid": 16976, "runner_pid": 29064, "time_unix": 1794463567.476722}
+{"event": "started", "label": "eval-R-j20261111-s97-a0", "pid": 28244, "runner_pid": 29064, "time_unix": 1794466780.958169}
+{"event": "started", "label": "eval-F-j20261111-s97-a0", "pid": 30016, "runner_pid": 29064, "time_unix": 1794469931.1670475}
+{"event": "started", "label": "eval-F-j20261113-s71-a0", "pid": 15944, "runner_pid": 29064, "time_unix": 1794473059.3956819}
+{"event": "user_requested_pause_after_current_evaluation_armed", "label": "eval-F-j20261113-s71-a0", "runner_pid": 29064, "child_pid": 15944, "observer_pid": 16584, "time_unix": 1794475597.194947, "next_launch_fenced": true}
+{"event": "user_resumed_from_complete_evaluation_boundary", "label": "evaluation-controller-resume", "runner_pid": 34984, "time_unix": 1794493783.5343022, "resume_record": "experiments/desktopfilterrep_2026-11-10_235416/evaluation_controller_resume_2026-11-12_142943_UTC", "saved_training": 35, "saved_evaluations": 10}
+{"event": "started", "label": "eval-R-j20261113-s71-a0", "pid": 36168, "runner_pid": 34984, "time_unix": 1794493789.5254343}
+{"event": "started", "label": "eval-R-j20261112-s71-a0", "pid": 11984, "runner_pid": 34984, "time_unix": 1794496945.33514}
+{"event": "started", "label": "eval-F-j20261112-s71-a0", "pid": 36500, "runner_pid": 34984, "time_unix": 1794500090.7360554}
+{"event": "started", "label": "eval-U-s71-a0", "pid": 25320, "runner_pid": 34984, "time_unix": 1794503296.8874204}
+{"event": "started", "label": "eval-F-j20261111-s71-a0", "pid": 32288, "runner_pid": 34984, "time_unix": 1794506512.074588}
+{"event": "started", "label": "eval-R-j20261111-s71-a0", "pid": 23556, "runner_pid": 34984, "time_unix": 1794509715.0061307}
+{"event": "started", "label": "eval-U-s47-a0", "pid": 36388, "runner_pid": 34984, "time_unix": 1794512930.4959576}
+{"event": "started", "label": "eval-R-j20261113-s47-a0", "pid": 14624, "runner_pid": 34984, "time_unix": 1794516099.4362473}
+{"event": "started", "label": "eval-F-j20261113-s47-a0", "pid": 36236, "runner_pid": 34984, "time_unix": 1794519386.4502409}
+{"event": "started", "label": "eval-F-j20261112-s47-a0", "pid": 31060, "runner_pid": 34984, "time_unix": 1794522617.9448667}
+{"event": "started", "label": "eval-R-j20261112-s47-a0", "pid": 15756, "runner_pid": 34984, "time_unix": 1794525833.6101213}
+{"event": "started", "label": "eval-R-j20261111-s47-a0", "pid": 31672, "runner_pid": 34984, "time_unix": 1794528469.536633}
+{"event": "started", "label": "eval-F-j20261111-s47-a0", "pid": 8244, "runner_pid": 34984, "time_unix": 1794531595.0202012}
+{"event": "started", "label": "eval-F-j20261111-s47-a1", "pid": 29208, "runner_pid": 34984, "time_unix": 1794532314.3212109}
+{"event": "started", "label": "eval-F-j20261113-s29-a0", "pid": 36392, "runner_pid": 34984, "time_unix": 1794532372.1697078}
+{"event": "started", "label": "eval-F-j20261113-s29-a1", "pid": 35648, "runner_pid": 34984, "time_unix": 1794532387.2920704}
+{"event": "started", "label": "eval-R-j20261113-s29-a0", "pid": 3740, "runner_pid": 34984, "time_unix": 1794532402.5815158}
+{"event": "started", "label": "eval-R-j20261113-s29-a1", "pid": 37440, "runner_pid": 34984, "time_unix": 1794532417.721805}
+{"event": "started", "label": "eval-R-j20261112-s29-a0", "pid": 33924, "runner_pid": 34984, "time_unix": 1794532432.652658}
+{"event": "started", "label": "eval-R-j20261112-s29-a1", "pid": 35436, "runner_pid": 34984, "time_unix": 1794532447.4594247}
+{"event": "started", "label": "eval-U-s29-a0", "pid": 15384, "runner_pid": 34984, "time_unix": 1794532462.2706513}
+{"event": "started", "label": "eval-U-s29-a1", "pid": 32552, "runner_pid": 34984, "time_unix": 1794532477.0518894}
+{"event": "started", "label": "eval-F-j20261112-s29-a0", "pid": 16816, "runner_pid": 34984, "time_unix": 1794532491.9260287}
+{"event": "protective_controller_suspension_after_rapid_evaluation_failures", "label": "evaluation-controller-diagnostic-suspension", "runner_pid": 34984, "time_unix": 1794532500.4361548, "model_children_not_suspended": true, "children": [{"pid": 16816, "cmdline": ["D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe", "-u", "-m", "reasoning_rl", "evaluate", "--name", "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a0", "--hardware", "rocm", "--config", "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml", "--split", "fresh_development", "--endpoint-lock", "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json", "--endpoint-key", "F-j20261112-s29", "--adapter", "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s29-a0"]}, {"pid": 34252, "cmdline": ["\\??\\C:\\Windows\\system32\\conhost.exe", "0x4"]}, {"pid": 30928, "cmdline": ["D:\\User\\AI\\reasoning-rl-lab\\.cache\\python\\cpython-3.12.14-windows-x86_64-none\\python.exe", "-u", "-m", "reasoning_rl", "evaluate", "--name", "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a0", "--hardware", "rocm", "--config", "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml", "--split", "fresh_development", "--endpoint-lock", "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json", "--endpoint-key", "F-j20261112-s29", "--adapter", "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s29-a0"]}]}
+{"event": "started", "label": "driver-recovery-tensor-2026-11-13_032618_UTC", "pid": 3576, "runner_pid": 23260, "time_unix": 1794540378.241008}
+{"event": "started", "label": "driver-recovery-old64-2026-11-13_032618_UTC", "pid": 19464, "runner_pid": 23260, "time_unix": 1794540383.690846}
+{"event": "resumed_after_user_driver_reinstall", "runner_pid": 28840, "time_unix": 1794540775.689543, "driver": "32.0.32015.16001", "record": "experiments/desktopfilterrep_2026-11-10_235416/gpu_recovery_evaluation_controller_2026-11-13_033255_UTC", "new_failure_stops_further_attempts": true}
+{"event": "started", "label": "eval-F-j20261112-s29-a1", "pid": 29260, "runner_pid": 28840, "time_unix": 1794540785.6032488}
+{"event": "user_requested_pause_after_current_evaluation_armed", "label": "eval-F-j20261112-s29-a1", "runner_pid": 28840, "child_pid": 29260, "observer_pid": 3724, "time_unix": 1794540872.9755275, "next_launch_fenced": true}
+{"event": "started", "label": "continuation-tensor-2026-11-18_072707_UTC", "pid": 23688, "runner_pid": 17892, "time_unix": 1794986827.86743}
+{"event": "explicit_user_continue_after_driver_recovery_pause", "runner_pid": 17892, "time_unix": 1794986831.9782703, "record": "experiments/desktopfilterrep_2026-11-10_235416/evaluation_continuation_2026-11-18_072707_UTC", "driver": "32.0.32015.16001", "saved_evaluations": 23, "eligible_evaluations": 9}
+{"event": "started", "label": "eval-F-j20261111-s29-a0", "pid": 9948, "runner_pid": 17892, "time_unix": 1794986840.893749}
+{"event": "started", "label": "eval-R-j20261111-s29-a0", "pid": 24668, "runner_pid": 17892, "time_unix": 1794989491.7348418}
+{"event": "started", "label": "eval-R-j20261113-s13-a0", "pid": 19596, "runner_pid": 17892, "time_unix": 1794992507.228766}
+{"event": "started", "label": "eval-F-j20261113-s13-a0", "pid": 2532, "runner_pid": 17892, "time_unix": 1794995599.8887718}
+{"event": "started", "label": "eval-F-j20261112-s13-a0", "pid": 26592, "runner_pid": 17892, "time_unix": 1794998748.017714}
+{"event": "started", "label": "continuation-tensor-2026-11-18_151114_UTC", "pid": 29992, "runner_pid": 35904, "time_unix": 1795014674.337269}
+{"event": "explicit_user_continue_after_driver_recovery_pause", "runner_pid": 35904, "time_unix": 1795014677.5689523, "record": "experiments/desktopfilterrep_2026-11-10_235416/evaluation_continuation_2026-11-18_151114_UTC", "driver": "32.0.32015.16001", "saved_evaluations": 28, "eligible_evaluations": 4}
+{"event": "started", "label": "eval-R-j20261112-s13-a0", "pid": 36000, "runner_pid": 35904, "time_unix": 1795014686.8300357}
+{"event": "started", "label": "eval-R-j20261111-s13-a0", "pid": 30928, "runner_pid": 35904, "time_unix": 1795017895.3486245}
+{"event": "started", "label": "eval-F-j20261111-s13-a0", "pid": 30292, "runner_pid": 35904, "time_unix": 1795021128.3718662}
+{"event": "started", "label": "eval-U-s13-a0", "pid": 26084, "runner_pid": 35904, "time_unix": 1795024302.0077724}

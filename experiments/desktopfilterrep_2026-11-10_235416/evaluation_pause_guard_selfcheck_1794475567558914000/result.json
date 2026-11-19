@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "CPU_only": true,
+  "current_owner_finally_preserves_other_owner_lock": true,
+  "next_exclusive_model_launch_blocked": true,
+  "frozen_runtime_unchanged": true
+}

@@ -185,4 +185,8 @@ def load_split(split, intent, limit=None, seed=0):
     if split in {"train", "validation"} and any(r["official_split"] != "train" for r in rows):
         raise ValueError("Holdout-derived sample in development split")
     random.Random(seed).shuffle(rows)
+    if split == "train":
+        from .fresh_development import reserved_train_ids
+        reserved = reserved_train_ids()
+        rows = [r for r in rows if r["id"] not in reserved]
     return rows[:limit] if limit is not None else rows

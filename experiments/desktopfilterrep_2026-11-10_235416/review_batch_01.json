@@ -1,0 +1,43 @@
+{
+  "start": 0,
+  "notes": [
+    "60+60/4=75",
+    "5*93-4*92=97",
+    "3*5000*6=90000",
+    "Age gap4; historical ages4/8 satisfy equation",
+    "15000/0.4=37500",
+    "13-5*24/12=3",
+    "City population but migration is stated for the country; city allocation unspecified",
+    "5*20+5*10+5*2=160",
+    "500/2-5=245",
+    "(100-2*20)/15=4",
+    "40/5*3=24",
+    "Score per mistake is unspecified; gold assumes one point for every mistake",
+    "64/8-64/16=4",
+    "20/0.4*(1-0.4-0.3)=15",
+    "Yesterday30, today35, tomorrow40, next45",
+    "55/((6+5)/2)=10 trees",
+    "(8*16-8-24)/16=6",
+    "10*(5-0.5)=45",
+    "80*(1-0.25)=60",
+    "6/(2+1)*2=4",
+    "10-400/80*1.2=4",
+    "Sum371/7=53",
+    "30-(50/2-3)=8",
+    "6*6+2*4+8*2=60",
+    "520+(520+234)=1274",
+    "3*5+8*15+17*3+2*20=226 including specified reimbursement",
+    "(105-35)+(105-35+10)=150",
+    "8*5*2.5*0.5/1.25=40; reference first equation has a typo but derivation clear",
+    "80000*(1-0.5-0.5*0.6)=16000",
+    "(30-(120/10-3))*10=210",
+    "2+5-2=5 months",
+    "((80-20)/2)*3-10=80"
+  ],
+  "excluded_offsets": [
+    6,
+    11
+  ],
+  "reviewer": "Codex root Agent",
+  "human_reviewed": false
+}

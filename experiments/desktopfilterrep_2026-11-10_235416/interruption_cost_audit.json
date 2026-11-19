@@ -1,0 +1,45 @@
+{
+  "audited_utc": "2026-11-11T09:39:14.352391+00:00",
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "source_bounds_sha256": "2d9141aa14086bff7d932421667800f21eb0b5fecce6fe2d716600544535273b",
+  "system_restart_events_sha256": "f4615ca1e24647c7d9adb9f86e0760fdae98ffc04008dc90c49436663c6408aa",
+  "interrupted_processes": [
+    {
+      "label": "U-s47-a0",
+      "status": "confirmed_system_restart_interruption",
+      "started_unix": 1794386711.913152,
+      "outer_budget_start_unix": 1794386708.4379148,
+      "last_raw_activity_unix": 1794387674.5630019,
+      "next_OS_boot_event_unix": 1794387737.419845,
+      "next_OS_boot_event": {
+        "TimeCreated": "2026-11-11T17:02:17.4198451+08:00",
+        "Id": 12,
+        "ProviderName": "Microsoft-Windows-Kernel-General",
+        "Message": "操作系统已在系统时间 ‎2026‎-‎11‎-‎11T09:02:16.500000000Z 启动。"
+      },
+      "process_seconds_lower_bound": 962.6498498916626,
+      "process_seconds_upper_bound": 1025.5066931247711,
+      "failed_endpoint_path_seconds_lower_bound": 966.1250870227814,
+      "failed_endpoint_path_seconds_upper_bound": 1028.98193025589,
+      "known_parent_preparation_seconds": 3.4752371311187744,
+      "exact_exit_code": null,
+      "checkpoint_selected": false,
+      "exact_sampler_optimizer_resume": false,
+      "raw_costs_sha256": "3128584fb59035186c5b0f334978ef3dab0bd87da8a5392a71253077af2e662a",
+      "source_interruption_receipt": {
+        "label": "U-s47-a0",
+        "status": "interrupted_no_final_receipt",
+        "started_unix": 1794386711.9111512,
+        "confirmed_dead_unix": 1794389786.9803176,
+        "observed_process_seconds_lower_bound": 962.6498508453369,
+        "process_seconds_upper_bound": 3075.0691664218903,
+        "exact_exit_code": null,
+        "exact_resume_supported": false,
+        "reconciliation_path": "audited_wrapper_optional_event_labels_preserves_frozen_source"
+      },
+      "interpretation": "Lower bound: last timestamp written by the live child. Upper bound: the old process cannot survive the first subsequent OS boot. Downtime is separately in registered session wall time."
+    }
+  ],
+  "fresh_predictions_read": false,
+  "all_raw_and_loose_original_bounds_preserved": true
+}

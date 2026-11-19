@@ -1,0 +1,13 @@
+{
+  "recorded": "2026-11-13T11:35:21.5698494+08:00",
+  "since_boot": "2026-11-13T11:05:32.5+08:00",
+  "events": [
+    {
+      "TimeCreated": "2026-11-13T11:23:42.1105289+08:00",
+      "Id": 4107,
+      "ProviderName": "Display",
+      "LevelDisplayName": "信息",
+      "Message": "在对 SetDisplayConfig() API 的调用中调用方指定了 SDC_FORCE_MODE_ENUMERATION 标志"
+    }
+  ]
+}

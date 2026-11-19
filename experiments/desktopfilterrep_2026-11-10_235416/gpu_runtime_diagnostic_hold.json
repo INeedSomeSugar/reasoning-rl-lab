@@ -1,0 +1,34 @@
+{
+  "recorded_utc": "2026-11-13T01:18:27.180812+00:00",
+  "status": "diagnostic_hold_gpu_runtime_failure",
+  "completed_training": 35,
+  "completed_evaluation": 22,
+  "evaluation_status_counts": {
+    "first_success_fixed": 22,
+    "exhausted_failure": 5,
+    "pending_retry": 1,
+    "pending": 9
+  },
+  "exhausted_evaluation_objects": [
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29"
+  ],
+  "current_failed_attempt": "eval-F-j20261112-s29-a0",
+  "current_attempt_actual_exit": {
+    "exit_code": 1,
+    "child_created_unix": 1794532491.9220238,
+    "child_exit_unix": 1794532503.9694843,
+    "timing_source": "Windows GetProcessTimes held process handle; not controller resume time"
+  },
+  "one_retry_still_available_for_current_object": true,
+  "controller_terminated": 34984,
+  "next_model_launch_stopped": true,
+  "all_failures_and_costs_preserved": true,
+  "frozen_models_data_config_scoring_unchanged": true,
+  "training_permanently_closed": true,
+  "source_sha256": "4b2b7f1a1436e748eac384b74ac64831ded4348bbcda7615de39c689df537dde",
+  "incident_directory": "experiments/desktopfilterrep_2026-11-10_235416/runtime_incident_2026-11-13_011827_UTC"
+}

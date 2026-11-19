@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-11-12T14:28:54.107738+00:00",
+  "status": "evaluation_resume_checks_passed",
+  "training_permanently_closed": true,
+  "saved_training_verified": 35,
+  "complete_evaluations_verified": 10,
+  "pending": 27,
+  "next": "R-j20261113-s71",
+  "readiness": {
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "visible_device_count": 1,
+    "device": "AMD Radeon RX 9070 XT",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+    "completed_evaluation_process_seconds_mean": 3000.6237272500994,
+    "completed_evaluation_process_seconds_min": 2282.504631280899,
+    "completed_evaluation_process_seconds_max": 3210.751820087433,
+    "remaining_model_hours_at_mean": 22.504677954375744,
+    "remaining_model_hours_observed_minmax_extrapolation": [
+      17.11878473460674,
+      24.080638650655747
+    ],
+    "timing_range_is_not_a_confidence_interval": true
+  },
+  "no_model_generation_or_training_run": true,
+  "original_deadline_unix_unchanged": 1795272257.1341243
+}

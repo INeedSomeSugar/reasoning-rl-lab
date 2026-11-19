@@ -1,0 +1,820 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "checkpoints": [
+    {
+      "path": "checkpoints/desktoprepair_20261106_152712-S2",
+      "role": "common_real_S2_anchor_and_all_training_initialization",
+      "checkpoint_sha256": "e8da01dae86ea2d7a95e19a645440510ec7dce2e4ceb546b26b3ff2dc9ac0bff",
+      "primary_training_endpoint": false
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-accounting-clock-smoke-a0",
+      "role": "old_exposed_data_preparation_diagnostic",
+      "endpoint": null,
+      "primary_training_endpoint": false,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-calibration-train-a0",
+      "role": "old_exposed_data_preparation_diagnostic",
+      "endpoint": null,
+      "primary_training_endpoint": false,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261111-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261111-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s47-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261111-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261111-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261111-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261112-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261112-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s47-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261112-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261112-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261112-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261113-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261113-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s47-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261113-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261113-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "F-j20261113-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-preflight-a0",
+      "role": "old_exposed_data_preparation_diagnostic",
+      "endpoint": null,
+      "primary_training_endpoint": false,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261111-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261111-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s47-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261111-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261111-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261111-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261112-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261112-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s47-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261112-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261112-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261112-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261113-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261113-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s47-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261113-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261113-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "R-j20261113-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-U-s13-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "U-s13",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-U-s29-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "U-s29",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-U-s47-a1",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "U-s47",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-U-s71-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "U-s71",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    {
+      "path": "checkpoints/desktopfilterrep_2026-11-10_235416-U-s97-a0",
+      "role": "primary_first_success_training_endpoint",
+      "endpoint": "U-s97",
+      "primary_training_endpoint": true,
+      "files": [
+        "README.md",
+        "adapter_config.json",
+        "adapter_model.safetensors",
+        "added_tokens.json",
+        "chat_template.jinja",
+        "merges.txt",
+        "optimizer_diagnostic_state.pt",
+        "rrl_checkpoint.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    }
+  ],
+  "public_anchor_A": {
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "files": [
+      {
+        "path": "models/qwen3_17b/LICENSE",
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      },
+      {
+        "path": "models/qwen3_17b/README.md",
+        "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091"
+      },
+      {
+        "path": "models/qwen3_17b/config.json",
+        "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+      },
+      {
+        "path": "models/qwen3_17b/generation_config.json",
+        "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+      },
+      {
+        "path": "models/qwen3_17b/merges.txt",
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+      },
+      {
+        "path": "models/qwen3_17b/model-00001-of-00002.safetensors",
+        "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5"
+      },
+      {
+        "path": "models/qwen3_17b/model-00002-of-00002.safetensors",
+        "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9"
+      },
+      {
+        "path": "models/qwen3_17b/model.safetensors.index.json",
+        "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d"
+      },
+      {
+        "path": "models/qwen3_17b/tokenizer.json",
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      },
+      {
+        "path": "models/qwen3_17b/tokenizer_config.json",
+        "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+      },
+      {
+        "path": "models/qwen3_17b/vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    ]
+  },
+  "diagnostic_and_failed_attempts_are_not_additional_primary_endpoints": true
+}

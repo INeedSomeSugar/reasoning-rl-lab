@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-13T03:26:23.293377+00:00",
+  "status": "tensor_BF16_SDPA_forward_backward_and_cast_passed",
+  "torch": "2.13.0+rocm10.0.0",
+  "hip": "7.15.26333",
+  "device": "AMD Radeon RX 9070 XT",
+  "visible_device_count": 1,
+  "peak_allocated_bytes": 527360,
+  "no_model_or_dataset_loaded": true,
+  "no_optimizer_or_saved_model_modified": true
+}

@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-11-10 17:32:39 UTC",
+  "stage": "before_main_budget_freeze_and_before_any_fresh_development_prediction",
+  "scope": "Evaluation reserve reliability margin only",
+  "reason": "User prioritizes evidence completeness and removes the previous four-hour limit. A37-object fresh-development sweep is much larger than historical128-question sweeps; protect it against length and process-time variation using a more conservative timing-only reserve.",
+  "supersedes": "preregistration.json evaluation_reserve_rule multiplier1.35 and additive120seconds",
+  "rule": "E=300*ceil((2.0*old64_evaluation_process_seconds*N/64+300)/300); O=300; C=B+E+O. Unused evaluation reserve never refills training. B and all training/probe/model/data/scorer variables unchanged.",
+  "new_development_scores_observed": false,
+  "not_selected_by_probe_membership_or_rewards": true,
+  "physical_runtime_estimate_unchanged": true
+}

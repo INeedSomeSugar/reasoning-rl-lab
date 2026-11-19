@@ -1,0 +1,11 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "registered_utc": "2026-11-10T15:54:17.134124+00:00",
+  "registered_unix": 1794326057.1341243,
+  "earliest_observed_task_clock_utc": "2026-11-10T15:50:31+00:00",
+  "initial_orientation_cost": "Before registration; earliest verified clock is a lower bound, not a measured process interval.",
+  "initial_head": "4ea43b03ce76a38fe5a525dd83a65e9751398d5a",
+  "initial_git_status": "?? scripts/prepare_large_filter.py\n",
+  "hard_limit": "Set from measured calibration and full probe durations before main training; no inherited four-hour limit.",
+  "formal_holdouts_opened": false
+}

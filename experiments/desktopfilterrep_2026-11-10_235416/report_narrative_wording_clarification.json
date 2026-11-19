@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-11-12T03:56:49.946246+00:00",
+  "file": "analysis/write_large_filter_report.py",
+  "sha256": "1d5c8c28a733857231bde2811275744bdfda7a94e9ad450ee2352c5c23d2315e",
+  "change": "Narrative branches explicitly acknowledge a wholly negative F-R interval; not meeting both prospective criteria does not assert zero development gain.",
+  "frozen_runtime_scoring_data_models_statistics_thresholds_unchanged": true,
+  "fresh_accuracy_values_or_prediction_text_read_by_Agent_before_this_change": false,
+  "validation": "py_compile and git diff --check passed"
+}

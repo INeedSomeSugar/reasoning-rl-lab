@@ -1,0 +1,23 @@
+{
+  "family": "desktopfilterrep_2026-11-10_235416",
+  "registered_date_beijing": "2026-11-18",
+  "scope": "Analysis addendum during the resumed evaluation phase, before analyst inspection of new comparative outcomes. Five exhausted evaluation objects were already known. Earlier operational visibility disclosed in the incident and recovery reports. The frozen execution and original decision rules apply unchanged.",
+  "original_estimands": "F minus U, R, S2 and A across all 15 registered cells. Preserve every cell and null missing values. Never count a partial prediction stream as a successful evaluation.",
+  "available_pair_intervals": "For each contrast, average the equally weighted observed cells. Use the frozen joint 20000 near-duplicate-cluster draws at seed 20261116 over all available full-N predictions, preserving repeated use of each U. Fixed models, observed cells, training seeds and probe seeds. No crossed bootstrap for the incomplete matrix. Also report by-probe, by-training seed and same-driver versus different-driver descriptive values.",
+  "whole_matrix_bounds": "Exact finite-set worst/best sensitivity, allowing each missing object's accuracy to range from zero to one, with one unknown shared by all its appearances. Not a confidence interval and no imputations.",
+  "accuracy_decision": "Full registered decision unavailable when any required F-U cell is missing. Present available-pair results and worst/best bounds separately.",
+  "signal_decision": "Use actual charged end-to-end seconds only for endpoints with a successful full evaluation. Mark the full-matrix end-to-end conclusion unavailable if any required endpoint is missing. Supplement with (a) all 35 pre-evaluation training paths with full F debit and R matching, (b) end-to-end results for whole training-seed blocks with all seven U/F/R paths and (c) per-probe matched observed F/U and F/R paths. The pre-evaluation metric omits evaluation by definition.",
+  "review": {
+    "registered_training_seed": 29,
+    "allow_known_missing_comparisons": true,
+    "sampling": "Retain the registered seed and pair order. Skip explicitly missing pairs without consuming their draws. Within each remaining pair include all discordant questions and sample 16 common correct plus 16 common wrong when available. Record all skipped comparisons and their missing objects.",
+    "supplement": {
+      "left": "F-j20261111-s13",
+      "right": "U-s13",
+      "scope": "Exploratory same-driver F/U check only, because all registered F/U seed29 comparisons lack U-s29. The first registered selection block and first training seed are fixed by the design, independent of prediction outcomes.",
+      "seed": 20261117,
+      "rule": "Independent RNG initialized with the string 20261117:exploratory-same-driver. Same within-pair strata and counts. Include only when both objects finish under the same driver. Never substitute it for a missing seed29 pair."
+    }
+  },
+  "hardware": "Record the driver present when each evaluation ran. Old64 replay yielded identical prediction hashes across the driver change. Main comparisons may span driver versions. Report the same-driver subset as a sensitivity check and disclose endpoint/order confounding."
+}

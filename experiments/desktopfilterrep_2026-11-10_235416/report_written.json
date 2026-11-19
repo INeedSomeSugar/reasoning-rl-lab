@@ -1,0 +1,18 @@
+{
+  "written_utc": "2026-11-18T19:08:45.101074+00:00",
+  "report": "reports/comparisons/desktopfilterrep_2026-11-10_235416/findings.md",
+  "sha256": "46b79b5722f978e6d7bc1bb70c620f03745bd07d0765a45bb062439d3723ed4d",
+  "all35_training37_evaluation": false,
+  "successful_training": 35,
+  "successful_evaluations": 32,
+  "missing_evaluation_objects": [
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29"
+  ],
+  "blinded_agent_review_completed": true,
+  "complete_registered_blind_scope": false,
+  "remote_published": false
+}

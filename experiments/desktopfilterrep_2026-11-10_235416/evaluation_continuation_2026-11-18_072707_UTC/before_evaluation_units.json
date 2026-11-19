@@ -1,0 +1,2360 @@
+{
+  "S2": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-S2-a0",
+        "label": "eval-S2-a0",
+        "started_unix": 1794446017.793844,
+        "receipt": {
+          "label": "eval-S2-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-S2-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "S2",
+            "--adapter",
+            "checkpoints/desktoprepair_20261106_152712-S2"
+          ],
+          "pid": 17148,
+          "runner_pid": 29064,
+          "started_unix": 1794446017.794845,
+          "finished_unix": 1794449082.849072,
+          "process_wall_seconds": 3065.054226875305,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-S2-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T01:13:37.794845+00:00",
+            "ram_available_bytes": 11803336704,
+            "disk_free_bytes": 210614661120,
+            "cpu_percent_instantaneous": 8.9,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T02:04:42.849071+00:00",
+            "ram_available_bytes": 11774763008,
+            "disk_free_bytes": 210612719616,
+            "cpu_percent_instantaneous": 10.5,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-S2-a0",
+    "evaluation_process_seconds": 3065.054226875305,
+    "parent_evaluation_preparation_and_audit_seconds": 2.7274768999923253,
+    "correct": 847,
+    "n": 1024,
+    "charged_end_to_end_seconds": 3067.7817019752983,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "d6fa6461504b9f451f9aade67e37d64758d66ae94b1f2dbdadcc307bacf4984a"
+  },
+  "A": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-A-a0",
+        "label": "eval-A-a0",
+        "started_unix": 1794449085.566261,
+        "receipt": {
+          "label": "eval-A-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-A-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "A"
+          ],
+          "pid": 15512,
+          "runner_pid": 29064,
+          "started_unix": 1794449085.5672624,
+          "finished_unix": 1794451368.0718937,
+          "process_wall_seconds": 2282.504631280899,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-A-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T02:04:45.567262+00:00",
+            "ram_available_bytes": 11783262208,
+            "disk_free_bytes": 210612711424,
+            "cpu_percent_instantaneous": 9.9,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T02:42:48.071893+00:00",
+            "ram_available_bytes": 11752943616,
+            "disk_free_bytes": 210610257920,
+            "cpu_percent_instantaneous": 8.9,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-A-a0",
+    "evaluation_process_seconds": 2282.504631280899,
+    "parent_evaluation_preparation_and_audit_seconds": 2.7063685999964946,
+    "correct": 846,
+    "n": 1024,
+    "charged_end_to_end_seconds": 2285.210998980896,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "8e83da47958b66ffb49ef3ef595bee84969f8207c6b4975a0b146950d330b85c"
+  },
+  "R-j20261113-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s97-a0",
+        "label": "eval-R-j20261113-s97-a0",
+        "started_unix": 1794451370.803036,
+        "receipt": {
+          "label": "eval-R-j20261113-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261113-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s97-a0"
+          ],
+          "pid": 14040,
+          "runner_pid": 29064,
+          "started_unix": 1794451370.8040361,
+          "finished_unix": 1794454135.6706808,
+          "process_wall_seconds": 2764.8666446208954,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T02:42:50.804036+00:00",
+            "ram_available_bytes": 11785580544,
+            "disk_free_bytes": 210610257920,
+            "cpu_percent_instantaneous": 10.0,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T03:28:55.670680+00:00",
+            "ram_available_bytes": 11457310720,
+            "disk_free_bytes": 210607702016,
+            "cpu_percent_instantaneous": 10.6,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s97-a0",
+    "evaluation_process_seconds": 2764.8666446208954,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6990976000088267,
+    "correct": 844,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6375.140532158432,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "c2e973b2ec70c1fbf4c1bdf08316ce4d81da52917441b9990ccfdf5b20c69c78"
+  },
+  "U-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s97-a0",
+        "label": "eval-U-s97-a0",
+        "started_unix": 1794454138.401204,
+        "receipt": {
+          "label": "eval-U-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-U-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "U-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-U-s97-a0"
+          ],
+          "pid": 20596,
+          "runner_pid": 29064,
+          "started_unix": 1794454138.4022045,
+          "finished_unix": 1794457166.030228,
+          "process_wall_seconds": 3027.6280233860016,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-U-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T03:28:58.402204+00:00",
+            "ram_available_bytes": 11471626240,
+            "disk_free_bytes": 210607697920,
+            "cpu_percent_instantaneous": 9.2,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T04:19:26.030728+00:00",
+            "ram_available_bytes": 11654664192,
+            "disk_free_bytes": 210605776896,
+            "cpu_percent_instantaneous": 12.5,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s97-a0",
+    "evaluation_process_seconds": 3027.6280233860016,
+    "parent_evaluation_preparation_and_audit_seconds": 2.7195672999951057,
+    "correct": 851,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6635.352424852943,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "f57cb672235487c6b54acc21f6d1c3099a4daf84898bbb76691bca0a107bc668"
+  },
+  "F-j20261113-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s97-a0",
+        "label": "eval-F-j20261113-s97-a0",
+        "started_unix": 1794457168.7723167,
+        "receipt": {
+          "label": "eval-F-j20261113-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261113-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s97-a0"
+          ],
+          "pid": 27820,
+          "runner_pid": 29064,
+          "started_unix": 1794457168.7733166,
+          "finished_unix": 1794460352.6059582,
+          "process_wall_seconds": 3183.8326416015625,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T04:19:28.773316+00:00",
+            "ram_available_bytes": 11683680256,
+            "disk_free_bytes": 210605768704,
+            "cpu_percent_instantaneous": 8.8,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T05:12:32.606458+00:00",
+            "ram_available_bytes": 11838861312,
+            "disk_free_bytes": 210603286528,
+            "cpu_percent_instantaneous": 9.8,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s97-a0",
+    "evaluation_process_seconds": 3183.8326416015625,
+    "parent_evaluation_preparation_and_audit_seconds": 2.7186227000056533,
+    "correct": 840,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6796.416211330536,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "a5520de63622844301dc5c2f906c74191c8f049fa73d13dd5cdff7f164ed7217"
+  },
+  "F-j20261112-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s97-a0",
+        "label": "eval-F-j20261112-s97-a0",
+        "started_unix": 1794460356.0862653,
+        "receipt": {
+          "label": "eval-F-j20261112-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261112-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s97-a0"
+          ],
+          "pid": 30148,
+          "runner_pid": 29064,
+          "started_unix": 1794460356.0872653,
+          "finished_unix": 1794463564.7188869,
+          "process_wall_seconds": 3208.6316215991974,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T05:12:36.087265+00:00",
+            "ram_available_bytes": 11851984896,
+            "disk_free_bytes": 210603286528,
+            "cpu_percent_instantaneous": 9.1,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T06:06:04.718886+00:00",
+            "ram_available_bytes": 11955523584,
+            "disk_free_bytes": 210600734720,
+            "cpu_percent_instantaneous": 11.6,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s97-a0",
+    "evaluation_process_seconds": 3208.6316215991974,
+    "parent_evaluation_preparation_and_audit_seconds": 3.4643931000027806,
+    "correct": 845,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6820.252474342269,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "596ebc1266f9cbb58928d142ba9985437cf4339d5034b9357c3d9665e18d4e2e"
+  },
+  "R-j20261112-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s97-a0",
+        "label": "eval-R-j20261112-s97-a0",
+        "started_unix": 1794463567.461742,
+        "receipt": {
+          "label": "eval-R-j20261112-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261112-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s97-a0"
+          ],
+          "pid": 16976,
+          "runner_pid": 29064,
+          "started_unix": 1794463567.4632432,
+          "finished_unix": 1794466778.2150633,
+          "process_wall_seconds": 3210.751820087433,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T06:06:07.463243+00:00",
+            "ram_available_bytes": 11964289024,
+            "disk_free_bytes": 210600730624,
+            "cpu_percent_instantaneous": 9.0,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T06:59:38.215063+00:00",
+            "ram_available_bytes": 11961499648,
+            "disk_free_bytes": 210598793216,
+            "cpu_percent_instantaneous": 11.2,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s97-a0",
+    "evaluation_process_seconds": 3210.751820087433,
+    "parent_evaluation_preparation_and_audit_seconds": 2.718639599988819,
+    "correct": 852,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6816.304521782702,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "70253a704a39236f49fabf7bb43113ef83b2ef602b391b5d7405358a3401c59b"
+  },
+  "R-j20261111-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s97-a0",
+        "label": "eval-R-j20261111-s97-a0",
+        "started_unix": 1794466780.9432545,
+        "receipt": {
+          "label": "eval-R-j20261111-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261111-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s97-a0"
+          ],
+          "pid": 28244,
+          "runner_pid": 29064,
+          "started_unix": 1794466780.9442546,
+          "finished_unix": 1794469928.3885846,
+          "process_wall_seconds": 3147.4443299770355,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T06:59:40.944254+00:00",
+            "ram_available_bytes": 11974094848,
+            "disk_free_bytes": 210598785024,
+            "cpu_percent_instantaneous": 9.0,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T07:52:08.388584+00:00",
+            "ram_available_bytes": 11380244480,
+            "disk_free_bytes": 210605391872,
+            "cpu_percent_instantaneous": 11.2,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s97-a0",
+    "evaluation_process_seconds": 3147.4443299770355,
+    "parent_evaluation_preparation_and_audit_seconds": 2.717587500010268,
+    "correct": 848,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6754.010083211178,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "07671562fc161a00d99c9922bc2ae5ac74cb3833ef5c75a2226e3965a9b841a4"
+  },
+  "F-j20261111-s97": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s97-a0",
+        "label": "eval-F-j20261111-s97-a0",
+        "started_unix": 1794469931.149401,
+        "receipt": {
+          "label": "eval-F-j20261111-s97-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s97-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261111-s97",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s97-a0"
+          ],
+          "pid": 30016,
+          "runner_pid": 29064,
+          "started_unix": 1794469931.1509008,
+          "finished_unix": 1794473056.651623,
+          "process_wall_seconds": 3125.500722169876,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s97-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T07:52:11.150900+00:00",
+            "ram_available_bytes": 11413905408,
+            "disk_free_bytes": 210605391872,
+            "cpu_percent_instantaneous": 9.9,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T08:44:16.651623+00:00",
+            "ram_available_bytes": 11347619840,
+            "disk_free_bytes": 209916723200,
+            "cpu_percent_instantaneous": 11.0,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s97-a0",
+    "evaluation_process_seconds": 3125.500722169876,
+    "parent_evaluation_preparation_and_audit_seconds": 2.733868400013307,
+    "correct": 849,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6730.108930376344,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "1511b2761fdde7555b10ac374b04d134c79f1184ab5a845ace1adfdff11ea1cf"
+  },
+  "F-j20261113-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s71-a0",
+        "label": "eval-F-j20261113-s71-a0",
+        "started_unix": 1794473059.3801744,
+        "receipt": {
+          "label": "eval-F-j20261113-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261113-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s71-a0"
+          ],
+          "pid": 15944,
+          "runner_pid": 29064,
+          "started_unix": 1794473059.3816748,
+          "finished_unix": 1794476049.4042857,
+          "process_wall_seconds": 2990.0226109027863,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T08:44:19.381674+00:00",
+            "ram_available_bytes": 11362406400,
+            "disk_free_bytes": 209916719104,
+            "cpu_percent_instantaneous": 8.8,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          },
+          "host_after": {
+            "utc": "2026-11-12T09:34:09.404285+00:00",
+            "ram_available_bytes": 9922043904,
+            "disk_free_bytes": 209913569280,
+            "cpu_percent_instantaneous": 15.5,
+            "process_pid": 29064,
+            "boot_time_unix": 1794387791.050567
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s71-a0",
+    "evaluation_process_seconds": 2990.0226109027863,
+    "parent_evaluation_preparation_and_audit_seconds": 2.720830600010231,
+    "correct": 845,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6597.030427782927,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "f11d7ef5a8b46ee29b73169684d695cd71759a06c19c1d67db6b6458eee2e607"
+  },
+  "R-j20261113-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s71-a0",
+        "label": "eval-R-j20261113-s71-a0",
+        "started_unix": 1794493789.508134,
+        "receipt": {
+          "label": "eval-R-j20261113-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261113-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s71-a0"
+          ],
+          "pid": 36168,
+          "runner_pid": 34984,
+          "started_unix": 1794493789.5091324,
+          "finished_unix": 1794496942.6295905,
+          "process_wall_seconds": 3153.120458126068,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T14:29:49.509132+00:00",
+            "ram_available_bytes": 9887641600,
+            "disk_free_bytes": 210976157696,
+            "cpu_percent_instantaneous": 13.5,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T15:22:22.630092+00:00",
+            "ram_available_bytes": 10399051776,
+            "disk_free_bytes": 210973335552,
+            "cpu_percent_instantaneous": 9.1,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s71-a0",
+    "evaluation_process_seconds": 3153.120458126068,
+    "parent_evaluation_preparation_and_audit_seconds": 2.9959779000055278,
+    "correct": 838,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6758.659474597545,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "c3d6abda45551699931d2f8ce79e6398eedeea3e1364a0b5ffa43bcc17ac4e59"
+  },
+  "R-j20261112-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s71-a0",
+        "label": "eval-R-j20261112-s71-a0",
+        "started_unix": 1794496945.319642,
+        "receipt": {
+          "label": "eval-R-j20261112-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261112-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s71-a0"
+          ],
+          "pid": 11984,
+          "runner_pid": 34984,
+          "started_unix": 1794496945.32064,
+          "finished_unix": 1794500088.0179915,
+          "process_wall_seconds": 3142.6973514556885,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T15:22:25.320639+00:00",
+            "ram_available_bytes": 10418327552,
+            "disk_free_bytes": 210973335552,
+            "cpu_percent_instantaneous": 8.6,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T16:14:48.018491+00:00",
+            "ram_available_bytes": 10285338624,
+            "disk_free_bytes": 210970800128,
+            "cpu_percent_instantaneous": 10.3,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s71-a0",
+    "evaluation_process_seconds": 3142.6973514556885,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6791114000079688,
+    "correct": 856,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6751.481097381024,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "94d60ce30d7f992ec222f2aa181bf724c72d6ac2220e458e18c833543f11d5b7"
+  },
+  "F-j20261112-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s71-a0",
+        "label": "eval-F-j20261112-s71-a0",
+        "started_unix": 1794500090.721056,
+        "receipt": {
+          "label": "eval-F-j20261112-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261112-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s71-a0"
+          ],
+          "pid": 36500,
+          "runner_pid": 34984,
+          "started_unix": 1794500090.7220554,
+          "finished_unix": 1794503293.4928393,
+          "process_wall_seconds": 3202.7707839012146,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T16:14:50.722055+00:00",
+            "ram_available_bytes": 10309955584,
+            "disk_free_bytes": 210970796032,
+            "cpu_percent_instantaneous": 8.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T17:08:13.492839+00:00",
+            "ram_available_bytes": 11067879424,
+            "disk_free_bytes": 210968838144,
+            "cpu_percent_instantaneous": 10.7,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s71-a0",
+    "evaluation_process_seconds": 3202.7707839012146,
+    "parent_evaluation_preparation_and_audit_seconds": 2.680863900008262,
+    "correct": 843,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6813.618790834429,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "9425338d51880995665576a608f5c9a0393268c781f636376901eed32d861ac1"
+  },
+  "U-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s71-a0",
+        "label": "eval-U-s71-a0",
+        "started_unix": 1794503296.8724203,
+        "receipt": {
+          "label": "eval-U-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-U-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "U-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-U-s71-a0"
+          ],
+          "pid": 25320,
+          "runner_pid": 34984,
+          "started_unix": 1794503296.873923,
+          "finished_unix": 1794506508.6300392,
+          "process_wall_seconds": 3211.7561161518097,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-U-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T17:08:16.873923+00:00",
+            "ram_available_bytes": 11085209600,
+            "disk_free_bytes": 210968834048,
+            "cpu_percent_instantaneous": 8.1,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T18:01:48.630039+00:00",
+            "ram_available_bytes": 11277766656,
+            "disk_free_bytes": 210966298624,
+            "cpu_percent_instantaneous": 7.5,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s71-a0",
+    "evaluation_process_seconds": 3211.7561161518097,
+    "parent_evaluation_preparation_and_audit_seconds": 3.3518055000022287,
+    "correct": 854,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6818.728770991947,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "a8959b0f859dbedda4619e6a1903ae404566ff145a2307367fa89e73ce8cf73d"
+  },
+  "F-j20261111-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s71-a0",
+        "label": "eval-F-j20261111-s71-a0",
+        "started_unix": 1794506512.0600889,
+        "receipt": {
+          "label": "eval-F-j20261111-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261111-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s71-a0"
+          ],
+          "pid": 32288,
+          "runner_pid": 34984,
+          "started_unix": 1794506512.061088,
+          "finished_unix": 1794509712.3049371,
+          "process_wall_seconds": 3200.2438490390778,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T18:01:52.061088+00:00",
+            "ram_available_bytes": 11292319744,
+            "disk_free_bytes": 210966294528,
+            "cpu_percent_instantaneous": 8.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T18:55:12.305440+00:00",
+            "ram_available_bytes": 11256352768,
+            "disk_free_bytes": 210963824640,
+            "cpu_percent_instantaneous": 10.5,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s71-a0",
+    "evaluation_process_seconds": 3200.2438490390778,
+    "parent_evaluation_preparation_and_audit_seconds": 3.4166674000007333,
+    "correct": 845,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6808.5455332498095,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "040869c04a33cff2fbf214897dd9b78ad1b9706e55a42eca2ce9cc4ac84ef083"
+  },
+  "R-j20261111-s71": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s71-a0",
+        "label": "eval-R-j20261111-s71-a0",
+        "started_unix": 1794509714.9911313,
+        "receipt": {
+          "label": "eval-R-j20261111-s71-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s71-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261111-s71",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s71-a0"
+          ],
+          "pid": 23556,
+          "runner_pid": 34984,
+          "started_unix": 1794509714.9926324,
+          "finished_unix": 1794512927.7735968,
+          "process_wall_seconds": 3212.7809643745422,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s71-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T18:55:14.992632+00:00",
+            "ram_available_bytes": 11282714624,
+            "disk_free_bytes": 210963820544,
+            "cpu_percent_instantaneous": 8.6,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T19:48:47.773596+00:00",
+            "ram_available_bytes": 10911653888,
+            "disk_free_bytes": 210961874944,
+            "cpu_percent_instantaneous": 9.1,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s71-a0",
+    "evaluation_process_seconds": 3212.7809643745422,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6761289999994915,
+    "correct": 858,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6821.361399092799,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "626c58347eab668df8757c7be192747a97027473dcde6b500e4931638cee9829"
+  },
+  "U-s47": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s47-a0",
+        "label": "eval-U-s47-a0",
+        "started_unix": 1794512930.4806554,
+        "receipt": {
+          "label": "eval-U-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-U-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "U-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-U-s47-a1"
+          ],
+          "pid": 36388,
+          "runner_pid": 34984,
+          "started_unix": 1794512930.4821558,
+          "finished_unix": 1794516096.7256987,
+          "process_wall_seconds": 3166.243542909622,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-U-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T19:48:50.482155+00:00",
+            "ram_available_bytes": 10930892800,
+            "disk_free_bytes": 210961870848,
+            "cpu_percent_instantaneous": 8.7,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T20:41:36.726198+00:00",
+            "ram_available_bytes": 10923245568,
+            "disk_free_bytes": 210959331328,
+            "cpu_percent_instantaneous": 10.5,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s47-a0",
+    "evaluation_process_seconds": 3166.243542909622,
+    "parent_evaluation_preparation_and_audit_seconds": 2.677081800007727,
+    "correct": 848,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6773.837514378305,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "98e333655516d20dae57642d20171b0d08f79cb9b4285e13fc35bcf218fdcce2"
+  },
+  "R-j20261113-s47": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s47-a0",
+        "label": "eval-R-j20261113-s47-a0",
+        "started_unix": 1794516099.4197485,
+        "receipt": {
+          "label": "eval-R-j20261113-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261113-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s47-a0"
+          ],
+          "pid": 14624,
+          "runner_pid": 34984,
+          "started_unix": 1794516099.4217489,
+          "finished_unix": 1794519383.745696,
+          "process_wall_seconds": 3284.3239471912384,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T20:41:39.421748+00:00",
+            "ram_available_bytes": 10946129920,
+            "disk_free_bytes": 210959327232,
+            "cpu_percent_instantaneous": 7.8,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T21:36:23.745695+00:00",
+            "ram_available_bytes": 10784043008,
+            "disk_free_bytes": 210956840960,
+            "cpu_percent_instantaneous": 10.5,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s47-a0",
+    "evaluation_process_seconds": 3284.3239471912384,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6683174000063445,
+    "correct": 849,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6890.570705868362,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "836d0b517bf55ea07069380891cf74fd598ebc8cca870522027cf6782d6ba2aa"
+  },
+  "F-j20261113-s47": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s47-a0",
+        "label": "eval-F-j20261113-s47-a0",
+        "started_unix": 1794519386.4342408,
+        "receipt": {
+          "label": "eval-F-j20261113-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261113-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s47-a0"
+          ],
+          "pid": 36236,
+          "runner_pid": 34984,
+          "started_unix": 1794519386.4357407,
+          "finished_unix": 1794522615.2366111,
+          "process_wall_seconds": 3228.8008704185486,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T21:36:26.435740+00:00",
+            "ram_available_bytes": 10805768192,
+            "disk_free_bytes": 210956836864,
+            "cpu_percent_instantaneous": 7.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T22:30:15.236611+00:00",
+            "ram_available_bytes": 10725134336,
+            "disk_free_bytes": 210954735616,
+            "cpu_percent_instantaneous": 9.7,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s47-a0",
+    "evaluation_process_seconds": 3228.8008704185486,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6791789999988396,
+    "correct": 847,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6835.162840831326,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "38ac059fb58a88ad0b4ad5108aabb77341d547d51e1dac317304bf4b8f3318b6"
+  },
+  "F-j20261112-s47": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s47-a0",
+        "label": "eval-F-j20261112-s47-a0",
+        "started_unix": 1794522617.9292061,
+        "receipt": {
+          "label": "eval-F-j20261112-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261112-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s47-a0"
+          ],
+          "pid": 31060,
+          "runner_pid": 34984,
+          "started_unix": 1794522617.93071,
+          "finished_unix": 1794525830.8659606,
+          "process_wall_seconds": 3212.935250520706,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T22:30:17.930710+00:00",
+            "ram_available_bytes": 10747756544,
+            "disk_free_bytes": 210954731520,
+            "cpu_percent_instantaneous": 9.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-12T23:23:50.866460+00:00",
+            "ram_available_bytes": 10762690560,
+            "disk_free_bytes": 210952261632,
+            "cpu_percent_instantaneous": 8.6,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s47-a0",
+    "evaluation_process_seconds": 3212.935250520706,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6673343000002205,
+    "correct": 853,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6822.899356514623,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "fe2bfb046bf48e4e6b941a36bcc4348b5b0978d71c4588a2167fb60f5bbe855b"
+  },
+  "R-j20261112-s47": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s47-a0",
+        "label": "eval-R-j20261112-s47-a0",
+        "started_unix": 1794525833.5957396,
+        "receipt": {
+          "label": "eval-R-j20261112-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261112-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s47-a0"
+          ],
+          "pid": 15756,
+          "runner_pid": 34984,
+          "started_unix": 1794525833.597241,
+          "finished_unix": 1794528466.7478802,
+          "process_wall_seconds": 2633.150639295578,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-12T23:23:53.597240+00:00",
+            "ram_available_bytes": 10782691328,
+            "disk_free_bytes": 210952257536,
+            "cpu_percent_instantaneous": 8.2,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T00:07:46.747880+00:00",
+            "ram_available_bytes": 10133868544,
+            "disk_free_bytes": 210949345280,
+            "cpu_percent_instantaneous": 13.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s47-a0",
+    "evaluation_process_seconds": 2633.150639295578,
+    "parent_evaluation_preparation_and_audit_seconds": 2.6991505000041798,
+    "correct": 853,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6237.836293860484,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "91c8517714681c4d3bd9c668c202f6ae062f7c6c058020c34d4679f4f77f8208"
+  },
+  "R-j20261111-s47": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s47-a0",
+        "label": "eval-R-j20261111-s47-a0",
+        "started_unix": 1794528469.5206225,
+        "receipt": {
+          "label": "eval-R-j20261111-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261111-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261111-s47-a0"
+          ],
+          "pid": 31672,
+          "runner_pid": 34984,
+          "started_unix": 1794528469.5221221,
+          "finished_unix": 1794531592.216635,
+          "process_wall_seconds": 3122.6945128440857,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T00:07:49.522122+00:00",
+            "ram_available_bytes": 10151661568,
+            "disk_free_bytes": 210949341184,
+            "cpu_percent_instantaneous": 12.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T00:59:52.216635+00:00",
+            "ram_available_bytes": 11465359360,
+            "disk_free_bytes": 210946117632,
+            "cpu_percent_instantaneous": 14.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 0,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261111-s47-a0",
+    "evaluation_process_seconds": 3122.6945128440857,
+    "parent_evaluation_preparation_and_audit_seconds": 2.746541599975899,
+    "correct": 853,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6728.025533666776,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "f7e4edb49fac3e0d09e38eff29bc82e4735366f37a8c5238828863aa50332cb7"
+  },
+  "F-j20261111-s47": {
+    "status": "exhausted_failure",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s47-a0",
+        "label": "eval-F-j20261111-s47-a0",
+        "started_unix": 1794531595.0026896,
+        "receipt": {
+          "label": "eval-F-j20261111-s47-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s47-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261111-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s47-a0"
+          ],
+          "pid": 8244,
+          "runner_pid": 34984,
+          "started_unix": 1794531595.0041897,
+          "finished_unix": 1794532305.2587647,
+          "process_wall_seconds": 710.2545750141144,
+          "outer_budget_start_unix": null,
+          "exit_code": 3221226505,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s47-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T00:59:55.004189+00:00",
+            "ram_available_bytes": 11482333184,
+            "disk_free_bytes": 210946113536,
+            "cpu_percent_instantaneous": 11.6,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:11:45.259265+00:00",
+            "ram_available_bytes": 13677776896,
+            "disk_free_bytes": 210944102400,
+            "cpu_percent_instantaneous": 76.1,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      },
+      {
+        "attempt": 1,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s47-a1",
+        "label": "eval-F-j20261111-s47-a1",
+        "started_unix": 1794532312.3321114,
+        "receipt": {
+          "label": "eval-F-j20261111-s47-a1",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s47-a1",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261111-s47",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261111-s47-a0"
+          ],
+          "pid": 29208,
+          "runner_pid": 34984,
+          "started_unix": 1794532312.3321114,
+          "finished_unix": 1794532369.064202,
+          "process_wall_seconds": 56.73209071159363,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261111-s47-a1.log",
+          "host_before": {
+            "utc": "2026-11-13T01:11:52.332111+00:00",
+            "ram_available_bytes": 13761826816,
+            "disk_free_bytes": 210944094208,
+            "cpu_percent_instantaneous": 53.2,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:12:49.064202+00:00",
+            "ram_available_bytes": 13294088192,
+            "disk_free_bytes": 210951479296,
+            "cpu_percent_instantaneous": 10.8,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      }
+    ]
+  },
+  "F-j20261113-s29": {
+    "status": "exhausted_failure",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s29-a0",
+        "label": "eval-F-j20261113-s29-a0",
+        "started_unix": 1794532372.1506999,
+        "receipt": {
+          "label": "eval-F-j20261113-s29-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s29-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261113-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s29-a0"
+          ],
+          "pid": 36392,
+          "runner_pid": 34984,
+          "started_unix": 1794532372.1527002,
+          "finished_unix": 1794532384.1952906,
+          "process_wall_seconds": 12.042590379714966,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s29-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T01:12:52.152700+00:00",
+            "ram_available_bytes": 13286985728,
+            "disk_free_bytes": 210951475200,
+            "cpu_percent_instantaneous": 9.6,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:13:04.195290+00:00",
+            "ram_available_bytes": 13307449344,
+            "disk_free_bytes": 210950475776,
+            "cpu_percent_instantaneous": 11.1,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      },
+      {
+        "attempt": 1,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s29-a1",
+        "label": "eval-F-j20261113-s29-a1",
+        "started_unix": 1794532387.273059,
+        "receipt": {
+          "label": "eval-F-j20261113-s29-a1",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s29-a1",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261113-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261113-s29-a0"
+          ],
+          "pid": 35648,
+          "runner_pid": 34984,
+          "started_unix": 1794532387.276058,
+          "finished_unix": 1794532399.493082,
+          "process_wall_seconds": 12.217024087905884,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261113-s29-a1.log",
+          "host_before": {
+            "utc": "2026-11-13T01:13:07.276057+00:00",
+            "ram_available_bytes": 13306101760,
+            "disk_free_bytes": 210950467584,
+            "cpu_percent_instantaneous": 9.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:13:19.493082+00:00",
+            "ram_available_bytes": 13334765568,
+            "disk_free_bytes": 210949464064,
+            "cpu_percent_instantaneous": 11.5,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      }
+    ]
+  },
+  "R-j20261113-s29": {
+    "status": "exhausted_failure",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s29-a0",
+        "label": "eval-R-j20261113-s29-a0",
+        "started_unix": 1794532402.5635133,
+        "receipt": {
+          "label": "eval-R-j20261113-s29-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s29-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261113-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s29-a0"
+          ],
+          "pid": 3740,
+          "runner_pid": 34984,
+          "started_unix": 1794532402.5655131,
+          "finished_unix": 1794532414.6590626,
+          "process_wall_seconds": 12.093549489974976,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s29-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T01:13:22.565513+00:00",
+            "ram_available_bytes": 13347639296,
+            "disk_free_bytes": 210949459968,
+            "cpu_percent_instantaneous": 9.7,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:13:34.659062+00:00",
+            "ram_available_bytes": 13319892992,
+            "disk_free_bytes": 210948460544,
+            "cpu_percent_instantaneous": 11.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      },
+      {
+        "attempt": 1,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s29-a1",
+        "label": "eval-R-j20261113-s29-a1",
+        "started_unix": 1794532417.7035575,
+        "receipt": {
+          "label": "eval-R-j20261113-s29-a1",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s29-a1",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261113-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261113-s29-a0"
+          ],
+          "pid": 37440,
+          "runner_pid": 34984,
+          "started_unix": 1794532417.7065558,
+          "finished_unix": 1794532429.599216,
+          "process_wall_seconds": 11.892660140991211,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261113-s29-a1.log",
+          "host_before": {
+            "utc": "2026-11-13T01:13:37.706555+00:00",
+            "ram_available_bytes": 13333680128,
+            "disk_free_bytes": 210948456448,
+            "cpu_percent_instantaneous": 10.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:13:49.599215+00:00",
+            "ram_available_bytes": 13362229248,
+            "disk_free_bytes": 210947457024,
+            "cpu_percent_instantaneous": 11.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      }
+    ]
+  },
+  "R-j20261112-s29": {
+    "status": "exhausted_failure",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s29-a0",
+        "label": "eval-R-j20261112-s29-a0",
+        "started_unix": 1794532432.6346548,
+        "receipt": {
+          "label": "eval-R-j20261112-s29-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s29-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261112-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s29-a0"
+          ],
+          "pid": 33924,
+          "runner_pid": 34984,
+          "started_unix": 1794532432.6366558,
+          "finished_unix": 1794532444.4153013,
+          "process_wall_seconds": 11.778645515441895,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s29-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T01:13:52.636655+00:00",
+            "ram_available_bytes": 13439574016,
+            "disk_free_bytes": 210947448832,
+            "cpu_percent_instantaneous": 9.6,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:14:04.416301+00:00",
+            "ram_available_bytes": 13413650432,
+            "disk_free_bytes": 210945925120,
+            "cpu_percent_instantaneous": 9.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      },
+      {
+        "attempt": 1,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s29-a1",
+        "label": "eval-R-j20261112-s29-a1",
+        "started_unix": 1794532447.4412684,
+        "receipt": {
+          "label": "eval-R-j20261112-s29-a1",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s29-a1",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "R-j20261112-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-R-j20261112-s29-a0"
+          ],
+          "pid": 35436,
+          "runner_pid": 34984,
+          "started_unix": 1794532447.4432745,
+          "finished_unix": 1794532459.2189455,
+          "process_wall_seconds": 11.775671005249023,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-R-j20261112-s29-a1.log",
+          "host_before": {
+            "utc": "2026-11-13T01:14:07.443274+00:00",
+            "ram_available_bytes": 13430349824,
+            "disk_free_bytes": 210945921024,
+            "cpu_percent_instantaneous": 9.9,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:14:19.219944+00:00",
+            "ram_available_bytes": 13407092736,
+            "disk_free_bytes": 210944921600,
+            "cpu_percent_instantaneous": 11.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      }
+    ]
+  },
+  "U-s29": {
+    "status": "exhausted_failure",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s29-a0",
+        "label": "eval-U-s29-a0",
+        "started_unix": 1794532462.25365,
+        "receipt": {
+          "label": "eval-U-s29-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-U-s29-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "U-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-U-s29-a0"
+          ],
+          "pid": 15384,
+          "runner_pid": 34984,
+          "started_unix": 1794532462.2556508,
+          "finished_unix": 1794532473.9980092,
+          "process_wall_seconds": 11.742358446121216,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-U-s29-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T01:14:22.255650+00:00",
+            "ram_available_bytes": 13409435648,
+            "disk_free_bytes": 210944917504,
+            "cpu_percent_instantaneous": 8.2,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:14:33.998009+00:00",
+            "ram_available_bytes": 13409816576,
+            "disk_free_bytes": 210943913984,
+            "cpu_percent_instantaneous": 10.2,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      },
+      {
+        "attempt": 1,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-U-s29-a1",
+        "label": "eval-U-s29-a1",
+        "started_unix": 1794532477.0338793,
+        "receipt": {
+          "label": "eval-U-s29-a1",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-U-s29-a1",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "U-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-U-s29-a0"
+          ],
+          "pid": 32552,
+          "runner_pid": 34984,
+          "started_unix": 1794532477.0358834,
+          "finished_unix": 1794532488.8760774,
+          "process_wall_seconds": 11.8401939868927,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-U-s29-a1.log",
+          "host_before": {
+            "utc": "2026-11-13T01:14:37.035883+00:00",
+            "ram_available_bytes": 13423239168,
+            "disk_free_bytes": 210943913984,
+            "cpu_percent_instantaneous": 9.7,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:14:48.876077+00:00",
+            "ram_available_bytes": 13416939520,
+            "disk_free_bytes": 210942914560,
+            "cpu_percent_instantaneous": 11.0,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          }
+        },
+        "status": "failed",
+        "error": "RuntimeError('Independent evaluation failed or timed out')"
+      }
+    ]
+  },
+  "F-j20261112-s29": {
+    "status": "first_success_fixed",
+    "attempts": [
+      {
+        "attempt": 0,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a0",
+        "label": "eval-F-j20261112-s29-a0",
+        "started_unix": 1794532491.9080272,
+        "receipt": {
+          "label": "eval-F-j20261112-s29-a0",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a0",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261112-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s29-a0"
+          ],
+          "pid": 16816,
+          "runner_pid": 34984,
+          "started_unix": 1794532491.910027,
+          "finished_unix": 1794532503.9694843,
+          "process_wall_seconds": 12.059457302093506,
+          "outer_budget_start_unix": null,
+          "exit_code": 1,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a0.log",
+          "host_before": {
+            "utc": "2026-11-13T01:14:51.910027+00:00",
+            "ram_available_bytes": 13417033728,
+            "disk_free_bytes": 210942898176,
+            "cpu_percent_instantaneous": 9.8,
+            "process_pid": 34984,
+            "boot_time_unix": 1794387791.0494888
+          },
+          "host_after": {
+            "utc": "2026-11-13T01:18:27.149021+00:00",
+            "ram_available_bytes": 13230170112,
+            "disk_free_bytes": 210941562880,
+            "cpu_percent_instantaneous": 6.8,
+            "process_pid": 33952,
+            "boot_time_unix": 1794387791.0504982
+          },
+          "recorded_by_diagnostic_observer": true,
+          "controller_suspension_not_added_to_child_process_seconds": true,
+          "child_created_unix": 1794532491.9220238,
+          "child_exit_unix": 1794532503.9694843,
+          "timing_source": "Windows GetProcessTimes held process handle; not controller resume time"
+        },
+        "status": "failed",
+        "error": "Independent evaluation failed with hipErrorInvalidImage; controller held to protect remaining attempts"
+      },
+      {
+        "attempt": 1,
+        "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a1",
+        "label": "eval-F-j20261112-s29-a1",
+        "started_unix": 1794540785.5856943,
+        "receipt": {
+          "label": "eval-F-j20261112-s29-a1",
+          "argv": [
+            "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+            "-u",
+            "-m",
+            "reasoning_rl",
+            "evaluate",
+            "--name",
+            "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a1",
+            "--hardware",
+            "rocm",
+            "--config",
+            "configs/desktopfilterrep_2026-11-10_235416_evaluation.yaml",
+            "--split",
+            "fresh_development",
+            "--endpoint-lock",
+            "experiments/desktopfilterrep_2026-11-10_235416/all_training_endpoints_fixed.json",
+            "--endpoint-key",
+            "F-j20261112-s29",
+            "--adapter",
+            "checkpoints/desktopfilterrep_2026-11-10_235416-F-j20261112-s29-a0"
+          ],
+          "pid": 29260,
+          "runner_pid": 28840,
+          "started_unix": 1794540785.5881965,
+          "finished_unix": 1794544092.8763695,
+          "process_wall_seconds": 3307.2881729602814,
+          "outer_budget_start_unix": null,
+          "exit_code": 0,
+          "timeout": false,
+          "timeout_seconds": 7650.0,
+          "log": "logs/desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a1.log",
+          "host_before": {
+            "utc": "2026-11-13T03:33:05.588196+00:00",
+            "ram_available_bytes": 8532234240,
+            "disk_free_bytes": 210894340096,
+            "cpu_percent_instantaneous": 19.3,
+            "process_pid": 28840,
+            "boot_time_unix": 1794539132.050429
+          },
+          "host_after": {
+            "utc": "2026-11-13T04:28:12.876369+00:00",
+            "ram_available_bytes": 10699304960,
+            "disk_free_bytes": 210939576320,
+            "cpu_percent_instantaneous": 12.3,
+            "process_pid": 28840,
+            "boot_time_unix": 1794539132.050429
+          }
+        },
+        "status": "success"
+      }
+    ],
+    "selected_attempt": 1,
+    "run_name": "desktopfilterrep_2026-11-10_235416-eval-F-j20261112-s29-a1",
+    "evaluation_process_seconds": 3307.2881729602814,
+    "parent_evaluation_preparation_and_audit_seconds": 5.011093399999481,
+    "correct": 843,
+    "n": 1024,
+    "charged_end_to_end_seconds": 6919.340974667249,
+    "C_seconds": 11400,
+    "common_cap_overshoot_seconds": 0,
+    "predictions_sha256": "a3c95a039d4e8e5e6f46fad6ddad10744a249076d8227ff7de09bcf4f7bccfd6"
+  },
+  "F-j20261111-s29": {
+    "status": "pending",
+    "attempts": []
+  },
+  "R-j20261111-s29": {
+    "status": "pending",
+    "attempts": []
+  },
+  "R-j20261113-s13": {
+    "status": "pending",
+    "attempts": []
+  },
+  "F-j20261113-s13": {
+    "status": "pending",
+    "attempts": []
+  },
+  "F-j20261112-s13": {
+    "status": "pending",
+    "attempts": []
+  },
+  "R-j20261112-s13": {
+    "status": "pending",
+    "attempts": []
+  },
+  "R-j20261111-s13": {
+    "status": "pending",
+    "attempts": []
+  },
+  "F-j20261111-s13": {
+    "status": "pending",
+    "attempts": []
+  },
+  "U-s13": {
+    "status": "pending",
+    "attempts": []
+  }
+}

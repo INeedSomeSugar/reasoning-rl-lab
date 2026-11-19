@@ -1,0 +1,9 @@
+{
+  "checked_unix": 1794408518.363768,
+  "torch": "2.13.0+rocm10.0.0",
+  "hip": "7.15.26333",
+  "device": "AMD Radeon RX 9070 XT",
+  "device_count": 1,
+  "os": "Windows-11-10.0.26300-SP0",
+  "no_model_loaded": true
+}

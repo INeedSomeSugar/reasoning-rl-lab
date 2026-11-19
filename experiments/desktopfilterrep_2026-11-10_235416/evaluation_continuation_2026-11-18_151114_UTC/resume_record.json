@@ -1,0 +1,127 @@
+{
+  "recorded_utc": "2026-11-18T15:11:17.562950+00:00",
+  "runner_pid": 35904,
+  "GPU": {
+    "pnp": {
+      "FriendlyName": "AMD Radeon RX 9070 XT",
+      "InstanceId": "PCI\\VEN_1002&DEV_7550&SUBSYS_00311EFE&REV_C0\\6&1341E741&0&00000009",
+      "Status": "OK",
+      "Problem": 0,
+      "Present": true
+    },
+    "driver": {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.16001"
+    }
+  },
+  "boot_time_unix": 1794974546.049976,
+  "readiness_process": {
+    "label": "continuation-tensor-2026-11-18_151114_UTC",
+    "argv": [
+      "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+      "-u",
+      "analysis/check_large_filter_driver_recovery.py",
+      "--tensor-child",
+      "--record",
+      "experiments/desktopfilterrep_2026-11-10_235416/evaluation_continuation_2026-11-18_151114_UTC/tensor.json"
+    ],
+    "pid": 29992,
+    "runner_pid": 35904,
+    "started_unix": 1795014674.322223,
+    "finished_unix": 1795014677.5496786,
+    "process_wall_seconds": 3.2274556159973145,
+    "outer_budget_start_unix": null,
+    "exit_code": 0,
+    "timeout": false,
+    "timeout_seconds": 180,
+    "log": "logs/desktopfilterrep_2026-11-10_235416-continuation-tensor-2026-11-18_151114_UTC.log",
+    "host_before": {
+      "utc": "2026-11-18T15:11:14.322222+00:00",
+      "ram_available_bytes": 12903043072,
+      "disk_free_bytes": 210016428032,
+      "cpu_percent_instantaneous": 15.7,
+      "process_pid": 35904,
+      "boot_time_unix": 1794974546.049976
+    },
+    "host_after": {
+      "utc": "2026-11-18T15:11:17.549678+00:00",
+      "ram_available_bytes": 12802379776,
+      "disk_free_bytes": 210016428032,
+      "cpu_percent_instantaneous": 13.9,
+      "process_pid": 35904,
+      "boot_time_unix": 1794974546.049976
+    }
+  },
+  "readiness": {
+    "checked_utc": "2026-11-18T15:11:17.187508+00:00",
+    "status": "tensor_BF16_SDPA_forward_backward_and_cast_passed",
+    "torch": "2.13.0+rocm10.0.0",
+    "hip": "7.15.26333",
+    "device": "AMD Radeon RX 9070 XT",
+    "visible_device_count": 1,
+    "peak_allocated_bytes": 527360,
+    "no_model_or_dataset_loaded": true,
+    "no_optimizer_or_saved_model_modified": true
+  },
+  "complete_prediction_sha256": {
+    "S2": "d6fa6461504b9f451f9aade67e37d64758d66ae94b1f2dbdadcc307bacf4984a",
+    "A": "8e83da47958b66ffb49ef3ef595bee84969f8207c6b4975a0b146950d330b85c",
+    "R-j20261113-s97": "c2e973b2ec70c1fbf4c1bdf08316ce4d81da52917441b9990ccfdf5b20c69c78",
+    "U-s97": "f57cb672235487c6b54acc21f6d1c3099a4daf84898bbb76691bca0a107bc668",
+    "F-j20261113-s97": "a5520de63622844301dc5c2f906c74191c8f049fa73d13dd5cdff7f164ed7217",
+    "F-j20261112-s97": "596ebc1266f9cbb58928d142ba9985437cf4339d5034b9357c3d9665e18d4e2e",
+    "R-j20261112-s97": "70253a704a39236f49fabf7bb43113ef83b2ef602b391b5d7405358a3401c59b",
+    "R-j20261111-s97": "07671562fc161a00d99c9922bc2ae5ac74cb3833ef5c75a2226e3965a9b841a4",
+    "F-j20261111-s97": "1511b2761fdde7555b10ac374b04d134c79f1184ab5a845ace1adfdff11ea1cf",
+    "F-j20261113-s71": "f11d7ef5a8b46ee29b73169684d695cd71759a06c19c1d67db6b6458eee2e607",
+    "R-j20261113-s71": "c3d6abda45551699931d2f8ce79e6398eedeea3e1364a0b5ffa43bcc17ac4e59",
+    "R-j20261112-s71": "94d60ce30d7f992ec222f2aa181bf724c72d6ac2220e458e18c833543f11d5b7",
+    "F-j20261112-s71": "9425338d51880995665576a608f5c9a0393268c781f636376901eed32d861ac1",
+    "U-s71": "a8959b0f859dbedda4619e6a1903ae404566ff145a2307367fa89e73ce8cf73d",
+    "F-j20261111-s71": "040869c04a33cff2fbf214897dd9b78ad1b9706e55a42eca2ce9cc4ac84ef083",
+    "R-j20261111-s71": "626c58347eab668df8757c7be192747a97027473dcde6b500e4931638cee9829",
+    "U-s47": "98e333655516d20dae57642d20171b0d08f79cb9b4285e13fc35bcf218fdcce2",
+    "R-j20261113-s47": "836d0b517bf55ea07069380891cf74fd598ebc8cca870522027cf6782d6ba2aa",
+    "F-j20261113-s47": "38ac059fb58a88ad0b4ad5108aabb77341d547d51e1dac317304bf4b8f3318b6",
+    "F-j20261112-s47": "fe2bfb046bf48e4e6b941a36bcc4348b5b0978d71c4588a2167fb60f5bbe855b",
+    "R-j20261112-s47": "91c8517714681c4d3bd9c668c202f6ae062f7c6c058020c34d4679f4f77f8208",
+    "R-j20261111-s47": "f7e4edb49fac3e0d09e38eff29bc82e4735366f37a8c5238828863aa50332cb7",
+    "F-j20261112-s29": "a3c95a039d4e8e5e6f46fad6ddad10744a249076d8227ff7de09bcf4f7bccfd6",
+    "F-j20261111-s29": "577940cec6788fff90d721a4a4a138eb698e92bcdf2983bdd3dd614c32103949",
+    "R-j20261111-s29": "0566ad98165e746dc43e21b0b26658e302b625db03def08f8fd2b13f1faf26a0",
+    "R-j20261113-s13": "60cecee4afe1433cabfacaeb7ad409c83c1efa2c2bb08044799b44d01e0e8655",
+    "F-j20261113-s13": "11a97e29a1b35848f0eaf6e08a156f819814f0bf2a55b11359ca67ac685f2ed3",
+    "F-j20261112-s13": "1f320be35f7326d99f670d703d7594d626e0e987d95040e008fb90cb93d2857d"
+  },
+  "exhausted_objects": [
+    "F-j20261111-s47",
+    "F-j20261113-s29",
+    "R-j20261113-s29",
+    "R-j20261112-s29",
+    "U-s29"
+  ],
+  "remaining_order": [
+    "R-j20261112-s13",
+    "R-j20261111-s13",
+    "F-j20261111-s13",
+    "U-s13"
+  ],
+  "allowed_attempt_labels": [
+    "eval-R-j20261112-s13-a0",
+    "eval-R-j20261112-s13-a1",
+    "eval-R-j20261111-s13-a0",
+    "eval-R-j20261111-s13-a1",
+    "eval-F-j20261111-s13-a0",
+    "eval-F-j20261111-s13-a1",
+    "eval-U-s13-a0",
+    "eval-U-s13-a1"
+  ],
+  "remaining_expected_model_hours": 3.4339761311274306,
+  "original_deadline_unix": 1795272257.1341243,
+  "weights_lock_sha256": "3b68f7892a0855ac42de73be0d9623dcf6908533f55b30e67c5bb8304564bd2b",
+  "protocol_sha256": "c653ebc367094d694cbabb37c159afb2bff1348a1d68fe9ffb92491edd5a0d24",
+  "source_sha256": "67c58158883f8cf8ff4bffc45373f6a4b39b3fe7e05e4da6ab87979b24157337",
+  "prior_handoff_sha256": "035b654f22236f1e85cd34ad75d4df19ee6958f62fc41070e56bd477296e7aad",
+  "no_additional_training": true,
+  "one_new_failure_stops_further_launches": true
+}

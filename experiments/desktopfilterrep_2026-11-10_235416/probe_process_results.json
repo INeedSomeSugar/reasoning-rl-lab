@@ -1,0 +1,155 @@
+{
+  "20261111": {
+    "run": "desktopfilterrep_2026-11-10_235416-probe-j20261111-a0",
+    "attempt": 0,
+    "attempts": [
+      {
+        "label": "probe-j20261111-a0",
+        "argv": [
+          "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+          "-u",
+          "scripts/large_filter_tasks.py",
+          "--family",
+          "desktopfilterrep_2026-11-10_235416",
+          "--task",
+          "probe",
+          "--probe-seed",
+          "20261111",
+          "--attempt",
+          "0"
+        ],
+        "pid": 9948,
+        "runner_pid": 31552,
+        "started_unix": 1794330509.4397557,
+        "finished_unix": 1794331590.3928785,
+        "process_wall_seconds": 1080.9531228542328,
+        "exit_code": 0,
+        "timeout": false,
+        "timeout_seconds": 3600,
+        "log": "logs/desktopfilterrep_2026-11-10_235416-probe-j20261111-a0.log",
+        "host_before": {
+          "utc": "2026-11-10T17:08:29.439755+00:00",
+          "ram_available_bytes": 11095744512,
+          "disk_free_bytes": 212247531520,
+          "cpu_percent_instantaneous": 0.0,
+          "process_pid": 31552,
+          "boot_time_unix": 1794299602.0518286
+        },
+        "host_after": {
+          "utc": "2026-11-10T17:26:30.392878+00:00",
+          "ram_available_bytes": 11371876352,
+          "disk_free_bytes": 212245037056,
+          "cpu_percent_instantaneous": 8.8,
+          "process_pid": 31552,
+          "boot_time_unix": 1794299602.0518286
+        }
+      }
+    ],
+    "P_seconds": 1080.9531228542328,
+    "retained_n": 70,
+    "predictions_sha256": "c82b9be2595759416b4c6a4ca440627a28adb65aa4592afd8e248b1a871dd81e",
+    "probe_result_sha256": "d99be89202cad0a6989aa24739f870a3e6092078173285dd4793c1ceead35a5d"
+  },
+  "20261112": {
+    "run": "desktopfilterrep_2026-11-10_235416-probe-j20261112-a0",
+    "attempt": 0,
+    "attempts": [
+      {
+        "label": "probe-j20261112-a0",
+        "argv": [
+          "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+          "-u",
+          "scripts/large_filter_tasks.py",
+          "--family",
+          "desktopfilterrep_2026-11-10_235416",
+          "--task",
+          "probe",
+          "--probe-seed",
+          "20261112",
+          "--attempt",
+          "0"
+        ],
+        "pid": 16416,
+        "runner_pid": 31552,
+        "started_unix": 1794331590.4288785,
+        "finished_unix": 1794332676.107051,
+        "process_wall_seconds": 1085.6781723499298,
+        "exit_code": 0,
+        "timeout": false,
+        "timeout_seconds": 3600,
+        "log": "logs/desktopfilterrep_2026-11-10_235416-probe-j20261112-a0.log",
+        "host_before": {
+          "utc": "2026-11-10T17:26:30.428878+00:00",
+          "ram_available_bytes": 11368181760,
+          "disk_free_bytes": 212245028864,
+          "cpu_percent_instantaneous": 10.3,
+          "process_pid": 31552,
+          "boot_time_unix": 1794299602.0518286
+        },
+        "host_after": {
+          "utc": "2026-11-10T17:44:36.107050+00:00",
+          "ram_available_bytes": 11379929088,
+          "disk_free_bytes": 212243214336,
+          "cpu_percent_instantaneous": 10.8,
+          "process_pid": 31552,
+          "boot_time_unix": 1794299602.0518286
+        }
+      }
+    ],
+    "P_seconds": 1085.6781723499298,
+    "retained_n": 62,
+    "predictions_sha256": "9ac454caabbf35b13f0dc43c3dbc7a41e2705069f0e90274d8d386eafb005edd",
+    "probe_result_sha256": "03f209f3f5184fd74dc8aa4ab28ea6441262939f3c7478c2288557e34c6fe3ab"
+  },
+  "20261113": {
+    "run": "desktopfilterrep_2026-11-10_235416-probe-j20261113-a0",
+    "attempt": 0,
+    "attempts": [
+      {
+        "label": "probe-j20261113-a0",
+        "argv": [
+          "D:\\User\\AI\\reasoning-rl-lab\\.venv\\Scripts\\python.exe",
+          "-u",
+          "scripts/large_filter_tasks.py",
+          "--family",
+          "desktopfilterrep_2026-11-10_235416",
+          "--task",
+          "probe",
+          "--probe-seed",
+          "20261113",
+          "--attempt",
+          "0"
+        ],
+        "pid": 4272,
+        "runner_pid": 31552,
+        "started_unix": 1794332676.1415508,
+        "finished_unix": 1794333757.163604,
+        "process_wall_seconds": 1081.0220532417297,
+        "exit_code": 0,
+        "timeout": false,
+        "timeout_seconds": 3600,
+        "log": "logs/desktopfilterrep_2026-11-10_235416-probe-j20261113-a0.log",
+        "host_before": {
+          "utc": "2026-11-10T17:44:36.141550+00:00",
+          "ram_available_bytes": 11374940160,
+          "disk_free_bytes": 212243214336,
+          "cpu_percent_instantaneous": 12.5,
+          "process_pid": 31552,
+          "boot_time_unix": 1794299602.0518286
+        },
+        "host_after": {
+          "utc": "2026-11-10T18:02:37.163604+00:00",
+          "ram_available_bytes": 11368484864,
+          "disk_free_bytes": 212241502208,
+          "cpu_percent_instantaneous": 10.5,
+          "process_pid": 31552,
+          "boot_time_unix": 1794299602.0518286
+        }
+      }
+    ],
+    "P_seconds": 1081.0220532417297,
+    "retained_n": 70,
+    "predictions_sha256": "e1a97e09c4a919393753ddaf4b922d753f8f18c99fb50c496f353bba248e7243",
+    "probe_result_sha256": "8ecd3da96d49d735fdbe66cd6f3d0c3357abc3e7858ad6cd12578c2500e6bee8"
+  }
+}
